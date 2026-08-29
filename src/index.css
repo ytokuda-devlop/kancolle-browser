@@ -1,0 +1,1078 @@
+/* 艦これ専用ブラウザの共通デザインシステム（夕暮れの泊地 - ミディアムダーク） */
+
+:root {
+  --bg-primary: #273549;
+  /* メイン背景色：薄暗いスレートブルー */
+  --bg-secondary: #1e293b;
+  /* コンポーネント背景色：スレート */
+  --bg-tertiary: #334155;
+  /* ホバー・アクティブ時の背景色 */
+  --text-primary: #f1f5f9;
+  /* メインテキストカラー：ソフトホワイト */
+  --text-secondary: #94a3b8;
+  /* サブテキストカラー：ライトスレート */
+  --accent-color: #f59e0b;
+  /* アクセントカラー：落ち着いたゴールド */
+  --accent-hover: #d97706;
+  /* アクセントホバーカラー */
+  --border-color: #334866;
+  /* ボーダーカラー */
+  --bottom-panel-bg: #1e293b;
+  --bottom-card-bg: #182232;
+  --bottom-border-color: #334866;
+  --bottom-text-secondary: #94a3b8;
+  --danger-color: #ef4444;
+  /* 警告色：赤 */
+  --success-color: #10b981;
+  /* 成功色：緑 */
+  --font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --transition-speed: 0.2s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  overflow: hidden;
+  /* スクロールバーを防ぎ、デスクトップアプリ風にする */
+}
+
+/* アプリケーションレイアウト */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ボタンの共通スタイル */
+.btn {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--transition-speed) ease;
+}
+
+.btn:hover {
+  background-color: var(--border-color);
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.2);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: var(--bg-primary);
+  border-color: var(--accent-color);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  color: var(--bg-primary);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+}
+
+/* メインコンテンツエリア：左側のゲーム/艦隊エリアと右側のサイドバーを横並びにする */
+.main-content {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* 左側：ゲーム画面と艦隊情報を縦に並べるコンテナ */
+.left-content {
+  width: 1200px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-right: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+/* ゲーム画面を埋め込むためのプレースホルダー領域 */
+.game-area {
+  width: 1200px;
+  height: 720px;
+  flex: none;
+  background-color: #000;
+  /* ゲームの余白は黒 */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.game-placeholder-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(0, 240, 255, 0.1);
+  border-top-color: var(--accent-color);
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 下部情報パネル（遠征状況・入渠ドック） */
+.bottom-panel {
+  height: calc(100vh - 720px);
+  background-color: var(--bottom-panel-bg);
+  border-top: 1px solid var(--bottom-border-color);
+  display: flex;
+  padding: 8px;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.bottom-panel-main-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+}
+
+.bottom-panel-main-col .bottom-panel-col {
+  height: auto;
+  flex: 1;
+}
+
+/* 10資材と保有枠を2列6行でスクロールせず表示できる高さを確保する。 */
+.bottom-panel-main-col .material-col {
+  flex: 0 0 190px;
+}
+
+/* 右カラムは任務8件の一覧性を優先し、出撃情報を必要最小限にする。 */
+.bottom-panel-main-col .sortie-col {
+  flex: 0 0 96px;
+}
+
+.bottom-panel-main-col .quest-col {
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+.bottom-panel-col {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bottom-card-bg);
+  border: 1px solid var(--bottom-border-color);
+  border-radius: 6px 8px;
+  padding: 8px 6px;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 資材表示用グリッド */
+.material-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  padding: 4px 0px;
+}
+
+.material-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  padding: 0px 4px;
+  font-size: 0.8rem;
+}
+
+.material-label {
+  font-size: 0.72rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #ffffff;
+  min-width: 48px;
+  text-align: center;
+}
+
+.material-value {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  margin-left: 6px;
+}
+
+.capacity-label {
+  color: var(--bottom-text-secondary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* 各資材のラベルテーマカラー（プレミアム感のある配色） */
+.mat-fuel {
+  background-color: #1b4d3e;
+  /* 深い緑 */
+  border: 1px solid #2d6a4f;
+}
+
+.mat-ammo {
+  background-color: #7c5d10;
+  /* 深い黄色/金 */
+  border: 1px solid #9b720f;
+}
+
+.mat-steel {
+  background-color: #4a5568;
+  /* 鋼鉄グレー */
+  border: 1px solid #718096;
+}
+
+.mat-bauxite {
+  background-color: #8c381c;
+  /* ボーキサイト赤銅色 */
+  border: 1px solid #a0522d;
+}
+
+.mat-devco {
+  background-color: #1a4f7c;
+  /* 開発資材ブルー */
+  border: 1px solid #2b6cb0;
+}
+
+.mat-screw {
+  background-color: #553c9a;
+  /* 改修ネジパープル */
+  border: 1px solid #6b46c1;
+}
+
+.mat-bucket {
+  background-color: #124d4f;
+  /* バケツティール */
+  border: 1px solid #234e52;
+}
+
+.mat-burner {
+  background-color: #7b241c;
+  /* バーナーレッド */
+  border: 1px solid #922b21;
+}
+
+.mat-mamiya {
+  background-color: #765225;
+  border: 1px solid #a4773b;
+}
+
+.mat-irako {
+  background-color: #8a4562;
+  border: 1px solid #b85f82;
+}
+
+.panel-col-header {
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 2px;
+  border-right: 2px solid var(--bottom-border-color);
+  padding-right: 6px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 24px;
+}
+
+.panel-col-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+/* カスタムスクロールバー */
+.panel-col-content::-webkit-scrollbar {
+  width: 3px;
+}
+
+.panel-col-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.panel-col-content::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 1.5px;
+}
+
+.panel-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.row-label {
+  font-weight: bold;
+  margin-right: 4px;
+  color: var(--text-primary);
+  min-width: 60px;
+}
+
+.mission-fleet-label {
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+.row-time {
+  font-weight: bold;
+  min-width: 55px;
+  text-align: center;
+  margin-right: 6px;
+}
+
+.row-desc {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  color: var(--bottom-text-secondary);
+}
+
+.row-desc.is-active {
+  font-weight: bold;
+}
+
+.quest-row {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.quest-name {
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+  color: var(--text-primary);
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quest-progress-rate {
+  flex: none;
+  width: 28px;
+  color: var(--text-primary);
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.sortie-content {
+  justify-content: center;
+  min-width: 0;
+  gap: 3px;
+  font-size: 0.72rem;
+}
+
+.sortie-heading,
+.sortie-map {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 6px;
+}
+
+.sortie-fleet,
+.sortie-map-code {
+  flex: none;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.sortie-event-badge {
+  padding: 1px 5px;
+  border: 1px solid #f59e0b;
+  border-radius: 3px;
+  color: #fbbf24;
+  font-size: 0.62rem;
+  font-weight: bold;
+}
+
+.sortie-map-name {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text-primary);
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sortie-position,
+.sortie-gauge {
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.sortie-empty {
+  color: var(--bottom-text-secondary);
+}
+
+/* ダミーのステータスパネル（第一フェーズ用のプレースホルダー） */
+.info-card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-card-header {
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.info-card-content {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.browser-controls {
+  display: grid;
+  gap: 6px;
+}
+
+.browser-controls-actions {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.browser-control-button {
+  min-width: 0;
+  height: 36px;
+  padding: 8px 6px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #fff;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  transition:
+    transform var(--transition-speed),
+    border-color var(--transition-speed),
+    box-shadow var(--transition-speed),
+    filter var(--transition-speed);
+}
+
+.browser-control-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  filter: brightness(1.14);
+}
+
+.browser-control-button:active:not(:disabled) {
+  transform: translateY(1px);
+  filter: brightness(0.95);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.browser-control-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.browser-control-screenshot {
+  background: linear-gradient(180deg, #0891b2, #0e7490);
+  border-color: #22d3ee;
+}
+
+.browser-control-screenshot:hover:not(:disabled) {
+  box-shadow: 0 5px 14px rgba(8, 145, 178, 0.48);
+}
+
+.browser-control-recording {
+  background: linear-gradient(180deg, #dc2626, #991b1b);
+  border-color: #f87171;
+}
+
+.browser-control-recording:hover:not(:disabled),
+.browser-control-recording.is-recording {
+  box-shadow: 0 5px 14px rgba(220, 38, 38, 0.48);
+}
+
+.browser-control-recording.is-recording {
+  animation: recording-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes recording-pulse {
+  50% {
+    filter: brightness(1.35);
+  }
+}
+
+.browser-control-point-charge {
+  background: linear-gradient(180deg, #ea580c, #c2410c);
+  border-color: #fb923c;
+}
+
+.browser-control-point-charge:hover:not(:disabled) {
+  box-shadow: 0 5px 14px rgba(234, 88, 12, 0.48);
+}
+
+.control-status {
+  margin-top: 7px;
+  overflow: hidden;
+  font-size: 0.7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.control-status-error {
+  color: #fca5a5;
+}
+
+.browser-control-button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.browser-control-button.is-loading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.button-spinner {
+  width: 11px;
+  height: 11px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.screenshot-status {
+  color: var(--text-secondary);
+}
+
+.recording-status {
+  color: #fca5a5;
+}
+
+/* 右側：艦隊情報パネルと追加機能領域 */
+.right-content {
+  width: 500px;
+  height: 100vh;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.fleet-panel {
+  width: 100%;
+  height: 840px;
+  background-color: var(--bg-secondary);
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  overflow: hidden;
+  flex: none;
+}
+
+.right-feature-panel {
+  flex: 1;
+  min-height: 0;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  padding: 8px;
+  overflow: hidden;
+}
+
+.fleet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.fleet-selector-group {
+  display: flex;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 2px;
+  gap: 2px;
+  align-items: center;
+}
+
+.fleet-tab-button {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  padding: 4px 8px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  white-space: nowrap;
+}
+
+.fleet-tab-button:hover {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.fleet-tab-button.active {
+  color: var(--bg-primary);
+  background-color: var(--accent-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.fleet-summary {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  display: flex;
+  gap: 0px;
+}
+
+.fleet-summary-item {
+  background-color: var(--bg-primary);
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.fleet-summary-val {
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+/* 1列縦並びの艦娘グリッド */
+.fleet-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: calc((100% - 10px) / 6);
+  gap: 2px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.fleet-grid::-webkit-scrollbar {
+  width: 4px;
+}
+
+.fleet-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.fleet-grid::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 2px;
+}
+
+/* 艦娘ステータスカード */
+.ship-card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 4px 6px;
+  /* パディングを少し抑える */
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  /* ギャップをタイトに */
+  min-width: 0;
+  min-height: 110px; /* カードが潰れすぎないように最小高さを設定 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: border-color var(--transition-speed);
+}
+
+.ship-card-empty {
+  background-color: rgba(10, 15, 29, 0.35);
+  border-style: dashed;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.ship-card:hover {
+  border-color: var(--accent-color);
+}
+
+@keyframes taiha-pulse {
+  0% {
+    box-shadow: 0 0 4px rgba(255, 74, 74, 0.4);
+    border-color: rgba(255, 74, 74, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(255, 74, 74, 0.95);
+    border-color: rgba(255, 74, 74, 1.0);
+  }
+  100% {
+    box-shadow: 0 0 4px rgba(255, 74, 74, 0.4);
+    border-color: rgba(255, 74, 74, 0.6);
+  }
+}
+
+.ship-card-taiha {
+  animation: taiha-pulse 1.8s infinite ease-in-out;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.12) 0%, var(--bg-primary) 100%) !important;
+}
+
+.ship-header {
+  display: grid;
+  grid-template-columns: minmax(0, 200px) 44px minmax(100px, 1fr) 32px;
+  column-gap: 6px;
+  align-items: center;
+  font-size: 0.8rem;
+  min-width: 0;
+}
+
+.ship-identity {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr);
+  align-items: center;
+  gap: 4px;
+  font-weight: bold;
+  min-width: 0;
+}
+
+.ship-num {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+}
+
+.ship-name {
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ship-lv {
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.ship-hp-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 48px;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.ship-hp-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #1e293b;
+  border-radius: 3px;
+  justify-self: end;
+  overflow: hidden;
+  position: relative;
+}
+
+.ship-hp-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* HP状況による色分け */
+.hp-green {
+  background-color: var(--success-color);
+}
+
+.hp-yellow {
+  background-color: #eab308;
+}
+
+/* 小破 */
+.hp-orange {
+  background-color: #f97316;
+}
+
+/* 中破 */
+.hp-red {
+  background-color: var(--danger-color);
+}
+
+/* 大破 */
+
+.ship-hp-text {
+  font-size: 0.75rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 疲労度(cond値)の装飾 */
+.ship-cond {
+  font-size: 0.75rem;
+  padding: 1px 2px;
+  border-radius: 3px;
+  font-weight: bold;
+  min-width: 22px;
+  text-align: center;
+}
+
+.cond-spark {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.35) 0%, rgba(245, 158, 11, 0.1) 100%);
+  color: #fef08a;
+  border: 1px solid rgba(245, 158, 11, 0.6);
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.3);
+  text-shadow: 0 0 2px rgba(245, 158, 11, 0.5);
+}
+
+.cond-normal {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.cond-orange {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.35) 0%, rgba(249, 115, 22, 0.1) 100%);
+  color: #ffedd5;
+  border: 1px solid rgba(249, 115, 22, 0.6);
+  box-shadow: 0 0 4px rgba(249, 115, 22, 0.2);
+}
+
+.cond-red {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.4) 0%, rgba(239, 68, 68, 0.15) 100%);
+  color: #fee2e2;
+  border: 1px solid rgba(239, 68, 68, 0.75);
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.4);
+  animation: cond-red-pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes cond-red-pulse {
+  0% { box-shadow: 0 0 2px rgba(239, 68, 68, 0.2); }
+  50% { box-shadow: 0 0 10px rgba(239, 68, 68, 0.65); border-color: rgba(239, 68, 68, 1.0); }
+  100% { box-shadow: 0 0 2px rgba(239, 68, 68, 0.2); }
+}
+
+/* カードボディ部: パラメータ(左)と装備(右) */
+.ship-body {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.ship-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 56px);
+  gap: 1px 8px;
+  border-right: 1px solid var(--border-color);
+  padding-right: 8px;
+}
+
+.stat-item {
+  display: grid;
+  grid-template-columns: 24px 24px;
+  column-gap: 7px;
+  font-size: 0.65rem;
+  /* 0.7rem から 0.65rem へ縮小 */
+  color: var(--text-secondary);
+}
+
+.stat-val {
+  color: var(--text-primary);
+  font-weight: 500;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.ship-slots {
+  display: grid;
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  gap: 1px;
+  min-width: 0;
+  overflow: hidden;
+  padding-right: 2px;
+}
+
+.slot-item {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 38px 23px 38px;
+  align-items: center;
+  column-gap: 6px;
+  min-width: 0;
+  min-height: 0;
+  padding: 0 3px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.slot-item:nth-child(even) {
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.slot-item-expansion {
+  grid-row: 6;
+  border-top: 1px solid rgba(0, 175, 165, 0.22);
+}
+
+.slot-name {
+  grid-column: 1;
+  min-width: 0;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slot-meta {
+  display: contents;
+  font-variant-numeric: tabular-nums;
+}
+
+.slot-level {
+  grid-column: 2;
+  justify-self: end;
+  color: #00bfa5;
+  text-shadow: 0 0 2px rgba(0, 175, 165, 0.3);
+}
+
+.slot-alv {
+  grid-column: 3;
+  width: 19px;
+  height: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  flex: none;
+}
+
+.slot-alv .alv-mark {
+  display: block;
+  flex: none;
+}
+
+.alv-bars {
+  align-items: flex-end;
+}
+
+.alv-bars .alv-mark {
+  width: 2px;
+  height: 10px;
+  border-radius: 1px;
+  background: #38bdf8;
+  box-shadow: 0 0 3px rgba(56, 189, 248, 0.65);
+}
+
+.alv-slashes .alv-mark {
+  width: 2px;
+  height: 11px;
+  border-radius: 1px;
+  background: #facc15;
+  box-shadow: 0 0 3px rgba(250, 204, 21, 0.7);
+  transform: rotate(-25deg);
+}
+
+.alv-chevrons {
+  gap: 0;
+}
+
+.alv-chevrons .alv-mark {
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #facc15;
+  border-bottom: 2px solid #facc15;
+  filter: drop-shadow(0 0 2px rgba(250, 204, 21, 0.7));
+  transform: rotate(-45deg);
+}
+
+.alv-chevrons .alv-mark+.alv-mark {
+  margin-left: -2px;
+}
+
+.slot-aircraft {
+  grid-column: 4;
+  min-width: 32px;
+  text-align: right;
+}
+
+.slot-aircraft.aircraft-full {
+  color: var(--text-primary);
+}
+
+.slot-aircraft.aircraft-medium {
+  color: #facc15;
+}
+
+.slot-aircraft.aircraft-low {
+  color: #fb923c;
+}
+
+.slot-aircraft.aircraft-empty {
+  color: var(--danger-color);
+  font-weight: 700;
+}

@@ -1,30 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
 import BottomPanel from './components/bottom/BottomPanel';
 import FleetPanel from './components/fleet/FleetPanel';
+import useKancolleData from './hooks/useKancolleData';
 import { formatElapsedTime } from './utils/formatters';
 
 function App() {
-  const [fleetData, setFleetData] = useState([]);
-  const [ndockData, setNdockData] = useState([]);
-  const [kdockData, setKdockData] = useState([]);
-  const [questData, setQuestData] = useState([]);
-  const [sortieData, setSortieData] = useState(null);
-  const [materialData, setMaterialData] = useState({
-    fuel: 0,
-    ammo: 0,
-    steel: 0,
-    bauxite: 0,
-    devco: 0,
-    screw: 0,
-    bucket: 0,
-    burner: 0,
-    mamiya: 0,
-    irako: 0,
-    shipCount: 0,
-    maxShips: 0,
-    slotItemCount: 0,
-    maxSlotItems: 0
-  });
+  const {
+    fleetData,
+    ndockData,
+    kdockData,
+    questData,
+    sortieData,
+    materialData
+  } = useKancolleData();
   const [screenshotStatus, setScreenshotStatus] = useState('');
   const [isCapturingScreenshot, setIsCapturingScreenshot] = useState(false);
   const [recordingState, setRecordingState] = useState('idle');
@@ -64,65 +52,6 @@ function App() {
     return () => clearTimeout(timer);
   }, [recordingStatus]);
 
-  useEffect(() => {
-    if (window.electronAPI) {
-      // 艦隊データのリアルタイム受信
-      const unsubscribeFleet = window.electronAPI.onFleetData((data) => {
-        if (data && data.length > 0) {
-          setFleetData(data);
-        }
-      });
-
-      // 入渠ドックデータのリアルタイム受信
-      const unsubscribeNdock = window.electronAPI.onNdockData((data) => {
-        if (data) {
-          setNdockData(data);
-        }
-      });
-
-      // 建造ドックデータのリアルタイム受信
-      const unsubscribeKdock = window.electronAPI.onKdockData((data) => {
-        if (data) {
-          setKdockData(data);
-        }
-      });
-
-      // 進行中任務データのリアルタイム受信
-      const unsubscribeQuest = window.electronAPI.onQuestData((data) => {
-        if (data) {
-          setQuestData(data);
-        }
-      });
-
-      // 資材データのリアルタイム受信
-      const unsubscribeMaterial = window.electronAPI.onMaterialData((data) => {
-        if (data) {
-          setMaterialData(data);
-        }
-      });
-
-      const unsubscribeSortie = window.electronAPI.onSortieData((data) => {
-        setSortieData(data || null);
-      });
-
-      // 初期データ要求
-      window.electronAPI.getFleetData();
-      window.electronAPI.getNdockData();
-      window.electronAPI.getKdockData();
-      window.electronAPI.getQuestData();
-      window.electronAPI.getMaterialData();
-      window.electronAPI.getSortieData();
-
-      return () => {
-        if (unsubscribeFleet) unsubscribeFleet();
-        if (unsubscribeNdock) unsubscribeNdock();
-        if (unsubscribeKdock) unsubscribeKdock();
-        if (unsubscribeQuest) unsubscribeQuest();
-        if (unsubscribeMaterial) unsubscribeMaterial();
-        if (unsubscribeSortie) unsubscribeSortie();
-      };
-    }
-  }, []);
 
   const handleScreenshot = async () => {
     if (!window.electronAPI?.captureScreenshot || isCapturingScreenshot) return;

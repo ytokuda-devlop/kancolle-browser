@@ -1,20 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import BottomPanel from './components/bottom/BottomPanel';
+import FleetPanel from './components/fleet/FleetPanel';
 import { formatElapsedTime } from './utils/formatters';
-import {
-  getFleetSakuteki,
-  getFleetSeiku,
-  getFleetTotalLevel,
-  getShipSeiku,
-  getShipTotalAircraft
-} from './utils/fleetCalculations';
-import {
-  getAircraftCountClass,
-  getCondClass,
-  getHpFillClass,
-  getLengText,
-  getSokuText
-} from './utils/shipDisplay';
 
 function App() {
   const [fleetData, setFleetData] = useState([]);
@@ -38,7 +25,6 @@ function App() {
     slotItemCount: 0,
     maxSlotItems: 0
   });
-  const [selectedFleetId, setSelectedFleetId] = useState(1);
   const [screenshotStatus, setScreenshotStatus] = useState('');
   const [isCapturingScreenshot, setIsCapturingScreenshot] = useState(false);
   const [recordingState, setRecordingState] = useState('idle');
@@ -137,14 +123,6 @@ function App() {
       };
     }
   }, []);
-
-  const currentFleet = fleetData.find(f => f.id === selectedFleetId) || { id: selectedFleetId, name: `第${selectedFleetId}艦隊`, ships: [] };
-
-  // 艦隊全体のサマリー計算
-  const shipsList = currentFleet.ships || [];
-  const totalLv = getFleetTotalLevel(shipsList);
-  const totalSakuteki = getFleetSakuteki(shipsList);
-  const totalSeiku = getFleetSeiku(shipsList);
 
   const handleScreenshot = async () => {
     if (!window.electronAPI?.captureScreenshot || isCapturingScreenshot) return;
@@ -265,34 +243,6 @@ function App() {
     }
   };
 
-  // 熟練度（alv）の記章を CSS で描画する
-  const getAlvDisplay = (alv) => {
-    if (!alv || alv <= 0) return null;
-
-    const normalizedAlv = Math.min(Math.max(alv, 1), 7);
-    const variant =
-      normalizedAlv <= 3 ? "bars" :
-        normalizedAlv <= 6 ? "slashes" :
-          "chevrons";
-    const markCount =
-      normalizedAlv <= 3 ? normalizedAlv :
-        normalizedAlv <= 6 ? normalizedAlv - 3 :
-          2;
-
-    return (
-      <span
-        className={`slot-alv alv-${variant}`}
-        title={`熟練度 ${alv}`}
-        role="img"
-        aria-label={`熟練度 ${alv}`}
-      >
-        {Array.from({ length: markCount }, (_, index) => (
-          <span key={index} className="alv-mark" aria-hidden="true" />
-        ))}
-      </span>
-    );
-  };
-
   return (
     <div className="app-container">
       {/* メインの表示コンテンツエリア */}
@@ -319,149 +269,7 @@ function App() {
 
         {/* 右側：艦隊情報パネルと追加機能領域 */}
         <aside className="right-content">
-          <div className="fleet-panel">
-            <div className="fleet-header">
-              <div className="fleet-selector-group">
-                {[1, 2, 3, 4].map(id => (
-                  <button
-                    key={id}
-                    type="button"
-                    className={`fleet-tab-button ${selectedFleetId === id ? 'active' : ''}`}
-                    onClick={() => setSelectedFleetId(id)}
-                  >
-                    第{id}艦隊
-                  </button>
-                ))}
-              </div>
-              <div className="fleet-summary">
-                <span className="fleet-summary-item">Lv.合計: <span className="fleet-summary-val">{totalLv}</span></span>
-                <span className="fleet-summary-item">索敵: <span className="fleet-summary-val">{totalSakuteki}</span></span>
-                <span className="fleet-summary-item">制空: <span className="fleet-summary-val">{totalSeiku}</span></span>
-              </div>
-            </div>
-
-            <div className="fleet-grid">
-              {fleetData.length === 0 ? (
-                <div style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: 'var(--text-secondary)',
-                  fontSize: '0.95rem',
-                  gap: '12px',
-                  padding: '20px',
-                  textAlign: 'center',
-                  height: '100%'
-                }}>
-                  <div className="spinner" style={{ width: '30px', height: '30px', border: '3px solid rgba(255,255,255,0.1)', borderTop: '3px solid var(--accent-color)' }}></div>
-                  <div>
-                    <span style={{ fontWeight: 'bold', color: 'var(--accent-color)', display: 'block', marginBottom: '4px' }}>ゲームデータ受信待ち</span>
-                    艦これにログインし、母港画面を表示すると艦隊データがここに反映されます。
-                  </div>
-                </div>
-              ) : (currentFleet.ships && currentFleet.ships.length > 0) ? (
-                <>
-                  {currentFleet.ships.map((ship, idx) => {
-                    const isTaiha = ship.nowhp / ship.maxhp <= 0.25;
-                    return (
-                      <div key={ship.id} className={`ship-card ${isTaiha ? 'ship-card-taiha' : ''}`}>
-                        <div className="ship-header">
-                          <div className="ship-identity">
-                            <span className="ship-num">{idx + 1}</span>
-                            <span className="ship-name" title={ship.name}>{ship.name}</span>
-                          </div>
-                          <span className="ship-lv">Lv.{ship.lv}</span>
-
-                          <div className="ship-hp-section">
-                            <div className="ship-hp-bar">
-                              <div
-                                className={`ship-hp-fill ${getHpFillClass(ship.nowhp, ship.maxhp)}`}
-                                style={{ width: `${(ship.nowhp / ship.maxhp) * 100}%` }}
-                              ></div>
-                            </div>
-                            <span className="ship-hp-text">{ship.nowhp}/{ship.maxhp}</span>
-                          </div>
-
-                          <span className={`ship-cond ${getCondClass(ship.cond)}`} title="コンディション">
-                            {ship.cond}
-                          </span>
-                        </div>
-
-                        <div className="ship-body">
-                          {/* パラメータリスト (左側) */}
-                          <div className="ship-stats">
-                            <div className="stat-item"><span>火力</span><span className="stat-val">{ship.karyoku}</span></div>
-                            <div className="stat-item"><span>回避</span><span className="stat-val">{ship.kaihi}</span></div>
-                            <div className="stat-item"><span>雷装</span><span className="stat-val">{ship.raisou}</span></div>
-                            <div className="stat-item"><span>対潜</span><span className="stat-val">{ship.taisen}</span></div>
-                            <div className="stat-item"><span>対空</span><span className="stat-val">{ship.taiku}</span></div>
-                            <div className="stat-item"><span>索敵</span><span className="stat-val">{ship.sakuteki}</span></div>
-                            <div className="stat-item"><span>装甲</span><span className="stat-val">{ship.soukou}</span></div>
-                            <div className="stat-item"><span>運</span><span className="stat-val">{ship.lucky}</span></div>
-                            <div className="stat-item"><span>搭載</span><span className="stat-val">{getShipTotalAircraft(ship)}</span></div>
-                            <div className="stat-item"><span>制空</span><span className="stat-val">{getShipSeiku(ship)}</span></div>
-                            <div className="stat-item"><span>速力</span><span className="stat-val" style={{ fontSize: '0.65rem' }}>{getSokuText(ship.soku)}</span></div>
-                            <div className="stat-item"><span>射程</span><span className="stat-val" style={{ fontSize: '0.65rem' }}>{getLengText(ship.leng)}</span></div>
-                          </div>
-
-                          {/* 装備リスト (右側) */}
-                          <div className="ship-slots">
-                            {ship.slots && ship.slots.length > 0 ? (
-                              ship.slots.map((slot, sIdx) => (
-                                <div
-                                  key={slot.id || sIdx}
-                                  className={`slot-item ${slot.isExpansion ? 'slot-item-expansion' : ''}`}
-                                  title={slot.isExpansion ? `補強増設: ${slot.name}` : slot.name}
-                                >
-                                  <span className="slot-name">{slot.name}</span>
-                                  <span className="slot-meta">
-                                    {slot.level > 0 && (
-                                      <span className="slot-level" title={`改修値 ${slot.level}`}>★+{slot.level}</span>
-                                    )}
-                                    {slot.isAircraft && slot.alv > 0 && getAlvDisplay(slot.alv)}
-                                    {slot.isAircraft && (
-                                      <span
-                                        className={`slot-aircraft ${getAircraftCountClass(slot)}`}
-                                        title={`搭載数 ${slot.currentAircraft}/${slot.maxAircraft}`}
-                                      >
-                                        {slot.currentAircraft}/{slot.maxAircraft}
-                                      </span>
-                                    )}
-                                  </span>
-                                </div>
-                              ))
-                            ) : (
-                              <div className="slot-item" style={{ color: 'var(--text-secondary)', opacity: 0.5 }}>未装備</div>
-                            )}
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                  {shipsList.length < 6 && Array.from({ length: 6 - shipsList.length }, (_, idx) => (
-                    <div
-                      key={`empty-${idx}`}
-                      className="ship-card ship-card-empty"
-                      aria-hidden="true"
-                    />
-                  ))}
-                </>
-              ) : (
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: 'var(--text-secondary)',
-                  fontSize: '0.9rem',
-                  height: '100%',
-                  padding: '20px'
-                }}>
-                  艦隊に編成されている艦娘がいません。
-                </div>
-              )}
-            </div>
-          </div>
+          <FleetPanel fleets={fleetData} />
 
           {/* 艦隊情報の下に、今後の機能を追加するための領域 */}
           <section className="right-feature-panel">

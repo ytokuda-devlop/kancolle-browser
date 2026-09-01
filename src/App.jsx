@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import BottomPanel from './components/bottom/BottomPanel';
 import FleetPanel from './components/fleet/FleetPanel';
 import useKancolleData from './hooks/useKancolleData';
+import useRecording from './hooks/useRecording';
+import useScreenshot from './hooks/useScreenshot';
 import { formatElapsedTime } from './utils/formatters';
 
 function App() {
@@ -13,15 +15,17 @@ function App() {
     sortieData,
     materialData
   } = useKancolleData();
-  const [screenshotStatus, setScreenshotStatus] = useState('');
-  const [isCapturingScreenshot, setIsCapturingScreenshot] = useState(false);
-  const [recordingState, setRecordingState] = useState('idle');
-  const [recordingStatus, setRecordingStatus] = useState('');
-  const [recordingStartedAt, setRecordingStartedAt] = useState(0);
-  const recorderRef = useRef(null);
-  const recordingStreamRef = useRef(null);
-  const chunkSequenceRef = useRef(0);
-  const chunkQueueRef = useRef(Promise.resolve());
+  const {
+    captureScreenshot,
+    isCapturingScreenshot,
+    screenshotStatus
+  } = useScreenshot();
+  const {
+    recordingStartedAt,
+    recordingState,
+    recordingStatus,
+    toggleRecording
+  } = useRecording();
   const [pointActionStatus, setPointActionStatus] = useState('');
   const [pendingPointAction, setPendingPointAction] = useState('');
   const [now, setNow] = useState(Date.now());
@@ -33,128 +37,6 @@ function App() {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
-
-  useEffect(() => {
-    if (!screenshotStatus || screenshotStatus === '保存中...') return;
-
-    const timer = setTimeout(() => {
-      setScreenshotStatus('');
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, [screenshotStatus]);
-
-  useEffect(() => {
-    if (!recordingStatus.startsWith('保存しました:')) return;
-
-    const timer = setTimeout(() => {
-      setRecordingStatus('');
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, [recordingStatus]);
-
-
-  const handleScreenshot = async () => {
-    if (!window.electronAPI?.captureScreenshot || isCapturingScreenshot) return;
-
-    setIsCapturingScreenshot(true);
-    setScreenshotStatus('保存中...');
-    try {
-      const result = await window.electronAPI.captureScreenshot();
-      setScreenshotStatus(result.success ? `保存しました: ${result.path}` : `保存失敗: ${result.error}`);
-    } catch (err) {
-      setScreenshotStatus(`保存失敗: ${err.message}`);
-    } finally {
-      setIsCapturingScreenshot(false);
-    }
-  };
-
-  const handleRecording = async () => {
-    if (recordingState === 'recording') {
-      setRecordingState('converting');
-      setRecordingStatus('MP4へ変換中...');
-      recorderRef.current?.stop();
-      return;
-    }
-    if (recordingState !== 'idle' || !window.electronAPI?.startRecordingFile) return;
-
-    setRecordingStatus('録画を準備中...');
-    let filePrepared = false;
-    try {
-      const stream = await navigator.mediaDevices.getDisplayMedia({
-        audio: true,
-        video: { width: 1200, height: 720, frameRate: 30 }
-      });
-      if (stream.getAudioTracks().length === 0) {
-        stream.getTracks().forEach(track => track.stop());
-        throw new Error('ゲーム音声トラックを取得できませんでした。');
-      }
-
-      const prepared = await window.electronAPI.startRecordingFile();
-      if (!prepared.success) {
-        stream.getTracks().forEach(track => track.stop());
-        throw new Error(prepared.error);
-      }
-      filePrepared = true;
-
-      const mimeTypes = [
-        'video/webm;codecs=vp9,opus',
-        'video/webm;codecs=vp8,opus',
-        'video/webm'
-      ];
-      const mimeType = mimeTypes.find(type => MediaRecorder.isTypeSupported(type));
-      recordingStreamRef.current = stream;
-      const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
-      recorderRef.current = recorder;
-      chunkSequenceRef.current = 0;
-      chunkQueueRef.current = Promise.resolve();
-
-      recorder.addEventListener('dataavailable', event => {
-        if (!event.data.size) return;
-        const sequence = chunkSequenceRef.current++;
-        chunkQueueRef.current = chunkQueueRef.current.then(async () => {
-          const bytes = new Uint8Array(await event.data.arrayBuffer());
-          const result = await window.electronAPI.appendRecordingChunk(sequence, bytes);
-          if (!result.success) throw new Error(result.error);
-        });
-      });
-
-      recorder.addEventListener('stop', async () => {
-        stream.getTracks().forEach(track => track.stop());
-        try {
-          await chunkQueueRef.current;
-          const result = await window.electronAPI.finishRecordingFile();
-          if (result.canceled) {
-            setRecordingStatus('録画の保存をキャンセルしました。');
-            return;
-          }
-          if (!result.success) {
-            const recovery = result.recoveryPath ? ` 一時ファイル: ${result.recoveryPath}` : '';
-            throw new Error(`${result.error}${recovery}`);
-          }
-          setRecordingStatus(`保存しました: ${result.path}`);
-        } catch (err) {
-          setRecordingStatus(`録画保存失敗: ${err.message}`);
-        } finally {
-          recorderRef.current = null;
-          recordingStreamRef.current = null;
-          setRecordingStartedAt(0);
-          setRecordingState('idle');
-        }
-      }, { once: true });
-
-      recorder.start(1000);
-      setRecordingStartedAt(Date.now());
-      setRecordingState('recording');
-      setRecordingStatus('ゲーム音声付きで録画中');
-    } catch (err) {
-      recordingStreamRef.current?.getTracks().forEach(track => track.stop());
-      recordingStreamRef.current = null;
-      if (filePrepared) await window.electronAPI.abortRecordingFile();
-      setRecordingState('idle');
-      setRecordingStatus(`録画開始失敗: ${err.message}`);
-    }
-  };
-
   const handlePointAction = async (action) => {
     if (!window.electronAPI?.openDmmPointPage || pendingPointAction) return;
 
@@ -212,7 +94,7 @@ function App() {
               </button>
               <button
                 className={`browser-control-button browser-control-screenshot ${isCapturingScreenshot ? 'is-loading' : ''}`}
-                onClick={handleScreenshot}
+                onClick={captureScreenshot}
                 disabled={isCapturingScreenshot}
               >
                 {isCapturingScreenshot && <span className="button-spinner" aria-hidden="true" />}
@@ -220,7 +102,7 @@ function App() {
               </button>
               <button
                 className={`browser-control-button browser-control-recording ${recordingState === 'recording' ? 'is-recording' : ''}`}
-                onClick={handleRecording}
+                onClick={toggleRecording}
                 disabled={recordingState === 'converting'}
               >
                 {recordingState === 'converting'

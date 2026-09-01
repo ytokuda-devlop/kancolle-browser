@@ -1,5 +1,23 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { getMapNodeLabel } from './mapNodeLabels';
+import {
+  formatElapsedTime,
+  formatRemainingTime,
+  formatSortieNode
+} from './utils/formatters';
+import {
+  getFleetSakuteki,
+  getFleetSeiku,
+  getFleetTotalLevel,
+  getShipSeiku,
+  getShipTotalAircraft
+} from './utils/fleetCalculations';
+import {
+  getAircraftCountClass,
+  getCondClass,
+  getHpFillClass,
+  getLengText,
+  getSokuText
+} from './utils/shipDisplay';
 
 function App() {
   const [fleetData, setFleetData] = useState([]);
@@ -123,30 +141,6 @@ function App() {
     }
   }, []);
 
-  // 残り時間を "HH:MM:SS" にフォーマットする関数
-  const formatRemainingTime = (completeTimeMs) => {
-    if (!completeTimeMs || completeTimeMs <= 0) return "---";
-    const diff = completeTimeMs - now;
-    if (diff <= 0) return "完了";
-    const totalSecs = Math.floor(diff / 1000);
-    const hrs = Math.floor(totalSecs / 3600);
-    const mins = Math.floor((totalSecs % 3600) / 60);
-    const secs = totalSecs % 60;
-    return [
-      String(hrs).padStart(2, '0'),
-      String(mins).padStart(2, '0'),
-      String(secs).padStart(2, '0')
-    ].join(':');
-  };
-
-  const formatElapsedTime = (startedAt) => {
-    const totalSecs = Math.max(0, Math.floor((now - startedAt) / 1000));
-    const hrs = Math.floor(totalSecs / 3600);
-    const mins = Math.floor((totalSecs % 3600) / 60);
-    const secs = totalSecs % 60;
-    return [hrs, mins, secs].map(value => String(value).padStart(2, '0')).join(':');
-  };
-
   const currentFleets = fleetData;
   const currentFleet = currentFleets.find(f => f.id === selectedFleetId) || { id: selectedFleetId, name: `第${selectedFleetId}艦隊`, ships: [] };
   const currentNdocks = ndockData;
@@ -154,16 +148,9 @@ function App() {
 
   // 艦隊全体のサマリー計算
   const shipsList = currentFleet.ships || [];
-  const totalLv = shipsList.reduce((sum, s) => sum + s.lv, 0);
-
-  const getSakutekiDisplay = () => {
-    return shipsList.reduce((sum, s) => sum + s.sakuteki, 0);
-  };
-
-  const getSeikuDisplay = () => {
-    const totalSeiku = shipsList.reduce((sum, s) => sum + getShipSeiku(s), 0);
-    return totalSeiku > 0 ? `${totalSeiku}` : "0";
-  };
+  const totalLv = getFleetTotalLevel(shipsList);
+  const totalSakuteki = getFleetSakuteki(shipsList);
+  const totalSeiku = getFleetSeiku(shipsList);
 
   const handleScreenshot = async () => {
     if (!window.electronAPI?.captureScreenshot || isCapturingScreenshot) return;
@@ -284,41 +271,6 @@ function App() {
     }
   };
 
-  // HPバーのクラス判定
-  const getHpFillClass = (now, max) => {
-    const ratio = now / max;
-    if (ratio > 0.75) return 'hp-green';
-    if (ratio > 0.5) return 'hp-yellow';
-    if (ratio > 0.25) return 'hp-orange';
-    return 'hp-red';
-  };
-
-  // 疲労度のクラス判定
-  const getCondClass = (cond) => {
-    if (cond >= 49) return 'cond-spark';
-    if (cond >= 40) return 'cond-normal';
-    if (cond >= 20) return 'cond-orange';
-    return 'cond-red';
-  };
-
-  // 速力のテキスト変換
-  const getSokuText = (soku) => {
-    if (soku === 10 || soku === 1) return "高速";
-    if (soku === 15) return "最速";
-    if (soku === 20) return "超高速";
-    if (soku === 5 || soku === 0) return "低速";
-    return "不明";
-  };
-
-  // 射程のテキスト変換
-  const getLengText = (leng) => {
-    if (leng === 1) return "短";
-    if (leng === 2) return "中";
-    if (leng === 3) return "長";
-    if (leng === 4) return "超長";
-    return "無";
-  };
-
   // 熟練度（alv）の記章を CSS で描画する
   const getAlvDisplay = (alv) => {
     if (!alv || alv <= 0) return null;
@@ -347,65 +299,6 @@ function App() {
     );
   };
 
-  // 艦載機搭載数の合計計算
-  const getShipTotalAircraft = (ship) => {
-    if (!ship.slots) return 0;
-    return ship.slots.reduce((sum, slot) => {
-      if (slot && slot.isAircraft) {
-        return sum + (slot.currentAircraft || 0);
-      }
-      return sum;
-    }, 0);
-  };
-
-  const getAircraftCountClass = (slot) => {
-    const current = Number(slot.currentAircraft) || 0;
-    const maximum = Number(slot.maxAircraft) || 0;
-
-    if (maximum <= 0 || current >= maximum) return "aircraft-full";
-    if (current <= 0) return "aircraft-empty";
-
-    const ratio = current / maximum;
-    if (ratio >= 0.5) return "aircraft-medium";
-    return "aircraft-low";
-  };
-
-  const formatSortieNode = (nodeId) => {
-    const label = getMapNodeLabel(
-      sortieData?.mapAreaId,
-      sortieData?.mapInfoNo,
-      nodeId
-    );
-    return label ? `${label}マス` : `マスID：${nodeId}`;
-  };
-
-  // 個別艦娘の制空値計算 (簡易熟練度補正付き)
-  const getShipSeiku = (ship) => {
-    if (!ship.slots) return 0;
-    return Math.floor(
-      ship.slots.reduce((sum, slot) => {
-        if (slot && slot.isAircraft && slot.tyku > 0 && slot.currentAircraft > 0) {
-          // 基本制空値 = 対空値 * Math.sqrt(搭載数)
-          let seiku = slot.tyku * Math.sqrt(slot.currentAircraft);
-
-          // 熟練度ボーナス (alv)
-          if (slot.alv > 0) {
-            if (slot.itemType === 6 || slot.itemType === 45) {
-              // 艦上戦闘機・水上戦闘機
-              const bonuses = [0, 0, 2, 5, 9, 14, 14, 22];
-              seiku += bonuses[slot.alv] || 0;
-            } else if (slot.itemType === 7 || slot.itemType === 8) {
-              // 艦上爆撃機・艦上攻撃機
-              if (slot.alv === 7) seiku += 3;
-            }
-          }
-          return sum + seiku;
-        }
-        return sum;
-      }, 0)
-    );
-  };
-
   return (
     <div className="app-container">
       {/* メインの表示コンテンツエリア */}
@@ -430,7 +323,7 @@ function App() {
                   {currentFleets.filter(f => f.id > 1).map(f => {
                     const mission = f.mission || { status: 0, name: "" };
                     const hasMission = mission.status > 0;
-                    const remaining = hasMission ? formatRemainingTime(mission.completeTime) : "---";
+                    const remaining = hasMission ? formatRemainingTime(mission.completeTime, now) : "---";
                     const isFinished = remaining === "完了";
 
                     return (
@@ -527,7 +420,7 @@ function App() {
                   {currentNdocks && currentNdocks.length > 0 ? (
                     currentNdocks.map(d => {
                       const isRepairing = d.state === 1;
-                      const remaining = isRepairing ? formatRemainingTime(d.completeTime) : "---";
+                      const remaining = isRepairing ? formatRemainingTime(d.completeTime, now) : "---";
                       const isFinished = remaining === "完了";
 
                       let stateText = "空いてます";
@@ -579,7 +472,7 @@ function App() {
                       const remaining = isComplete
                         ? "完了"
                         : isBuilding
-                          ? formatRemainingTime(d.completeTime)
+                          ? formatRemainingTime(d.completeTime, now)
                           : "---";
 
                       let stateText = "空いてます";
@@ -647,8 +540,8 @@ function App() {
                         </span>
                       </div>
                       <div className="sortie-position">
-                        現在：{formatSortieNode(sortieData.cellNo)}
-                        {sortieData.bossCellNo > 0 && ` / ボス：${formatSortieNode(sortieData.bossCellNo)}`}
+                        現在：{formatSortieNode(sortieData, sortieData.cellNo)}
+                        {sortieData.bossCellNo > 0 && ` / ボス：${formatSortieNode(sortieData, sortieData.bossCellNo)}`}
                       </div>
                       {sortieData.eventMap?.maxHp > 0 && (
                         <div className="sortie-gauge">
@@ -695,8 +588,8 @@ function App() {
               </div>
               <div className="fleet-summary">
                 <span className="fleet-summary-item">Lv.合計: <span className="fleet-summary-val">{totalLv}</span></span>
-                <span className="fleet-summary-item">索敵: <span className="fleet-summary-val">{getSakutekiDisplay()}</span></span>
-                <span className="fleet-summary-item">制空: <span className="fleet-summary-val">{getSeikuDisplay()}</span></span>
+                <span className="fleet-summary-item">索敵: <span className="fleet-summary-val">{totalSakuteki}</span></span>
+                <span className="fleet-summary-item">制空: <span className="fleet-summary-val">{totalSeiku}</span></span>
               </div>
             </div>
 
@@ -849,7 +742,7 @@ function App() {
                 {recordingState === 'converting'
                   ? 'MP4変換中...'
                   : recordingState === 'recording'
-                    ? `録画停止 ${formatElapsedTime(recordingStartedAt)}`
+                    ? `録画停止 ${formatElapsedTime(recordingStartedAt, now)}`
                     : '録画'}
               </button>
             </div>

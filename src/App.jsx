@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import {
-  formatElapsedTime,
-  formatRemainingTime,
-  formatSortieNode
-} from './utils/formatters';
+import BottomPanel from './components/bottom/BottomPanel';
+import { formatElapsedTime } from './utils/formatters';
 import {
   getFleetSakuteki,
   getFleetSeiku,
@@ -141,10 +138,7 @@ function App() {
     }
   }, []);
 
-  const currentFleets = fleetData;
-  const currentFleet = currentFleets.find(f => f.id === selectedFleetId) || { id: selectedFleetId, name: `第${selectedFleetId}艦隊`, ships: [] };
-  const currentNdocks = ndockData;
-  const currentKdocks = kdockData;
+  const currentFleet = fleetData.find(f => f.id === selectedFleetId) || { id: selectedFleetId, name: `第${selectedFleetId}艦隊`, ships: [] };
 
   // 艦隊全体のサマリー計算
   const shipsList = currentFleet.ships || [];
@@ -312,262 +306,15 @@ function App() {
             </div>
           </div>
 
-          {/* 下部情報パネル（資材・遠征・ドック・任務） */}
-          <div className="bottom-panel">
-            {/* カラム1 (左): 遠征 (上) + 資材 (下) */}
-            <div className="bottom-panel-main-col">
-              {/* 遠征 */}
-              <div className="bottom-panel-col mission-col">
-                <div className="panel-col-header">遠征</div>
-                <div className="panel-col-content">
-                  {currentFleets.filter(f => f.id > 1).map(f => {
-                    const mission = f.mission || { status: 0, name: "" };
-                    const hasMission = mission.status > 0;
-                    const remaining = hasMission ? formatRemainingTime(mission.completeTime, now) : "---";
-                    const isFinished = remaining === "完了";
-
-                    return (
-                      <div key={f.id} className="panel-row">
-                        <span className="row-label mission-fleet-label">
-                          {`第${["", "１", "２", "３", "４"][f.id]}艦隊`}：
-                        </span>
-                        <span className="row-time" style={{
-                          color: isFinished ? 'var(--success-color)' : (hasMission ? 'var(--accent-color)' : 'var(--bottom-text-secondary)')
-                        }}>
-                          {remaining}
-                        </span>
-                        <span
-                          className={`row-desc ${hasMission ? 'is-active' : ''}`}
-                          title={hasMission ? mission.name : "母港にいます"}
-                          style={{
-                            color: hasMission
-                              ? 'var(--text-primary)'
-                              : 'var(--bottom-text-secondary)'
-                          }}
-                        >
-                          {hasMission ? (mission.name || `遠征 ID:${mission.missionId}`) : "母港にいます"}
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* 資材 */}
-              <div className="bottom-panel-col material-col">
-                <div className="panel-col-header">資材</div>
-                <div className="panel-col-content">
-                  <div className="material-grid">
-                    <div className="material-item">
-                      <span className="material-label mat-fuel">油</span>
-                      <span className="material-value">{materialData.fuel.toLocaleString()}</span>
-                    </div>
-                    <div className="material-item">
-                      <span className="material-label mat-steel">鉄</span>
-                      <span className="material-value">{materialData.steel.toLocaleString()}</span>
-                    </div>
-                    <div className="material-item">
-                      <span className="material-label mat-ammo">弾</span>
-                      <span className="material-value">{materialData.ammo.toLocaleString()}</span>
-                    </div>
-                    <div className="material-item">
-                      <span className="material-label mat-bauxite">ボーキ</span>
-                      <span className="material-value">{materialData.bauxite.toLocaleString()}</span>
-                    </div>
-                    <div className="material-item">
-                      <span className="material-label mat-devco">開発資材</span>
-                      <span className="material-value">{materialData.devco.toLocaleString()}</span>
-                    </div>
-                    <div className="material-item">
-                      <span className="material-label mat-screw">改修資材</span>
-                      <span className="material-value">{materialData.screw.toLocaleString()}</span>
-                    </div>
-                    <div className="material-item">
-                      <span className="material-label mat-bucket">バケツ</span>
-                      <span className="material-value">{materialData.bucket.toLocaleString()}</span>
-                    </div>
-                    <div className="material-item">
-                      <span className="material-label mat-burner">バーナー</span>
-                      <span className="material-value">{materialData.burner.toLocaleString()}</span>
-                    </div>
-                    <div className="material-item">
-                      <span className="material-label mat-mamiya">間宮</span>
-                      <span className="material-value">{materialData.mamiya.toLocaleString()}</span>
-                    </div>
-                    <div className="material-item">
-                      <span className="material-label mat-irako">伊良湖</span>
-                      <span className="material-value">{materialData.irako.toLocaleString()}</span>
-                    </div>
-                    <div className="material-item capacity-item">
-                      <span className="capacity-label">保有艦娘数</span>
-                      <span className="material-value">{materialData.shipCount.toLocaleString()}/{materialData.maxShips.toLocaleString()}</span>
-                    </div>
-                    <div className="material-item capacity-item">
-                      <span className="capacity-label">保有装備数</span>
-                      <span className="material-value">{materialData.slotItemCount.toLocaleString()}/{materialData.maxSlotItems.toLocaleString()}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* カラム2 (中央): 入渠ドック (上) + 建造ドック (下) */}
-            <div className="bottom-panel-main-col">
-              {/* 入渠情報 */}
-              <div className="bottom-panel-col ndock-col">
-                <div className="panel-col-header">入渠</div>
-                <div className="panel-col-content">
-                  {currentNdocks && currentNdocks.length > 0 ? (
-                    currentNdocks.map(d => {
-                      const isRepairing = d.state === 1;
-                      const remaining = isRepairing ? formatRemainingTime(d.completeTime, now) : "---";
-                      const isFinished = remaining === "完了";
-
-                      let stateText = "空いてます";
-                      if (d.state === -1) stateText = "未開放";
-                      else if (isRepairing) stateText = d.shipName;
-
-                      return (
-                        <div key={d.id} className="panel-row">
-                          <span className="row-label">
-                            第{["", "１", "２", "３", "４"][d.id] || d.id}ドック：
-                          </span>
-                          <span className="row-time" style={{
-                            color: isFinished ? 'var(--success-color)' : (isRepairing ? 'var(--danger-color)' : 'var(--bottom-text-secondary)')
-                          }}>
-                            {remaining}
-                          </span>
-                          <span
-                            className={`row-desc ${isRepairing ? 'is-active' : ''}`}
-                            title={stateText}
-                            style={{
-                              color: isRepairing
-                                ? 'var(--text-primary)'
-                                : 'var(--bottom-text-secondary)'
-                            }}
-                          >
-                            {stateText}
-                          </span>
-                        </div>
-                      );
-                    })
-                  ) : (
-                    null
-                  )}
-                </div>
-              </div>
-
-              {/* 建造ドック情報 */}
-              <div className="bottom-panel-col kdock-col">
-                <div className="panel-col-header">建造</div>
-                <div className="panel-col-content">
-                  {currentKdocks && currentKdocks.length > 0 ? (
-                    currentKdocks.map(d => {
-                      const isLocked = d.state === -1;
-                      const isEmpty = d.state === 0;
-                      const isComplete =
-                        d.state === 3 ||
-                        (d.state > 0 && d.completeTime > 0 && d.completeTime <= now);
-                      const isBuilding = d.state > 0 && !isComplete;
-                      const remaining = isComplete
-                        ? "完了"
-                        : isBuilding
-                          ? formatRemainingTime(d.completeTime, now)
-                          : "---";
-
-                      let stateText = "空いてます";
-                      if (isLocked) stateText = "未開放";
-                      else if (isComplete) stateText = "受取待ち";
-                      else if (isBuilding) stateText = "建造中";
-
-                      return (
-                        <div key={d.id} className="panel-row">
-                          <span className="row-label">
-                            第{["", "１", "２", "３", "４"][d.id] || d.id}ドック：
-                          </span>
-                          <span
-                            className="row-time"
-                            style={{
-                              color: isComplete
-                                ? 'var(--success-color)'
-                                : isBuilding
-                                  ? 'var(--accent-color)'
-                                  : 'var(--bottom-text-secondary)'
-                            }}
-                          >
-                            {remaining}
-                          </span>
-                          <span
-                            className={`row-desc ${isBuilding ? 'is-active' : ''}`}
-                            title={stateText}
-                            style={{
-                              color: isEmpty || isLocked
-                                ? 'var(--bottom-text-secondary)'
-                                : 'var(--text-primary)'
-                            }}
-                          >
-                            {stateText}
-                          </span>
-                        </div>
-                      );
-                    })
-                  ) : (
-                    null
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* カラム3 (右): 出撃海域 (上) + 進行中任務 (下) */}
-            <div className="bottom-panel-main-col">
-              <div className="bottom-panel-col sortie-col">
-                <div className="panel-col-header">出撃海域</div>
-                <div className="panel-col-content sortie-content">
-                  {sortieData ? (
-                    <>
-                      <div className="sortie-heading">
-                        <span className="sortie-fleet">第{sortieData.deckId || '?'}艦隊</span>
-                        {sortieData.isEvent && <span className="sortie-event-badge">イベント</span>}
-                      </div>
-                      <div className="sortie-map" title={`${sortieData.areaName} ${sortieData.mapName}`}>
-                        <span className="sortie-map-code">
-                          {sortieData.isEvent
-                            ? `E-${sortieData.mapInfoNo}`
-                            : `${sortieData.mapAreaId}-${sortieData.mapInfoNo}`}
-                        </span>
-                        <span className="sortie-map-name">
-                          {sortieData.mapName || sortieData.areaName || '海域名取得中'}
-                        </span>
-                      </div>
-                      <div className="sortie-position">
-                        現在：{formatSortieNode(sortieData, sortieData.cellNo)}
-                        {sortieData.bossCellNo > 0 && ` / ボス：${formatSortieNode(sortieData, sortieData.bossCellNo)}`}
-                      </div>
-                      {sortieData.eventMap?.maxHp > 0 && (
-                        <div className="sortie-gauge">
-                          ゲージ：{sortieData.eventMap.nowHp.toLocaleString()} / {sortieData.eventMap.maxHp.toLocaleString()}
-                        </div>
-                      )}
-                    </>
-                  ) : (
-                    <div className="sortie-empty">出撃していません</div>
-                  )}
-                </div>
-              </div>
-
-              <div className="bottom-panel-col quest-col">
-                <div className="panel-col-header">進行中任務</div>
-                <div className="panel-col-content">
-                  {questData.map(quest => (
-                    <div key={quest.id} className="quest-row" title={quest.name}>
-                      <span className="quest-name">{quest.name}</span>
-                      <span className="quest-progress-rate">{quest.progress}%</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+          <BottomPanel
+            fleets={fleetData}
+            materials={materialData}
+            ndocks={ndockData}
+            kdocks={kdockData}
+            quests={questData}
+            sortie={sortieData}
+            now={now}
+          />
         </div>
 
         {/* 右側：艦隊情報パネルと追加機能領域 */}

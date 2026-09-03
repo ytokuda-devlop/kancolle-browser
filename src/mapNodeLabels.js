@@ -148,7 +148,8 @@ export const MAP_NODE_LABELS = {
     12: "L",
     13: "M",
     14: "N",
-    15: "O"
+    15: "O",
+    19: "O",
   },
   "3-1": {
     1: "A",
@@ -244,7 +245,8 @@ export const MAP_NODE_LABELS = {
     10: "J",
     11: "K",
     12: "L",
-    13: "C"
+    13: "C",
+    16: "L",
   },
   "4-3": {
     1: "A",
@@ -295,7 +297,8 @@ export const MAP_NODE_LABELS = {
     17: "Q",
     18: "R",
     19: "S",
-    20: "T"
+    20: "T",
+    30: "T"
   },
   "5-1": {
     1: "A",

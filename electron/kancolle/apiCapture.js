@@ -476,6 +476,12 @@ async function handleKcsApiResponse(url, body, postData = '') {
     } else if (pathname.includes('/api_req_quest/')) {
       kancolleStore.updateQuestFromAction(pathname, requestParams);
       updatedQuest = true;
+    } else if (pathname === '/kcsapi/api_req_kousyou/remodel_slot') {
+      // 改修失敗時も資材は消費されるため、改修成否にかかわらず実行後の残量を反映する。
+      if (apiData && Array.isArray(apiData.api_after_material)) {
+        kancolleStore.updateMaterials(apiData.api_after_material);
+        updatedMaterial = true;
+      }
     } else if (pathname.includes('/api_req_kousyou/destroyitem')) {
       // レスポンスには廃棄後の装備一覧がないため、送信した保有装備IDを差分削除する。
       // destroyitem と destroyitem2 の両方を同じ前方一致で扱う。

@@ -538,7 +538,8 @@ export const MAP_NODE_LABELS = {
     17: "Q",
     18: "R",
     19: "S",
-    20: "T"
+    20: "T",
+    21: "O",
   }
 };
 

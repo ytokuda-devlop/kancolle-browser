@@ -1,6 +1,9 @@
 {
-  "name": "kankore-browser3",
+  "name": "Kancolle-browser",
+  "productName": "艦娘は今日もお仕事です（仮）",
   "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
   "description": "Kancolle Dedicated Browser",
   "main": "electron/main.js",
   "scripts": {

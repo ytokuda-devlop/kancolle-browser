@@ -144,6 +144,7 @@ export const MAP_NODE_LABELS = {
     13: "M",
     14: "N",
     15: "O",
+    16: "E",
     19: "O",
   },
   "3-1": {

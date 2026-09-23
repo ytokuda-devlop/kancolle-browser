@@ -1,0 +1,102 @@
+/*
+ * アプリ全体で共有するカラーテーマ、リセット、基本要素、共通ボタンのスタイル。
+ * すべての画面領域が参照するCSS変数と基礎的な見た目を定義する。
+ */
+
+/* 艦これ専用ブラウザの共通デザインシステム（夕暮れの泊地 - ミディアムダーク） */
+
+:root {
+  --bg-primary: #273549;
+  /* メイン背景色：薄暗いスレートブルー */
+  --bg-secondary: #1e293b;
+  /* コンポーネント背景色：スレート */
+  --bg-tertiary: #334155;
+  /* ホバー・アクティブ時の背景色 */
+  --text-primary: #f1f5f9;
+  /* メインテキストカラー：ソフトホワイト */
+  --text-secondary: #94a3b8;
+  /* サブテキストカラー：ライトスレート */
+  --accent-color: #f59e0b;
+  /* アクセントカラー：落ち着いたゴールド */
+  --accent-hover: #d97706;
+  /* アクセントホバーカラー */
+  --border-color: #334866;
+  /* ボーダーカラー */
+  --bottom-panel-bg: #1e293b;
+  --bottom-card-bg: #182232;
+  --bottom-border-color: #334866;
+  --bottom-text-secondary: #94a3b8;
+  --danger-color: #ef4444;
+  /* 警告色：赤 */
+  --success-color: #10b981;
+  /* 成功色：緑 */
+  --font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --transition-speed: 0.2s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  overflow: hidden;
+  /* スクロールバーを防ぎ、デスクトップアプリ風にする */
+}
+
+/* アプリケーションレイアウト */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ボタンの共通スタイル */
+.btn {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--transition-speed) ease;
+}
+
+.btn:hover {
+  background-color: var(--border-color);
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.2);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: var(--bg-primary);
+  border-color: var(--accent-color);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  color: var(--bg-primary);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+}
+

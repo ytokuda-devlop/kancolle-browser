@@ -1,0 +1,163 @@
+/*
+ * 右下のポイント、キャプチャ、録画操作と結果メッセージのスタイル。
+ * 操作ボタンの状態変化、処理中アニメーション、追加機能領域を定義する。
+ */
+
+/* ダミーのステータスパネル（第一フェーズ用のプレースホルダー） */
+.info-card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-card-header {
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.info-card-content {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.browser-controls {
+  display: grid;
+  gap: 6px;
+}
+
+.browser-controls-actions {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.browser-control-button {
+  min-width: 0;
+  height: 36px;
+  padding: 8px 6px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #fff;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  transition:
+    transform var(--transition-speed),
+    border-color var(--transition-speed),
+    box-shadow var(--transition-speed),
+    filter var(--transition-speed);
+}
+
+.browser-control-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  filter: brightness(1.14);
+}
+
+.browser-control-button:active:not(:disabled) {
+  transform: translateY(1px);
+  filter: brightness(0.95);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.browser-control-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.browser-control-screenshot {
+  background: linear-gradient(180deg, #0891b2, #0e7490);
+  border-color: #22d3ee;
+}
+
+.browser-control-screenshot:hover:not(:disabled) {
+  box-shadow: 0 5px 14px rgba(8, 145, 178, 0.48);
+}
+
+.browser-control-recording {
+  background: linear-gradient(180deg, #dc2626, #991b1b);
+  border-color: #f87171;
+}
+
+.browser-control-recording:hover:not(:disabled),
+.browser-control-recording.is-recording {
+  box-shadow: 0 5px 14px rgba(220, 38, 38, 0.48);
+}
+
+.browser-control-recording.is-recording {
+  animation: recording-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes recording-pulse {
+  50% {
+    filter: brightness(1.35);
+  }
+}
+
+.browser-control-point-charge {
+  background: linear-gradient(180deg, #ea580c, #c2410c);
+  border-color: #fb923c;
+}
+
+.browser-control-point-charge:hover:not(:disabled) {
+  box-shadow: 0 5px 14px rgba(234, 88, 12, 0.48);
+}
+
+.control-status {
+  margin-top: 7px;
+  overflow: hidden;
+  font-size: 0.7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.control-status-error {
+  color: #fca5a5;
+}
+
+.browser-control-button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.browser-control-button.is-loading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.button-spinner {
+  width: 11px;
+  height: 11px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.screenshot-status {
+  color: var(--text-secondary);
+}
+
+.recording-status {
+  color: #fca5a5;
+}
+
+
+.right-feature-panel {
+  flex: 1;
+  min-height: 0;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  padding: 8px;
+  overflow: hidden;
+}
+

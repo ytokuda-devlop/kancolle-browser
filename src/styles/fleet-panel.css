@@ -1,0 +1,447 @@
+/*
+ * 右側の艦隊選択、艦隊サマリー、艦娘カード、能力値、装備一覧のスタイル。
+ * HP・疲労度・熟練度・艦載機残数を含む艦隊表示全体を定義する。
+ */
+
+.fleet-panel {
+  width: 100%;
+  height: 840px;
+  background-color: var(--bg-secondary);
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  overflow: hidden;
+  flex: none;
+}
+
+
+.fleet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.fleet-selector-group {
+  display: flex;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 2px;
+  gap: 2px;
+  align-items: center;
+}
+
+.fleet-tab-button {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  padding: 4px 8px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  white-space: nowrap;
+}
+
+.fleet-tab-button:hover {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.fleet-tab-button.active {
+  color: var(--bg-primary);
+  background-color: var(--accent-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.fleet-summary {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  display: flex;
+  gap: 0px;
+}
+
+.fleet-summary-item {
+  background-color: var(--bg-primary);
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.fleet-summary-val {
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+/* 1列縦並びの艦娘グリッド */
+.fleet-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: calc((100% - 10px) / 6);
+  gap: 2px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.fleet-grid::-webkit-scrollbar {
+  width: 4px;
+}
+
+.fleet-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.fleet-grid::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 2px;
+}
+
+/* 艦娘ステータスカード */
+.ship-card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 4px 6px;
+  /* パディングを少し抑える */
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  /* ギャップをタイトに */
+  min-width: 0;
+  min-height: 110px; /* カードが潰れすぎないように最小高さを設定 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: border-color var(--transition-speed);
+}
+
+.ship-card-empty {
+  background-color: rgba(10, 15, 29, 0.35);
+  border-style: dashed;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.ship-card:hover {
+  border-color: var(--accent-color);
+}
+
+@keyframes taiha-pulse {
+  0% {
+    box-shadow: 0 0 4px rgba(255, 74, 74, 0.4);
+    border-color: rgba(255, 74, 74, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(255, 74, 74, 0.95);
+    border-color: rgba(255, 74, 74, 1.0);
+  }
+  100% {
+    box-shadow: 0 0 4px rgba(255, 74, 74, 0.4);
+    border-color: rgba(255, 74, 74, 0.6);
+  }
+}
+
+.ship-card-taiha {
+  animation: taiha-pulse 1.8s infinite ease-in-out;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.12) 0%, var(--bg-primary) 100%) !important;
+}
+
+.ship-header {
+  display: grid;
+  grid-template-columns: minmax(0, 200px) 44px minmax(100px, 1fr) 32px;
+  column-gap: 6px;
+  align-items: center;
+  font-size: 0.8rem;
+  min-width: 0;
+}
+
+.ship-identity {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr);
+  align-items: center;
+  gap: 4px;
+  font-weight: bold;
+  min-width: 0;
+}
+
+.ship-num {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+}
+
+.ship-name {
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ship-lv {
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.ship-hp-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 48px;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.ship-hp-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #1e293b;
+  border-radius: 3px;
+  justify-self: end;
+  overflow: hidden;
+  position: relative;
+}
+
+.ship-hp-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* HP状況による色分け */
+.hp-green {
+  background-color: var(--success-color);
+}
+
+.hp-yellow {
+  background-color: #eab308;
+}
+
+/* 小破 */
+.hp-orange {
+  background-color: #f97316;
+}
+
+/* 中破 */
+.hp-red {
+  background-color: var(--danger-color);
+}
+
+/* 大破 */
+
+.ship-hp-text {
+  font-size: 0.75rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 疲労度(cond値)の装飾 */
+.ship-cond {
+  font-size: 0.75rem;
+  padding: 1px 2px;
+  border-radius: 3px;
+  font-weight: bold;
+  min-width: 22px;
+  text-align: center;
+}
+
+.cond-spark {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.35) 0%, rgba(245, 158, 11, 0.1) 100%);
+  color: #fef08a;
+  border: 1px solid rgba(245, 158, 11, 0.6);
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.3);
+  text-shadow: 0 0 2px rgba(245, 158, 11, 0.5);
+}
+
+.cond-normal {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.cond-orange {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.35) 0%, rgba(249, 115, 22, 0.1) 100%);
+  color: #ffedd5;
+  border: 1px solid rgba(249, 115, 22, 0.6);
+  box-shadow: 0 0 4px rgba(249, 115, 22, 0.2);
+}
+
+.cond-red {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.4) 0%, rgba(239, 68, 68, 0.15) 100%);
+  color: #fee2e2;
+  border: 1px solid rgba(239, 68, 68, 0.75);
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.4);
+  animation: cond-red-pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes cond-red-pulse {
+  0% { box-shadow: 0 0 2px rgba(239, 68, 68, 0.2); }
+  50% { box-shadow: 0 0 10px rgba(239, 68, 68, 0.65); border-color: rgba(239, 68, 68, 1.0); }
+  100% { box-shadow: 0 0 2px rgba(239, 68, 68, 0.2); }
+}
+
+/* カードボディ部: パラメータ(左)と装備(右) */
+.ship-body {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.ship-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 56px);
+  gap: 1px 8px;
+  border-right: 1px solid var(--border-color);
+  padding-right: 8px;
+}
+
+.stat-item {
+  display: grid;
+  grid-template-columns: 24px 24px;
+  column-gap: 7px;
+  font-size: 0.65rem;
+  /* 0.7rem から 0.65rem へ縮小 */
+  color: var(--text-secondary);
+}
+
+.stat-val {
+  color: var(--text-primary);
+  font-weight: 500;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.ship-slots {
+  display: grid;
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  gap: 1px;
+  min-width: 0;
+  overflow: hidden;
+  padding-right: 2px;
+}
+
+.slot-item {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 38px 23px 38px;
+  align-items: center;
+  column-gap: 6px;
+  min-width: 0;
+  min-height: 0;
+  padding: 0 3px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.slot-item:nth-child(even) {
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.slot-item-expansion {
+  grid-row: 6;
+  border-top: 1px solid rgba(0, 175, 165, 0.22);
+}
+
+.slot-name {
+  grid-column: 1;
+  min-width: 0;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slot-meta {
+  display: contents;
+  font-variant-numeric: tabular-nums;
+}
+
+.slot-level {
+  grid-column: 2;
+  justify-self: end;
+  color: #00bfa5;
+  text-shadow: 0 0 2px rgba(0, 175, 165, 0.3);
+}
+
+.slot-alv {
+  grid-column: 3;
+  width: 19px;
+  height: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  flex: none;
+}
+
+.slot-alv .alv-mark {
+  display: block;
+  flex: none;
+}
+
+.alv-bars {
+  align-items: flex-end;
+}
+
+.alv-bars .alv-mark {
+  width: 2px;
+  height: 10px;
+  border-radius: 1px;
+  background: #38bdf8;
+  box-shadow: 0 0 3px rgba(56, 189, 248, 0.65);
+}
+
+.alv-slashes .alv-mark {
+  width: 2px;
+  height: 11px;
+  border-radius: 1px;
+  background: #facc15;
+  box-shadow: 0 0 3px rgba(250, 204, 21, 0.7);
+  transform: rotate(-25deg);
+}
+
+.alv-chevrons {
+  gap: 0;
+}
+
+.alv-chevrons .alv-mark {
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #facc15;
+  border-bottom: 2px solid #facc15;
+  filter: drop-shadow(0 0 2px rgba(250, 204, 21, 0.7));
+  transform: rotate(-45deg);
+}
+
+.alv-chevrons .alv-mark+.alv-mark {
+  margin-left: -2px;
+}
+
+.slot-aircraft {
+  grid-column: 4;
+  min-width: 32px;
+  text-align: right;
+}
+
+.slot-aircraft.aircraft-full {
+  color: var(--text-primary);
+}
+
+.slot-aircraft.aircraft-medium {
+  color: #facc15;
+}
+
+.slot-aircraft.aircraft-low {
+  color: #fb923c;
+}
+
+.slot-aircraft.aircraft-empty {
+  color: var(--danger-color);
+  font-weight: 700;
+}

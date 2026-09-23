@@ -1,0 +1,316 @@
+/*
+ * 画面下部の遠征・資材・入渠・建造・出撃・任務パネルのスタイル。
+ * 3カラム構成、各情報行、資材グリッド、残り時間などの表示を定義する。
+ */
+
+/* 下部情報パネル（遠征状況・入渠ドック） */
+.bottom-panel {
+  height: calc(100vh - 720px);
+  background-color: var(--bottom-panel-bg);
+  border-top: 1px solid var(--bottom-border-color);
+  display: flex;
+  padding: 8px;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.bottom-panel-main-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+}
+
+.bottom-panel-main-col .bottom-panel-col {
+  height: auto;
+  flex: 1;
+}
+
+/* 10資材と保有枠を2列6行でスクロールせず表示できる高さを確保する。 */
+.bottom-panel-main-col .material-col {
+  flex: 0 0 190px;
+}
+
+/* 右カラムは任務8件の一覧性を優先し、出撃情報を必要最小限にする。 */
+.bottom-panel-main-col .sortie-col {
+  flex: 0 0 96px;
+}
+
+.bottom-panel-main-col .quest-col {
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+.bottom-panel-col {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bottom-card-bg);
+  border: 1px solid var(--bottom-border-color);
+  border-radius: 6px 8px;
+  padding: 8px 6px;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 資材表示用グリッド */
+.material-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  padding: 4px 0px;
+}
+
+.material-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  padding: 0px 4px;
+  font-size: 0.8rem;
+}
+
+.material-label {
+  font-size: 0.72rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #ffffff;
+  min-width: 48px;
+  text-align: center;
+}
+
+.material-value {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  margin-left: 6px;
+}
+
+.capacity-label {
+  color: var(--bottom-text-secondary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* 各資材のラベルテーマカラー（プレミアム感のある配色） */
+.mat-fuel {
+  background-color: #1b4d3e;
+  /* 深い緑 */
+  border: 1px solid #2d6a4f;
+}
+
+.mat-ammo {
+  background-color: #7c5d10;
+  /* 深い黄色/金 */
+  border: 1px solid #9b720f;
+}
+
+.mat-steel {
+  background-color: #4a5568;
+  /* 鋼鉄グレー */
+  border: 1px solid #718096;
+}
+
+.mat-bauxite {
+  background-color: #8c381c;
+  /* ボーキサイト赤銅色 */
+  border: 1px solid #a0522d;
+}
+
+.mat-devco {
+  background-color: #1a4f7c;
+  /* 開発資材ブルー */
+  border: 1px solid #2b6cb0;
+}
+
+.mat-screw {
+  background-color: #553c9a;
+  /* 改修ネジパープル */
+  border: 1px solid #6b46c1;
+}
+
+.mat-bucket {
+  background-color: #124d4f;
+  /* バケツティール */
+  border: 1px solid #234e52;
+}
+
+.mat-burner {
+  background-color: #7b241c;
+  /* バーナーレッド */
+  border: 1px solid #922b21;
+}
+
+.mat-mamiya {
+  background-color: #765225;
+  border: 1px solid #a4773b;
+}
+
+.mat-irako {
+  background-color: #8a4562;
+  border: 1px solid #b85f82;
+}
+
+.panel-col-header {
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 2px;
+  border-right: 2px solid var(--bottom-border-color);
+  padding-right: 6px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 24px;
+}
+
+.panel-col-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+/* カスタムスクロールバー */
+.panel-col-content::-webkit-scrollbar {
+  width: 3px;
+}
+
+.panel-col-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.panel-col-content::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 1.5px;
+}
+
+.panel-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.row-label {
+  font-weight: bold;
+  margin-right: 4px;
+  color: var(--text-primary);
+  min-width: 60px;
+}
+
+.mission-fleet-label {
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+.row-time {
+  font-weight: bold;
+  min-width: 55px;
+  text-align: center;
+  margin-right: 6px;
+}
+
+.row-desc {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  color: var(--bottom-text-secondary);
+}
+
+.row-desc.is-active {
+  font-weight: bold;
+}
+
+.quest-row {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.quest-name {
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+  color: var(--text-primary);
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quest-progress-rate {
+  flex: none;
+  width: 28px;
+  color: var(--text-primary);
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.sortie-content {
+  justify-content: center;
+  min-width: 0;
+  gap: 3px;
+  font-size: 0.72rem;
+}
+
+.sortie-heading,
+.sortie-map {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 6px;
+}
+
+.sortie-fleet,
+.sortie-map-code {
+  flex: none;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.sortie-event-badge {
+  padding: 1px 5px;
+  border: 1px solid #f59e0b;
+  border-radius: 3px;
+  color: #fbbf24;
+  font-size: 0.62rem;
+  font-weight: bold;
+}
+
+.sortie-map-name {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text-primary);
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sortie-position,
+.sortie-gauge {
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.sortie-empty {
+  color: var(--bottom-text-secondary);
+}
+

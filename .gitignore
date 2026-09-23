@@ -36,3 +36,7 @@ pnpm-debug.log*
 # Temporary backup files
 *.bak
 
+# Task
+TASK.md
+
+audits/

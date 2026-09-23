@@ -29,6 +29,7 @@
     "wait-on": "^7.2.0"
   },
   "build": {
+    "afterPack": "./scripts/after-pack.cjs",
     "appId": "jp.ytokuda.kancollebrowser",
     "productName": "艦娘は今日もお仕事です（仮）",
     "directories": {
@@ -59,6 +60,7 @@
       }
     ],
     "mac": {
+      "executableName": "KancolleBrowser",
       "category": "public.app-category.games",
       "target": [
         "dmg",
@@ -76,6 +78,12 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "ytokuda-devlop",
+      "repo": "kancolle-browser",
+      "releaseType": "draft"
     }
   }
 }

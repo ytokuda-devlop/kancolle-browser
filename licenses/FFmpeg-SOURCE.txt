@@ -1,0 +1,72 @@
+FFmpegおよびアプリ結合作品の対応ソース提供記録
+更新日: 2026-09-23
+状態: 配布準備中。公開先はGitHub Releases。対応ソースは未確保で、個別URLは未確定。
+
+この文書は現時点の準備状況を示す。未確定の項目を埋め、実際に対応ソースを
+取得できることを検証してから配布する。この文書だけではソース提供は完了しない。
+
+1. 共通の配布方針
+  対象OS: macOS、Windows 11。
+  アプリの公開先: GitHub Releases。
+  対応ソースは同じリリースに添付し、リリース説明とこの文書から案内する計画。
+  公開リポジトリ・リリースタグ・添付ファイルのURL: 未確定。
+  GitHubが自動生成するリポジトリのソースZIPだけで、FFmpegや依存物の
+  完全な対応ソースを提供できたとは扱わない。
+  現在のソースコード構成を維持する。詳細はDISTRIBUTION-NOTES.txtを参照。
+  ffmpeg-static: 5.3.0、GPL-3.0-or-later。
+  インストール済みパッケージの既定バイナリリリースタグ: b6.1.1。
+  このタグだけでは各成果物のバイナリや完全な対応ソースを特定できない。
+
+2. macOS
+  配布対象CPUアーキテクチャ: arm64（Apple Silicon）、x64（Intel）の両方。
+  以下の未記録・未確保項目は、arm64・x64それぞれについて確認する。
+  既存のローカル記録: ffmpeg-build-configuration.txt。
+  記録されたバージョン: FFmpeg 6.1.1-tessus。
+  記録された提供元表示: https://evermeet.cx/ffmpeg/
+  記録されたライセンス: GPL version 3 or later。
+  実際の配布バイナリの取得URL: 未記録。
+  SHA-256: x64の展開済みアプリについては下記に記録。arm64は未記録。
+  対応ソース、組込みライブラリ、パッチ、ビルド資料: 未確保・未検証。
+  対応ソース提供URLまたは同梱パス: 未確定。
+  既存記録は最終成果物との一致を未検証であり、別アーキテクチャには流用しない。
+
+  2026-09-23 macOS x64の追加実行記録:
+    実行対象: release/mac/KancolleBrowser.app/Contents/Resources/
+              app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg
+    SHA-256: ebdddc936f61e14049a2d4b549a412b8a40deeff6540e58a9f2a2da9e6b18894
+    ffmpeg -version: ffmpeg/darwin-x64/version.txt（標準出力）
+    ffmpeg -L: ffmpeg/darwin-x64/license.txt（標準出力）
+               ffmpeg/darwin-x64/license-stderr.txt（標準エラー）
+    両コマンドの終了コードは0。-versionの標準エラーは空。
+    完全な実行記録: ffmpeg/darwin-x64/capture.json。
+    インストール済みnode_modules内のバイナリとSHA-256が一致。
+    ZIP／DMG内のバイナリとの照合は未実施。arm64版は未取得・未実行。
+    上記の取得URLと対応ソースに関する未完了事項は継続する。
+
+3. Windows 11
+  配布対象CPUアーキテクチャ: x64（確定）。
+  実際の配布バイナリの取得URL・SHA-256: 未記録。
+  ffmpeg -version / ffmpeg -Lの出力: 未取得。
+  バージョン・適用ライセンス: 最終成果物に含むバイナリで確認する。
+  対応ソース、組込みライブラリ、パッチ、ビルド資料: 未確保・未検証。
+  対応ソース提供URLまたは同梱パス: 未確定。
+  macOSの記録で代用しない。
+
+4. 配布前に確定するソース提供情報
+  OS・CPUアーキテクチャごとに、成果物とFFmpeg実行ファイルのSHA-256、
+  取得元、バージョン、ライセンス出力を記録する。
+  FFmpeg本体と静的リンクされたx264、x265等の組込みライブラリについて、
+  配布バイナリに正確に対応するソース、適用パッチ、必要なビルドスクリプト・
+  設定を確保し、ソースアーカイブの識別情報と提供場所を記載する。
+  アプリ結合作品についても、配布版のコミット、独自コード、ffmpeg-staticの
+  対応ソース、必要なビルド・インストール用資料とその提供場所を記載する。
+
+  ネット配布ではGPLv3第6条(d)に従い、バイナリのダウンロード場所から
+  対応ソースへ明確に案内し、追加料金なしで同等に取得できるようにする方法が
+  利用できる。別サーバーを使う場合も、必要な期間の提供責任は配布者にある。
+  一般的なプロジェクトURLや最新版ソースへのリンクだけで代用しない。
+
+参考（以下はプロジェクト案内であり、完全な対応ソースの提供先ではない）
+  https://github.com/eugeneware/ffmpeg-static
+  https://ffmpeg.org/legal.html
+  https://www.gnu.org/licenses/gpl-3.0.html

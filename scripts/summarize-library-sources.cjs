@@ -38,6 +38,10 @@ if (subtitle) {
   const match = subtitle.stderr.match(/libass source: commit: (\S+-g([a-f0-9]{40}))/);
   assert(match, 'Missing libass source revision');
   runtime.libass = { version: match[1], revision: match[2], run: 'subtitle', evidence: 'subtitle-library-probe.json' };
+  const shaper = subtitle.stderr.match(/Shaper: FriBidi ([\d.]+) \(SIMPLE\) HarfBuzz-ng ([\d.]+)/);
+  assert(shaper, 'Missing subtitle shaper versions');
+  runtime.fribidi = { version: shaper[1], run: 'subtitle', evidence: 'subtitle-library-probe.json' };
+  runtime.harfbuzz = { version: shaper[2], run: 'subtitle', evidence: 'subtitle-library-probe.json' };
 }
 const sdkOnly = new Set(['AMF', 'AviSynthPlus', 'ffnvcodec']);
 for (const library of manifest.libraries) {
@@ -61,8 +65,13 @@ for (const library of manifest.libraries) {
     const run = library.runtime.run === 'subtitle' ? subtitle : probes.runs.find(r => r.name === library.runtime.run);
     assert((run.stderr + (run.outputStrings || []).join('\n')).includes(library.runtime.version));
     library.correspondence = library.name === 'x265' ? 'CONFLICT: README revision differs from runtime; corresponding source unresolved'
-      : 'runtime-revision-matched-upstream-candidate; local-patches-unverified';
-    if (library.name !== 'x265' && source.commit) assert(source.commit.startsWith(library.runtime.revision));
+      : library.runtime.revision ? 'runtime-revision-matched-upstream-candidate; local-patches-unverified'
+      : 'runtime-base-version-consistent; exact-revision-and-local-patches-unverified';
+    if (library.name !== 'x265' && library.runtime.revision) {
+      if (source.commit) assert(source.commit.startsWith(library.runtime.revision));
+      else assert(source.url.includes('/' + library.runtime.revision + '.tar.gz'), 'Source URL revision mismatch');
+    }
+    if (!library.runtime.revision) assert(library.readmeVersion.replace(/^v/, '').startsWith(library.runtime.version + '-'));
   }
 }
 const projectUrls = {
@@ -99,7 +108,10 @@ manifest.libraryInvestigation = {
   readmeLibraryCount: manifest.libraries.length, unversionedLibraryCount: manifest.unversionedLibraries.length,
   downloadedLibraryArchives: records.filter(r => !r.plan.parent && r.status === 'upstream-candidate-acquired').length,
   downloadedSubmoduleArchives: records.filter(r => r.plan.parent && r.status === 'upstream-candidate-acquired').length,
-  runtimeMatched: Object.keys(runtime).filter(name => name !== 'x265'), runtimeConflicts: ['x265'],
+  runtimeMatched: Object.keys(runtime).filter(name => name !== 'x265' && runtime[name].revision),
+  runtimeBaseVersionConsistent: Object.keys(runtime).filter(name => !runtime[name].revision),
+  runtimeConflicts: ['x265'],
+  evidenceMode: 'Historical Windows binary execution records; no binary executed by this script.',
   additionalReview: 'DEPENDENCY-REVIEW.md',
   transitiveDependencyReview: ['libogg', 'OpenSSL', 'libpng', 'expat', 'nettle/hogweed', 'libtasn1', 'p11-kit', 'libintl', 'compiler/thread runtimes'],
   limits: ['Transitive dependency list is a review list, not a proven bill of materials.',
@@ -112,7 +124,7 @@ write(base + 'sources.json', JSON.stringify(manifest, null, 2) + '\n');
 const rows = manifest.libraries.map(l => {
   const s = records.find(s => 'library-sources/' + s.name + '.json' === l.sourceEvidence);
   const kind = sdkOnly.has(l.name) ? 'ヘッダー／外部DLL' : '静的ライブラリ／dispatcher';
-  const result = l.name === 'x265' ? '**実物と不一致・未確定**' : l.runtime ? '実行時revision一致、パッチ未確認' : 'README指定の候補、実物との対応未確認';
+  const result = l.name === 'x265' ? '**実物と不一致・未確定**' : l.runtime?.revision ? '実行時revision一致、パッチ未確認' : l.runtime ? '基本版は整合、revision・パッチ未確認' : 'README指定の候補、実物との対応未確認';
   return `| ${l.name} | ${l.readmeVersion} | ${l.runtime?.version || '未取得'} | ${kind} | ${s.status === 'upstream-candidate-acquired' ? `[取得記録](${l.sourceEvidence})` : '未確定'} | ${result} |`;
 });
 rows.push(...manifest.unversionedLibraries.map(l => `| ${l.name} | 記載なし | 未確定 | 静的ライブラリ候補 | ${l.sourceEvidence ? `[候補調査](${l.sourceEvidence})` : '未取得'} | 正確なrevision未確定。追加調査参照 |`));
@@ -120,6 +132,8 @@ const report = `# Windows x64の組込みライブラリとソース調査
 
 対象バイナリSHA-256: \`${probes.sha256}\`。
 macOSは今回の対象外、arm64は今バージョン非対応。
+実行時情報は保存済みWindows実行記録を照合したもの。この一覧生成ではバイナリを実行しない。
+現在のアーカイブ実在・内容検証は[ローカル検証記録](library-source-verification.json)を参照。
 
 **全体は未完了。** x264・libaom・libvpxは実行時revisionとソース候補の対応を確認した。
 libassの追加照合、oneVPL・版不明9件・推移的依存物の追加調査は[DEPENDENCY-REVIEW.md](DEPENDENCY-REVIEW.md)を参照。
@@ -175,6 +189,8 @@ ${rows.join('\n')}
 今後の公開用ファイルとして保管し、リリース前に公開URLとダウンロード可能性を確認する。
 取得スクリプト: \`scripts/acquire-library-sources.ps1\`（版の固定情報はlibrary-source-plan.json）。
 検証・一覧更新: \`node scripts/summarize-library-sources.cjs\`。
+macOS等での復元・内容検証: \`python3 scripts/verify-library-sources.py --restore --report licenses/ffmpeg/win32-x64/library-source-verification.json\`。
+未取得・ハッシュ不一致・未解決記録がある場合は終了コード1。復元成功をバイナリ対応の確定とは扱わない。
 提供元への確認文案は[SOURCE-REQUEST.md](SOURCE-REQUEST.md)（未送信）。
 `;
 write(base + 'LIBRARY-SOURCES.md', report);

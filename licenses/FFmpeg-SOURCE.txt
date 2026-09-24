@@ -87,7 +87,11 @@ FFmpegおよびアプリ結合作品の対応ソース提供記録
     COPYING.GPLv3、Makefile、fftools/ffmpeg.c、libavcodec/avcodec.hの収録を確認。
     ソース内RELEASEは6.1.1。同梱バイナリの-versionと提供元READMEの版表示も一致。
     完全なコミットIDの取得記録: ffmpeg/win32-x64/ffmpeg-commit.json。
-    本体ソースはGit管理可能なthird_party/配下へ保管した（未コミット・未公開）。
+    本体ソースはthird_party/配下へ保管済み（Git追跡済み・公開状況は未確認）。
+    2026-09-24: 保存済みアーカイブのSHA-256・全8288エントリの読み取り、
+    RELEASE・主要ファイル・README・実行記録の対応を再検証した。
+    再検証: python3 scripts/verify-ffmpeg-source.py（プロジェクトルート）。
+    今回の環境にはWindows成果物がなく、バイナリは過去の実行記録による確認。
     ビルド成果物への自動同梱対象ではない。取得時のrelease/内コピーも保持している。
     リリース前に完全な一式を保存・添付し、公開URLと取得可否を確認する。
 
@@ -140,6 +144,14 @@ FFmpegおよびアプリ結合作品の対応ソース提供記録
   一般的なプロジェクトURLや最新版ソースへのリンクだけで代用しない。
 
 5. 取得済み資料と内部確認用パッケージ（Windows x64限定）
+  2026-09-24追加検証: この環境にないライブラリアーカイブ41件を復元し、
+  全ファイル・ライセンス収録・SHA-256を検証。個別結果は
+  ffmpeg/win32-x64/library-source-verification.json。
+  40件は旧ハッシュと一致。libaomは再取得ハッシュが異なるため、公式コミットの
+  Gitツリーとの一致を別途検証し、旧ハッシュも履歴として保持した。
+  詳細: ffmpeg/win32-x64/DEPENDENCY-REVIEW.md。
+  復元・検証: python3 scripts/verify-library-sources.py --restore
+  oneVPL等の未解決と完全な対応ソース未確保は継続。アーカイブはGit管理対象外。
   FFmpeg本体の取得URL・revision・SHA-256: ffmpeg/win32-x64/sources.json。
   ライブラリ／サブモジュールの取得URL・revision・SHA-256:
     ffmpeg/win32-x64/library-sources/*.json。

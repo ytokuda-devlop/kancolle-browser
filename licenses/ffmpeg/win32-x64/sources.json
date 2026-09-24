@@ -58,7 +58,8 @@
         "version": "3.8.0-180-g0eeb62d344",
         "revision": "0eeb62d344",
         "run": "aom"
-      }
+      },
+      "upstreamCommit": "0eeb62d344b2ffabfc238813b43c677755a63c29"
     },
     {
       "name": "AviSynthPlus",
@@ -119,10 +120,15 @@
       "configureFlag": "--enable-libfribidi",
       "integration": "static-library-or-dispatcher",
       "sourceEvidence": "library-sources/fribidi.json",
-      "correspondence": "readme-candidate; binary-revision-and-local-patches-unverified",
+      "correspondence": "runtime-base-version-consistent; exact-revision-and-local-patches-unverified",
       "localArchive": "third_party/ffmpeg/win32-x64/libraries/fribidi-source.tar.gz",
       "upstreamCommit": "5b9a242cbbb0cf27d20da9941667abfc63808c19",
-      "submoduleEvidence": []
+      "submoduleEvidence": [],
+      "runtime": {
+        "version": "1.0.13",
+        "run": "subtitle",
+        "evidence": "subtitle-library-probe.json"
+      }
     },
     {
       "name": "gsm",
@@ -148,10 +154,15 @@
       "configureFlag": "--enable-libharfbuzz",
       "integration": "static-library-or-dispatcher",
       "sourceEvidence": "library-sources/harfbuzz.json",
-      "correspondence": "readme-candidate; binary-revision-and-local-patches-unverified",
+      "correspondence": "runtime-base-version-consistent; exact-revision-and-local-patches-unverified",
       "localArchive": "third_party/ffmpeg/win32-x64/libraries/harfbuzz-source.tar.gz",
       "upstreamCommit": "d455066ad24ff39e74b7a7cb8001ea8bd20caacc",
-      "submoduleEvidence": []
+      "submoduleEvidence": [],
+      "runtime": {
+        "version": "8.3.0",
+        "run": "subtitle",
+        "evidence": "subtitle-library-probe.json"
+      }
     },
     {
       "name": "lame",
@@ -647,7 +658,7 @@
     }
   ],
   "libraryInvestigation": {
-    "checkedAt": "2026-09-24T01:23:33.841Z",
+    "checkedAt": "2026-09-24T11:20:34.944Z",
     "binarySha256": "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00",
     "complete": false,
     "runtimeEvidence": "library-probes.json",
@@ -662,9 +673,14 @@
       "vpx",
       "libass"
     ],
+    "runtimeBaseVersionConsistent": [
+      "fribidi",
+      "harfbuzz"
+    ],
     "runtimeConflicts": [
       "x265"
     ],
+    "evidenceMode": "Historical Windows binary execution records; no binary executed by this script.",
     "additionalReview": "DEPENDENCY-REVIEW.md",
     "transitiveDependencyReview": [
       "libogg",

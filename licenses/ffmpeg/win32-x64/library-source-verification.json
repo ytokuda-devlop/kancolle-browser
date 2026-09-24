@@ -1,0 +1,559 @@
+{
+  "checkedAt": "2026-09-24T11:20:36.620458+00:00",
+  "scope": "Windows x64 upstream source candidate archive integrity only",
+  "binaryExecuted": false,
+  "completeCorrespondingSource": false,
+  "results": [
+    {
+      "name": "AMF",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/AMF-source.tar.gz",
+      "sha256": "afcb7aae71c3735c8afd34d3ef5ab9c1d21c07fd551599a0cd710d811f6a7e01",
+      "archiveEntries": 5363,
+      "licenseEntries": [
+        "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/LICENSE.txt",
+        "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/Thirdparty/amd/AmdDxExt/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "AviSynthPlus-filesystem",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/AviSynthPlus-filesystem-source.tar.gz",
+      "sha256": "cc1c5439d29031477868bdea25b68b4210dc8ed018bb63a65e708afe405db4e1",
+      "archiveEntries": 43,
+      "licenseEntries": [
+        "filesystem-3f1c185ab414e764c694b8171d1c4d8c5c437517/LICENSE"
+      ]
+    },
+    {
+      "name": "AviSynthPlus",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/AviSynthPlus-source.tar.gz",
+      "sha256": "7fd2c55972d322ab91d1ff8d3d5be926b76345d0c4bf44e2a3f74c3a351436c1",
+      "archiveEntries": 893,
+      "licenseEntries": [
+        "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/distrib/docs/english/source/avisynthdoc/license.rst",
+        "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/plugins/TimeStretch/SoundTouch/COPYING.TXT"
+      ]
+    },
+    {
+      "name": "OpenSSL",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/OpenSSL-source.tar.gz",
+      "sha256": "c7ab227479e26e1536fe1256a96315fa09ca39af377c7cbee863d53a99046d6c",
+      "archiveEntries": 4798,
+      "licenseEntries": [
+        "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/LICENSE.txt",
+        "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/external/perl/Text-Template-1.56/LICENSE",
+        "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/util/perl/OpenSSL/copyright.pm"
+      ]
+    },
+    {
+      "name": "SDL",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/SDL-source.tar.gz",
+      "sha256": "54ed2d42fb987b941f38ebe466f422432be98a27f5402787fe55915a192768ec",
+      "archiveEntries": 2097,
+      "licenseEntries": [
+        "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/LICENSE.txt",
+        "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Xcode-iOS/Demos/data/bitmapfont/license.txt",
+        "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Xcode/SDL/pkg-support/resources/License.txt",
+        "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/LICENSE-bsd.txt",
+        "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/LICENSE-gpl3.txt",
+        "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/LICENSE-orig.txt",
+        "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/LICENSE.txt",
+        "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/video/yuv2rgb/LICENSE",
+        "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/test/COPYING",
+        "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/visualtest/COPYING.txt"
+      ]
+    },
+    {
+      "name": "aom",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/aom-source.tar.gz",
+      "sha256": "ac50fd1848b1916c9965bab3e76473eb6f1f8b825ca0bf86cb446e43b488887d",
+      "archiveEntries": 1422,
+      "licenseEntries": [
+        "LICENSE",
+        "third_party/SVT-AV1/LICENSE.md",
+        "third_party/fastfeat/LICENSE",
+        "third_party/googletest/src/LICENSE",
+        "third_party/libwebm/LICENSE.TXT",
+        "third_party/libyuv/LICENSE",
+        "third_party/vector/LICENSE",
+        "third_party/x86inc/LICENSE"
+      ]
+    },
+    {
+      "name": "bzlib",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/bzlib-source.tar.gz",
+      "sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+      "archiveEntries": 56,
+      "licenseEntries": [
+        "bzip2-1.0.8/LICENSE"
+      ]
+    },
+    {
+      "name": "expat",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/expat-source.tar.gz",
+      "sha256": "81e02291cffb1cbba6669886b9943fa9c61bcdaac577017638737c19f35a0d0b",
+      "archiveEntries": 174,
+      "licenseEntries": [
+        "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/COPYING",
+        "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/COPYING"
+      ]
+    },
+    {
+      "name": "ffnvcodec",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/ffnvcodec-source.tar.gz",
+      "sha256": "2693d3a5ca3c48b64deadc27b6c05632834acc31906d9a5bf7ef26393d14a254",
+      "archiveEntries": 12,
+      "licenseEntries": [
+        "nv-codec-headers-75f032b24263c2b684b9921755cafc1c08e41b9d/include/ffnvcodec/nvEncodeAPI.h"
+      ]
+    },
+    {
+      "name": "freetype-dlg",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/freetype-dlg-source.tar.gz",
+      "sha256": "f46472bea5854cf3c738f0e7aea90d7b0645629ec78fdf7a67bf7696955e7446",
+      "archiveEntries": 38,
+      "licenseEntries": [
+        "dlg-72dfcc858c040c54a6a0b88fcb7e70ee186d3167/LICENSE"
+      ]
+    },
+    {
+      "name": "freetype",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/freetype-source.tar.gz",
+      "sha256": "da541ec0fc99514a8aea8ccc8ec4f955c19d17556e1888374fc564cb31e1c437",
+      "archiveEntries": 804,
+      "licenseEntries": [
+        "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/LICENSE.TXT"
+      ]
+    },
+    {
+      "name": "fribidi",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/fribidi-source.tar.gz",
+      "sha256": "47682e6ffeef425e01c1a401840f5f4c04041a5c0498ea3846e7725ff6d0c450",
+      "archiveEntries": 148,
+      "licenseEntries": [
+        "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/COPYING"
+      ]
+    },
+    {
+      "name": "gmp",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/gmp-source.tar.xz",
+      "sha256": "fd4829912cddd12f84181c3451cc752be224643e87fac497b69edddadc49b4f2",
+      "archiveEntries": 2275,
+      "licenseEntries": [
+        "gmp-6.2.1/COPYING",
+        "gmp-6.2.1/COPYINGv2",
+        "gmp-6.2.1/COPYING.LESSERv3",
+        "gmp-6.2.1/COPYINGv3"
+      ]
+    },
+    {
+      "name": "gnutls",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/gnutls-source.tar.xz",
+      "sha256": "1b79b381ac283d8b054368b335c408fedcb9b7144e0c07f531e3537d4328f3b3",
+      "archiveEntries": 6713,
+      "licenseEntries": [
+        "gnutls-3.6.16/doc/examples/tlsproxy/LICENSE",
+        "gnutls-3.6.16/doc/COPYING",
+        "gnutls-3.6.16/doc/COPYING.LESSER",
+        "gnutls-3.6.16/lib/inih/LICENSE.txt",
+        "gnutls-3.6.16/lib/accelerated/x86/license.txt",
+        "gnutls-3.6.16/src/libopts/COPYING.gplv3",
+        "gnutls-3.6.16/src/libopts/COPYING.lgplv3",
+        "gnutls-3.6.16/src/libopts/COPYING.mbsd",
+        "gnutls-3.6.16/LICENSE"
+      ]
+    },
+    {
+      "name": "gsm",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/gsm-source.tar.gz",
+      "sha256": "f0072e91f6bb85a878b2f6dbf4a0b7c850c4deb8049d554c65340b3bf69df0ac",
+      "archiveEntries": 68,
+      "licenseEntries": [
+        "gsm-1.0-pl22/COPYRIGHT"
+      ]
+    },
+    {
+      "name": "harfbuzz",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/harfbuzz-source.tar.gz",
+      "sha256": "a84fa920c429e0519fdf8997577de0f198b17e088bc5720eb7702fd39cf98342",
+      "archiveEntries": 3661,
+      "licenseEntries": [
+        "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/COPYING",
+        "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/src/ms-use/COPYING",
+        "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/COPYING",
+        "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/aots/COPYING",
+        "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/text-rendering-tests/COPYING"
+      ]
+    },
+    {
+      "name": "lame",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/lame-source.tar.gz",
+      "sha256": "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e",
+      "archiveEntries": 352,
+      "licenseEntries": [
+        "lame-3.100/COPYING",
+        "lame-3.100/LICENSE",
+        "lame-3.100/debian/copyright"
+      ]
+    },
+    {
+      "name": "libass",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/libass-source.tar.gz",
+      "sha256": "54fd200410efd33cfee3cffc9768645e6052e65cc0aa5bf9fc4b82f598c11d18",
+      "archiveEntries": 128,
+      "licenseEntries": [
+        "libass-c047dd2ea16f73abb4f448e6db3637158c1226d0/COPYING"
+      ]
+    },
+    {
+      "name": "libgme",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/libgme-source.tar.gz",
+      "sha256": "525734a133a87213a5cd72815d43d9ee49031805de87ac0f5c66c8f8a02f01d9",
+      "archiveEntries": 146,
+      "licenseEntries": [
+        "game-music-emu-e76bdc0cb916e79aa540290e6edd0c445879d3ba/license.gpl2.txt",
+        "game-music-emu-e76bdc0cb916e79aa540290e6edd0c445879d3ba/license.txt"
+      ]
+    },
+    {
+      "name": "libssh",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/libssh-source.tar.xz",
+      "sha256": "07392c54ab61476288d1c1f0a7c557b50211797ad00c34c3af2bbc4dbc4bd97d",
+      "archiveEntries": 465,
+      "licenseEntries": [
+        "libssh-0.10.4/COPYING",
+        "libssh-0.10.4/doc/that_style/LICENSE",
+        "libssh-0.10.4/cmake/Modules/COPYING-CMAKE-SCRIPTS"
+      ]
+    },
+    {
+      "name": "libtheora",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/libtheora-source.tar.xz",
+      "sha256": "f36da409947aa2b3dcc6af0a8c2e3144bc19db2ed547d64e9171c59c66561c61",
+      "archiveEntries": 344,
+      "licenseEntries": [
+        "libtheora-1.1.1/LICENSE",
+        "libtheora-1.1.1/COPYING"
+      ]
+    },
+    {
+      "name": "libwebp",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/libwebp-source.tar.gz",
+      "sha256": "bb84185d6f419b4b2f855fd1140105b01eb52b55886fb33c7afa0ef8f1ee4e5f",
+      "archiveEntries": 354,
+      "licenseEntries": [
+        "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/COPYING"
+      ]
+    },
+    {
+      "name": "nettle",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/nettle-source.tar.gz",
+      "sha256": "364f3e2b77cd7dcde83fd7c45219c834e54b0c75e428b6f894a23d12dd41cbfe",
+      "archiveEntries": 919,
+      "licenseEntries": [
+        "nettle-3.8.1/COPYINGv3",
+        "nettle-3.8.1/COPYING.LESSERv3",
+        "nettle-3.8.1/COPYINGv2"
+      ]
+    },
+    {
+      "name": "oneVPL",
+      "sourceRecordStatus": "unresolved",
+      "status": "unresolved",
+      "error": "Commit resolution failed: https://api.github.com/repos/intel/libvpl/commits/v2.9.0"
+    },
+    {
+      "name": "opencore-amr",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/opencore-amr-source.tar.gz",
+      "sha256": "483eb4061088e2b34b358e47540b5d495a96cd468e361050fae615b1809dc4a1",
+      "archiveEntries": 491,
+      "licenseEntries": [
+        "opencore-amr-0.1.6/LICENSE"
+      ]
+    },
+    {
+      "name": "openmpt",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/openmpt-source.tar.gz",
+      "sha256": "441585a59b7317ce57a11edf79850e14e910998c99a98668d23dc345725850cc",
+      "archiveEntries": 7216,
+      "licenseEntries": [
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/LICENSE",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/contrib/libmodplug-0.8.8.5/LICENSE",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/contrib/libmodplug-0.8.9.0/LICENSE",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/ancient/LICENSE",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/flac/COPYING.Xiph",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/genie/LICENSE",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/lame/COPYING",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/lhasa/COPYING",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/minimp3/LICENSE",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/miniz/LICENSE",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/mpg123/COPYING",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/nlohmann-json/LICENSE.MIT",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/ogg/COPYING",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/opus/COPYING",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/opusenc/COPYING",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/opusfile/COPYING",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/portaudio/LICENSE.txt",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/portaudio/bindings/cpp/COPYING",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/LICENSE.txt",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/binmodules/luasocket/LICENSE",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/LICENSE",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/modules/android/LICENSE.txt",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/modules/d/LICENSE.txt",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/modules/xcode/LICENSE.TXT",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/packages/debian/copyright",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/pugixml/LICENSE.md",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/r8brain/LICENSE",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/rtmidi/License.txt",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/soundtouch/COPYING.TXT",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/unrar/license.txt",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/vorbis/COPYING",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/zlib/LICENSE",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/src/mpt/LICENSE.BSD-3-Clause.txt",
+        "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/src/mpt/LICENSE.BSL-1.0.txt"
+      ]
+    },
+    {
+      "name": "opus",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/opus-source.tar.gz",
+      "sha256": "5a55f50891bcfc37b82733ac8439320b55bdc70db2e040c70125afb41d14c21a",
+      "archiveEntries": 442,
+      "licenseEntries": [
+        "opus-c85499757c148fede8604cffa12454206b6138ba/COPYING",
+        "opus-c85499757c148fede8604cffa12454206b6138ba/LICENSE_PLEASE_READ.txt"
+      ]
+    },
+    {
+      "name": "rubberband",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/rubberband-source.tar.gz",
+      "sha256": "75b57d116642174eeb45b29ce932647121872185028b2cb02d16e86faccaf699",
+      "archiveEntries": 109,
+      "licenseEntries": [
+        "rubberband-afdb914d0b853f445ef4582720966701527ade5b/COPYING",
+        "rubberband-afdb914d0b853f445ef4582720966701527ade5b/src/kissfft/COPYING",
+        "rubberband-afdb914d0b853f445ef4582720966701527ade5b/src/speex/COPYING"
+      ]
+    },
+    {
+      "name": "speex",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/speex-source.tar.gz",
+      "sha256": "bbb6d50c9cfa1db5023e628a6b5cda608592c222fdfc75f13f61ddd6f50bf194",
+      "archiveEntries": 310,
+      "licenseEntries": [
+        "speex-3693431241915ae71ff6f7f84ec56eca2198b037/COPYING"
+      ]
+    },
+    {
+      "name": "srt",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/srt-source.tar.gz",
+      "sha256": "5e23dc0d1f5e25835a7f43d83782320c03c414388e297b6c76c2a3bcf256108f",
+      "archiveEntries": 334,
+      "licenseEntries": [
+        "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/LICENSE"
+      ]
+    },
+    {
+      "name": "vidstab",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/vidstab-source.tar.gz",
+      "sha256": "6b51f3efd6b8500c92f3c5d25e158f813d3be078c31c9b480c7ea791b6725e5e",
+      "archiveEntries": 94,
+      "licenseEntries": [
+        "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/LICENSE"
+      ]
+    },
+    {
+      "name": "vmaf",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/vmaf-source.tar.gz",
+      "sha256": "147b7ae12548ab8fd9b5e86dd93bd792e237756870c5a435bc1c0b789bdcb1dd",
+      "archiveEntries": 1020,
+      "licenseEntries": [
+        "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/LICENSE"
+      ]
+    },
+    {
+      "name": "vo-amrwbenc",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/vo-amrwbenc-source.tar.gz",
+      "sha256": "5652b391e0f0e296417b841b02987d3fd33e6c0af342c69542cbb016a71d9d4e",
+      "archiveEntries": 160,
+      "licenseEntries": [
+        "vo-amrwbenc-0.1.3/COPYING"
+      ]
+    },
+    {
+      "name": "vorbis",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/vorbis-source.tar.gz",
+      "sha256": "97cfed8b9acb13bf7ec7410b6f303b69c312fc17a009298e9b8a7356cfe8ce7f",
+      "archiveEntries": 460,
+      "licenseEntries": [
+        "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/COPYING",
+        "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/debian/copyright"
+      ]
+    },
+    {
+      "name": "vpx",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/vpx-source.tar.gz",
+      "sha256": "ba4ba50418bd566a55f7603ba7b7743843b59215216eceb0d597a9f048da5698",
+      "archiveEntries": 1321,
+      "licenseEntries": [
+        "libvpx-655da33b89770dff923b409267a566ab08330922/LICENSE",
+        "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/googletest/src/LICENSE",
+        "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/libwebm/LICENSE.TXT",
+        "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/libyuv/LICENSE",
+        "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/x86inc/LICENSE"
+      ]
+    },
+    {
+      "name": "x264",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/x264-source.tar.gz",
+      "sha256": "c42b923fc4c0c8e992fdf4970bf7970cc16bf870d28be460bb9bb1c5bb4044b8",
+      "archiveEntries": 288,
+      "licenseEntries": [
+        "x264-c1c9931dc87289b8aeba78150467f17bdb97d019/COPYING"
+      ]
+    },
+    {
+      "name": "x265",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/x265-source.tar.gz",
+      "sha256": "cf0c54a8f13b9c7015512ae6092ebadab5ba2aa4a48290b6d6e06d3d9f0bc17e",
+      "archiveEntries": 397,
+      "licenseEntries": [
+        "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/COPYING",
+        "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/dynamicHDR10/LICENSE.txt",
+        "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/dynamicHDR10/json11/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "xvid",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/xvid-source.tar.gz",
+      "sha256": "abbdcbd39555691dd1c9b4d08f0a031376a3b211652c0d8b3b8aa9be1303ce2d",
+      "archiveEntries": 265,
+      "licenseEntries": [
+        "xvidcore/LICENSE",
+        "xvidcore/vfw/LICENSE"
+      ]
+    },
+    {
+      "name": "zeromq",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/zeromq-source.tar.gz",
+      "sha256": "65d021968f90d61fd50d8e50409bdd494b040602bfb043e1bd5647ab035db3b4",
+      "archiveEntries": 909,
+      "licenseEntries": [
+        "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/LICENSE",
+        "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/external/sha1/license.txt",
+        "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/external/unity/license.txt",
+        "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/external/wepoll/license.txt",
+        "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/packaging/debian/copyright"
+      ]
+    },
+    {
+      "name": "zimg-googletest",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/zimg-googletest-source.tar.gz",
+      "sha256": "2765fbfaa978e90d1c8477bc2f2b9705be65b1b562bb215dbfaa76567d508fe1",
+      "archiveEntries": 294,
+      "licenseEntries": [
+        "googletest-e2239ee6043f73722e7aa812a459f54a28552929/LICENSE",
+        "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googlemock/scripts/generator/LICENSE"
+      ]
+    },
+    {
+      "name": "zimg-graphengine",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/zimg-graphengine-source.tar.gz",
+      "sha256": "a4ddaae7dcb81e30d09915c25c27aecb799d0a5e64df1cf43158a86e6940d0fb",
+      "archiveEntries": 71,
+      "licenseEntries": [
+        "graphengine-509c1c3a9a3561945a1acd3b9bb1219763fe7c57/COPYING"
+      ]
+    },
+    {
+      "name": "zimg",
+      "sourceRecordStatus": "upstream-candidate-acquired",
+      "status": "verified",
+      "archive": "third_party/ffmpeg/win32-x64/libraries/zimg-source.tar.gz",
+      "sha256": "d8974cf74944565d8c2452e0ac49d68107b42dc7872baf0e2008d2268faff22f",
+      "archiveEntries": 321,
+      "licenseEntries": [
+        "zimg-71431815950664f1e11b9ee4e5d4ba23d6d997f1/COPYING",
+        "zimg-71431815950664f1e11b9ee4e5d4ba23d6d997f1/test/extra/musl-libm/COPYRIGHT"
+      ]
+    }
+  ]
+}

@@ -40,3 +40,5 @@ pnpm-debug.log*
 TASK.md
 
 audits/
+docs/
+tests/

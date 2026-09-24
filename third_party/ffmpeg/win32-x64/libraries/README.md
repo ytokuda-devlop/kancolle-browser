@@ -4,7 +4,8 @@
 各アーカイブのURL、コミット、SHA-256、ライセンスの収録位置は、プロジェクトルートの
 `licenses/ffmpeg/win32-x64/library-sources/*.json`に記録している。
 
-アーカイブは大容量のためGit管理対象外。現在のローカル環境には保存されているが、
+アーカイブは大容量のためGit管理対象外。取得済み記録だけでは手元での実在を保証しないため、
+現在の環境で`verify-library-sources.py`を実行して確認する。
 クローンやアプリ配布物には自動では含まれない。ソース提供を完了したとは扱わない。
 元のFFmpeg本体アーカイブは親ディレクトリにあり、今回追加の除外対象ではない。
 
@@ -14,6 +15,19 @@
 .\scripts\acquire-library-sources.ps1
 node scripts/summarize-library-sources.cjs
 ```
+
+macOS等ではPython 3とcurlで記録済みアーカイブを復元・検証できる。
+
+```sh
+python3 scripts/verify-library-sources.py --restore --report licenses/ffmpeg/win32-x64/library-source-verification.json
+```
+
+`--restore`を省略すると通信せず、現在のファイルを検証する。
+SHA-256、全ファイルの読み取り、エントリ数、記録されたライセンスの収録を確認する。
+ハッシュが異なる既存ファイルを上書きせず、再取得物も一致した場合だけ保存する。
+`--names x264 x265`で対象を限定できる。未取得・検証失敗・oneVPL等の未解決記録が
+あれば終了コード1となる。検証記録の`verified`はアーカイブの完全性のみを示し、
+配布バイナリとの完全な対応やパッチの確認を意味しない。
 
 既存の取得記録がある場合、保存済みのURLから復元し、記録済みSHA-256との一致を必須とする。
 既存ファイルや再取得ファイルが記録と異なる場合は停止する。初回取得のハッシュ記録自体は、

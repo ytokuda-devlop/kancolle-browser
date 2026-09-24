@@ -30,6 +30,7 @@
   },
   "build": {
     "afterPack": "./scripts/after-pack.cjs",
+    "artifactBuildCompleted": "./scripts/after-artifact-build.cjs",
     "appId": "jp.ytokuda.kancollebrowser",
     "productName": "艦娘は今日もお仕事です（仮）",
     "directories": {

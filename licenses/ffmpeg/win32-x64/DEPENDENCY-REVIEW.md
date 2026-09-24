@@ -69,3 +69,31 @@ libintl、コンパイラ・スレッドランタイム等も存在・版・配�
 再検証: `node scripts/investigate-library-versions.cjs --runtime`。
 ハッシュ照合・一覧更新: `node scripts/summarize-library-sources.cjs`。
 提供元への確認文案は[SOURCE-REQUEST.md](SOURCE-REQUEST.md)（未送信）。
+
+## 保存ソースの再取得・内容検証（2026-09-24）
+
+このmacOS環境ではGit管理対象外のアーカイブが欠けていたため、取得記録から
+37ライブラリ候補と4サブモジュールを復元した。40件は過去のSHA-256と一致。
+全41件の全ファイル読み取り・エントリ数・ライセンス収録を検証した。
+[ローカル検証記録](library-source-verification.json)に個別結果を保存。
+oneVPLはソース未確定のため、全件検証コマンドの終了コードは1となる。
+Windowsバイナリはこの環境に存在せず、実行時情報は過去の記録との照合である。
+
+libaomは同じGitiles URLからの再取得SHA-256が変化した。
+旧ファイルが手元にないため、圧縮方式だけの変化とは断定できない。
+公式Gitilesの[コミット情報](https://aomedia.googlesource.com/aom/+/0eeb62d344b2ffabfc238813b43c677755a63c29?format=JSON)
+を[aom-commit.json](aom-commit.json)へ保存し、新アーカイブの全ファイル・実行ビット・
+シンボリックリンクからGit blob/treeハッシュを再構成した。
+結果は公式tree `8c97547b6fbc5c31309e41c9f2dfdd69b9fc670e`と一致した。
+完全なコミットIDは`0eeb62d344b2ffabfc238813b43c677755a63c29`。
+旧SHA-256を[library-sources/aom.json](library-sources/aom.json)の
+`previousAcquisition`に残し、新SHA-256と検証根拠を記録した。
+再計算: `python3 scripts/source-archive-git-tree.py third_party/ffmpeg/win32-x64/libraries/aom-source.tar.gz`。
+提供元がこの上流ソースを無改変で使ったことの証明ではない。
+`build-materials.json`は旧アーカイブを調べた過去の記録であり、新ファイルの監査記録として流用しない。
+
+x265の復元済みREADME指定ソースも再確認した。
+`source/cmake/Version.cmake`はGit作業ツリー、Mercurial、アーカイブの版ファイルを
+分岐して参照するため、`x265Version.txt`単独ではビルドに使われた版を確定できない。
+同ファイルは`3.5+1-f0c1022b6`相当で、記録された実行時版`3.5+113-8787af124`を
+説明しない。不一致は未解決のままとし、提供元のソース・生成版情報・ビルド記録が必要。

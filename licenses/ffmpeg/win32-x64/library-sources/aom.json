@@ -1,28 +1,42 @@
 {
-    "name":  "aom",
-    "checkedAt":  "2026-09-23T11:34:14.2602369Z",
-    "status":  "upstream-candidate-acquired",
-    "plan":  {
-                 "name":  "aom",
-                 "url":  "https://aomedia.googlesource.com/aom/+archive/0eeb62d344.tar.gz"
-             },
-    "patchStatus":  "unverified",
-    "url":  "https://aomedia.googlesource.com/aom/+archive/0eeb62d344.tar.gz",
-    "archive":  "third_party/ffmpeg/win32-x64/libraries/aom-source.tar.gz",
-    "sha256":  "6747069be2477023a1eb38448ce078ef54bcc16b5e50365683db2d9365adf0e6",
-    "bytes":  5557641,
-    "archiveEntryCount":  1422,
-    "licenseEntries":  [
-                           "LICENSE",
-                           "third_party/SVT-AV1/LICENSE.md",
-                           "third_party/fastfeat/LICENSE",
-                           "third_party/googletest/src/LICENSE",
-                           "third_party/libwebm/LICENSE.TXT",
-                           "third_party/libyuv/LICENSE",
-                           "third_party/vector/LICENSE",
-                           "third_party/x86inc/LICENSE"
-                       ],
-    "submoduleFiles":  [
-
-                       ]
+  "name": "aom",
+  "checkedAt": "2026-09-24T11:20:23.188450+00:00",
+  "status": "upstream-candidate-acquired",
+  "plan": {
+    "name": "aom",
+    "url": "https://aomedia.googlesource.com/aom/+archive/0eeb62d344.tar.gz"
+  },
+  "patchStatus": "unverified",
+  "url": "https://aomedia.googlesource.com/aom/+archive/0eeb62d344.tar.gz",
+  "archive": "third_party/ffmpeg/win32-x64/libraries/aom-source.tar.gz",
+  "sha256": "ac50fd1848b1916c9965bab3e76473eb6f1f8b825ca0bf86cb446e43b488887d",
+  "bytes": 5558520,
+  "archiveEntryCount": 1422,
+  "licenseEntries": [
+    "LICENSE",
+    "third_party/SVT-AV1/LICENSE.md",
+    "third_party/fastfeat/LICENSE",
+    "third_party/googletest/src/LICENSE",
+    "third_party/libwebm/LICENSE.TXT",
+    "third_party/libyuv/LICENSE",
+    "third_party/vector/LICENSE",
+    "third_party/x86inc/LICENSE"
+  ],
+  "submoduleFiles": [],
+  "previousAcquisition": {
+    "checkedAt": "2026-09-23T11:34:14.2602369Z",
+    "sha256": "6747069be2477023a1eb38448ce078ef54bcc16b5e50365683db2d9365adf0e6",
+    "bytes": 5557641,
+    "note": "Original archive is absent in this workspace; byte-for-byte restoration failed. Old and new archive contents cannot be compared."
+  },
+  "commit": "0eeb62d344b2ffabfc238813b43c677755a63c29",
+  "commitUrl": "https://aomedia.googlesource.com/aom/+/0eeb62d344b2ffabfc238813b43c677755a63c29",
+  "treeVerification": {
+    "expected": "8c97547b6fbc5c31309e41c9f2dfdd69b9fc670e",
+    "computed": "8c97547b6fbc5c31309e41c9f2dfdd69b9fc670e",
+    "commitEvidence": "licenses/ffmpeg/win32-x64/aom-commit.json",
+    "method": "Reconstructed Git blob/tree hashes from every file, mode and symlink in the rootless Gitiles archive.",
+    "script": "scripts/source-archive-git-tree.py",
+    "result": "matches upstream commit tree; provider modifications remain unverified"
+  }
 }

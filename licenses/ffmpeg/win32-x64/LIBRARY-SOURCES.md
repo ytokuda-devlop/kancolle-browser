@@ -2,6 +2,8 @@
 
 対象バイナリSHA-256: `04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00`。
 macOSは今回の対象外、arm64は今バージョン非対応。
+実行時情報は保存済みWindows実行記録を照合したもの。この一覧生成ではバイナリを実行しない。
+現在のアーカイブ実在・内容検証は[ローカル検証記録](library-source-verification.json)を参照。
 
 **全体は未完了。** x264・libaom・libvpxは実行時revisionとソース候補の対応を確認した。
 libassの追加照合、oneVPL・版不明9件・推移的依存物の追加調査は[DEPENDENCY-REVIEW.md](DEPENDENCY-REVIEW.md)を参照。
@@ -45,9 +47,9 @@ URL、完全なコミットID（GitHub取得分）、SHA-256、ライセンス�
 | AviSynthPlus | v3.7.3-38-geb3c4330 | 未取得 | ヘッダー／外部DLL | [取得記録](library-sources/AviSynthPlus.json) | README指定の候補、実物との対応未確認 |
 | ffnvcodec | n12.1.14.0-1-g75f032b | 未取得 | ヘッダー／外部DLL | [取得記録](library-sources/ffnvcodec.json) | README指定の候補、実物との対応未確認 |
 | freetype | VER-2-13-2 | 未取得 | 静的ライブラリ／dispatcher | [取得記録](library-sources/freetype.json) | README指定の候補、実物との対応未確認 |
-| fribidi | v1.0.13-2-g5b9a242 | 未取得 | 静的ライブラリ／dispatcher | [取得記録](library-sources/fribidi.json) | README指定の候補、実物との対応未確認 |
+| fribidi | v1.0.13-2-g5b9a242 | 1.0.13 | 静的ライブラリ／dispatcher | [取得記録](library-sources/fribidi.json) | 基本版は整合、revision・パッチ未確認 |
 | gsm | 1.0.22 | 未取得 | 静的ライブラリ／dispatcher | [取得記録](library-sources/gsm.json) | README指定の候補、実物との対応未確認 |
-| harfbuzz | 8.3.0-41-gd455066ad | 未取得 | 静的ライブラリ／dispatcher | [取得記録](library-sources/harfbuzz.json) | README指定の候補、実物との対応未確認 |
+| harfbuzz | 8.3.0-41-gd455066ad | 8.3.0 | 静的ライブラリ／dispatcher | [取得記録](library-sources/harfbuzz.json) | 基本版は整合、revision・パッチ未確認 |
 | lame | 3.100 | 未取得 | 静的ライブラリ／dispatcher | [取得記録](library-sources/lame.json) | README指定の候補、実物との対応未確認 |
 | libass | 0.17.0-63-gc047dd2 | 0.17.0-63-gc047dd2ea16f73abb4f448e6db3637158c1226d0 | 静的ライブラリ／dispatcher | [取得記録](library-sources/libass.json) | 実行時revision一致、パッチ未確認 |
 | libgme | 0.6.3 | 未取得 | 静的ライブラリ／dispatcher | [取得記録](library-sources/libgme.json) | README指定の候補、実物との対応未確認 |
@@ -98,4 +100,6 @@ URL、完全なコミットID（GitHub取得分）、SHA-256、ライセンス�
 今後の公開用ファイルとして保管し、リリース前に公開URLとダウンロード可能性を確認する。
 取得スクリプト: `scripts/acquire-library-sources.ps1`（版の固定情報はlibrary-source-plan.json）。
 検証・一覧更新: `node scripts/summarize-library-sources.cjs`。
+macOS等での復元・内容検証: `python3 scripts/verify-library-sources.py --restore --report licenses/ffmpeg/win32-x64/library-source-verification.json`。
+未取得・ハッシュ不一致・未解決記録がある場合は終了コード1。復元成功をバイナリ対応の確定とは扱わない。
 提供元への確認文案は[SOURCE-REQUEST.md](SOURCE-REQUEST.md)（未送信）。

@@ -1,5 +1,6 @@
 const path = require('node:path');
 const fs = require('node:fs/promises');
+const crypto = require('node:crypto');
 
 async function filesUnder(directory, prefix = '') {
   const files = [];
@@ -25,6 +26,7 @@ async function verify(projectDir, resourcesDir) {
   }
   const pairs = files.map(file => [path.join(sourceDir, file), file]);
   pairs.push(...['LICENSE', 'THIRD_PARTY_NOTICES.md'].map(file => [path.join(projectDir, file), file]));
+  const verified = [];
   for (const [source, relative] of pairs) {
     const destination = path.join(resourcesDir, 'licenses', relative);
     const expected = await fs.readFile(source);
@@ -32,8 +34,11 @@ async function verify(projectDir, resourcesDir) {
     if (!expected.length || !expected.equals(actual)) {
       throw new Error(`Empty or mismatched packaged license: ${destination}`);
     }
+    verified.push({ path: relative.split(path.sep).join('/'), bytes: actual.length,
+      sha256: crypto.createHash('sha256').update(actual).digest('hex') });
   }
   console.log(`Verified ${pairs.length} license files outside ASAR: ${resourcesDir}`);
+  return { fileCount: verified.length, files: verified };
 }
 
 module.exports = verify;

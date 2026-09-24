@@ -1,0 +1,25 @@
+{
+    "name":  "speex",
+    "checkedAt":  "2026-09-23T11:35:42.1770998Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "speex",
+                 "repo":  "xiph/speex",
+                 "ref":  "3693431"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "3693431241915ae71ff6f7f84ec56eca2198b037",
+    "commitUrl":  "https://github.com/xiph/speex/commit/3693431241915ae71ff6f7f84ec56eca2198b037",
+    "commitDate":  "2023-05-25T05:27:36Z",
+    "url":  "https://codeload.github.com/xiph/speex/tar.gz/3693431241915ae71ff6f7f84ec56eca2198b037",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/speex-source.tar.gz",
+    "sha256":  "bbb6d50c9cfa1db5023e628a6b5cda608592c222fdfc75f13f61ddd6f50bf194",
+    "bytes":  1047963,
+    "archiveEntryCount":  310,
+    "licenseEntries":  [
+                           "speex-3693431241915ae71ff6f7f84ec56eca2198b037/COPYING"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

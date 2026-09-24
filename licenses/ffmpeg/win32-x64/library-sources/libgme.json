@@ -1,0 +1,26 @@
+{
+    "name":  "libgme",
+    "checkedAt":  "2026-09-23T11:35:05.1446328Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "libgme",
+                 "repo":  "libgme/game-music-emu",
+                 "ref":  "0.6.3"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "e76bdc0cb916e79aa540290e6edd0c445879d3ba",
+    "commitUrl":  "https://github.com/libgme/game-music-emu/commit/e76bdc0cb916e79aa540290e6edd0c445879d3ba",
+    "commitDate":  "2020-02-25T01:28:10Z",
+    "url":  "https://codeload.github.com/libgme/game-music-emu/tar.gz/e76bdc0cb916e79aa540290e6edd0c445879d3ba",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/libgme-source.tar.gz",
+    "sha256":  "525734a133a87213a5cd72815d43d9ee49031805de87ac0f5c66c8f8a02f01d9",
+    "bytes":  315137,
+    "archiveEntryCount":  146,
+    "licenseEntries":  [
+                           "game-music-emu-e76bdc0cb916e79aa540290e6edd0c445879d3ba/license.gpl2.txt",
+                           "game-music-emu-e76bdc0cb916e79aa540290e6edd0c445879d3ba/license.txt"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

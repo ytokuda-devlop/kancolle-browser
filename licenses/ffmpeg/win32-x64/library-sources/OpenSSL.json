@@ -1,0 +1,28 @@
+{
+    "name":  "OpenSSL",
+    "checkedAt":  "2026-09-24T01:10:58.9894217Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "OpenSSL",
+                 "repo":  "openssl/openssl",
+                 "ref":  "openssl-3.0.7",
+                 "note":  "Transitive dependency candidate from source paths and version string."
+             },
+    "patchStatus":  "unverified",
+    "commit":  "19cc035b6c6f2283573d29c7ea7f7d675cf750ce",
+    "commitUrl":  "https://github.com/openssl/openssl/commit/19cc035b6c6f2283573d29c7ea7f7d675cf750ce",
+    "commitDate":  "2022-11-01T14:14:36Z",
+    "url":  "https://codeload.github.com/openssl/openssl/tar.gz/19cc035b6c6f2283573d29c7ea7f7d675cf750ce",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/OpenSSL-source.tar.gz",
+    "sha256":  "c7ab227479e26e1536fe1256a96315fa09ca39af377c7cbee863d53a99046d6c",
+    "bytes":  15261142,
+    "archiveEntryCount":  4798,
+    "licenseEntries":  [
+                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/LICENSE.txt",
+                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/external/perl/Text-Template-1.56/LICENSE",
+                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/util/perl/OpenSSL/copyright.pm"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

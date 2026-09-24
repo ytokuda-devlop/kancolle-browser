@@ -1,0 +1,24 @@
+{
+    "name":  "nettle",
+    "checkedAt":  "2026-09-24T01:10:21.3223278Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "nettle",
+                 "url":  "https://ftp.gnu.org/gnu/nettle/nettle-3.8.1.tar.gz",
+                 "note":  "Transitive dependency candidate from source paths."
+             },
+    "patchStatus":  "unverified",
+    "url":  "https://ftp.gnu.org/gnu/nettle/nettle-3.8.1.tar.gz",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/nettle-source.tar.gz",
+    "sha256":  "364f3e2b77cd7dcde83fd7c45219c834e54b0c75e428b6f894a23d12dd41cbfe",
+    "bytes":  2406251,
+    "archiveEntryCount":  919,
+    "licenseEntries":  [
+                           "nettle-3.8.1/COPYINGv3",
+                           "nettle-3.8.1/COPYING.LESSERv3",
+                           "nettle-3.8.1/COPYINGv2"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

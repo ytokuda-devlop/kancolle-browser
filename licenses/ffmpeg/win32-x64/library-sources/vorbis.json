@@ -1,0 +1,26 @@
+{
+    "name":  "vorbis",
+    "checkedAt":  "2026-09-23T11:35:52.8639047Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "vorbis",
+                 "repo":  "xiph/vorbis",
+                 "ref":  "84c02369"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "84c023699cdf023a32fa4ded32019f194afcdad0",
+    "commitUrl":  "https://github.com/xiph/vorbis/commit/84c023699cdf023a32fa4ded32019f194afcdad0",
+    "commitDate":  "2021-05-12T16:51:20Z",
+    "url":  "https://codeload.github.com/xiph/vorbis/tar.gz/84c023699cdf023a32fa4ded32019f194afcdad0",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/vorbis-source.tar.gz",
+    "sha256":  "97cfed8b9acb13bf7ec7410b6f303b69c312fc17a009298e9b8a7356cfe8ce7f",
+    "bytes":  1237915,
+    "archiveEntryCount":  460,
+    "licenseEntries":  [
+                           "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/COPYING",
+                           "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/debian/copyright"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

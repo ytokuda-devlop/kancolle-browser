@@ -77,7 +77,8 @@ package and is governed by the license terms of that particular build.
 - GPL text: `licenses/GPL-3.0.txt`
 
 This application invokes the FFmpeg executable as a separate process to
-convert recordings to MP4. The recorded macOS x64 executable reports
+convert recordings to MP4. The recorded Windows x64 executable reports
+FFmpeg 6.1.1-essentials_build-www.gyan.dev. The recorded macOS x64 executable reports
 FFmpeg 6.1.1-tessus with GPL and version-3 components enabled. It also reports a
 number of statically linked libraries, including x264 and x265. Builds
 downloaded for another operating system or CPU architecture may have different versions,

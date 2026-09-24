@@ -1,0 +1,25 @@
+{
+    "name":  "srt",
+    "checkedAt":  "2026-09-23T11:35:43.1649800Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "srt",
+                 "repo":  "Haivision/srt",
+                 "ref":  "02acd18"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "02acd186d9c25d1efa064dc8bdc40ba76d410164",
+    "commitUrl":  "https://github.com/Haivision/srt/commit/02acd186d9c25d1efa064dc8bdc40ba76d410164",
+    "commitDate":  "2023-12-26T16:51:18Z",
+    "url":  "https://codeload.github.com/Haivision/srt/tar.gz/02acd186d9c25d1efa064dc8bdc40ba76d410164",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/srt-source.tar.gz",
+    "sha256":  "5e23dc0d1f5e25835a7f43d83782320c03c414388e297b6c76c2a3bcf256108f",
+    "bytes":  1715697,
+    "archiveEntryCount":  334,
+    "licenseEntries":  [
+                           "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/LICENSE"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

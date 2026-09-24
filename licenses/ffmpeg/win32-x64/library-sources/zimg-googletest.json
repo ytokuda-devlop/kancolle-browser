@@ -1,0 +1,34 @@
+{
+    "name":  "zimg-googletest",
+    "checkedAt":  "2026-09-23T12:32:21.7461811Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "zimg-googletest",
+                 "repo":  "google/googletest",
+                 "parent":  "zimg",
+                 "submodulePath":  "test/extra/googletest"
+             },
+    "patchStatus":  "unverified",
+    "submodule":  {
+                      "url":  "https://github.com/google/googletest.git",
+                      "parent":  "zimg",
+                      "path":  "test/extra/googletest",
+                      "commit":  "e2239ee6043f73722e7aa812a459f54a28552929",
+                      "parentCommit":  "71431815950664f1e11b9ee4e5d4ba23d6d997f1"
+                  },
+    "commit":  "e2239ee6043f73722e7aa812a459f54a28552929",
+    "commitUrl":  "https://github.com/google/googletest/commit/e2239ee6043f73722e7aa812a459f54a28552929",
+    "commitDate":  "2021-06-11T17:42:26Z",
+    "url":  "https://codeload.github.com/google/googletest/tar.gz/e2239ee6043f73722e7aa812a459f54a28552929",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/zimg-googletest-source.tar.gz",
+    "sha256":  "2765fbfaa978e90d1c8477bc2f2b9705be65b1b562bb215dbfaa76567d508fe1",
+    "bytes":  887296,
+    "archiveEntryCount":  294,
+    "licenseEntries":  [
+                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/LICENSE",
+                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googlemock/scripts/generator/LICENSE"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

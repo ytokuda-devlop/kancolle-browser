@@ -1,0 +1,27 @@
+{
+    "name":  "ffnvcodec",
+    "checkedAt":  "2026-09-23T12:23:15.1399632Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "ffnvcodec",
+                 "repo":  "FFmpeg/nv-codec-headers",
+                 "ref":  "75f032b",
+                 "licenseHeader":  "include/ffnvcodec/nvEncodeAPI.h"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "75f032b24263c2b684b9921755cafc1c08e41b9d",
+    "commitUrl":  "https://github.com/FFmpeg/nv-codec-headers/commit/75f032b24263c2b684b9921755cafc1c08e41b9d",
+    "commitDate":  "2023-10-06T13:22:28Z",
+    "url":  "https://codeload.github.com/FFmpeg/nv-codec-headers/tar.gz/75f032b24263c2b684b9921755cafc1c08e41b9d",
+    "licenseNote":  "License notice is embedded in this header, not a standalone LICENSE file. Other headers retain their original notices.",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/ffnvcodec-source.tar.gz",
+    "sha256":  "2693d3a5ca3c48b64deadc27b6c05632834acc31906d9a5bf7ef26393d14a254",
+    "bytes":  79613,
+    "archiveEntryCount":  12,
+    "licenseEntries":  [
+                           "nv-codec-headers-75f032b24263c2b684b9921755cafc1c08e41b9d/include/ffnvcodec/nvEncodeAPI.h"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

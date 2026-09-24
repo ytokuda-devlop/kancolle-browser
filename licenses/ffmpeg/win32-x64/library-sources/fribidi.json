@@ -1,0 +1,25 @@
+{
+    "name":  "fribidi",
+    "checkedAt":  "2026-09-23T11:34:28.9111754Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "fribidi",
+                 "repo":  "fribidi/fribidi",
+                 "ref":  "5b9a242"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "5b9a242cbbb0cf27d20da9941667abfc63808c19",
+    "commitUrl":  "https://github.com/fribidi/fribidi/commit/5b9a242cbbb0cf27d20da9941667abfc63808c19",
+    "commitDate":  "2023-12-09T06:30:49Z",
+    "url":  "https://codeload.github.com/fribidi/fribidi/tar.gz/5b9a242cbbb0cf27d20da9941667abfc63808c19",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/fribidi-source.tar.gz",
+    "sha256":  "47682e6ffeef425e01c1a401840f5f4c04041a5c0498ea3846e7725ff6d0c450",
+    "bytes":  2110564,
+    "archiveEntryCount":  148,
+    "licenseEntries":  [
+                           "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/COPYING"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

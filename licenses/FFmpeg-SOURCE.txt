@@ -1,15 +1,19 @@
 FFmpegおよびアプリ結合作品の対応ソース提供記録
-更新日: 2026-09-23
-状態: 配布準備中。公開先はGitHub Releases。対応ソースは未確保で、個別URLは未確定。
+更新日: 2026-09-24
+状態: 配布準備中。Windows x64のFFmpeg本体ソース取得済み。
+完全な対応ソース一式は未確保。公開先はGitHub Releases、個別公開URLは未確定。
 
 この文書は現時点の準備状況を示す。未確定の項目を埋め、実際に対応ソースを
 取得できることを検証してから配布する。この文書だけではソース提供は完了しない。
 
 1. 共通の配布方針
   対象OS: macOS、Windows 11。
+  今回の作業範囲: Windows 11 x64のみ。macOS x64は別途対応。
+  arm64はOSを問わず今バージョン非対応。ビルド既定ターゲットもx64に限定する。
   アプリの公開先: GitHub Releases。
   対応ソースは同じリリースに添付し、リリース説明とこの文書から案内する計画。
-  公開リポジトリ・リリースタグ・添付ファイルのURL: 未確定。
+  package.jsonの公開先設定: https://github.com/ytokuda-devlop/kancolle-browser/releases
+  公開アクセス・リリースタグ・添付ファイルのURL: 未検証／未確定。
   GitHubが自動生成するリポジトリのソースZIPだけで、FFmpegや依存物の
   完全な対応ソースを提供できたとは扱わない。
   現在のソースコード構成を維持する。詳細はDISTRIBUTION-NOTES.txtを参照。
@@ -18,14 +22,14 @@ FFmpegおよびアプリ結合作品の対応ソース提供記録
   このタグだけでは各成果物のバイナリや完全な対応ソースを特定できない。
 
 2. macOS
-  配布対象CPUアーキテクチャ: arm64（Apple Silicon）、x64（Intel）の両方。
-  以下の未記録・未確保項目は、arm64・x64それぞれについて確認する。
+  配布対象CPUアーキテクチャ: x64（Intel）。今回の作業対象外。
+  arm64は今バージョン非対応。以下は既存記録として保持する。
   既存のローカル記録: ffmpeg-build-configuration.txt。
   記録されたバージョン: FFmpeg 6.1.1-tessus。
   記録された提供元表示: https://evermeet.cx/ffmpeg/
   記録されたライセンス: GPL version 3 or later。
   実際の配布バイナリの取得URL: 未記録。
-  SHA-256: x64の展開済みアプリについては下記に記録。arm64は未記録。
+  SHA-256: x64の展開済みアプリについては下記に記録。
   対応ソース、組込みライブラリ、パッチ、ビルド資料: 未確保・未検証。
   対応ソース提供URLまたは同梱パス: 未確定。
   既存記録は最終成果物との一致を未検証であり、別アーキテクチャには流用しない。
@@ -40,15 +44,84 @@ FFmpegおよびアプリ結合作品の対応ソース提供記録
     両コマンドの終了コードは0。-versionの標準エラーは空。
     完全な実行記録: ffmpeg/darwin-x64/capture.json。
     インストール済みnode_modules内のバイナリとSHA-256が一致。
-    ZIP／DMG内のバイナリとの照合は未実施。arm64版は未取得・未実行。
+    ZIP／DMG内のバイナリとの照合は未実施。arm64版は非対応。
     上記の取得URLと対応ソースに関する未完了事項は継続する。
 
 3. Windows 11
   配布対象CPUアーキテクチャ: x64（確定）。
-  実際の配布バイナリの取得URL・SHA-256: 未記録。
-  ffmpeg -version / ffmpeg -Lの出力: 未取得。
-  バージョン・適用ライセンス: 最終成果物に含むバイナリで確認する。
-  対応ソース、組込みライブラリ、パッチ、ビルド資料: 未確保・未検証。
+  バージョン: 6.1.1-essentials_build-www.gyan.dev。
+  ライセンス: GPL version 3 or later（同梱バイナリの-Lで確認）。
+  提供元: Gyan Doshi / gyan.dev、再配布元: eugeneware/ffmpeg-static b6.1.1。
+  バイナリ取得URL:
+    https://github.com/eugeneware/ffmpeg-static/releases/download/b6.1.1/ffmpeg-win32-x64.gz
+  展開後バイナリSHA-256:
+    04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00
+  実行対象: release/win-unpacked/resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg.exe
+  配布元gzipを展開したバイナリ、node_modules、展開済みアプリの3者でハッシュ一致。
+  PEヘッダーのAMD64も確認。
+  2026-09-23追加確認: 現存NSIS／portable成果物から抽出・照合済み。
+    release/kancolle-browser_Setup_1.0.0_x64.exe（NSIS）
+    release/kancolle-browser_1.0.0_x64.exe（portable）
+  各exeの$PLUGINSDIR/app-64.7z内のresources/app.asar.unpacked/
+  node_modules/ffmpeg-static/ffmpeg.exeを7-Zipで抽出し、上記SHA-256との一致を確認。
+  インストーラーは実行していない。
+  提供元・取得URL・各成果物と内部アーカイブのSHA-256・FFmpegのSHA-256:
+    ffmpeg/win32-x64/artifacts.json
+  再実行: プロジェクトルートで .\scripts\audit-ffmpeg-win-artifacts.ps1
+  この記録は現存成果物に限定する。再ビルド・署名等で変更した場合は再監査する。
+  capture.jsonの最終成果物未照合という注記は初回取得時の状態であり、
+  今回の追加照合結果はartifacts.jsonを参照する。
+  実行記録: ffmpeg/win32-x64/capture.json（日時、URL、gzipハッシュ、全stdout/stderr）。
+  -version / -L / -buildconf: すべて終了コード0。
+  出力は同ディレクトリのversion.txt、license.txt、license-stderr.txt、
+  buildconf.txt、buildconf-stderr.txtにも保存。空の出力はcapture.jsonのみへ記録。
+  提供元README・ライセンス原文: 同ディレクトリのupstream.README、upstream.LICENSE。
+
+  FFmpeg本体ソース（提供元READMEが指定したコミット）:
+    e38092ef9395d7049f871ef4d5411eb410e283e0
+    https://codeload.github.com/FFmpeg/FFmpeg/tar.gz/e38092ef93
+    ローカル保存先（プロジェクトルート基準）:
+      third_party/ffmpeg/win32-x64/ffmpeg-e38092ef93.tar.gz
+    SHA-256: 9a8c6f3f87d7e1550dfafd2adc8d8265d021f594e46c71da2ed3123b4763e571
+    2026-09-23検証済み: アーカイブ全8288エントリを読み取り、configure、
+    COPYING.GPLv3、Makefile、fftools/ffmpeg.c、libavcodec/avcodec.hの収録を確認。
+    ソース内RELEASEは6.1.1。同梱バイナリの-versionと提供元READMEの版表示も一致。
+    完全なコミットIDの取得記録: ffmpeg/win32-x64/ffmpeg-commit.json。
+    本体ソースはGit管理可能なthird_party/配下へ保管した（未コミット・未公開）。
+    ビルド成果物への自動同梱対象ではない。取得時のrelease/内コピーも保持している。
+    リリース前に完全な一式を保存・添付し、公開URLと取得可否を確認する。
+
+  残作業:
+    FFmpeg本体ソースだけでは完全な対応ソース一式とは扱わない。
+    README記載の33件の版情報と版不明9件を実際のconfigureフラグと照合。
+    詳細はffmpeg/win32-x64/LIBRARY-SOURCES.mdとsources.jsonに記録。
+    x264のH.264 SEIはcore 164 r3172 c1c9931、libaomは3.8.0-180-g0eeb62d344、
+    libvpxはv1.13.1-601-g655da33b8。これらの上流ソース候補を取得した。
+    x265はREADMEの3.5-153-gce8642f22と実行時の3.5+113-8787af124が不一致。
+    8bit・10bit・12bitで確認。ce8642f22のソースは候補としてのみ保存し、
+    バイナリに対応するソースとは確定しない。提供元への確認が必要。
+    oneVPLの2.9も正確なソースrevisionに未解決。
+    2026-09-24追加調査: ffmpeg/win32-x64/DEPENDENCY-REVIEW.md。
+    oneVPLのAPI版と製品版は別であり、2.9からv2.9.0を仮定できない。
+    libassの実行時コミットは取得済みソースと一致。版不明9件と推移的依存物について、
+    文字列・ソースパスを追加調査し、6件の上流ソース候補を追加取得した。
+    完全なrevision・パッチ・リンク入力の確定ではない。個別の取得状況はlibrary-sources/参照。
+    パッチ・ビルド資料の確認結果: ffmpeg/win32-x64/BUILD-MATERIALS.md。
+    42ソースアーカイブの内部資料をbuild-materials.jsonに列挙し、上流のWindows向け説明と
+    一部パッチ資料を確認済み。ただし提供元が使用した全スクリプト・パッチ・環境は未確定。
+    実行記録・バイナリ内の版情報・PEインポートはffmpeg/win32-x64/library-probes.json。
+    AMF・AviSynthPlus・ffnvcodecはヘッダーと実行時DLLを区別し、全件を静的リンクとは扱わない。
+    ソース候補と固定サブモジュールのアーカイブはプロジェクトルートの
+    third_party/ffmpeg/win32-x64/libraries/に保存。Git管理対象外・自動同梱なし・未公開。
+    取得URL・ハッシュ・ライセンスの収録位置・サブモジュールの配置先は
+    ffmpeg/win32-x64/library-sources/の各JSONを参照。
+    bzlib、gmp、gnutls、iconv、fontconfig、openjpeg、libxml2、lzma、zlibの
+    正確なバージョンはこのREADMEから確定できない。推移的依存物も確認が必要。
+    組込みライブラリの完全なソース、適用パッチ、実際に使用したビルドスクリプト・
+    設定・依存物一覧は未確保。提供元の公開ページとリリースから一式を確認できず。
+    必要な確認事項はffmpeg/win32-x64/SOURCE-REQUEST.mdに整理（未送信）。
+    提供元から当該ビルドの資料を確保するか、別途ソース一式を確保できるビルドへ
+    切り替えて再検証するまで、対応ソース確保は未完了とする。
   対応ソース提供URLまたは同梱パス: 未確定。
   macOSの記録で代用しない。
 
@@ -66,7 +139,64 @@ FFmpegおよびアプリ結合作品の対応ソース提供記録
   利用できる。別サーバーを使う場合も、必要な期間の提供責任は配布者にある。
   一般的なプロジェクトURLや最新版ソースへのリンクだけで代用しない。
 
+5. 取得済み資料と内部確認用パッケージ（Windows x64限定）
+  FFmpeg本体の取得URL・revision・SHA-256: ffmpeg/win32-x64/sources.json。
+  ライブラリ／サブモジュールの取得URL・revision・SHA-256:
+    ffmpeg/win32-x64/library-sources/*.json。
+  対応確認の根拠と不足事項: 同ディレクトリのLIBRARY-SOURCES.md、
+    DEPENDENCY-REVIEW.md、BUILD-MATERIALS.md、SOURCE-REQUEST.md。
+  上記はソース候補の取得記録であり、完全な対応ソースの提供先ではない。
+  x265の版不一致、oneVPLのrevision、版不明ライブラリ、推移的依存物、
+  提供元の適用パッチとビルド資料は未解決。
+
+  開発者向け再取得（プロジェクトルートのPowerShellで実行）:
+    ./scripts/acquire-library-sources.ps1
+  未確定revisionはこの処理でも解消しない。
+  内部確認用パッケージの生成:
+    ./scripts/prepare-ffmpeg-source-review.ps1
+  出力先: release/source-review/<生成ごとのID>/
+    ffmpeg-win32-x64-INCOMPLETE-review.tar
+    MANIFEST.json、INCOMPLETE-README.txt、SHA256SUMS.txt
+  対象は42個のソース候補アーカイブと調査資料。元アーカイブ内のライセンスを
+  保持し、ファイルのSHA-256を記録する。既存成果物・候補のハッシュ不一致時は停止する。
+  complete／releaseReadyはfalse。アプリ結合作品のソースは含まない。
+  これは内部確認用であり「完全な対応ソース」として公開してはならない。
+  release/とライブラリアーカイブはGit管理対象外。Git cloneだけでは取得できない。
+
+6. 利用者への提供手順と完了条件（未実施）
+  提供方式はGPLv3第6条(d)によるネット配布とする（本文: GPL-3.0.txt）。
+  最終バイナリと同じ公開GitHub Releaseに完全な対応ソースを添付し、
+  バイナリのダウンロード案内の隣に直接リンクを記載する。
+  追加料金やメール請求を必要とせず取得できるようにする。
+  提供元への問い合わせ文案は、利用者へのソース提供の代替ではない。
+
+  公開前後に以下をすべて実施する:
+  (1) 未確定事項を解消し、使用ソース・推移的依存物・適用パッチと順序・
+      ビルド／インストールスクリプト・設定・必要資料を揃える。
+      アプリ結合作品にも配布版に対応するソースと必要資料を揃える。
+      不足一覧はBUILD-MATERIALS.mdとDISTRIBUTION-NOTES.txtを参照。
+  (2) 最終タグ・コミットを固定し、ソース一式へ構成一覧・取得元・revision・
+      ライセンス・ハッシュ・再ビルド手順を含める。
+      ソースを展開した別環境で手順と必要資料の不足を検証する。
+  (3) 最終ソースの添付名とURLを確定してこの文書へ記録し、アプリを再ビルドする。
+      添付名の例（まだ存在しない）:
+        kancolle-browser-<version>-win-x64-corresponding-source.tar
+      分割する場合もFFmpegとアプリ結合作品の全パートを直接案内する。
+  (4) 最終NSIS／Portable内のFFmpeg・ソース案内・ライセンスを再監査する。
+      成果物とソースのSHA-256をリリースのチェックサム一覧に記録する。
+      現存成果物の監査結果を再ビルド後の成果物へ流用しない。
+  (5) 公開後に未認証の別環境から全ソースを取得・展開し、SHA-256と内容を検証する。
+      バイナリ提供期間中は対応ソースを継続提供し、版ごとの対応関係を保持する。
+
+  最終リリースタグ: 未確定
+  最終ソースの公開URL: 未確定
+  最終ソースのSHA-256: 未確定
+  未認証ダウンロード検証日・結果: 未実施
+  上記が未確定の間は完全な対応ソース提供の完了とは扱わない。
+
 参考（以下はプロジェクト案内であり、完全な対応ソースの提供先ではない）
   https://github.com/eugeneware/ffmpeg-static
+  https://github.com/GyanD/codexffmpeg/releases/tag/6.1.1
+  https://www.gyan.dev/ffmpeg/builds/
   https://ffmpeg.org/legal.html
   https://www.gnu.org/licenses/gpl-3.0.html

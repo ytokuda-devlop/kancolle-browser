@@ -1,0 +1,101 @@
+{
+  "sha": "e38092ef9395d7049f871ef4d5411eb410e283e0",
+  "node_id": "C_kwDOABiiStoAKGUzODA5MmVmOTM5NWQ3MDQ5Zjg3MWVmNGQ1NDExZWI0MTBlMjgzZTA",
+  "commit": {
+    "author": {
+      "name": "Michael Niedermayer",
+      "email": "michael@niedermayer.cc",
+      "date": "2023-12-30T21:19:58Z"
+    },
+    "committer": {
+      "name": "Michael Niedermayer",
+      "email": "michael@niedermayer.cc",
+      "date": "2023-12-30T21:19:58Z"
+    },
+    "message": "Changelog: update\n\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>",
+    "tree": {
+      "sha": "dc2cc148dbd7406686d6052c6d414594ad9c5c20",
+      "url": "https://api.github.com/repos/FFmpeg/FFmpeg/git/trees/dc2cc148dbd7406686d6052c6d414594ad9c5c20"
+    },
+    "url": "https://api.github.com/repos/FFmpeg/FFmpeg/git/commits/e38092ef9395d7049f871ef4d5411eb410e283e0",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQTdHsno3ghcYps+GEaxjokos5SNZAUCZZCJiQAKCRCxjokos5SN\nZGzFAQC+G8t4CFyxg1ov3We/oaCYXedIyCDXcbKRSeBe09mj1gEArZO7oLlZl96h\nqqaJqWrWk/jl8ivP51xZ6Jd4BJq0vQY=\n=9+Tm\n-----END PGP SIGNATURE-----",
+      "payload": "tree dc2cc148dbd7406686d6052c6d414594ad9c5c20\nparent e1c2fa6b9addeacfa8b9e24acf9d4699ecdaa764\nauthor Michael Niedermayer <michael@niedermayer.cc> 1703971198 +0100\ncommitter Michael Niedermayer <michael@niedermayer.cc> 1703971198 +0100\n\nChangelog: update\n\nSigned-off-by: Michael Niedermayer <michael@niedermayer.cc>\n",
+      "verified_at": "2024-11-05T02:37:00Z"
+    }
+  },
+  "url": "https://api.github.com/repos/FFmpeg/FFmpeg/commits/e38092ef9395d7049f871ef4d5411eb410e283e0",
+  "html_url": "https://github.com/FFmpeg/FFmpeg/commit/e38092ef9395d7049f871ef4d5411eb410e283e0",
+  "comments_url": "https://api.github.com/repos/FFmpeg/FFmpeg/commits/e38092ef9395d7049f871ef4d5411eb410e283e0/comments",
+  "author": {
+    "login": "michaelni",
+    "id": 729390,
+    "node_id": "MDQ6VXNlcjcyOTM5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/729390?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelni",
+    "html_url": "https://github.com/michaelni",
+    "followers_url": "https://api.github.com/users/michaelni/followers",
+    "following_url": "https://api.github.com/users/michaelni/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelni/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelni/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelni/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelni/orgs",
+    "repos_url": "https://api.github.com/users/michaelni/repos",
+    "events_url": "https://api.github.com/users/michaelni/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelni/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "michaelni",
+    "id": 729390,
+    "node_id": "MDQ6VXNlcjcyOTM5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/729390?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelni",
+    "html_url": "https://github.com/michaelni",
+    "followers_url": "https://api.github.com/users/michaelni/followers",
+    "following_url": "https://api.github.com/users/michaelni/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelni/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelni/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelni/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelni/orgs",
+    "repos_url": "https://api.github.com/users/michaelni/repos",
+    "events_url": "https://api.github.com/users/michaelni/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelni/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e1c2fa6b9addeacfa8b9e24acf9d4699ecdaa764",
+      "url": "https://api.github.com/repos/FFmpeg/FFmpeg/commits/e1c2fa6b9addeacfa8b9e24acf9d4699ecdaa764",
+      "html_url": "https://github.com/FFmpeg/FFmpeg/commit/e1c2fa6b9addeacfa8b9e24acf9d4699ecdaa764"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "2dca1d96c71c6f70d2a04ebdf950df67bd98b635",
+      "filename": "Changelog",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/FFmpeg/FFmpeg/blob/e38092ef9395d7049f871ef4d5411eb410e283e0/Changelog",
+      "raw_url": "https://github.com/FFmpeg/FFmpeg/raw/e38092ef9395d7049f871ef4d5411eb410e283e0/Changelog",
+      "contents_url": "https://api.github.com/repos/FFmpeg/FFmpeg/contents/Changelog?ref=e38092ef9395d7049f871ef4d5411eb410e283e0",
+      "patch": "@@ -2,6 +2,9 @@ Entries are sorted chronologically from oldest to youngest within each release,\n releases are sorted from youngest to oldest.\n \n version 6.1.1\n+- avcodec/mpegvideo_enc: Dont copy beyond the image\n+- avfilter/vf_minterpolate: Check pts before division\n+- avfilter/avf_showwaves: Check history_nb_samples\n - avformat/flacdec: Avoid double AVERRORS\n - avfilter/vf_vidstabdetect: Avoid double AVERRORS\n - avcodec/vaapi_encode: Avoid double AVERRORS"
+    }
+  ]
+}

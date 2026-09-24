@@ -1,0 +1,24 @@
+{
+    "name":  "libssh",
+    "checkedAt":  "2026-09-23T11:35:07.6082653Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "libssh",
+                 "url":  "https://www.libssh.org/files/0.10/libssh-0.10.4.tar.xz",
+                 "extension":  "tar.xz"
+             },
+    "patchStatus":  "unverified",
+    "url":  "https://www.libssh.org/files/0.10/libssh-0.10.4.tar.xz",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/libssh-source.tar.xz",
+    "sha256":  "07392c54ab61476288d1c1f0a7c557b50211797ad00c34c3af2bbc4dbc4bd97d",
+    "bytes":  554920,
+    "archiveEntryCount":  465,
+    "licenseEntries":  [
+                           "libssh-0.10.4/COPYING",
+                           "libssh-0.10.4/doc/that_style/LICENSE",
+                           "libssh-0.10.4/cmake/Modules/COPYING-CMAKE-SCRIPTS"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

@@ -1,0 +1,26 @@
+{
+    "name":  "gmp",
+    "checkedAt":  "2026-09-24T01:06:41.9030563Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "gmp",
+                 "url":  "https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz",
+                 "extension":  "tar.xz",
+                 "note":  "Embedded source path candidate only."
+             },
+    "patchStatus":  "unverified",
+    "url":  "https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/gmp-source.tar.xz",
+    "sha256":  "fd4829912cddd12f84181c3451cc752be224643e87fac497b69edddadc49b4f2",
+    "bytes":  2027316,
+    "archiveEntryCount":  2275,
+    "licenseEntries":  [
+                           "gmp-6.2.1/COPYING",
+                           "gmp-6.2.1/COPYINGv2",
+                           "gmp-6.2.1/COPYING.LESSERv3",
+                           "gmp-6.2.1/COPYINGv3"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

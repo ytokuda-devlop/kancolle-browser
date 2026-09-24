@@ -1,0 +1,23 @@
+{
+    "name":  "libtheora",
+    "checkedAt":  "2026-09-23T11:35:11.7095586Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "libtheora",
+                 "url":  "https://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.xz",
+                 "extension":  "tar.xz"
+             },
+    "patchStatus":  "unverified",
+    "url":  "https://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.xz",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/libtheora-source.tar.xz",
+    "sha256":  "f36da409947aa2b3dcc6af0a8c2e3144bc19db2ed547d64e9171c59c66561c61",
+    "bytes":  1434496,
+    "archiveEntryCount":  344,
+    "licenseEntries":  [
+                           "libtheora-1.1.1/LICENSE",
+                           "libtheora-1.1.1/COPYING"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

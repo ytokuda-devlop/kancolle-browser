@@ -1,0 +1,25 @@
+{
+    "name":  "libass",
+    "checkedAt":  "2026-09-23T11:35:04.1892732Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "libass",
+                 "repo":  "libass/libass",
+                 "ref":  "c047dd2"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "c047dd2ea16f73abb4f448e6db3637158c1226d0",
+    "commitUrl":  "https://github.com/libass/libass/commit/c047dd2ea16f73abb4f448e6db3637158c1226d0",
+    "commitDate":  "2023-11-28T22:43:58Z",
+    "url":  "https://codeload.github.com/libass/libass/tar.gz/c047dd2ea16f73abb4f448e6db3637158c1226d0",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/libass-source.tar.gz",
+    "sha256":  "54fd200410efd33cfee3cffc9768645e6052e65cc0aa5bf9fc4b82f598c11d18",
+    "bytes":  315375,
+    "archiveEntryCount":  128,
+    "licenseEntries":  [
+                           "libass-c047dd2ea16f73abb4f448e6db3637158c1226d0/COPYING"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

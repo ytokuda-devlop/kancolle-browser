@@ -1,0 +1,34 @@
+{
+    "name":  "SDL",
+    "checkedAt":  "2026-09-23T11:35:31.8933005Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "SDL",
+                 "repo":  "libsdl-org/SDL",
+                 "ref":  "0f8f4f676"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f",
+    "commitUrl":  "https://github.com/libsdl-org/SDL/commit/0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f",
+    "commitDate":  "2023-12-27T22:49:59Z",
+    "url":  "https://codeload.github.com/libsdl-org/SDL/tar.gz/0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/SDL-source.tar.gz",
+    "sha256":  "54ed2d42fb987b941f38ebe466f422432be98a27f5402787fe55915a192768ec",
+    "bytes":  7752523,
+    "archiveEntryCount":  2097,
+    "licenseEntries":  [
+                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/LICENSE.txt",
+                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Xcode-iOS/Demos/data/bitmapfont/license.txt",
+                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Xcode/SDL/pkg-support/resources/License.txt",
+                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/LICENSE-bsd.txt",
+                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/LICENSE-gpl3.txt",
+                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/LICENSE-orig.txt",
+                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/LICENSE.txt",
+                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/video/yuv2rgb/LICENSE",
+                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/test/COPYING",
+                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/visualtest/COPYING.txt"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

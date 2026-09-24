@@ -1,0 +1,2051 @@
+{
+    "checkedAt":  "2026-09-24T01:30:25.3208644Z",
+    "platform":  "win32",
+    "arch":  "x64",
+    "binarySha256":  "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00",
+    "binaryBuildInformation":  [
+                                   {
+                                       "arg":  "-version",
+                                       "status":  0,
+                                       "stdout":  "ffmpeg version 6.1.1-essentials_build-www.gyan.dev Copyright (c) 2000-2023 the FFmpeg developers\r\nbuilt with gcc 12.2.0 (Rev10, Built by MSYS2 project)\r\nconfiguration: --enable-gpl --enable-version3 --enable-static --pkg-config=pkgconf --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-dxva2 --enable-d3d11va --enable-libvpl --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband\r\nlibavutil      58. 29.100 / 58. 29.100\r\nlibavcodec     60. 31.102 / 60. 31.102\r\nlibavformat    60. 16.100 / 60. 16.100\r\nlibavdevice    60.  3.100 / 60.  3.100\r\nlibavfilter     9. 12.100 /  9. 12.100\r\nlibswscale      7.  5.100 /  7.  5.100\r\nlibswresample   4. 12.100 /  4. 12.100\r\nlibpostproc    57.  3.100 / 57.  3.100\r\n",
+                                       "stderr":  ""
+                                   },
+                                   {
+                                       "arg":  "-buildconf",
+                                       "status":  0,
+                                       "stdout":  "\r\n  configuration:\r\n    --enable-gpl\r\n    --enable-version3\r\n    --enable-static\r\n    --pkg-config=pkgconf\r\n    --disable-w32threads\r\n    --disable-autodetect\r\n    --enable-fontconfig\r\n    --enable-iconv\r\n    --enable-gnutls\r\n    --enable-libxml2\r\n    --enable-gmp\r\n    --enable-bzlib\r\n    --enable-lzma\r\n    --enable-zlib\r\n    --enable-libsrt\r\n    --enable-libssh\r\n    --enable-libzmq\r\n    --enable-avisynth\r\n    --enable-sdl2\r\n    --enable-libwebp\r\n    --enable-libx264\r\n    --enable-libx265\r\n    --enable-libxvid\r\n    --enable-libaom\r\n    --enable-libopenjpeg\r\n    --enable-libvpx\r\n    --enable-mediafoundation\r\n    --enable-libass\r\n    --enable-libfreetype\r\n    --enable-libfribidi\r\n    --enable-libharfbuzz\r\n    --enable-libvidstab\r\n    --enable-libvmaf\r\n    --enable-libzimg\r\n    --enable-amf\r\n    --enable-cuda-llvm\r\n    --enable-cuvid\r\n    --enable-ffnvcodec\r\n    --enable-nvdec\r\n    --enable-nvenc\r\n    --enable-dxva2\r\n    --enable-d3d11va\r\n    --enable-libvpl\r\n    --enable-libgme\r\n    --enable-libopenmpt\r\n    --enable-libopencore-amrwb\r\n    --enable-libmp3lame\r\n    --enable-libtheora\r\n    --enable-libvo-amrwbenc\r\n    --enable-libgsm\r\n    --enable-libopencore-amrnb\r\n    --enable-libopus\r\n    --enable-libspeex\r\n    --enable-libvorbis\r\n    --enable-librubberband\r\n",
+                                       "stderr":  "ffmpeg version 6.1.1-essentials_build-www.gyan.dev Copyright (c) 2000-2023 the FFmpeg developers\r\n  built with gcc 12.2.0 (Rev10, Built by MSYS2 project)\r\n  configuration: --enable-gpl --enable-version3 --enable-static --pkg-config=pkgconf --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-dxva2 --enable-d3d11va --enable-libvpl --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband\r\n  libavutil      58. 29.100 / 58. 29.100\r\n  libavcodec     60. 31.102 / 60. 31.102\r\n  libavformat    60. 16.100 / 60. 16.100\r\n  libavdevice    60.  3.100 / 60.  3.100\r\n  libavfilter     9. 12.100 /  9. 12.100\r\n  libswscale      7.  5.100 /  7.  5.100\r\n  libswresample   4. 12.100 /  4. 12.100\r\n  libpostproc    57.  3.100 / 57.  3.100\r\n"
+                                   }
+                               ],
+    "archiveCount":  42,
+    "archives":  [
+                     {
+                         "name":  "FFmpeg",
+                         "archive":  "third_party/ffmpeg/win32-x64/ffmpeg-e38092ef93.tar.gz",
+                         "sha256":  "9a8c6f3f87d7e1550dfafd2adc8d8265d021f594e46c71da2ed3123b4763e571",
+                         "buildFiles":  [
+                                            "FFmpeg-e38092ef93/Makefile",
+                                            "FFmpeg-e38092ef93/configure",
+                                            "FFmpeg-e38092ef93/doc/Makefile",
+                                            "FFmpeg-e38092ef93/doc/bootstrap.min.css",
+                                            "FFmpeg-e38092ef93/doc/examples/Makefile",
+                                            "FFmpeg-e38092ef93/doc/examples/Makefile.example",
+                                            "FFmpeg-e38092ef93/fftools/Makefile",
+                                            "FFmpeg-e38092ef93/libavcodec/Makefile",
+                                            "FFmpeg-e38092ef93/libavcodec/aarch64/Makefile",
+                                            "FFmpeg-e38092ef93/libavcodec/alpha/Makefile",
+                                            "FFmpeg-e38092ef93/libavcodec/arm/Makefile",
+                                            "FFmpeg-e38092ef93/libavcodec/loongarch/Makefile",
+                                            "FFmpeg-e38092ef93/libavcodec/mips/Makefile",
+                                            "FFmpeg-e38092ef93/libavcodec/neon/Makefile",
+                                            "FFmpeg-e38092ef93/libavcodec/ppc/Makefile",
+                                            "FFmpeg-e38092ef93/libavcodec/riscv/Makefile",
+                                            "FFmpeg-e38092ef93/libavcodec/x86/Makefile",
+                                            "FFmpeg-e38092ef93/libavdevice/Makefile",
+                                            "FFmpeg-e38092ef93/libavfilter/Makefile",
+                                            "FFmpeg-e38092ef93/libavfilter/aarch64/Makefile",
+                                            "FFmpeg-e38092ef93/libavfilter/dnn/Makefile",
+                                            "FFmpeg-e38092ef93/libavfilter/x86/Makefile",
+                                            "FFmpeg-e38092ef93/libavformat/Makefile",
+                                            "FFmpeg-e38092ef93/libavutil/Makefile",
+                                            "FFmpeg-e38092ef93/libavutil/aarch64/Makefile",
+                                            "FFmpeg-e38092ef93/libavutil/arm/Makefile",
+                                            "FFmpeg-e38092ef93/libavutil/loongarch/Makefile",
+                                            "FFmpeg-e38092ef93/libavutil/mips/Makefile",
+                                            "FFmpeg-e38092ef93/libavutil/ppc/Makefile",
+                                            "FFmpeg-e38092ef93/libavutil/riscv/Makefile",
+                                            "FFmpeg-e38092ef93/libavutil/x86/Makefile",
+                                            "FFmpeg-e38092ef93/libpostproc/Makefile",
+                                            "FFmpeg-e38092ef93/libswresample/Makefile",
+                                            "FFmpeg-e38092ef93/libswresample/aarch64/Makefile",
+                                            "FFmpeg-e38092ef93/libswresample/arm/Makefile",
+                                            "FFmpeg-e38092ef93/libswresample/x86/Makefile",
+                                            "FFmpeg-e38092ef93/libswscale/Makefile",
+                                            "FFmpeg-e38092ef93/libswscale/aarch64/Makefile",
+                                            "FFmpeg-e38092ef93/libswscale/arm/Makefile",
+                                            "FFmpeg-e38092ef93/libswscale/loongarch/Makefile",
+                                            "FFmpeg-e38092ef93/libswscale/ppc/Makefile",
+                                            "FFmpeg-e38092ef93/libswscale/riscv/Makefile",
+                                            "FFmpeg-e38092ef93/libswscale/x86/Makefile",
+                                            "FFmpeg-e38092ef93/tests/Makefile",
+                                            "FFmpeg-e38092ef93/tests/api/Makefile",
+                                            "FFmpeg-e38092ef93/tests/checkasm/Makefile",
+                                            "FFmpeg-e38092ef93/tools/Makefile"
+                                        ],
+                         "documents":  [
+                                           "FFmpeg-e38092ef93/INSTALL.md",
+                                           "FFmpeg-e38092ef93/README.md",
+                                           "FFmpeg-e38092ef93/doc/examples/README",
+                                           "FFmpeg-e38092ef93/doc/platform.texi",
+                                           "FFmpeg-e38092ef93/libavcodec/bfin/README",
+                                           "FFmpeg-e38092ef93/libavcodec/sh4/README",
+                                           "FFmpeg-e38092ef93/libavcodec/sparc/README"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "AMF",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/AMF-source.tar.gz",
+                         "sha256":  "afcb7aae71c3735c8afd34d3ef5ab9c1d21c07fd551599a0cd710d811f6a7e01",
+                         "buildFiles":  [
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/samples/CPPSamples/CapabilityManager/Makefile",
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/samples/CPPSamples/EncoderLatency/Makefile",
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/samples/CPPSamples/PlaybackHW/Makefile",
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/samples/CPPSamples/SimpleConverter/Makefile",
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/samples/CPPSamples/SimpleDecoder/Makefile",
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/samples/CPPSamples/SimpleEncoder/Makefile",
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/samples/CPPSamples/SimpleFrameInjection/Makefile",
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/samples/CPPSamples/SimplePA/Makefile",
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/samples/CPPSamples/SimpleROI/Makefile",
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/samples/CPPSamples/TranscodeHW/Makefile",
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/samples/CPPSamples/VCEEncoderD3D/Makefile",
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/samples/Makefile",
+                                            "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/public/src/components/ComponentsFFMPEG/Makefile"
+                                        ],
+                         "documents":  [
+                                           "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/README.md",
+                                           "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/doc/README.md",
+                                           "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/amf/doc/Readme.txt"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+                                                                  "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/Thirdparty/ffmpeg/ffmpeg-6.0/arm64/release/include/config.h",
+                                                                  "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/Thirdparty/ffmpeg/ffmpeg-6.0/lnx64/release/include/config.h",
+                                                                  "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/Thirdparty/ffmpeg/ffmpeg-6.0/win32/release/include/config.h",
+                                                                  "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/Thirdparty/ffmpeg/ffmpeg-6.0/x64/release/include/config.h"
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "aom",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/aom-source.tar.gz",
+                         "sha256":  "6747069be2477023a1eb38448ce078ef54bcc16b5e50365683db2d9365adf0e6",
+                         "buildFiles":  [
+                                            "CMakeLists.txt",
+                                            "aom_dsp/aom_dsp.cmake",
+                                            "aom_mem/aom_mem.cmake",
+                                            "aom_ports/aom_ports.cmake",
+                                            "aom_scale/aom_scale.cmake",
+                                            "aom_util/aom_util.cmake",
+                                            "av1/av1.cmake",
+                                            "build/cmake/aom_config_defaults.cmake",
+                                            "build/cmake/aom_configure.cmake",
+                                            "build/cmake/aom_experiment_deps.cmake",
+                                            "build/cmake/aom_install.cmake",
+                                            "build/cmake/aom_optimization.cmake",
+                                            "build/cmake/compiler_flags.cmake",
+                                            "build/cmake/compiler_tests.cmake",
+                                            "build/cmake/cpu.cmake",
+                                            "build/cmake/dist.cmake",
+                                            "build/cmake/exports.cmake",
+                                            "build/cmake/exports_sources.cmake",
+                                            "build/cmake/generate_aom_config_templates.cmake",
+                                            "build/cmake/generate_exports.cmake",
+                                            "build/cmake/pkg_config.cmake",
+                                            "build/cmake/sanitizers.cmake",
+                                            "build/cmake/toolchains/android.cmake",
+                                            "build/cmake/toolchains/arm-ios-common.cmake",
+                                            "build/cmake/toolchains/arm64-ios.cmake",
+                                            "build/cmake/toolchains/arm64-linux-clang.cmake",
+                                            "build/cmake/toolchains/arm64-linux-gcc.cmake",
+                                            "build/cmake/toolchains/arm64-macos.cmake",
+                                            "build/cmake/toolchains/arm64-mingw-gcc.cmake",
+                                            "build/cmake/toolchains/armv7-ios.cmake",
+                                            "build/cmake/toolchains/armv7-linux-gcc.cmake",
+                                            "build/cmake/toolchains/armv7-mingw-gcc.cmake",
+                                            "build/cmake/toolchains/armv7s-ios.cmake",
+                                            "build/cmake/toolchains/i686-linux-gcc.cmake",
+                                            "build/cmake/toolchains/ios-simulator-common.cmake",
+                                            "build/cmake/toolchains/ppc-linux-gcc.cmake",
+                                            "build/cmake/toolchains/riscv-linux-gcc.cmake",
+                                            "build/cmake/toolchains/x86-ios-simulator.cmake",
+                                            "build/cmake/toolchains/x86-linux.cmake",
+                                            "build/cmake/toolchains/x86-macos.cmake",
+                                            "build/cmake/toolchains/x86-mingw-gcc.cmake",
+                                            "build/cmake/toolchains/x86_64-ios-simulator.cmake",
+                                            "build/cmake/toolchains/x86_64-macos.cmake",
+                                            "build/cmake/toolchains/x86_64-mingw-gcc.cmake",
+                                            "build/cmake/util.cmake",
+                                            "build/cmake/version.cmake",
+                                            "common/ivf_dec.cmake",
+                                            "docs.cmake",
+                                            "examples/build_av1_dec_fuzzer.sh",
+                                            "test/test.cmake",
+                                            "test/test_data_download_worker.cmake",
+                                            "test/test_data_util.cmake",
+                                            "test/test_runner.cmake",
+                                            "third_party/googletest/src/CMakeLists.txt",
+                                            "third_party/googletest/src/googlemock/CMakeLists.txt",
+                                            "third_party/googletest/src/googletest/CMakeLists.txt",
+                                            "third_party/googletest/src/googletest/cmake/internal_utils.cmake"
+                                        ],
+                         "documents":  [
+                                           "README.md",
+                                           "third_party/SVT-AV1/README.libaom",
+                                           "third_party/fastfeat/README.libaom",
+                                           "third_party/googletest/README.libaom",
+                                           "third_party/googletest/src/README.md",
+                                           "third_party/googletest/src/googlemock/README.md",
+                                           "third_party/googletest/src/googlemock/include/gmock/internal/custom/README.md",
+                                           "third_party/googletest/src/googletest/README.md",
+                                           "third_party/googletest/src/googletest/include/gtest/internal/custom/README.md",
+                                           "third_party/libwebm/README.libaom",
+                                           "third_party/libyuv/README.libaom",
+                                           "third_party/vector/README.libaom",
+                                           "third_party/x86inc/README.libaom"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "AviSynthPlus-filesystem",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/AviSynthPlus-filesystem-source.tar.gz",
+                         "sha256":  "cc1c5439d29031477868bdea25b68b4210dc8ed018bb63a65e708afe405db4e1",
+                         "buildFiles":  [
+                                            "filesystem-3f1c185ab414e764c694b8171d1c4d8c5c437517/CMakeLists.txt",
+                                            "filesystem-3f1c185ab414e764c694b8171d1c4d8c5c437517/cmake/GhcHelper.cmake",
+                                            "filesystem-3f1c185ab414e764c694b8171d1c4d8c5c437517/examples/CMakeLists.txt",
+                                            "filesystem-3f1c185ab414e764c694b8171d1c4d8c5c437517/test/CMakeLists.txt",
+                                            "filesystem-3f1c185ab414e764c694b8171d1c4d8c5c437517/test/cmake/ParseAndAddCatchTests.cmake"
+                                        ],
+                         "documents":  [
+                                           "filesystem-3f1c185ab414e764c694b8171d1c4d8c5c437517/README.md"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "AviSynthPlus",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/AviSynthPlus-source.tar.gz",
+                         "sha256":  "7fd2c55972d322ab91d1ff8d3d5be926b76345d0c4bf44e2a3f74c3a351436c1",
+                         "buildFiles":  [
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/CMakeLists.txt",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/avs_core/CMakeLists.txt",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/avs_core/Files.cmake",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/avs_core/TargetArch.cmake",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/avs_core/Version.cmake",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/distrib/docs/english/Makefile",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/plugins/CMakeLists.txt",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/plugins/ConvertStacked/CMakeLists.txt",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/plugins/DirectShowSource/CMakeLists.txt",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/plugins/ImageSeq/CMakeLists.txt",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/plugins/Shibatch/CMakeLists.txt",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/plugins/TimeStretch/CMakeLists.txt",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/plugins/TimeStretch/SoundTouch/CMakeLists.txt",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/plugins/VDubFilter/CMakeLists.txt",
+                                            "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/plugins/VFAPIFilter/CMakeLists.txt"
+                                        ],
+                         "documents":  [
+                                           "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/README.md",
+                                           "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/distrib/Icons/InstallerIcon-Large.svg",
+                                           "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/distrib/Icons/InstallerIcon-Small.svg",
+                                           "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/distrib/Readme/readme_history.txt"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+                                                                  "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/avs_core/include/avs/config.h"
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "bzlib",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/bzlib-source.tar.gz",
+                         "sha256":  "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+                         "buildFiles":  [
+                                            "bzip2-1.0.8/Makefile",
+                                            "bzip2-1.0.8/makefile.msc"
+                                        ],
+                         "documents":  [
+                                           "bzip2-1.0.8/README",
+                                           "bzip2-1.0.8/README.COMPILATION.PROBLEMS",
+                                           "bzip2-1.0.8/README.XML.STUFF"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "expat",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/expat-source.tar.gz",
+                         "sha256":  "81e02291cffb1cbba6669886b9943fa9c61bcdaac577017638737c19f35a0d0b",
+                         "buildFiles":  [
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/CMakeLists.txt",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/ConfigureChecks.cmake",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/Makefile.am",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/buildconf.sh",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/cmake/autotools/expat-package-init.cmake",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/cmake/autotools/expat.cmake",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/cmake/mingw-toolchain.cmake",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/configure.ac",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/doc/Makefile.am",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/examples/Makefile.am",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/expat.pc.cmake",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/expat_config.h.cmake",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/lib/Makefile.am",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/lib/libexpat.def.cmake",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/tests/Makefile.am",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/tests/benchmark/Makefile.am",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/win32/build_expat_iss.bat",
+                                            "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/xmlwf/Makefile.am"
+                                        ],
+                         "documents":  [
+                                           "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/README.md",
+                                           "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/README.md",
+                                           "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/tests/README.txt",
+                                           "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/tests/benchmark/README.txt",
+                                           "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/win32/README.txt",
+                                           "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/testdata/README.txt",
+                                           "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/testdata/largefiles/README.txt"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "ffnvcodec",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/ffnvcodec-source.tar.gz",
+                         "sha256":  "2693d3a5ca3c48b64deadc27b6c05632834acc31906d9a5bf7ef26393d14a254",
+                         "buildFiles":  [
+                                            "nv-codec-headers-75f032b24263c2b684b9921755cafc1c08e41b9d/Makefile"
+                                        ],
+                         "documents":  [
+                                           "nv-codec-headers-75f032b24263c2b684b9921755cafc1c08e41b9d/README"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "freetype-dlg",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/freetype-dlg-source.tar.gz",
+                         "sha256":  "f46472bea5854cf3c738f0e7aea90d7b0645629ec78fdf7a67bf7696955e7446",
+                         "buildFiles":  [
+                                            "dlg-72dfcc858c040c54a6a0b88fcb7e70ee186d3167/docs/tests/meson.build",
+                                            "dlg-72dfcc858c040c54a6a0b88fcb7e70ee186d3167/meson.build",
+                                            "dlg-72dfcc858c040c54a6a0b88fcb7e70ee186d3167/meson_options.txt"
+                                        ],
+                         "documents":  [
+                                           "dlg-72dfcc858c040c54a6a0b88fcb7e70ee186d3167/README.md"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "freetype",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/freetype-source.tar.gz",
+                         "sha256":  "da541ec0fc99514a8aea8ccc8ec4f955c19d17556e1888374fc564cb31e1c437",
+                         "buildFiles":  [
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/CMakeLists.txt",
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/Makefile",
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/autogen.sh",
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/builds/amiga/makefile",
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/builds/amiga/makefile.os4",
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/builds/cmake/FindBrotliDec.cmake",
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/builds/cmake/FindHarfBuzz.cmake",
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/builds/cmake/iOS.cmake",
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/configure",
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/meson.build",
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/meson_options.txt",
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/src/tools/ftrandom/Makefile",
+                                            "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/tests/meson.build"
+                                        ],
+                         "documents":  [
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/README",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/README.git",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/builds/amiga/README",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/builds/atari/README.TXT",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/builds/mac/README",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/builds/unix/install.mk",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/docs/INSTALL",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/docs/INSTALL.ANY",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/docs/INSTALL.CROSS",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/docs/INSTALL.GNU",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/docs/INSTALL.MAC",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/docs/INSTALL.UNIX",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/docs/INSTALL.VMS",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/docs/README",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/objs/README",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/src/bdf/README",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/src/gxvalid/README",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/src/gzip/README.freetype",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/src/pcf/README",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/src/tools/ftrandom/README",
+                                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/tests/README.md"
+                                       ],
+                         "patchFileCandidates":  [
+                                                     "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/src/gzip/patches/freetype-zlib.diff"
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "fribidi",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/fribidi-source.tar.gz",
+                         "sha256":  "47682e6ffeef425e01c1a401840f5f4c04041a5c0498ea3846e7725ff6d0c450",
+                         "buildFiles":  [
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/.ci/build-c2man.sh",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/Makefile.am",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/autogen.sh",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/bin/Makefile.am",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/bin/meson.build",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/configure.ac",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/doc/Makefile.am",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/doc/meson.build",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/gen.tab/Makefile.am",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/gen.tab/meson.build",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/lib/Makefile.am",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/lib/meson.build",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/meson.build",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/meson_options.txt",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/test/Makefile.am",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/test/meson.build",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/test/unicode-conformance/Makefile.am",
+                                            "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/test/unicode-conformance/meson.build"
+                                        ],
+                         "documents":  [
+                                           "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/README",
+                                           "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/README.md",
+                                           "fribidi-5b9a242cbbb0cf27d20da9941667abfc63808c19/gen.tab/unidata/ReadMe.txt"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "gmp",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/gmp-source.tar.xz",
+                         "sha256":  "fd4829912cddd12f84181c3451cc752be224643e87fac497b69edddadc49b4f2",
+                         "buildFiles":  [
+                                            "gmp-6.2.1/bootstrap.c",
+                                            "gmp-6.2.1/configure",
+                                            "gmp-6.2.1/configure.ac",
+                                            "gmp-6.2.1/Makefile.am",
+                                            "gmp-6.2.1/Makefile.in",
+                                            "gmp-6.2.1/mpf/Makefile.am",
+                                            "gmp-6.2.1/mpf/Makefile.in",
+                                            "gmp-6.2.1/printf/Makefile.in",
+                                            "gmp-6.2.1/printf/Makefile.am",
+                                            "gmp-6.2.1/mpq/Makefile.am",
+                                            "gmp-6.2.1/mpq/Makefile.in",
+                                            "gmp-6.2.1/tune/Makefile.am",
+                                            "gmp-6.2.1/tune/Makefile.in",
+                                            "gmp-6.2.1/scanf/Makefile.in",
+                                            "gmp-6.2.1/scanf/Makefile.am",
+                                            "gmp-6.2.1/mini-gmp/tests/Makefile",
+                                            "gmp-6.2.1/tests/Makefile.in",
+                                            "gmp-6.2.1/tests/Makefile.am",
+                                            "gmp-6.2.1/tests/misc/Makefile.in",
+                                            "gmp-6.2.1/tests/misc/Makefile.am",
+                                            "gmp-6.2.1/tests/rand/Makefile.am",
+                                            "gmp-6.2.1/tests/rand/Makefile.in",
+                                            "gmp-6.2.1/tests/mpf/Makefile.in",
+                                            "gmp-6.2.1/tests/mpf/Makefile.am",
+                                            "gmp-6.2.1/tests/devel/Makefile.in",
+                                            "gmp-6.2.1/tests/devel/Makefile.am",
+                                            "gmp-6.2.1/tests/mpq/Makefile.am",
+                                            "gmp-6.2.1/tests/mpq/Makefile.in",
+                                            "gmp-6.2.1/tests/cxx/Makefile.am",
+                                            "gmp-6.2.1/tests/cxx/Makefile.in",
+                                            "gmp-6.2.1/tests/mpz/Makefile.am",
+                                            "gmp-6.2.1/tests/mpz/Makefile.in",
+                                            "gmp-6.2.1/tests/mpn/Makefile.in",
+                                            "gmp-6.2.1/tests/mpn/Makefile.am",
+                                            "gmp-6.2.1/rand/Makefile.in",
+                                            "gmp-6.2.1/rand/Makefile.am",
+                                            "gmp-6.2.1/doc/Makefile.am",
+                                            "gmp-6.2.1/doc/Makefile.in",
+                                            "gmp-6.2.1/demos/Makefile.am",
+                                            "gmp-6.2.1/demos/Makefile.in",
+                                            "gmp-6.2.1/demos/expr/Makefile.in",
+                                            "gmp-6.2.1/demos/expr/Makefile.am",
+                                            "gmp-6.2.1/demos/perl/Makefile.PL",
+                                            "gmp-6.2.1/demos/calc/Makefile.in",
+                                            "gmp-6.2.1/demos/calc/Makefile.am",
+                                            "gmp-6.2.1/mpz/Makefile.am",
+                                            "gmp-6.2.1/mpz/Makefile.in",
+                                            "gmp-6.2.1/mpn/Makefile.in",
+                                            "gmp-6.2.1/mpn/Makefile.am",
+                                            "gmp-6.2.1/cxx/Makefile.in",
+                                            "gmp-6.2.1/cxx/Makefile.am"
+                                        ],
+                         "documents":  [
+                                           "gmp-6.2.1/install-sh",
+                                           "gmp-6.2.1/README",
+                                           "gmp-6.2.1/INSTALL",
+                                           "gmp-6.2.1/INSTALL.autoconf",
+                                           "gmp-6.2.1/tune/README",
+                                           "gmp-6.2.1/mini-gmp/README",
+                                           "gmp-6.2.1/tests/devel/README",
+                                           "gmp-6.2.1/demos/expr/README",
+                                           "gmp-6.2.1/demos/perl/INSTALL",
+                                           "gmp-6.2.1/demos/calc/README",
+                                           "gmp-6.2.1/mpn/README",
+                                           "gmp-6.2.1/mpn/arm/README",
+                                           "gmp-6.2.1/mpn/arm/neon/README",
+                                           "gmp-6.2.1/mpn/x86/README",
+                                           "gmp-6.2.1/mpn/x86/k6/README",
+                                           "gmp-6.2.1/mpn/x86/pentium/README",
+                                           "gmp-6.2.1/mpn/x86/k7/README",
+                                           "gmp-6.2.1/mpn/x86/p6/README",
+                                           "gmp-6.2.1/mpn/x86/pentium4/README",
+                                           "gmp-6.2.1/mpn/m68k/README",
+                                           "gmp-6.2.1/mpn/sparc32/README",
+                                           "gmp-6.2.1/mpn/sparc32/v9/README",
+                                           "gmp-6.2.1/mpn/x86_64/README",
+                                           "gmp-6.2.1/mpn/x86_64/bd1/README",
+                                           "gmp-6.2.1/mpn/x86_64/fastsse/README",
+                                           "gmp-6.2.1/mpn/sparc64/README",
+                                           "gmp-6.2.1/mpn/s390_32/README",
+                                           "gmp-6.2.1/mpn/powerpc64/README",
+                                           "gmp-6.2.1/mpn/cray/README",
+                                           "gmp-6.2.1/mpn/powerpc32/README",
+                                           "gmp-6.2.1/mpn/s390_64/README",
+                                           "gmp-6.2.1/mpn/pa64/README",
+                                           "gmp-6.2.1/mpn/pa32/README",
+                                           "gmp-6.2.1/mpn/alpha/README",
+                                           "gmp-6.2.1/mpn/alpha/ev6/nails/README",
+                                           "gmp-6.2.1/mpn/mips64/README",
+                                           "gmp-6.2.1/mpn/ia64/README",
+                                           "gmp-6.2.1/mpn/m88k/README"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "gnutls",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/gnutls-source.tar.xz",
+                         "sha256":  "1b79b381ac283d8b054368b335c408fedcb9b7144e0c07f531e3537d4328f3b3",
+                         "buildFiles":  [
+                                            "gnutls-3.6.16/doc/manpages/Makefile.am",
+                                            "gnutls-3.6.16/doc/manpages/Makefile.in",
+                                            "gnutls-3.6.16/doc/examples/Makefile.am",
+                                            "gnutls-3.6.16/doc/examples/Makefile.in",
+                                            "gnutls-3.6.16/doc/Makefile.am",
+                                            "gnutls-3.6.16/doc/Makefile.in",
+                                            "gnutls-3.6.16/doc/scripts/Makefile.am",
+                                            "gnutls-3.6.16/doc/scripts/Makefile.in",
+                                            "gnutls-3.6.16/doc/credentials/Makefile.am",
+                                            "gnutls-3.6.16/doc/credentials/Makefile.in",
+                                            "gnutls-3.6.16/doc/credentials/srp/Makefile.am",
+                                            "gnutls-3.6.16/doc/credentials/srp/Makefile.in",
+                                            "gnutls-3.6.16/doc/credentials/x509/Makefile.am",
+                                            "gnutls-3.6.16/doc/credentials/x509/Makefile.in",
+                                            "gnutls-3.6.16/doc/latex/Makefile.am",
+                                            "gnutls-3.6.16/doc/latex/Makefile.in",
+                                            "gnutls-3.6.16/doc/reference/Makefile.am",
+                                            "gnutls-3.6.16/doc/reference/Makefile.in",
+                                            "gnutls-3.6.16/lib/includes/Makefile.am",
+                                            "gnutls-3.6.16/lib/includes/Makefile.in",
+                                            "gnutls-3.6.16/lib/unistring/Makefile.am",
+                                            "gnutls-3.6.16/lib/unistring/Makefile.in",
+                                            "gnutls-3.6.16/lib/auth/Makefile.am",
+                                            "gnutls-3.6.16/lib/auth/Makefile.in",
+                                            "gnutls-3.6.16/lib/Makefile.am",
+                                            "gnutls-3.6.16/lib/Makefile.in",
+                                            "gnutls-3.6.16/lib/x509/Makefile.am",
+                                            "gnutls-3.6.16/lib/x509/Makefile.in",
+                                            "gnutls-3.6.16/lib/ext/Makefile.am",
+                                            "gnutls-3.6.16/lib/ext/Makefile.in",
+                                            "gnutls-3.6.16/lib/algorithms/Makefile.am",
+                                            "gnutls-3.6.16/lib/algorithms/Makefile.in",
+                                            "gnutls-3.6.16/lib/extras/Makefile.am",
+                                            "gnutls-3.6.16/lib/extras/Makefile.in",
+                                            "gnutls-3.6.16/lib/accelerated/Makefile.am",
+                                            "gnutls-3.6.16/lib/accelerated/Makefile.in",
+                                            "gnutls-3.6.16/lib/accelerated/x86/Makefile.am",
+                                            "gnutls-3.6.16/lib/accelerated/x86/Makefile.in",
+                                            "gnutls-3.6.16/lib/accelerated/aarch64/Makefile.am",
+                                            "gnutls-3.6.16/lib/accelerated/aarch64/Makefile.in",
+                                            "gnutls-3.6.16/lib/minitasn1/Makefile.am",
+                                            "gnutls-3.6.16/lib/minitasn1/Makefile.in",
+                                            "gnutls-3.6.16/lib/nettle/Makefile.am",
+                                            "gnutls-3.6.16/lib/nettle/Makefile.in",
+                                            "gnutls-3.6.16/src/gl/Makefile.am",
+                                            "gnutls-3.6.16/src/gl/Makefile.in",
+                                            "gnutls-3.6.16/src/libopts/Makefile.am",
+                                            "gnutls-3.6.16/src/libopts/Makefile.in",
+                                            "gnutls-3.6.16/src/Makefile.am",
+                                            "gnutls-3.6.16/src/Makefile.in",
+                                            "gnutls-3.6.16/Makefile.am",
+                                            "gnutls-3.6.16/configure",
+                                            "gnutls-3.6.16/configure.ac",
+                                            "gnutls-3.6.16/Makefile.in",
+                                            "gnutls-3.6.16/gl/Makefile.am",
+                                            "gnutls-3.6.16/gl/Makefile.in",
+                                            "gnutls-3.6.16/gl/tests/Makefile.am",
+                                            "gnutls-3.6.16/gl/tests/Makefile.in",
+                                            "gnutls-3.6.16/extra/Makefile.am",
+                                            "gnutls-3.6.16/extra/Makefile.in",
+                                            "gnutls-3.6.16/extra/includes/Makefile.am",
+                                            "gnutls-3.6.16/extra/includes/Makefile.in",
+                                            "gnutls-3.6.16/libdane/Makefile.am",
+                                            "gnutls-3.6.16/libdane/Makefile.in",
+                                            "gnutls-3.6.16/libdane/includes/Makefile.am",
+                                            "gnutls-3.6.16/libdane/includes/Makefile.in",
+                                            "gnutls-3.6.16/po/Makefile.in.in",
+                                            "gnutls-3.6.16/tests/Makefile.am",
+                                            "gnutls-3.6.16/tests/Makefile.in",
+                                            "gnutls-3.6.16/tests/cert-tests/Makefile.am",
+                                            "gnutls-3.6.16/tests/cert-tests/Makefile.in",
+                                            "gnutls-3.6.16/tests/slow/Makefile.am",
+                                            "gnutls-3.6.16/tests/slow/Makefile.in",
+                                            "gnutls-3.6.16/tests/windows/Makefile.am",
+                                            "gnutls-3.6.16/tests/windows/Makefile.in",
+                                            "gnutls-3.6.16/tests/suite/Makefile.am",
+                                            "gnutls-3.6.16/tests/suite/Makefile.in",
+                                            "gnutls-3.6.16/fuzz/Makefile.am",
+                                            "gnutls-3.6.16/fuzz/Makefile.in",
+                                            "gnutls-3.6.16/guile/Makefile.am",
+                                            "gnutls-3.6.16/guile/Makefile.in",
+                                            "gnutls-3.6.16/guile/src/Makefile.am",
+                                            "gnutls-3.6.16/guile/src/Makefile.in"
+                                        ],
+                         "documents":  [
+                                           "gnutls-3.6.16/build-aux/install-sh",
+                                           "gnutls-3.6.16/doc/examples/tlsproxy/README.md",
+                                           "gnutls-3.6.16/lib/README",
+                                           "gnutls-3.6.16/lib/accelerated/x86/README",
+                                           "gnutls-3.6.16/lib/accelerated/aarch64/README",
+                                           "gnutls-3.6.16/src/libopts/README",
+                                           "gnutls-3.6.16/README.md",
+                                           "gnutls-3.6.16/INSTALL.md",
+                                           "gnutls-3.6.16/tests/certs-interesting/README.md",
+                                           "gnutls-3.6.16/tests/rsa-md5-collision/README",
+                                           "gnutls-3.6.16/tests/safe-renegotiation/README",
+                                           "gnutls-3.6.16/tests/slow/README",
+                                           "gnutls-3.6.16/tests/suite/README",
+                                           "gnutls-3.6.16/guile/modules/system/documentation/README"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "gsm",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/gsm-source.tar.gz",
+                         "sha256":  "f0072e91f6bb85a878b2f6dbf4a0b7c850c4deb8049d554c65340b3bf69df0ac",
+                         "buildFiles":  [
+                                            "gsm-1.0-pl22/Makefile"
+                                        ],
+                         "documents":  [
+                                           "gsm-1.0-pl22/README",
+                                           "gsm-1.0-pl22/INSTALL"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+                                                                  "gsm-1.0-pl22/inc/config.h"
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "harfbuzz",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/harfbuzz-source.tar.gz",
+                         "sha256":  "a84fa920c429e0519fdf8997577de0f198b17e088bc5720eb7702fd39cf98342",
+                         "buildFiles":  [
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/.ci/build-win32.sh",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/.ci/build-win64.sh",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/CMakeLists.txt",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/autogen.sh",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/configure.ac",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/docs/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/docs/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/meson_options.txt",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/perf/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/perf/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/replace-enum-strings.cmake",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/src/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/src/Makefile.sources",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/src/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/src/wasm/graphite/Makefile",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/src/wasm/sample/c/Makefile",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/subprojects/packagefiles/ragel/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/api/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/api/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/fuzzing/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/fuzzing/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/aots/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/aots/Makefile.sources",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/aots/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/in-house/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/in-house/Makefile.sources",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/in-house/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/text-rendering-tests/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/text-rendering-tests/Makefile.sources",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/text-rendering-tests/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/subset/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/subset/data/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/subset/data/Makefile.sources",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/subset/data/repack_tests/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/subset/data/repack_tests/Makefile.sources",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/subset/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/threads/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/threads/meson.build",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/util/Makefile.am",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/util/Makefile.sources",
+                                            "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/util/meson.build"
+                                        ],
+                         "documents":  [
+                                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/README",
+                                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/README.md",
+                                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/README.mingw.md",
+                                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/README.python.md",
+                                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/perf/README.md",
+                                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/api/fonts/README",
+                                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/fuzzing/README.md",
+                                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/README.md",
+                                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/text-rendering-tests/README"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "lame",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/lame-source.tar.gz",
+                         "sha256":  "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e",
+                         "buildFiles":  [
+                                            "lame-3.100/configure",
+                                            "lame-3.100/Makefile.MSVC",
+                                            "lame-3.100/Makefile.unix",
+                                            "lame-3.100/configure.in",
+                                            "lame-3.100/Makefile.in",
+                                            "lame-3.100/Makefile.am",
+                                            "lame-3.100/Makefile.am.global",
+                                            "lame-3.100/mac/Makefile.am",
+                                            "lame-3.100/mac/Makefile.in",
+                                            "lame-3.100/Dll/Makefile.in",
+                                            "lame-3.100/Dll/Makefile.am",
+                                            "lame-3.100/Dll/Makefile.mingw32",
+                                            "lame-3.100/doc/Makefile.in",
+                                            "lame-3.100/doc/Makefile.am",
+                                            "lame-3.100/doc/html/Makefile.am",
+                                            "lame-3.100/doc/html/Makefile.in",
+                                            "lame-3.100/doc/man/Makefile.in",
+                                            "lame-3.100/doc/man/Makefile.am",
+                                            "lame-3.100/dshow/Makefile.am",
+                                            "lame-3.100/dshow/Makefile.in",
+                                            "lame-3.100/mpglib/Makefile.in",
+                                            "lame-3.100/mpglib/Makefile.am",
+                                            "lame-3.100/misc/Makefile.in",
+                                            "lame-3.100/misc/Makefile.am",
+                                            "lame-3.100/macosx/Makefile.in",
+                                            "lame-3.100/macosx/Makefile.am",
+                                            "lame-3.100/macosx/English.lproj/Makefile.am",
+                                            "lame-3.100/macosx/English.lproj/Makefile.in",
+                                            "lame-3.100/macosx/LAME.xcodeproj/Makefile.in",
+                                            "lame-3.100/macosx/LAME.xcodeproj/Makefile.am",
+                                            "lame-3.100/frontend/Makefile.am",
+                                            "lame-3.100/frontend/Makefile.in",
+                                            "lame-3.100/libmp3lame/Makefile.in",
+                                            "lame-3.100/libmp3lame/Makefile.am",
+                                            "lame-3.100/libmp3lame/vector/Makefile.am",
+                                            "lame-3.100/libmp3lame/vector/Makefile.in",
+                                            "lame-3.100/libmp3lame/i386/Makefile.am",
+                                            "lame-3.100/libmp3lame/i386/Makefile.in",
+                                            "lame-3.100/include/Makefile.am",
+                                            "lame-3.100/include/Makefile.in",
+                                            "lame-3.100/ACM/Makefile.am",
+                                            "lame-3.100/ACM/Makefile.in",
+                                            "lame-3.100/ACM/ddk/Makefile.am",
+                                            "lame-3.100/ACM/ddk/Makefile.in",
+                                            "lame-3.100/ACM/ADbg/Makefile.in",
+                                            "lame-3.100/ACM/ADbg/Makefile.am",
+                                            "lame-3.100/ACM/tinyxml/Makefile.in",
+                                            "lame-3.100/ACM/tinyxml/Makefile.am",
+                                            "lame-3.100/ACM/tinyxml/Makefile.tinyxml",
+                                            "lame-3.100/debian/Makefile.in",
+                                            "lame-3.100/debian/Makefile.am",
+                                            "lame-3.100/vc_solution/Makefile.in",
+                                            "lame-3.100/vc_solution/Makefile.am"
+                                        ],
+                         "documents":  [
+                                           "lame-3.100/README",
+                                           "lame-3.100/install-sh",
+                                           "lame-3.100/INSTALL.configure",
+                                           "lame-3.100/INSTALL",
+                                           "lame-3.100/README.WINGTK",
+                                           "lame-3.100/Dll/README",
+                                           "lame-3.100/dshow/README",
+                                           "lame-3.100/mpglib/README",
+                                           "lame-3.100/ACM/readme.txt",
+                                           "lame-3.100/ACM/tinyxml/readme.txt"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "libass",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/libass-source.tar.gz",
+                         "sha256":  "54fd200410efd33cfee3cffc9768645e6052e65cc0aa5bf9fc4b82f598c11d18",
+                         "buildFiles":  [
+                                            "libass-c047dd2ea16f73abb4f448e6db3637158c1226d0/Makefile.am",
+                                            "libass-c047dd2ea16f73abb4f448e6db3637158c1226d0/autogen.sh",
+                                            "libass-c047dd2ea16f73abb4f448e6db3637158c1226d0/configure.ac"
+                                        ],
+                         "documents":  [
+                                           "libass-c047dd2ea16f73abb4f448e6db3637158c1226d0/README.md",
+                                           "libass-c047dd2ea16f73abb4f448e6db3637158c1226d0/compare/README.md"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "libgme",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/libgme-source.tar.gz",
+                         "sha256":  "525734a133a87213a5cd72815d43d9ee49031805de87ac0f5c66c8f8a02f01d9",
+                         "buildFiles":  [
+                                            "game-music-emu-e76bdc0cb916e79aa540290e6edd0c445879d3ba/CMakeLists.txt",
+                                            "game-music-emu-e76bdc0cb916e79aa540290e6edd0c445879d3ba/demo/CMakeLists.txt",
+                                            "game-music-emu-e76bdc0cb916e79aa540290e6edd0c445879d3ba/gme/CMakeLists.txt",
+                                            "game-music-emu-e76bdc0cb916e79aa540290e6edd0c445879d3ba/player/CMakeLists.txt",
+                                            "game-music-emu-e76bdc0cb916e79aa540290e6edd0c445879d3ba/test/Makefile"
+                                        ],
+                         "documents":  [
+                                           "game-music-emu-e76bdc0cb916e79aa540290e6edd0c445879d3ba/readme.txt"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "libssh",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/libssh-source.tar.xz",
+                         "sha256":  "07392c54ab61476288d1c1f0a7c557b50211797ad00c34c3af2bbc4dbc4bd97d",
+                         "buildFiles":  [
+                                            "libssh-0.10.4/src/CMakeLists.txt",
+                                            "libssh-0.10.4/CTestConfig.cmake",
+                                            "libssh-0.10.4/CompilerChecks.cmake",
+                                            "libssh-0.10.4/tests/unittests/CMakeLists.txt",
+                                            "libssh-0.10.4/tests/client/CMakeLists.txt",
+                                            "libssh-0.10.4/tests/CMakeLists.txt",
+                                            "libssh-0.10.4/tests/server/test_server/CMakeLists.txt",
+                                            "libssh-0.10.4/tests/server/CMakeLists.txt",
+                                            "libssh-0.10.4/tests/tests_config.h.cmake",
+                                            "libssh-0.10.4/tests/external_override/CMakeLists.txt",
+                                            "libssh-0.10.4/tests/pkd/CMakeLists.txt",
+                                            "libssh-0.10.4/tests/ctest-default.cmake",
+                                            "libssh-0.10.4/tests/fuzz/CMakeLists.txt",
+                                            "libssh-0.10.4/tests/benchmarks/CMakeLists.txt",
+                                            "libssh-0.10.4/doc/CMakeLists.txt",
+                                            "libssh-0.10.4/libssh.pc.cmake",
+                                            "libssh-0.10.4/CMakeLists.txt",
+                                            "libssh-0.10.4/ConfigureChecks.cmake",
+                                            "libssh-0.10.4/include/CMakeLists.txt",
+                                            "libssh-0.10.4/include/libssh/libssh_version.h.cmake",
+                                            "libssh-0.10.4/include/libssh/CMakeLists.txt",
+                                            "libssh-0.10.4/cmake/Toolchain-cross-m32.cmake",
+                                            "libssh-0.10.4/cmake/Modules/DefineCMakeDefaults.cmake",
+                                            "libssh-0.10.4/cmake/Modules/FindGSSAPI.cmake",
+                                            "libssh-0.10.4/cmake/Modules/GetFilesList.cmake",
+                                            "libssh-0.10.4/cmake/Modules/FindNSIS.cmake",
+                                            "libssh-0.10.4/cmake/Modules/FindMbedTLS.cmake",
+                                            "libssh-0.10.4/cmake/Modules/FindGCrypt.cmake",
+                                            "libssh-0.10.4/cmake/Modules/AddCCompilerFlag.cmake",
+                                            "libssh-0.10.4/cmake/Modules/AddCMockaTest.cmake",
+                                            "libssh-0.10.4/cmake/Modules/DefinePlatformDefaults.cmake",
+                                            "libssh-0.10.4/cmake/Modules/MacroEnsureOutOfSourceBuild.cmake",
+                                            "libssh-0.10.4/cmake/Modules/CheckCCompilerFlagSSP.cmake",
+                                            "libssh-0.10.4/cmake/Modules/ExtractSymbols.cmake",
+                                            "libssh-0.10.4/cmake/Modules/DefineCompilerFlags.cmake",
+                                            "libssh-0.10.4/cmake/Modules/FindArgp.cmake",
+                                            "libssh-0.10.4/cmake/Modules/FindCMocka.cmake",
+                                            "libssh-0.10.4/cmake/Modules/GenerateMap.cmake",
+                                            "libssh-0.10.4/cmake/Modules/FindNaCl.cmake",
+                                            "libssh-0.10.4/cmake/Modules/FindABIMap.cmake",
+                                            "libssh-0.10.4/cmake/Modules/Findsofthsm.cmake",
+                                            "libssh-0.10.4/config.h.cmake",
+                                            "libssh-0.10.4/examples/CMakeLists.txt",
+                                            "libssh-0.10.4/CPackConfig.cmake",
+                                            "libssh-0.10.4/DefineOptions.cmake"
+                                        ],
+                         "documents":  [
+                                           "libssh-0.10.4/tests/fuzz/README.md",
+                                           "libssh-0.10.4/doc/README.gitlab.freebsd.md",
+                                           "libssh-0.10.4/doc/that_style/README.md",
+                                           "libssh-0.10.4/README.mbedtls",
+                                           "libssh-0.10.4/README",
+                                           "libssh-0.10.4/README.md",
+                                           "libssh-0.10.4/INSTALL"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+                                                                  "libssh-0.10.4/include/libssh/config.h"
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "libtheora",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/libtheora-source.tar.xz",
+                         "sha256":  "f36da409947aa2b3dcc6af0a8c2e3144bc19db2ed547d64e9171c59c66561c61",
+                         "buildFiles":  [
+                                            "libtheora-1.1.1/tests/Makefile.am",
+                                            "libtheora-1.1.1/tests/Makefile.in",
+                                            "libtheora-1.1.1/Makefile.am",
+                                            "libtheora-1.1.1/autogen.sh",
+                                            "libtheora-1.1.1/doc/libtheora/latex/Makefile",
+                                            "libtheora-1.1.1/doc/Makefile.am",
+                                            "libtheora-1.1.1/doc/Makefile.in",
+                                            "libtheora-1.1.1/doc/spec/Makefile.am",
+                                            "libtheora-1.1.1/doc/spec/Makefile.in",
+                                            "libtheora-1.1.1/Makefile.in",
+                                            "libtheora-1.1.1/include/Makefile.am",
+                                            "libtheora-1.1.1/include/theora/Makefile.am",
+                                            "libtheora-1.1.1/include/theora/Makefile.in",
+                                            "libtheora-1.1.1/include/Makefile.in",
+                                            "libtheora-1.1.1/examples/Makefile.am",
+                                            "libtheora-1.1.1/examples/Makefile.in",
+                                            "libtheora-1.1.1/m4/Makefile.am",
+                                            "libtheora-1.1.1/m4/Makefile.in",
+                                            "libtheora-1.1.1/win32/build_theora_static_debug.bat",
+                                            "libtheora-1.1.1/win32/build_theora_static.bat",
+                                            "libtheora-1.1.1/win32/xmingw32/Makefile",
+                                            "libtheora-1.1.1/configure.ac",
+                                            "libtheora-1.1.1/configure",
+                                            "libtheora-1.1.1/lib/Makefile.am",
+                                            "libtheora-1.1.1/lib/Makefile.in"
+                                        ],
+                         "documents":  [
+                                           "libtheora-1.1.1/install-sh",
+                                           "libtheora-1.1.1/README",
+                                           "libtheora-1.1.1/win32/VS2008/README",
+                                           "libtheora-1.1.1/win32/VS2005/README",
+                                           "libtheora-1.1.1/win32/experimental/transcoder/readme.txt",
+                                           "libtheora-1.1.1/win32/experimental/encoderwin/ReadMe.txt",
+                                           "libtheora-1.1.1/win32/experimental/wincompat/README.txt"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+                                                                  "libtheora-1.1.1/symbian/config.h"
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "libwebp",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/libwebp-source.tar.gz",
+                         "sha256":  "bb84185d6f419b4b2f855fd1140105b01eb52b55886fb33c7afa0ef8f1ee4e5f",
+                         "buildFiles":  [
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/CMakeLists.txt",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/Makefile.vc",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/autogen.sh",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/cmake/cpu.cmake",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/cmake/deps.cmake",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/configure.ac",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/examples/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/extras/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/imageio/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/makefile.unix",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/man/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/sharpyuv/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/src/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/src/dec/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/src/demux/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/src/dsp/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/src/enc/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/src/mux/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/src/utils/Makefile.am",
+                                            "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/tests/fuzzer/makefile.unix"
+                                        ],
+                         "documents":  [
+                                           "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/README.md",
+                                           "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/doc/building.md",
+                                           "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/swig/README.md",
+                                           "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/tests/README.md",
+                                           "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/webp_js/README.md"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "nettle",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/nettle-source.tar.gz",
+                         "sha256":  "364f3e2b77cd7dcde83fd7c45219c834e54b0c75e428b6f894a23d12dd41cbfe",
+                         "buildFiles":  [
+                                            "nettle-3.8.1/configure.ac",
+                                            "nettle-3.8.1/examples/Makefile.in",
+                                            "nettle-3.8.1/Makefile.in",
+                                            "nettle-3.8.1/tools/Makefile.in",
+                                            "nettle-3.8.1/testsuite/Makefile.in",
+                                            "nettle-3.8.1/configure"
+                                        ],
+                         "documents":  [
+                                           "nettle-3.8.1/s390x/README",
+                                           "nettle-3.8.1/arm64/README",
+                                           "nettle-3.8.1/x86_64/README",
+                                           "nettle-3.8.1/powerpc64/README",
+                                           "nettle-3.8.1/install-sh",
+                                           "nettle-3.8.1/README",
+                                           "nettle-3.8.1/arm/README",
+                                           "nettle-3.8.1/INSTALL"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "opencore-amr",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/opencore-amr-source.tar.gz",
+                         "sha256":  "483eb4061088e2b34b358e47540b5d495a96cd468e361050fae615b1809dc4a1",
+                         "buildFiles":  [
+                                            "opencore-amr-0.1.6/test/Makefile.in",
+                                            "opencore-amr-0.1.6/test/Makefile.am",
+                                            "opencore-amr-0.1.6/Makefile.in",
+                                            "opencore-amr-0.1.6/configure.ac",
+                                            "opencore-amr-0.1.6/amrnb/Makefile.in",
+                                            "opencore-amr-0.1.6/amrnb/Makefile.am",
+                                            "opencore-amr-0.1.6/amrwb/Makefile.in",
+                                            "opencore-amr-0.1.6/amrwb/Makefile.am",
+                                            "opencore-amr-0.1.6/configure",
+                                            "opencore-amr-0.1.6/Makefile.am"
+                                        ],
+                         "documents":  [
+                                           "opencore-amr-0.1.6/README",
+                                           "opencore-amr-0.1.6/opencore/README",
+                                           "opencore-amr-0.1.6/install-sh"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "openmpt",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/openmpt-source.tar.gz",
+                         "sha256":  "441585a59b7317ce57a11edf79850e14e910998c99a98668d23dc345725850cc",
+                         "buildFiles":  [
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/Makefile",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/build/auto/build_libopenmpt_android.sh",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/build/autotools/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/build/autotools/configure.ac",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/build/build_tools.sh",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/contrib/fuzzing/build.sh",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/contrib/libmodplug-0.8.8.5/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/contrib/libmodplug-0.8.8.5/autogen.sh",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/contrib/libmodplug-0.8.8.5/configure.ac",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/contrib/libmodplug-0.8.9.0/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/contrib/libmodplug-0.8.9.0/autogen.sh",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/contrib/libmodplug-0.8.9.0/configure.ac",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/genie/build/gmake.darwin/Makefile",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/genie/build/gmake.freebsd/Makefile",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/genie/build/gmake.linux/Makefile",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/genie/build/gmake.windows/Makefile",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/genie/makefile",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/genie/src/host/lua-5.3.0/Makefile",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/genie/src/host/lua-5.3.0/src/Makefile",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/lhasa/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/lhasa/autogen.sh",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/lhasa/configure.ac",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/lhasa/doc/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/lhasa/lib/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/lhasa/lib/public/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/lhasa/pkg/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/lhasa/src/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/Bootstrap.bat",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/Bootstrap.mak",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/binmodules/luasocket/makefile.dist",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/build/gmake2.bsd/Makefile",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/build/gmake2.macosx/Makefile",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/build/gmake2.unix/Makefile",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/build/gmake2.windows/Makefile",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/include/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/include/curl/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/include/curl/curlbuild.h.cmake",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/lib/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/lib/Makefile.Watcom",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/lib/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/lib/Makefile.b32",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/lib/Makefile.inc",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/lib/Makefile.m32",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/lib/Makefile.netware",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/lib/Makefile.vxworks",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/lib/curl_config.h.cmake",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/lib/makefile.amiga",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/lib/makefile.dj",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/3rdparty/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/3rdparty/Makefile.inc",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/3rdparty/everest/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/3rdparty/everest/Makefile.inc",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/include/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/library/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/aes/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/fuzz/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/hash/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/pkey/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/psa/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/random/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/ssl/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/test/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/test/cmake_subproject/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/util/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/x509/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/tests/CMakeLists.txt",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/soundtouch/include/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/soundtouch/source/Makefile.am",
+                                            "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/soundtouch/source/SoundTouch/Makefile.am"
+                                        ],
+                         "documents":  [
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/build/android_ndk/README.AndroidNDK.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/build/auto/readme.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/build/signingkeys/readme.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/build/vs/debug/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/contrib/fuzzing/readme.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/genie/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/genie/src/host/lua-5.3.0/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/genie/src/host/lua-5.3.0/doc/readme.html",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/lhasa/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/lhasa/pkg/win32/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/ogg/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/opus/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/portaudio/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/portaudio/bindings/cpp/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/portaudio/src/hostapi/skeleton/README.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/portaudio/src/hostapi/wasapi/readme.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/portaudio/src/hostapi/wdmks/readme.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/binmodules/luasocket/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/binmodules/luasocket/doc/installation.html",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/binmodules/luasocket/etc/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/binmodules/luasocket/samples/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/binmodules/luasocket/test/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/curl/include/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/lua/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/lua/doc/readme.html",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/3rdparty/everest/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/configs/README.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/docs/proposed/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/programs/fuzz/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/tests/data_files/Readme-x509.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/tests/data_files/dir-maxpath/Readme.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/tests/data_files/dir3/Readme",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/tests/data_files/dir4/Readme",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/tests/git-scripts/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/modules/android/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/modules/codelite/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/modules/d/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/modules/raw/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/website/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/website/docs/Building-Premake.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/pugixml/readme.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/r8brain/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/rtaudio/README.md",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/soundtouch/README.html",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/unrar/readme.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/zlib/README",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/zlib/contrib/README.contrib",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/installer/install-big.bmp",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/installer/install-multi-arch-signed.iss",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/installer/install-multi-arch.iss",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/installer/install-small.bmp",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/installer/packageTemplate/readme.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/mptrack/manual_generator/readme.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/mptrack/res/originals/readme.txt",
+                                           "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/packageTemplate/readme.txt"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+                                                                  "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/build/premake/inc/lame/config.h",
+                                                                  "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/mpg123/ports/MSVC++/config.h",
+                                                                  "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/mpg123/ports/Xcode/config.h",
+                                                                  "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/mpg123/ports/makefile/config.h",
+                                                                  "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/opus/win32/config.h",
+                                                                  "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/opusenc/win32/config.h",
+                                                                  "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/libzip/config.h",
+                                                                  "openmpt-7ec8c1440ddac9c407da5defaeb48fd9ac6a4761/include/premake/contrib/mbedtls/include/mbedtls/config.h"
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "OpenSSL",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/OpenSSL-source.tar.gz",
+                         "sha256":  "c7ab227479e26e1536fe1256a96315fa09ca39af377c7cbee863d53a99046d6c",
+                         "buildFiles":  [
+                                            "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/Configure",
+                                            "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/demos/bio/Makefile",
+                                            "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/demos/cipher/Makefile",
+                                            "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/demos/digest/Makefile",
+                                            "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/demos/encode/Makefile",
+                                            "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/demos/kdf/Makefile",
+                                            "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/demos/mac/Makefile",
+                                            "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/demos/pkey/Makefile",
+                                            "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/demos/signature/Makefile",
+                                            "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/doc/life-cycles/Makefile",
+                                            "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/external/perl/Text-Template-1.56/Makefile.PL"
+                                        ],
+                         "documents":  [
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/Configurations/README-design.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/Configurations/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/INSTALL.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/README-ENGINES.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/README-FIPS.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/README-PROVIDERS.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/crypto/README-sparse_array.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/crypto/bn/README.pod",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/crypto/engine/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/crypto/err/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/crypto/objects/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/crypto/perlasm/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/crypto/property/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/demos/README.txt",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/demos/bio/README.txt",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/demos/certs/README.txt",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/doc/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/doc/life-cycles/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/external/perl/Text-Template-1.56/INSTALL",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/external/perl/Text-Template-1.56/README",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/fuzz/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/ssl/record/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/ssl/statem/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/test/README-dev.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/test/README-external.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/test/README.md",
+                                           "openssl-19cc035b6c6f2283573d29c7ea7f7d675cf750ce/test/README.ssltest.md"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "opus",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/opus-source.tar.gz",
+                         "sha256":  "5a55f50891bcfc37b82733ac8439320b55bdc70db2e040c70125afb41d14c21a",
+                         "buildFiles":  [
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/CMakeLists.txt",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/Makefile.am",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/Makefile.mips",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/Makefile.unix",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/autogen.sh",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/celt/dump_modes/Makefile",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/celt/meson.build",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/celt/tests/meson.build",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/cmake/CFeatureCheck.cmake",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/cmake/OpusBuildtype.cmake",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/cmake/OpusConfig.cmake",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/cmake/OpusFunctions.cmake",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/cmake/OpusPackageVersion.cmake",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/cmake/OpusSources.cmake",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/cmake/RunTest.cmake",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/configure.ac",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/doc/Makefile.am",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/doc/build_draft.sh",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/doc/build_isobmff.sh",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/doc/build_oggdraft.sh",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/doc/meson.build",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/include/meson.build",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/meson.build",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/meson_options.txt",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/silk/meson.build",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/silk/tests/meson.build",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/src/meson.build",
+                                            "opus-c85499757c148fede8604cffa12454206b6138ba/tests/meson.build"
+                                        ],
+                         "documents":  [
+                                           "opus-c85499757c148fede8604cffa12454206b6138ba/README",
+                                           "opus-c85499757c148fede8604cffa12454206b6138ba/README.draft",
+                                           "opus-c85499757c148fede8604cffa12454206b6138ba/cmake/README.md"
+                                       ],
+                         "patchFileCandidates":  [
+                                                     "opus-c85499757c148fede8604cffa12454206b6138ba/doc/opus_update.patch"
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+                                                                  "opus-c85499757c148fede8604cffa12454206b6138ba/win32/config.h"
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "rubberband",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/rubberband-source.tar.gz",
+                         "sha256":  "75b57d116642174eeb45b29ce932647121872185028b2cb02d16e86faccaf699",
+                         "buildFiles":  [
+                                            "rubberband-afdb914d0b853f445ef4582720966701527ade5b/Makefile.in",
+                                            "rubberband-afdb914d0b853f445ef4582720966701527ade5b/Makefile.osx",
+                                            "rubberband-afdb914d0b853f445ef4582720966701527ade5b/configure",
+                                            "rubberband-afdb914d0b853f445ef4582720966701527ade5b/configure.ac"
+                                        ],
+                         "documents":  [
+                                           "rubberband-afdb914d0b853f445ef4582720966701527ade5b/README.txt"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "SDL",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/SDL-source.tar.gz",
+                         "sha256":  "54ed2d42fb987b941f38ebe466f422432be98a27f5402787fe55915a192768ec",
+                         "buildFiles":  [
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/.github/cmake/CMakeLists.txt",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/CMakeLists.txt",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Makefile.in",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Makefile.minimal",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Makefile.os2",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Makefile.pandora",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Makefile.w32",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/VisualC/pkg-support/cmake/sdl2-config-version.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/VisualC/pkg-support/cmake/sdl2-config.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Xcode/SDL/pkg-support/resources/CMake/sdl2-config-version.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Xcode/SDL/pkg-support/resources/CMake/sdl2-config.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/android-project/app/jni/CMakeLists.txt",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/android-project/app/jni/src/CMakeLists.txt",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/autogen.sh",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/cmake/CheckCPUArchitecture.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/cmake/macros.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/cmake/sdlchecks.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/cmake/sdlfind.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/cmake/sdlplatform.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/cmake/test/CMakeLists.txt",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/configure",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/configure.ac",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/include/SDL_config.h.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/include/SDL_revision.h.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/mingw/pkg-support/cmake/sdl2-config-version.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/mingw/pkg-support/cmake/sdl2-config.cmake",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/core/os2/geniconv/makefile",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/Makefile.am",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/bootstrap",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/configure.ac",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/hidtest/Makefile.am",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/ios/Makefile.am",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/libusb/Makefile.am",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/libusb/Makefile.freebsd",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/libusb/Makefile.linux",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/linux/Makefile.am",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/mac/Makefile.am",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/testgui/Makefile.am",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/testgui/Makefile.freebsd",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/testgui/Makefile.linux",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/testgui/Makefile.mac",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/testgui/Makefile.mingw",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/windows/Makefile.am",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/windows/Makefile.mingw",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/windows/ddk_build/makefile",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/render/metal/build-metal-shaders.sh",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/test/CMakeLists.txt",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/test/Makefile.in",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/test/Makefile.os2",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/test/Makefile.w32",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/test/autogen.sh",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/test/configure",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/test/configure.ac",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/test/nacl/Makefile",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/visualtest/Makefile.in",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/visualtest/autogen.sh",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/visualtest/configure",
+                                            "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/visualtest/configure.ac"
+                                        ],
+                         "documents":  [
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/INSTALL.txt",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/README-SDL.txt",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/README.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Xcode-iOS/Demos/README",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/Xcode/SDL/pkg-support/resources/ReadMe.txt",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/build-scripts/install-sh",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-android.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-cmake.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-directfb.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-dynapi.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-emscripten.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-gdk.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-gesture.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-git.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-hg.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-ios.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-kmsbsd.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-linux.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-macos.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-n3ds.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-nacl.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-ngage.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-os2.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-pandora.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-platforms.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-porting.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-ps2.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-psp.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-raspberrypi.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-riscos.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-touch.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-versions.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-visualc.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-vita.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-wince.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-windows.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README-winrt.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/docs/README.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/README.txt",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/hidapi/linux/README.txt",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/src/video/yuv2rgb/README.md",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/test/README",
+                                           "SDL-0f8f4f6764aaef941c27a344f0f1a53d9c4fb60f/visualtest/README.txt"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "speex",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/speex-source.tar.gz",
+                         "sha256":  "bbb6d50c9cfa1db5023e628a6b5cda608592c222fdfc75f13f61ddd6f50bf194",
+                         "buildFiles":  [
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/autogen.sh",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/configure.ac",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/doc/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/doc/meson.build",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/include/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/include/speex/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/include/speex/meson.build",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/libspeex/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/libspeex/meson.build",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/meson.build",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/meson_options.txt",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/src/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/src/meson.build",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/symbian/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/ti/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/ti/speex_C54_test/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/ti/speex_C55_test/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/ti/speex_C64_test/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2003/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2003/libspeex/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2003/speexdec/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2003/speexenc/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2003/tests/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2005/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2005/libspeex/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2005/speexdec/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2005/speexenc/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2005/tests/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2008/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2008/libspeex/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2008/speexdec/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2008/speexenc/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/VS2008/tests/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/libspeex/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/speexdec/Makefile.am",
+                                            "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/speexenc/Makefile.am"
+                                        ],
+                         "documents":  [
+                                           "speex-3693431241915ae71ff6f7f84ec56eca2198b037/INSTALL",
+                                           "speex-3693431241915ae71ff6f7f84ec56eca2198b037/README",
+                                           "speex-3693431241915ae71ff6f7f84ec56eca2198b037/README.TI-DSP",
+                                           "speex-3693431241915ae71ff6f7f84ec56eca2198b037/README.Trimedia",
+                                           "speex-3693431241915ae71ff6f7f84ec56eca2198b037/README.blackfin",
+                                           "speex-3693431241915ae71ff6f7f84ec56eca2198b037/README.symbian",
+                                           "speex-3693431241915ae71ff6f7f84ec56eca2198b037/README.win32",
+                                           "speex-3693431241915ae71ff6f7f84ec56eca2198b037/speexclient/README"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+                                                                  "speex-3693431241915ae71ff6f7f84ec56eca2198b037/symbian/config.h",
+                                                                  "speex-3693431241915ae71ff6f7f84ec56eca2198b037/ti/config.h",
+                                                                  "speex-3693431241915ae71ff6f7f84ec56eca2198b037/tmv/config.h",
+                                                                  "speex-3693431241915ae71ff6f7f84ec56eca2198b037/win32/config.h"
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "srt",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/srt-source.tar.gz",
+                         "sha256":  "5e23dc0d1f5e25835a7f43d83782320c03c414388e297b6c76c2a3bcf256108f",
+                         "buildFiles":  [
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/CMakeLists.txt",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/configure",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/CheckCXXAtomic.cmake",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/CheckCXXStdPutTime.cmake",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/CheckGCCAtomicIntrinsics.cmake",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/FindBotan.cmake",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/FindMbedTLS.cmake",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/FindPThreadGetSetName.cmake",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/ShowProjectConfig.cmake",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/build-windows.bat",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/build-windows.ps1",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/googletest-download.cmake",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/googletest.cmake",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/haiUtil.cmake",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/iOS.cmake",
+                                            "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/win-installer/build-win-installer.ps1"
+                                        ],
+                         "documents":  [
+                                           "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/README.md",
+                                           "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/docs/README.md",
+                                           "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/build-android/README.md",
+                                           "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/release-notes/README.md",
+                                           "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/win-installer/README.md",
+                                           "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/win-installer/install-libsrt.ps1",
+                                           "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/win-installer/install-nsis.ps1",
+                                           "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/scripts/win-installer/install-openssl.ps1",
+                                           "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/srtcore/README.md",
+                                           "srt-02acd186d9c25d1efa064dc8bdc40ba76d410164/testing/README.md"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "vidstab",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/vidstab-source.tar.gz",
+                         "sha256":  "6b51f3efd6b8500c92f3c5d25e158f813d3be078c31c9b480c7ea791b6725e5e",
+                         "buildFiles":  [
+                                            "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/CMakeLists.txt",
+                                            "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/CMakeModules/FindOrc.cmake",
+                                            "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/CMakeModules/FindSSE.cmake",
+                                            "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/CMakeModules/create_pkgconfig_file.cmake",
+                                            "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/src/orc/Makefile",
+                                            "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/tests/CMakeLists.txt",
+                                            "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/tests/orc_bug/CMakeLists.txt",
+                                            "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/tests/orc_bug/FindOrc.cmake",
+                                            "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/transcode/CMakeLists.txt"
+                                        ],
+                         "documents":  [
+                                           "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/Install",
+                                           "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/README.md",
+                                           "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/libavfilter/README",
+                                           "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/transcode/cmake/install.sh"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "vmaf",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/vmaf-source.tar.gz",
+                         "sha256":  "147b7ae12548ab8fd9b5e86dd93bd792e237756870c5a435bc1c0b789bdcb1dd",
+                         "buildFiles":  [
+                                            "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/Makefile",
+                                            "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/libvmaf/doc/meson.build",
+                                            "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/libvmaf/include/libvmaf/meson.build",
+                                            "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/libvmaf/include/meson.build",
+                                            "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/libvmaf/meson.build",
+                                            "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/libvmaf/meson_options.txt",
+                                            "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/libvmaf/src/meson.build",
+                                            "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/libvmaf/test/meson.build",
+                                            "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/libvmaf/tools/meson.build",
+                                            "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/libvmaf/tools/test/meson.build",
+                                            "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/python/test/bootstrap_train_test_model_test.py"
+                                        ],
+                         "documents":  [
+                                           "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/README.md",
+                                           "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/libvmaf/README.md",
+                                           "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/libvmaf/tools/README.md",
+                                           "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/matlab/cid_icid/iCID/iCID_Metric/README.txt",
+                                           "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/matlab/strred/README",
+                                           "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/matlab/strred/matlabPyrTools/README",
+                                           "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/matlab/strred/matlabPyrTools/TUTORIALS/README",
+                                           "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/python/README.rst"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "vo-amrwbenc",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/vo-amrwbenc-source.tar.gz",
+                         "sha256":  "5652b391e0f0e296417b841b02987d3fd33e6c0af342c69542cbb016a71d9d4e",
+                         "buildFiles":  [
+                                            "vo-amrwbenc-0.1.3/configure.ac",
+                                            "vo-amrwbenc-0.1.3/Makefile.in",
+                                            "vo-amrwbenc-0.1.3/configure",
+                                            "vo-amrwbenc-0.1.3/Makefile.am"
+                                        ],
+                         "documents":  [
+                                           "vo-amrwbenc-0.1.3/README",
+                                           "vo-amrwbenc-0.1.3/install-sh"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "vorbis",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/vorbis-source.tar.gz",
+                         "sha256":  "97cfed8b9acb13bf7ec7410b6f303b69c312fc17a009298e9b8a7356cfe8ce7f",
+                         "buildFiles":  [
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/CMakeLists.txt",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/autogen.sh",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/cmake/FindOgg.cmake",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/configure.ac",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/contrib/oss-fuzz/build.sh",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/doc/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/doc/libvorbis/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/doc/vorbisenc/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/doc/vorbisfile/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/examples/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/include/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/include/vorbis/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/lib/CMakeLists.txt",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/lib/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/lib/books/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/lib/books/coupled/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/lib/books/floor/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/lib/books/uncoupled/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/lib/modes/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/m4/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/test/CMakeLists.txt",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/test/Makefile.am",
+                                            "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/vq/Makefile.am"
+                                        ],
+                         "documents":  [
+                                           "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/README.md",
+                                           "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/win32/VS2005/README",
+                                           "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/win32/VS2008/README",
+                                           "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/win32/VS2010/README"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+                                                                  "vorbis-84c023699cdf023a32fa4ded32019f194afcdad0/symbian/config.h"
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "vpx",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/vpx-source.tar.gz",
+                         "sha256":  "ba4ba50418bd566a55f7603ba7b7743843b59215216eceb0d597a9f048da5698",
+                         "buildFiles":  [
+                                            "libvpx-655da33b89770dff923b409267a566ab08330922/build/make/Makefile",
+                                            "libvpx-655da33b89770dff923b409267a566ab08330922/configure"
+                                        ],
+                         "documents":  [
+                                           "libvpx-655da33b89770dff923b409267a566ab08330922/README",
+                                           "libvpx-655da33b89770dff923b409267a566ab08330922/test/android/README",
+                                           "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/googletest/README.libvpx",
+                                           "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/googletest/src/README.md",
+                                           "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/googletest/src/include/gtest/internal/custom/README.md",
+                                           "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/libwebm/README.libvpx",
+                                           "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/libyuv/README.libvpx",
+                                           "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/x86inc/README.libvpx"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "x264",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/x264-source.tar.gz",
+                         "sha256":  "c42b923fc4c0c8e992fdf4970bf7970cc16bf870d28be460bb9bb1c5bb4044b8",
+                         "buildFiles":  [
+                                            "x264-c1c9931dc87289b8aeba78150467f17bdb97d019/Makefile",
+                                            "x264-c1c9931dc87289b8aeba78150467f17bdb97d019/configure"
+                                        ],
+                         "documents":  [
+
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "x265",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/x265-source.tar.gz",
+                         "sha256":  "cf0c54a8f13b9c7015512ae6092ebadab5ba2aa4a48290b6d6e06d3d9f0bc17e",
+                         "buildFiles":  [
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/aarch64-darwin/crosscompile.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/aarch64-linux/crosscompile.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/arm-linux/crosscompile.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/linux/multilib.sh",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/msys/multilib.sh",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/msys/toolchain-x86_64-w64-mingw32.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/vc10-x86/build-all.bat",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/vc10-x86_64/build-all.bat",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/vc11-x86/build-all.bat",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/vc11-x86_64/build-all.bat",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/vc12-x86/build-all.bat",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/vc12-x86_64/build-all.bat",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/vc15-x86/build-all.bat",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/vc15-x86_64/build-all.bat",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/vc9-x86/build-all.bat",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/vc9-x86_64/build-all.bat",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/doc/reST/Makefile",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/CMakeLists.txt",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/CMakeASM_NASMInformation.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/CMakeDetermineASM_NASMCompiler.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/CMakeTestASM_NASMCompiler.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/FindNasm.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/FindNeon.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/FindNuma.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/FindSVE.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/FindSVE2.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/FindVLD.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/FindVtune.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/Findsvthevc.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/Version.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/cmake/clean-generated.cmake",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/common/CMakeLists.txt",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/dynamicHDR10/CMakeLists.txt",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/encoder/CMakeLists.txt",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/profile/CMakeLists.txt",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/profile/PPA/CMakeLists.txt",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/profile/vtune/CMakeLists.txt",
+                                            "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/test/CMakeLists.txt"
+                                        ],
+                         "documents":  [
+                                           "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/build/README.txt",
+                                           "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/readme.rst",
+                                           "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/common/x86/README.txt"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "xvid",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/xvid-source.tar.gz",
+                         "sha256":  "abbdcbd39555691dd1c9b4d08f0a031376a3b211652c0d8b3b8aa9be1303ce2d",
+                         "buildFiles":  [
+                                            "xvidcore/examples/Makefile",
+                                            "xvidcore/dshow/Makefile",
+                                            "xvidcore/vfw/bin/Makefile",
+                                            "xvidcore/build/generic/configure.in",
+                                            "xvidcore/build/generic/bootstrap.sh",
+                                            "xvidcore/build/generic/configure",
+                                            "xvidcore/build/generic/Makefile"
+                                        ],
+                         "documents":  [
+                                           "xvidcore/src/image/ia64_asm/README",
+                                           "xvidcore/README",
+                                           "xvidcore/examples/README",
+                                           "xvidcore/doc/README",
+                                           "xvidcore/doc/INSTALL",
+                                           "xvidcore/build/generic/install-sh"
+                                       ],
+                         "patchFileCandidates":  [
+                                                     "xvidcore/dshow/dxpatch/dx90sdk-update-gcc.patch"
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+                                                                  "xvidcore/dshow/src/config.h",
+                                                                  "xvidcore/vfw/src/config.h"
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "zeromq",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/zeromq-source.tar.gz",
+                         "sha256":  "65d021968f90d61fd50d8e50409bdd494b040602bfb043e1bd5647ab035db3b4",
+                         "buildFiles":  [
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/CMakeLists.txt",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/Makefile.am",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/autogen.sh",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/build_qnx/Makefile",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/build_qnx/nto/Makefile",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/build_qnx/nto/aarch64/Makefile",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/build_qnx/nto/aarch64/le/Makefile",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/build_qnx/nto/x86_64/Makefile",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/build_qnx/nto/x86_64/o/Makefile",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/build_qnx/qnx.nto.toolchain.cmake",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/Makefile.am",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/android/build.sh",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/cmake/Modules/ClangFormat.cmake",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/cmake/Modules/FindAsciiDoc.cmake",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/cmake/Modules/FindNSS3.cmake",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/cmake/Modules/Findsodium.cmake",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/cmake/Modules/TestZMQVersion.cmake",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/cmake/Modules/ZMQSourceRunChecks.cmake",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/cmake/Modules/ZMQSupportMacros.cmake",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/cygwin/Makefile.cygwin",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/deprecated-msvc/Makefile.am",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/deprecated-msvc/build/build.bat",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/deprecated-msvc/build/buildall.bat",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/deprecated-msvc/build/buildbase.bat",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/gyp/build.bat",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/ios/build_ios.sh",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/mingw32/Makefile.mingw32",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/openwrt/Makefile",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/qnx/ToolchainQNX6.6_x86.cmake",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/configure.ac",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/doc/Makefile.am",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/tests/CMakeLists.txt",
+                                            "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/unittests/CMakeLists.txt"
+                                        ],
+                         "documents":  [
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/INSTALL",
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/README.cygwin.md",
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/README.doxygen.md",
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/README.md",
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/README",
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/android/README.md",
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/deprecated-msvc/readme.txt",
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/nuget/readme.nuget",
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/builds/zos/README.md",
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/external/wepoll/README.md",
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/installer.ico",
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/packaging/README",
+                                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/tests/README.md"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "zimg-googletest",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/zimg-googletest-source.tar.gz",
+                         "sha256":  "2765fbfaa978e90d1c8477bc2f2b9705be65b1b562bb215dbfaa76567d508fe1",
+                         "buildFiles":  [
+                                            "googletest-e2239ee6043f73722e7aa812a459f54a28552929/CMakeLists.txt",
+                                            "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googlemock/CMakeLists.txt",
+                                            "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googletest/CMakeLists.txt",
+                                            "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googletest/cmake/internal_utils.cmake",
+                                            "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googletest/scripts/test/Makefile"
+                                        ],
+                         "documents":  [
+                                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/README.md",
+                                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googlemock/README.md",
+                                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googlemock/docs/README.md",
+                                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googlemock/include/gmock/internal/custom/README.md",
+                                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googlemock/scripts/README.md",
+                                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googlemock/scripts/generator/README",
+                                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googlemock/scripts/generator/README.cppclean",
+                                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googletest/README.md",
+                                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googletest/docs/README.md",
+                                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googletest/include/gtest/internal/custom/README.md",
+                                           "googletest-e2239ee6043f73722e7aa812a459f54a28552929/googletest/scripts/README.md"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "zimg-graphengine",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/zimg-graphengine-source.tar.gz",
+                         "sha256":  "a4ddaae7dcb81e30d09915c25c27aecb799d0a5e64df1cf43158a86e6940d0fb",
+                         "buildFiles":  [
+
+                                        ],
+                         "documents":  [
+                                           "graphengine-509c1c3a9a3561945a1acd3b9bb1219763fe7c57/README.md"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+                                                                  "graphengine-509c1c3a9a3561945a1acd3b9bb1219763fe7c57/filter_validation/sha1/config.h"
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     },
+                     {
+                         "name":  "zimg",
+                         "archive":  "third_party/ffmpeg/win32-x64/libraries/zimg-source.tar.gz",
+                         "sha256":  "d8974cf74944565d8c2452e0ac49d68107b42dc7872baf0e2008d2268faff22f",
+                         "buildFiles":  [
+                                            "zimg-71431815950664f1e11b9ee4e5d4ba23d6d997f1/Makefile.am",
+                                            "zimg-71431815950664f1e11b9ee4e5d4ba23d6d997f1/autogen.sh",
+                                            "zimg-71431815950664f1e11b9ee4e5d4ba23d6d997f1/configure.ac",
+                                            "zimg-71431815950664f1e11b9ee4e5d4ba23d6d997f1/doc/example/Makefile"
+                                        ],
+                         "documents":  [
+                                           "zimg-71431815950664f1e11b9ee4e5d4ba23d6d997f1/README.md"
+                                       ],
+                         "patchFileCandidates":  [
+
+                                                 ],
+                         "generatedConfigurationCandidates":  [
+
+                                                              ],
+                         "providerUsageConfirmed":  false,
+                         "appliedPatchesStatus":  "unknown; archive filenames do not establish which patches were applied"
+                     }
+                 ],
+    "complete":  false,
+    "limitations":  [
+                        "Filename inventory of verified upstream archives; not proof of provider usage.",
+                        "Patch files may be tests, examples or third-party integration files. No patch is classified as applied.",
+                        "No matching provider build recipe, full package manifest, environment or build log has been obtained.",
+                        "No compilation or reproduction has been performed."
+                    ]
+}

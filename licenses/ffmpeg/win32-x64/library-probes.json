@@ -1,0 +1,191 @@
+{
+  "capturedAt": "2026-09-23T12:00:00.939Z",
+  "binary": "release/win-unpacked/resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg.exe",
+  "sha256": "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00",
+  "runs": [
+    {
+      "name": "x264",
+      "args": [
+        "-hide_banner",
+        "-f",
+        "lavfi",
+        "-i",
+        "color=size=64x64:rate=1",
+        "-frames:v",
+        "1",
+        "-pix_fmt",
+        "yuv420p",
+        "-c:v",
+        "libx264",
+        "-f",
+        "h264",
+        "pipe:1"
+      ],
+      "exitCode": 0,
+      "stderr": "Input #0, lavfi, from 'color=size=64x64:rate=1':\r\n  Duration: N/A, start: 0.000000, bitrate: N/A\r\n  Stream #0:0: Video: wrapped_avframe, yuv420p, 64x64 [SAR 1:1 DAR 1:1], 1 fps, 1 tbr, 1 tbn\r\nStream mapping:\r\n  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))\r\nPress [q] to stop, [?] for help\r\n[libx264 @ 0000014ad1c4d700] using SAR=1/1\r\n[libx264 @ 0000014ad1c4d700] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512\r\n[libx264 @ 0000014ad1c4d700] profile High, level 1.0, 4:2:0, 8-bit\r\nOutput #0, h264, to 'pipe:1':\r\n  Metadata:\r\n    encoder         : Lavf60.16.100\r\n  Stream #0:0: Video: h264, yuv420p(progressive), 64x64 [SAR 1:1 DAR 1:1], q=2-31, 1 fps, 1 tbn\r\n    Metadata:\r\n      encoder         : Lavc60.31.102 libx264\r\n    Side data:\r\n      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A\r\nframe=    0 fps=0.0 q=17.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[out#0/h264 @ 0000014ad1c4c580] video:1kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000000%\r\nframe=    1 fps=0.0 q=17.0 Lsize=       1kB time=00:00:00.00 bitrate=N/A speed=   0x    \r\n[libx264 @ 0000014ad1c4d700] frame I:1     Avg QP: 2.00  size:   763\r\n[libx264 @ 0000014ad1c4d700] mb I  I16..4: 100.0%  0.0%  0.0%\r\n[libx264 @ 0000014ad1c4d700] 8x8 transform intra:0.0%\r\n[libx264 @ 0000014ad1c4d700] coded y,uvDC,uvAC intra: 0.0% 0.0% 0.0%\r\n[libx264 @ 0000014ad1c4d700] i16 v,h,dc,p: 75%  0% 25%  0%\r\n[libx264 @ 0000014ad1c4d700] i8c dc,h,v,p: 100%  0%  0%  0%\r\n[libx264 @ 0000014ad1c4d700] kb/s:6.10\r\n",
+      "outputStrings": [
+        "x264 - core 164 r3172 c1c9931 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=2 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=1 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00"
+      ]
+    },
+    {
+      "name": "x265-8bit",
+      "args": [
+        "-hide_banner",
+        "-f",
+        "lavfi",
+        "-i",
+        "color=size=64x64:rate=1",
+        "-frames:v",
+        "1",
+        "-pix_fmt",
+        "yuv420p",
+        "-c:v",
+        "libx265",
+        "-x265-params",
+        "pools=1:frame-threads=1",
+        "-f",
+        "null",
+        "pipe:1"
+      ],
+      "exitCode": 0,
+      "stderr": "Input #0, lavfi, from 'color=size=64x64:rate=1':\r\n  Duration: N/A, start: 0.000000, bitrate: N/A\r\n  Stream #0:0: Video: wrapped_avframe, yuv420p, 64x64 [SAR 1:1 DAR 1:1], 1 fps, 1 tbr, 1 tbn\r\nStream mapping:\r\n  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> hevc (libx265))\r\nPress [q] to stop, [?] for help\r\nx265 [info]: HEVC encoder version 3.5+113-8787af124\r\nx265 [info]: build info [Windows][GCC 13.2.0][64 bit] 8bit+10bit+12bit\r\nx265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2\r\nx265 [info]: Main profile, Level-1 (Main tier)\r\nx265 [warning]: Too few rows/columns, --wpp disabled\r\nx265 [info]: Thread pool created using 1 threads\r\nx265 [info]: Slices                              : 1\r\nx265 [info]: frame threads / pool features       : 1 / none\r\nx265 [warning]: Source height < 720p; disabling lookahead-slices\r\nx265 [info]: Coding QT: max CU size, min CU size : 64 / 8\r\nx265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra\r\nx265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3\r\nx265 [info]: Keyframe min / max / scenecut / bias  : 1 / 250 / 40 / 5.00 \r\nx265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2\r\nx265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0\r\nx265 [info]: References / ref-limit  cu / depth  : 3 / off / on\r\nx265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1\r\nx265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60\r\nx265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp\r\nx265 [info]: tools: b-intra strong-intra-smoothing deblock sao\r\nOutput #0, null, to 'pipe:1':\r\n  Metadata:\r\n    encoder         : Lavf60.16.100\r\n  Stream #0:0: Video: hevc, yuv420p(progressive), 64x64 [SAR 1:1 DAR 1:1], q=2-31, 1 fps, 1 tbn\r\n    Metadata:\r\n      encoder         : Lavc60.31.102 libx265\r\n    Side data:\r\n      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A\r\nframe=    0 fps=0.0 q=17.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[out#0/null @ 000002833f9bc340] video:2kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\r\nframe=    1 fps=0.0 q=17.0 Lsize=N/A time=00:00:00.00 bitrate=N/A speed=   0x    \r\nx265 [info]: frame I:      1, Avg QP:17.00  kb/s: 0.70    \r\n\r\nencoded 1 frames in 0.00s (1000.00 fps), 0.70 kb/s, Avg QP:17.00\r\n",
+      "outputStrings": []
+    },
+    {
+      "name": "x265-10bit",
+      "args": [
+        "-hide_banner",
+        "-f",
+        "lavfi",
+        "-i",
+        "color=size=64x64:rate=1",
+        "-frames:v",
+        "1",
+        "-pix_fmt",
+        "yuv420p10le",
+        "-c:v",
+        "libx265",
+        "-x265-params",
+        "pools=1:frame-threads=1",
+        "-f",
+        "null",
+        "pipe:1"
+      ],
+      "exitCode": 0,
+      "stderr": "Input #0, lavfi, from 'color=size=64x64:rate=1':\r\n  Duration: N/A, start: 0.000000, bitrate: N/A\r\n  Stream #0:0: Video: wrapped_avframe, yuv420p, 64x64 [SAR 1:1 DAR 1:1], 1 fps, 1 tbr, 1 tbn\r\nStream mapping:\r\n  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> hevc (libx265))\r\nPress [q] to stop, [?] for help\r\nx265 [info]: HEVC encoder version 3.5+113-8787af124\r\nx265 [info]: build info [Windows][GCC 13.2.0][64 bit] 10bit\r\nx265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2\r\nx265 [info]: Main 10 profile, Level-1 (Main tier)\r\nx265 [warning]: Too few rows/columns, --wpp disabled\r\nx265 [info]: Thread pool created using 1 threads\r\nx265 [info]: Slices                              : 1\r\nx265 [info]: frame threads / pool features       : 1 / none\r\nx265 [warning]: Source height < 720p; disabling lookahead-slices\r\nx265 [info]: Coding QT: max CU size, min CU size : 64 / 8\r\nx265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra\r\nx265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3\r\nx265 [info]: Keyframe min / max / scenecut / bias  : 1 / 250 / 40 / 5.00 \r\nx265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2\r\nx265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0\r\nx265 [info]: References / ref-limit  cu / depth  : 3 / off / on\r\nx265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1\r\nx265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60\r\nx265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp\r\nx265 [info]: tools: b-intra strong-intra-smoothing deblock sao\r\nOutput #0, null, to 'pipe:1':\r\n  Metadata:\r\n    encoder         : Lavf60.16.100\r\n  Stream #0:0: Video: hevc, yuv420p10le(tv, progressive), 64x64 [SAR 1:1 DAR 1:1], q=2-31, 1 fps, 1 tbn\r\n    Metadata:\r\n      encoder         : Lavc60.31.102 libx265\r\n    Side data:\r\n      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A\r\nframe=    0 fps=0.0 q=17.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[out#0/null @ 000001790ba2d080] video:2kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\r\nframe=    1 fps=0.0 q=17.0 Lsize=N/A time=00:00:00.00 bitrate=N/A speed=   0x    \r\nx265 [info]: frame I:      1, Avg QP:17.00  kb/s: 0.70    \r\n\r\nencoded 1 frames in 0.00s (500.00 fps), 0.70 kb/s, Avg QP:17.00\r\n",
+      "outputStrings": []
+    },
+    {
+      "name": "x265-12bit",
+      "args": [
+        "-hide_banner",
+        "-f",
+        "lavfi",
+        "-i",
+        "color=size=64x64:rate=1",
+        "-frames:v",
+        "1",
+        "-pix_fmt",
+        "yuv420p12le",
+        "-c:v",
+        "libx265",
+        "-x265-params",
+        "pools=1:frame-threads=1",
+        "-f",
+        "null",
+        "pipe:1"
+      ],
+      "exitCode": 0,
+      "stderr": "Input #0, lavfi, from 'color=size=64x64:rate=1':\r\n  Duration: N/A, start: 0.000000, bitrate: N/A\r\n  Stream #0:0: Video: wrapped_avframe, yuv420p, 64x64 [SAR 1:1 DAR 1:1], 1 fps, 1 tbr, 1 tbn\r\nStream mapping:\r\n  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> hevc (libx265))\r\nPress [q] to stop, [?] for help\r\nx265 [info]: HEVC encoder version 3.5+113-8787af124\r\nx265 [info]: build info [Windows][GCC 13.2.0][64 bit] 12bit\r\nx265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2\r\nx265 [info]: Main 12 profile, Level-1 (Main tier)\r\nx265 [warning]: Too few rows/columns, --wpp disabled\r\nx265 [info]: Thread pool created using 1 threads\r\nx265 [info]: Slices                              : 1\r\nx265 [info]: frame threads / pool features       : 1 / none\r\nx265 [warning]: Source height < 720p; disabling lookahead-slices\r\nx265 [info]: Coding QT: max CU size, min CU size : 64 / 8\r\nx265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra\r\nx265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3\r\nx265 [info]: Keyframe min / max / scenecut / bias  : 1 / 250 / 40 / 5.00 \r\nx265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2\r\nx265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0\r\nx265 [info]: References / ref-limit  cu / depth  : 3 / off / on\r\nx265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1\r\nx265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60\r\nx265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp\r\nx265 [info]: tools: b-intra strong-intra-smoothing deblock sao\r\nOutput #0, null, to 'pipe:1':\r\n  Metadata:\r\n    encoder         : Lavf60.16.100\r\n  Stream #0:0: Video: hevc, yuv420p12le(tv, progressive), 64x64 [SAR 1:1 DAR 1:1], q=2-31, 1 fps, 1 tbn\r\n    Metadata:\r\n      encoder         : Lavc60.31.102 libx265\r\n    Side data:\r\n      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A\r\nframe=    0 fps=0.0 q=17.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[out#0/null @ 000002484febd080] video:2kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\r\nframe=    1 fps=0.0 q=17.0 Lsize=N/A time=00:00:00.00 bitrate=N/A speed=   0x    \r\nx265 [info]: frame I:      1, Avg QP:17.00  kb/s: 0.69    \r\n\r\nencoded 1 frames in 0.00s (500.00 fps), 0.69 kb/s, Avg QP:17.00\r\n",
+      "outputStrings": []
+    },
+    {
+      "name": "aom",
+      "args": [
+        "-hide_banner",
+        "-f",
+        "lavfi",
+        "-i",
+        "color=size=64x64:rate=1",
+        "-frames:v",
+        "1",
+        "-pix_fmt",
+        "yuv420p",
+        "-c:v",
+        "libaom-av1",
+        "-f",
+        "null",
+        "pipe:1"
+      ],
+      "exitCode": 0,
+      "stderr": "Input #0, lavfi, from 'color=size=64x64:rate=1':\r\n  Duration: N/A, start: 0.000000, bitrate: N/A\r\n  Stream #0:0: Video: wrapped_avframe, yuv420p, 64x64 [SAR 1:1 DAR 1:1], 1 fps, 1 tbr, 1 tbn\r\nStream mapping:\r\n  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> av1 (libaom-av1))\r\nPress [q] to stop, [?] for help\r\n[libaom-av1 @ 0000018dc8d8d700] 3.8.0-180-g0eeb62d344\r\n[libaom-av1 @ 0000018dc8d8d700] Neither bitrate nor constrained quality specified, using default CRF of 32\r\nOutput #0, null, to 'pipe:1':\r\n  Metadata:\r\n    encoder         : Lavf60.16.100\r\n  Stream #0:0: Video: av1, yuv420p(progressive), 64x64 [SAR 1:1 DAR 1:1], q=2-31, 1 fps, 1 tbn\r\n    Metadata:\r\n      encoder         : Lavc60.31.102 libaom-av1\r\n    Side data:\r\n      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A\r\nframe=    0 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[out#0/null @ 0000018dc8d8c580] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\r\nframe=    1 fps=0.0 q=0.0 Lsize=N/A time=00:00:00.00 bitrate=N/A speed=   0x    \r\n",
+      "outputStrings": []
+    },
+    {
+      "name": "vpx",
+      "args": [
+        "-hide_banner",
+        "-f",
+        "lavfi",
+        "-i",
+        "color=size=64x64:rate=1",
+        "-frames:v",
+        "1",
+        "-pix_fmt",
+        "yuv420p",
+        "-c:v",
+        "libvpx-vp9",
+        "-f",
+        "null",
+        "pipe:1"
+      ],
+      "exitCode": 0,
+      "stderr": "Input #0, lavfi, from 'color=size=64x64:rate=1':\r\n  Duration: N/A, start: 0.000000, bitrate: N/A\r\n  Stream #0:0: Video: wrapped_avframe, yuv420p, 64x64 [SAR 1:1 DAR 1:1], 1 fps, 1 tbr, 1 tbn\r\nStream mapping:\r\n  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> vp9 (libvpx-vp9))\r\nPress [q] to stop, [?] for help\r\n[libvpx-vp9 @ 000002938fa2d700] v1.13.1-601-g655da33b8\r\n[libvpx-vp9 @ 000002938fa2d700] Neither bitrate nor constrained quality specified, using default CRF of 32\r\nOutput #0, null, to 'pipe:1':\r\n  Metadata:\r\n    encoder         : Lavf60.16.100\r\n  Stream #0:0: Video: vp9, yuv420p(progressive), 64x64 [SAR 1:1 DAR 1:1], q=2-31, 1 fps, 1 tbn\r\n    Metadata:\r\n      encoder         : Lavc60.31.102 libvpx-vp9\r\n    Side data:\r\n      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A\r\nframe=    0 fps=0.0 q=10.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[out#0/null @ 000002938fa2c580] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\r\nframe=    1 fps=0.0 q=10.0 Lsize=N/A time=00:00:00.00 bitrate=N/A speed=   0x    \r\n",
+      "outputStrings": []
+    }
+  ],
+  "embeddedStrings": [
+    {
+      "value": " r3172 c1c9931",
+      "offset": 78868896
+    },
+    {
+      "value": "3.5+113-8787af124",
+      "offset": 79016447
+    },
+    {
+      "value": "SSH-2.0-libssh_0.10.4",
+      "offset": 76764654
+    },
+    {
+      "value": "Enabled GnuTLS 3.6.16 logging...",
+      "offset": 75451784
+    },
+    {
+      "value": "../openssl-3.0.7/crypto/x509/x509_v3.c",
+      "offset": 76652496
+    }
+  ],
+  "peImportDlls": [
+    "ADVAPI32.dll",
+    "bcrypt.dll",
+    "CRYPT32.dll",
+    "GDI32.dll",
+    "IMM32.dll",
+    "IPHLPAPI.DLL",
+    "KERNEL32.dll",
+    "msvcrt.dll",
+    "ncrypt.dll",
+    "ole32.dll",
+    "OLEAUT32.dll",
+    "SETUPAPI.dll",
+    "SHELL32.dll",
+    "SHLWAPI.dll",
+    "USER32.dll",
+    "VERSION.dll",
+    "AVICAP32.dll",
+    "WINMM.dll",
+    "WS2_32.dll"
+  ],
+  "limitation": "Runtime version strings identify upstream candidates, not the absence of local patches or all transitive dependencies."
+}

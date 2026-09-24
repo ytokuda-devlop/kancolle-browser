@@ -1,0 +1,29 @@
+{
+    "name":  "harfbuzz",
+    "checkedAt":  "2026-09-23T11:34:32.2473580Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "harfbuzz",
+                 "repo":  "harfbuzz/harfbuzz",
+                 "ref":  "d455066ad"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "d455066ad24ff39e74b7a7cb8001ea8bd20caacc",
+    "commitUrl":  "https://github.com/harfbuzz/harfbuzz/commit/d455066ad24ff39e74b7a7cb8001ea8bd20caacc",
+    "commitDate":  "2023-12-25T19:54:09Z",
+    "url":  "https://codeload.github.com/harfbuzz/harfbuzz/tar.gz/d455066ad24ff39e74b7a7cb8001ea8bd20caacc",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/harfbuzz-source.tar.gz",
+    "sha256":  "a84fa920c429e0519fdf8997577de0f198b17e088bc5720eb7702fd39cf98342",
+    "bytes":  36024326,
+    "archiveEntryCount":  3661,
+    "licenseEntries":  [
+                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/COPYING",
+                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/src/ms-use/COPYING",
+                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/COPYING",
+                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/aots/COPYING",
+                           "harfbuzz-d455066ad24ff39e74b7a7cb8001ea8bd20caacc/test/shape/data/text-rendering-tests/COPYING"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

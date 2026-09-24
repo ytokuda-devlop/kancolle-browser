@@ -1,0 +1,26 @@
+{
+    "name":  "AviSynthPlus",
+    "checkedAt":  "2026-09-23T11:34:16.6282029Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "AviSynthPlus",
+                 "repo":  "AviSynth/AviSynthPlus",
+                 "ref":  "eb3c4330"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "eb3c433031b180e97632ff32c199ccf980416bfc",
+    "commitUrl":  "https://github.com/AviSynth/AviSynthPlus/commit/eb3c433031b180e97632ff32c199ccf980416bfc",
+    "commitDate":  "2023-12-19T16:11:37Z",
+    "url":  "https://codeload.github.com/AviSynth/AviSynthPlus/tar.gz/eb3c433031b180e97632ff32c199ccf980416bfc",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/AviSynthPlus-source.tar.gz",
+    "sha256":  "7fd2c55972d322ab91d1ff8d3d5be926b76345d0c4bf44e2a3f74c3a351436c1",
+    "bytes":  12366814,
+    "archiveEntryCount":  893,
+    "licenseEntries":  [
+                           "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/distrib/docs/english/source/avisynthdoc/license.rst",
+                           "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/plugins/TimeStretch/SoundTouch/COPYING.TXT"
+                       ],
+    "submoduleFiles":  [
+                           "AviSynthPlus-eb3c433031b180e97632ff32c199ccf980416bfc/.gitmodules"
+                       ]
+}

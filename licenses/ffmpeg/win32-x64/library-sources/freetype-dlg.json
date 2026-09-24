@@ -1,0 +1,33 @@
+{
+    "name":  "freetype-dlg",
+    "checkedAt":  "2026-09-23T12:28:53.2891915Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "freetype-dlg",
+                 "repo":  "nyorain/dlg",
+                 "parent":  "freetype",
+                 "submodulePath":  "subprojects/dlg"
+             },
+    "patchStatus":  "unverified",
+    "submodule":  {
+                      "url":  "https://github.com/nyorain/dlg.git",
+                      "parent":  "freetype",
+                      "path":  "subprojects/dlg",
+                      "commit":  "72dfcc858c040c54a6a0b88fcb7e70ee186d3167",
+                      "parentCommit":  "920c5502cc3ddda88f6c7d85ee834ac611bb11cc"
+                  },
+    "commit":  "72dfcc858c040c54a6a0b88fcb7e70ee186d3167",
+    "commitUrl":  "https://github.com/nyorain/dlg/commit/72dfcc858c040c54a6a0b88fcb7e70ee186d3167",
+    "commitDate":  "2023-04-16T20:12:54Z",
+    "url":  "https://codeload.github.com/nyorain/dlg/tar.gz/72dfcc858c040c54a6a0b88fcb7e70ee186d3167",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/freetype-dlg-source.tar.gz",
+    "sha256":  "f46472bea5854cf3c738f0e7aea90d7b0645629ec78fdf7a67bf7696955e7446",
+    "bytes":  837081,
+    "archiveEntryCount":  38,
+    "licenseEntries":  [
+                           "dlg-72dfcc858c040c54a6a0b88fcb7e70ee186d3167/LICENSE"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

@@ -3,7 +3,8 @@
 
 配布対象
   macOS、Windows 11。
-  macOS: arm64（Apple Silicon搭載Mac）、x64（Intel搭載Mac）の両方。
+  macOS: x64（Intel搭載Mac）。今回の対応ソース確保作業では対象外。
+  arm64はOSを問わず今バージョン非対応。
   Windows 11: x64。
   macOSの最低対応バージョンは未確定。
   OSの選定は、各環境での動作検証が完了したことを意味しない。
@@ -37,7 +38,8 @@
 
   FFmpeg実行ファイルには、そのビルドのライセンスが適用される。
   現在のmacOSローカル記録はGPL version 3 or laterを示す。
-  Windows 11向けバイナリのライセンスは、実際の配布バイナリで確認する。
+  Windows 11 x64の展開済みアプリ内のバイナリでもGPL version 3 or laterを確認。
+  実行記録はffmpeg/win32-x64/capture.jsonを参照。最終配布物の照合は別途行う。
 
 配布に必要な資料
   GPL-3.0.txt、ffmpeg-static-GPL-3.0.txtと、各コンポーネントの既存の

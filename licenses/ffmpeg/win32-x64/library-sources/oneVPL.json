@@ -1,0 +1,12 @@
+{
+    "name":  "oneVPL",
+    "checkedAt":  "2026-09-23T11:35:22.6711840Z",
+    "status":  "unresolved",
+    "plan":  {
+                 "name":  "oneVPL",
+                 "repo":  "intel/libvpl",
+                 "ref":  "v2.9.0"
+             },
+    "patchStatus":  "unverified",
+    "error":  "Commit resolution failed: https://api.github.com/repos/intel/libvpl/commits/v2.9.0"
+}

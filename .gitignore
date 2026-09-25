@@ -45,3 +45,9 @@ tests/
 !/tests/
 /tests/*
 !/tests/recording.test.cjs
+
+!/tests/packaged-licenses.test.cjs
+!/docs/
+/docs/*
+!/docs/LICENSE-PACKAGING.md
+!/docs/ffmpeg-removal-2026-09-25/

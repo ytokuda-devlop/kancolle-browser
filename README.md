@@ -18,7 +18,7 @@
 - **任務の進捗表示**：進行中の任務名と進捗状況を確認できます。
 - **出撃情報の表示**：出撃中の艦隊・海域・現在マス・ボスマスを確認できます。イベント海域ではゲージの情報も表示します。
 - **スクリーンショット撮影**：ゲーム画面を画像として保存できます。
-- **ゲーム画面の録画**：ゲーム音声付きで録画し、MP4形式で保存できます。
+- **ゲーム画面の録画**：ゲーム音声付きで録画し、WebM形式で保存できます。
 
 ## 動作環境
 
@@ -37,7 +37,7 @@ ChatGPTを使用しています。
 
 本プロジェクトの独自ソースコードは、[MITライセンス](LICENSE)で公開しています。
 
-使用ライブラリや同梱ソフトウェアには、それぞれのライセンスが適用されます。本プロジェクトでは、アプリとffmpeg-staticを組み合わせた配布物をGPL-3.0-or-laterの条件で提供します。
+使用ライブラリや同梱ソフトウェアには、それぞれのライセンスが適用されます。録画はWebMのまま保存し、録画変換用FFmpegとffmpeg-staticは同梱しません。Electron内蔵のFFmpeg等には、それぞれの条件が引き続き適用されます。
 
 詳細は[第三者ソフトウェアのライセンス表記](THIRD_PARTY_NOTICES.md)と[配布ライセンス方針](licenses/DISTRIBUTION-NOTES.txt)をご確認ください。
 
@@ -54,16 +54,11 @@ ChatGPTを使用しています。
 | React                    | 画面のUI構築                         | Copyright (c) Facebook, Inc. and its affiliates.                          | MIT                                 | [全文](licenses/react-LICENSE.txt)                |
 | React DOM                | ReactのUIを画面に描画                | Copyright (c) Facebook, Inc. and its affiliates.                          | MIT                                 | [全文](licenses/react-dom-LICENSE.txt)            |
 | Scheduler                | Reactの描画処理のスケジューリング    | Copyright (c) Facebook, Inc. and its affiliates.                          | MIT                                 | [全文](licenses/scheduler-LICENSE.txt)            |
-| ffmpeg-static            | FFmpeg実行ファイルの取得・パスの提供 | 作者：Eugene Ware、Jannis R（パッケージのauthors表記）                    | GPL-3.0-or-later                    | [全文](licenses/ffmpeg-static-GPL-3.0.txt)        |
-| FFmpeg                   | 録画データのMP4変換                  | Copyright (c) 2000-2023 the FFmpeg developers（確認済みmacOS版）          | GPL-3.0-or-later（確認済みmacOS版） | [全文](licenses/GPL-3.0.txt)                      |
 | Vite                     | 開発サーバー・画面のビルド           | Copyright (c) 2019-present, VoidZero Inc. and Vite contributors           | MIT（本体）                         | [全文・同梱依存の表記](licenses/vite-LICENSE.txt) |
 | @vitejs/plugin-react     | ViteでのReact開発支援                | Copyright (c) 2019-present, Yuxi (Evan) You and Vite contributors         | MIT                                 | [全文](licenses/vitejs-plugin-react-LICENSE.txt)  |
 | electron-builder         | 配布用アプリ・インストーラーの作成   | Copyright (c) 2015 Loopline Systems                                       | MIT                                 | [全文](licenses/electron-builder-LICENSE.txt)     |
 | concurrently             | 開発時にViteとElectronを同時起動     | Copyright (c) 2015 Kimmo Brunfeldt                                        | MIT                                 | [全文](licenses/concurrently-LICENSE.txt)         |
 | wait-on                  | 開発サーバーの起動完了を待機         | Copyright (c) 2015 Jeff Barczewski                                        | MIT                                 | [全文](licenses/wait-on-LICENSE.txt)              |
 
-ffmpeg-staticの作者名はパッケージの記載に基づきます。GPL本文にあるFree Software FoundationのCopyrightは、ライセンス文書自体の著作権表示です。
-
-FFmpegの表記は、現在確認済みのmacOS版に基づきます。各配布版のビルド情報と対応ソースについては、[FFmpegの記録](licenses/FFmpeg-SOURCE.txt)をご確認ください。
 
 その他の依存ライブラリは[第三者ソフトウェアのライセンス表記](THIRD_PARTY_NOTICES.md)、Electronに含まれるChromium・Node.js等のライセンスは[同梱ソフトウェアのライセンス全文](licenses/LICENSES.chromium.html)に記載しています。

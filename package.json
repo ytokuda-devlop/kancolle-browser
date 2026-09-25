@@ -53,7 +53,17 @@
       },
       {
         "from": "licenses",
-        "to": "licenses"
+        "to": "licenses",
+        "filter": [
+          "DISTRIBUTION-NOTES.txt",
+          "electron-LICENSE.txt",
+          "LICENSES.chromium.html",
+          "react-LICENSE.txt",
+          "react-dom-LICENSE.txt",
+          "scheduler-LICENSE.txt",
+          "npm/js-tokens-LICENSE.txt",
+          "npm/loose-envify-LICENSE.txt"
+        ]
       }
     ],
     "mac": {

@@ -72,7 +72,7 @@ const record = { createdAt: new Date().toISOString(), scope: 'Windows x64 NSIS a
   referenceStatus: cp.execFileSync('git', ['status', '--short'], { cwd: root, encoding: 'utf8' }),
   provenance: 'Reference checkout only, not proof of build commit. Uncommitted changes exist.',
   extractorSha256: hash(read(seven)), artifacts,
-  limitations: ['Static libraries embedded in Electron/FFmpeg are not separately enumerable as files; see licenses/ffmpeg/win32-x64 records.',
+  limitations: ['Static libraries embedded in Electron (including its own FFmpeg) require separate build/source/license review; removed recording FFmpeg records do not apply.',
     'Installer wrapper, extracted bootstrap files, app payload and ASAR are separate namespaces; unpacked ASAR entries may duplicate physical files.',
     'Generated installed uninstaller and runtime OS libraries are outside this archive inventory.',
     'This is an inventory, not license compliance or corresponding-source clearance.'] };
@@ -85,7 +85,7 @@ for (const a of artifacts) {
   for (const p of a.packages) md += `| ${p.name} | ${p.version} | ${typeof p.license === 'string' ? p.license : JSON.stringify(p.license)} |\n`;
   md += '\n';
 }
-md += '## 範囲と制限\n\n全ファイルのパス・SHA-256、ASAR内パス、参照コミットはinventory.jsonを参照。参照コミットはビルド元の確定を意味しない。\n\nPE machineは0x8664がx64、0x14cがx86。インストーラー補助部品はアプリ本体と異なるCPUの場合がある。\n\nASARのunpackedファイルは物理ファイルと重複して記録する。FFmpeg・Electron内部の静的リンク部品は独立ファイルとして列挙できないため、既存のFFmpeg調査記録とChromium通知で別途追跡する。インストール時に生成されるアンインストーラーとOS提供DLLは対象外。ライセンス適合性や完全な対応ソースの確保は、この一覧だけでは判定しない。\n';
+md += '## 範囲と制限\n\n全ファイルのパス・SHA-256、ASAR内パス、参照コミットはinventory.jsonを参照。参照コミットはビルド元の確定を意味しない。\n\nPE machineは0x8664がx64、0x14cがx86。インストーラー補助部品はアプリ本体と異なるCPUの場合がある。\n\nASARのunpackedファイルは物理ファイルと重複して記録する。Electron内部（内蔵FFmpegを含む）の静的リンク部品は独立ファイルとして列挙できないため、Electronの実ビルドとChromium通知で別途追跡する。録画変換用FFmpegの旧調査記録を流用しない。インストール時に生成されるアンインストーラーとOS提供DLLは対象外。ライセンス適合性や完全な対応ソースの確保は、この一覧だけでは判定しない。\n';
 fs.writeFileSync(path.join(out, 'REPORT.md'), md);
 console.log(JSON.stringify(artifacts.map(a => ({ artifact: a.filename, nativeFiles: a.nativeFiles.length, npmPackages: a.packages.length, files: a.files.length })), null, 2));
 console.log(out);

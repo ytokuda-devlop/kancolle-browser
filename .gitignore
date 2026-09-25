@@ -42,3 +42,6 @@ TASK.md
 audits/
 docs/
 tests/
+!/tests/
+/tests/*
+!/tests/recording.test.cjs

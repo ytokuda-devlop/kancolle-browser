@@ -1,6 +1,6 @@
 /*
  * ゲーム画面と音声の録画フローを管理するカスタムフック。
- * MediaRecorderの開始・停止、Electronへのチャンク送信、MP4変換・保存、進行状態と結果表示を担当する。
+ * MediaRecorderの開始・停止、Electronへのチャンク送信、WebM保存、進行状態と結果表示を担当する。
  */
 import { useEffect, useRef, useState } from 'react';
 
@@ -30,20 +30,25 @@ function useRecording() {
 
   const toggleRecording = async () => {
     if (recordingState === 'recording') {
-      setRecordingState('converting');
-      setRecordingStatus('MP4へ変換中...');
+      setRecordingState('saving');
+      setRecordingStatus('保存中...');
       recorderRef.current?.stop();
       return;
     }
     if (recordingState !== 'idle' || !window.electronAPI?.startRecordingFile) return;
 
+    setRecordingState('preparing');
     setRecordingStatus('録画を準備中...');
     let filePrepared = false;
     try {
+      const mimeType = RECORDING_MIME_TYPES.find(type => MediaRecorder.isTypeSupported(type));
+      if (!mimeType) throw new Error('この環境ではWebM形式の録画に対応していません。');
+
       const stream = await navigator.mediaDevices.getDisplayMedia({
         audio: true,
         video: { width: 1200, height: 720, frameRate: 30 }
       });
+      recordingStreamRef.current = stream;
       if (stream.getAudioTracks().length === 0) {
         stream.getTracks().forEach(track => track.stop());
         throw new Error('ゲーム音声トラックを取得できませんでした。');
@@ -56,9 +61,8 @@ function useRecording() {
       }
       filePrepared = true;
 
-      const mimeType = RECORDING_MIME_TYPES.find(type => MediaRecorder.isTypeSupported(type));
-      recordingStreamRef.current = stream;
-      const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
+      const recorder = new MediaRecorder(stream, { mimeType });
+      let recordingError = null;
       recorderRef.current = recorder;
       chunkSequenceRef.current = 0;
       chunkQueueRef.current = Promise.resolve();
@@ -67,16 +71,31 @@ function useRecording() {
         if (!event.data.size) return;
         const sequence = chunkSequenceRef.current++;
         chunkQueueRef.current = chunkQueueRef.current.then(async () => {
+          if (recordingError) return;
           const bytes = new Uint8Array(await event.data.arrayBuffer());
           const result = await window.electronAPI.appendRecordingChunk(sequence, bytes);
           if (!result.success) throw new Error(result.error);
+        }).catch(error => {
+          recordingError = error;
+          if (recorder.state !== 'inactive') recorder.stop();
         });
       });
 
+      recorder.addEventListener('error', event => {
+        recordingError = event.error || new Error('録画中にエラーが発生しました。');
+        if (recorder.state !== 'inactive') recorder.stop();
+      });
+
       recorder.addEventListener('stop', async () => {
+        setRecordingState('saving');
+        setRecordingStatus('保存中...');
         stream.getTracks().forEach(track => track.stop());
         try {
           await chunkQueueRef.current;
+          if (recordingError) {
+            await window.electronAPI.abortRecordingFile();
+            throw recordingError;
+          }
           const result = await window.electronAPI.finishRecordingFile();
           if (result.canceled) {
             setRecordingStatus('録画の保存をキャンセルしました。');
@@ -104,7 +123,14 @@ function useRecording() {
     } catch (error) {
       recordingStreamRef.current?.getTracks().forEach(track => track.stop());
       recordingStreamRef.current = null;
-      if (filePrepared) await window.electronAPI.abortRecordingFile();
+      recorderRef.current = null;
+      if (filePrepared) {
+        try {
+          await window.electronAPI.abortRecordingFile();
+        } catch (cleanupError) {
+          console.error('録画開始失敗後の後始末に失敗しました:', cleanupError);
+        }
+      }
       setRecordingState('idle');
       setRecordingStatus(`録画開始失敗: ${error.message}`);
     }

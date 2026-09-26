@@ -49,7 +49,7 @@ CSC_IDENTITY_AUTO_DISCOVERY=false ./node_modules/.bin/electron-builder --mac zip
 
 ## 残る作業
 
-- Windows最終成果物とmacOS DMGの新構成での検証、署名後の再検証。
+- Windows最終成果物とmacOS DMGの新構成での検証。
 - Electron内蔵FFmpegの正確なビルド・条件・必要な通知とソース提供の確認。
 - Mantle・ReactiveObjC、WindowsのNSIS等、従来から残る第三者部品の監査。
 - 全配布対象の最終ハッシュとビルド元の確定。

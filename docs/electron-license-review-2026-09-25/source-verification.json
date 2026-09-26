@@ -1,0 +1,13 @@
+{
+  "archivesVerified": 3,
+  "noticesMatch": true,
+  "ffmpegConfigurationVerified": true,
+  "electronFfmpegPatchApplies": true,
+  "completeCorrespondingSourceCertified": false,
+  "remaining": [
+    "Chromium build environment and transitive build inputs",
+    "Modified-library replacement validation",
+    "Public source delivery with the matching release",
+    "Other Windows installer components"
+  ]
+}

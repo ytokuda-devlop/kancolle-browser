@@ -1,0 +1,26 @@
+[
+  {
+    "platform": "macOS x64",
+    "artifact": "艦娘は今日もお仕事です（仮）-1.0.0-mac.zip",
+    "sha256": "4be15fa9affc90ef60337a54ebb592b1bd9ea6875d3c0b38f39ba6809052263c",
+    "record": "mac-zip.licenses.json"
+  },
+  {
+    "platform": "macOS x64",
+    "artifact": "艦娘は今日もお仕事です（仮）-1.0.0.dmg",
+    "sha256": "5f9fc345f6e62c08287473115553fc9b48d8a6d436c5e3b6317b05e77e44fd62",
+    "record": "mac-dmg.licenses.json"
+  },
+  {
+    "platform": "Windows x64",
+    "artifact": "艦娘は今日もお仕事です（仮） 1.0.0.exe",
+    "sha256": "cf0e00862d38b884abc8a47389e5119ff6415fc862d97367b39ac026a5f3da81",
+    "record": "windows-portable.licenses.json"
+  },
+  {
+    "platform": "Windows x64",
+    "artifact": "艦娘は今日もお仕事です（仮） Setup 1.0.0.exe",
+    "sha256": "2a3dbfc81e0bc1b4dff8f00060e87909dfef51e39465640e55e23af354adb8ea",
+    "record": "windows-setup.licenses.json"
+  }
+]

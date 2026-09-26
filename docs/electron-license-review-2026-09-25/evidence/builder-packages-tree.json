@@ -1,0 +1,210 @@
+[
+  {
+    "name": "7zip",
+    "path": "packages/7zip",
+    "sha": "b68b107f6578dbeadcce9193f813f6341ff15540",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/7zip?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/7zip",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/b68b107f6578dbeadcce9193f813f6341ff15540",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/7zip?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/b68b107f6578dbeadcce9193f813f6341ff15540",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/7zip"
+    }
+  },
+  {
+    "name": "appimage",
+    "path": "packages/appimage",
+    "sha": "7cf13b7edf51fba0ec9ab3a9fc66dc2432f93f4c",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/appimage?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/appimage",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/7cf13b7edf51fba0ec9ab3a9fc66dc2432f93f4c",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/appimage?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/7cf13b7edf51fba0ec9ab3a9fc66dc2432f93f4c",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/appimage"
+    }
+  },
+  {
+    "name": "dmg-builder",
+    "path": "packages/dmg-builder",
+    "sha": "90b51c4ec61e7c070dfc1f6b06c712c6b97e53a4",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/dmg-builder?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/dmg-builder",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/90b51c4ec61e7c070dfc1f6b06c712c6b97e53a4",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/dmg-builder?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/90b51c4ec61e7c070dfc1f6b06c712c6b97e53a4",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/dmg-builder"
+    }
+  },
+  {
+    "name": "fpm",
+    "path": "packages/fpm",
+    "sha": "1770dab143863bb432c2566364bb90a637dc050e",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/fpm?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/fpm",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/1770dab143863bb432c2566364bb90a637dc050e",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/fpm?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/1770dab143863bb432c2566364bb90a637dc050e",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/fpm"
+    }
+  },
+  {
+    "name": "icons",
+    "path": "packages/icons",
+    "sha": "51266e539da773c592367fc39cd34d03a0a1e50e",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/icons?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/icons",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/51266e539da773c592367fc39cd34d03a0a1e50e",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/icons?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/51266e539da773c592367fc39cd34d03a0a1e50e",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/icons"
+    }
+  },
+  {
+    "name": "linux-tools-mac",
+    "path": "packages/linux-tools-mac",
+    "sha": "7386febc51d682420a3cf453c217f562a587ae5a",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/linux-tools-mac?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/linux-tools-mac",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/7386febc51d682420a3cf453c217f562a587ae5a",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/linux-tools-mac?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/7386febc51d682420a3cf453c217f562a587ae5a",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/linux-tools-mac"
+    }
+  },
+  {
+    "name": "nsis",
+    "path": "packages/nsis",
+    "sha": "13ba7cbf66e66469ee448c0e8c3ba6b298537784",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/nsis?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/nsis",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/13ba7cbf66e66469ee448c0e8c3ba6b298537784",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/nsis?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/13ba7cbf66e66469ee448c0e8c3ba6b298537784",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/nsis"
+    }
+  },
+  {
+    "name": "ran",
+    "path": "packages/ran",
+    "sha": "f8aa16f989a6327a4f0f6bcb086a8a139e7d606c",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/ran?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/ran",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/f8aa16f989a6327a4f0f6bcb086a8a139e7d606c",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/ran?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/f8aa16f989a6327a4f0f6bcb086a8a139e7d606c",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/ran"
+    }
+  },
+  {
+    "name": "snap-template",
+    "path": "packages/snap-template",
+    "sha": "a91eedfc9518b26fa126ea21f4fccf95911bdcab",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/snap-template?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/snap-template",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/a91eedfc9518b26fa126ea21f4fccf95911bdcab",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/snap-template?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/a91eedfc9518b26fa126ea21f4fccf95911bdcab",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/snap-template"
+    }
+  },
+  {
+    "name": "squirrel.windows",
+    "path": "packages/squirrel.windows",
+    "sha": "dbb390d3f3896ef0735fc83754e0090420381a6f",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/squirrel.windows?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/squirrel.windows",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/dbb390d3f3896ef0735fc83754e0090420381a6f",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/squirrel.windows?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/dbb390d3f3896ef0735fc83754e0090420381a6f",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/squirrel.windows"
+    }
+  },
+  {
+    "name": "win-codesign",
+    "path": "packages/win-codesign",
+    "sha": "93eebf06c869b7951f89321cfb89c4e350de20bc",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/win-codesign?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/win-codesign",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/93eebf06c869b7951f89321cfb89c4e350de20bc",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/win-codesign?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/93eebf06c869b7951f89321cfb89c4e350de20bc",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/win-codesign"
+    }
+  },
+  {
+    "name": "wine",
+    "path": "packages/wine",
+    "sha": "a91a38ac4011e057820b7039080e0a7ce644713c",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/wine?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/wine",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/a91a38ac4011e057820b7039080e0a7ce644713c",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/wine?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/a91a38ac4011e057820b7039080e0a7ce644713c",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/wine"
+    }
+  },
+  {
+    "name": "wix",
+    "path": "packages/wix",
+    "sha": "f3ce5259127258776e9636753adad876478d2989",
+    "size": 0,
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/wix?ref=master",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/wix",
+    "git_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/f3ce5259127258776e9636753adad876478d2989",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages/wix?ref=master",
+      "git": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/f3ce5259127258776e9636753adad876478d2989",
+      "html": "https://github.com/electron-userland/electron-builder-binaries/tree/master/packages/wix"
+    }
+  }
+]

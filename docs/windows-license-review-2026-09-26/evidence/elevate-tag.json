@@ -1,0 +1,10 @@
+{
+  "ref": "refs/tags/1.0",
+  "node_id": "MDM6UmVmMTM3MDA0Nzk6cmVmcy90YWdzLzEuMA==",
+  "url": "https://api.github.com/repos/jpassing/elevate/git/refs/tags/1.0",
+  "object": {
+    "sha": "d5cfc93d1ce06844a39d1a334a7a8081d26b6204",
+    "type": "commit",
+    "url": "https://api.github.com/repos/jpassing/elevate/git/commits/d5cfc93d1ce06844a39d1a334a7a8081d26b6204"
+  }
+}

@@ -69,10 +69,87 @@ no longer bundles `ffmpeg-static` or the separate recording-conversion FFmpeg
 executable. The earlier GPL distribution policy for the application combined
 with `ffmpeg-static` does not apply to this configuration.
 
-The Electron library is a separate component from the removed executable.
-The notices and source links above do not certify that all build-specific
-license or corresponding-source requirements have been fulfilled. Review of
-the exact Electron/Chromium components remains part of the release audit.
+The Electron 44.0.0 build pins Chromium 152.0.7977.54 and FFmpeg revision
+`2b68d2babae73714846961fb0ee47e3b3d2e39a9`. Its Chrome/mac/x64 and
+Chrome/win/x64 configuration headers identify LGPL-2.1-or-later and disable
+GPL, nonfree, x264 and x265. Electron builds this component as a shared library.
+
+- License text: `licenses/electron-components/LGPL-2.1.txt`
+- Component credits: `licenses/electron-components/FFmpeg-CREDITS.txt`
+- Exact source revisions, Electron patches, upstream download locations and
+  source-delivery status: `licenses/ELECTRON-SOURCES.txt`
+
+Users' rights under the applicable LGPL, including modification and reverse
+engineering for debugging such modifications, are not restricted by this
+application. Source preparation and final distribution checks remain open;
+the upstream links alone are not a claim of complete source delivery.
+
+### macOS frameworks included with Electron
+
+These revisions are pinned by Electron 44.0.0's DEPS file. Original notices
+are included separately, in addition to Electron's aggregate notices.
+
+| Component | Revision | Terms / original notice |
+| --- | --- | --- |
+| Mantle | `2a8e2123a3931038179ee06105c9e6ec336b12ea` | MIT and included Proton/Bitswift terms; `licenses/electron-components/Mantle-LICENSE.md` |
+| ReactiveObjC | `74ab5baccc6f7202c8ac69a8d1e152c29dc1ea76` | MIT; `licenses/electron-components/ReactiveObjC-LICENSE.md` |
+| Squirrel.Mac / ShipIt | `8d808803bc89ec0e2aa1450474856dfee3b00c6b` | MIT; `licenses/electron-components/Squirrel-LICENSE.txt` |
+
+Source repositories and patch information: `licenses/ELECTRON-SOURCES.txt`.
+
+### Native dependencies integrated into Electron
+
+Electron 44.0.0 pins Node.js 24.18.1. Its release build integrates Node.js,
+V8 and other native dependencies into the Electron binary/framework rather
+than distributing each as a separate npm package or library. The aggregate
+`licenses/LICENSES.chromium.html` retains the Node.js composite license.
+Electron's build uses Chromium BoringSSL in place of Node's bundled OpenSSL;
+an OpenSSL entry in the composite notice alone does not identify a linked binary.
+
+The Node.js build also declares nbytes as a dependency. Its original MIT notice,
+Copyright (c) 2024 Node.js, is retained separately at
+`licenses/electron-components/nbytes-LICENSE.txt`.
+Source: <https://github.com/nodejs/node/tree/v24.18.1/deps/nbytes>.
+
+The per-platform native inventory and static-link investigation are recorded in
+the source repository at `docs/native-inventory-2026-09-26/REPORT.md`.
+Notice entries and build dependencies are not a complete per-platform linker
+map; review of transitive native components remains ongoing.
+
+### Windows installer components
+
+NSIS 3.0.4.1 and nsis-resources 3.4.1 are selected by electron-builder 26.15.3.
+NSIS's original COPYING is included at `licenses/windows/NSIS-COPYING.txt`;
+its compression modules have additional terms described there. This notice
+does not determine the terms of every separately supplied plugin.
+
+StdUtils release 1.14 (DLL FileVersion 1.1.4.0) is licensed under
+LGPL-2.1-or-later. Its original notices, NSIS-use clarification and bundled-code
+credits are in `licenses/windows/StdUtils-ReadMe.txt` and
+`licenses/windows/StdUtils-README.html`. The LGPL text is provided at
+`licenses/electron-components/LGPL-2.1.txt`. RHash and BLAKE2 notices are also
+retained in `licenses/windows/StdUtils-rhash-COPYING.txt` and
+`licenses/windows/StdUtils-blake2-COPYING.txt`. Source locations and outstanding
+installer-component review are recorded in `licenses/ELECTRON-SOURCES.txt`.
+
+Additional Windows component findings (2026-09-26):
+
+| Component | Identified version | Terms / status |
+| --- | --- | --- |
+| UAC | 0.2.4c, 2015-05-26 | zlib/libpng; `licenses/windows/UAC-LICENSE.txt`; original DLL and source identified |
+| WinShell | 20121005 | Author labels it Freeware; precise redistribution conditions remain unresolved |
+| nsis7z | 19.00 | Plugin README states LGPL without a version; we elect LGPL 2.1 under section 13; LZMA SDK 19.00 is public domain |
+| elevate.exe | FileVersion 1, 0, 0, 2894 | Johannes Passing's original source is MIT; the provider binary's exact build provenance remains unresolved |
+| NSIS stubs / standard plugins | toolset 3.0.4.1 | Actual Setup, portable and uninstaller use the zlib stub; standard plugins retain NSIS terms |
+| Generated installer templates | electron-builder 26.15.3 | MIT; `licenses/windows/electron-builder-LICENSE.txt` |
+
+Original nsis7z notices are `licenses/windows/nsis7z-README.txt` and
+`licenses/windows/nsis7z-LZMA-SDK-LICENSE.txt`. The original elevate source
+license is `licenses/windows/elevate-upstream-LICENSE.md`; its inclusion does
+not assert that all terms of the provider binary have been verified.
+Exact source locations, obligations and remaining verification steps are
+recorded in `licenses/windows/SOURCES.txt`. No completed source delivery or
+permission beyond the applicable upstream terms is claimed.
 
 ## Other runtime npm dependencies
 

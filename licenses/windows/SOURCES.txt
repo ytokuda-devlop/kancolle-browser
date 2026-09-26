@@ -1,0 +1,88 @@
+Windows installer components — review dated 2026-09-26
+
+Scope: electron-builder 26.15.3, nsis-3.0.4.1, nsis-resources-3.4.1,
+Windows x64 NSIS Setup and portable. Toolset versions are not plugin versions.
+This is a provenance and source-status notice, not a declaration that every
+component's redistribution conditions have been resolved.
+
+UAC 0.2.4c (2015-05-26), AndersK
+  https://nsis.sourceforge.io/UAC_plug-in
+  https://nsis.sourceforge.io/mediawiki/images/8/8f/UAC.zip
+  The x86-unicode DLL is byte-identical to the original distribution.
+  Terms: zlib/libpng; original text: UAC-LICENSE.txt.
+  Preserve origin, identify altered source, retain the notice in source copies.
+  These terms do not require providing source with an unmodified binary.
+  The archive contains the source; our copy is unmodified.
+
+WinShell 20121005, Anders
+  https://nsis.sourceforge.io/WinShell_plug-in
+  https://nsis.sourceforge.io/mediawiki/images/5/54/WinShell.zip
+  The Unicode DLL is byte-identical to the original distribution.
+  The author describes it as "Freeware". The downloaded archive contains
+  binaries only, with no separate license or source. Specific redistribution
+  conditions and any source obligations have NOT been established. This notice
+  does not relicense the DLL under this application's MIT license or the wiki's
+  general content license. Author clarification or replacement remains necessary
+  to close this review.
+
+nsis7z 19.00, Nik Medved / Marek Mizanin / Stuart Welch / Igor Pavlov
+  https://nsis.sourceforge.io/Nsis7z_plug-in
+  https://nsis.sourceforge.io/mediawiki/images/6/69/Nsis7z_19.00.7z
+  https://www.7-zip.org/a/lzma1900.7z
+  The x86-unicode DLL is byte-identical to the 19.00 archive.
+  nsis7z-README.txt retains the plugin's LGPL statement (no version specified).
+  nsis7z-LZMA-SDK-LICENSE.txt applies to the public-domain LZMA SDK, not an
+  inferred relicensing of the entire plugin. NSIS API headers retain zlib terms.
+  We elect LGPL 2.1 under its section 13 rule for a library with no specified
+  license version. Text: ../electron-components/LGPL-2.1.txt. This is our
+  distribution choice, not a claim that the author wrote "LGPL-2.1-only".
+  Both the plugin source and LZMA SDK 19.00 have been obtained locally.
+  Build instruction: extract the plugin archive, then copy the SDK C and CPP
+  directories into Contrib/nsis7z; build CPP/7zip/Bundles/Nsis7z/Nsis7z.sln
+  using Visual Studio 2017, Release, Win32, Unicode.
+  The project lists an obsolete/missing CPP/7zip/IMyUnknown.h header; no listed
+  compilation source is missing. A Windows build has not been performed.
+  Before distribution under LGPL, provide corresponding source and build inputs,
+  preserve notices and applicable terms, and establish the applicable LGPL
+  linking/replacement mechanism. A local download or an upstream URL alone
+  does not complete those obligations. No source delivery is claimed here.
+
+elevate.exe, embedded FileVersion 1, 0, 0, 2894, Johannes Passing
+  Binary provider: electron-userland/electron-builder-binaries,
+  introduction commit b266aeda90e296ffb0d803d769b738d14148f72f (nsis/elevate.exe).
+  https://github.com/jpassing/elevate/tree/d5cfc93d1ce06844a39d1a334a7a8081d26b6204
+  https://jpassing.com/2007/12/08/launch-elevated-processes-from-the-command-line/
+  Original author source: MIT; retain copyright and permission notice.
+  elevate-upstream-LICENSE.md is the unchanged upstream text, including its
+  unfilled copyright placeholders. Binary attribution: Copyright (C) 2007,
+  Johannes Passing. MIT does not itself require source delivery.
+  Our binary matches the provider's introduction commit, but neither executable
+  in the author's release 1.0 ZIP. Exact build inputs/modifications and any
+  additional linked-code conditions have NOT been established. The original
+  source archive is a provenance reference, not verified corresponding source
+  for this binary. New provider builds using a different elevate project do not
+  establish the origin or terms of this historical binary.
+
+NSIS Setup, portable launcher and generated uninstaller
+  NSIS toolset 3.0.4.1; NSIS original terms: NSIS-COPYING.txt.
+  Actual containers use Deflate/zlib, not the separately supplied LZMA or bzip2
+  NSIS stubs. System.dll, nsDialogs.dll and nsExec.dll match this toolset.
+  NSIS core and these standard plugins use zlib/libpng terms; no source delivery
+  obligation arises from those terms. The COPYING also retains other toolset
+  license texts without claiming those modules occur in these executables.
+  Generated scripts use electron-builder 26.15.3 templates (MIT):
+  https://github.com/electron-userland/electron-builder/tree/electron-builder%4026.15.3/packages/app-builder-lib/templates/nsis
+  Original notice: electron-builder-LICENSE.txt.
+  The uninstaller contains System, nsDialogs, nsExec, UAC, StdUtils and WinShell;
+  each plugin retains its own terms. It contains neither nsis7z nor elevate.
+  StdUtils 1.14 terms and source are described in ../ELECTRON-SOURCES.txt.
+  These findings do not resolve WinShell simply because it is in an uninstaller.
+
+Release status
+  Source archive URLs and SHA-256 values are recorded in the repository at
+  third_party/windows-installer/sources.json. Detailed evidence is recorded in
+  docs/windows-license-review-2026-09-26/REPORT.md. Archives are local review
+  inputs, not published source offers. Windows distribution review remains open
+  for the specific items above and the separate Electron LGPL review.
+  This application does not restrict modification or reverse engineering for
+  debugging modifications as allowed by applicable LGPL terms.

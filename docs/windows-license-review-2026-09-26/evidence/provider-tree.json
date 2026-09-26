@@ -1,0 +1,1846 @@
+{
+  "sha": "dcef01c4bb35f674076af328890267076512de0b",
+  "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/dcef01c4bb35f674076af328890267076512de0b",
+  "tree": [
+    {
+      "path": ".changeset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d54e67f4cf206072f650ae586f89e7b3fda0966e",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/d54e67f4cf206072f650ae586f89e7b3fda0966e"
+    },
+    {
+      "path": ".changeset/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5b6d8d6a67ad0dca8f20117fbfc72e076882d00",
+      "size": 510,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/e5b6d8d6a67ad0dca8f20117fbfc72e076882d00"
+    },
+    {
+      "path": ".changeset/config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62967b651181a557cfa13d0a933e5d4f62ad5dd6",
+      "size": 288,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/62967b651181a557cfa13d0a933e5d4f62ad5dd6"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ade8ad4a4fc43808419cf7a64d54b6c8f0084a02",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/ade8ad4a4fc43808419cf7a64d54b6c8f0084a02"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d6379ed5be2144e4a403f082d30ddbb1822b20f8",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/d6379ed5be2144e4a403f082d30ddbb1822b20f8"
+    },
+    {
+      "path": ".github/workflows/build-7zip.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "576e1fb813d0e089bf2039609c3d75cb14f93029",
+      "size": 5893,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/576e1fb813d0e089bf2039609c3d75cb14f93029"
+    },
+    {
+      "path": ".github/workflows/build-appimage.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9fa62297596162b4a29d4a1fa0ac44ff10369fe",
+      "size": 3748,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/b9fa62297596162b4a29d4a1fa0ac44ff10369fe"
+    },
+    {
+      "path": ".github/workflows/build-dmg-builder.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c2a56fe7f53b0190adb99bda37e3c0d014aa55f",
+      "size": 768,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/5c2a56fe7f53b0190adb99bda37e3c0d014aa55f"
+    },
+    {
+      "path": ".github/workflows/build-fpm.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fac1ec318e7efdaecfe8dcaf673059fd3d030dc",
+      "size": 2406,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/0fac1ec318e7efdaecfe8dcaf673059fd3d030dc"
+    },
+    {
+      "path": ".github/workflows/build-icons.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36084df58abf337f2f235ce3be0e78f7efb52125",
+      "size": 1444,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/36084df58abf337f2f235ce3be0e78f7efb52125"
+    },
+    {
+      "path": ".github/workflows/build-linux-tools-mac.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f84d57e4835d240e60b77099932a39e2bee86c2",
+      "size": 1707,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/2f84d57e4835d240e60b77099932a39e2bee86c2"
+    },
+    {
+      "path": ".github/workflows/build-nsis.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6436c2ed3e224ccf65ae1f95b7cc94a66f60df46",
+      "size": 9195,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/6436c2ed3e224ccf65ae1f95b7cc94a66f60df46"
+    },
+    {
+      "path": ".github/workflows/build-ran.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06d3b46d0a698ed75c94bdf93757fa15748d15e0",
+      "size": 986,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/06d3b46d0a698ed75c94bdf93757fa15748d15e0"
+    },
+    {
+      "path": ".github/workflows/build-squirrel.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "965a3865fe1d5bd5a2860491e2422314684bc563",
+      "size": 1304,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/965a3865fe1d5bd5a2860491e2422314684bc563"
+    },
+    {
+      "path": ".github/workflows/build-wincodesign.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82077c2ec39b736e596ac8f63724e6b7ac377214",
+      "size": 5843,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/82077c2ec39b736e596ac8f63724e6b7ac377214"
+    },
+    {
+      "path": ".github/workflows/build-wine.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3d4dfcb35609d2f63db852aa08d6607e896a62f",
+      "size": 2163,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/b3d4dfcb35609d2f63db852aa08d6607e896a62f"
+    },
+    {
+      "path": ".github/workflows/build-wix.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fa8940f3636c6e37110d4c665b644e6aa4f4f2f",
+      "size": 1948,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/6fa8940f3636c6e37110d4c665b644e6aa4f4f2f"
+    },
+    {
+      "path": ".github/workflows/build.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af9ce95e530b057e219e0e48c71942e5cfa83df7",
+      "size": 4823,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/af9ce95e530b057e219e0e48c71942e5cfa83df7"
+    },
+    {
+      "path": ".github/workflows/pr-semantic.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "629b1e502b0a4fad5a98b3e4e93eee012094d6f0",
+      "size": 689,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/629b1e502b0a4fad5a98b3e4e93eee012094d6f0"
+    },
+    {
+      "path": ".github/workflows/release.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa8c15a6e3cebc603b8f4a8fd2d3ada8b36cba36",
+      "size": 2826,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/fa8c15a6e3cebc603b8f4a8fd2d3ada8b36cba36"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "beeee2371da9493841072af39d54deda217e5237",
+      "size": 152,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/beeee2371da9493841072af39d54deda217e5237"
+    },
+    {
+      "path": ".pnp.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20087eb3b0ed9f322294068acb367a7d8024e14a",
+      "size": 342,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/20087eb3b0ed9f322294068acb367a7d8024e14a"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c14974171a2fe534b3d7dfb3536f9c6baca14cd",
+      "size": 28,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/5c14974171a2fe534b3d7dfb3536f9c6baca14cd"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56be590cc59b0b50e9c5dc0e6168368f9f164024",
+      "size": 2103,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/56be590cc59b0b50e9c5dc0e6168368f9f164024"
+    },
+    {
+      "path": "artifacts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4bdb558e715f7696910045286720277616470581",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/4bdb558e715f7696910045286720277616470581"
+    },
+    {
+      "path": "artifacts/7zip",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1cc7e62b54494dda169035d79e2e6ade98e86c25",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/1cc7e62b54494dda169035d79e2e6ade98e86c25"
+    },
+    {
+      "path": "artifacts/7zip/7zip-darwin-arm64.sha256",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac39e45978405be1e0992627ab20980b983cdc75",
+      "size": 91,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/ac39e45978405be1e0992627ab20980b983cdc75"
+    },
+    {
+      "path": "artifacts/7zip/7zip-darwin-arm64.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b76b01ce206a9028aa66ab76fc4409f453bc398",
+      "size": 2599079,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/1b76b01ce206a9028aa66ab76fc4409f453bc398"
+    },
+    {
+      "path": "artifacts/7zip/7zip-darwin-x86_64.sha256",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0e7ad05460f31bd383e03ad5163afa2ec7253e7",
+      "size": 92,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/f0e7ad05460f31bd383e03ad5163afa2ec7253e7"
+    },
+    {
+      "path": "artifacts/7zip/7zip-darwin-x86_64.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b76b01ce206a9028aa66ab76fc4409f453bc398",
+      "size": 2599079,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/1b76b01ce206a9028aa66ab76fc4409f453bc398"
+    },
+    {
+      "path": "artifacts/7zip/7zip-linux-arm64.sha256",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06ec3963fb0dc02106a33bb559c7d379595cd94b",
+      "size": 90,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/06ec3963fb0dc02106a33bb559c7d379595cd94b"
+    },
+    {
+      "path": "artifacts/7zip/7zip-linux-arm64.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25b85d7fe754d2fad3bd926e719e34bc777b3d3b",
+      "size": 1197697,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/25b85d7fe754d2fad3bd926e719e34bc777b3d3b"
+    },
+    {
+      "path": "artifacts/7zip/7zip-linux-ia32.sha256",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dfdecbdac040d41406f401c3282b858ede0139f",
+      "size": 89,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/1dfdecbdac040d41406f401c3282b858ede0139f"
+    },
+    {
+      "path": "artifacts/7zip/7zip-linux-ia32.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9dab6027fe34119f2557821eeaed135d6d423c4",
+      "size": 1494635,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/f9dab6027fe34119f2557821eeaed135d6d423c4"
+    },
+    {
+      "path": "artifacts/7zip/7zip-linux-x64.sha256",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f9c8a9128fffb58756b036948d9572dbe2f2775",
+      "size": 88,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/8f9c8a9128fffb58756b036948d9572dbe2f2775"
+    },
+    {
+      "path": "artifacts/7zip/7zip-linux-x64.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "588bb0abee6965b36410d8c37dfcd465c3238895",
+      "size": 1307799,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/588bb0abee6965b36410d8c37dfcd465c3238895"
+    },
+    {
+      "path": "artifacts/7zip/7zip-win-arm64.sha256",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fed6c7cc798bba3e17b25a8acc990c48358d483b",
+      "size": 88,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/fed6c7cc798bba3e17b25a8acc990c48358d483b"
+    },
+    {
+      "path": "artifacts/7zip/7zip-win-arm64.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4fa1ea51db56d0377bc0489f570c7805271531b",
+      "size": 576262,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/b4fa1ea51db56d0377bc0489f570c7805271531b"
+    },
+    {
+      "path": "artifacts/7zip/7zip-win-ia32.sha256",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8181eb612583c6ac23391d70da43f6c5989c7f48",
+      "size": 87,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/8181eb612583c6ac23391d70da43f6c5989c7f48"
+    },
+    {
+      "path": "artifacts/7zip/7zip-win-ia32.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5835b96b8505ea1c99c0a7a4808b4dbf292bca5",
+      "size": 491583,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/e5835b96b8505ea1c99c0a7a4808b4dbf292bca5"
+    },
+    {
+      "path": "artifacts/7zip/7zip-win-x64.sha256",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b180854a3944f19685332f8ab19f210c67fce19",
+      "size": 86,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/4b180854a3944f19685332f8ab19f210c67fce19"
+    },
+    {
+      "path": "artifacts/7zip/7zip-win-x64.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cbf3d5cc9d5d1f41b7ea999004c4c8082355906",
+      "size": 628811,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/8cbf3d5cc9d5d1f41b7ea999004c4c8082355906"
+    },
+    {
+      "path": "artifacts/appimage",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ae42044747ed29a3db81fdea8dbbe4bdbead964",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/4ae42044747ed29a3db81fdea8dbbe4bdbead964"
+    },
+    {
+      "path": "artifacts/appimage/appimage-tools-runtime-20251108.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53d677c321207212c1ed0ba9ac171a8e1fc8ccbc",
+      "size": 12415541,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/53d677c321207212c1ed0ba9ac171a8e1fc8ccbc"
+    },
+    {
+      "path": "artifacts/dmg-builder",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "05df0149205ff01a0e01401cd27a7c13dc6014fe",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/05df0149205ff01a0e01401cd27a7c13dc6014fe"
+    },
+    {
+      "path": "artifacts/dmg-builder/dmgbuild-bundle-arm64-75c8a6c.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccb39a9225f5cadb8cbfe999ecd60e2bd5e5a9cf",
+      "size": 22995919,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/ccb39a9225f5cadb8cbfe999ecd60e2bd5e5a9cf"
+    },
+    {
+      "path": "artifacts/dmg-builder/dmgbuild-bundle-x86_64-75c8a6c.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27382282892f23f086e4e507d8f21ff401b44759",
+      "size": 23033357,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/27382282892f23f086e4e507d8f21ff401b44759"
+    },
+    {
+      "path": "artifacts/fpm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f3ce3138722359e82e05e057a219eea51e73509f",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/f3ce3138722359e82e05e057a219eea51e73509f"
+    },
+    {
+      "path": "artifacts/fpm/fpm-1.17.0-ruby-3.4.3-darwin-arm64.7z",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e6e30e4547ee232ee69a6be0ebabcfdfafc9d36",
+      "size": 13678483,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/8e6e30e4547ee232ee69a6be0ebabcfdfafc9d36"
+    },
+    {
+      "path": "artifacts/fpm/fpm-1.17.0-ruby-3.4.3-darwin-x86_64.7z",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c2aacd30223be7875d8adc58a662d9220e78974",
+      "size": 15133259,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/3c2aacd30223be7875d8adc58a662d9220e78974"
+    },
+    {
+      "path": "artifacts/fpm/fpm-1.17.0-ruby-3.4.3-linux-amd64.7z",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf2f021d42e97f2237a5bc34efe893555321b5c1",
+      "size": 9751953,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/bf2f021d42e97f2237a5bc34efe893555321b5c1"
+    },
+    {
+      "path": "artifacts/fpm/fpm-1.17.0-ruby-3.4.3-linux-arm64v8.7z",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "635538935bc0272101482ffeea7bd32b93b08329",
+      "size": 8493682,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/635538935bc0272101482ffeea7bd32b93b08329"
+    },
+    {
+      "path": "artifacts/fpm/fpm-1.17.0-ruby-3.4.3-linux-i386.7z",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0734ab94b7d4d71bfca008b512cc0c0d7a203604",
+      "size": 9973562,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/0734ab94b7d4d71bfca008b512cc0c0d7a203604"
+    },
+    {
+      "path": "artifacts/icons",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8200b110e0d8d2762abecaef10188cf368f3d4cf",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/8200b110e0d8d2762abecaef10188cf368f3d4cf"
+    },
+    {
+      "path": "artifacts/icons/icons-bundle.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3293a2bf4f008112cfe01db4d68e82d68ee3a25a",
+      "size": 3138035,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/3293a2bf4f008112cfe01db4d68e82d68ee3a25a"
+    },
+    {
+      "path": "artifacts/linux-tools-mac",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "47b5d03061505045d12d6175d0e9af61fda63c34",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/47b5d03061505045d12d6175d0e9af61fda63c34"
+    },
+    {
+      "path": "artifacts/linux-tools-mac/linux-tools-mac-darwin-arm64.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "583a6b69547635016c75fa3fc40bdf0b712236ae",
+      "size": 7673906,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/583a6b69547635016c75fa3fc40bdf0b712236ae"
+    },
+    {
+      "path": "artifacts/linux-tools-mac/linux-tools-mac-darwin-x86_64.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cf160ab65888e45b4f6bd0c7207a8ae937af970",
+      "size": 8309236,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/3cf160ab65888e45b4f6bd0c7207a8ae937af970"
+    },
+    {
+      "path": "artifacts/nsis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "49ec657564c3e62bf8e8eac623f1938144ee5582",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/49ec657564c3e62bf8e8eac623f1938144ee5582"
+    },
+    {
+      "path": "artifacts/nsis/nsis-bundle-3.12.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51fe3639ee90f22d5d8461f089d25975b12cab90",
+      "size": 6227143,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/51fe3639ee90f22d5d8461f089d25975b12cab90"
+    },
+    {
+      "path": "artifacts/ran",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "98a6270607589dd1eef44f81fbceeca95d94d05a",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/98a6270607589dd1eef44f81fbceeca95d94d05a"
+    },
+    {
+      "path": "artifacts/ran/ran-v0.1.6-all-platforms.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bf9a69c3970328e6418ccc4e880d0f9b27c12f9",
+      "size": 26898769,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/7bf9a69c3970328e6418ccc4e880d0f9b27c12f9"
+    },
+    {
+      "path": "artifacts/squirrel.windows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b9e77e39be9c33441c03b4d8e2e1b8e30fffa77",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/7b9e77e39be9c33441c03b4d8e2e1b8e30fffa77"
+    },
+    {
+      "path": "artifacts/squirrel.windows/squirrel.windows-2.0.1-patched.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5a9cac59935624f562a69274ddae5ff4f3d8290",
+      "size": 15282359,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/b5a9cac59935624f562a69274ddae5ff4f3d8290"
+    },
+    {
+      "path": "artifacts/win-codesign",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "03d4f7424400cb492a81b1fcfc184e798aaf2caf",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/03d4f7424400cb492a81b1fcfc184e798aaf2caf"
+    },
+    {
+      "path": "artifacts/win-codesign/ats-bundle-1_0_95.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3052d58af525110c5e5cf90c7c30af91169176c",
+      "size": 14547299,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/f3052d58af525110c5e5cf90c7c30af91169176c"
+    },
+    {
+      "path": "artifacts/win-codesign/dotnet-runtime-win-x64-8_0_28.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b422cf7a59602f99a9e1330b27aa33c4470a6fd",
+      "size": 33150062,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/3b422cf7a59602f99a9e1330b27aa33c4470a6fd"
+    },
+    {
+      "path": "artifacts/win-codesign/rcedit-windows-2_0_0.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec93e5075690bf351d5d39cb46029398472c096f",
+      "size": 761791,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/ec93e5075690bf351d5d39cb46029398472c096f"
+    },
+    {
+      "path": "artifacts/win-codesign/win-codesign-darwin-arm64.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c64dd5c72f93721c939c8ca0e96114ef145fe26b",
+      "size": 84271,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/c64dd5c72f93721c939c8ca0e96114ef145fe26b"
+    },
+    {
+      "path": "artifacts/win-codesign/win-codesign-darwin-x86_64.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e6a2b3bb2811b1094af26045daf061a1c0b84e4",
+      "size": 87931,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/0e6a2b3bb2811b1094af26045daf061a1c0b84e4"
+    },
+    {
+      "path": "artifacts/win-codesign/win-codesign-linux-amd64.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "547f71e84c710903f0bdf72b7436268a87a41111",
+      "size": 95988,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/547f71e84c710903f0bdf72b7436268a87a41111"
+    },
+    {
+      "path": "artifacts/win-codesign/win-codesign-linux-arm64.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b3673b68e3838ff137f5efc65425e630852562d",
+      "size": 95658,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/5b3673b68e3838ff137f5efc65425e630852562d"
+    },
+    {
+      "path": "artifacts/win-codesign/win-codesign-linux-i386.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96d9c0e4bea38bee039b82806205e3e54aa5013f",
+      "size": 107890,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/96d9c0e4bea38bee039b82806205e3e54aa5013f"
+    },
+    {
+      "path": "artifacts/win-codesign/win-codesign-windows-arm64.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78eada6f21ff008f052c9238b526e2d8bee6dc06",
+      "size": 2941248,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/78eada6f21ff008f052c9238b526e2d8bee6dc06"
+    },
+    {
+      "path": "artifacts/win-codesign/win-codesign-windows-x64.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfb996c78e773498178ff3f822ed0bed93cd78d7",
+      "size": 2805459,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/bfb996c78e773498178ff3f822ed0bed93cd78d7"
+    },
+    {
+      "path": "artifacts/win-codesign/windows-kits-bundle-10_0_26100_0.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "107ad0c0cd5f6dcaba6766cee221707e0caa661f",
+      "size": 8286066,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/107ad0c0cd5f6dcaba6766cee221707e0caa661f"
+    },
+    {
+      "path": "artifacts/wine",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "adb00e9e6959a1200d0000588e69f71cd5631142",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/adb00e9e6959a1200d0000588e69f71cd5631142"
+    },
+    {
+      "path": "artifacts/wine/wine-11.0-darwin-x86_64.tar.xz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdfd6ef9b6b86be0fe3b62d5273013d0f4a25f5d",
+      "size": 23698176,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/bdfd6ef9b6b86be0fe3b62d5273013d0f4a25f5d"
+    },
+    {
+      "path": "artifacts/wine/wine-11.0-linux-x86_64.tar.xz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db066dced3dfc10a68169fa4bec7f08affccca47",
+      "size": 32009780,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/db066dced3dfc10a68169fa4bec7f08affccca47"
+    },
+    {
+      "path": "artifacts/wix",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c4fadaf4f5cad93b46a9a573d6140fc703f3eccd",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/c4fadaf4f5cad93b46a9a573d6140fc703f3eccd"
+    },
+    {
+      "path": "artifacts/wix/wix-3.14.1.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b079492008d74dac4f1e12a47a19168723e03af",
+      "size": 8365919,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/9b079492008d74dac4f1e12a47a19168723e03af"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64b3d4e04a82f0b1de9d13a9912609e7b5dc3bad",
+      "size": 1032,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/64b3d4e04a82f0b1de9d13a9912609e7b5dc3bad"
+    },
+    {
+      "path": "packages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2765cd720549b86baae4f7e6d2e52cd8abf40d89",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/2765cd720549b86baae4f7e6d2e52cd8abf40d89"
+    },
+    {
+      "path": "packages/7zip",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b68b107f6578dbeadcce9193f813f6341ff15540",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/b68b107f6578dbeadcce9193f813f6341ff15540"
+    },
+    {
+      "path": "packages/7zip/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "717eeedf79df9720d99149f6e3040baf043b526f",
+      "size": 1240,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/717eeedf79df9720d99149f6e3040baf043b526f"
+    },
+    {
+      "path": "packages/7zip/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a5dfdfd59bddb1f11dc1d13ac534e2d90a97176a",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/a5dfdfd59bddb1f11dc1d13ac534e2d90a97176a"
+    },
+    {
+      "path": "packages/7zip/assets/build.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00b2dc40689410a6c5f1a364c0c17f5c95dd2f92",
+      "size": 17531,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/00b2dc40689410a6c5f1a364c0c17f5c95dd2f92"
+    },
+    {
+      "path": "packages/7zip/assets/test.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6038f0a627b5d9619c567c4842a079ece1554e01",
+      "size": 8905,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/6038f0a627b5d9619c567c4842a079ece1554e01"
+    },
+    {
+      "path": "packages/7zip/build.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fe37a395314b32c10a01e3a27a85f8e364fa3bb",
+      "size": 7454,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/6fe37a395314b32c10a01e3a27a85f8e364fa3bb"
+    },
+    {
+      "path": "packages/7zip/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b64973f994c39197b681a3413a6eb34f6bde99c",
+      "size": 210,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/3b64973f994c39197b681a3413a6eb34f6bde99c"
+    },
+    {
+      "path": "packages/appimage",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7cf13b7edf51fba0ec9ab3a9fc66dc2432f93f4c",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/7cf13b7edf51fba0ec9ab3a9fc66dc2432f93f4c"
+    },
+    {
+      "path": "packages/appimage/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5745bbb9e0239dcc96694ce570c1dc4adf0b3032",
+      "size": 3744,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/5745bbb9e0239dcc96694ce570c1dc4adf0b3032"
+    },
+    {
+      "path": "packages/appimage/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0fdce8e364c207bdbdcc7aa8b6560f75aada2b5a",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/0fdce8e364c207bdbdcc7aa8b6560f75aada2b5a"
+    },
+    {
+      "path": "packages/appimage/assets/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d19cb82518610cb97c62300b6ed7c500572236ff",
+      "size": 4041,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/d19cb82518610cb97c62300b6ed7c500572236ff"
+    },
+    {
+      "path": "packages/appimage/assets/appimage-linux.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89d2634560363bea1cf359edf30f497293dd6433",
+      "size": 3266,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/89d2634560363bea1cf359edf30f497293dd6433"
+    },
+    {
+      "path": "packages/appimage/assets/build-appimage.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58cd5e7056bd9a0b9b1fd61c0a45a271dabb2d9e",
+      "size": 17183,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/58cd5e7056bd9a0b9b1fd61c0a45a271dabb2d9e"
+    },
+    {
+      "path": "packages/appimage/assets/bundle-and-compress.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f615060cf8a99ae2f73b13bcf72963290124ae95",
+      "size": 6258,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/f615060cf8a99ae2f73b13bcf72963290124ae95"
+    },
+    {
+      "path": "packages/appimage/assets/download-runtime.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdf7dab173856bed8726d5b70a5f30d5ef27e52f",
+      "size": 5198,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/bdf7dab173856bed8726d5b70a5f30d5ef27e52f"
+    },
+    {
+      "path": "packages/appimage/build.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa601cf0a6fffc65fdd521cad9fe08493d06d4bd",
+      "size": 2253,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/fa601cf0a6fffc65fdd521cad9fe08493d06d4bd"
+    },
+    {
+      "path": "packages/appimage/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "713e207bcf28aea9cec69223c2c756282564acf7",
+      "size": 50,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/713e207bcf28aea9cec69223c2c756282564acf7"
+    },
+    {
+      "path": "packages/dmg-builder",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90b51c4ec61e7c070dfc1f6b06c712c6b97e53a4",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/90b51c4ec61e7c070dfc1f6b06c712c6b97e53a4"
+    },
+    {
+      "path": "packages/dmg-builder/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0772f37d909afba0060d03431b7420b31e629621",
+      "size": 4026,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/0772f37d909afba0060d03431b7420b31e629621"
+    },
+    {
+      "path": "packages/dmg-builder/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2dfc2f8d2c19c7dc6f51ae9578ca23f047182c9f",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/2dfc2f8d2c19c7dc6f51ae9578ca23f047182c9f"
+    },
+    {
+      "path": "packages/dmg-builder/assets/build-python-runtime.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad301d929b0abf9c056ff6109130f7dfe3ab76f5",
+      "size": 22500,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/ad301d929b0abf9c056ff6109130f7dfe3ab76f5"
+    },
+    {
+      "path": "packages/dmg-builder/assets/patch-dmgbuild.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59e86f604ed21c048810908ed859570b8c255afd",
+      "size": 6844,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/59e86f604ed21c048810908ed859570b8c255afd"
+    },
+    {
+      "path": "packages/dmg-builder/assets/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e35d85d296217bd2466e38f8eff60774283309d5",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/e35d85d296217bd2466e38f8eff60774283309d5"
+    },
+    {
+      "path": "packages/dmg-builder/assets/tests/test_dmg_core.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a82591509cb3d3220a308065c3f02b396fe1b90",
+      "size": 21057,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/6a82591509cb3d3220a308065c3f02b396fe1b90"
+    },
+    {
+      "path": "packages/dmg-builder/build.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad637f099d21330ff78e4262a87c8c27a9503544",
+      "size": 4047,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/ad637f099d21330ff78e4262a87c8c27a9503544"
+    },
+    {
+      "path": "packages/dmg-builder/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6b27df9347161fd6815cdd41aec6fd45ac53aee",
+      "size": 53,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/a6b27df9347161fd6815cdd41aec6fd45ac53aee"
+    },
+    {
+      "path": "packages/fpm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1770dab143863bb432c2566364bb90a637dc050e",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/1770dab143863bb432c2566364bb90a637dc050e"
+    },
+    {
+      "path": "packages/fpm/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "590d156fc0c7bbd49fb81a80c6094887ee19e6f6",
+      "size": 4819,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/590d156fc0c7bbd49fb81a80c6094887ee19e6f6"
+    },
+    {
+      "path": "packages/fpm/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e1c294e5cf2f715ba1ddfe63c4536e38f37dc684",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/e1c294e5cf2f715ba1ddfe63c4536e38f37dc684"
+    },
+    {
+      "path": "packages/fpm/assets/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56491d8dbabe5d988431561f9a14e869fbf464c4",
+      "size": 1142,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/56491d8dbabe5d988431561f9a14e869fbf464c4"
+    },
+    {
+      "path": "packages/fpm/assets/compile-portable-ruby.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "43b76e6e6b7d679ec2be0011a959460d5e90164c",
+      "size": 4515,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/43b76e6e6b7d679ec2be0011a959460d5e90164c"
+    },
+    {
+      "path": "packages/fpm/assets/constants.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9dce37cd23ecac36ba9256690d27ba1c9ce675c",
+      "size": 783,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/e9dce37cd23ecac36ba9256690d27ba1c9ce675c"
+    },
+    {
+      "path": "packages/fpm/assets/patch-portable-ruby.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8cb60ed904d8c2b48264265fa8f60795831f9579",
+      "size": 11675,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/8cb60ed904d8c2b48264265fa8f60795831f9579"
+    },
+    {
+      "path": "packages/fpm/build.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d851d739d54d96faea526064abccc3d4e239a7f1",
+      "size": 2879,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/d851d739d54d96faea526064abccc3d4e239a7f1"
+    },
+    {
+      "path": "packages/fpm/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b47f418067a6273b26719246c399d9512bf9a2ee",
+      "size": 45,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/b47f418067a6273b26719246c399d9512bf9a2ee"
+    },
+    {
+      "path": "packages/icons",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51266e539da773c592367fc39cd34d03a0a1e50e",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/51266e539da773c592367fc39cd34d03a0a1e50e"
+    },
+    {
+      "path": "packages/icons/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "679731b4323acef6a448f5635c7240bc32b447f8",
+      "size": 7847,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/679731b4323acef6a448f5635c7240bc32b447f8"
+    },
+    {
+      "path": "packages/icons/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99898855265539ec1491541942bac7922cf34413",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/99898855265539ec1491541942bac7922cf34413"
+    },
+    {
+      "path": "packages/icons/assets/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "03fc12f1b1cdff7efd4d93826ac05f617a763ac7",
+      "size": 6728,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/03fc12f1b1cdff7efd4d93826ac05f617a763ac7"
+    },
+    {
+      "path": "packages/icons/assets/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2cd401e65ec161c8864061d98f4348dac1ba6e30",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/2cd401e65ec161c8864061d98f4348dac1ba6e30"
+    },
+    {
+      "path": "packages/icons/assets/src/argb.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f884f52a264a1cc476204f2ccbfccb000456227",
+      "size": 2646,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/8f884f52a264a1cc476204f2ccbfccb000456227"
+    },
+    {
+      "path": "packages/icons/assets/src/args.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "486a97cbb6bd8459ced4931441c73ba310daf9b5",
+      "size": 1108,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/486a97cbb6bd8459ced4931441c73ba310daf9b5"
+    },
+    {
+      "path": "packages/icons/assets/src/cli.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ca0dd42e70eff39bfed9040eb3194584937b500",
+      "size": 2697,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/5ca0dd42e70eff39bfed9040eb3194584937b500"
+    },
+    {
+      "path": "packages/icons/assets/src/icns-input.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e75a703584dc5cd626eb0c0f15b41af849869ed",
+      "size": 4430,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/6e75a703584dc5cd626eb0c0f15b41af849869ed"
+    },
+    {
+      "path": "packages/icons/assets/src/icns.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "349081f5b002096ac61a593bc757de7815fc36fe",
+      "size": 3894,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/349081f5b002096ac61a593bc757de7815fc36fe"
+    },
+    {
+      "path": "packages/icons/assets/src/ico.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad4dddacd4fe64309aeec5d7d973037dc1677606",
+      "size": 1880,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/ad4dddacd4fe64309aeec5d7d973037dc1677606"
+    },
+    {
+      "path": "packages/icons/assets/src/linux.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa1a01939f7d456cd199b7e16eb78cc80e21012b",
+      "size": 824,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/fa1a01939f7d456cd199b7e16eb78cc80e21012b"
+    },
+    {
+      "path": "packages/icons/assets/src/log.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b99a50269be0679a8e417867d67f09f3e0fe2956",
+      "size": 1068,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/b99a50269be0679a8e417867d67f09f3e0fe2956"
+    },
+    {
+      "path": "packages/icons/assets/src/png.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9eff59f9fd062326c204e11f6389057522732263",
+      "size": 755,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/9eff59f9fd062326c204e11f6389057522732263"
+    },
+    {
+      "path": "packages/icons/assets/src/retry.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0698f5316b89fbe608be1296f0c18d5744282266",
+      "size": 3374,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/0698f5316b89fbe608be1296f0c18d5744282266"
+    },
+    {
+      "path": "packages/icons/assets/src/svg.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7ee904ebabaeb1a6f5d54bda526e95e7797e655",
+      "size": 950,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/d7ee904ebabaeb1a6f5d54bda526e95e7797e655"
+    },
+    {
+      "path": "packages/icons/assets/src/vips.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2690f71f96e31bd5c36f63056ab9e2f47867f8b0",
+      "size": 5135,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/2690f71f96e31bd5c36f63056ab9e2f47867f8b0"
+    },
+    {
+      "path": "packages/icons/assets/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb1fcb81f41c03da4262c3bea8ac7eed61d31889",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/eb1fcb81f41c03da4262c3bea8ac7eed61d31889"
+    },
+    {
+      "path": "packages/icons/assets/tests/e2e.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14e9e67c9557facb6f814fa305a16c49bd7db363",
+      "size": 27498,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/14e9e67c9557facb6f814fa305a16c49bd7db363"
+    },
+    {
+      "path": "packages/icons/assets/tests/validate.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ce92c7251afc1606f6c743c771dae1ba1cd81a3",
+      "size": 6368,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/8ce92c7251afc1606f6c743c771dae1ba1cd81a3"
+    },
+    {
+      "path": "packages/icons/assets/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd8cb27d79160cae6ef29795fb2dff30165c66f9",
+      "size": 332,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/bd8cb27d79160cae6ef29795fb2dff30165c66f9"
+    },
+    {
+      "path": "packages/icons/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a2059ab0003c5186a0d1afe6c5a8e73bb05c5880",
+      "size": 2459,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/a2059ab0003c5186a0d1afe6c5a8e73bb05c5880"
+    },
+    {
+      "path": "packages/icons/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e46c46a0626341dae450cd68a6e99e934ee579c",
+      "size": 440,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/0e46c46a0626341dae450cd68a6e99e934ee579c"
+    },
+    {
+      "path": "packages/linux-tools-mac",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7386febc51d682420a3cf453c217f562a587ae5a",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/7386febc51d682420a3cf453c217f562a587ae5a"
+    },
+    {
+      "path": "packages/linux-tools-mac/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1936554005888fd7a583d46ff2831ee17de9f404",
+      "size": 1030,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/1936554005888fd7a583d46ff2831ee17de9f404"
+    },
+    {
+      "path": "packages/linux-tools-mac/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "43f1c88dc21775be8a2f15421f15e5abd7c00e83",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/43f1c88dc21775be8a2f15421f15e5abd7c00e83"
+    },
+    {
+      "path": "packages/linux-tools-mac/assets/build-mac.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "25ab7a336e015f1f19f4e27692115469974fae15",
+      "size": 9710,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/25ab7a336e015f1f19f4e27692115469974fae15"
+    },
+    {
+      "path": "packages/linux-tools-mac/assets/test.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b0944e6878bca9ee852b16076f618655447cbcd0",
+      "size": 6052,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/b0944e6878bca9ee852b16076f618655447cbcd0"
+    },
+    {
+      "path": "packages/linux-tools-mac/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ca94a5810899a41729f84d2bbc440a87ab0ac7aa",
+      "size": 625,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/ca94a5810899a41729f84d2bbc440a87ab0ac7aa"
+    },
+    {
+      "path": "packages/linux-tools-mac/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "250378d2543b100733586a6df031a4684138959c",
+      "size": 269,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/250378d2543b100733586a6df031a4684138959c"
+    },
+    {
+      "path": "packages/nsis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "13ba7cbf66e66469ee448c0e8c3ba6b298537784",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/13ba7cbf66e66469ee448c0e8c3ba6b298537784"
+    },
+    {
+      "path": "packages/nsis/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "041e88c2513ad08d34394bcf1aa2f4b1e79a89bc",
+      "size": 5385,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/041e88c2513ad08d34394bcf1aa2f4b1e79a89bc"
+    },
+    {
+      "path": "packages/nsis/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f356927d62a5a035aca088f8dd6099e78e286e85",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/f356927d62a5a035aca088f8dd6099e78e286e85"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-combine.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1bdc0d7aabcee67a93df05c642628bfd8a857d9",
+      "size": 14484,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/e1bdc0d7aabcee67a93df05c642628bfd8a857d9"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-e2e-install.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "d114d158dda59f2ba84eee3631aed5fc1e63733a",
+      "size": 4292,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/d114d158dda59f2ba84eee3631aed5fc1e63733a"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-elevate.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd3e0d1c1b1b020ae5ab3ceae6d24e0d8475ce83",
+      "size": 7269,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/dd3e0d1c1b1b020ae5ab3ceae6d24e0d8475ce83"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-lang-fixes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "33828a18008d941df88a54ae96d610d1e4971144",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/33828a18008d941df88a54ae96d610d1e4971144"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-lang-fixes/Finnish.nsh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaec7ebe29c9589144fe27ce348725e1924ad42e",
+      "size": 580,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/aaec7ebe29c9589144fe27ce348725e1924ad42e"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-lang-fixes/Hungarian.nsh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaec7ebe29c9589144fe27ce348725e1924ad42e",
+      "size": 580,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/aaec7ebe29c9589144fe27ce348725e1924ad42e"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-lang-fixes/Korean.nsh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f176b1d4a081b15307dda6d08a52e6f152832c8b",
+      "size": 632,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/f176b1d4a081b15307dda6d08a52e6f152832c8b"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-lang-fixes/SimpChinese.nlf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c8f69a597c63f24230d5bdc2b513ebeb0e8863c",
+      "size": 5148,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/2c8f69a597c63f24230d5bdc2b513ebeb0e8863c"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-lang-fixes/Thai.nsh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaec7ebe29c9589144fe27ce348725e1924ad42e",
+      "size": 580,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/aaec7ebe29c9589144fe27ce348725e1924ad42e"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-lang-fixes/Turkish.nsh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaec7ebe29c9589144fe27ce348725e1924ad42e",
+      "size": 580,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/aaec7ebe29c9589144fe27ce348725e1924ad42e"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-linux.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e33e64bb9ffc2f4401782b6d915b24c3e3c922b6",
+      "size": 6997,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/e33e64bb9ffc2f4401782b6d915b24c3e3c922b6"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-mac.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df913e6cfc610bc88a16415c482bb1b31bab66e8",
+      "size": 6947,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/df913e6cfc610bc88a16415c482bb1b31bab66e8"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-test.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a368be2fcb12f86dffdda5f377efaaa6943b5e07",
+      "size": 29770,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/a368be2fcb12f86dffdda5f377efaaa6943b5e07"
+    },
+    {
+      "path": "packages/nsis/assets/nsis-windows.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b43e1a311fe1f118df6c74a7e7d7ee25d44a661",
+      "size": 26327,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/7b43e1a311fe1f118df6c74a7e7d7ee25d44a661"
+    },
+    {
+      "path": "packages/nsis/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c34ea4e80d0bbd85ad67990da876f34b2eb4c144",
+      "size": 5768,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/c34ea4e80d0bbd85ad67990da876f34b2eb4c144"
+    },
+    {
+      "path": "packages/nsis/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c39fa1598904c745efe2e3bcddee032d2ea2589e",
+      "size": 272,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/c39fa1598904c745efe2e3bcddee032d2ea2589e"
+    },
+    {
+      "path": "packages/ran",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f8aa16f989a6327a4f0f6bcb086a8a139e7d606c",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/f8aa16f989a6327a4f0f6bcb086a8a139e7d606c"
+    },
+    {
+      "path": "packages/ran/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81962be7f3c4d83cc04a06d479cf9a8e82e82c2c",
+      "size": 1641,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/81962be7f3c4d83cc04a06d479cf9a8e82e82c2c"
+    },
+    {
+      "path": "packages/ran/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e55d0ffec258c94e74ac58d192c279101e030f12",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/e55d0ffec258c94e74ac58d192c279101e030f12"
+    },
+    {
+      "path": "packages/ran/assets/build.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39bd35ee3ba1d867baf356ae4de07586bbb5c4d9",
+      "size": 5419,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/39bd35ee3ba1d867baf356ae4de07586bbb5c4d9"
+    },
+    {
+      "path": "packages/ran/build.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e2d15097fc1de7149fcefcbdaab296fcf16396c",
+      "size": 155,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/3e2d15097fc1de7149fcefcbdaab296fcf16396c"
+    },
+    {
+      "path": "packages/ran/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "926a48299c0411b9f28867b7ede216887a65dfdf",
+      "size": 45,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/926a48299c0411b9f28867b7ede216887a65dfdf"
+    },
+    {
+      "path": "packages/snap-template",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a91eedfc9518b26fa126ea21f4fccf95911bdcab",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/a91eedfc9518b26fa126ea21f4fccf95911bdcab"
+    },
+    {
+      "path": "packages/snap-template/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ef536086d8f03e57cfdf0791e756210f99405a7",
+      "size": 55,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/1ef536086d8f03e57cfdf0791e756210f99405a7"
+    },
+    {
+      "path": "packages/squirrel.windows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dbb390d3f3896ef0735fc83754e0090420381a6f",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/dbb390d3f3896ef0735fc83754e0090420381a6f"
+    },
+    {
+      "path": "packages/squirrel.windows/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3af24135d1c204967214d0430d39ce3b3b456f3",
+      "size": 1464,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/a3af24135d1c204967214d0430d39ce3b3b456f3"
+    },
+    {
+      "path": "packages/squirrel.windows/build.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ccd1fa26ac0949704010e84eab905e6b80d2f36",
+      "size": 8566,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/2ccd1fa26ac0949704010e84eab905e6b80d2f36"
+    },
+    {
+      "path": "packages/squirrel.windows/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65630a38cbae231d06f616190f2a90648f7d3a88",
+      "size": 58,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/65630a38cbae231d06f616190f2a90648f7d3a88"
+    },
+    {
+      "path": "packages/squirrel.windows/patches",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51c38f658ce756bf236e67648ff7ed27cd361687",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/51c38f658ce756bf236e67648ff7ed27cd361687"
+    },
+    {
+      "path": "packages/squirrel.windows/patches/electron-builder-issue-8952.patch",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8e66aa363f069964ba07638e527ea3cc243b47a",
+      "size": 891,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/b8e66aa363f069964ba07638e527ea3cc243b47a"
+    },
+    {
+      "path": "packages/win-codesign",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "93eebf06c869b7951f89321cfb89c4e350de20bc",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/93eebf06c869b7951f89321cfb89c4e350de20bc"
+    },
+    {
+      "path": "packages/win-codesign/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43af76cb71f07f4c33ece3ff3f71f4bbbb37e589",
+      "size": 4248,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/43af76cb71f07f4c33ece3ff3f71f4bbbb37e589"
+    },
+    {
+      "path": "packages/win-codesign/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e2ff4d37131fe31bb8831d2e15114331bdfcabf",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/2e2ff4d37131fe31bb8831d2e15114331bdfcabf"
+    },
+    {
+      "path": "packages/win-codesign/assets/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b54e0f7752fed0fa32376a1f77721346233ee58",
+      "size": 4090,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/4b54e0f7752fed0fa32376a1f77721346233ee58"
+    },
+    {
+      "path": "packages/win-codesign/assets/appxAssets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad62667a78bb1a07fb14dab63d146e254aa91204",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/ad62667a78bb1a07fb14dab63d146e254aa91204"
+    },
+    {
+      "path": "packages/win-codesign/assets/appxAssets/SampleAppx.150x150.png",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a74142891146d77710774c47a464c1b5234aa95a",
+      "size": 12034,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/a74142891146d77710774c47a464c1b5234aa95a"
+    },
+    {
+      "path": "packages/win-codesign/assets/appxAssets/SampleAppx.310x150.png",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9678861bfe21408cd58d0ed6ff7d16aee723ae0d",
+      "size": 19309,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/9678861bfe21408cd58d0ed6ff7d16aee723ae0d"
+    },
+    {
+      "path": "packages/win-codesign/assets/appxAssets/SampleAppx.44x44.png",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "876f65c00079a160a82b182a8dbd683a49176824",
+      "size": 1912,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/876f65c00079a160a82b182a8dbd683a49176824"
+    },
+    {
+      "path": "packages/win-codesign/assets/appxAssets/SampleAppx.50x50.png",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2971b17eb95bd8826373e6e1f8b92d82a56c285a",
+      "size": 1742,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/2971b17eb95bd8826373e6e1f8b92d82a56c285a"
+    },
+    {
+      "path": "packages/win-codesign/assets/build-linux.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe0c602c699a90b27160bcd3fb63f288b702747d",
+      "size": 4472,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/fe0c602c699a90b27160bcd3fb63f288b702747d"
+    },
+    {
+      "path": "packages/win-codesign/assets/build-mac.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8b55f6804b89003be8bf814e8226c7e7f3e8b01",
+      "size": 3636,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/a8b55f6804b89003be8bf814e8226c7e7f3e8b01"
+    },
+    {
+      "path": "packages/win-codesign/assets/build-win-ats.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2095f2ab1d5922982920bd181b790bf8046a53f5",
+      "size": 6613,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/2095f2ab1d5922982920bd181b790bf8046a53f5"
+    },
+    {
+      "path": "packages/win-codesign/assets/build-win-dotnet.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2d0094359b471ce145e94b19930768e518c94d21",
+      "size": 5376,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/2d0094359b471ce145e94b19930768e518c94d21"
+    },
+    {
+      "path": "packages/win-codesign/assets/build-win-kits.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89a8a60157a7e1d2395c0537bd8cd4f86ce99b4c",
+      "size": 4899,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/89a8a60157a7e1d2395c0537bd8cd4f86ce99b4c"
+    },
+    {
+      "path": "packages/win-codesign/assets/build-win-ossl.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84c8948972a69d8354fb10d5afa41789198ffcad",
+      "size": 5208,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/84c8948972a69d8354fb10d5afa41789198ffcad"
+    },
+    {
+      "path": "packages/win-codesign/assets/build-win-rcedit.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "221211ac66d1687a02d536436a4a19edb031c345",
+      "size": 4486,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/221211ac66d1687a02d536436a4a19edb031c345"
+    },
+    {
+      "path": "packages/win-codesign/assets/bundle-osslsigncode-libs.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ba4df28c66a21a2760ddfb8eaead5b227d9997b",
+      "size": 9257,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/6ba4df28c66a21a2760ddfb8eaead5b227d9997b"
+    },
+    {
+      "path": "packages/win-codesign/assets/bundle-osslsigncode.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8838e84f1eeccf20d4fb817cf5ab86e5782990ad",
+      "size": 5789,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/8838e84f1eeccf20d4fb817cf5ab86e5782990ad"
+    },
+    {
+      "path": "packages/win-codesign/assets/compiler-flags.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4b45d7762b046b95148948999ca6e8b5d16fd9de",
+      "size": 1344,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/4b45d7762b046b95148948999ca6e8b5d16fd9de"
+    },
+    {
+      "path": "packages/win-codesign/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "10f27b209a785110297419bb55e3f6fd6fd4dea0",
+      "size": 3140,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/10f27b209a785110297419bb55e3f6fd6fd4dea0"
+    },
+    {
+      "path": "packages/win-codesign/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40fa94b319fa4e630eb7e04d5090b4cbdccc8fc4",
+      "size": 54,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/40fa94b319fa4e630eb7e04d5090b4cbdccc8fc4"
+    },
+    {
+      "path": "packages/win-codesign/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a03446ab75e415e68dc57ec85006a94dd5250dff",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/a03446ab75e415e68dc57ec85006a94dd5250dff"
+    },
+    {
+      "path": "packages/win-codesign/test/build-win-ats-test.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c33ad982eeb24acda0674664c7116731a74e3b9",
+      "size": 9322,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/4c33ad982eeb24acda0674664c7116731a74e3b9"
+    },
+    {
+      "path": "packages/win-codesign/test/build-win-dotnet-test.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "7e50a98e38da520139dc1418d0daf9ba0a2894ac",
+      "size": 12022,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/7e50a98e38da520139dc1418d0daf9ba0a2894ac"
+    },
+    {
+      "path": "packages/win-codesign/test/build-win-kits-test.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "36b08e2b603be2f1ca528753cba5ad0e6271a8e9",
+      "size": 8638,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/36b08e2b603be2f1ca528753cba5ad0e6271a8e9"
+    },
+    {
+      "path": "packages/wine",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a91a38ac4011e057820b7039080e0a7ce644713c",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/a91a38ac4011e057820b7039080e0a7ce644713c"
+    },
+    {
+      "path": "packages/wine/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "204f71d3a5d3a89f0df7bf44595d3c529ff0c6d2",
+      "size": 1097,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/204f71d3a5d3a89f0df7bf44595d3c529ff0c6d2"
+    },
+    {
+      "path": "packages/wine/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59b12f42d568978728769d8a6680b6abaf4bcabf",
+      "size": 4252,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/59b12f42d568978728769d8a6680b6abaf4bcabf"
+    },
+    {
+      "path": "packages/wine/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6306ad55b6413944913cff8764cae8337830c257",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/6306ad55b6413944913cff8764cae8337830c257"
+    },
+    {
+      "path": "packages/wine/assets/Brewfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a79ad381ffea5b7b048c9be0496f63160b7047df",
+      "size": 275,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/a79ad381ffea5b7b048c9be0496f63160b7047df"
+    },
+    {
+      "path": "packages/wine/assets/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f414ba58bcb59aa53dfe05b887b7e94bba36f79",
+      "size": 1492,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/5f414ba58bcb59aa53dfe05b887b7e94bba36f79"
+    },
+    {
+      "path": "packages/wine/assets/build-linux.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0683afa52635c1203bac48d3eba49f9d1edafe0",
+      "size": 2556,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/c0683afa52635c1203bac48d3eba49f9d1edafe0"
+    },
+    {
+      "path": "packages/wine/assets/build-wine.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4735f4106b174b8a3c0c80a075734dcc97d75e49",
+      "size": 11811,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/4735f4106b174b8a3c0c80a075734dcc97d75e49"
+    },
+    {
+      "path": "packages/wine/assets/generate-brewfile.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d88a12fa3e2fff92a4423eb2f0c6c964e9b2cee7",
+      "size": 2077,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/d88a12fa3e2fff92a4423eb2f0c6c964e9b2cee7"
+    },
+    {
+      "path": "packages/wine/assets/generate-trace-exes.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fcbb248a483c4ff32efd076334585b309468b69",
+      "size": 2299,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/4fcbb248a483c4ff32efd076334585b309468b69"
+    },
+    {
+      "path": "packages/wine/assets/test.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "68c8ac04c7c3b68c6245929ec3745bffd94d0422",
+      "size": 10105,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/68c8ac04c7c3b68c6245929ec3745bffd94d0422"
+    },
+    {
+      "path": "packages/wine/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f7de212526eae9f5d91c260fdb50368cc747a4ca",
+      "size": 4962,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/f7de212526eae9f5d91c260fdb50368cc747a4ca"
+    },
+    {
+      "path": "packages/wine/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efd0c5758a55bafc5f0e71ca7f9b7fe6855b91bf",
+      "size": 46,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/efd0c5758a55bafc5f0e71ca7f9b7fe6855b91bf"
+    },
+    {
+      "path": "packages/wix",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f3ce5259127258776e9636753adad876478d2989",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/f3ce5259127258776e9636753adad876478d2989"
+    },
+    {
+      "path": "packages/wix/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eee7f7d0c4f7d5ab02d7e3098b53b0211fc52434",
+      "size": 866,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/eee7f7d0c4f7d5ab02d7e3098b53b0211fc52434"
+    },
+    {
+      "path": "packages/wix/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9840d8f4b8c52e7f9b11e35bf45cd9e6938b44fa",
+      "size": 2209,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/9840d8f4b8c52e7f9b11e35bf45cd9e6938b44fa"
+    },
+    {
+      "path": "packages/wix/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ad378c4cedad3c8f9a8f28f55ae09633d8aa38e",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/0ad378c4cedad3c8f9a8f28f55ae09633d8aa38e"
+    },
+    {
+      "path": "packages/wix/assets/test.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "52bd566acb40f365fd449dbcff9f4a79b8272198",
+      "size": 5669,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/52bd566acb40f365fd449dbcff9f4a79b8272198"
+    },
+    {
+      "path": "packages/wix/assets/test.wxs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "857d35ef6c35a8b36cce6cba5f89310911b47c42",
+      "size": 809,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/857d35ef6c35a8b36cce6cba5f89310911b47c42"
+    },
+    {
+      "path": "packages/wix/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "638f7b730973fc43da78d4f5caff9bf3954b8a9f",
+      "size": 7323,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/638f7b730973fc43da78d4f5caff9bf3954b8a9f"
+    },
+    {
+      "path": "packages/wix/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b96eef94881e45e4e51dd4ba72b2381afd0bf456",
+      "size": 147,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/b96eef94881e45e4e51dd4ba72b2381afd0bf456"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "623fd3266f63e8f93918e053840f44fb26f3943d",
+      "size": 64530,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/623fd3266f63e8f93918e053840f44fb26f3943d"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47940024da551eb65a101d8705964e95fd464bd8",
+      "size": 1241,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/47940024da551eb65a101d8705964e95fd464bd8"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a0f3242111c698a75881e3e9f54fa7973ea10e7c",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/a0f3242111c698a75881e3e9f54fa7973ea10e7c"
+    },
+    {
+      "path": "scripts/changeset-publish.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b73986519677195aa776e9314cd2c96c5acb5d90",
+      "size": 5504,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/b73986519677195aa776e9314cd2c96c5acb5d90"
+    },
+    {
+      "path": "scripts/changeset-version.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b85c8ed72af7a0aaccc5719cd4ac6a20a7364f39",
+      "size": 1810,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/b85c8ed72af7a0aaccc5719cd4ac6a20a7364f39"
+    },
+    {
+      "path": "scripts/compress-artifacts.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0affb0084330171296351c396bdd0b43a7865029",
+      "size": 481,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/0affb0084330171296351c396bdd0b43a7865029"
+    },
+    {
+      "path": "scripts/detect-packages.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f4b72ad2068c9090450167d9ecfe93890a89379",
+      "size": 904,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/7f4b72ad2068c9090450167d9ecfe93890a89379"
+    },
+    {
+      "path": "scripts/utils.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ea42e55afc7b944222b51999fa141a5858e2eda",
+      "size": 1623,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/6ea42e55afc7b944222b51999fa141a5858e2eda"
+    },
+    {
+      "path": "scripts/validate-staging.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "311e3fe9364740c565cce3b796db06b755f4a50e",
+      "size": 2453,
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/blobs/311e3fe9364740c565cce3b796db06b755f4a50e"
+    }
+  ],
+  "truncated": false
+}

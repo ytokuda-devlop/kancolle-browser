@@ -15,7 +15,7 @@ async function sha256(file) {
   return hash.digest('hex');
 }
 
-async function verify(projectDir, artifact) {
+async function verify(projectDir, artifact, options = {}) {
   const extension = path.extname(artifact).toLowerCase();
   if (!['.zip', '.dmg', '.exe'].includes(extension)) {
     throw new Error(`Unsupported license audit container: ${artifact}`);
@@ -42,7 +42,8 @@ async function verify(projectDir, artifact) {
       const unpack = (file, destination, filters = []) => run(seven,
         ['x', file, '-y', `-o${destination}`, ...filters], { maxBuffer: 16 * 1024 * 1024 });
       if (extension === '.exe') {
-        await unpack(artifact, extracted, ['$PLUGINSDIR/app-*.7z']);
+        await unpack(artifact, extracted, options.inspectContainer ? [] : ['$PLUGINSDIR/app-*.7z']);
+        const container = options.inspectContainer ? await options.inspectContainer(artifact, extracted) : undefined;
         const payloadDir = path.join(extracted, '$PLUGINSDIR');
         const payloads = (await fs.readdir(payloadDir)).filter(name => /^app-.*\.7z$/.test(name));
         if (!payloads.length) throw new Error('No embedded NSIS/portable application payload');
@@ -50,10 +51,13 @@ async function verify(projectDir, artifact) {
         for (const [index, payload] of payloads.entries()) {
           const app = path.join(temp, `payload-${index}`);
           await unpack(path.join(payloadDir, payload), app);
-          reports.push(await verifyLicenses(projectDir, path.join(app, 'resources')));
+          const resources = path.join(app, 'resources');
+          reports.push({ ...await verifyLicenses(projectDir, resources),
+            ...(options.inspectPayload ? { candidate: await options.inspectPayload(resources, 'win32') } : {}) });
         }
         if (await sha256(artifact) !== originalHash) throw new Error('Artifact changed during verification');
-        return { artifact: path.basename(artifact), sha256: originalHash, payloads: reports };
+        return { artifact: path.basename(artifact), sha256: originalHash, payloads: reports,
+          ...(container ? { container } : {}) };
       }
       await unpack(artifact, extracted);
     }
@@ -64,8 +68,11 @@ async function verify(projectDir, artifact) {
       ? path.join(extracted, apps[0].name, 'Contents', 'Resources')
       : path.join(extracted, 'resources');
     const report = await verifyLicenses(projectDir, resources);
+    if (options.inspectPayload) report.candidate = await options.inspectPayload(resources, apps.length ? 'darwin' : 'win32');
+    const container = options.inspectContainer ? await options.inspectContainer(artifact, extracted) : undefined;
     if (await sha256(artifact) !== originalHash) throw new Error('Artifact changed during verification');
-    return { artifact: path.basename(artifact), sha256: originalHash, payloads: [report] };
+    return { artifact: path.basename(artifact), sha256: originalHash, payloads: [report],
+      ...(container ? { container } : {}) };
   } finally {
     // Never remove the temporary mountpoint until the disk image is detached.
     if (mounted) await run('/usr/bin/hdiutil', ['detach', mount]);

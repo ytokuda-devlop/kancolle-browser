@@ -1,0 +1,132 @@
+[
+  {
+    "name": "1.14",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.14",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.14",
+    "commit": {
+      "sha": "4e1117321001e54dcd2c52f72d3c359d5215e426",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/4e1117321001e54dcd2c52f72d3c359d5215e426"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4xNA=="
+  },
+  {
+    "name": "1.13",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.13",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.13",
+    "commit": {
+      "sha": "398e1853ef091c9a16159b3cad25b5f0aa749038",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/398e1853ef091c9a16159b3cad25b5f0aa749038"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4xMw=="
+  },
+  {
+    "name": "1.12",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.12",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.12",
+    "commit": {
+      "sha": "a66ade4f9c97d3930458cb5f8cbaa5bb7dcc0263",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/a66ade4f9c97d3930458cb5f8cbaa5bb7dcc0263"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4xMg=="
+  },
+  {
+    "name": "1.11",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.11",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.11",
+    "commit": {
+      "sha": "dce5a96adc2a6056b5606cfbfcbc3ddd5bac4866",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/dce5a96adc2a6056b5606cfbfcbc3ddd5bac4866"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4xMQ=="
+  },
+  {
+    "name": "1.10",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.10",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.10",
+    "commit": {
+      "sha": "a48780f1a1b686dd75d5425916863fdd0eb89a43",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/a48780f1a1b686dd75d5425916863fdd0eb89a43"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4xMA=="
+  },
+  {
+    "name": "1.09",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.09",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.09",
+    "commit": {
+      "sha": "132c9ea0c45c8eb9e59c8998769e113ea87e828d",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/132c9ea0c45c8eb9e59c8998769e113ea87e828d"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4wOQ=="
+  },
+  {
+    "name": "1.08",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.08",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.08",
+    "commit": {
+      "sha": "22f9ebcf504e3c6a098fa677919448ec3595d2c2",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/22f9ebcf504e3c6a098fa677919448ec3595d2c2"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4wOA=="
+  },
+  {
+    "name": "1.07",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.07",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.07",
+    "commit": {
+      "sha": "b54d2ad3b6fc57ac5c9cf7586a3b2565211fb85d",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/b54d2ad3b6fc57ac5c9cf7586a3b2565211fb85d"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4wNw=="
+  },
+  {
+    "name": "1.06",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.06",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.06",
+    "commit": {
+      "sha": "59dbbff8f7a31f52255dcbc8277c818f3331123e",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/59dbbff8f7a31f52255dcbc8277c818f3331123e"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4wNg=="
+  },
+  {
+    "name": "1.03",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.03",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.03",
+    "commit": {
+      "sha": "3098eb1b3cc8df92828d5cfeb5df4ad0f6ed7fcb",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/3098eb1b3cc8df92828d5cfeb5df4ad0f6ed7fcb"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4wMw=="
+  },
+  {
+    "name": "1.02",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.02",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.02",
+    "commit": {
+      "sha": "925c62747aeb3c8ef62fdfcdcf9ba26ccb8d911b",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/925c62747aeb3c8ef62fdfcdcf9ba26ccb8d911b"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4wMg=="
+  },
+  {
+    "name": "1.01",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.01",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.01",
+    "commit": {
+      "sha": "de45be8fa1996480efb1e52360d04b7203c33abc",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/de45be8fa1996480efb1e52360d04b7203c33abc"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4wMQ=="
+  },
+  {
+    "name": "1.00",
+    "zipball_url": "https://api.github.com/repos/lordmulder/stdutils/zipball/refs/tags/1.00",
+    "tarball_url": "https://api.github.com/repos/lordmulder/stdutils/tarball/refs/tags/1.00",
+    "commit": {
+      "sha": "500c6a4b2f737dfc288d622bab88286db7d9f3b5",
+      "url": "https://api.github.com/repos/lordmulder/stdutils/commits/500c6a4b2f737dfc288d622bab88286db7d9f3b5"
+    },
+    "node_id": "MDM6UmVmNjM2MTg2NDpyZWZzL3RhZ3MvMS4wMA=="
+  }
+]

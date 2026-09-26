@@ -1,0 +1,10 @@
+{
+  "ref": "refs/tags/nsis-resources-3.4.1",
+  "node_id": "MDM6UmVmNjU1MjcxMjg6cmVmcy90YWdzL25zaXMtcmVzb3VyY2VzLTMuNC4x",
+  "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/refs/tags/nsis-resources-3.4.1",
+  "object": {
+    "sha": "6fac0e5d0ad9f6c66741b40e5fb160540e167415",
+    "type": "commit",
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/commits/6fac0e5d0ad9f6c66741b40e5fb160540e167415"
+  }
+}

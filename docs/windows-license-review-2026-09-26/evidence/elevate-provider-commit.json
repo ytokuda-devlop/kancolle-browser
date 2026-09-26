@@ -1,0 +1,112 @@
+{
+  "sha": "b266aeda90e296ffb0d803d769b738d14148f72f",
+  "node_id": "MDY6Q29tbWl0NjU1MjcxMjg6YjI2NmFlZGE5MGUyOTZmZmIwZDgwM2Q3NjliNzM4ZDE0MTQ4ZjcyZg==",
+  "commit": {
+    "author": {
+      "name": "develar",
+      "email": "develar@gmail.com",
+      "date": "2017-01-25T21:04:59Z"
+    },
+    "committer": {
+      "name": "develar",
+      "email": "develar@gmail.com",
+      "date": "2017-01-25T21:04:59Z"
+    },
+    "message": "fix(electron-updater): Cannot use autoupdater without administrator privileges #1129",
+    "tree": {
+      "sha": "44d0c5927ebb3d40f1a53adad5fe17f3f3f339a2",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/44d0c5927ebb3d40f1a53adad5fe17f3f3f339a2"
+    },
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/commits/b266aeda90e296ffb0d803d769b738d14148f72f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/commits/b266aeda90e296ffb0d803d769b738d14148f72f",
+  "html_url": "https://github.com/electron-userland/electron-builder-binaries/commit/b266aeda90e296ffb0d803d769b738d14148f72f",
+  "comments_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/commits/b266aeda90e296ffb0d803d769b738d14148f72f/comments",
+  "author": {
+    "login": "develar",
+    "id": 350686,
+    "node_id": "MDQ6VXNlcjM1MDY4Ng==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/350686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/develar",
+    "html_url": "https://github.com/develar",
+    "followers_url": "https://api.github.com/users/develar/followers",
+    "following_url": "https://api.github.com/users/develar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/develar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/develar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/develar/subscriptions",
+    "organizations_url": "https://api.github.com/users/develar/orgs",
+    "repos_url": "https://api.github.com/users/develar/repos",
+    "events_url": "https://api.github.com/users/develar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/develar/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "develar",
+    "id": 350686,
+    "node_id": "MDQ6VXNlcjM1MDY4Ng==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/350686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/develar",
+    "html_url": "https://github.com/develar",
+    "followers_url": "https://api.github.com/users/develar/followers",
+    "following_url": "https://api.github.com/users/develar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/develar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/develar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/develar/subscriptions",
+    "organizations_url": "https://api.github.com/users/develar/orgs",
+    "repos_url": "https://api.github.com/users/develar/repos",
+    "events_url": "https://api.github.com/users/develar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/develar/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "199c565990a16dd29e90c8cc3c66cc7421e298d7",
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/commits/199c565990a16dd29e90c8cc3c66cc7421e298d7",
+      "html_url": "https://github.com/electron-userland/electron-builder-binaries/commit/199c565990a16dd29e90c8cc3c66cc7421e298d7"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "66a74c0d0bbabfc0cbd83ad7233a642c495daa48",
+      "filename": "nsis/elevate.exe",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/electron-userland/electron-builder-binaries/blob/b266aeda90e296ffb0d803d769b738d14148f72f/nsis%2Felevate.exe",
+      "raw_url": "https://github.com/electron-userland/electron-builder-binaries/raw/b266aeda90e296ffb0d803d769b738d14148f72f/nsis%2Felevate.exe",
+      "contents_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/nsis%2Felevate.exe?ref=b266aeda90e296ffb0d803d769b738d14148f72f"
+    },
+    {
+      "sha": "48ade0390816b369697d7bc9797ba526ae639b7b",
+      "filename": "nsis/version.txt",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/electron-userland/electron-builder-binaries/blob/b266aeda90e296ffb0d803d769b738d14148f72f/nsis%2Fversion.txt",
+      "raw_url": "https://github.com/electron-userland/electron-builder-binaries/raw/b266aeda90e296ffb0d803d769b738d14148f72f/nsis%2Fversion.txt",
+      "contents_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/nsis%2Fversion.txt?ref=b266aeda90e296ffb0d803d769b738d14148f72f",
+      "patch": "@@ -1 +1 @@\n-3.0.4\n\\ No newline at end of file\n+3.0.1.5\n\\ No newline at end of file"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "artifact": "艦娘は今日もお仕事です（仮） 1.0.0.exe",
+  "requireSigned": true,
+  "expectedRejection": true,
+  "exitCode": 1,
+  "reason": "Verified signature required: 艦娘は今日もお仕事です（仮） 1.0.0.exe (unsigned)"
+}

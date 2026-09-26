@@ -1,0 +1,532 @@
+{
+  "scope": "Investigation matrix, not an exhaustive or certified SBOM; notice-only candidates do not prove linkage",
+  "components": [
+    {
+      "component": "Node.js",
+      "status": "observed-symbols-and-build",
+      "evidence": "mac framework / Windows EXE exports; BUILD.gn; node-unofficial.gni source_set(libnode)",
+      "versionOrPin": "24.18.1",
+      "notices": [
+        {
+          "title": "Node.js",
+          "homepage": "https://github.com/nodejs/node",
+          "licenseTextSha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+        }
+      ]
+    },
+    {
+      "component": "V8",
+      "status": "observed-symbols-and-build",
+      "evidence": "mac framework / Windows EXE exports; BUILD.gn",
+      "versionOrPin": "8ec91943739dc102471544c77ec9c864f185af5b",
+      "notices": [
+        {
+          "title": "V8 fork of fdlibm",
+          "homepage": "https://source.chromium.org/chromium/chromium/src/+/master:v8/src/base/ieee754.cc",
+          "licenseTextSha256": "e7115e18444dae09d17f361ddc365fb1d342640fe500796209c63f7c80dfae10"
+        },
+        {
+          "title": "V8 JavaScript Engine",
+          "homepage": "https://v8.dev/",
+          "licenseTextSha256": "6ab33af8774a0f396ee3aeeb761e3229057682d6f9fa7f572e390c2cb3a6e509"
+        }
+      ]
+    },
+    {
+      "component": "libuv",
+      "status": "observed-symbols-and-build",
+      "evidence": "mac framework / Windows EXE uv_* exports; node-unofficial.gni",
+      "versionOrPin": "Node.js 24.18.1 vendored source",
+      "notices": [
+        {
+          "title": "Node.js",
+          "homepage": "https://github.com/nodejs/node",
+          "licenseTextSha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+        }
+      ]
+    },
+    {
+      "component": "BoringSSL",
+      "status": "declared-build",
+      "evidence": "BUILD.gn; build-args-all.gn selects BoringSSL, overrides Node bundled OpenSSL",
+      "versionOrPin": "572a4c68475d284b34675f45ddbb9c158ef3c2ae",
+      "notices": [
+        {
+          "title": "BoringSSL",
+          "homepage": "https://boringssl.googlesource.com/boringssl",
+          "licenseTextSha256": "827c8d8fc207c2392794eef9e00fe246f9f61fdcc132556c275be3dd8c3cd97f"
+        },
+        {
+          "title": "BoringSSL",
+          "homepage": "https://boringssl.googlesource.com/boringssl/",
+          "licenseTextSha256": "827c8d8fc207c2392794eef9e00fe246f9f61fdcc132556c275be3dd8c3cd97f"
+        }
+      ]
+    },
+    {
+      "component": "SQLite",
+      "status": "windows-symbol-and-conditional-build",
+      "evidence": "Windows EXE sqlite3_dbdata_init; node.gni node_use_sqlite=true; platform/object provenance not fully resolved",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "SQLite",
+          "homepage": "https://dl.google.com/dl/android/maven2/androidx/sqlite/sqlite-android/2.7.0/sqlite-android-2.7.0.aar",
+          "licenseTextSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "title": "sqlite",
+          "homepage": "https://github.com/sqlite/sqlite",
+          "licenseTextSha256": "06545a6ec25fbbff6c62f205f94a35be49e38f33bea827a8cfb07d7b82e4b083"
+        }
+      ]
+    },
+    {
+      "component": "ada",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron build_add_gn_build_files.patch; Node composite notice",
+      "versionOrPin": "Node.js 24.18.1 vendored source",
+      "notices": [
+        {
+          "title": "Node.js",
+          "homepage": "https://github.com/nodejs/node",
+          "licenseTextSha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+        }
+      ]
+    },
+    {
+      "component": "simdjson",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron build_add_gn_build_files.patch; Node composite notice",
+      "versionOrPin": "Node.js 24.18.1 vendored source",
+      "notices": [
+        {
+          "title": "Node.js",
+          "homepage": "https://github.com/nodejs/node",
+          "licenseTextSha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+        }
+      ]
+    },
+    {
+      "component": "c-ares",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron build_add_gn_build_files.patch; Node composite notice",
+      "versionOrPin": "Node.js 24.18.1 vendored source",
+      "notices": [
+        {
+          "title": "Node.js",
+          "homepage": "https://github.com/nodejs/node",
+          "licenseTextSha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+        }
+      ]
+    },
+    {
+      "component": "llhttp",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron build_add_gn_build_files.patch; Node composite notice",
+      "versionOrPin": "Node.js 24.18.1 vendored source",
+      "notices": [
+        {
+          "title": "Node.js",
+          "homepage": "https://github.com/nodejs/node",
+          "licenseTextSha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+        }
+      ]
+    },
+    {
+      "component": "nghttp2",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron build_add_gn_build_files.patch; Node composite notice",
+      "versionOrPin": "Node.js 24.18.1 vendored source",
+      "notices": [
+        {
+          "title": "Node.js",
+          "homepage": "https://github.com/nodejs/node",
+          "licenseTextSha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+        }
+      ]
+    },
+    {
+      "component": "uvwasi",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron build_add_gn_build_files.patch; Node composite notice",
+      "versionOrPin": "Node.js 24.18.1 vendored source",
+      "notices": [
+        {
+          "title": "Node.js",
+          "homepage": "https://github.com/nodejs/node",
+          "licenseTextSha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+        }
+      ]
+    },
+    {
+      "component": "hdr_histogram",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron build_add_gn_build_files.patch; Node composite notice",
+      "versionOrPin": "Node.js 24.18.1 vendored source",
+      "notices": [
+        {
+          "title": "Node.js",
+          "homepage": "https://github.com/nodejs/node",
+          "licenseTextSha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+        }
+      ]
+    },
+    {
+      "component": "merve",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron build_add_gn_build_files.patch; Node composite notice",
+      "versionOrPin": "Node.js 24.18.1 vendored source",
+      "notices": [
+        {
+          "title": "Node.js",
+          "homepage": "https://github.com/nodejs/node",
+          "licenseTextSha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+        }
+      ]
+    },
+    {
+      "component": "postject",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron build_add_gn_build_files.patch; Node composite notice",
+      "versionOrPin": "Node.js 24.18.1 vendored source",
+      "notices": [
+        {
+          "title": "Node.js",
+          "homepage": "https://github.com/nodejs/node",
+          "licenseTextSha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+        }
+      ]
+    },
+    {
+      "component": "nbytes",
+      "status": "declared-build-notice-added",
+      "evidence": "node-unofficial.gni deps/nbytes; separate nbytes-LICENSE.txt preserves original copyright",
+      "versionOrPin": "Node.js 24.18.1 vendored source",
+      "notices": []
+    },
+    {
+      "component": "Brotli",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron Node GN patch; Chromium rather than Node vendored copies where overridden",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "Brotli",
+          "homepage": "https://github.com/google/brotli",
+          "licenseTextSha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94"
+        }
+      ]
+    },
+    {
+      "component": "Zstandard",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron Node GN patch; Chromium rather than Node vendored copies where overridden",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "Zstandard",
+          "homepage": "https://github.com/facebook/zstd",
+          "licenseTextSha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+        }
+      ]
+    },
+    {
+      "component": "zlib",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron Node GN patch; Chromium rather than Node vendored copies where overridden",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "zlib",
+          "homepage": "http://zlib.net/",
+          "licenseTextSha256": "e1cfcc55c325b3f78cf55df9664abaa066e2271dffe8213347d9fccdfbac8f2c"
+        },
+        {
+          "title": "zlib",
+          "homepage": "https://github.com/madler/zlib",
+          "licenseTextSha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+        }
+      ]
+    },
+    {
+      "component": "ICU",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron Node GN patch; Chromium rather than Node vendored copies where overridden",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "icu",
+          "homepage": "https://github.com/unicode-org/icu",
+          "licenseTextSha256": "e55522d81edc687a341a4411e0776e54ca654e90147f354a90458aaced4116af"
+        }
+      ]
+    },
+    {
+      "component": "simdutf",
+      "status": "declared-build",
+      "evidence": "node-unofficial.gni + Electron Node GN patch; Chromium rather than Node vendored copies where overridden",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "simdutf unicode transcoder",
+          "homepage": "https://github.com/simdutf/simdutf",
+          "licenseTextSha256": "fc8dbc04e03ad4efc08a647ffe7f995b811a95bc04c0e85a56d5277c6593fa5f"
+        }
+      ]
+    },
+    {
+      "component": "Skia",
+      "status": "declared-build",
+      "evidence": "Electron BUILD.gn direct dependency; final per-object linker map unavailable",
+      "versionOrPin": "b6d106297ff9ef2ff8094033695d045e87775581",
+      "notices": [
+        {
+          "title": "Skia",
+          "homepage": "This is the canonical public repository",
+          "licenseTextSha256": "5f787c1dee3c56547f09ccc2906ab5f5293c4d8dd6c8654e573216c38e908dbd"
+        }
+      ]
+    },
+    {
+      "component": "WebRTC",
+      "status": "declared-build",
+      "evidence": "Electron BUILD.gn direct dependency; final per-object linker map unavailable",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "WebRTC",
+          "homepage": "This is the canonical repository",
+          "licenseTextSha256": "ab00a482b6a3902e40211b43c5d0441962ea99b6cc7c25c0f243fa270b78d482"
+        }
+      ]
+    },
+    {
+      "component": "libyuv",
+      "status": "declared-build",
+      "evidence": "Electron BUILD.gn direct dependency; final per-object linker map unavailable",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "libyuv",
+          "homepage": "https://chromium.googlesource.com/libyuv/libyuv/",
+          "licenseTextSha256": "2b2cc1180c7e6988328ad2033b04b80117419db9c4c584918bbb3cfec7e9364f"
+        }
+      ]
+    },
+    {
+      "component": "Highway",
+      "status": "declared-build",
+      "evidence": "Electron BUILD.gn direct dependency; final per-object linker map unavailable",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "Highway: C++ library for SIMD",
+          "homepage": "https://github.com/google/highway",
+          "licenseTextSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "title": "Highway: C++ library for SIMD",
+          "homepage": "https://github.com/google/highway",
+          "licenseTextSha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+        }
+      ]
+    },
+    {
+      "component": "LevelDB",
+      "status": "declared-build",
+      "evidence": "Electron BUILD.gn direct dependency; final per-object linker map unavailable",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "LevelDB: A Fast Persistent Key-Value Store",
+          "homepage": "https://github.com/google/leveldb.git",
+          "licenseTextSha256": "ccc19f1da0798ed666609b65a5b44dd8b3abe6fc08b9c0592eb76e82e174db19"
+        }
+      ]
+    },
+    {
+      "component": "libvpx",
+      "status": "notice-and-source-candidate",
+      "evidence": "Chromium aggregate notice; per-OS target closure and object linkage still to verify",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "libvpx",
+          "homepage": "https://chromium.googlesource.com/webm/libvpx",
+          "licenseTextSha256": "b80a23ff7619a3b5c150cf718b43af5a5b9a2339ff019c562c9938d91303d08c"
+        }
+      ]
+    },
+    {
+      "component": "Opus",
+      "status": "notice-and-source-candidate",
+      "evidence": "Chromium aggregate notice; per-OS target closure and object linkage still to verify",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "opus",
+          "homepage": "https://gitlab.xiph.org/xiph/opus",
+          "licenseTextSha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551"
+        }
+      ]
+    },
+    {
+      "component": "dav1d",
+      "status": "notice-and-source-candidate",
+      "evidence": "Chromium aggregate notice; per-OS target closure and object linkage still to verify",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "dav1d is an AV1 decoder :)",
+          "homepage": "https://code.videolan.org/videolan/dav1d",
+          "licenseTextSha256": "2da4494d2a8b5c742afbb905b10621e40129284c977ac138e3081ed0d9d83aed"
+        }
+      ]
+    },
+    {
+      "component": "FreeType",
+      "status": "notice-and-source-candidate",
+      "evidence": "Chromium aggregate notice; per-OS target closure and object linkage still to verify",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "FreeType",
+          "homepage": "http://www.freetype.org/",
+          "licenseTextSha256": "5a5ee54c5001bbad1cdc1a57cc3dd4c42199b2da09d39c7ee41fab002d02967f"
+        },
+        {
+          "title": "FreeType",
+          "homepage": "https://gitlab.freedesktop.org/freetype/freetype",
+          "licenseTextSha256": "832e75434619e56c81ca252fecd7c50711fda68b7208df37000a7c4370f70e8c"
+        }
+      ]
+    },
+    {
+      "component": "HarfBuzz",
+      "status": "notice-and-source-candidate",
+      "evidence": "Chromium aggregate notice; per-OS target closure and object linkage still to verify",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "harfbuzz",
+          "homepage": "http://harfbuzz.org",
+          "licenseTextSha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64"
+        }
+      ]
+    },
+    {
+      "component": "libjpeg-turbo",
+      "status": "notice-and-source-candidate",
+      "evidence": "Chromium aggregate notice; per-OS target closure and object linkage still to verify",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "libjpeg-turbo",
+          "homepage": "https://github.com/libjpeg-turbo/libjpeg-turbo/",
+          "licenseTextSha256": "152a0f78d9c3a3afc09470cba1e66eabb915515cb121252d6c85c4ed6352a073"
+        }
+      ]
+    },
+    {
+      "component": "libpng",
+      "status": "notice-and-source-candidate",
+      "evidence": "Chromium aggregate notice; per-OS target closure and object linkage still to verify",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "png",
+          "homepage": "https://crates.io/crates/png",
+          "licenseTextSha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        }
+      ]
+    },
+    {
+      "component": "Dawn",
+      "status": "notice-and-source-candidate",
+      "evidence": "Chromium aggregate notice; per-OS target closure and object linkage still to verify",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "Dawn",
+          "homepage": "https://dawn.googlesource.com/dawn",
+          "licenseTextSha256": "0493f897193af1796d5054659f45ec7d4c5af648fa67a99f01d30e55cc805abc"
+        }
+      ]
+    },
+    {
+      "component": "ANGLE",
+      "status": "source-candidate",
+      "evidence": "Chromium DEPS pin; no separate libEGL/libGLES DLL in these artifacts; presence/placement not inferred from filename absence",
+      "versionOrPin": "e68ad989e7b507ceb28ec1b2a272b20a289be60f",
+      "notices": []
+    },
+    {
+      "component": "SwiftShader",
+      "status": "observed-shared-library",
+      "evidence": "libvk_swiftshader.dylib / vk_swiftshader.dll match official Electron; internal static dependencies still to trace",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "SwiftShader",
+          "homepage": "https://swiftshader.googlesource.com/SwiftShader",
+          "licenseTextSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "component": "DirectX shader compiler / DXIL",
+      "status": "observed-shared-libraries",
+      "evidence": "dxcompiler.dll / dxil.dll match official Electron; exact subcomponent terms still to map",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "DirectX-Shader-Compiler",
+          "homepage": "https://github.com/microsoft/DirectX-Shader-Compiler",
+          "licenseTextSha256": "27a49e35d1da96eba18fba54bc882667ff0ff8c0254f16f2b6e165d605ba7df8"
+        }
+      ]
+    },
+    {
+      "component": "Vulkan loader",
+      "status": "observed-shared-library",
+      "evidence": "vulkan-1.dll matches official Electron",
+      "versionOrPin": null,
+      "notices": [
+        {
+          "title": "Vulkan Loader Components",
+          "homepage": "https://github.com/KhronosGroup/Vulkan-Loader",
+          "licenseTextSha256": "43c0a37e6a0fa7ff3c843b3ec5a4fac84b712558ddac103fbd4c1649662a9ece"
+        }
+      ]
+    },
+    {
+      "component": "d3dcompiler_47.dll",
+      "status": "observed-shared-library-review-open",
+      "evidence": "Official Electron binary hash matches; Microsoft SDK redistribution terms not settled by generic MIT notice",
+      "versionOrPin": null,
+      "notices": []
+    },
+    {
+      "component": "StdUtils integrated code",
+      "status": "prior-source-review",
+      "evidence": "Windows plugin 1.14; existing StdUtils README/ReadMe, RHash/BLAKE2 notices; complete object closure still open",
+      "versionOrPin": "1.14",
+      "notices": []
+    },
+    {
+      "component": "nsis7z integrated SDK",
+      "status": "prior-source-review",
+      "evidence": "Windows plugin 19.00 + LZMA SDK19.00; build/replacement verification pending",
+      "versionOrPin": "19.00",
+      "notices": []
+    },
+    {
+      "component": "elevate integrated CRT/code",
+      "status": "unresolved",
+      "evidence": "Provider binary identified; source/build history and static runtime conditions not verified",
+      "versionOrPin": "1, 0, 0, 2894",
+      "notices": []
+    }
+  ]
+}

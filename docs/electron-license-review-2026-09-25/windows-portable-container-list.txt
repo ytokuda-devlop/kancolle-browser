@@ -1,0 +1,56 @@
+
+7-Zip (z) 24.09 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-11-28
+ 64-bit locale=C.UTF-8 Threads:8 OPEN_MAX:1048575
+
+Scanning the drive for archives:
+1 file, 111814886 bytes (107 MiB)
+
+Listing archive: release/electron-license-review-windows/艦娘は今日もお仕事です（仮） 1.0.0.exe
+
+--
+Path = release/electron-license-review-windows/艦娘は今日もお仕事です（仮） 1.0.0.exe
+Type = Nsis
+Physical Size = 111814886
+Method = Deflate
+Solid = -
+Headers Size = 40042
+Embedded Stub Size = 38400
+SubType = NSIS-3 Unicode
+
+----------
+Path = $PLUGINSDIR/System.dll
+Size = 
+Packed Size = 6931
+Modified = 
+Attributes = 
+Method = Deflate
+Solid = -
+Offset = 0
+
+Path = $PLUGINSDIR/app-64.7z
+Size = 111476360
+Packed Size = 111476360
+Modified = 2026-09-26 10:15:30.0000000
+Attributes = 
+Method = Copy
+Solid = -
+Offset = 6935
+
+Path = $PLUGINSDIR/nsis7z.dll
+Size = 
+Packed Size = 242382
+Modified = 
+Attributes = 
+Method = Deflate
+Solid = -
+Offset = 111483299
+
+Path = $PLUGINSDIR/StdUtils.dll
+Size = 
+Packed Size = 45608
+Modified = 
+Attributes = 
+Method = Deflate
+Solid = -
+Offset = 111725685
+

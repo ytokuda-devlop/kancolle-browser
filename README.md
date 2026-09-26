@@ -39,6 +39,8 @@ ChatGPTを使用しています。
 
 使用ライブラリや同梱ソフトウェアには、それぞれのライセンスが適用されます。録画はWebMのまま保存し、録画変換用FFmpegとffmpeg-staticは同梱しません。Electron内蔵のFFmpeg等には、それぞれの条件が引き続き適用されます。
 
+Electron内蔵FFmpeg・macOSの追加フレームワーク・Windowsインストーラー部品については、[対応ソース・追加通知の記録](licenses/ELECTRON-SOURCES.txt)をご確認ください。
+
 詳細は[第三者ソフトウェアのライセンス表記](THIRD_PARTY_NOTICES.md)と[配布ライセンス方針](licenses/DISTRIBUTION-NOTES.txt)をご確認ください。
 
 配布物内のライセンスの閲覧場所とビルド時の収録検証については、
@@ -62,3 +64,5 @@ ChatGPTを使用しています。
 
 
 その他の依存ライブラリは[第三者ソフトウェアのライセンス表記](THIRD_PARTY_NOTICES.md)、Electronに含まれるChromium・Node.js等のライセンスは[同梱ソフトウェアのライセンス全文](licenses/LICENSES.chromium.html)に記載しています。
+
+配布版はmacOS・Windowsともに未署名版のみとし、署名版は作成しません。

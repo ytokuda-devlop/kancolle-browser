@@ -1,9 +1,25 @@
 # 配布成果物へのライセンス収録
 
+正式候補の版・通知の照合は[2026-09-26の最終照合記録](release-candidate-review-2026-09-26/REPORT.md)を参照。
+`verify-release-candidate.cjs`は固定した基準を使い、アプリ版・Electronのコード領域・
+npmの版と条件・ネイティブ一覧・通知原文を最終コンテナから確認する。
+本プロジェクトは未署名版のみを配布する。再ビルド・再梱包した場合は最終成果物を再検査する。
+
+```sh
+node scripts/verify-release-candidate.cjs path/to/artifact docs/release-candidate-review-2026-09-26/baseline.json path/to/report.json
+```
+
+Windows候補の作成には`-c.win.signExecutable=false`を使い、
+`signAndEditExecutable=false`でアプリの版情報編集まで止めない。
+
 `package.json`の`build.extraResources`は、ルートの`LICENSE`と
-`THIRD_PARTY_NOTICES.md`と、`licenses/`の`filter`に明示した8ファイルをASAR外に収録する。
+`THIRD_PARTY_NOTICES.md`と、`licenses/`の`filter`に明示した現行資料をASAR外に収録する。
 旧FFmpegの調査資料・GPL本文・不要になった依存通知・開発ツール通知は配布しない。
 原本は調査履歴としてソースツリーに保持する。
+Electron内蔵FFmpegのLGPL本文・macOSフレームワーク・WindowsのNSIS/StdUtils通知は
+現行資料として収録する。UAC・nsis7z・elevate原典・electron-builderの通知と
+Windows個別ソース記録を追加し、nbytesの原文通知も追加し、現時点の資料数はルート2件を含め28件。
+Windows部品の確定事項・残件は[2026-09-26の報告書](windows-license-review-2026-09-26/REPORT.md)を参照。
 
 | 配布先 | 閲覧場所 |
 | --- | --- |
@@ -43,7 +59,7 @@ node scripts/verify-artifact-licenses.cjs '<ZIP・DMG・EXEのパス>' '<記録J
 node --test tests/packaged-licenses.test.cjs
 ```
 
-記録は検証したハッシュの成果物にのみ有効。再ビルドや署名後は再検証する。
+記録は検証したハッシュの成果物にのみ有効。再ビルド・再梱包後は再検証する。
 ライセンス収録と録画変換用FFmpeg不在の確認は、Electron内蔵FFmpeg等の
 適用条件・必要な対応ソースの確認完了を意味しない。
 

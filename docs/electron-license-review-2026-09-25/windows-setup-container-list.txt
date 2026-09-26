@@ -1,0 +1,110 @@
+
+7-Zip (z) 24.09 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-11-28
+ 64-bit locale=C.UTF-8 Threads:8 OPEN_MAX:1048575
+
+Scanning the drive for archives:
+1 file, 112044606 bytes (107 MiB)
+
+Listing archive: release/electron-license-review-windows/艦娘は今日もお仕事です（仮） Setup 1.0.0.exe
+
+--
+Path = release/electron-license-review-windows/艦娘は今日もお仕事です（仮） Setup 1.0.0.exe
+Type = Nsis
+Physical Size = 112044606
+Method = Deflate
+Solid = -
+Headers Size = 214322
+Embedded Stub Size = 59904
+SubType = NSIS-3 Unicode
+
+----------
+Path = $PLUGINSDIR/System.dll
+Size = 
+Packed Size = 6931
+Modified = 
+Attributes = 
+Method = Deflate
+Solid = -
+Offset = 0
+
+Path = $PLUGINSDIR/UAC.dll
+Size = 
+Packed Size = 8018
+Modified = 
+Attributes = 
+Method = Deflate
+Solid = -
+Offset = 6935
+
+Path = $PLUGINSDIR/StdUtils.dll
+Size = 
+Packed Size = 45608
+Modified = 
+Attributes = 
+Method = Deflate
+Solid = -
+Offset = 14957
+
+Path = $PLUGINSDIR/nsDialogs.dll
+Size = 
+Packed Size = 4684
+Modified = 
+Attributes = 
+Method = Deflate
+Solid = -
+Offset = 60569
+
+Path = $PLUGINSDIR/modern-wizard.bmp
+Size = 
+Packed Size = 1899
+Modified = 2019-06-18 04:21:30.0000000
+Attributes = 
+Method = Deflate
+Solid = -
+Offset = 65257
+
+Path = $PLUGINSDIR/nsExec.dll
+Size = 
+Packed Size = 3299
+Modified = 
+Attributes = 
+Method = Deflate
+Solid = -
+Offset = 67160
+
+Path = $PLUGINSDIR/app-64.7z
+Size = 111476360
+Packed Size = 111476360
+Modified = 2026-09-26 10:15:30.0000000
+Attributes = 
+Method = Copy
+Solid = -
+Offset = 70463
+
+Path = $PLUGINSDIR/nsis7z.dll
+Size = 
+Packed Size = 242382
+Modified = 
+Attributes = 
+Method = Deflate
+Solid = -
+Offset = 111546827
+
+Path = $R0/Uninstall 艦娘は今日もお仕事です（仮）.exe
+Size = 
+Packed Size = 146261
+Modified = 2026-09-26 10:15:38.0000000
+Attributes = 
+Method = Deflate
+Solid = -
+Offset = 111789213
+
+Path = $PLUGINSDIR/WinShell.dll
+Size = 
+Packed Size = 1080
+Modified = 
+Attributes = 
+Method = Deflate
+Solid = -
+Offset = 111935478
+

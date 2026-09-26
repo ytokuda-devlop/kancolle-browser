@@ -1,10 +1,11 @@
 配布ライセンス方針
-更新日: 2026-09-25
+更新日: 2026-09-26
 対象構成: MediaRecorderによるWebM保存（録画変換用FFmpegを削除した版）
 
 配布対象・公開先
   macOS x64（Intel）、Windows 11 x64。arm64は今バージョン非対応。
-  公開先はGitHub Releases。公開・署名・全OSの最終成果物監査は別途行う。
+  公開先はGitHub Releases。未署名版のみを配布し、署名版は作成しない。
+  公開・全OSの最終成果物監査は別途行う。
   macOSでの録画・音声同期・シークは利用者による確認済み。
   この動作確認はライセンス監査の完了を意味しない。
 
@@ -27,12 +28,17 @@ Electron内蔵FFmpeg
   Electronが提供するLICENSES.chromium.htmlを改変せず収録する。
   実際のElectronビルドに含まれる部品・適用条件・必要な通知と対応ソース提供は
   最終成果物の監査で引き続き確認する。包括通知の収録だけで完了としない。
-  Mantle・ReactiveObjC等の通知対応を含む既存の未解決事項も継続管理する。
+  Mantle・ReactiveObjC・Squirrelの固定リビジョンと通知を確認し、原文を追加した。
+  Electron内蔵FFmpegのLGPL構成と対応リビジョン、Windows StdUtilsの出典も特定済み。
+  詳細とソース提供の残作業はELECTRON-SOURCES.txtを参照する。
+  WindowsのUAC・nsis7z等の追加原文と版別の検証結果はwindows/SOURCES.txtを参照。
+  WinShellの再配布条件、elevate.exeの対応ソース由来、nsis7zの
+  ソース提供・交換方法の確認は未完了。新しい通知の収録を配布準備完了と扱わない。
 
 収録資料と検証
   ルートLICENSE、THIRD_PARTY_NOTICES.mdと、package.jsonの
   build.extraResourcesに明示した現行ライセンス資料をresources/licensesへ収録する。
-  旧FFmpegのGPL本文、ソース調査記録、専用依存通知、開発専用ツールの通知は
+  旧録画変換用FFmpegのGPL本文、ソース調査記録、専用依存通知、開発専用ツールの通知は
   今回の配布対象から外す。旧資料は調査履歴としてソースツリーに保持する。
   再ビルド時は資料の一致と、ffmpeg-static・録画変換用実行ファイルの不在を検証する。
   この方針文書は公開承認や最終成果物の包括的なライセンス監査完了を示さない。

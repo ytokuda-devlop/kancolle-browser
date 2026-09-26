@@ -1,0 +1,371 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Launch elevated processes from the command line</title>
+        <meta name="author" content="Johannes Passing">
+        <meta name="description" content="Johannes Passing&#39;s blog about identity and access management, Windows, security, cryptography, and other stuff">
+        <meta http-equiv = "content-language" content = "en">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="Hugo 0.59.1" />
+        
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://jpassing.com/css/styles.css">
+        <link rel="icon" href="https://jpassing.com/favicon.ico">
+        <link rel="apple-touch-icon" href="https://jpassing.com/apple-touch-icon.png" />
+        <link rel="stylesheet" href="https://jpassing.com/css/highlightjs/monokai.css">
+        <script src="https://jpassing.com/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+        
+        <meta name="og:locale" content="en">
+        <meta name="og:title" content="Launch elevated processes from the command line">
+        <meta name="og:description" content="Every now and then you need to run an elevated command from the command line. If the application always requires elevation (i.e. the binary has been marked as requireAdministrator), the UAC prompt shows up &ndash; but in the case the application supports both non-elevated and elevated usage and you explicitly want it to run elevated, there is little support for you.
+I would have expected start.com to have been augmented by something like a /elevate-switch, but unfortunately, this is not the case and you are left with having to open a new elevated command prompt to continue.">
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="jpassing">
+        
+            <meta name="og:image" content="https://jpassing.com/jpassing.jpg"/>
+            <meta name="og:image:secure_url" content="https://jpassing.com/jpassing.jpg"/>
+        
+    </head>
+    <body>
+        
+        <div class="wrapper">
+          <div class="box">
+            <header class="site-header">
+              <div class="transparent-layer">
+                  <a href="/" class="header">Identity, access, and stuff</a>
+              </div>
+            </header>
+
+
+<div class="container clearfix">
+    <main role="main" class="content">
+        <article class="post">
+            
+<h1>
+
+    
+        <img src='/categories/windows.png' alt='Windows' class='category-icon'/>
+    
+
+
+<a href="https://jpassing.com/2007/12/08/launch-elevated-processes-from-the-command-line/" title="Launch elevated processes from the command line">Launch elevated processes from the command line</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2007.12.08">2007.12.08</time>
+
+</span>
+</footer>
+
+            <p>Every now and then you need to run an elevated command from the command line. If the application always requires elevation (i.e. the binary has been marked as requireAdministrator), the UAC prompt shows up &ndash; but in the case the application supports both non-elevated and elevated usage and you explicitly want it to run elevated, there is little support for you.</p>
+
+<p>I would have expected start.com to have been augmented by something like a /elevate-switch, but unfortunately, this is not the case and you are left with having to open a new elevated command prompt to continue.</p>
+
+<p>Fortunately, a tool to fill in this gap is straightforward and indeed <a href="http://www.wintellect.com/cs/blogs/jrobbins/archive/2007/03/27/elevate-a-process-at-the-command-line-in-vista.aspx">J. Robbins has already created one</a>. However, the tool is written in C# &ndash; it might be old-fashioned, but I still prefer those little tools to be unmanaged and free of the .Net-overhead. I thus created elevate.exe, which provides the same features as John&rsquo;s tool but is written in C. In fact, it accepts exactly the same command line parameters, which are:</p>
+
+<pre><code>
+    
+    Execute a process on the command line with elevated rights on Vista
+    
+    Usage: Elevate [-?|-wait|-k] prog [args]
+    -?    - Shows this help
+    -wait - Waits until prog terminates
+    -k    - Starts the the %COMSPEC% environment variable value and
+                    executes prog in it (CMD.EXE, 4NT.EXE, etc.)
+    prog  - The program to execute
+    args  - Optional command line arguments to prog
+    
+
+
+</code></pre>
+
+<p>Examples:</p>
+
+<pre><code>
+    
+    elevate ipconfig -registerdns
+    elevate -wait procexp
+    elevate -k dir
+    
+
+
+</code></pre>
+
+<p>Having this tool at hand, it is now easy to also extend the shell context menu for directories by an &lsquo;Open Elevated Console here&rsquo; entry by adding the following registry entries:</p>
+
+<pre><code>
+    
+    [HKEY_CLASSES_ROOT\Directory\shell\Open Elevated Console here]
+    @=&quot;Open Ele&amp;vated Console here&quot;
+    
+    [HKEY_CLASSES_ROOT\Directory\shell\
+               Open Elevated Console here\command]
+    @=&quot;c:\\path\\to\\elevate.exe 
+              /K \&quot;title %1 &amp;&amp; color 1a &amp;&amp; cd /D %1\&quot;&quot;
+    
+
+
+</code></pre>
+
+<p><a href="https://github.com/jpassing/elevate/releases/download/1.0/elevate.zip">Download source code, x86 and x64 binary.</a></p>
+
+<p><strong>Update</strong>: You may use the source code under the terms of the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>.</p>
+
+<p>**Update 2: **The source code is now <a href="https://github.com/jpassing/elevate">available on Github</a></p>
+
+            
+
+<div class ='related'>
+<h3>Related posts</h3>
+<ul>
+	
+	<li><a href="/2007/12/18/checking-for-buffer-overflows-in-unit-tests/">Checking for buffer overflows in unit tests</a></li>
+	
+	<li><a href="/2007/11/25/a-regedit-bug-or-what-happens-if-api-documentation-is-fuzzy/">A Regedit bug or what happens if API documentation is fuzzy   </a></li>
+	
+	<li><a href="/2007/08/20/error-codes-win32-vs-hresult-vs-ntstatus/">Error Codes: Win32 vs. HRESULT vs. NTSTATUS</a></li>
+	
+	<li><a href="/2007/08/18/install-msi-with-log-from-shell-context-menu/">Install MSI with log from shell context menu</a></li>
+	
+	<li><a href="/2007/06/23/type-1-customaction-load-failures/">Type 1 CustomAction Load Failures</a></li>
+	
+</ul>
+</div>
+
+
+            <section class="star-rating-section">
+  <span class="share-buttons">Rate this page</span>
+  <div id="star-rating">
+    <span class="star-rating star-rating-1">
+      <button id="star-rating-link-1" class="star-rating-link" onclick="javascript:sendStarRating(1)">&nbsp;&nbsp;&nbsp;</button>
+      <span class="star-rating star-rating-2">
+        <button id="star-rating-link-2" class="star-rating-link" onclick="javascript:sendStarRating(2)">&nbsp;&nbsp;&nbsp;</button>
+        <span class="star-rating star-rating-3">
+          <button id="star-rating-link-3" class="star-rating-link" onclick="javascript:sendStarRating(3)">&nbsp;&nbsp;&nbsp;</button>
+          <span class="star-rating star-rating-4">
+            <button id="star-rating-link-4" class="star-rating-link" onclick="javascript:sendStarRating(4)">&nbsp;&nbsp;&nbsp;</button>
+            <span class="star-rating star-rating-5">
+              <button id="star-rating-example-link-5" class="star-rating-link" onclick="javascript:sendStarRating(5)">&nbsp;&nbsp;&nbsp;</button>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </div>
+  <span id="star-rating-feedback" style="display: none;">– Thanks for your feedback!</span>
+</section>
+
+<script>
+function sendStarRating(rating) {
+	ga('send', 'event', 'Star Rating', location.pathname + location.search, 'Rating: ' + rating, rating);
+	document.getElementById('star-rating').style.display = 'none';
+	document.getElementById('star-rating-feedback').style.display = 'block';
+};
+</script>
+
+<ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjpassing.com%2f2007%2f12%2f08%2flaunch-elevated-processes-from-the-command-line%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Launch%20elevated%20processes%20from%20the%20command%20line&amp;url=https%3a%2f%2fjpassing.com%2f2007%2f12%2f08%2flaunch-elevated-processes-from-the-command-line%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fjpassing.com%2f2007%2f12%2f08%2flaunch-elevated-processes-from-the-command-line%2f&title=Launch%20elevated%20processes%20from%20the%20command%20line" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+            
+            <div class='disclaimer'>Any opinions expressed on this blog are Johannes' own. Refer to the respective vendor’s product documentation for authoritative information.</div>
+            
+            <a class="btn home" href="https://jpassing.com/" title="Back to home">&laquo; Back to home</a>
+        </article>
+        
+    </main>
+    <aside class="author">
+  <h4>Categories</h2>
+
+  <ul>  
+  
+	<li><a href="/category/active-directory">Active directory</a> (10)</li>
+  
+	<li><a href="/category/aws">Aws</a> (6)</li>
+  
+	<li><a href="/category/azure">Azure</a> (2)</li>
+  
+	<li><a href="/category/azure-ad">Azure ad</a> (6)</li>
+  
+	<li><a href="/category/cfix">Cfix</a> (27)</li>
+  
+	<li><a href="/category/cryptography">Cryptography</a> (23)</li>
+  
+	<li><a href="/category/debugging">Debugging</a> (24)</li>
+  
+	<li><a href="/category/development">Development</a> (49)</li>
+  
+	<li><a href="/category/entra">Entra</a> (1)</li>
+  
+	<li><a href="/category/google-cloud">Google cloud</a> (90)</li>
+  
+	<li><a href="/category/iap-desktop">Iap desktop</a> (17)</li>
+  
+	<li><a href="/category/identity">Identity</a> (74)</li>
+  
+	<li><a href="/category/jit-access">Jit access</a> (3)</li>
+  
+	<li><a href="/category/jit-groups">Jit groups</a> (2)</li>
+  
+	<li><a href="/category/kernel">Kernel</a> (17)</li>
+  
+	<li><a href="/category/linux">Linux</a> (3)</li>
+  
+	<li><a href="/category/ntrace">Ntrace</a> (4)</li>
+  
+	<li><a href="/category/security">Security</a> (97)</li>
+  
+	<li><a href="/category/windows">Windows</a> (83)</li>
+  
+  </ul>
+</aside>
+
+    <aside class="author">
+  <h4>Archive</h2>
+
+  <ul>  
+  
+	<li><a href="/year/2007">2007</a> (9)</li>
+  
+	<li><a href="/year/2008">2008</a> (35)</li>
+  
+	<li><a href="/year/2009">2009</a> (26)</li>
+  
+	<li><a href="/year/2010">2010</a> (7)</li>
+  
+	<li><a href="/year/2011">2011</a> (3)</li>
+  
+	<li><a href="/year/2015">2015</a> (4)</li>
+  
+	<li><a href="/year/2019">2019</a> (10)</li>
+  
+	<li><a href="/year/2020">2020</a> (18)</li>
+  
+	<li><a href="/year/2021">2021</a> (54)</li>
+  
+	<li><a href="/year/2022">2022</a> (25)</li>
+  
+	<li><a href="/year/2023">2023</a> (7)</li>
+  
+	<li><a href="/year/2024">2024</a> (7)</li>
+  
+	<li><a href="/year/2025">2025</a> (7)</li>
+  
+	<li><a href="/year/2026">2026</a> (6)</li>
+  
+  </ul>
+  <ul>
+    <li><a href='/open-source'>Open-source projects</a></li>
+    <li><a href='/google-cloud'>Articles on cloud.google.com</li>
+    <li><a href='/publications'>Academic publications</a></li>
+  </ul>
+</aside>
+
+    <aside class="author">
+  <h4>About Johannes</h2>
+  <img src="/jpassing.jpg" alt="That's the author of this blog, Johannes" />
+  <p>
+    Johannes Passing lives in Melbourne, Australia, and works as a 
+	<a href='https://www.linkedin.com/in/johannespassing/'>Staff Solutions Architect at Google Cloud</a>
+	where he helps customers around the globe make
+	the most of Google Cloud IAM to secure their identities and resources. 
+  </p>
+  <p>
+	Johannes also maintains <a href='/open-source'>several open-source projects</a> and is
+	the <a href='/google-cloud'>author of many security best practices published</a>
+	on the Google Cloud website.
+  </p>
+  <p>
+    Besides IAM, Johannes has a passion for software architecture and lean software development.
+  </p>
+  <p>
+    Johannes holds an M.Sc. in software systems engineering from <a href='https://hpi.de/index.html'>Hasso Plattner Institute</a>, 
+    is a Google-certitified <a href='https://cloud.google.com/certification/cloud-architect'>Professional Cloud Architect</a> 
+    and <a href='https://cloud.google.com/certification/cloud-security-engineer'>Professional Cloud Security Engineer</a>
+    and is ITILv3- and PRINCE2-certified.
+  </p>
+  
+  <p>
+    Any opinions expressed on this blog are Johannes' own.
+  </p>
+  <p>
+    Contact Johannes at jpassing (at) hotmail com
+  </p>
+
+  <ul class="social">
+    
+<li><a href="//twitter.com/jpassing" class="icon-twitter" target="_blank" title="Twitter"></a></li>
+
+
+
+<li><a href="//linkedin.com/in/johannespassing" class="icon-linkedin" target="_blank" title="Linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/jpassing" class="icon-github" target="_blank" title="Github"></a></li>
+
+
+
+
+<li><a href="https://jpassing.com/post/index.xml" class="icon-rss" target="_blank" title="RSS"></a></li>
+
+  </ul>
+  
+  <div style="text-align:center;padding: 25px;">
+    <a href="https://www.credly.com/badges/9a3e799f-990f-4a8c-80e8-2295ce50dcae/public_url">
+      <img src='/img/technical-content-subject-matter-expert-badge.png' style="height:125px; width=125px;"/>
+    </a>
+  </div>
+</aside>
+
+</div>
+
+</div>
+<footer class="main-footer">
+  <div class="clearfix">
+        <a class="icon-rss" href="https://jpassing.com/post/index.xml" title="RSS"></a>
+        <p>&copy; 2007-2026 Johannes Passing. All rights reserved.</p>
+  </div>
+</footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/jpassing.com\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://jpassing.com/js/plugins.js"></script>
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-3292934-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

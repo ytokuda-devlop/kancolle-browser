@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "app": {
+    "name": "Kancolle-browser",
+    "version": "1.0.0",
+    "productName": "艦娘は今日もお仕事です（仮）"
+  },
+  "electron": {
+    "version": "44.0.0",
+    "macTextSha256": "97db3c84bf2c500358e512865727bc579b39cc19136504b05f6516e73c99fe5a",
+    "winTextSha256": "643564483e521ffa149620d8928e748d17b3461cc58aad97d0c910b7f0a600ff"
+  },
+  "npm": {
+    "react": {
+      "version": "18.3.1",
+      "license": "MIT"
+    },
+    "loose-envify": {
+      "version": "1.4.0",
+      "license": "MIT"
+    },
+    "js-tokens": {
+      "version": "4.0.0",
+      "license": "MIT"
+    },
+    "react-dom": {
+      "version": "18.3.1",
+      "license": "MIT"
+    },
+    "scheduler": {
+      "version": "0.23.2",
+      "license": "MIT"
+    }
+  },
+  "sourceFiles": {
+    "package.json": "60800828aa573a7baa15bf5cdf2edf428fabe2b3b1d6ec3c5feb3887f6970810",
+    "package-lock.json": "03b78a9a91b60a816038415bbd376ec7675be6c3fa99c45762eda317ba0b70f1",
+    "LICENSE": "8d45dbb64725f1e576857001fefd33949abeb128e605530c19022595773f820c",
+    "THIRD_PARTY_NOTICES.md": "06ac42ae43f0ffc6ca0ace06345a451205e74dc22168ca3bff1bc51d8344d581",
+    "licenses/DISTRIBUTION-NOTES.txt": "5d421545fabf2f008543ac30f4709c06b333fec9039eafc00f8eb93a644fbe9e",
+    "licenses/electron-LICENSE.txt": "5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d",
+    "licenses/LICENSES.chromium.html": "4cbde8e3e7b29f451c78a44491fb32e2202884826fef47786a9cda5a36110525",
+    "licenses/react-LICENSE.txt": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+    "licenses/react-dom-LICENSE.txt": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+    "licenses/scheduler-LICENSE.txt": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+    "licenses/npm/js-tokens-LICENSE.txt": "2213d91c606205c71eb051a199478cdc2adde945893404d7f1421436dd6d5cc1",
+    "licenses/npm/loose-envify-LICENSE.txt": "4eb7543b08d955a6d23fcc224601d43ff566e775be918805e26210d7f6eb4893",
+    "licenses/electron-components/Mantle-LICENSE.md": "285eede6f638adc9c352be7d66134611e5ea95044095a84de9867fb864e66eab",
+    "licenses/electron-components/ReactiveObjC-LICENSE.md": "095fec1a3d6ad029fe0661fa6092a272d50af016b1771992e0bba9b2a73e7763",
+    "licenses/electron-components/Squirrel-LICENSE.txt": "6f240e244a105d6366bc898ac9c67460624c9052839d4b988c6dbe4c571008b3",
+    "licenses/electron-components/LGPL-2.1.txt": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30",
+    "licenses/electron-components/FFmpeg-CREDITS.txt": "903a6faa336b60d419bc6eb2bcffe4ca8bd9446735e5de4fcc901c80e9f22327",
+    "licenses/ELECTRON-SOURCES.txt": "eef8ead1ba75ff80ae830dd95ae19e6a8ed9de2afcc2cc4446ab09ac9990e8aa",
+    "licenses/windows/NSIS-COPYING.txt": "3c8de989f6504d52f5f8dfafedb6668cd47201f5d01f1319570727c091425dd6",
+    "licenses/windows/StdUtils-README.html": "be145d4687f5efa1d45ce7d059c92230d003b5da00dd55f24346278798c7bad9",
+    "licenses/windows/StdUtils-ReadMe.txt": "31b67e463c6e5695e9ffaf62dd077d9bd62df34026593c2f29bc9ea87fdac72f",
+    "licenses/windows/StdUtils-blake2-COPYING.txt": "f4e7f373b9b996950337e8d41a4a2939c2d90b7725e9baf3d5084a22717ad328",
+    "licenses/windows/StdUtils-rhash-COPYING.txt": "842fef4921191943e531c6cc939b0334f1c2658c9204e30dd35d13f51fdf70dd",
+    "licenses/windows/UAC-LICENSE.txt": "997fd014643f27a2f240faf9b9b54a98371775c63eb38134829154794f7326fa",
+    "licenses/windows/nsis7z-README.txt": "881f8ba4da0a0c30e281d324408baa596f14211b03d1f3bf99fe18c4621916c3",
+    "licenses/windows/nsis7z-LZMA-SDK-LICENSE.txt": "63fcfe54826809b5a9f9df8a8ff53c04330122319ec67a2dd815085586adaf0e",
+    "licenses/windows/elevate-upstream-LICENSE.md": "c8513abf1a738a5420f288c1be9c774b386785cc99c313f8543296321d06f04d",
+    "licenses/windows/electron-builder-LICENSE.txt": "bed8d0ab3e6031817f775a641ff37313b0f5591bc8ba0ed79b978dafbd4231ce",
+    "licenses/windows/SOURCES.txt": "353fc3157f132dfde4d3c568cd7760b1f442f5fa1bb4d9064ce6f8f9a7dfb6cb",
+    "licenses/electron-components/nbytes-LICENSE.txt": "782ab5b8ae1540c1a2b102fdd00990ed268d4a3a98e90ad7fe724b489d7bb0f2"
+  },
+  "native": {
+    "darwin": {
+      "Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework": {
+        "codeSha256": "97db3c84bf2c500358e512865727bc579b39cc19136504b05f6516e73c99fe5a"
+      },
+      "Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler": {
+        "codeSha256": "7f54a52354bb6deb6956ee0080cff9100faef47485ebb25e50f3ae8778220385"
+      },
+      "Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib": {
+        "codeSha256": "2fa4dc87f36a4a814b7e89a10d3090f28ded2fc684c3090f3101ae4324b3b15b"
+      },
+      "Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib": {
+        "codeSha256": "bade66629d5902729faefd2c5a0b2103214ae20dfe5c00a2325a9849d2924931"
+      },
+      "Contents/Frameworks/KancolleBrowser Helper (GPU).app/Contents/MacOS/KancolleBrowser Helper (GPU)": {
+        "codeSha256": "b5245765914c903c8ed9105aad90ce6d9bb44af167447bf853a534759dad0cec"
+      },
+      "Contents/Frameworks/KancolleBrowser Helper (Plugin).app/Contents/MacOS/KancolleBrowser Helper (Plugin)": {
+        "codeSha256": "b5245765914c903c8ed9105aad90ce6d9bb44af167447bf853a534759dad0cec"
+      },
+      "Contents/Frameworks/KancolleBrowser Helper (Renderer).app/Contents/MacOS/KancolleBrowser Helper (Renderer)": {
+        "codeSha256": "b5245765914c903c8ed9105aad90ce6d9bb44af167447bf853a534759dad0cec"
+      },
+      "Contents/Frameworks/KancolleBrowser Helper.app/Contents/MacOS/KancolleBrowser Helper": {
+        "codeSha256": "b5245765914c903c8ed9105aad90ce6d9bb44af167447bf853a534759dad0cec"
+      },
+      "Contents/Frameworks/Mantle.framework/Versions/A/Mantle": {
+        "codeSha256": "0b0bbe456b0a1c218e57b097f0f57857be7927824824c05e73a69b2b1414b44a"
+      },
+      "Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC": {
+        "codeSha256": "30a358984a24f5193c231e7ebe17b0ba24450967f58d8342a8693521fd11cde6"
+      },
+      "Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt": {
+        "codeSha256": "e259721e4cfb599e4c37e16847503578d89ab098b3de166cf6cb775745638364"
+      },
+      "Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel": {
+        "codeSha256": "a8e580c11f6e1d2d71a964785413f205a403e35a5a552eb9aa0c14380f129e0b"
+      },
+      "Contents/MacOS/KancolleBrowser": {
+        "codeSha256": "801d5856d894d5a6d9da1721d5d9e3ba25cb00fbb5f197203dcc4ebba08f4ea1"
+      }
+    },
+    "win32": {
+      "d3dcompiler_47.dll": {
+        "codeSha256": "d2dc8be651a514280bfb8e3fa838b83e623a52943871227e216de3fd044444c0",
+        "versions": [
+          {
+            "CompanyName": "Microsoft Corporation",
+            "FileDescription": "Direct3D HLSL Compiler for Redistribution",
+            "FileVersion": "10.0.26100.7705 (WinBuild.160101.0800)",
+            "InternalName": "d3dcompiler_47.dll",
+            "LegalCopyright": "© Microsoft Corporation. All rights reserved.",
+            "OriginalFilename": "d3dcompiler_47.dll",
+            "ProductName": "Microsoft® Windows® Operating System",
+            "ProductVersion": "10.0.26100.7705"
+          }
+        ]
+      },
+      "dxcompiler.dll": {
+        "codeSha256": "542cc71be6b47c56434b02589d11ffa92a45825c7f6f5be28a2ff7b1bdefdc82",
+        "versions": [
+          {
+            "CompanyName": "Microsoft(r) Corporation",
+            "FileDescription": "DirectX Compiler - Google Dawn Custom Build",
+            "FileVersion": "1.9.2607.0",
+            "InternalName": " ",
+            "OriginalFilename": " ",
+            "ProductName": "Microsoft(r) DirectX for Windows(r) - Google Dawn Custom Build",
+            "ProductVersion": "1.9.2607.0",
+            "LegalCopyright": "(c) Microsoft Corporation. All rights reserved."
+          }
+        ]
+      },
+      "dxil.dll": {
+        "codeSha256": "45d0057aa02645eac0e95e3520c490b42ef6f240a4d982fdc4fb6c4d66326424",
+        "versions": [
+          {
+            "CompanyName": "Microsoft(r) Corporation",
+            "FileDescription": "DirectX Compiler - Out Of Band",
+            "FileVersion": "1.8.2502.11",
+            "InternalName": "",
+            "OriginalFilename": "",
+            "ProductName": "Microsoft(r) DirectX for Windows(r) - Out Of Band",
+            "ProductVersion": "1.8.2502.11 (239921522)",
+            "LegalCopyright": "(c) Microsoft Corporation. All rights reserved."
+          }
+        ]
+      },
+      "ffmpeg.dll": {
+        "codeSha256": "09bbaeaa63bb3ad4ead34f279a9a8180ec7fb3f0d203b17d53fa68fd70bdd8ac",
+        "versions": []
+      },
+      "resources/elevate.exe": {
+        "codeSha256": "fd4a000aa689f8aaa3a84c60ec0248cff8c7e7d634806b5e3c4ce66451ffe1d6",
+        "versions": [
+          {
+            "Comments": "Tool for elevating applications on the command line",
+            "CompanyName": "Johannes Passing",
+            "FileDescription": "Elevate",
+            "FileVersion": "1, 0, 0, 2894",
+            "InternalName": "Elevate",
+            "LegalCopyright": "Copyright (C) 2007",
+            "OriginalFilename": "Elevate.exe",
+            "ProductName": "Elevate Application",
+            "ProductVersion": "1, 0, 0, 2894"
+          }
+        ]
+      },
+      "vk_swiftshader.dll": {
+        "codeSha256": "146835da844cd5b5a09ac5e4ea53ecfa9cecc45d0fbd2a6a14a86d87f9ec11f9",
+        "versions": [
+          {
+            "FileDescription": "SwiftShader Vulkan 64-bit Dynamic Link Library",
+            "FileVersion": "5.0.0",
+            "InternalName": "Vulkan",
+            "LegalCopyright": "Copyright (C) 2018 Google Inc.",
+            "OriginalFilename": "vk_swiftshader.dll",
+            "PrivateBuild": "5.0.0",
+            "ProductName": "SwiftShader Vulkan Dynamic Link Library",
+            "ProductVersion": "5.0.0"
+          }
+        ]
+      },
+      "vulkan-1.dll": {
+        "codeSha256": "0afe2809a57b68f8096b7a227411951bb91318a5a84ede6d94512856a253d994",
+        "versions": [
+          {
+            "FileDescription": "1.4.357.0",
+            "FileVersion": "Vulkan Loader",
+            "LegalCopyright": "Copyright (C) 2015-2026",
+            "ProductName": "Vulkan Runtime",
+            "ProductVersion": "Vulkan Loader"
+          }
+        ]
+      },
+      "艦娘は今日もお仕事です（仮）.exe": {
+        "codeSha256": "643564483e521ffa149620d8928e748d17b3461cc58aad97d0c910b7f0a600ff"
+      }
+    }
+  },
+  "scope": "Frozen version/notice reference; not license clearance or signing approval"
+}

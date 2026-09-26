@@ -22,6 +22,7 @@ async function fixture(t) {
   await fs.mkdir(path.join(project, 'licenses/npm'), { recursive: true });
   await fs.writeFile(path.join(project, 'package.json'), JSON.stringify(projectConfig));
   for (const name of selected) {
+    await fs.mkdir(path.dirname(path.join(project, 'licenses', name)), { recursive: true });
     await fs.writeFile(path.join(project, 'licenses', name), `Contents of ${name}\n`);
   }
   await fs.cp(path.join(project, 'licenses'), licenseDir, { recursive: true });
@@ -76,6 +77,15 @@ test('legacy license material is rejected in the packaged app', async t => {
   const f = await fixture(t);
   await fs.writeFile(path.join(f.licenseDir, 'FFmpeg-SOURCE.txt'), 'legacy record');
   await assert.rejects(verify(f.project, f.resources), /Unexpected packaged license material/);
+});
+
+test('a container changed during final candidate inspection is rejected', { skip: process.platform !== 'darwin' }, async t => {
+  const f = await fixture(t);
+  const file = path.join(f.root, 'changing.zip');
+  await run('/usr/bin/ditto', ['-c', '-k', '--keepParent', f.app, file]);
+  await assert.rejects(verifyArtifact(f.project, file, {
+    inspectContainer: async () => { await fs.appendFile(file, 'changed-after-extraction'); },
+  }), /Artifact changed during verification/);
 });
 
 test('removed FFmpeg is rejected inside ASAR and in unpacked resources', async t => {

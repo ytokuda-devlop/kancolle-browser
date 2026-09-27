@@ -1,0 +1,33 @@
+{
+    "name":  "AviSynthPlus-filesystem",
+    "checkedAt":  "2026-09-23T12:28:52.1135028Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "AviSynthPlus-filesystem",
+                 "repo":  "gulrak/filesystem",
+                 "parent":  "AviSynthPlus",
+                 "submodulePath":  "filesystem"
+             },
+    "patchStatus":  "unverified",
+    "submodule":  {
+                      "url":  "https://github.com/gulrak/filesystem",
+                      "parent":  "AviSynthPlus",
+                      "path":  "filesystem",
+                      "commit":  "3f1c185ab414e764c694b8171d1c4d8c5c437517",
+                      "parentCommit":  "eb3c433031b180e97632ff32c199ccf980416bfc"
+                  },
+    "commit":  "3f1c185ab414e764c694b8171d1c4d8c5c437517",
+    "commitUrl":  "https://github.com/gulrak/filesystem/commit/3f1c185ab414e764c694b8171d1c4d8c5c437517",
+    "commitDate":  "2020-04-10T09:26:04Z",
+    "url":  "https://codeload.github.com/gulrak/filesystem/tar.gz/3f1c185ab414e764c694b8171d1c4d8c5c437517",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/AviSynthPlus-filesystem-source.tar.gz",
+    "sha256":  "cc1c5439d29031477868bdea25b68b4210dc8ed018bb63a65e708afe405db4e1",
+    "bytes":  163474,
+    "archiveEntryCount":  43,
+    "licenseEntries":  [
+                           "filesystem-3f1c185ab414e764c694b8171d1c4d8c5c437517/LICENSE"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

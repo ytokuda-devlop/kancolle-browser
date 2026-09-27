@@ -1,0 +1,22 @@
+[
+  {
+    "target": "windows-setup",
+    "sha256": "076b435490227b40860b051514c12e3a8a7bd9968fd58142b913149c55fe6fcc",
+    "evidence": "windows-setup.licenses.json"
+  },
+  {
+    "target": "windows-portable",
+    "sha256": "1d80b443d2df37e48ad3344c5dc0f151f52513f1449b6f8c5628bd513d2c9610",
+    "evidence": "windows-portable.licenses.json"
+  },
+  {
+    "target": "mac-zip",
+    "sha256": "cb07a6d484632671de986e7c19966b39efa74db50d54849ffdebc6fa696b00c4",
+    "evidence": "mac-zip.licenses.json"
+  },
+  {
+    "target": "mac-dmg",
+    "sha256": "592db370854176d0868d92872641cd9e474ba7de045c35d128764393dbcfe7e0",
+    "evidence": "mac-dmg.licenses.json"
+  }
+]

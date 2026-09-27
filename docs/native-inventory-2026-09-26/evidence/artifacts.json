@@ -1,0 +1,22 @@
+[
+  {
+    "artifact": "艦娘は今日もお仕事です（仮）-1.0.0.dmg",
+    "sha256": "69f0c996a5a5c00be3887fef07a14d2a0ab337dc30bfbbaf67449cecb67fbf20",
+    "licenseReport": "mac-dmg.licenses.json"
+  },
+  {
+    "artifact": "艦娘は今日もお仕事です（仮） 1.0.0.exe",
+    "sha256": "49ff7072e3a90c4591ef0568e2251c265370b1db2789033c68bc8b4a03bf7f80",
+    "licenseReport": "windows-portable.licenses.json"
+  },
+  {
+    "artifact": "艦娘は今日もお仕事です（仮）-1.0.0-mac.zip",
+    "sha256": "4928e4d2af12b3bdd3e1785d12ae49838bbfd8506e8cc677e210150a31314b9c",
+    "licenseReport": "mac-zip.licenses.json"
+  },
+  {
+    "artifact": "艦娘は今日もお仕事です（仮） Setup 1.0.0.exe",
+    "sha256": "900d1fd6046bb4105de9852eb269ff8414be4f7211742ac73ee4fa3466c63b96",
+    "licenseReport": "windows-setup.licenses.json"
+  }
+]

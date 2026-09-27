@@ -1,0 +1,33 @@
+{
+    "name":  "zimg-graphengine",
+    "checkedAt":  "2026-09-23T12:28:54.4047939Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "zimg-graphengine",
+                 "repo":  "sekrit-twc/graphengine",
+                 "parent":  "zimg",
+                 "submodulePath":  "graphengine"
+             },
+    "patchStatus":  "unverified",
+    "submodule":  {
+                      "url":  "https://github.com/sekrit-twc/graphengine.git",
+                      "parent":  "zimg",
+                      "path":  "graphengine",
+                      "commit":  "509c1c3a9a3561945a1acd3b9bb1219763fe7c57",
+                      "parentCommit":  "71431815950664f1e11b9ee4e5d4ba23d6d997f1"
+                  },
+    "commit":  "509c1c3a9a3561945a1acd3b9bb1219763fe7c57",
+    "commitUrl":  "https://github.com/sekrit-twc/graphengine/commit/509c1c3a9a3561945a1acd3b9bb1219763fe7c57",
+    "commitDate":  "2023-06-30T02:25:02Z",
+    "url":  "https://codeload.github.com/sekrit-twc/graphengine/tar.gz/509c1c3a9a3561945a1acd3b9bb1219763fe7c57",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/zimg-graphengine-source.tar.gz",
+    "sha256":  "a4ddaae7dcb81e30d09915c25c27aecb799d0a5e64df1cf43158a86e6940d0fb",
+    "bytes":  59254,
+    "archiveEntryCount":  71,
+    "licenseEntries":  [
+                           "graphengine-509c1c3a9a3561945a1acd3b9bb1219763fe7c57/COPYING"
+                       ],
+    "submoduleFiles":  [
+                           "graphengine-509c1c3a9a3561945a1acd3b9bb1219763fe7c57/.gitmodules"
+                       ]
+}

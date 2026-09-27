@@ -1,0 +1,24 @@
+{
+  "node_id": "TA_kwDOAI8xS9oAKGM2MjAzMDY2ZDczZWNjNGFiOWI2OTQ5MGEwMjg2N2JjMzBhYjc1MTY",
+  "sha": "c6203066d73ecc4ab9b69490a02867bc30ab7516",
+  "url": "https://api.github.com/repos/electron/electron/git/tags/c6203066d73ecc4ab9b69490a02867bc30ab7516",
+  "tagger": {
+    "name": "sudowoodo-release-bot[bot]",
+    "email": "88427002+sudowoodo-release-bot[bot]@users.noreply.github.com",
+    "date": "2026-08-24T22:51:40Z"
+  },
+  "object": {
+    "sha": "bf0c4e67e9a834479ee171e61057f7516a381d25",
+    "type": "commit",
+    "url": "https://api.github.com/repos/electron/electron/git/commits/bf0c4e67e9a834479ee171e61057f7516a381d25"
+  },
+  "tag": "v44.0.0",
+  "message": "v44.0.0",
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

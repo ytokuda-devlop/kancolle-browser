@@ -1,0 +1,29 @@
+{
+    "name":  "vpx",
+    "checkedAt":  "2026-09-23T11:35:55.2928633Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "vpx",
+                 "repo":  "webmproject/libvpx",
+                 "ref":  "655da33b8"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "655da33b89770dff923b409267a566ab08330922",
+    "commitUrl":  "https://github.com/webmproject/libvpx/commit/655da33b89770dff923b409267a566ab08330922",
+    "commitDate":  "2023-12-21T13:23:04Z",
+    "url":  "https://codeload.github.com/webmproject/libvpx/tar.gz/655da33b89770dff923b409267a566ab08330922",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/vpx-source.tar.gz",
+    "sha256":  "ba4ba50418bd566a55f7603ba7b7743843b59215216eceb0d597a9f048da5698",
+    "bytes":  5615985,
+    "archiveEntryCount":  1321,
+    "licenseEntries":  [
+                           "libvpx-655da33b89770dff923b409267a566ab08330922/LICENSE",
+                           "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/googletest/src/LICENSE",
+                           "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/libwebm/LICENSE.TXT",
+                           "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/libyuv/LICENSE",
+                           "libvpx-655da33b89770dff923b409267a566ab08330922/third_party/x86inc/LICENSE"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

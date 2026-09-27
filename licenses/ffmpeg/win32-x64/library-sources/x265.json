@@ -1,0 +1,28 @@
+{
+    "name":  "x265",
+    "checkedAt":  "2026-09-23T11:35:58.1549033Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "x265",
+                 "repo":  "Multicorewareinc/x265",
+                 "ref":  "ce8642f22",
+                 "note":  "README candidate only; runtime reports 3.5+113-8787af124 instead. Do not mark as corresponding source."
+             },
+    "patchStatus":  "unverified",
+    "commit":  "ce8642f22123f0b8cf105c88fc1e8af9888bd345",
+    "commitUrl":  "https://github.com/Multicorewareinc/x265/commit/ce8642f22123f0b8cf105c88fc1e8af9888bd345",
+    "commitDate":  "2023-12-13T05:27:22Z",
+    "url":  "https://codeload.github.com/Multicorewareinc/x265/tar.gz/ce8642f22123f0b8cf105c88fc1e8af9888bd345",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/x265-source.tar.gz",
+    "sha256":  "cf0c54a8f13b9c7015512ae6092ebadab5ba2aa4a48290b6d6e06d3d9f0bc17e",
+    "bytes":  1655960,
+    "archiveEntryCount":  397,
+    "licenseEntries":  [
+                           "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/COPYING",
+                           "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/dynamicHDR10/LICENSE.txt",
+                           "x265-ce8642f22123f0b8cf105c88fc1e8af9888bd345/source/dynamicHDR10/json11/LICENSE.txt"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

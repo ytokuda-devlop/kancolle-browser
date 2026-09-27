@@ -1,0 +1,50 @@
+{
+    "auditedAt":  "2026-09-23T11:14:35.2519043Z",
+    "platform":  "win32",
+    "arch":  "x64",
+    "scope":  "Existing Windows x64 NSIS, portable and unpacked artifacts; macOS excluded; arm64 unsupported.",
+    "provider":  "Gyan Doshi / gyan.dev",
+    "redistributor":  "eugeneware/ffmpeg-static b6.1.1",
+    "upstream":  {
+                     "url":  "https://github.com/eugeneware/ffmpeg-static/releases/download/b6.1.1/ffmpeg-win32-x64.gz",
+                     "assetId":  316528798,
+                     "size":  29581307,
+                     "compressedSha256":  "8883a3dffbd0a16cf4ef95206ea05283f78908dbfb118f73c83f4951dcc06d77",
+                     "decompressedSha256":  "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00"
+                 },
+    "upstreamEvidence":  "capture.json",
+    "extractor":  "node_modules/electron-winstaller/vendor/7z-x64.exe",
+    "extractorSha256":  "c7245e21a7553d9e52d434002a401c77a7ca7d0f245f2311b0ddf16f8f946c6f",
+    "extractionDirectory":  "C:\\developer\\Kancolle\\kancolle-browser\\release\\ffmpeg-artifact-audit\\10045b99e7e048638c1517e2ef0c907a",
+    "artifacts":  [
+                      {
+                          "artifact":  "release/kancolle-browser_Setup_1.0.0_x64.exe",
+                          "type":  "nsis",
+                          "artifactBytes":  133877891,
+                          "artifactSha256":  "214ab8d702f66fac4888e0dc6fe72ef4b0b9d5af0e0e016f0b87d9a29459e124",
+                          "payloadPath":  "$PLUGINSDIR/app-64.7z",
+                          "payloadSha256":  "88f07fee8a362bba93e5b5c27b1c803e385eb0ec4c9bcf23b87181eb46a4bf39",
+                          "binaryPathInPayload":  "resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg.exe",
+                          "binaryBytes":  82797568,
+                          "binarySha256":  "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00",
+                          "matchesUpstream":  true
+                      },
+                      {
+                          "artifact":  "release/kancolle-browser_1.0.0_x64.exe",
+                          "type":  "portable",
+                          "artifactBytes":  133647948,
+                          "artifactSha256":  "79a2dd7ec4f3974437002cff7ea959d69e96d16ff9440ccbbde4e0254e862e7d",
+                          "payloadPath":  "$PLUGINSDIR/app-64.7z",
+                          "payloadSha256":  "88f07fee8a362bba93e5b5c27b1c803e385eb0ec4c9bcf23b87181eb46a4bf39",
+                          "binaryPathInPayload":  "resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg.exe",
+                          "binaryBytes":  82797568,
+                          "binarySha256":  "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00",
+                          "matchesUpstream":  true
+                      }
+                  ],
+    "unpacked":  {
+                     "sha256":  "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00",
+                     "binary":  "release/win-unpacked/resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg.exe"
+                 },
+    "limitation":  "Hashes identify only the artifacts audited here. Re-run after rebuilding or signing. Complete corresponding source availability is a separate unfinished task."
+}

@@ -19,10 +19,9 @@ In packaged applications this notice is itself inside `licenses/`: a reference
 such as `licenses/electron-LICENSE.txt` therefore names a file alongside this
 notice, not a second nested `licenses` directory.
 
-The adopted distribution policy for the application combined with
-`ffmpeg-static` is GPL-3.0-or-later; the original application source retains
-its MIT license. See `licenses/DISTRIBUTION-NOTES.txt` for this policy and
-`licenses/GPL-3.0.txt` for the GPL text.
+The application's original source code is licensed under MIT. Third-party
+components retain their individual terms. See `licenses/DISTRIBUTION-NOTES.txt`
+for the current distribution policy.
 
 ## Material runtime components
 
@@ -56,41 +55,101 @@ equivalent copies with its other license materials.
 - Source: <https://github.com/facebook/react>
 - License text: `licenses/scheduler-LICENSE.txt`
 
-### ffmpeg-static 5.3.0
+### FFmpeg included in Electron
 
-- License: GNU General Public License, version 3 or later
-- Source: <https://github.com/eugeneware/ffmpeg-static>
-- License text: `licenses/ffmpeg-static-GPL-3.0.txt`
+Electron includes its own FFmpeg library (for example, `libffmpeg.dylib` on
+macOS and `ffmpeg.dll` on Windows). Its upstream notices are retained without
+modification in `licenses/LICENSES.chromium.html` under the ffmpeg entry.
 
-`ffmpeg-static` downloads a platform-specific FFmpeg executable during
-installation. The downloaded executable is separate from the JavaScript
-package and is governed by the license terms of that particular build.
+- Project and licensing information: <https://ffmpeg.org/legal.html>
+- Electron source: <https://github.com/electron/electron/tree/v44.0.0>
 
-### FFmpeg
+Recordings are saved directly as WebM using MediaRecorder. This application
+no longer bundles `ffmpeg-static` or the separate recording-conversion FFmpeg
+executable. The earlier GPL distribution policy for the application combined
+with `ffmpeg-static` does not apply to this configuration.
 
-- Copyright (c) 2000-present the FFmpeg developers
-- Project: <https://ffmpeg.org/>
-- Licensing information: <https://ffmpeg.org/legal.html>
-- Upstream source information: <https://ffmpeg.org/download.html#get-sources>
-- Corresponding-source availability and release-specific records:
-  `licenses/FFmpeg-SOURCE.txt`
-- GPL text: `licenses/GPL-3.0.txt`
+The Electron 44.0.0 build pins Chromium 152.0.7977.54 and FFmpeg revision
+`2b68d2babae73714846961fb0ee47e3b3d2e39a9`. Its Chrome/mac/x64 and
+Chrome/win/x64 configuration headers identify LGPL-2.1-or-later and disable
+GPL, nonfree, x264 and x265. Electron builds this component as a shared library.
 
-This application invokes the FFmpeg executable as a separate process to
-convert recordings to MP4. The recorded macOS x64 executable reports
-FFmpeg 6.1.1-tessus with GPL and version-3 components enabled. It also reports a
-number of statically linked libraries, including x264 and x265. Builds
-downloaded for another operating system or CPU architecture may have different versions,
-configuration options, source providers, and license obligations.
+- License text: `licenses/electron-components/LGPL-2.1.txt`
+- Component credits: `licenses/electron-components/FFmpeg-CREDITS.txt`
+- Exact source revisions, Electron patches, upstream download locations and
+  source-delivery status: `licenses/ELECTRON-SOURCES.txt`
 
-Before distributing an application build, the distributor must record the
-exact output of `ffmpeg -version` and `ffmpeg -L` for the executable included
-in that build, preserve all required notices, include the applicable GPL text,
-and make the complete corresponding source code available in the manner
-required by that executable's license. A generic link to the latest FFmpeg
-source is not necessarily the corresponding source for a distributed binary.
-The corresponding-source record currently describes incomplete preparation;
-it is not a claim that complete corresponding source is already available.
+Users' rights under the applicable LGPL, including modification and reverse
+engineering for debugging such modifications, are not restricted by this
+application. Source preparation and final distribution checks remain open;
+the upstream links alone are not a claim of complete source delivery.
+
+### macOS frameworks included with Electron
+
+These revisions are pinned by Electron 44.0.0's DEPS file. Original notices
+are included separately, in addition to Electron's aggregate notices.
+
+| Component | Revision | Terms / original notice |
+| --- | --- | --- |
+| Mantle | `2a8e2123a3931038179ee06105c9e6ec336b12ea` | MIT and included Proton/Bitswift terms; `licenses/electron-components/Mantle-LICENSE.md` |
+| ReactiveObjC | `74ab5baccc6f7202c8ac69a8d1e152c29dc1ea76` | MIT; `licenses/electron-components/ReactiveObjC-LICENSE.md` |
+| Squirrel.Mac / ShipIt | `8d808803bc89ec0e2aa1450474856dfee3b00c6b` | MIT; `licenses/electron-components/Squirrel-LICENSE.txt` |
+
+Source repositories and patch information: `licenses/ELECTRON-SOURCES.txt`.
+
+### Native dependencies integrated into Electron
+
+Electron 44.0.0 pins Node.js 24.18.1. Its release build integrates Node.js,
+V8 and other native dependencies into the Electron binary/framework rather
+than distributing each as a separate npm package or library. The aggregate
+`licenses/LICENSES.chromium.html` retains the Node.js composite license.
+Electron's build uses Chromium BoringSSL in place of Node's bundled OpenSSL;
+an OpenSSL entry in the composite notice alone does not identify a linked binary.
+
+The Node.js build also declares nbytes as a dependency. Its original MIT notice,
+Copyright (c) 2024 Node.js, is retained separately at
+`licenses/electron-components/nbytes-LICENSE.txt`.
+Source: <https://github.com/nodejs/node/tree/v24.18.1/deps/nbytes>.
+
+The per-platform native inventory and static-link investigation are recorded in
+the source repository at `docs/native-inventory-2026-09-26/REPORT.md`.
+Notice entries and build dependencies are not a complete per-platform linker
+map; review of transitive native components remains ongoing.
+
+### Windows installer components
+
+NSIS 3.0.4.1 and nsis-resources 3.4.1 are selected by electron-builder 26.15.3.
+NSIS's original COPYING is included at `licenses/windows/NSIS-COPYING.txt`;
+its compression modules have additional terms described there. This notice
+does not determine the terms of every separately supplied plugin.
+
+StdUtils release 1.14 (DLL FileVersion 1.1.4.0) is licensed under
+LGPL-2.1-or-later. Its original notices, NSIS-use clarification and bundled-code
+credits are in `licenses/windows/StdUtils-ReadMe.txt` and
+`licenses/windows/StdUtils-README.html`. The LGPL text is provided at
+`licenses/electron-components/LGPL-2.1.txt`. RHash and BLAKE2 notices are also
+retained in `licenses/windows/StdUtils-rhash-COPYING.txt` and
+`licenses/windows/StdUtils-blake2-COPYING.txt`. Source locations and outstanding
+installer-component review are recorded in `licenses/ELECTRON-SOURCES.txt`.
+
+Additional Windows component findings (2026-09-26):
+
+| Component | Identified version | Terms / status |
+| --- | --- | --- |
+| UAC | 0.2.4c, 2015-05-26 | zlib/libpng; `licenses/windows/UAC-LICENSE.txt`; original DLL and source identified |
+| WinShell | 20121005 | Author labels it Freeware; precise redistribution conditions remain unresolved |
+| nsis7z | 19.00 | Plugin README states LGPL without a version; we elect LGPL 2.1 under section 13; LZMA SDK 19.00 is public domain |
+| elevate.exe | FileVersion 1, 0, 0, 2894 | Johannes Passing's original source is MIT; the provider binary's exact build provenance remains unresolved |
+| NSIS stubs / standard plugins | toolset 3.0.4.1 | Actual Setup, portable and uninstaller use the zlib stub; standard plugins retain NSIS terms |
+| Generated installer templates | electron-builder 26.15.3 | MIT; `licenses/windows/electron-builder-LICENSE.txt` |
+
+Original nsis7z notices are `licenses/windows/nsis7z-README.txt` and
+`licenses/windows/nsis7z-LZMA-SDK-LICENSE.txt`. The original elevate source
+license is `licenses/windows/elevate-upstream-LICENSE.md`; its inclusion does
+not assert that all terms of the provider binary have been verified.
+Exact source locations, obligations and remaining verification steps are
+recorded in `licenses/windows/SOURCES.txt`. No completed source delivery or
+permission beyond the applicable upstream terms is claimed.
 
 ## Other runtime npm dependencies
 
@@ -99,38 +158,10 @@ file. Their original license files and copyright notices must be preserved
 when their code is included in a distribution. Copies available from the
 currently installed packages are collected under `licenses/npm/`.
 
-In particular, the MIT license and copyright notices extracted from the
-READMEs of `agent-base` 6.0.2 and `https-proxy-agent` 5.0.1 are included in
-`licenses/npm/agent-base-LICENSE.txt` and
-`licenses/npm/https-proxy-agent-LICENSE.txt`, respectively.
-
 | Package | Version | License |
 | --- | ---: | --- |
-| `@derhuerst/http-basic` | 8.2.4 | MIT |
-| `agent-base` | 6.0.2 | MIT |
-| `buffer-from` | 1.1.2 | MIT |
-| `caseless` | 0.12.0 | Apache-2.0 |
-| `concat-stream` | 2.0.0 | MIT |
-| `debug` | 4.4.3 | MIT |
-| `env-paths` | 2.2.1 | MIT |
-| `http-response-object` | 3.0.2 | MIT |
-| `@types/node` | 10.17.60 | MIT |
-| `https-proxy-agent` | 5.0.1 | MIT |
-| `inherits` | 2.0.4 | ISC |
 | `js-tokens` | 4.0.0 | MIT |
 | `loose-envify` | 1.4.0 | MIT |
-| `ms` | 2.1.3 | MIT |
-| `parse-cache-control` | 1.0.1 | BSD-3-Clause |
-| `progress` | 2.0.3 | MIT |
-| `readable-stream` | 3.6.2 | MIT |
-| `safe-buffer` | 5.2.1 | MIT |
-| `string_decoder` | 1.3.0 | MIT |
-| `typedarray` | 0.0.6 | MIT |
-| `util-deprecate` | 1.0.2 | MIT |
-
-The `@types/node` entry refers to the runtime dependency of
-`http-response-object`, not the separate development-only version in the lock
-file. Installation and packaging may place this dependency at different paths.
 
 Packages used only to build or test the application are not normally included
 in the packaged runtime. If a release artifact includes any development
@@ -167,5 +198,4 @@ SOFTWARE.
 
 This notice is a record of the current dependency set, not a substitute for a
 license audit of the final release artifact. Update it whenever dependencies,
-the Electron version, the packaged operating systems, or the FFmpeg binary
-change.
+the Electron version, or the packaged operating systems change.

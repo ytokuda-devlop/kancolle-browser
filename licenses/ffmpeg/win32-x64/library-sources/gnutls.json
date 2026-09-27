@@ -1,0 +1,31 @@
+{
+    "name":  "gnutls",
+    "checkedAt":  "2026-09-24T01:19:24.5319061Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "gnutls",
+                 "url":  "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.6/gnutls-3.6.16.tar.xz",
+                 "extension":  "tar.xz",
+                 "note":  "Embedded diagnostic candidate only."
+             },
+    "patchStatus":  "unverified",
+    "url":  "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.6/gnutls-3.6.16.tar.xz",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/gnutls-source.tar.xz",
+    "sha256":  "1b79b381ac283d8b054368b335c408fedcb9b7144e0c07f531e3537d4328f3b3",
+    "bytes":  5639992,
+    "archiveEntryCount":  6713,
+    "licenseEntries":  [
+                           "gnutls-3.6.16/doc/examples/tlsproxy/LICENSE",
+                           "gnutls-3.6.16/doc/COPYING",
+                           "gnutls-3.6.16/doc/COPYING.LESSER",
+                           "gnutls-3.6.16/lib/inih/LICENSE.txt",
+                           "gnutls-3.6.16/lib/accelerated/x86/license.txt",
+                           "gnutls-3.6.16/src/libopts/COPYING.gplv3",
+                           "gnutls-3.6.16/src/libopts/COPYING.lgplv3",
+                           "gnutls-3.6.16/src/libopts/COPYING.mbsd",
+                           "gnutls-3.6.16/LICENSE"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

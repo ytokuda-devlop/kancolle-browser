@@ -1,0 +1,26 @@
+{
+    "name":  "AMF",
+    "checkedAt":  "2026-09-23T11:33:21.3592526Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "AMF",
+                 "repo":  "GPUOpen-LibrariesAndSDKs/AMF",
+                 "ref":  "v1.4.32"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "c48e50ad6c8723c006b2c145d8fa49ecc0651022",
+    "commitUrl":  "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/commit/c48e50ad6c8723c006b2c145d8fa49ecc0651022",
+    "commitDate":  "2023-12-06T12:04:26Z",
+    "url":  "https://codeload.github.com/GPUOpen-LibrariesAndSDKs/AMF/tar.gz/c48e50ad6c8723c006b2c145d8fa49ecc0651022",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/AMF-source.tar.gz",
+    "sha256":  "afcb7aae71c3735c8afd34d3ef5ab9c1d21c07fd551599a0cd710d811f6a7e01",
+    "bytes":  198367732,
+    "archiveEntryCount":  5363,
+    "licenseEntries":  [
+                           "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/LICENSE.txt",
+                           "AMF-c48e50ad6c8723c006b2c145d8fa49ecc0651022/Thirdparty/amd/AmdDxExt/LICENSE.txt"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

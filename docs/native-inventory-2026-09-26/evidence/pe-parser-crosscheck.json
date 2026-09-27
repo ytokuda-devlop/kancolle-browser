@@ -1,0 +1,14 @@
+{
+  "tool": "xcrun llvm-objdump --private-headers",
+  "scope": "Windows application ordinary import names; delay imports not independently checked by this comparison",
+  "ordinaryImports": [
+    "CRYPT32.dll",
+    "DWrite.dll",
+    "KERNEL32.dll",
+    "VERSION.dll",
+    "WINMM.dll",
+    "WS2_32.dll",
+    "ntdll.dll"
+  ],
+  "matchesInventoryParser": true
+}

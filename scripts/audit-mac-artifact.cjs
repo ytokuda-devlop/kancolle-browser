@@ -5,6 +5,7 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const cp = require('node:child_process');
 const asar = require('@electron/asar');
+const { licenseFiles: selectedLicenseFiles } = require('./verify-packaged-licenses.cjs');
 const root = path.resolve(__dirname, '..');
 const [artifactArg, appArg] = process.argv.slice(2);
 if (!artifactArg || !appArg) throw new Error('Usage: node scripts/audit-mac-artifact.cjs <ZIP-or-DMG> <extracted.app>');
@@ -41,7 +42,7 @@ for (const entry of entries.filter(p => p.startsWith('node_modules/') && p.endsW
     mentionedInPackagedNotice: notice.includes(pkg.name) && notice.includes(pkg.version),
     embeddedNotices, reviewRequired: !licenseText || licenseText === 'null' || /GPL|SEE LICENSE|LicenseRef/i.test(licenseText) });
 }
-const expected = walk(path.join(root, 'licenses')).map(p => [path.join(root, 'licenses', p), p]);
+const expected = selectedLicenseFiles(JSON.parse(read(path.join(root, 'package.json')))).map(p => [path.join(root, 'licenses', p), p]);
 expected.push(...['LICENSE', 'THIRD_PARTY_NOTICES.md'].map(p => [path.join(root, p), p]));
 const licenseComparison = expected.map(([source, relative]) => {
   const target = path.join(licenseDir, relative);
@@ -60,12 +61,9 @@ for (const relative of walk(app)) {
     file: cp.execFileSync('/usr/bin/file', ['-b', full], { encoding: 'utf8' }).trim(),
     dynamicLinks: result.stdout, dynamicLinkStatus: result.status });
 }
-const ffmpeg = path.join(resources, 'app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg');
-const ffmpegRuns = ['-version', '-L'].map(arg => {
-  const r = cp.spawnSync(ffmpeg, [arg], { encoding: 'utf8' });
-  return { argument: arg, status: r.status, error: r.error?.message, stdout: r.stdout, stderr: r.stderr };
-});
-const config = ffmpegRuns[0].stdout || '';
+const recordingFfmpegEntries = [...entries, ...walk(resources)].filter(entry =>
+  /(^|[/\\])(ffmpeg-static|ffmpeg(?:\.exe)?)([/\\]|$)/i.test(entry));
+if (recordingFfmpegEntries.length) throw new Error(`Removed recording FFmpeg found: ${recordingFfmpegEntries.join(', ')}`);
 const plist = p => cp.execFileSync('/usr/libexec/PlistBuddy', ['-c', 'Print :CFBundleVersion', p], { encoding: 'utf8' }).trim();
 const result = {
   auditedAt: new Date().toISOString(), artifact, artifactSha256: hash(read(artifact)), app,
@@ -77,10 +75,9 @@ const result = {
   packages, executableFiles, binaries,
   nativeAsarEntries: entries.filter(p => /\.(node|dylib|dll|so)$/.test(p)),
   licenseFiles: licenseFiles.map(p => ({ path: p, bytes: fs.statSync(path.join(licenseDir, p)).size, sha256: hash(read(path.join(licenseDir, p))) })),
-  licenseComparison, ffmpegRuns,
-  ffmpegEnabledLibraries: [...config.matchAll(/--enable-(lib\S+)/g)].map(m => m[1]),
+  licenseComparison, recordingFfmpegAbsent: true,
   limits: ['Native binary inventory does not enumerate all statically linked components.',
-    'Electron/Chromium and FFmpeg bundled components still require source/notice coverage review.',
+    'Electron/Chromium components (including its own FFmpeg library) still require source/notice coverage review.',
     'This record does not approve release or confirm complete corresponding source availability.']
 };
 console.log(JSON.stringify(result, null, 2));

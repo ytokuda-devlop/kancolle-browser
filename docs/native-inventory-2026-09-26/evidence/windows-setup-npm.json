@@ -1,0 +1,70 @@
+{
+  "archiveName": "app.asar",
+  "asarSha256": "2e56e53f6938f94c2182379817f64a952c83f45fe592bf12115527d9e8510b55",
+  "filesScanned": 92,
+  "packages": [
+    {
+      "path": "node_modules/js-tokens/package.json",
+      "name": "js-tokens",
+      "version": "4.0.0",
+      "license": "MIT",
+      "packageJsonSha256": "32e60270091a039120ffd0d41bee1f47c7ab58d7104a67a0eb0794c10cae1f38",
+      "lockfileVersionMatches": true,
+      "dependencies": {}
+    },
+    {
+      "path": "node_modules/loose-envify/package.json",
+      "name": "loose-envify",
+      "version": "1.4.0",
+      "license": "MIT",
+      "packageJsonSha256": "1f0843ec8b9eacb9ec54ed601d0354a854dc587fa3c07509a8418ffd7b11a821",
+      "lockfileVersionMatches": true,
+      "dependencies": {
+        "js-tokens": "^3.0.0 || ^4.0.0"
+      }
+    },
+    {
+      "path": "node_modules/react/package.json",
+      "name": "react",
+      "version": "18.3.1",
+      "license": "MIT",
+      "packageJsonSha256": "9a394ce4f81b3df64aedfc9ee91eb7f3fc02063c5a52ad4161170d3b55b76ac1",
+      "lockfileVersionMatches": true,
+      "dependencies": {
+        "loose-envify": "^1.1.0"
+      }
+    },
+    {
+      "path": "node_modules/react-dom/package.json",
+      "name": "react-dom",
+      "version": "18.3.1",
+      "license": "MIT",
+      "packageJsonSha256": "19827c73631833e751b3720ff1ae07b3c6c9eb7df6573015a026ce865b27d9ce",
+      "lockfileVersionMatches": true,
+      "dependencies": {
+        "loose-envify": "^1.1.0",
+        "scheduler": "^0.23.2"
+      }
+    },
+    {
+      "path": "node_modules/scheduler/package.json",
+      "name": "scheduler",
+      "version": "0.23.2",
+      "license": "MIT",
+      "packageJsonSha256": "8ebd09b39742c90531b9210846c4207b962f7bedfb2b60d93c906e4019fb3bc0",
+      "lockfileVersionMatches": true,
+      "dependencies": {
+        "loose-envify": "^1.1.0"
+      }
+    }
+  ],
+  "nativeEntries": [],
+  "rendererBundles": [
+    {
+      "path": "dist/assets/index-DJiR6N5c.js",
+      "size": 164324,
+      "sha256": "14141dfc34d7bf0e838faf19d94a2c441f7db1bf4e8fe625174573454b99d4b1"
+    }
+  ],
+  "scope": "Packages physically in ASAR; bundled JavaScript dependencies may overlap these packages"
+}

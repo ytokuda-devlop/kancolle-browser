@@ -1,0 +1,29 @@
+{
+    "name":  "zeromq",
+    "checkedAt":  "2026-09-23T11:36:02.7916033Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "zeromq",
+                 "repo":  "zeromq/libzmq",
+                 "ref":  "v4.3.5"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "622fc6dde99ee172ebaa9c8628d85a7a1995a21d",
+    "commitUrl":  "https://github.com/zeromq/libzmq/commit/622fc6dde99ee172ebaa9c8628d85a7a1995a21d",
+    "commitDate":  "2023-10-09T10:47:05Z",
+    "url":  "https://codeload.github.com/zeromq/libzmq/tar.gz/622fc6dde99ee172ebaa9c8628d85a7a1995a21d",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/zeromq-source.tar.gz",
+    "sha256":  "65d021968f90d61fd50d8e50409bdd494b040602bfb043e1bd5647ab035db3b4",
+    "bytes":  876157,
+    "archiveEntryCount":  909,
+    "licenseEntries":  [
+                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/LICENSE",
+                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/external/sha1/license.txt",
+                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/external/unity/license.txt",
+                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/external/wepoll/license.txt",
+                           "libzmq-622fc6dde99ee172ebaa9c8628d85a7a1995a21d/packaging/debian/copyright"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

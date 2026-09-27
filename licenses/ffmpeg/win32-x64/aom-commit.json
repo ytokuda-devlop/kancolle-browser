@@ -1,0 +1,29 @@
+{
+  "commit": "0eeb62d344b2ffabfc238813b43c677755a63c29",
+  "tree": "8c97547b6fbc5c31309e41c9f2dfdd69b9fc670e",
+  "parents": [
+    "d3b7ce41e0bd9afe93564124c31a3d12beb6eda7"
+  ],
+  "author": {
+    "name": "Mudassir Galaganath",
+    "email": "mudassir.galaganath@ittiam.com",
+    "time": "Thu Dec 28 17:14:25 2023 +0530"
+  },
+  "committer": {
+    "name": "Wan-Teh Chang",
+    "email": "wtc@google.com",
+    "time": "Thu Dec 28 19:26:37 2023 +0000"
+  },
+  "message": "Fix the incorrect usage of cpi in encoder_encode()\n\nThis CL fixes the incorrect usage of 'cpi' by replacing it with\n'cpi_lap' in encoder_encode(). This issue was introduced in\nhttps://aomedia-review.googlesource.com/c/aom/+/176342.\n\nChange-Id: Ia950d3aceb7ec751b3aca53b94c9c41ddd66f545\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e50d0c70d752f47e64a8cc3e7a572cf5790d6899",
+      "old_mode": 33188,
+      "old_path": "av1/av1_cx_iface.c",
+      "new_id": "c1f9ec73e98568f71c1112aaffe46f1b90c4c9aa",
+      "new_mode": 33188,
+      "new_path": "av1/av1_cx_iface.c"
+    }
+  ]
+}

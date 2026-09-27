@@ -1,0 +1,25 @@
+{
+    "name":  "freetype",
+    "checkedAt":  "2026-09-23T11:34:27.1326884Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "freetype",
+                 "repo":  "freetype/freetype",
+                 "ref":  "VER-2-13-2"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "920c5502cc3ddda88f6c7d85ee834ac611bb11cc",
+    "commitUrl":  "https://github.com/freetype/freetype/commit/920c5502cc3ddda88f6c7d85ee834ac611bb11cc",
+    "commitDate":  "2023-08-25T18:12:52Z",
+    "url":  "https://codeload.github.com/freetype/freetype/tar.gz/920c5502cc3ddda88f6c7d85ee834ac611bb11cc",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/freetype-source.tar.gz",
+    "sha256":  "da541ec0fc99514a8aea8ccc8ec4f955c19d17556e1888374fc564cb31e1c437",
+    "bytes":  2482598,
+    "archiveEntryCount":  804,
+    "licenseEntries":  [
+                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/LICENSE.TXT"
+                       ],
+    "submoduleFiles":  [
+                           "freetype-920c5502cc3ddda88f6c7d85ee834ac611bb11cc/.gitmodules"
+                       ]
+}

@@ -1,0 +1,27 @@
+{
+    "name":  "rubberband",
+    "checkedAt":  "2026-09-23T11:35:31.2521659Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "rubberband",
+                 "repo":  "breakfastquay/rubberband",
+                 "ref":  "v1.8.1"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "afdb914d0b853f445ef4582720966701527ade5b",
+    "commitUrl":  "https://github.com/breakfastquay/rubberband/commit/afdb914d0b853f445ef4582720966701527ade5b",
+    "commitDate":  "2012-10-28T10:30:09Z",
+    "url":  "https://codeload.github.com/breakfastquay/rubberband/tar.gz/afdb914d0b853f445ef4582720966701527ade5b",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/rubberband-source.tar.gz",
+    "sha256":  "75b57d116642174eeb45b29ce932647121872185028b2cb02d16e86faccaf699",
+    "bytes":  208213,
+    "archiveEntryCount":  109,
+    "licenseEntries":  [
+                           "rubberband-afdb914d0b853f445ef4582720966701527ade5b/COPYING",
+                           "rubberband-afdb914d0b853f445ef4582720966701527ade5b/src/kissfft/COPYING",
+                           "rubberband-afdb914d0b853f445ef4582720966701527ade5b/src/speex/COPYING"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

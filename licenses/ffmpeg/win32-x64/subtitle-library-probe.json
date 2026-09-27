@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-24T01:18:52.236Z",
+  "binary": "release/win-unpacked/resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg.exe",
+  "sha256": "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00",
+  "args": [
+    "-hide_banner",
+    "-f",
+    "lavfi",
+    "-i",
+    "color=size=64x64:rate=1",
+    "-vf",
+    "ass=probe.ass",
+    "-frames:v",
+    "1",
+    "-f",
+    "null",
+    "pipe:1"
+  ],
+  "fixture": "[Script Info]\nScriptType: v4.00+\nPlayResX: 64\nPlayResY: 64\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, Alignment\nStyle: Default,Arial,12,&H00FFFFFF,2\n[Events]\nFormat: Layer, Start, End, Style, Text\nDialogue: 0,0:00:00.00,0:00:01.00,Default,probe\n",
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": "Input #0, lavfi, from 'color=size=64x64:rate=1':\r\n  Duration: N/A, start: 0.000000, bitrate: N/A\r\n  Stream #0:0: Video: wrapped_avframe, yuv420p, 64x64 [SAR 1:1 DAR 1:1], 1 fps, 1 tbr, 1 tbn\r\n[Parsed_ass_0 @ 00000142e2ade440] libass API version: 0x1701000\r\n[Parsed_ass_0 @ 00000142e2ade440] libass source: commit: 0.17.0-63-gc047dd2ea16f73abb4f448e6db3637158c1226d0\r\n[Parsed_ass_0 @ 00000142e2ade440] Shaper: FriBidi 1.0.13 (SIMPLE) HarfBuzz-ng 8.3.0 (COMPLEX)\r\n[Parsed_ass_0 @ 00000142e2ade440] Using font provider directwrite (with GDI)\r\n[Parsed_ass_0 @ 00000142e2ade440] Track has custom format line(s). 'ScaledBorderAndShadow' will default to 'yes'.\r\n[Parsed_ass_0 @ 00000142e2ade440] Track has custom format line(s). 'ScaledBorderAndShadow' will default to 'yes'.\r\n[Parsed_ass_0 @ 00000142e2ade440] Added subtitle file: 'probe.ass' (2 styles, 1 events)\r\nStream mapping:\r\n  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> wrapped_avframe (native))\r\nPress [q] to stop, [?] for help\r\n[Parsed_ass_0 @ 00000142e2f40e00] libass API version: 0x1701000\r\n[Parsed_ass_0 @ 00000142e2f40e00] libass source: commit: 0.17.0-63-gc047dd2ea16f73abb4f448e6db3637158c1226d0\r\n[Parsed_ass_0 @ 00000142e2f40e00] Shaper: FriBidi 1.0.13 (SIMPLE) HarfBuzz-ng 8.3.0 (COMPLEX)\r\n[Parsed_ass_0 @ 00000142e2f40e00] Using font provider directwrite (with GDI)\r\n[Parsed_ass_0 @ 00000142e2f40e00] Track has custom format line(s). 'ScaledBorderAndShadow' will default to 'yes'.\r\n[Parsed_ass_0 @ 00000142e2f40e00] Track has custom format line(s). 'ScaledBorderAndShadow' will default to 'yes'.\r\n[Parsed_ass_0 @ 00000142e2f40e00] Added subtitle file: 'probe.ass' (2 styles, 1 events)\r\n[Parsed_ass_0 @ 00000142e2f40e00] fontselect: (Arial, 400, 0) -> ArialMT, 0, ArialMT\r\nOutput #0, null, to 'pipe:1':\r\n  Metadata:\r\n    encoder         : Lavf60.16.100\r\n  Stream #0:0: Video: wrapped_avframe, yuv420p(progressive), 64x64 [SAR 1:1 DAR 1:1], q=2-31, 200 kb/s, 1 fps, 1 tbn\r\n    Metadata:\r\n      encoder         : Lavc60.31.102 wrapped_avframe\r\nframe=    0 fps=0.0 q=-0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[out#0/null @ 00000142e2adc800] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown\r\nframe=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.00 bitrate=N/A speed=   0x    \r\n"
+}

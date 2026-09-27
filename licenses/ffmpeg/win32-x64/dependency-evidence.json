@@ -1,0 +1,2273 @@
+{
+  "checkedAt": "2026-09-24T01:18:52.105Z",
+  "binary": "release/win-unpacked/resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg.exe",
+  "sha256": "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00",
+  "method": "Read-only printable ASCII extraction with byte offsets; no execution or modification of the binary.",
+  "components": [
+    {
+      "name": "bzlib",
+      "versionCandidate": "1.0.8",
+      "interpretation": "embedded version text",
+      "evidence": [
+        {
+          "offset": 75275680,
+          "value": "1.0.8, 13-Jul-2019"
+        }
+      ],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    },
+    {
+      "name": "gmp",
+      "versionCandidate": "6.2.1",
+      "interpretation": "embedded source path",
+      "evidence": [
+        {
+          "offset": 75829576,
+          "value": "../../gmp-6.2.1/mpz/pprime_p.c"
+        }
+      ],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    },
+    {
+      "name": "gnutls",
+      "versionCandidate": "3.6.16",
+      "interpretation": "embedded diagnostic",
+      "evidence": [
+        {
+          "offset": 75451784,
+          "value": "Enabled GnuTLS 3.6.16 logging..."
+        }
+      ],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    },
+    {
+      "name": "iconv",
+      "versionCandidate": null,
+      "interpretation": "no unambiguous version evidence found",
+      "evidence": [],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    },
+    {
+      "name": "libfontconfig",
+      "versionCandidate": null,
+      "interpretation": "build prefix only; not a version",
+      "evidence": [
+        {
+          "offset": 74876384,
+          "value": "W:/code/mabs/local64/share/fontconfig/conf.avail"
+        }
+      ],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    },
+    {
+      "name": "libopenjpeg",
+      "versionCandidate": null,
+      "interpretation": "library name only; bare 2.5.0 string is not enough to attribute",
+      "evidence": [
+        {
+          "offset": 70906992,
+          "value": "OpenJPEG JPEG 2000"
+        }
+      ],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    },
+    {
+      "name": "libxml2",
+      "versionCandidate": null,
+      "interpretation": "diagnostic only; nearby 21300 is not sufficient proof",
+      "evidence": [
+        {
+          "offset": 75093600,
+          "value": "Fatal: program compiled against libxml %d using libxml %d"
+        }
+      ],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    },
+    {
+      "name": "lzma",
+      "versionCandidate": "5.2.9",
+      "interpretation": "unattributed bare string; candidate only",
+      "evidence": [
+        {
+          "offset": 75240768,
+          "value": "5.2.9"
+        }
+      ],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    },
+    {
+      "name": "zlib",
+      "versionCandidate": "1.2.13",
+      "interpretation": "multiple bare version strings; linked revision and copy count unresolved",
+      "evidence": [
+        {
+          "offset": 69468368,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 69616920,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 69665381,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 69854108,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 69909289,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 71928415,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 72513089,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 75274528,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 75274752,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 75274768,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 75275166,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 75275406,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 75285290,
+          "value": "1.2.11"
+        },
+        {
+          "offset": 76423814,
+          "value": "1.2.13"
+        },
+        {
+          "offset": 76808064,
+          "value": "1.2.13"
+        }
+      ],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    },
+    {
+      "name": "expat",
+      "versionCandidate": "2.5.0",
+      "interpretation": "embedded source path and version",
+      "evidence": [
+        {
+          "offset": 74939528,
+          "value": "../../expat-2.5.0/lib/xmlparse.c"
+        },
+        {
+          "offset": 74941624,
+          "value": "expat_2.5.0"
+        }
+      ],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    },
+    {
+      "name": "nettle",
+      "versionCandidate": "3.8.1",
+      "interpretation": "embedded source paths; includes crypto routines",
+      "evidence": [
+        {
+          "offset": 75833440,
+          "value": "../nettle-3.8.1/arcfour.c"
+        },
+        {
+          "offset": 75833632,
+          "value": "../nettle-3.8.1/arctwo.c"
+        },
+        {
+          "offset": 75834048,
+          "value": "../nettle-3.8.1/base64-encode.c"
+        },
+        {
+          "offset": 75834208,
+          "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/../nettle-3.8.1/base64-decode.c"
+        },
+        {
+          "offset": 75834688,
+          "value": "../nettle-3.8.1/camellia128-crypt.c"
+        },
+        {
+          "offset": 75834768,
+          "value": "../nettle-3.8.1/camellia256-crypt.c"
+        },
+        {
+          "offset": 75834848,
+          "value": "../nettle-3.8.1/cbc.c"
+        },
+        {
+          "offset": 75834896,
+          "value": "../nettle-3.8.1/ccm.c"
+        },
+        {
+          "offset": 75835040,
+          "value": "../nettle-3.8.1/chacha-poly1305.c"
+        },
+        {
+          "offset": 75835152,
+          "value": "../nettle-3.8.1/ctr.c"
+        },
+        {
+          "offset": 75835200,
+          "value": "../nettle-3.8.1/ctr16.c"
+        },
+        {
+          "offset": 75835296,
+          "value": "../nettle-3.8.1/des.c"
+        },
+        {
+          "offset": 75838527,
+          "value": " ../nettle-3.8.1/gcm.c"
+        },
+        {
+          "offset": 75838736,
+          "value": "../nettle-3.8.1/gosthash94.c"
+        },
+        {
+          "offset": 75838848,
+          "value": "../nettle-3.8.1/hmac.c"
+        },
+        {
+          "offset": 75838912,
+          "value": "../nettle-3.8.1/md2.c"
+        },
+        {
+          "offset": 75839232,
+          "value": "../nettle-3.8.1/md5.c"
+        },
+        {
+          "offset": 75839424,
+          "value": "../nettle-3.8.1/pbkdf2.c"
+        },
+        {
+          "offset": 75839472,
+          "value": "../nettle-3.8.1/sha1.c"
+        },
+        {
+          "offset": 75839648,
+          "value": "../nettle-3.8.1/sha256.c"
+        },
+        {
+          "offset": 75840192,
+          "value": "../nettle-3.8.1/sha512.c"
+        },
+        {
+          "offset": 75841216,
+          "value": "../nettle-3.8.1/streebog.c"
+        },
+        {
+          "offset": 75858720,
+          "value": "../nettle-3.8.1/umac96.c"
+        },
+        {
+          "offset": 75858864,
+          "value": "../nettle-3.8.1/umac128.c"
+        },
+        {
+          "offset": 75859591,
+          "value": "../nettle-3.8.1/fat-x86_64.c"
+        },
+        {
+          "offset": 75860976,
+          "value": "../nettle-3.8.1/aes128-decrypt.c"
+        },
+        {
+          "offset": 75861040,
+          "value": "../nettle-3.8.1/aes192-decrypt.c"
+        },
+        {
+          "offset": 75861104,
+          "value": "../nettle-3.8.1/aes256-decrypt.c"
+        },
+        {
+          "offset": 75861168,
+          "value": "../nettle-3.8.1/aes128-encrypt.c"
+        },
+        {
+          "offset": 75861232,
+          "value": "../nettle-3.8.1/aes192-encrypt.c"
+        },
+        {
+          "offset": 75861296,
+          "value": "../nettle-3.8.1/aes256-encrypt.c"
+        },
+        {
+          "offset": 75862400,
+          "value": "../nettle-3.8.1/aes-set-key-internal.c"
+        },
+        {
+          "offset": 75866752,
+          "value": "../nettle-3.8.1/siv-cmac.c"
+        },
+        {
+          "offset": 75866880,
+          "value": "../nettle-3.8.1/cmac.c"
+        },
+        {
+          "offset": 75875296,
+          "value": "../nettle-3.8.1/sha3.c"
+        },
+        {
+          "offset": 75875360,
+          "value": "../nettle-3.8.1/umac-l2.c"
+        },
+        {
+          "offset": 75875424,
+          "value": "../nettle-3.8.1/umac-poly64.c"
+        },
+        {
+          "offset": 75875488,
+          "value": "../nettle-3.8.1/umac-poly128.c"
+        },
+        {
+          "offset": 75875568,
+          "value": "../nettle-3.8.1/xts.c"
+        },
+        {
+          "offset": 75884318,
+          "value": ":,../nettle-3.8.1/bignum.c"
+        },
+        {
+          "offset": 75884464,
+          "value": "../nettle-3.8.1/rsa-sign.c"
+        },
+        {
+          "offset": 75884528,
+          "value": "../nettle-3.8.1/rsa-sec-compute-root.c"
+        },
+        {
+          "offset": 75884656,
+          "value": "../nettle-3.8.1/rsa-keygen.c"
+        },
+        {
+          "offset": 75884768,
+          "value": "../nettle-3.8.1/gmp-glue.c"
+        },
+        {
+          "offset": 75884832,
+          "value": "../nettle-3.8.1/ecc-gost-gc256b.c"
+        },
+        {
+          "offset": 75901824,
+          "value": "../nettle-3.8.1/ecc-gost-gc512a.c"
+        },
+        {
+          "offset": 75931936,
+          "value": "../nettle-3.8.1/ecc-secp224r1.c"
+        },
+        {
+          "offset": 75998720,
+          "value": "../nettle-3.8.1/ecc-mul-a.c"
+        },
+        {
+          "offset": 75998784,
+          "value": "../nettle-3.8.1/ecc-point-mul.c"
+        },
+        {
+          "offset": 75998896,
+          "value": "../nettle-3.8.1/ecc-point-mul-g.c"
+        },
+        {
+          "offset": 75998992,
+          "value": "../nettle-3.8.1/ecdsa-keygen.c"
+        },
+        {
+          "offset": 75999088,
+          "value": "../nettle-3.8.1/gostdsa-vko.c"
+        },
+        {
+          "offset": 75999200,
+          "value": "../nettle-3.8.1/bignum-random-prime.c"
+        },
+        {
+          "offset": 76001792,
+          "value": "../nettle-3.8.1/pkcs1-encrypt.c"
+        },
+        {
+          "offset": 76001840,
+          "value": "../nettle-3.8.1/pss.c"
+        },
+        {
+          "offset": 76001936,
+          "value": "../nettle-3.8.1/sec-tabselect.c"
+        },
+        {
+          "offset": 76001984,
+          "value": "../nettle-3.8.1/ecc-mod.c"
+        },
+        {
+          "offset": 76002048,
+          "value": "../nettle-3.8.1/ecc-mod-inv.c"
+        },
+        {
+          "offset": 76002128,
+          "value": "../nettle-3.8.1/ecc-mod-arith.c"
+        },
+        {
+          "offset": 76002208,
+          "value": "../nettle-3.8.1/ecc-curve25519.c"
+        },
+        {
+          "offset": 76034496,
+          "value": "../nettle-3.8.1/ecc-eh-to-a.c"
+        },
+        {
+          "offset": 76034544,
+          "value": "../nettle-3.8.1/ecc-mul-a-eh.c"
+        },
+        {
+          "offset": 76034608,
+          "value": "../nettle-3.8.1/ecc-mul-m.c"
+        },
+        {
+          "offset": 76034672,
+          "value": "../nettle-3.8.1/ecc-random.c"
+        },
+        {
+          "offset": 76034752,
+          "value": "../nettle-3.8.1/ecc-ecdsa-sign.c"
+        },
+        {
+          "offset": 76034864,
+          "value": "../nettle-3.8.1/eddsa-decompress.c"
+        },
+        {
+          "offset": 76034928,
+          "value": "../nettle-3.8.1/eddsa-pubkey.c"
+        },
+        {
+          "offset": 76035008,
+          "value": "../nettle-3.8.1/eddsa-sign.c"
+        },
+        {
+          "offset": 76035136,
+          "value": "../nettle-3.8.1/eddsa-verify.c"
+        },
+        {
+          "offset": 76035392,
+          "value": "../nettle-3.8.1/pkcs1.c"
+        },
+        {
+          "offset": 76035440,
+          "value": "../nettle-3.8.1/eddsa-hash.c"
+        }
+      ],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    },
+    {
+      "name": "OpenSSL",
+      "versionCandidate": "3.0.7",
+      "interpretation": "embedded source paths and version",
+      "evidence": [
+        {
+          "offset": 76073296,
+          "value": "../openssl-3.0.7/crypto/evp/p5_crpt2.c"
+        },
+        {
+          "offset": 76073808,
+          "value": "../openssl-3.0.7/crypto/params.c"
+        },
+        {
+          "offset": 76073984,
+          "value": "../openssl-3.0.7/crypto/objects/obj_dat.c"
+        },
+        {
+          "offset": 76175616,
+          "value": "../openssl-3.0.7/crypto/objects/obj_lib.c"
+        },
+        {
+          "offset": 76175680,
+          "value": "../openssl-3.0.7/crypto/rand/rand_lib.c"
+        },
+        {
+          "offset": 76176175,
+          "value": "?../openssl-3.0.7/crypto/rand/rand_pool.c"
+        },
+        {
+          "offset": 76176432,
+          "value": "../openssl-3.0.7/crypto/stack/stack.c"
+        },
+        {
+          "offset": 76176752,
+          "value": "../openssl-3.0.7/crypto/asn1/a_int.c"
+        },
+        {
+          "offset": 76177072,
+          "value": "../openssl-3.0.7/crypto/asn1/a_object.c"
+        },
+        {
+          "offset": 76177248,
+          "value": "../openssl-3.0.7/crypto/asn1/asn1_lib.c"
+        },
+        {
+          "offset": 76177360,
+          "value": "../openssl-3.0.7/crypto/asn1/asn_pack.c"
+        },
+        {
+          "offset": 76177472,
+          "value": "../openssl-3.0.7/crypto/asn1/p5_pbev2.c"
+        },
+        {
+          "offset": 76177984,
+          "value": "../openssl-3.0.7/crypto/asn1/tasn_dec.c"
+        },
+        {
+          "offset": 76178584,
+          "value": "../openssl-3.0.7/crypto/asn1/tasn_enc.c"
+        },
+        {
+          "offset": 76178784,
+          "value": "../openssl-3.0.7/crypto/asn1/tasn_fre.c"
+        },
+        {
+          "offset": 76178944,
+          "value": "../openssl-3.0.7/crypto/asn1/tasn_new.c"
+        },
+        {
+          "offset": 76181280,
+          "value": "../openssl-3.0.7/crypto/asn1/tasn_utl.c"
+        },
+        {
+          "offset": 76181448,
+          "value": "../openssl-3.0.7/crypto/asn1/x_algor.c"
+        },
+        {
+          "offset": 76181872,
+          "value": "../openssl-3.0.7/crypto/bio/bio_lib.c"
+        },
+        {
+          "offset": 76182144,
+          "value": "../openssl-3.0.7/crypto/bio/bio_meth.c"
+        },
+        {
+          "offset": 76182240,
+          "value": "../openssl-3.0.7/crypto/bio/bio_print.c"
+        },
+        {
+          "offset": 76183071,
+          "value": "?../openssl-3.0.7/crypto/bio/bio_sock.c"
+        },
+        {
+          "offset": 76183312,
+          "value": "../openssl-3.0.7/crypto/bio/bio_sock2.c"
+        },
+        {
+          "offset": 76183712,
+          "value": "../openssl-3.0.7/crypto/bn/bn_conv.c"
+        },
+        {
+          "offset": 76183856,
+          "value": "../openssl-3.0.7/crypto/bn/bn_lib.c"
+        },
+        {
+          "offset": 76184016,
+          "value": "../openssl-3.0.7/crypto/bn/bn_mont.c"
+        },
+        {
+          "offset": 76184176,
+          "value": "../openssl-3.0.7/crypto/bn/bn_shift.c"
+        },
+        {
+          "offset": 76184256,
+          "value": "../openssl-3.0.7/crypto/buffer/buffer.c"
+        },
+        {
+          "offset": 76184376,
+          "value": "../openssl-3.0.7/crypto/conf/conf_lib.c"
+        },
+        {
+          "offset": 76184688,
+          "value": "../openssl-3.0.7/crypto/conf/conf_mod.c"
+        },
+        {
+          "offset": 76185056,
+          "value": "../openssl-3.0.7/crypto/dso/dso_lib.c"
+        },
+        {
+          "offset": 76185392,
+          "value": "../openssl-3.0.7/crypto/dso/dso_win32.c"
+        },
+        {
+          "offset": 76185744,
+          "value": "../openssl-3.0.7/crypto/engine/eng_init.c"
+        },
+        {
+          "offset": 76185856,
+          "value": "../openssl-3.0.7/crypto/engine/eng_lib.c"
+        },
+        {
+          "offset": 76185984,
+          "value": "../openssl-3.0.7/crypto/engine/eng_list.c"
+        },
+        {
+          "offset": 76186336,
+          "value": "../openssl-3.0.7/crypto/engine/tb_asnmth.c"
+        },
+        {
+          "offset": 76186448,
+          "value": "../openssl-3.0.7/crypto/engine/tb_pkmeth.c"
+        },
+        {
+          "offset": 76186528,
+          "value": "../openssl-3.0.7/crypto/engine/tb_rand.c"
+        },
+        {
+          "offset": 76186576,
+          "value": "../openssl-3.0.7/crypto/err/err_local.h"
+        },
+        {
+          "offset": 76186616,
+          "value": "../openssl-3.0.7/crypto/err/err.c"
+        },
+        {
+          "offset": 76188064,
+          "value": "../openssl-3.0.7/crypto/err/err_local.h"
+        },
+        {
+          "offset": 76188104,
+          "value": "../openssl-3.0.7/crypto/err/err_blocks.c"
+        },
+        {
+          "offset": 76188160,
+          "value": "../openssl-3.0.7/crypto/evp/digest.c"
+        },
+        {
+          "offset": 76188608,
+          "value": "../openssl-3.0.7/crypto/evp/evp_enc.c"
+        },
+        {
+          "offset": 76189696,
+          "value": "../openssl-3.0.7/crypto/evp/evp_fetch.c"
+        },
+        {
+          "offset": 76190064,
+          "value": "../openssl-3.0.7/crypto/evp/evp_lib.c"
+        },
+        {
+          "offset": 76190592,
+          "value": "../openssl-3.0.7/crypto/evp/evp_pbe.c"
+        },
+        {
+          "offset": 76191664,
+          "value": "../openssl-3.0.7/crypto/evp/evp_rand.c"
+        },
+        {
+          "offset": 76191920,
+          "value": "../openssl-3.0.7/crypto/evp/evp_utils.c"
+        },
+        {
+          "offset": 76191984,
+          "value": "../openssl-3.0.7/crypto/evp/kdf_lib.c"
+        },
+        {
+          "offset": 76192064,
+          "value": "../openssl-3.0.7/crypto/evp/kdf_meth.c"
+        },
+        {
+          "offset": 76195520,
+          "value": "../openssl-3.0.7/crypto/evp/m_sigver.c"
+        },
+        {
+          "offset": 76195712,
+          "value": "../openssl-3.0.7/crypto/evp/p5_crpt.c"
+        },
+        {
+          "offset": 76195856,
+          "value": "../openssl-3.0.7/crypto/evp/p_lib.c"
+        },
+        {
+          "offset": 76196984,
+          "value": "../openssl-3.0.7/crypto/evp/pmeth_gn.c"
+        },
+        {
+          "offset": 76197184,
+          "value": "../openssl-3.0.7/crypto/evp/pmeth_lib.c"
+        },
+        {
+          "offset": 76197824,
+          "value": "../openssl-3.0.7/crypto/evp/signature.c"
+        },
+        {
+          "offset": 76198128,
+          "value": "../openssl-3.0.7/crypto/lhash/lhash.c"
+        },
+        {
+          "offset": 76198192,
+          "value": "../openssl-3.0.7/crypto/context.c"
+        },
+        {
+          "offset": 76198336,
+          "value": "../openssl-3.0.7/crypto/core_algorithm.c"
+        },
+        {
+          "offset": 76198432,
+          "value": "../openssl-3.0.7/crypto/core_fetch.c"
+        },
+        {
+          "offset": 76198624,
+          "value": "../openssl-3.0.7/crypto/core_namemap.c"
+        },
+        {
+          "offset": 76199136,
+          "value": "../openssl-3.0.7/crypto/ex_data.c"
+        },
+        {
+          "offset": 76199400,
+          "value": "../openssl-3.0.7/crypto/getenv.c"
+        },
+        {
+          "offset": 76199440,
+          "value": "../openssl-3.0.7/crypto/init.c"
+        },
+        {
+          "offset": 76199520,
+          "value": "../openssl-3.0.7/crypto/initthread.c"
+        },
+        {
+          "offset": 76199568,
+          "value": "../openssl-3.0.7/crypto/mem_sec.c"
+        },
+        {
+          "offset": 76201024,
+          "value": "../openssl-3.0.7/crypto/o_str.c"
+        },
+        {
+          "offset": 76201280,
+          "value": "../openssl-3.0.7/crypto/params_dup.c"
+        },
+        {
+          "offset": 76201408,
+          "value": "../openssl-3.0.7/crypto/provider_child.c"
+        },
+        {
+          "offset": 76201536,
+          "value": "../openssl-3.0.7/crypto/provider_core.c"
+        },
+        {
+          "offset": 76203296,
+          "value": "../openssl-3.0.7/crypto/self_test_core.c"
+        },
+        {
+          "offset": 76203424,
+          "value": "../openssl-3.0.7/crypto/threads_win.c"
+        },
+        {
+          "offset": 76203936,
+          "value": "../openssl-3.0.7/crypto/objects/o_names.c"
+        },
+        {
+          "offset": 76204032,
+          "value": "../openssl-3.0.7/crypto/objects/obj_xref.c"
+        },
+        {
+          "offset": 76205056,
+          "value": "../openssl-3.0.7/crypto/pkcs12/p12_crpt.c"
+        },
+        {
+          "offset": 76205136,
+          "value": "../openssl-3.0.7/crypto/pkcs12/p12_key.c"
+        },
+        {
+          "offset": 76205280,
+          "value": "../openssl-3.0.7/crypto/pkcs12/p12_utl.c"
+        },
+        {
+          "offset": 76205424,
+          "value": "../openssl-3.0.7/crypto/property/property.c"
+        },
+        {
+          "offset": 76205504,
+          "value": "../openssl-3.0.7/crypto/property/property_parse.c"
+        },
+        {
+          "offset": 76205952,
+          "value": "../openssl-3.0.7/crypto/property/property_string.c"
+        },
+        {
+          "offset": 76206112,
+          "value": "../openssl-3.0.7/crypto/rand/prov_seed.c"
+        },
+        {
+          "offset": 76206272,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_backend.c"
+        },
+        {
+          "offset": 76206400,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_lib.c"
+        },
+        {
+          "offset": 76206976,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_mp.c"
+        },
+        {
+          "offset": 76207472,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_ossl.c"
+        },
+        {
+          "offset": 76207680,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_pk1.c"
+        },
+        {
+          "offset": 76207968,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_pmeth.c"
+        },
+        {
+          "offset": 76209024,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_pss.c"
+        },
+        {
+          "offset": 76209200,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_saos.c"
+        },
+        {
+          "offset": 76209536,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_sign.c"
+        },
+        {
+          "offset": 76210128,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_x931.c"
+        },
+        {
+          "offset": 76210688,
+          "value": "../openssl-3.0.7/crypto/store/store_meth.c"
+        },
+        {
+          "offset": 76211200,
+          "value": "../openssl-3.0.7/crypto/store/store_register.c"
+        },
+        {
+          "offset": 76211424,
+          "value": "../openssl-3.0.7/crypto/x509/x509_att.c"
+        },
+        {
+          "offset": 76266056,
+          "value": "../openssl-3.0.7/providers/implementations/asymciphers/rsa_enc.c"
+        },
+        {
+          "offset": 76267176,
+          "value": "../openssl-3.0.7/providers/implementations/asymciphers/sm2_enc.c"
+        },
+        {
+          "offset": 76267776,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes.c"
+        },
+        {
+          "offset": 76267856,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes_cts.inc"
+        },
+        {
+          "offset": 76274696,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes_cbc_hmac_sha.c"
+        },
+        {
+          "offset": 76276736,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes_cbc_hmac_sha1_hw.c"
+        },
+        {
+          "offset": 76277024,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes_cbc_hmac_sha256_hw.c"
+        },
+        {
+          "offset": 76277312,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes_ccm.c"
+        },
+        {
+          "offset": 76278208,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes_gcm.c"
+        },
+        {
+          "offset": 76279104,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes_hw.c"
+        },
+        {
+          "offset": 76279176,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes_hw_aesni.inc"
+        },
+        {
+          "offset": 76279784,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes_ocb.c"
+        },
+        {
+          "offset": 76281320,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes_siv.c"
+        },
+        {
+          "offset": 76282856,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes_wrp.c"
+        },
+        {
+          "offset": 76285736,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aes_xts.c"
+        },
+        {
+          "offset": 76286656,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aria.c"
+        },
+        {
+          "offset": 76292128,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aria_ccm.c"
+        },
+        {
+          "offset": 76292960,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aria_gcm.c"
+        },
+        {
+          "offset": 76293792,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_aria_hw.c"
+        },
+        {
+          "offset": 76294144,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_camellia.c"
+        },
+        {
+          "offset": 76294224,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_camellia_cts.inc"
+        },
+        {
+          "offset": 76301056,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_camellia_hw.c"
+        },
+        {
+          "offset": 76301416,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_chacha20.c"
+        },
+        {
+          "offset": 76302088,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_chacha20_poly1305.c"
+        },
+        {
+          "offset": 76303176,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_null.c"
+        },
+        {
+          "offset": 76303872,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_sm4.c"
+        },
+        {
+          "offset": 76305920,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_tdes_common.c"
+        },
+        {
+          "offset": 76308800,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/cipher_tdes_wrap.c"
+        },
+        {
+          "offset": 76309216,
+          "value": "../openssl-3.0.7/providers/implementations/digests/blake2_prov.c"
+        },
+        {
+          "offset": 76309727,
+          "value": "[../openssl-3.0.7/providers/implementations/digests/md5_prov.c"
+        },
+        {
+          "offset": 76309960,
+          "value": "../openssl-3.0.7/providers/implementations/digests/md5_sha1_prov.c"
+        },
+        {
+          "offset": 76310336,
+          "value": "../openssl-3.0.7/providers/implementations/digests/null_prov.c"
+        },
+        {
+          "offset": 76310560,
+          "value": "../openssl-3.0.7/providers/implementations/digests/ripemd_prov.c"
+        },
+        {
+          "offset": 76310824,
+          "value": "../openssl-3.0.7/providers/implementations/digests/sha2_prov.c"
+        },
+        {
+          "offset": 76312160,
+          "value": "../openssl-3.0.7/providers/implementations/digests/sha3_prov.c"
+        },
+        {
+          "offset": 76313792,
+          "value": "../openssl-3.0.7/providers/implementations/digests/sm3_prov.c"
+        },
+        {
+          "offset": 76314016,
+          "value": "../openssl-3.0.7/providers/implementations/encode_decode/decode_der2key.c"
+        },
+        {
+          "offset": 76320704,
+          "value": "../openssl-3.0.7/providers/implementations/encode_decode/decode_epki2pki.c"
+        },
+        {
+          "offset": 76320928,
+          "value": "../openssl-3.0.7/providers/implementations/encode_decode/decode_msblob2key.c"
+        },
+        {
+          "offset": 76321408,
+          "value": "../openssl-3.0.7/providers/implementations/encode_decode/decode_pem2der.c"
+        },
+        {
+          "offset": 76322496,
+          "value": "../openssl-3.0.7/providers/implementations/encode_decode/decode_pvk2key.c"
+        },
+        {
+          "offset": 76322968,
+          "value": "../openssl-3.0.7/providers/implementations/encode_decode/decode_spki2typespki.c"
+        },
+        {
+          "offset": 76323136,
+          "value": "../openssl-3.0.7/providers/implementations/encode_decode/encode_key2any.c"
+        },
+        {
+          "offset": 76345664,
+          "value": "../openssl-3.0.7/providers/implementations/encode_decode/encode_key2blob.c"
+        },
+        {
+          "offset": 76346064,
+          "value": "../openssl-3.0.7/providers/implementations/encode_decode/encode_key2ms.c"
+        },
+        {
+          "offset": 76347080,
+          "value": "../openssl-3.0.7/providers/implementations/encode_decode/encode_key2text.c"
+        },
+        {
+          "offset": 76349472,
+          "value": "../openssl-3.0.7/providers/implementations/encode_decode/endecoder_common.c"
+        },
+        {
+          "offset": 76349648,
+          "value": "../openssl-3.0.7/providers/implementations/exchange/dh_exch.c"
+        },
+        {
+          "offset": 76350648,
+          "value": "../openssl-3.0.7/providers/implementations/exchange/ecdh_exch.c"
+        },
+        {
+          "offset": 76351552,
+          "value": "../openssl-3.0.7/providers/implementations/exchange/ecx_exch.c"
+        },
+        {
+          "offset": 76351968,
+          "value": "../openssl-3.0.7/providers/implementations/exchange/kdf_exch.c"
+        },
+        {
+          "offset": 76352488,
+          "value": "../openssl-3.0.7/providers/implementations/kdfs/hkdf.c"
+        },
+        {
+          "offset": 76354024,
+          "value": "../openssl-3.0.7/providers/implementations/kdfs/kbkdf.c"
+        },
+        {
+          "offset": 76355016,
+          "value": "../openssl-3.0.7/providers/implementations/kdfs/krb5kdf.c"
+        },
+        {
+          "offset": 76355656,
+          "value": "../openssl-3.0.7/providers/implementations/kdfs/pbkdf2.c"
+        },
+        {
+          "offset": 76356488,
+          "value": "../openssl-3.0.7/providers/implementations/kdfs/pkcs12kdf.c"
+        },
+        {
+          "offset": 76357256,
+          "value": "../openssl-3.0.7/providers/implementations/kdfs/scrypt.c"
+        },
+        {
+          "offset": 76358152,
+          "value": "../openssl-3.0.7/providers/implementations/kdfs/sshkdf.c"
+        },
+        {
+          "offset": 76358888,
+          "value": "../openssl-3.0.7/providers/implementations/kdfs/sskdf.c"
+        },
+        {
+          "offset": 76359920,
+          "value": "../openssl-3.0.7/providers/implementations/kdfs/tls1_prf.c"
+        },
+        {
+          "offset": 76360552,
+          "value": "../openssl-3.0.7/providers/implementations/kdfs/x942kdf.c"
+        },
+        {
+          "offset": 76361792,
+          "value": "../openssl-3.0.7/providers/implementations/kem/rsa_kem.c"
+        },
+        {
+          "offset": 76362344,
+          "value": "../openssl-3.0.7/providers/implementations/keymgmt/dh_kmgmt.c"
+        },
+        {
+          "offset": 76366152,
+          "value": "../openssl-3.0.7/providers/implementations/keymgmt/dsa_kmgmt.c"
+        },
+        {
+          "offset": 76368576,
+          "value": "../openssl-3.0.7/providers/implementations/keymgmt/ec_kmgmt.c"
+        },
+        {
+          "offset": 76378304,
+          "value": "../openssl-3.0.7/providers/implementations/keymgmt/ecx_kmgmt.c"
+        },
+        {
+          "offset": 76380864,
+          "value": "../openssl-3.0.7/providers/implementations/keymgmt/kdf_legacy_kmgmt.c"
+        },
+        {
+          "offset": 76381024,
+          "value": "../openssl-3.0.7/providers/implementations/keymgmt/mac_legacy_kmgmt.c"
+        },
+        {
+          "offset": 76382624,
+          "value": "../openssl-3.0.7/providers/implementations/keymgmt/rsa_kmgmt.c"
+        },
+        {
+          "offset": 76386704,
+          "value": "../openssl-3.0.7/providers/implementations/macs/blake2_mac_impl.c"
+        },
+        {
+          "offset": 76387440,
+          "value": "../openssl-3.0.7/providers/implementations/macs/blake2_mac_impl.c"
+        },
+        {
+          "offset": 76388184,
+          "value": "../openssl-3.0.7/providers/implementations/macs/cmac_prov.c"
+        },
+        {
+          "offset": 76388792,
+          "value": "../openssl-3.0.7/providers/implementations/macs/gmac_prov.c"
+        },
+        {
+          "offset": 76389440,
+          "value": "../openssl-3.0.7/providers/implementations/macs/hmac_prov.c"
+        },
+        {
+          "offset": 76390224,
+          "value": "../openssl-3.0.7/providers/implementations/macs/kmac_prov.c"
+        },
+        {
+          "offset": 76391400,
+          "value": "../openssl-3.0.7/providers/implementations/macs/poly1305_prov.c"
+        },
+        {
+          "offset": 76391896,
+          "value": "../openssl-3.0.7/providers/implementations/macs/siphash_prov.c"
+        },
+        {
+          "offset": 76392592,
+          "value": "../openssl-3.0.7/providers/implementations/rands/drbg_ctr.c"
+        },
+        {
+          "offset": 76394248,
+          "value": "../openssl-3.0.7/providers/implementations/rands/drbg_hash.c"
+        },
+        {
+          "offset": 76395696,
+          "value": "../openssl-3.0.7/providers/implementations/rands/drbg_hmac.c"
+        },
+        {
+          "offset": 76397216,
+          "value": "../openssl-3.0.7/providers/implementations/rands/seed_src.c"
+        },
+        {
+          "offset": 76397864,
+          "value": "../openssl-3.0.7/providers/implementations/rands/test_rng.c"
+        },
+        {
+          "offset": 76398656,
+          "value": "../openssl-3.0.7/providers/implementations/signature/dsa_sig.c"
+        },
+        {
+          "offset": 76399584,
+          "value": "../openssl-3.0.7/providers/implementations/signature/ecdsa_sig.c"
+        },
+        {
+          "offset": 76400720,
+          "value": "../openssl-3.0.7/providers/implementations/signature/eddsa_sig.c"
+        },
+        {
+          "offset": 76401344,
+          "value": "../openssl-3.0.7/providers/implementations/signature/mac_legacy_sig.c"
+        },
+        {
+          "offset": 76402144,
+          "value": "../openssl-3.0.7/providers/implementations/signature/rsa_sig.c"
+        },
+        {
+          "offset": 76405248,
+          "value": "../openssl-3.0.7/providers/implementations/signature/sm2_sig.c"
+        },
+        {
+          "offset": 76406144,
+          "value": "../openssl-3.0.7/providers/implementations/storemgmt/file_store.c"
+        },
+        {
+          "offset": 76406944,
+          "value": "../openssl-3.0.7/providers/implementations/storemgmt/file_store_any2obj.c"
+        },
+        {
+          "offset": 76407520,
+          "value": "6666666666666666jjjjjjjjjjjjjjjj../openssl-3.0.7/providers/common/der/der_rsa_key.c"
+        },
+        {
+          "offset": 76408016,
+          "value": "../openssl-3.0.7/providers/common/provider_ctx.c"
+        },
+        {
+          "offset": 76408104,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/ciphercommon.c"
+        },
+        {
+          "offset": 76410656,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/ciphercommon_block.c"
+        },
+        {
+          "offset": 76410808,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/ciphercommon_ccm.c"
+        },
+        {
+          "offset": 76411096,
+          "value": "../openssl-3.0.7/providers/implementations/ciphers/ciphercommon_gcm.c"
+        },
+        {
+          "offset": 76411408,
+          "value": "../openssl-3.0.7/providers/implementations/digests/digestcommon.c"
+        },
+        {
+          "offset": 76411776,
+          "value": "../openssl-3.0.7/ssl/record/tls_pad.c"
+        },
+        {
+          "offset": 76416032,
+          "value": "../openssl-3.0.7/crypto/asn1/a_bitstr.c"
+        },
+        {
+          "offset": 76416144,
+          "value": "../openssl-3.0.7/crypto/asn1/a_d2i_fp.c"
+        },
+        {
+          "offset": 76416272,
+          "value": "../openssl-3.0.7/crypto/asn1/a_dup.c"
+        },
+        {
+          "offset": 76416352,
+          "value": "../openssl-3.0.7/crypto/asn1/a_i2d_fp.c"
+        },
+        {
+          "offset": 76416544,
+          "value": "../openssl-3.0.7/crypto/asn1/a_strnid.c"
+        },
+        {
+          "offset": 76417264,
+          "value": "../openssl-3.0.7/crypto/asn1/ameth_lib.c"
+        },
+        {
+          "offset": 76417376,
+          "value": "../openssl-3.0.7/crypto/asn1/evp_asn1.c"
+        },
+        {
+          "offset": 76417824,
+          "value": "../openssl-3.0.7/crypto/asn1/p5_pbe.c"
+        },
+        {
+          "offset": 76418080,
+          "value": "../openssl-3.0.7/crypto/asn1/p5_scrypt.c"
+        },
+        {
+          "offset": 76418848,
+          "value": "../openssl-3.0.7/crypto/asn1/x_int64.c"
+        },
+        {
+          "offset": 76419712,
+          "value": "../openssl-3.0.7/crypto/async/async.c"
+        },
+        {
+          "offset": 76419904,
+          "value": "../openssl-3.0.7/crypto/async/async_wait.c"
+        },
+        {
+          "offset": 76420000,
+          "value": "../openssl-3.0.7/crypto/bio/bf_prefix.c"
+        },
+        {
+          "offset": 76420160,
+          "value": "../openssl-3.0.7/crypto/bio/bio_addr.c"
+        },
+        {
+          "offset": 76420288,
+          "value": "../openssl-3.0.7/crypto/bio/bss_core.c"
+        },
+        {
+          "offset": 76420512,
+          "value": "../openssl-3.0.7/crypto/bio/bss_file.c"
+        },
+        {
+          "offset": 76420960,
+          "value": "../openssl-3.0.7/crypto/bio/bss_mem.c"
+        },
+        {
+          "offset": 76421440,
+          "value": "../openssl-3.0.7/crypto/bio/ossl_core_bio.c"
+        },
+        {
+          "offset": 76421488,
+          "value": "../openssl-3.0.7/crypto/bn/bn_add.c"
+        },
+        {
+          "offset": 76421536,
+          "value": "../openssl-3.0.7/crypto/bn/bn_blind.c"
+        },
+        {
+          "offset": 76421760,
+          "value": "../openssl-3.0.7/crypto/bn/bn_ctx.c"
+        },
+        {
+          "offset": 76421888,
+          "value": "../openssl-3.0.7/crypto/bn/bn_div.c"
+        },
+        {
+          "offset": 76421936,
+          "value": "../openssl-3.0.7/crypto/bn/bn_exp.c"
+        },
+        {
+          "offset": 76422128,
+          "value": "../openssl-3.0.7/crypto/bn/bn_gcd.c"
+        },
+        {
+          "offset": 76422192,
+          "value": "../openssl-3.0.7/crypto/bn/bn_intern.c"
+        },
+        {
+          "offset": 76422272,
+          "value": "../openssl-3.0.7/crypto/bn/bn_mod.c"
+        },
+        {
+          "offset": 76422384,
+          "value": "../openssl-3.0.7/crypto/bn/bn_rand.c"
+        },
+        {
+          "offset": 76422480,
+          "value": "../openssl-3.0.7/crypto/bn/bn_recp.c"
+        },
+        {
+          "offset": 76423232,
+          "value": "../openssl-3.0.7/crypto/bn/rsaz_exp_x2.c"
+        },
+        {
+          "offset": 76423296,
+          "value": "../openssl-3.0.7/crypto/cmac/cmac.c"
+        },
+        {
+          "offset": 76423480,
+          "value": "../openssl-3.0.7/crypto/cmp/cmp_util.c"
+        },
+        {
+          "offset": 76423776,
+          "value": "../openssl-3.0.7/crypto/comp/c_zlib.c"
+        },
+        {
+          "offset": 76424128,
+          "value": "../openssl-3.0.7/crypto/conf/conf_api.c"
+        },
+        {
+          "offset": 76424192,
+          "value": "../openssl-3.0.7/crypto/conf/conf_def.c"
+        },
+        {
+          "offset": 76425056,
+          "value": "../openssl-3.0.7/crypto/conf/conf_ssl.c"
+        },
+        {
+          "offset": 76430080,
+          "value": "../openssl-3.0.7/crypto/dh/dh_ameth.c"
+        },
+        {
+          "offset": 76431008,
+          "value": "../openssl-3.0.7/crypto/dh/dh_asn1.c"
+        },
+        {
+          "offset": 76431736,
+          "value": "../openssl-3.0.7/crypto/dh/dh_backend.c"
+        },
+        {
+          "offset": 76431808,
+          "value": "../openssl-3.0.7/crypto/dh/dh_check.c"
+        },
+        {
+          "offset": 76431936,
+          "value": "../openssl-3.0.7/crypto/dh/dh_gen.c"
+        },
+        {
+          "offset": 76432016,
+          "value": "../openssl-3.0.7/crypto/dh/dh_group_params.c"
+        },
+        {
+          "offset": 76432144,
+          "value": "../openssl-3.0.7/crypto/dh/dh_key.c"
+        },
+        {
+          "offset": 76432288,
+          "value": "../openssl-3.0.7/crypto/dh/dh_lib.c"
+        },
+        {
+          "offset": 76432400,
+          "value": "../openssl-3.0.7/crypto/dh/dh_pmeth.c"
+        },
+        {
+          "offset": 76433216,
+          "value": "../openssl-3.0.7/crypto/dsa/dsa_ameth.c"
+        },
+        {
+          "offset": 76436016,
+          "value": "../openssl-3.0.7/crypto/dsa/dsa_backend.c"
+        },
+        {
+          "offset": 76436096,
+          "value": "../openssl-3.0.7/crypto/dsa/dsa_lib.c"
+        },
+        {
+          "offset": 76436160,
+          "value": "../openssl-3.0.7/crypto/dsa/dsa_ossl.c"
+        },
+        {
+          "offset": 76436288,
+          "value": "../openssl-3.0.7/crypto/dsa/dsa_pmeth.c"
+        },
+        {
+          "offset": 76436800,
+          "value": "../openssl-3.0.7/crypto/dsa/dsa_sign.c"
+        },
+        {
+          "offset": 76491360,
+          "value": "../openssl-3.0.7/crypto/ec/ec_ameth.c"
+        },
+        {
+          "offset": 76492416,
+          "value": "../openssl-3.0.7/crypto/ec/ec_asn1.c"
+        },
+        {
+          "offset": 76495064,
+          "value": "../openssl-3.0.7/crypto/ec/ec_backend.c"
+        },
+        {
+          "offset": 76495616,
+          "value": "../openssl-3.0.7/crypto/ec/ec_check.c"
+        },
+        {
+          "offset": 76495712,
+          "value": "../openssl-3.0.7/crypto/ec/ec_curve.c"
+        },
+        {
+          "offset": 76517632,
+          "value": "../openssl-3.0.7/crypto/ec/ec_key.c"
+        },
+        {
+          "offset": 76518112,
+          "value": "../openssl-3.0.7/crypto/ec/ec_kmeth.c"
+        },
+        {
+          "offset": 76518400,
+          "value": "../openssl-3.0.7/crypto/ec/ec_lib.c"
+        },
+        {
+          "offset": 76519456,
+          "value": "../openssl-3.0.7/crypto/ec/ec_mult.c"
+        },
+        {
+          "offset": 76519616,
+          "value": "../openssl-3.0.7/crypto/ec/ec_oct.c"
+        },
+        {
+          "offset": 76519864,
+          "value": "../openssl-3.0.7/crypto/ec/ec_pmeth.c"
+        },
+        {
+          "offset": 76520512,
+          "value": "../openssl-3.0.7/crypto/ec/ecdh_ossl.c"
+        },
+        {
+          "offset": 76520624,
+          "value": "../openssl-3.0.7/crypto/ec/ecdsa_ossl.c"
+        },
+        {
+          "offset": 76520864,
+          "value": "../openssl-3.0.7/crypto/ec/ecdsa_sign.c"
+        },
+        {
+          "offset": 76520992,
+          "value": "../openssl-3.0.7/crypto/ec/ecdsa_vrf.c"
+        },
+        {
+          "offset": 76521088,
+          "value": "../openssl-3.0.7/crypto/ec/eck_prn.c"
+        },
+        {
+          "offset": 76521440,
+          "value": "../openssl-3.0.7/crypto/ec/ecp_mont.c"
+        },
+        {
+          "offset": 76522240,
+          "value": "../openssl-3.0.7/crypto/ec/ecp_nistz256.c"
+        },
+        {
+          "offset": 76523104,
+          "value": "../openssl-3.0.7/crypto/ec/ecp_oct.c"
+        },
+        {
+          "offset": 76523296,
+          "value": "../openssl-3.0.7/crypto/ec/ecp_smpl.c"
+        },
+        {
+          "offset": 76524256,
+          "value": "../openssl-3.0.7/crypto/ec/ecx_backend.c"
+        },
+        {
+          "offset": 76524400,
+          "value": "../openssl-3.0.7/crypto/ec/ecx_key.c"
+        },
+        {
+          "offset": 76524480,
+          "value": "../openssl-3.0.7/crypto/ec/ecx_meth.c"
+        },
+        {
+          "offset": 76527408,
+          "value": "../openssl-3.0.7/crypto/encode_decode/decoder_lib.c"
+        },
+        {
+          "offset": 76528384,
+          "value": "../openssl-3.0.7/crypto/encode_decode/decoder_meth.c"
+        },
+        {
+          "offset": 76528912,
+          "value": "../openssl-3.0.7/crypto/encode_decode/decoder_pkey.c"
+        },
+        {
+          "offset": 76529088,
+          "value": "../openssl-3.0.7/crypto/encode_decode/encoder_lib.c"
+        },
+        {
+          "offset": 76529984,
+          "value": "../openssl-3.0.7/crypto/encode_decode/encoder_meth.c"
+        },
+        {
+          "offset": 76530520,
+          "value": "../openssl-3.0.7/crypto/encode_decode/encoder_pkey.c"
+        },
+        {
+          "offset": 76530720,
+          "value": "../openssl-3.0.7/crypto/engine/eng_cnf.c"
+        },
+        {
+          "offset": 76530968,
+          "value": "../openssl-3.0.7/crypto/engine/eng_ctrl.c"
+        },
+        {
+          "offset": 76531168,
+          "value": "../openssl-3.0.7/crypto/engine/eng_dyn.c"
+        },
+        {
+          "offset": 76532232,
+          "value": "../openssl-3.0.7/crypto/engine/eng_fat.c"
+        },
+        {
+          "offset": 76532464,
+          "value": "../openssl-3.0.7/crypto/engine/eng_pkey.c"
+        },
+        {
+          "offset": 76532640,
+          "value": "../openssl-3.0.7/crypto/engine/eng_table.c"
+        },
+        {
+          "offset": 76532720,
+          "value": "../openssl-3.0.7/crypto/engine/tb_cipher.c"
+        },
+        {
+          "offset": 76532800,
+          "value": "../openssl-3.0.7/crypto/engine/tb_dh.c"
+        },
+        {
+          "offset": 76532848,
+          "value": "../openssl-3.0.7/crypto/engine/tb_digest.c"
+        },
+        {
+          "offset": 76532928,
+          "value": "../openssl-3.0.7/crypto/engine/tb_dsa.c"
+        },
+        {
+          "offset": 76532976,
+          "value": "../openssl-3.0.7/crypto/engine/tb_eckey.c"
+        },
+        {
+          "offset": 76533024,
+          "value": "../openssl-3.0.7/crypto/engine/tb_rsa.c"
+        },
+        {
+          "offset": 76533504,
+          "value": "../openssl-3.0.7/crypto/evp/asymcipher.c"
+        },
+        {
+          "offset": 76534560,
+          "value": "../openssl-3.0.7/crypto/evp/ctrl_params_translate.c"
+        },
+        {
+          "offset": 76544416,
+          "value": "../openssl-3.0.7/crypto/evp/dh_ctrl.c"
+        },
+        {
+          "offset": 76544896,
+          "value": "../openssl-3.0.7/crypto/evp/dsa_ctrl.c"
+        },
+        {
+          "offset": 76545024,
+          "value": "../openssl-3.0.7/crypto/evp/e_aes.c"
+        },
+        {
+          "offset": 76563776,
+          "value": "6666666666666666jjjjjjjjjjjjjjjj../openssl-3.0.7/crypto/evp/e_aria.c"
+        },
+        {
+          "offset": 76572192,
+          "value": "../openssl-3.0.7/crypto/evp/e_camellia.c"
+        },
+        {
+          "offset": 76578688,
+          "value": "../openssl-3.0.7/crypto/evp/e_chacha20_poly1305.c"
+        },
+        {
+          "offset": 76581024,
+          "value": "../openssl-3.0.7/crypto/evp/e_des3.c"
+        },
+        {
+          "offset": 76584960,
+          "value": "../openssl-3.0.7/crypto/evp/e_rc2.c"
+        },
+        {
+          "offset": 76587136,
+          "value": "6666666666666666jjjjjjjjjjjjjjjj../openssl-3.0.7/crypto/evp/e_rc5.c"
+        },
+        {
+          "offset": 76590848,
+          "value": "../openssl-3.0.7/crypto/evp/ec_ctrl.c"
+        },
+        {
+          "offset": 76594080,
+          "value": "../openssl-3.0.7/crypto/evp/evp_cnf.c"
+        },
+        {
+          "offset": 76598368,
+          "value": "../openssl-3.0.7/crypto/evp/exchange.c"
+        },
+        {
+          "offset": 76598592,
+          "value": "../openssl-3.0.7/crypto/evp/kem.c"
+        },
+        {
+          "offset": 76598816,
+          "value": "../openssl-3.0.7/crypto/evp/keymgmt_lib.c"
+        },
+        {
+          "offset": 76599056,
+          "value": "../openssl-3.0.7/crypto/evp/keymgmt_meth.c"
+        },
+        {
+          "offset": 76601632,
+          "value": "../openssl-3.0.7/crypto/evp/mac_lib.c"
+        },
+        {
+          "offset": 76601776,
+          "value": "../openssl-3.0.7/crypto/evp/mac_meth.c"
+        },
+        {
+          "offset": 76601904,
+          "value": "../openssl-3.0.7/crypto/evp/p_legacy.c"
+        },
+        {
+          "offset": 76602024,
+          "value": "../openssl-3.0.7/crypto/evp/pbe_scrypt.c"
+        },
+        {
+          "offset": 76602144,
+          "value": "../openssl-3.0.7/crypto/evp/pmeth_check.c"
+        },
+        {
+          "offset": 76603296,
+          "value": "../openssl-3.0.7/crypto/ffc/ffc_params.c"
+        },
+        {
+          "offset": 76603560,
+          "value": "../openssl-3.0.7/crypto/ffc/ffc_params_generate.c"
+        },
+        {
+          "offset": 76603648,
+          "value": "../openssl-3.0.7/crypto/ffc/ffc_params_validate.c"
+        },
+        {
+          "offset": 76603776,
+          "value": "../openssl-3.0.7/crypto/hmac/hmac.c"
+        },
+        {
+          "offset": 76606016,
+          "value": "../openssl-3.0.7/crypto/packet.c"
+        },
+        {
+          "offset": 76606144,
+          "value": "../openssl-3.0.7/crypto/param_build.c"
+        },
+        {
+          "offset": 76606496,
+          "value": "../openssl-3.0.7/crypto/params_from_text.c"
+        },
+        {
+          "offset": 76606624,
+          "value": "../openssl-3.0.7/crypto/passphrase.c"
+        },
+        {
+          "offset": 76606976,
+          "value": "../openssl-3.0.7/crypto/provider.c"
+        },
+        {
+          "offset": 76607056,
+          "value": "../openssl-3.0.7/crypto/provider_conf.c"
+        },
+        {
+          "offset": 76607264,
+          "value": "../openssl-3.0.7/crypto/sparse_array.c"
+        },
+        {
+          "offset": 76607344,
+          "value": "6666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\../openssl-3.0.7/crypto/modes/gcm128.c"
+        },
+        {
+          "offset": 76607424,
+          "value": "../openssl-3.0.7/crypto/modes/ocb128.c"
+        },
+        {
+          "offset": 76607536,
+          "value": "../openssl-3.0.7/crypto/modes/siv128.c"
+        },
+        {
+          "offset": 76608976,
+          "value": "../openssl-3.0.7/crypto/pem/pem_all.c"
+        },
+        {
+          "offset": 76610304,
+          "value": "../openssl-3.0.7/crypto/pem/pem_lib.c"
+        },
+        {
+          "offset": 76611072,
+          "value": "../openssl-3.0.7/crypto/pem/pem_oth.c"
+        },
+        {
+          "offset": 76611176,
+          "value": "../openssl-3.0.7/crypto/pem/pem_pk8.c"
+        },
+        {
+          "offset": 76611432,
+          "value": "../openssl-3.0.7/crypto/pem/pem_pkey.c"
+        },
+        {
+          "offset": 76611776,
+          "value": "../openssl-3.0.7/crypto/pem/pvkfmt.c"
+        },
+        {
+          "offset": 76613832,
+          "value": "../openssl-3.0.7/crypto/pkcs12/p12_decr.c"
+        },
+        {
+          "offset": 76613984,
+          "value": "../openssl-3.0.7/crypto/pkcs12/p12_p8e.c"
+        },
+        {
+          "offset": 76614880,
+          "value": "../openssl-3.0.7/crypto/pkcs7/pk7_asn1.c"
+        },
+        {
+          "offset": 76618208,
+          "value": "../openssl-3.0.7/crypto/pkcs7/pk7_doit.c"
+        },
+        {
+          "offset": 76618624,
+          "value": "../openssl-3.0.7/crypto/pkcs7/pk7_lib.c"
+        },
+        {
+          "offset": 76620672,
+          "value": "../openssl-3.0.7/crypto/property/defn_cache.c"
+        },
+        {
+          "offset": 76623840,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_ameth.c"
+        },
+        {
+          "offset": 76626496,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_chk.c"
+        },
+        {
+          "offset": 76626592,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_crpt.c"
+        },
+        {
+          "offset": 76629888,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_gen.c"
+        },
+        {
+          "offset": 76629968,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_none.c"
+        },
+        {
+          "offset": 76630080,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_oaep.c"
+        },
+        {
+          "offset": 76630272,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_sp800_56b_check.c"
+        },
+        {
+          "offset": 76630432,
+          "value": "../openssl-3.0.7/crypto/rsa/rsa_sp800_56b_gen.c"
+        },
+        {
+          "offset": 76634880,
+          "value": "../openssl-3.0.7/crypto/sm2/sm2_crypt.c"
+        },
+        {
+          "offset": 76635232,
+          "value": "../openssl-3.0.7/crypto/sm2/sm2_key.c"
+        },
+        {
+          "offset": 76635312,
+          "value": "../openssl-3.0.7/crypto/sm2/sm2_sign.c"
+        },
+        {
+          "offset": 76640192,
+          "value": "../openssl-3.0.7/crypto/ui/ui_lib.c"
+        },
+        {
+          "offset": 76641056,
+          "value": "../openssl-3.0.7/crypto/ui/ui_util.c"
+        },
+        {
+          "offset": 76641296,
+          "value": "../openssl-3.0.7/crypto/x509/t_x509.c"
+        },
+        {
+          "offset": 76642360,
+          "value": "../openssl-3.0.7/crypto/x509/v3_prn.c"
+        },
+        {
+          "offset": 76642432,
+          "value": "../openssl-3.0.7/crypto/x509/v3_purp.c"
+        },
+        {
+          "offset": 76643104,
+          "value": "../openssl-3.0.7/crypto/x509/v3_utl.c"
+        },
+        {
+          "offset": 76646056,
+          "value": "../openssl-3.0.7/crypto/x509/x509_cmp.c"
+        },
+        {
+          "offset": 76647776,
+          "value": "../openssl-3.0.7/crypto/x509/x509_lu.c"
+        },
+        {
+          "offset": 76648000,
+          "value": "../openssl-3.0.7/crypto/x509/x509_obj.c"
+        },
+        {
+          "offset": 76648160,
+          "value": "../openssl-3.0.7/crypto/x509/x509_req.c"
+        },
+        {
+          "offset": 76648464,
+          "value": "../openssl-3.0.7/crypto/x509/x509_set.c"
+        },
+        {
+          "offset": 76652496,
+          "value": "../openssl-3.0.7/crypto/x509/x509_v3.c"
+        },
+        {
+          "offset": 76652624,
+          "value": "../openssl-3.0.7/crypto/x509/x509_vfy.c"
+        },
+        {
+          "offset": 76653152,
+          "value": "../openssl-3.0.7/crypto/x509/x509_vpm.c"
+        },
+        {
+          "offset": 76653984,
+          "value": "../openssl-3.0.7/crypto/x509/x509name.c"
+        },
+        {
+          "offset": 76654160,
+          "value": "../openssl-3.0.7/crypto/x509/x_all.c"
+        },
+        {
+          "offset": 76654432,
+          "value": "../openssl-3.0.7/crypto/x509/x_crl.c"
+        },
+        {
+          "offset": 76655840,
+          "value": "../openssl-3.0.7/crypto/x509/x_name.c"
+        },
+        {
+          "offset": 76656640,
+          "value": "../openssl-3.0.7/crypto/x509/x_pubkey.c"
+        },
+        {
+          "offset": 76657472,
+          "value": "../openssl-3.0.7/crypto/x509/x_req.c"
+        },
+        {
+          "offset": 76658144,
+          "value": "../openssl-3.0.7/crypto/x509/x_x509.c"
+        },
+        {
+          "offset": 76659424,
+          "value": "../openssl-3.0.7/providers/common/securitycheck.c"
+        },
+        {
+          "offset": 76659712,
+          "value": "../openssl-3.0.7/providers/implementations/rands/drbg.c"
+        },
+        {
+          "offset": 76666080,
+          "value": "../openssl-3.0.7/crypto/asn1/a_digest.c"
+        },
+        {
+          "offset": 76666144,
+          "value": "../openssl-3.0.7/crypto/asn1/a_mbstr.c"
+        },
+        {
+          "offset": 76666240,
+          "value": "../openssl-3.0.7/crypto/asn1/a_sign.c"
+        },
+        {
+          "offset": 76666400,
+          "value": "../openssl-3.0.7/crypto/asn1/a_strex.c"
+        },
+        {
+          "offset": 76666928,
+          "value": "../openssl-3.0.7/crypto/asn1/a_time.c"
+        },
+        {
+          "offset": 76667584,
+          "value": "../openssl-3.0.7/crypto/asn1/a_verify.c"
+        },
+        {
+          "offset": 76672832,
+          "value": "../openssl-3.0.7/crypto/asn1/asn_moid.c"
+        },
+        {
+          "offset": 76672928,
+          "value": "../openssl-3.0.7/crypto/asn1/asn_mstbl.c"
+        },
+        {
+          "offset": 76673144,
+          "value": "../openssl-3.0.7/crypto/asn1/d2i_pr.c"
+        },
+        {
+          "offset": 76673280,
+          "value": "../openssl-3.0.7/crypto/asn1/f_int.c"
+        },
+        {
+          "offset": 76673376,
+          "value": "../openssl-3.0.7/crypto/asn1/i2d_evp.c"
+        },
+        {
+          "offset": 76673976,
+          "value": "../openssl-3.0.7/crypto/asn1/t_pkey.c"
+        },
+        {
+          "offset": 76674152,
+          "value": "../openssl-3.0.7/crypto/asn1/tasn_prn.c"
+        },
+        {
+          "offset": 76679712,
+          "value": "../openssl-3.0.7/crypto/bio/bf_readbuff.c"
+        },
+        {
+          "offset": 76696832,
+          "value": "../openssl-3.0.7/crypto/bn/bn_exp2.c"
+        },
+        {
+          "offset": 76696960,
+          "value": "../openssl-3.0.7/crypto/bn/bn_prime.c"
+        },
+        {
+          "offset": 76701408,
+          "value": "../openssl-3.0.7/crypto/bn/bn_rsa_fips186_4.c"
+        },
+        {
+          "offset": 76701600,
+          "value": "../openssl-3.0.7/crypto/bn/bn_sqrt.c"
+        },
+        {
+          "offset": 76722144,
+          "value": "../openssl-3.0.7/crypto/ec/ec2_oct.c"
+        },
+        {
+          "offset": 76722336,
+          "value": "../openssl-3.0.7/crypto/ec/ec2_smpl.c"
+        },
+        {
+          "offset": 76727224,
+          "value": "../openssl-3.0.7/crypto/err/err_prn.c"
+        },
+        {
+          "offset": 76727264,
+          "value": "../openssl-3.0.7/crypto/evp/bio_enc.c"
+        },
+        {
+          "offset": 76727648,
+          "value": "../openssl-3.0.7/crypto/evp/encode.c"
+        },
+        {
+          "offset": 76728224,
+          "value": "../openssl-3.0.7/crypto/evp/evp_key.c"
+        },
+        {
+          "offset": 76728368,
+          "value": "../openssl-3.0.7/crypto/evp/evp_pkey.c"
+        },
+        {
+          "offset": 76728496,
+          "value": "../openssl-3.0.7/crypto/evp/p_sign.c"
+        },
+        {
+          "offset": 76728576,
+          "value": "../openssl-3.0.7/crypto/evp/p_verify.c"
+        },
+        {
+          "offset": 76728672,
+          "value": "../openssl-3.0.7/crypto/http/http_client.c"
+        },
+        {
+          "offset": 76730152,
+          "value": "../openssl-3.0.7/crypto/http/http_lib.c"
+        },
+        {
+          "offset": 76730352,
+          "value": "../openssl-3.0.7/crypto/pkcs7/pk7_attr.c"
+        },
+        {
+          "offset": 76730496,
+          "value": "../openssl-3.0.7/crypto/x509/pcy_cache.c"
+        },
+        {
+          "offset": 76730608,
+          "value": "../openssl-3.0.7/crypto/x509/pcy_data.c"
+        },
+        {
+          "offset": 76730688,
+          "value": "../openssl-3.0.7/crypto/x509/pcy_tree.c"
+        },
+        {
+          "offset": 76731096,
+          "value": "../openssl-3.0.7/crypto/x509/v3_addr.c"
+        },
+        {
+          "offset": 76732480,
+          "value": "../openssl-3.0.7/crypto/x509/v3_asid.c"
+        },
+        {
+          "offset": 76733584,
+          "value": "../openssl-3.0.7/crypto/x509/v3_bcons.c"
+        },
+        {
+          "offset": 76734040,
+          "value": "../openssl-3.0.7/crypto/x509/v3_cpols.c"
+        },
+        {
+          "offset": 76735520,
+          "value": "../openssl-3.0.7/crypto/x509/v3_crld.c"
+        },
+        {
+          "offset": 76738752,
+          "value": "../openssl-3.0.7/crypto/x509/v3_info.c"
+        },
+        {
+          "offset": 76739456,
+          "value": "../openssl-3.0.7/crypto/x509/v3_lib.c"
+        },
+        {
+          "offset": 76739608,
+          "value": "../openssl-3.0.7/crypto/x509/v3_ncons.c"
+        },
+        {
+          "offset": 76740272,
+          "value": "../openssl-3.0.7/crypto/x509/v3_pci.c"
+        },
+        {
+          "offset": 76741040,
+          "value": "../openssl-3.0.7/crypto/x509/v3_pcons.c"
+        },
+        {
+          "offset": 76741792,
+          "value": "../openssl-3.0.7/crypto/x509/v3_pmaps.c"
+        },
+        {
+          "offset": 76742304,
+          "value": "../openssl-3.0.7/crypto/x509/v3_san.c"
+        },
+        {
+          "offset": 76743520,
+          "value": "../openssl-3.0.7/crypto/x509/v3_skid.c"
+        },
+        {
+          "offset": 76743880,
+          "value": "../openssl-3.0.7/crypto/x509/v3_sxnet.c"
+        },
+        {
+          "offset": 76744512,
+          "value": "../openssl-3.0.7/crypto/x509/v3_tlsf.c"
+        },
+        {
+          "offset": 76744864,
+          "value": "../openssl-3.0.7/crypto/x509/v3_utf8.c"
+        },
+        {
+          "offset": 76745120,
+          "value": "../openssl-3.0.7/crypto/x509/x509_trust.c"
+        },
+        {
+          "offset": 76745664,
+          "value": "../openssl-3.0.7/crypto/asn1/asn1_gen.c"
+        },
+        {
+          "offset": 76747200,
+          "value": "../openssl-3.0.7/crypto/bio/bf_buff.c"
+        },
+        {
+          "offset": 76747520,
+          "value": "../openssl-3.0.7/crypto/bio/bss_conn.c"
+        },
+        {
+          "offset": 76748000,
+          "value": "../openssl-3.0.7/crypto/bn/bn_gf2m.c"
+        },
+        {
+          "offset": 76748224,
+          "value": "../openssl-3.0.7/crypto/ct/ct_x509v3.c"
+        },
+        {
+          "offset": 76748712,
+          "value": "../openssl-3.0.7/crypto/ocsp/v3_ocsp.c"
+        },
+        {
+          "offset": 76749664,
+          "value": "../openssl-3.0.7/crypto/x509/pcy_node.c"
+        },
+        {
+          "offset": 76751232,
+          "value": "../openssl-3.0.7/crypto/x509/v3_akid.c"
+        },
+        {
+          "offset": 76751488,
+          "value": "../openssl-3.0.7/crypto/x509/v3_bitst.c"
+        },
+        {
+          "offset": 76752224,
+          "value": "../openssl-3.0.7/crypto/x509/v3_conf.c"
+        },
+        {
+          "offset": 76752672,
+          "value": "../openssl-3.0.7/crypto/x509/v3_enum.c"
+        },
+        {
+          "offset": 76753184,
+          "value": "../openssl-3.0.7/crypto/x509/v3_extku.c"
+        },
+        {
+          "offset": 76753632,
+          "value": "../openssl-3.0.7/crypto/x509/v3_ia5.c"
+        },
+        {
+          "offset": 76754976,
+          "value": "../openssl-3.0.7/crypto/x509/v3_ist.c"
+        },
+        {
+          "offset": 76755576,
+          "value": "../openssl-3.0.7/crypto/asn1/f_string.c"
+        },
+        {
+          "offset": 76755632,
+          "value": "../openssl-3.0.7/crypto/ct/ct_oct.c"
+        },
+        {
+          "offset": 76756096,
+          "value": "../openssl-3.0.7/crypto/ct/ct_sct.c"
+        },
+        {
+          "offset": 76756336,
+          "value": "../openssl-3.0.7/crypto/ct/ct_sct_ctx.c"
+        },
+        {
+          "offset": 76756416,
+          "value": "../openssl-3.0.7/crypto/ct/ct_vfy.c"
+        },
+        {
+          "offset": 76759552,
+          "value": "../openssl-3.0.7/crypto/ct/ct_log.c"
+        },
+        {
+          "offset": 76759888,
+          "value": "../openssl-3.0.7/crypto/ct/ct_b64.c"
+        },
+        {
+          "offset": 76798468,
+          "value": "OpenSSL 3.0.7 1 Nov 2022"
+        },
+        {
+          "offset": 76820609,
+          "value": "OpenSSL 3.0.7 1 Nov 2022"
+        }
+      ],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    },
+    {
+      "name": "libssh",
+      "versionCandidate": "0.10.4",
+      "interpretation": "version and backend identifiers",
+      "evidence": [
+        {
+          "offset": 76764654,
+          "value": "SSH-2.0-libssh_0.10.4"
+        },
+        {
+          "offset": 76776488,
+          "value": "0.10.4/openssl/zlib"
+        }
+      ],
+      "exactRevisionConfirmed": false,
+      "localPatchesConfirmed": false
+    }
+  ],
+  "limits": [
+    "Version text and build paths do not establish a complete source revision or absence of local patches.",
+    "Bare strings can belong to other libraries or header versions; candidates must not be treated as confirmed.",
+    "Absence of a version string does not establish absence of a dependency."
+  ]
+}

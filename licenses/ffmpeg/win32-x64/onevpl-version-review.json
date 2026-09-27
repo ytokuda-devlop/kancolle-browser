@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-09-24T01:24:04.572Z",
+  "url": "https://raw.githubusercontent.com/intel/libvpl/main/CHANGELOG.md",
+  "snapshot": "onevpl-changelog-2026-09-24.md",
+  "sha256": "d24069a77ae1e5f0722df2279713cc31df5b253beb89a96f48ca75549a147089",
+  "conclusion": "API version 2.9 does not identify the linked dispatcher product release or exact revision; build provenance is required.",
+  "exactRevisionConfirmed": false
+}

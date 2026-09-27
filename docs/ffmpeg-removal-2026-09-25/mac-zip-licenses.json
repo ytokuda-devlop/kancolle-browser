@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-09-25T13:58:12.546Z",
+  "artifact": "艦娘は今日もお仕事です（仮）-1.0.0-mac.zip",
+  "sha256": "c6ab605b6eaa507c358ea2be265ed80523eb6f45ddc1833ff78494fe6d416b59",
+  "payloads": [
+    {
+      "fileCount": 10,
+      "files": [
+        {
+          "path": "DISTRIBUTION-NOTES.txt",
+          "bytes": 2898,
+          "sha256": "19754c9f4b5571e065647d9b830ffba01178102e7a945e3af1a72626ccbdc2d3"
+        },
+        {
+          "path": "electron-LICENSE.txt",
+          "bytes": 1096,
+          "sha256": "5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d"
+        },
+        {
+          "path": "LICENSES.chromium.html",
+          "bytes": 20111206,
+          "sha256": "4cbde8e3e7b29f451c78a44491fb32e2202884826fef47786a9cda5a36110525"
+        },
+        {
+          "path": "react-LICENSE.txt",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "path": "react-dom-LICENSE.txt",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "path": "scheduler-LICENSE.txt",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "path": "npm/js-tokens-LICENSE.txt",
+          "bytes": 1103,
+          "sha256": "2213d91c606205c71eb051a199478cdc2adde945893404d7f1421436dd6d5cc1"
+        },
+        {
+          "path": "npm/loose-envify-LICENSE.txt",
+          "bytes": 1100,
+          "sha256": "4eb7543b08d955a6d23fcc224601d43ff566e775be918805e26210d7f6eb4893"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1072,
+          "sha256": "8d45dbb64725f1e576857001fefd33949abeb128e605530c19022595773f820c"
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.md",
+          "bytes": 5377,
+          "sha256": "2b912c9e25b6c0dc2d2830980a82b3d13f5e37c1cfea995b9bb9d1e4e55e400f"
+        }
+      ],
+      "recordingFfmpegAbsent": true
+    }
+  ],
+  "scope": "Selected license file inclusion, byte equality and absence of recording FFmpeg; not full license/source clearance."
+}

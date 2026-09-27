@@ -1,0 +1,69 @@
+配布ライセンス方針
+更新日: 2026-09-23
+
+配布対象
+  macOS、Windows 11。
+  macOS: x64（Intel搭載Mac）。今回の対応ソース確保作業では対象外。
+  arm64はOSを問わず今バージョン非対応。
+  Windows 11: x64。
+  macOSの最低対応バージョンは未確定。
+  OSの選定は、各環境での動作検証が完了したことを意味しない。
+
+公開先
+  アプリはGitHub Releasesで公開する。
+  対応ソースも同じリリースの添付ファイルとして提供する計画とする。
+  公開リポジトリ、リリースタグ、各ファイルの具体的なURLは公開準備時に記録する。
+  詳細と未完了の作業はFFmpeg-SOURCE.txtを参照。
+
+現在のソースコード構成を維持する。
+  アプリはffmpeg-staticを直接requireし、FFmpeg実行ファイルを
+  child_process.spawn()で別プロセスとして起動する。
+
+構成変更に関する決定（2026-09-23）
+  FFmpegを独立した外部プログラムとして扱うための追加の構成変更は不要とする。
+  根拠は、electron/services/mediaService.jsが既に同梱FFmpegを別プロセスで
+  起動していること、およびffmpeg-staticを含む結合作品をGPL条件で配布する
+  方針を採用していることである。同梱と別プロセス実行は両立する。
+  ffmpeg-staticへの依存を外す変更や、ユーザーにFFmpegの別途インストールを
+  求める変更は行わない。対応ソース提供等の配布条件への対応は引き続き行う。
+
+ライセンスの適用
+  独自ソースコードのMITライセンスと著作権表示を維持する。
+  ffmpeg-static 5.3.0はGPL-3.0-or-laterである。
+  今回採用する配布方針として、アプリとffmpeg-staticの結合作品を
+  GPL-3.0-or-laterの条件で提供する。これは直接requireする構成についての
+  保守的な配布方針であり、すべての同梱物のライセンスを書き換えるものではない。
+  配布物全体を「MITのみ」と表示しない。
+  Electron、React等の第三者コンポーネントの個別条件・表示も保持する。
+
+  FFmpeg実行ファイルには、そのビルドのライセンスが適用される。
+  現在のmacOSローカル記録はGPL version 3 or laterを示す。
+  Windows 11 x64の展開済みアプリ内のバイナリでもGPL version 3 or laterを確認。
+  実行記録はffmpeg/win32-x64/capture.jsonを参照。最終配布物の照合は別途行う。
+
+配布に必要な資料
+  GPL-3.0.txt、ffmpeg-static-GPL-3.0.txtと、各コンポーネントの既存の
+  著作権・許諾・無保証表示を収録する。ライセンス原文は変更しない。
+  アプリの結合作品について、配布版の独自コード、ffmpeg-static、および
+  必要なビルド・インストール用スクリプト等を含む完全な対応ソースを提供する。
+  FFmpegと組込みライブラリの対応ソースについてはFFmpeg-SOURCE.txtを参照。
+  GPL対象部分に対して、GPLで認められる権利を制限する追加条件を課さない。
+
+関連ファイル（このディレクトリからの相対パス）
+  GPL-3.0.txt
+  ffmpeg-static-GPL-3.0.txt
+  FFmpeg-SOURCE.txt
+  ffmpeg-build-configuration.txt
+  独自コードのLICENSEとTHIRD_PARTY_NOTICES.mdは、ソースツリーでは親
+  ディレクトリ、現在のパッケージ設定では配布物のこのディレクトリに収録する。
+
+根拠
+  GNU GPLv3（特に第1、4、5、6、10条）:
+  https://www.gnu.org/licenses/gpl-3.0.html
+  GNU GPL FAQ（作品の結合と単なる同梱の区別）:
+  https://www.gnu.org/licenses/gpl-faq.html#MereAggregation
+  MITライセンス:
+  https://opensource.org/license/mit
+
+このファイルは配布方針の記録であり、対応ソースの確保や最終成果物の監査が
+完了したことを示すものではない。

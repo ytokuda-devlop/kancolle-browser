@@ -1,0 +1,290 @@
+[
+  {
+    "name": ".clang-format",
+    "path": "deps/nbytes/.clang-format",
+    "sha": "59d0684df39c9c7c168e2ac362613ec9edffb359",
+    "size": 41,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/.clang-format?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/.clang-format",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/59d0684df39c9c7c168e2ac362613ec9edffb359",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/.clang-format",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/.clang-format?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/59d0684df39c9c7c168e2ac362613ec9edffb359",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/.clang-format"
+    }
+  },
+  {
+    "name": ".gitignore",
+    "path": "deps/nbytes/.gitignore",
+    "sha": "f1a825f2a0f689401ad9ab46cb9c8982134f4532",
+    "size": 24,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/.gitignore?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/.gitignore",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/f1a825f2a0f689401ad9ab46cb9c8982134f4532",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/.gitignore?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/f1a825f2a0f689401ad9ab46cb9c8982134f4532",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/.gitignore"
+    }
+  },
+  {
+    "name": ".python-version",
+    "path": "deps/nbytes/.python-version",
+    "sha": "e4fba2183587225f216eeada4c78dfab6b2e65f5",
+    "size": 5,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/.python-version?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/.python-version",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/e4fba2183587225f216eeada4c78dfab6b2e65f5",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/.python-version",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/.python-version?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/e4fba2183587225f216eeada4c78dfab6b2e65f5",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/.python-version"
+    }
+  },
+  {
+    "name": ".release-please-manifest.json",
+    "path": "deps/nbytes/.release-please-manifest.json",
+    "sha": "88f7c73eadc71b75f358a9ef59bf47b67d824471",
+    "size": 19,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/.release-please-manifest.json?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/.release-please-manifest.json",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/88f7c73eadc71b75f358a9ef59bf47b67d824471",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/.release-please-manifest.json",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/.release-please-manifest.json?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/88f7c73eadc71b75f358a9ef59bf47b67d824471",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/.release-please-manifest.json"
+    }
+  },
+  {
+    "name": "BUILD.gn",
+    "path": "deps/nbytes/BUILD.gn",
+    "sha": "c1db79d0e15cef1b124afed0f8bb910ac7d1e4e1",
+    "size": 635,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/BUILD.gn?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/BUILD.gn",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/c1db79d0e15cef1b124afed0f8bb910ac7d1e4e1",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/BUILD.gn",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/BUILD.gn?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/c1db79d0e15cef1b124afed0f8bb910ac7d1e4e1",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/BUILD.gn"
+    }
+  },
+  {
+    "name": "CHANGELOG.md",
+    "path": "deps/nbytes/CHANGELOG.md",
+    "sha": "5a740eb23506678cd72f021c82054b955ab619fc",
+    "size": 604,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/CHANGELOG.md?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/CHANGELOG.md",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/5a740eb23506678cd72f021c82054b955ab619fc",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/CHANGELOG.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/CHANGELOG.md?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/5a740eb23506678cd72f021c82054b955ab619fc",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/CHANGELOG.md"
+    }
+  },
+  {
+    "name": "CMakeLists.txt",
+    "path": "deps/nbytes/CMakeLists.txt",
+    "sha": "b3d7c897b91ed4448685b683d25913f17b002ca0",
+    "size": 1697,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/CMakeLists.txt?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/CMakeLists.txt",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/b3d7c897b91ed4448685b683d25913f17b002ca0",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/CMakeLists.txt",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/CMakeLists.txt?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/b3d7c897b91ed4448685b683d25913f17b002ca0",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/CMakeLists.txt"
+    }
+  },
+  {
+    "name": "LICENSE",
+    "path": "deps/nbytes/LICENSE",
+    "sha": "83c1fb9f1d90c4b4859858aa3fbe161ce2440145",
+    "size": 1064,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/LICENSE?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/LICENSE",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/83c1fb9f1d90c4b4859858aa3fbe161ce2440145",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/LICENSE",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/LICENSE?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/83c1fb9f1d90c4b4859858aa3fbe161ce2440145",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/LICENSE"
+    }
+  },
+  {
+    "name": "README.md",
+    "path": "deps/nbytes/README.md",
+    "sha": "9ff412adb305608755948c85e8ff0015faa40499",
+    "size": 240,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/README.md?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/README.md",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/9ff412adb305608755948c85e8ff0015faa40499",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/README.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/README.md?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/9ff412adb305608755948c85e8ff0015faa40499",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/README.md"
+    }
+  },
+  {
+    "name": "include",
+    "path": "deps/nbytes/include",
+    "sha": "31ac34ed79b413d80f8033229bcf8565c8b8a696",
+    "size": 0,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/include?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/tree/v24.18.1/deps/nbytes/include",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/trees/31ac34ed79b413d80f8033229bcf8565c8b8a696",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/include?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/trees/31ac34ed79b413d80f8033229bcf8565c8b8a696",
+      "html": "https://github.com/nodejs/node/tree/v24.18.1/deps/nbytes/include"
+    }
+  },
+  {
+    "name": "nbytes.gyp",
+    "path": "deps/nbytes/nbytes.gyp",
+    "sha": "2b369565a282af853f39f3779c3713d29c74a087",
+    "size": 325,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/nbytes.gyp?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/nbytes.gyp",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/2b369565a282af853f39f3779c3713d29c74a087",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/nbytes.gyp",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/nbytes.gyp?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/2b369565a282af853f39f3779c3713d29c74a087",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/nbytes.gyp"
+    }
+  },
+  {
+    "name": "nbytes.pc.in",
+    "path": "deps/nbytes/nbytes.pc.in",
+    "sha": "24119b190e69e68c0ca563e8fe151711f118cf01",
+    "size": 298,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/nbytes.pc.in?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/nbytes.pc.in",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/24119b190e69e68c0ca563e8fe151711f118cf01",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/nbytes.pc.in",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/nbytes.pc.in?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/24119b190e69e68c0ca563e8fe151711f118cf01",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/nbytes.pc.in"
+    }
+  },
+  {
+    "name": "pyproject.toml",
+    "path": "deps/nbytes/pyproject.toml",
+    "sha": "5e107c7fcd9e1a01837b9aa9d525efeabbfd425e",
+    "size": 1002,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/pyproject.toml?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/pyproject.toml",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/5e107c7fcd9e1a01837b9aa9d525efeabbfd425e",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/pyproject.toml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/pyproject.toml?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/5e107c7fcd9e1a01837b9aa9d525efeabbfd425e",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/pyproject.toml"
+    }
+  },
+  {
+    "name": "release-please-config.json",
+    "path": "deps/nbytes/release-please-config.json",
+    "sha": "079304597b6d88d54c952c348f6855af46be0298",
+    "size": 157,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/release-please-config.json?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/release-please-config.json",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/079304597b6d88d54c952c348f6855af46be0298",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/release-please-config.json",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/release-please-config.json?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/079304597b6d88d54c952c348f6855af46be0298",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/release-please-config.json"
+    }
+  },
+  {
+    "name": "src",
+    "path": "deps/nbytes/src",
+    "sha": "cfa38084604df3205f8b5f269c3313dd46f02862",
+    "size": 0,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/src?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/tree/v24.18.1/deps/nbytes/src",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/trees/cfa38084604df3205f8b5f269c3313dd46f02862",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/src?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/trees/cfa38084604df3205f8b5f269c3313dd46f02862",
+      "html": "https://github.com/nodejs/node/tree/v24.18.1/deps/nbytes/src"
+    }
+  },
+  {
+    "name": "tests",
+    "path": "deps/nbytes/tests",
+    "sha": "9ee11d4ea8c8d4c1c22e0fc4db406be030bf853a",
+    "size": 0,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/tests?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/tree/v24.18.1/deps/nbytes/tests",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/trees/9ee11d4ea8c8d4c1c22e0fc4db406be030bf853a",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/tests?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/trees/9ee11d4ea8c8d4c1c22e0fc4db406be030bf853a",
+      "html": "https://github.com/nodejs/node/tree/v24.18.1/deps/nbytes/tests"
+    }
+  },
+  {
+    "name": "tools",
+    "path": "deps/nbytes/tools",
+    "sha": "d041c69f3f29ddd22bac9b88e955a9292e5f2cf3",
+    "size": 0,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/tools?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/tree/v24.18.1/deps/nbytes/tools",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/trees/d041c69f3f29ddd22bac9b88e955a9292e5f2cf3",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/tools?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/trees/d041c69f3f29ddd22bac9b88e955a9292e5f2cf3",
+      "html": "https://github.com/nodejs/node/tree/v24.18.1/deps/nbytes/tools"
+    }
+  },
+  {
+    "name": "unofficial.gni",
+    "path": "deps/nbytes/unofficial.gni",
+    "sha": "2acea0d5204d04144a939c6a495f2bd14a749801",
+    "size": 817,
+    "url": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/unofficial.gni?ref=v24.18.1",
+    "html_url": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/unofficial.gni",
+    "git_url": "https://api.github.com/repos/nodejs/node/git/blobs/2acea0d5204d04144a939c6a495f2bd14a749801",
+    "download_url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/unofficial.gni",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nodejs/node/contents/deps/nbytes/unofficial.gni?ref=v24.18.1",
+      "git": "https://api.github.com/repos/nodejs/node/git/blobs/2acea0d5204d04144a939c6a495f2bd14a749801",
+      "html": "https://github.com/nodejs/node/blob/v24.18.1/deps/nbytes/unofficial.gni"
+    }
+  }
+]

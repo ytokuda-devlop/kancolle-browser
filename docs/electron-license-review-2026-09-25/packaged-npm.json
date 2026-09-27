@@ -1,0 +1,56 @@
+[
+  {
+    "platform": "macOS",
+    "archive": "release/electron-license-review/mac/KancolleBrowser.app/Contents/Resources/app.asar",
+    "asarSha256": "2e56e53f6938f94c2182379817f64a952c83f45fe592bf12115527d9e8510b55",
+    "packages": [
+      [
+        "js-tokens",
+        "4.0.0"
+      ],
+      [
+        "loose-envify",
+        "1.4.0"
+      ],
+      [
+        "react",
+        "18.3.1"
+      ],
+      [
+        "react-dom",
+        "18.3.1"
+      ],
+      [
+        "scheduler",
+        "0.23.2"
+      ]
+    ]
+  },
+  {
+    "platform": "Windows",
+    "archive": "release/electron-license-review-windows/win-unpacked/resources/app.asar",
+    "asarSha256": "2e56e53f6938f94c2182379817f64a952c83f45fe592bf12115527d9e8510b55",
+    "packages": [
+      [
+        "js-tokens",
+        "4.0.0"
+      ],
+      [
+        "loose-envify",
+        "1.4.0"
+      ],
+      [
+        "react",
+        "18.3.1"
+      ],
+      [
+        "react-dom",
+        "18.3.1"
+      ],
+      [
+        "scheduler",
+        "0.23.2"
+      ]
+    ]
+  }
+]

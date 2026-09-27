@@ -1,67 +1,49 @@
 配布ライセンス方針
-更新日: 2026-09-23
+更新日: 2026-09-26
+対象構成: MediaRecorderによるWebM保存（録画変換用FFmpegを削除した版）
 
-配布対象
-  macOS、Windows 11。
-  macOS: arm64（Apple Silicon搭載Mac）、x64（Intel搭載Mac）の両方。
-  Windows 11: x64。
-  macOSの最低対応バージョンは未確定。
-  OSの選定は、各環境での動作検証が完了したことを意味しない。
-
-公開先
-  アプリはGitHub Releasesで公開する。
-  対応ソースも同じリリースの添付ファイルとして提供する計画とする。
-  公開リポジトリ、リリースタグ、各ファイルの具体的なURLは公開準備時に記録する。
-  詳細と未完了の作業はFFmpeg-SOURCE.txtを参照。
-
-現在のソースコード構成を維持する。
-  アプリはffmpeg-staticを直接requireし、FFmpeg実行ファイルを
-  child_process.spawn()で別プロセスとして起動する。
-
-構成変更に関する決定（2026-09-23）
-  FFmpegを独立した外部プログラムとして扱うための追加の構成変更は不要とする。
-  根拠は、electron/services/mediaService.jsが既に同梱FFmpegを別プロセスで
-  起動していること、およびffmpeg-staticを含む結合作品をGPL条件で配布する
-  方針を採用していることである。同梱と別プロセス実行は両立する。
-  ffmpeg-staticへの依存を外す変更や、ユーザーにFFmpegの別途インストールを
-  求める変更は行わない。対応ソース提供等の配布条件への対応は引き続き行う。
+配布対象・公開先
+  macOS x64（Intel）、Windows 11 x64。arm64は今バージョン非対応。
+  公開先はGitHub Releases。未署名版のみを配布し、署名版は作成しない。
+  公開・全OSの最終成果物監査は別途行う。
+  macOSでの録画・音声同期・シークは利用者による確認済み。
+  この動作確認はライセンス監査の完了を意味しない。
 
 ライセンスの適用
-  独自ソースコードのMITライセンスと著作権表示を維持する。
-  ffmpeg-static 5.3.0はGPL-3.0-or-laterである。
-  今回採用する配布方針として、アプリとffmpeg-staticの結合作品を
-  GPL-3.0-or-laterの条件で提供する。これは直接requireする構成についての
-  保守的な配布方針であり、すべての同梱物のライセンスを書き換えるものではない。
-  配布物全体を「MITのみ」と表示しない。
-  Electron、React等の第三者コンポーネントの個別条件・表示も保持する。
+  アプリ独自ソースコードのMITライセンスと著作権表示を維持する。
+  ffmpeg-staticへの依存・require・専用同梱設定と、別プロセスのFFmpegによる
+  MP4変換を削除した。この結合を理由に採用していたアプリ結合作品の
+  GPL-3.0-or-later配布方針は、この新構成には適用しない。
+  Electron、Chromium、Node.js、React等の第三者コンポーネントは各自の条件に従う。
+  配布物の全コンポーネントがMITであると表示しない。
 
-  FFmpeg実行ファイルには、そのビルドのライセンスが適用される。
-  現在のmacOSローカル記録はGPL version 3 or laterを示す。
-  Windows 11向けバイナリのライセンスは、実際の配布バイナリで確認する。
+削除した部品に関する扱い
+  録画変換用FFmpeg、ffmpeg-static、およびその実行ファイルに静的リンクされていた
+  x264・x265等の対応ソース確保・提供作業は、それらを含まない新構成では対象外。
+  これは旧版の対応ソース準備が完了したという意味ではない。
+  旧版を配布した場合の条件や、リポジトリに保管する第三者ソースの条件は維持する。
 
-配布に必要な資料
-  GPL-3.0.txt、ffmpeg-static-GPL-3.0.txtと、各コンポーネントの既存の
-  著作権・許諾・無保証表示を収録する。ライセンス原文は変更しない。
-  アプリの結合作品について、配布版の独自コード、ffmpeg-static、および
-  必要なビルド・インストール用スクリプト等を含む完全な対応ソースを提供する。
-  FFmpegと組込みライブラリの対応ソースについてはFFmpeg-SOURCE.txtを参照。
-  GPL対象部分に対して、GPLで認められる権利を制限する追加条件を課さない。
+Electron内蔵FFmpeg
+  Electron内のlibffmpeg.dylib／ffmpeg.dllは削除対象ではない。
+  Electronが提供するLICENSES.chromium.htmlを改変せず収録する。
+  実際のElectronビルドに含まれる部品・適用条件・必要な通知と対応ソース提供は
+  最終成果物の監査で引き続き確認する。包括通知の収録だけで完了としない。
+  Mantle・ReactiveObjC・Squirrelの固定リビジョンと通知を確認し、原文を追加した。
+  Electron内蔵FFmpegのLGPL構成と対応リビジョン、Windows StdUtilsの出典も特定済み。
+  詳細とソース提供の残作業はELECTRON-SOURCES.txtを参照する。
+  WindowsのUAC・nsis7z等の追加原文と版別の検証結果はwindows/SOURCES.txtを参照。
+  WinShellの再配布条件、elevate.exeの対応ソース由来、nsis7zの
+  ソース提供・交換方法の確認は未完了。新しい通知の収録を配布準備完了と扱わない。
 
-関連ファイル（このディレクトリからの相対パス）
-  GPL-3.0.txt
-  ffmpeg-static-GPL-3.0.txt
-  FFmpeg-SOURCE.txt
-  ffmpeg-build-configuration.txt
-  独自コードのLICENSEとTHIRD_PARTY_NOTICES.mdは、ソースツリーでは親
-  ディレクトリ、現在のパッケージ設定では配布物のこのディレクトリに収録する。
+収録資料と検証
+  ルートLICENSE、THIRD_PARTY_NOTICES.mdと、package.jsonの
+  build.extraResourcesに明示した現行ライセンス資料をresources/licensesへ収録する。
+  旧録画変換用FFmpegのGPL本文、ソース調査記録、専用依存通知、開発専用ツールの通知は
+  今回の配布対象から外す。旧資料は調査履歴としてソースツリーに保持する。
+  再ビルド時は資料の一致と、ffmpeg-static・録画変換用実行ファイルの不在を検証する。
+  この方針文書は公開承認や最終成果物の包括的なライセンス監査完了を示さない。
 
-根拠
-  GNU GPLv3（特に第1、4、5、6、10条）:
-  https://www.gnu.org/licenses/gpl-3.0.html
-  GNU GPL FAQ（作品の結合と単なる同梱の区別）:
-  https://www.gnu.org/licenses/gpl-faq.html#MereAggregation
-  MITライセンス:
-  https://opensource.org/license/mit
-
-このファイルは配布方針の記録であり、対応ソースの確保や最終成果物の監査が
-完了したことを示すものではない。
+確認根拠
+  アプリ独自コード: ルートLICENSE（MIT）
+  Electron等: THIRD_PARTY_NOTICES.md、electron-LICENSE.txt、LICENSES.chromium.html
+  FFmpegのビルドごとの適用条件: https://ffmpeg.org/legal.html

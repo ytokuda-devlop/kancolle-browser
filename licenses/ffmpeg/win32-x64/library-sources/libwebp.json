@@ -1,0 +1,25 @@
+{
+    "name":  "libwebp",
+    "checkedAt":  "2026-09-23T11:35:20.0783022Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "libwebp",
+                 "repo":  "webmproject/libwebp",
+                 "ref":  "e78e924f"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "e78e924f84ddcd41fc5d55583bc32f4ddc4100a3",
+    "commitUrl":  "https://github.com/webmproject/libwebp/commit/e78e924f84ddcd41fc5d55583bc32f4ddc4100a3",
+    "commitDate":  "2023-12-21T23:43:17Z",
+    "url":  "https://codeload.github.com/webmproject/libwebp/tar.gz/e78e924f84ddcd41fc5d55583bc32f4ddc4100a3",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/libwebp-source.tar.gz",
+    "sha256":  "bb84185d6f419b4b2f855fd1140105b01eb52b55886fb33c7afa0ef8f1ee4e5f",
+    "bytes":  3799318,
+    "archiveEntryCount":  354,
+    "licenseEntries":  [
+                           "libwebp-e78e924f84ddcd41fc5d55583bc32f4ddc4100a3/COPYING"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

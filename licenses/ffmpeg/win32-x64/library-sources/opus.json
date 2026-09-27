@@ -1,0 +1,26 @@
+{
+    "name":  "opus",
+    "checkedAt":  "2026-09-23T11:35:30.3619556Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "opus",
+                 "repo":  "xiph/opus",
+                 "ref":  "c8549975"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "c85499757c148fede8604cffa12454206b6138ba",
+    "commitUrl":  "https://github.com/xiph/opus/commit/c85499757c148fede8604cffa12454206b6138ba",
+    "commitDate":  "2023-11-03T22:07:54Z",
+    "url":  "https://codeload.github.com/xiph/opus/tar.gz/c85499757c148fede8604cffa12454206b6138ba",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/opus-source.tar.gz",
+    "sha256":  "5a55f50891bcfc37b82733ac8439320b55bdc70db2e040c70125afb41d14c21a",
+    "bytes":  855800,
+    "archiveEntryCount":  442,
+    "licenseEntries":  [
+                           "opus-c85499757c148fede8604cffa12454206b6138ba/COPYING",
+                           "opus-c85499757c148fede8604cffa12454206b6138ba/LICENSE_PLEASE_READ.txt"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

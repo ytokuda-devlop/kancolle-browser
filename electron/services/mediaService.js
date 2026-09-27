@@ -1,12 +1,11 @@
 /*
  * ゲーム画面のスクリーンショット保存と録画ファイル作成を担当するモジュール。
- * 録画チャンクの一時保存、FFmpegによるMP4変換、保存ダイアログ、異常時の復旧パスを管理する。
+ * 録画チャンクの一時保存、WebMの保存、保存ダイアログ、異常時の復旧パスを管理する。
  */
 const { app, dialog, ipcMain } = require('electron');
 const fs = require('fs');
 const path = require('path');
-const { spawn } = require('child_process');
-const ffmpegPath = require('ffmpeg-static');
+const { randomUUID } = require('crypto');
 const runtime = require('../runtime');
 
 let activeRecording = null;
@@ -25,7 +24,7 @@ async function createRecordingPaths() {
   const timestamp = formatFileTimestamp(new Date());
   for (let sequence = 0; sequence < 1000; sequence += 1) {
     const suffix = sequence === 0 ? '' : `-${sequence}`;
-    const filename = `kancolle-${timestamp}${suffix}.mp4`;
+    const filename = `kancolle-${timestamp}${suffix}.webm`;
     const destination = path.join(recordingDirectory, filename);
     try {
       await fs.promises.access(destination);
@@ -33,42 +32,13 @@ async function createRecordingPaths() {
       if (err.code === 'ENOENT') {
         return {
           destination,
-          temporary: path.join(app.getPath('temp'), `${filename}.${process.pid}.webm`)
+          temporary: path.join(app.getPath('temp'), `kancolle-${randomUUID()}.webm`)
         };
       }
       throw err;
     }
   }
   throw new Error('録画ファイル名を作成できませんでした。');
-}
-
-function convertRecordingToMp4(input, output) {
-  return new Promise((resolve, reject) => {
-    if (!ffmpegPath) {
-      reject(new Error('MP4変換用のFFmpegを読み込めませんでした。'));
-      return;
-    }
-
-    const ffmpeg = spawn(ffmpegPath, [
-      '-y', '-i', input,
-      // WebFrameMainのWebMは1msのタイムベースを実フレームレートのように
-      // 通知することがある。明示的に30fpsへ間引かないと、FFmpegが同一
-      // フレームを最大1000fpsまで複製し、再生が実時間に追いつかなくなる。
-      '-vf', 'fps=30', '-fps_mode', 'cfr',
-      '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '23',
-      '-c:a', 'aac', '-b:a', '192k',
-      '-movflags', '+faststart', output
-    ], { windowsHide: true });
-    let errorOutput = '';
-    ffmpeg.stderr.on('data', chunk => {
-      errorOutput = (errorOutput + chunk.toString()).slice(-8000);
-    });
-    ffmpeg.on('error', reject);
-    ffmpeg.on('close', code => {
-      if (code === 0) resolve();
-      else reject(new Error(`MP4変換に失敗しました (FFmpeg ${code}): ${errorOutput}`));
-    });
-  });
 }
 
 // ゲーム画面を Pictures 直下へPNGで保存
@@ -152,7 +122,7 @@ ipcMain.handle('game:recording-stop', async () => {
       title: '録画したゲーム動画を保存',
       defaultPath: recording.destination,
       buttonLabel: '保存',
-      filters: [{ name: 'MP4動画', extensions: ['mp4'] }],
+      filters: [{ name: 'WebM動画', extensions: ['webm'] }],
       properties: ['createDirectory', 'showOverwriteConfirmation']
     });
 
@@ -161,15 +131,19 @@ ipcMain.handle('game:recording-stop', async () => {
       return { success: false, canceled: true };
     }
 
-    // 拡張子を省略して入力された場合もMP4として保存する。
-    const destination = path.extname(saveResult.filePath).toLowerCase() === '.mp4'
+    // 拡張子を省略して入力された場合もWebMとして保存する。
+    const destination = path.extname(saveResult.filePath).toLowerCase() === '.webm'
       ? saveResult.filePath
-      : `${saveResult.filePath}.mp4`;
-    await convertRecordingToMp4(recording.temporary, destination);
+      : `${saveResult.filePath}.webm`;
+    if (path.resolve(destination) === path.resolve(recording.temporary)) {
+      return { success: true, path: destination };
+    }
+    // 保存先が別ドライブでも保存できるよう、コピー完了後に一時ファイルを削除する。
+    await fs.promises.copyFile(recording.temporary, destination);
     await fs.promises.unlink(recording.temporary);
     return { success: true, path: destination };
   } catch (err) {
-    console.error('[Recording] MP4保存に失敗しました:', err);
+    console.error('[Recording] WebM保存に失敗しました:', err);
     return {
       success: false,
       error: err.message,

@@ -1,0 +1,25 @@
+{
+    "name":  "vmaf",
+    "checkedAt":  "2026-09-23T11:35:45.0157134Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "vmaf",
+                 "repo":  "Netflix/vmaf",
+                 "ref":  "cf67786b"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "cf67786bd63070bd06e76cc73caa4baca128ce1f",
+    "commitUrl":  "https://github.com/Netflix/vmaf/commit/cf67786bd63070bd06e76cc73caa4baca128ce1f",
+    "commitDate":  "2023-12-19T15:28:26Z",
+    "url":  "https://codeload.github.com/Netflix/vmaf/tar.gz/cf67786bd63070bd06e76cc73caa4baca128ce1f",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/vmaf-source.tar.gz",
+    "sha256":  "147b7ae12548ab8fd9b5e86dd93bd792e237756870c5a435bc1c0b789bdcb1dd",
+    "bytes":  18115673,
+    "archiveEntryCount":  1020,
+    "licenseEntries":  [
+                           "vmaf-cf67786bd63070bd06e76cc73caa4baca128ce1f/LICENSE"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

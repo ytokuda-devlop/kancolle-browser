@@ -1,0 +1,8 @@
+{
+  "project": "CPP/7zip/Bundles/Nsis7z/Nsis7z.vcxproj",
+  "listedInputs": 361,
+  "missingAfterSDKOverlay": [
+    "CPP/7zip/IMyUnknown.h"
+  ],
+  "buildTested": false
+}

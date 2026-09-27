@@ -1,0 +1,27 @@
+{
+    "name":  "expat",
+    "checkedAt":  "2026-09-24T01:10:12.8616276Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "expat",
+                 "repo":  "libexpat/libexpat",
+                 "ref":  "R_2_5_0",
+                 "note":  "Transitive dependency candidate from source paths and version string."
+             },
+    "patchStatus":  "unverified",
+    "commit":  "654d2de0da85662fcc7644a7acd7c2dd2cfb21f0",
+    "commitUrl":  "https://github.com/libexpat/libexpat/commit/654d2de0da85662fcc7644a7acd7c2dd2cfb21f0",
+    "commitDate":  "2022-10-25T15:08:13Z",
+    "url":  "https://codeload.github.com/libexpat/libexpat/tar.gz/654d2de0da85662fcc7644a7acd7c2dd2cfb21f0",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/expat-source.tar.gz",
+    "sha256":  "81e02291cffb1cbba6669886b9943fa9c61bcdaac577017638737c19f35a0d0b",
+    "bytes":  8322150,
+    "archiveEntryCount":  174,
+    "licenseEntries":  [
+                           "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/COPYING",
+                           "libexpat-654d2de0da85662fcc7644a7acd7c2dd2cfb21f0/expat/COPYING"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

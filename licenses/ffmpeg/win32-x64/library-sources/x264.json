@@ -1,0 +1,25 @@
+{
+    "name":  "x264",
+    "checkedAt":  "2026-09-23T11:35:57.2759788Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "x264",
+                 "repo":  "mirror/x264",
+                 "ref":  "c1c9931"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "c1c9931dc87289b8aeba78150467f17bdb97d019",
+    "commitUrl":  "https://github.com/mirror/x264/commit/c1c9931dc87289b8aeba78150467f17bdb97d019",
+    "commitDate":  "2023-11-23T17:01:29Z",
+    "url":  "https://codeload.github.com/mirror/x264/tar.gz/c1c9931dc87289b8aeba78150467f17bdb97d019",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/x264-source.tar.gz",
+    "sha256":  "c42b923fc4c0c8e992fdf4970bf7970cc16bf870d28be460bb9bb1c5bb4044b8",
+    "bytes":  1033099,
+    "archiveEntryCount":  288,
+    "licenseEntries":  [
+                           "x264-c1c9931dc87289b8aeba78150467f17bdb97d019/COPYING"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

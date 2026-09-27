@@ -1,0 +1,26 @@
+{
+    "name":  "zimg",
+    "checkedAt":  "2026-09-23T11:36:03.9933638Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "zimg",
+                 "repo":  "sekrit-twc/zimg",
+                 "ref":  "7143181"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "71431815950664f1e11b9ee4e5d4ba23d6d997f1",
+    "commitUrl":  "https://github.com/sekrit-twc/zimg/commit/71431815950664f1e11b9ee4e5d4ba23d6d997f1",
+    "commitDate":  "2023-07-26T01:20:12Z",
+    "url":  "https://codeload.github.com/sekrit-twc/zimg/tar.gz/71431815950664f1e11b9ee4e5d4ba23d6d997f1",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/zimg-source.tar.gz",
+    "sha256":  "d8974cf74944565d8c2452e0ac49d68107b42dc7872baf0e2008d2268faff22f",
+    "bytes":  309839,
+    "archiveEntryCount":  321,
+    "licenseEntries":  [
+                           "zimg-71431815950664f1e11b9ee4e5d4ba23d6d997f1/COPYING",
+                           "zimg-71431815950664f1e11b9ee4e5d4ba23d6d997f1/test/extra/musl-libm/COPYRIGHT"
+                       ],
+    "submoduleFiles":  [
+                           "zimg-71431815950664f1e11b9ee4e5d4ba23d6d997f1/.gitmodules"
+                       ]
+}

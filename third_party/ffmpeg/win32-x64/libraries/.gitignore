@@ -1,0 +1,4 @@
+# Preserve downloaded source archives locally; publish as release assets after review.
+# AMF alone exceeds GitHub's per-file repository limit.
+*.tar.gz
+*.tar.xz

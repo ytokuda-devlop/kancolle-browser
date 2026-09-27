@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-27",
+  "path": "third_party/electron-44.0.0/ffmpeg-2b68d2babae7.tar.gz",
+  "sha256": "1dbffd282bd0170ea7b30b0b52d3ecc2513bd69d1754d9820076d24d9a1c8eda",
+  "bytes": 18818470,
+  "tree": "c60e6b597c312801ce91d81110442d40fbf4d672",
+  "commit": "2b68d2babae73714846961fb0ee47e3b3d2e39a9",
+  "evidence": "evidence/ffmpeg-commit-recheck.json",
+  "reason": "Reacquired archive bytes differ; full Git tree matches upstream pinned commit. Original acquisition record retained."
+}

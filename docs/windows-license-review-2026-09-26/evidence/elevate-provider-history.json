@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "168693889ab48ef09356f8cc188231aa628e5e33",
+    "node_id": "C_kwDOA-fdWNoAKDE2ODY5Mzg4OWFiNDhlZjA5MzU2ZjhjYzE4ODIzMWFhNjI4ZTVlMzM",
+    "commit": {
+      "author": {
+        "name": "Mike Maietta",
+        "email": "mmaietta@users.noreply.github.com",
+        "date": "2025-05-02T18:32:25Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2025-05-02T18:32:25Z"
+      },
+      "message": "chore: Creating CI/CD for securing the binary generation and release process as a monorepo (#60)",
+      "tree": {
+        "sha": "f24e37d6c5123f6a9322598bbeb67b9252e2faa1",
+        "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/f24e37d6c5123f6a9322598bbeb67b9252e2faa1"
+      },
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/commits/168693889ab48ef09356f8cc188231aa628e5e33",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoFQ+5CRC1aQ7uu5UhlAAAfTYQAI8aXb50hvjcLQRG6xeV0YnX\nQoMVxHS4Fh59bjJtDZ81K4J3MNEpk9f7IJRzIPszPorpCYMIXedjc9p5hf5FjlI4\nxrLA3ZhDQoB8OJnGKXOvpbo/W1i+ZcGfymaoNOqAa2N0FKBFr9p+U7hlq6raV6Oo\nM26E2VJ+MsiE09bP645m9lHXQxrIzDf1V2TAyWFHl7dYB9KwnlgSweJAbiTyLCsL\nUOxo5Y0wiBAGV4w+Z5HPfllb2p/EDppRec3cX0HjQDB8m/8qg4o1eNYLfOgSYg4Y\ntxeFClQDOQoPMPlYTmgbuEmhlHuqYjnBOjxnFvGzCtTPfx9ry/xbU7+Mja2MW8Vj\nGxDBbsFJSn10Um3sHsbm7rChvdQdf67FrWhOjT9cUWLYcqkWs3pRCCVezFYQSRxq\ntDl8mUnqbh1eUKNZPyYF4BywKipfS0x7/89VieInoOmIXi18ItuTOfkCOUOAgruZ\nhIX1EbOtUN2kyB/Z+eRq6zZUbLBJGDkPA6STgL90lzxJ3ovBrOWZ9fvVMNRWQNDv\n16e3fWItFAFbGJDJ8bxYy7bGrBCvh3QxC+BkG56CjF7VNhuCPD/iLry6/TBPcOcO\ntJeb4PWKifL3Xz9IcmVoniuxi8nuQgu8j3uMq5LVuZOb4sqCcZfrJ7CyKPjBAwa4\nW+tI8jfWVxm2eOHFHlqH\n=HsB9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f24e37d6c5123f6a9322598bbeb67b9252e2faa1\nparent 1d15f0b4c62720c5b18c0865416e45ee944e9465\nauthor Mike Maietta <mmaietta@users.noreply.github.com> 1746210745 -0700\ncommitter GitHub <noreply@github.com> 1746210745 -0700\n\nchore: Creating CI/CD for securing the binary generation and release process as a monorepo (#60)\n\n",
+        "verified_at": "2025-05-02T18:33:26Z"
+      }
+    },
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/commits/168693889ab48ef09356f8cc188231aa628e5e33",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/commit/168693889ab48ef09356f8cc188231aa628e5e33",
+    "comments_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/commits/168693889ab48ef09356f8cc188231aa628e5e33/comments",
+    "author": {
+      "login": "mmaietta",
+      "id": 5238867,
+      "node_id": "MDQ6VXNlcjUyMzg4Njc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5238867?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mmaietta",
+      "html_url": "https://github.com/mmaietta",
+      "followers_url": "https://api.github.com/users/mmaietta/followers",
+      "following_url": "https://api.github.com/users/mmaietta/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mmaietta/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mmaietta/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mmaietta/subscriptions",
+      "organizations_url": "https://api.github.com/users/mmaietta/orgs",
+      "repos_url": "https://api.github.com/users/mmaietta/repos",
+      "events_url": "https://api.github.com/users/mmaietta/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mmaietta/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1d15f0b4c62720c5b18c0865416e45ee944e9465",
+        "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/commits/1d15f0b4c62720c5b18c0865416e45ee944e9465",
+        "html_url": "https://github.com/electron-userland/electron-builder-binaries/commit/1d15f0b4c62720c5b18c0865416e45ee944e9465"
+      }
+    ]
+  },
+  {
+    "sha": "b266aeda90e296ffb0d803d769b738d14148f72f",
+    "node_id": "MDY6Q29tbWl0NjU1MjcxMjg6YjI2NmFlZGE5MGUyOTZmZmIwZDgwM2Q3NjliNzM4ZDE0MTQ4ZjcyZg==",
+    "commit": {
+      "author": {
+        "name": "develar",
+        "email": "develar@gmail.com",
+        "date": "2017-01-25T21:04:59Z"
+      },
+      "committer": {
+        "name": "develar",
+        "email": "develar@gmail.com",
+        "date": "2017-01-25T21:04:59Z"
+      },
+      "message": "fix(electron-updater): Cannot use autoupdater without administrator privileges #1129",
+      "tree": {
+        "sha": "44d0c5927ebb3d40f1a53adad5fe17f3f3f339a2",
+        "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/trees/44d0c5927ebb3d40f1a53adad5fe17f3f3f339a2"
+      },
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/commits/b266aeda90e296ffb0d803d769b738d14148f72f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/commits/b266aeda90e296ffb0d803d769b738d14148f72f",
+    "html_url": "https://github.com/electron-userland/electron-builder-binaries/commit/b266aeda90e296ffb0d803d769b738d14148f72f",
+    "comments_url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/commits/b266aeda90e296ffb0d803d769b738d14148f72f/comments",
+    "author": {
+      "login": "develar",
+      "id": 350686,
+      "node_id": "MDQ6VXNlcjM1MDY4Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/350686?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/develar",
+      "html_url": "https://github.com/develar",
+      "followers_url": "https://api.github.com/users/develar/followers",
+      "following_url": "https://api.github.com/users/develar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/develar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/develar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/develar/subscriptions",
+      "organizations_url": "https://api.github.com/users/develar/orgs",
+      "repos_url": "https://api.github.com/users/develar/repos",
+      "events_url": "https://api.github.com/users/develar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/develar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "develar",
+      "id": 350686,
+      "node_id": "MDQ6VXNlcjM1MDY4Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/350686?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/develar",
+      "html_url": "https://github.com/develar",
+      "followers_url": "https://api.github.com/users/develar/followers",
+      "following_url": "https://api.github.com/users/develar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/develar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/develar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/develar/subscriptions",
+      "organizations_url": "https://api.github.com/users/develar/orgs",
+      "repos_url": "https://api.github.com/users/develar/repos",
+      "events_url": "https://api.github.com/users/develar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/develar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "199c565990a16dd29e90c8cc3c66cc7421e298d7",
+        "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/commits/199c565990a16dd29e90c8cc3c66cc7421e298d7",
+        "html_url": "https://github.com/electron-userland/electron-builder-binaries/commit/199c565990a16dd29e90c8cc3c66cc7421e298d7"
+      }
+    ]
+  }
+]

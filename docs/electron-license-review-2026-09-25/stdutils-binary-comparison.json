@@ -1,0 +1,8 @@
+{
+  "release": "1.14",
+  "fileVersion": "1.1.4.0",
+  "dllSha256": "b72e9013a6204e9f01076dc38dabbf30870d44dfc66962adbf73619d4331601e",
+  "officialArchiveEntriesMatchingCache": [
+    "Plugins/Unicode/StdUtils.dll"
+  ]
+}

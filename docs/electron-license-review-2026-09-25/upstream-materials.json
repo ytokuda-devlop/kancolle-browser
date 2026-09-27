@@ -1,0 +1,155 @@
+{
+  "retrievedAt": "2026-09-25T14:47:33.900590+00:00",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/electron/electron/v44.0.0/DEPS",
+      "file": "electron-DEPS",
+      "sha256": "6eff8b368842f184a258f15ab2919680a44706ffc82f9aa1544969f0d59baa21"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mantle/Mantle/2a8e2123a3931038179ee06105c9e6ec336b12ea/LICENSE.md",
+      "file": "mantle-LICENSE.md",
+      "sha256": "285eede6f638adc9c352be7d66134611e5ea95044095a84de9867fb864e66eab"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/electron/electron/v44.0.0/build/args/all.gn",
+      "file": "electron-all.gn",
+      "sha256": "5ef3dcead9ec7d5a5b556d7db92ab6a40166801913298702250a455fd244388d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/electron/electron/v44.0.0/build/args/release.gn",
+      "file": "electron-release.gn",
+      "sha256": "b4490cee911e0ed136a6d095c69a7914cb3f4aa2d5517e3f987a2b5f45d3cd56"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chromium/chromium/152.0.7977.54/DEPS",
+      "file": "chromium-DEPS",
+      "sha256": "6d0b1775ce938dfadd2cff1adea4fef5fc27b33f6891a481b002cd31afea3c55"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ReactiveCocoa/ReactiveObjC/74ab5baccc6f7202c8ac69a8d1e152c29dc1ea76/LICENSE.md",
+      "file": "reactiveobjc-LICENSE.md",
+      "sha256": "095fec1a3d6ad029fe0661fa6092a272d50af016b1771992e0bba9b2a73e7763"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Squirrel/Squirrel.Mac/8d808803bc89ec0e2aa1450474856dfee3b00c6b/LICENSE",
+      "file": "squirrel-LICENSE",
+      "sha256": "6f240e244a105d6366bc898ac9c67460624c9052839d4b988c6dbe4c571008b3"
+    },
+    {
+      "url": "https://chromium.googlesource.com/chromium/third_party/ffmpeg/+/2b68d2babae73714846961fb0ee47e3b3d2e39a9/README.chromium?format=TEXT",
+      "file": "ffmpeg-README.chromium.b64",
+      "sha256": "9de9c37ac5a343c321101ecf8d01ee5364652ce10f099506cf3435931f85e00a"
+    },
+    {
+      "url": "https://chromium.googlesource.com/chromium/third_party/ffmpeg/+/2b68d2babae73714846961fb0ee47e3b3d2e39a9/COPYING.LGPLv2.1?format=TEXT",
+      "file": "ffmpeg-COPYING.LGPLv2.1.b64",
+      "sha256": "4b7be5789cf70597d10f8b96e482eef3ce2da9d17fa5f1c1320c9b02047de451"
+    },
+    {
+      "url": "https://chromium.googlesource.com/chromium/third_party/ffmpeg/+/2b68d2babae73714846961fb0ee47e3b3d2e39a9/chromium/config/Chrome/mac/x64/config.h?format=TEXT",
+      "file": "ffmpeg-mac-config.h.b64",
+      "sha256": "f85b0fe9ce60a93d905e68f4dd62869bee495af96e2ec67b45018866f1a4fb21"
+    },
+    {
+      "url": "https://chromium.googlesource.com/chromium/third_party/ffmpeg/+/2b68d2babae73714846961fb0ee47e3b3d2e39a9/chromium/config/Chrome/win/x64/config.h?format=TEXT",
+      "file": "ffmpeg-win-config.h.b64",
+      "sha256": "f51a9262d39027995e8cffdfb174f62485b13fd76bf0fe86602599d2099bf8bb"
+    },
+    {
+      "url": "https://api.github.com/repos/electron/electron/contents/patches/ffmpeg?ref=v44.0.0",
+      "file": "electron-ffmpeg-patches.json",
+      "sha256": "222722c051b10c508d49569d2e1b655dc6cdc7a55c62f52f5c81500d0e36a82b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/electron/electron/v44.0.0/patches/config.json",
+      "file": "electron-patch-config.json",
+      "sha256": "be8fc696e319f2dcbd9a32d5ed04076770a559222e7b4b02b57f9e89aa07c66a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/electron/electron/v44.0.0/patches/ffmpeg/link_with_loader_path.patch",
+      "file": "electron-ffmpeg-loader.patch",
+      "sha256": "bc6cdc29ad4ec2641dd59b4c3a25375b9166c35e202e5122cb73190885ec647d"
+    },
+    {
+      "url": "https://api.github.com/repos/electron/electron/git/ref/tags/v44.0.0",
+      "file": "electron-tag.json",
+      "sha256": "8615ce658ce90216d52390778d686ed382b6711185a1477028c6a6a8d41385a8"
+    },
+    {
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents?ref=master",
+      "file": "builder-binaries-tree.json",
+      "sha256": "8426cbd3dbc8fd897fa681736d7f3dcd806de921f1b58d86ee1869f07decce31"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/electron/electron/v44.0.0/docs/development/build-instructions-gn.md",
+      "file": "electron-build-instructions.md",
+      "sha256": "8f32a0b64d1ccf87b474fd8f9455b853a45278cb7a95c45a768ef153e4ffa97c"
+    },
+    {
+      "url": "https://api.github.com/repos/electron/electron/contents/patches/ReactiveObjC?ref=v44.0.0",
+      "file": "electron-reactive-patches.json",
+      "sha256": "a8c6831ffc0f887c6856683867db13ba4464ba593f696fa56196161d8d671e36"
+    },
+    {
+      "url": "https://api.github.com/repos/electron/electron/git/tags/c6203066d73ecc4ab9b69490a02867bc30ab7516",
+      "file": "electron-tag-object.json",
+      "sha256": "f3e80d53d393ae97a148a1cd83ea305d7350364c78034d71697dde168f8e403e"
+    },
+    {
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/contents/packages?ref=master",
+      "file": "builder-packages-tree.json",
+      "sha256": "6cba92a156b74c43d31345bf6edc1d9b4da756eeef69ae78581542c15d58d94f"
+    },
+    {
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/ref/tags/nsis-3.0.4.1",
+      "file": "nsis-tag.json",
+      "sha256": "5229d33377db7cb88de9df809e3d36e690d515bb398a5c1add2b096e532e5a13"
+    },
+    {
+      "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/ref/tags/nsis-resources-3.4.1",
+      "file": "nsis-resources-tag.json",
+      "sha256": "8cb387e9c3c2ca301c6b610084206db3e3133044b5bf3967f995095170d89705"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/electron-userland/electron-builder-binaries/fac48dd35372e2d25b7a2d20478ace2cc6df4d50/nsis-prepare.sh",
+      "file": "nsis-prepare.sh",
+      "sha256": "7911925bdd22f8ff7a6a543a476f8728896efb96682fd4a2c48931d0f6c1d545"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/electron-userland/electron-builder-binaries/fac48dd35372e2d25b7a2d20478ace2cc6df4d50/nsis.sh",
+      "file": "nsis-build.sh",
+      "sha256": "b0641dbf5d00d25a445b5b7a4d5253068c0d0722bf26d645c99cdb61d74687be"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/electron-userland/electron-builder-binaries/6fac0e5d0ad9f6c66741b40e5fb160540e167415/README.md",
+      "file": "nsis-resources-README.md",
+      "sha256": "0eb167b2399bbeaf1c8fb3d877411cb026bacc1884cecfd2601460cc71ed049d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/electron/electron/bf0c4e67e9a834479ee171e61057f7516a381d25/patches/ReactiveObjC/.patches",
+      "file": "reactive-patches-list",
+      "sha256": "e6d9737ea120459a4a091bf899c0d8970f46c5dbbf836d6326b094c60c6acef3"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/electron/electron/bf0c4e67e9a834479ee171e61057f7516a381d25/patches/ReactiveObjC/build_conditionally_import_ext_headers_from_framework_or_from.patch",
+      "file": "reactive-import.patch",
+      "sha256": "5486fa62061ec7d7cba50a8ea5635eb6add2b7ed48a23542c8d419247ac5af01"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/electron/electron/bf0c4e67e9a834479ee171e61057f7516a381d25/patches/ReactiveObjC/chore_explicitly_cast_long_max_to_double.patch",
+      "file": "reactive-cast.patch",
+      "sha256": "1c91daed0343d89dc4f371abe86a846a6432069d51427906d1260f1fe81c3cbb"
+    },
+    {
+      "url": "https://api.github.com/repos/lordmulder/stdutils/tags?per_page=100",
+      "file": "stdutils-tags.json",
+      "sha256": "4204bb6d74b6aea8e0d9a810e80e73c24f1210767ab14083d0667cf5dfdba818"
+    },
+    {
+      "url": "https://api.github.com/repos/lordmulder/stdutils/releases?per_page=100",
+      "file": "stdutils-releases.json",
+      "sha256": "fb7e28619975fbe8ae112e2ed105b55ddf5b720b9b1eea57ac24f49cdd734ce9"
+    }
+  ]
+}

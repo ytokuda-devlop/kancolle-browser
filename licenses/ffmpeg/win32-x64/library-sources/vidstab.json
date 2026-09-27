@@ -1,0 +1,25 @@
+{
+    "name":  "vidstab",
+    "checkedAt":  "2026-09-23T11:35:44.1734989Z",
+    "status":  "upstream-candidate-acquired",
+    "plan":  {
+                 "name":  "vidstab",
+                 "repo":  "georgmartius/vid.stab",
+                 "ref":  "05829db"
+             },
+    "patchStatus":  "unverified",
+    "commit":  "05829db776069b7478dd2d90b6e0081668a41abc",
+    "commitUrl":  "https://github.com/georgmartius/vid.stab/commit/05829db776069b7478dd2d90b6e0081668a41abc",
+    "commitDate":  "2023-06-03T06:51:27Z",
+    "url":  "https://codeload.github.com/georgmartius/vid.stab/tar.gz/05829db776069b7478dd2d90b6e0081668a41abc",
+    "archive":  "third_party/ffmpeg/win32-x64/libraries/vidstab-source.tar.gz",
+    "sha256":  "6b51f3efd6b8500c92f3c5d25e158f813d3be078c31c9b480c7ea791b6725e5e",
+    "bytes":  80840,
+    "archiveEntryCount":  94,
+    "licenseEntries":  [
+                           "vid.stab-05829db776069b7478dd2d90b6e0081668a41abc/LICENSE"
+                       ],
+    "submoduleFiles":  [
+
+                       ]
+}

@@ -103,13 +103,13 @@ function App() {
               <button
                 className={`browser-control-button browser-control-recording ${recordingState === 'recording' ? 'is-recording' : ''}`}
                 onClick={toggleRecording}
-                disabled={recordingState === 'converting'}
+                disabled={recordingState === 'saving' || recordingState === 'preparing'}
               >
-                {recordingState === 'converting'
-                  ? 'MP4変換中...'
+                {recordingState === 'saving'
+                  ? '保存中...'
                   : recordingState === 'recording'
                     ? `録画停止 ${formatElapsedTime(recordingStartedAt, now)}`
-                    : '録画'}
+                    : recordingState === 'preparing' ? '準備中...' : '録画'}
               </button>
             </div>
             {pointActionStatus && (

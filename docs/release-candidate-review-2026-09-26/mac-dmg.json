@@ -1,0 +1,252 @@
+{
+  "checkedAt": "2026-09-26T12:56:00.644Z",
+  "baselineSha256": "57291e79ff0dcf59270c46ad4e239f2e2f9624355d32e2da295f88284bf3de1d",
+  "requireSigned": false,
+  "artifact": "艦娘は今日もお仕事です（仮）-1.0.0.dmg",
+  "sha256": "dfe221bf066218628abff80ac52351febe760f772a7ab1a3b618ba28b6849c0d",
+  "payloads": [
+    {
+      "fileCount": 28,
+      "files": [
+        {
+          "path": "DISTRIBUTION-NOTES.txt",
+          "bytes": 3407,
+          "sha256": "5d421545fabf2f008543ac30f4709c06b333fec9039eafc00f8eb93a644fbe9e"
+        },
+        {
+          "path": "electron-LICENSE.txt",
+          "bytes": 1096,
+          "sha256": "5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d"
+        },
+        {
+          "path": "LICENSES.chromium.html",
+          "bytes": 20111206,
+          "sha256": "4cbde8e3e7b29f451c78a44491fb32e2202884826fef47786a9cda5a36110525"
+        },
+        {
+          "path": "react-LICENSE.txt",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "path": "react-dom-LICENSE.txt",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "path": "scheduler-LICENSE.txt",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "path": "npm/js-tokens-LICENSE.txt",
+          "bytes": 1103,
+          "sha256": "2213d91c606205c71eb051a199478cdc2adde945893404d7f1421436dd6d5cc1"
+        },
+        {
+          "path": "npm/loose-envify-LICENSE.txt",
+          "bytes": 1100,
+          "sha256": "4eb7543b08d955a6d23fcc224601d43ff566e775be918805e26210d7f6eb4893"
+        },
+        {
+          "path": "electron-components/Mantle-LICENSE.md",
+          "bytes": 2445,
+          "sha256": "285eede6f638adc9c352be7d66134611e5ea95044095a84de9867fb864e66eab"
+        },
+        {
+          "path": "electron-components/ReactiveObjC-LICENSE.md",
+          "bytes": 1093,
+          "sha256": "095fec1a3d6ad029fe0661fa6092a272d50af016b1771992e0bba9b2a73e7763"
+        },
+        {
+          "path": "electron-components/Squirrel-LICENSE.txt",
+          "bytes": 1073,
+          "sha256": "6f240e244a105d6366bc898ac9c67460624c9052839d4b988c6dbe4c571008b3"
+        },
+        {
+          "path": "electron-components/LGPL-2.1.txt",
+          "bytes": 26517,
+          "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30"
+        },
+        {
+          "path": "electron-components/FFmpeg-CREDITS.txt",
+          "bytes": 47960,
+          "sha256": "903a6faa336b60d419bc6eb2bcffe4ca8bd9446735e5de4fcc901c80e9f22327"
+        },
+        {
+          "path": "ELECTRON-SOURCES.txt",
+          "bytes": 5649,
+          "sha256": "eef8ead1ba75ff80ae830dd95ae19e6a8ed9de2afcc2cc4446ab09ac9990e8aa"
+        },
+        {
+          "path": "windows/NSIS-COPYING.txt",
+          "bytes": 15488,
+          "sha256": "3c8de989f6504d52f5f8dfafedb6668cd47201f5d01f1319570727c091425dd6"
+        },
+        {
+          "path": "windows/StdUtils-README.html",
+          "bytes": 92207,
+          "sha256": "be145d4687f5efa1d45ce7d059c92230d003b5da00dd55f24346278798c7bad9"
+        },
+        {
+          "path": "windows/StdUtils-ReadMe.txt",
+          "bytes": 1380,
+          "sha256": "31b67e463c6e5695e9ffaf62dd077d9bd62df34026593c2f29bc9ea87fdac72f"
+        },
+        {
+          "path": "windows/StdUtils-blake2-COPYING.txt",
+          "bytes": 7169,
+          "sha256": "f4e7f373b9b996950337e8d41a4a2939c2d90b7725e9baf3d5084a22717ad328"
+        },
+        {
+          "path": "windows/StdUtils-rhash-COPYING.txt",
+          "bytes": 766,
+          "sha256": "842fef4921191943e531c6cc939b0334f1c2658c9204e30dd35d13f51fdf70dd"
+        },
+        {
+          "path": "windows/UAC-LICENSE.txt",
+          "bytes": 956,
+          "sha256": "997fd014643f27a2f240faf9b9b54a98371775c63eb38134829154794f7326fa"
+        },
+        {
+          "path": "windows/nsis7z-README.txt",
+          "bytes": 5875,
+          "sha256": "881f8ba4da0a0c30e281d324408baa596f14211b03d1f3bf99fe18c4621916c3"
+        },
+        {
+          "path": "windows/nsis7z-LZMA-SDK-LICENSE.txt",
+          "bytes": 476,
+          "sha256": "63fcfe54826809b5a9f9df8a8ff53c04330122319ec67a2dd815085586adaf0e"
+        },
+        {
+          "path": "windows/elevate-upstream-LICENSE.md",
+          "bytes": 1119,
+          "sha256": "c8513abf1a738a5420f288c1be9c774b386785cc99c313f8543296321d06f04d"
+        },
+        {
+          "path": "windows/electron-builder-LICENSE.txt",
+          "bytes": 1084,
+          "sha256": "bed8d0ab3e6031817f775a641ff37313b0f5591bc8ba0ed79b978dafbd4231ce"
+        },
+        {
+          "path": "windows/SOURCES.txt",
+          "bytes": 5636,
+          "sha256": "353fc3157f132dfde4d3c568cd7760b1f442f5fa1bb4d9064ce6f8f9a7dfb6cb"
+        },
+        {
+          "path": "electron-components/nbytes-LICENSE.txt",
+          "bytes": 1064,
+          "sha256": "782ab5b8ae1540c1a2b102fdd00990ed268d4a3a98e90ad7fe724b489d7bb0f2"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1072,
+          "sha256": "8d45dbb64725f1e576857001fefd33949abeb128e605530c19022595773f820c"
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.md",
+          "bytes": 10038,
+          "sha256": "06ac42ae43f0ffc6ca0ace06345a451205e74dc22168ca3bff1bc51d8344d581"
+        }
+      ],
+      "recordingFfmpegAbsent": true,
+      "candidate": {
+        "platform": "darwin",
+        "appVersion": "1.0.0",
+        "asarSha256": "2e56e53f6938f94c2182379817f64a952c83f45fe592bf12115527d9e8510b55",
+        "npm": {
+          "js-tokens": {
+            "version": "4.0.0",
+            "license": "MIT"
+          },
+          "loose-envify": {
+            "version": "1.4.0",
+            "license": "MIT"
+          },
+          "react": {
+            "version": "18.3.1",
+            "license": "MIT"
+          },
+          "react-dom": {
+            "version": "18.3.1",
+            "license": "MIT"
+          },
+          "scheduler": {
+            "version": "0.23.2",
+            "license": "MIT"
+          }
+        },
+        "native": {
+          "appVersion": "1.0.0",
+          "buildVersion": "1.0.0",
+          "electronVersion": "44.0.0",
+          "codeMatchesBaseline": true
+        },
+        "nativeComponents": [
+          {
+            "path": "Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework",
+            "codeSha256": "97db3c84bf2c500358e512865727bc579b39cc19136504b05f6516e73c99fe5a"
+          },
+          {
+            "path": "Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "codeSha256": "7f54a52354bb6deb6956ee0080cff9100faef47485ebb25e50f3ae8778220385"
+          },
+          {
+            "path": "Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+            "codeSha256": "2fa4dc87f36a4a814b7e89a10d3090f28ded2fc684c3090f3101ae4324b3b15b"
+          },
+          {
+            "path": "Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib",
+            "codeSha256": "bade66629d5902729faefd2c5a0b2103214ae20dfe5c00a2325a9849d2924931"
+          },
+          {
+            "path": "Contents/Frameworks/KancolleBrowser Helper (GPU).app/Contents/MacOS/KancolleBrowser Helper (GPU)",
+            "codeSha256": "b5245765914c903c8ed9105aad90ce6d9bb44af167447bf853a534759dad0cec"
+          },
+          {
+            "path": "Contents/Frameworks/KancolleBrowser Helper (Plugin).app/Contents/MacOS/KancolleBrowser Helper (Plugin)",
+            "codeSha256": "b5245765914c903c8ed9105aad90ce6d9bb44af167447bf853a534759dad0cec"
+          },
+          {
+            "path": "Contents/Frameworks/KancolleBrowser Helper (Renderer).app/Contents/MacOS/KancolleBrowser Helper (Renderer)",
+            "codeSha256": "b5245765914c903c8ed9105aad90ce6d9bb44af167447bf853a534759dad0cec"
+          },
+          {
+            "path": "Contents/Frameworks/KancolleBrowser Helper.app/Contents/MacOS/KancolleBrowser Helper",
+            "codeSha256": "b5245765914c903c8ed9105aad90ce6d9bb44af167447bf853a534759dad0cec"
+          },
+          {
+            "path": "Contents/Frameworks/Mantle.framework/Versions/A/Mantle",
+            "codeSha256": "0b0bbe456b0a1c218e57b097f0f57857be7927824824c05e73a69b2b1414b44a"
+          },
+          {
+            "path": "Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC",
+            "codeSha256": "30a358984a24f5193c231e7ebe17b0ba24450967f58d8342a8693521fd11cde6"
+          },
+          {
+            "path": "Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt",
+            "codeSha256": "e259721e4cfb599e4c37e16847503578d89ab098b3de166cf6cb775745638364"
+          },
+          {
+            "path": "Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel",
+            "codeSha256": "a8e580c11f6e1d2d71a964785413f205a403e35a5a552eb9aa0c14380f129e0b"
+          },
+          {
+            "path": "Contents/MacOS/KancolleBrowser",
+            "codeSha256": "801d5856d894d5a6d9da1721d5d9e3ba25cb00fbb5f197203dcc4ebba08f4ea1"
+          }
+        ],
+        "signature": {
+          "status": "unsigned"
+        }
+      }
+    }
+  ],
+  "container": {
+    "signature": {
+      "status": "not-applicable",
+      "note": "App bundle signature checked; container notarization/signature not checked"
+    }
+  },
+  "scope": "Application/Electron/npm versions and frozen notice equality; signature scope is recorded separately; not full license clearance"
+}

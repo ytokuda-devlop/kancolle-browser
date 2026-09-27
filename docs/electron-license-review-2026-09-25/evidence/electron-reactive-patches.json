@@ -1,0 +1,50 @@
+[
+  {
+    "name": ".patches",
+    "path": "patches/ReactiveObjC/.patches",
+    "sha": "e1fa160bda3d2760c38996afb4628d1d56e40302",
+    "size": 115,
+    "url": "https://api.github.com/repos/electron/electron/contents/patches/ReactiveObjC/.patches?ref=v44.0.0",
+    "html_url": "https://github.com/electron/electron/blob/v44.0.0/patches/ReactiveObjC/.patches",
+    "git_url": "https://api.github.com/repos/electron/electron/git/blobs/e1fa160bda3d2760c38996afb4628d1d56e40302",
+    "download_url": "https://raw.githubusercontent.com/electron/electron/v44.0.0/patches/ReactiveObjC/.patches",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/electron/electron/contents/patches/ReactiveObjC/.patches?ref=v44.0.0",
+      "git": "https://api.github.com/repos/electron/electron/git/blobs/e1fa160bda3d2760c38996afb4628d1d56e40302",
+      "html": "https://github.com/electron/electron/blob/v44.0.0/patches/ReactiveObjC/.patches"
+    }
+  },
+  {
+    "name": "build_conditionally_import_ext_headers_from_framework_or_from.patch",
+    "path": "patches/ReactiveObjC/build_conditionally_import_ext_headers_from_framework_or_from.patch",
+    "sha": "0e2c25095f98a900d9465ff07c7792982806222e",
+    "size": 18701,
+    "url": "https://api.github.com/repos/electron/electron/contents/patches/ReactiveObjC/build_conditionally_import_ext_headers_from_framework_or_from.patch?ref=v44.0.0",
+    "html_url": "https://github.com/electron/electron/blob/v44.0.0/patches/ReactiveObjC/build_conditionally_import_ext_headers_from_framework_or_from.patch",
+    "git_url": "https://api.github.com/repos/electron/electron/git/blobs/0e2c25095f98a900d9465ff07c7792982806222e",
+    "download_url": "https://raw.githubusercontent.com/electron/electron/v44.0.0/patches/ReactiveObjC/build_conditionally_import_ext_headers_from_framework_or_from.patch",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/electron/electron/contents/patches/ReactiveObjC/build_conditionally_import_ext_headers_from_framework_or_from.patch?ref=v44.0.0",
+      "git": "https://api.github.com/repos/electron/electron/git/blobs/0e2c25095f98a900d9465ff07c7792982806222e",
+      "html": "https://github.com/electron/electron/blob/v44.0.0/patches/ReactiveObjC/build_conditionally_import_ext_headers_from_framework_or_from.patch"
+    }
+  },
+  {
+    "name": "chore_explicitly_cast_long_max_to_double.patch",
+    "path": "patches/ReactiveObjC/chore_explicitly_cast_long_max_to_double.patch",
+    "sha": "cdc45f6744ca09272d574fd113842b3386a00f22",
+    "size": 1241,
+    "url": "https://api.github.com/repos/electron/electron/contents/patches/ReactiveObjC/chore_explicitly_cast_long_max_to_double.patch?ref=v44.0.0",
+    "html_url": "https://github.com/electron/electron/blob/v44.0.0/patches/ReactiveObjC/chore_explicitly_cast_long_max_to_double.patch",
+    "git_url": "https://api.github.com/repos/electron/electron/git/blobs/cdc45f6744ca09272d574fd113842b3386a00f22",
+    "download_url": "https://raw.githubusercontent.com/electron/electron/v44.0.0/patches/ReactiveObjC/chore_explicitly_cast_long_max_to_double.patch",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/electron/electron/contents/patches/ReactiveObjC/chore_explicitly_cast_long_max_to_double.patch?ref=v44.0.0",
+      "git": "https://api.github.com/repos/electron/electron/git/blobs/cdc45f6744ca09272d574fd113842b3386a00f22",
+      "html": "https://github.com/electron/electron/blob/v44.0.0/patches/ReactiveObjC/chore_explicitly_cast_long_max_to_double.patch"
+    }
+  }
+]

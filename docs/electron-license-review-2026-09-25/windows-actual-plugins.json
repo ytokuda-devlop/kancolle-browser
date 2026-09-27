@@ -1,0 +1,54 @@
+[
+  {
+    "artifact": "\u8266\u5a18\u306f\u4eca\u65e5\u3082\u304a\u4ed5\u4e8b\u3067\u3059\uff08\u4eee\uff09 1.0.0.exe",
+    "sha256": "cf0e00862d38b884abc8a47389e5119ff6415fc862d97367b39ac026a5f3da81",
+    "plugins": [
+      {
+        "path": "$PLUGINSDIR/StdUtils.dll",
+        "sha256": "b72e9013a6204e9f01076dc38dabbf30870d44dfc66962adbf73619d4331601e"
+      },
+      {
+        "path": "$PLUGINSDIR/nsis7z.dll",
+        "sha256": "b393f05e8ff919ef071181050e1873c9a776e1a0ae8329aefff7007d0cadf592"
+      },
+      {
+        "path": "$PLUGINSDIR/System.dll",
+        "sha256": "3eb38ae99653a7dbc724132ee240f6e5c4af4bfe7c01d31d23faf373f9f2eaca"
+      }
+    ]
+  },
+  {
+    "artifact": "\u8266\u5a18\u306f\u4eca\u65e5\u3082\u304a\u4ed5\u4e8b\u3067\u3059\uff08\u4eee\uff09 Setup 1.0.0.exe",
+    "sha256": "2a3dbfc81e0bc1b4dff8f00060e87909dfef51e39465640e55e23af354adb8ea",
+    "plugins": [
+      {
+        "path": "$PLUGINSDIR/nsExec.dll",
+        "sha256": "5d9ceb1ce5f35aea5f9e5a0c0edeeec04dfefe0c77890c80c70e98209b58b962"
+      },
+      {
+        "path": "$PLUGINSDIR/StdUtils.dll",
+        "sha256": "b72e9013a6204e9f01076dc38dabbf30870d44dfc66962adbf73619d4331601e"
+      },
+      {
+        "path": "$PLUGINSDIR/nsis7z.dll",
+        "sha256": "b393f05e8ff919ef071181050e1873c9a776e1a0ae8329aefff7007d0cadf592"
+      },
+      {
+        "path": "$PLUGINSDIR/nsDialogs.dll",
+        "sha256": "1e40211af65923c2f4fd02ce021458a7745d28e2f383835e3015e96575632172"
+      },
+      {
+        "path": "$PLUGINSDIR/System.dll",
+        "sha256": "3eb38ae99653a7dbc724132ee240f6e5c4af4bfe7c01d31d23faf373f9f2eaca"
+      },
+      {
+        "path": "$PLUGINSDIR/WinShell.dll",
+        "sha256": "9be85b986ea66a6997dde658abe82b3147ed2a1a3dcb784bb5176f41d22815a6"
+      },
+      {
+        "path": "$PLUGINSDIR/UAC.dll",
+        "sha256": "2f7f8fc05dc4fd0d5cda501b47e4433357e887bbfed7292c028d99c73b52dc08"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "ref": "refs/tags/nsis-3.0.4.1",
+  "node_id": "MDM6UmVmNjU1MjcxMjg6cmVmcy90YWdzL25zaXMtMy4wLjQuMQ==",
+  "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/refs/tags/nsis-3.0.4.1",
+  "object": {
+    "sha": "fac48dd35372e2d25b7a2d20478ace2cc6df4d50",
+    "type": "commit",
+    "url": "https://api.github.com/repos/electron-userland/electron-builder-binaries/git/commits/fac48dd35372e2d25b7a2d20478ace2cc6df4d50"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "candidateType": "unsigned",
+  "baselineSha256": "57291e79ff0dcf59270c46ad4e239f2e2f9624355d32e2da295f88284bf3de1d",
+  "artifacts": [
+    {
+      "target": "mac-zip",
+      "artifact": "release/release-candidate-2026-09-26/艦娘は今日もお仕事です（仮）-1.0.0-mac.zip",
+      "sha256": "1a74c5a41a105339fd7a4ab58db8e4636ad5faab09c1136a823c167c3bf81f51",
+      "report": "mac-zip.json",
+      "appVersion": "1.0.0",
+      "signature": "unsigned"
+    },
+    {
+      "target": "mac-dmg",
+      "artifact": "release/release-candidate-2026-09-26/艦娘は今日もお仕事です（仮）-1.0.0.dmg",
+      "sha256": "dfe221bf066218628abff80ac52351febe760f772a7ab1a3b618ba28b6849c0d",
+      "report": "mac-dmg.json",
+      "appVersion": "1.0.0",
+      "signature": "unsigned"
+    },
+    {
+      "target": "windows-setup",
+      "artifact": "release/release-candidate-2026-09-26/艦娘は今日もお仕事です（仮） Setup 1.0.0.exe",
+      "sha256": "8f2756cd1d7f38e98e80901af321018bd6ffc6eb8940e3f0b4999cb76d0e64e5",
+      "report": "windows-setup.json",
+      "appVersion": "1.0.0",
+      "signature": "unsigned"
+    },
+    {
+      "target": "windows-portable",
+      "artifact": "release/release-candidate-2026-09-26/艦娘は今日もお仕事です（仮） 1.0.0.exe",
+      "sha256": "f09cbdc63bb9e5ec6cc2c286ebc4e4aac407aee3b2b2f3ea07c7be8b156e8b80",
+      "report": "windows-portable.json",
+      "appVersion": "1.0.0",
+      "signature": "unsigned"
+    }
+  ]
+}

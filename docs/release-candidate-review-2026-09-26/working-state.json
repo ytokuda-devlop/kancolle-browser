@@ -1,0 +1,296 @@
+{
+  "referenceCommit": "e775938bb1405dc34a73cb20e533155e982b388c",
+  "trackedDiffSha256": "c41de1f8bb4860618d3641b51bb5ebf036b21e566d8ec6850cd32daee9e9c9f1",
+  "cleanCommitBuild": false,
+  "note": "Current working-tree file hashes recorded after candidate build; audit tooling was added/updated during verification. Commit alone is not full build provenance.",
+  "files": [
+    {
+      "file": "dist/assets/index-DJiR6N5c.js",
+      "sha256": "14141dfc34d7bf0e838faf19d94a2c441f7db1bf4e8fe625174573454b99d4b1"
+    },
+    {
+      "file": "dist/assets/index-IUKhlkn3.css",
+      "sha256": "975f69db99149d1704978fb1b22bc34b8a3eed3f73b5cb4b1ec60db129c20f66"
+    },
+    {
+      "file": "dist/index.html",
+      "sha256": "2b335d2355e52acad6c83924610b1cd90b691678ad1a505d8ef7f44aed2e9213"
+    },
+    {
+      "file": "electron/ipc/appIpc.js",
+      "sha256": "79598ea29094119ba8fbd55d1aecad74ecdbb70b121219aa777f1875d65a6223"
+    },
+    {
+      "file": "electron/ipc/kancolleDataIpc.js",
+      "sha256": "9f7237b224210a1250ef21088d8651da3537ad86dc34fb10c371cb3ccefc09f1"
+    },
+    {
+      "file": "electron/kancolle/apiCapture.js",
+      "sha256": "d96b3e1732a423e7017807ab3e3ded331e2a8d1320fecf254a666ca071436e13"
+    },
+    {
+      "file": "electron/kancolle/store.js",
+      "sha256": "5ecaf3f9fa136268a173307ea983921f3eff9d4cec88ed4d09d141b33d6b595f"
+    },
+    {
+      "file": "electron/main.js",
+      "sha256": "5db4af1bd9217103697353162e6251a39476417f3cbc3d562adab015a8f5cdd3"
+    },
+    {
+      "file": "electron/preload.js",
+      "sha256": "30f929c0cbf4f671e0e0fef9cd40b5e934355c347da320111ca658fd2d6ef278"
+    },
+    {
+      "file": "electron/runtime.js",
+      "sha256": "74c720101bbb03a586a09b811840e37cab735aee53f78ff914ad7a42f8260c6b"
+    },
+    {
+      "file": "electron/services/dmmService.js",
+      "sha256": "fa43217b01d8427dc3f45abb4b48e6dacb2e8938e6eef3fbde6982cd0d5e076a"
+    },
+    {
+      "file": "electron/services/mediaService.js",
+      "sha256": "44c0685718770c184d83c82269e6357dee44562e22ae87cb21558e0e6e8a8607"
+    },
+    {
+      "file": "electron/window/contextMenu.js",
+      "sha256": "d638f5c3c5662b4f27114a9a5d01a61c0c6b77caa1ecad2424c2ca54b05f186c"
+    },
+    {
+      "file": "electron/window/createWindow.js",
+      "sha256": "288af605f5bd5a361bb941af245de5db7cb506312f21a269bd1e0756f3410dc2"
+    },
+    {
+      "file": "electron/window/gamePage.js",
+      "sha256": "441501e5efe82ee8cb7d0c002d44a1749ab728505a51985a3a594213da034986"
+    },
+    {
+      "file": "scripts/acquire-library-sources.ps1",
+      "sha256": "e8575c1d7510e582327935f9073471b0c28cec8ef5635f475cdb25ff155d0af1"
+    },
+    {
+      "file": "scripts/after-artifact-build.cjs",
+      "sha256": "dfdcfb4664b0c460f4f63e561189872858dd69a617a4fedd31365d6ecb47bf1b"
+    },
+    {
+      "file": "scripts/after-pack.cjs",
+      "sha256": "ad33a37dd45886475e1f7305c21dc08db12e42504f8cc8fcc5a0a01262581383"
+    },
+    {
+      "file": "scripts/audit-ffmpeg-build-materials.ps1",
+      "sha256": "b3351d173249554815e5fccad70a9fff35a69efde9baeb76ec08280d27b60d38"
+    },
+    {
+      "file": "scripts/audit-ffmpeg-win-artifacts.ps1",
+      "sha256": "eeb675fd33b53585bc61bb849bfbc11dd6e69ce8568edd39283dedd61df24e8b"
+    },
+    {
+      "file": "scripts/audit-mac-artifact.cjs",
+      "sha256": "f68ad25a5a4b3dd4ad409360ee02bcae04800a1de46bde9e196108c33c79f893"
+    },
+    {
+      "file": "scripts/audit-packaged-dev-deps.cjs",
+      "sha256": "c6ef0fe82f3d27f13eac14e8758d2e6f517d4ae31ac1b372e6f4cec9d7bf5e20"
+    },
+    {
+      "file": "scripts/audit-win-notice-versions.cjs",
+      "sha256": "6b9b2b04ceda4f83ecb398a8ef7a79b26ff82b0b09eec54c1a3cb2696f1f0024"
+    },
+    {
+      "file": "scripts/capture-ffmpeg-win.cjs",
+      "sha256": "94a30fffaa9e0e4f0c0c2e5ac179d382594ec65f35a08a127037f371c67ca3cf"
+    },
+    {
+      "file": "scripts/compare-inventory-notices.cjs",
+      "sha256": "64a4e8c97094033d0588709bd6020d1b186bb3591b806a07000f2ec727097bba"
+    },
+    {
+      "file": "scripts/inventory-asar-packages.cjs",
+      "sha256": "03459c9bfcfa0929a260ba15748734313459b630f968f17f792eb5f9760cc0d9"
+    },
+    {
+      "file": "scripts/inventory-native-components.py",
+      "sha256": "20fe62914825dbd6cddca4dc48ac25ef483e1fef6725d49088c2630bf4212a0a"
+    },
+    {
+      "file": "scripts/inventory-win-artifacts.cjs",
+      "sha256": "8944bd658019001410c9abd225f571ddacffa3a31367eb8fcb0023a8081a3350"
+    },
+    {
+      "file": "scripts/investigate-library-versions.cjs",
+      "sha256": "27c3b4f69d101aa9e05535c05d63c81aad49e05aa9a2a4bb1e9902ccfa22b02e"
+    },
+    {
+      "file": "scripts/library-source-plan.json",
+      "sha256": "b8f50a0cdb516596ffa9b089de15eef491ff590f76286f06b5cba9096e8a7d71"
+    },
+    {
+      "file": "scripts/normalize-mac-names.cjs",
+      "sha256": "68b0af4920a9bea27fe9793df8bd095c146ca972dc85cb33a9dce876363ac80e"
+    },
+    {
+      "file": "scripts/prepare-ffmpeg-source-review.ps1",
+      "sha256": "fe1d92a205d94fe23e82209a5790939d5c8b10275373ee4f04f937d6074035e8"
+    },
+    {
+      "file": "scripts/probe-ffmpeg-libraries.cjs",
+      "sha256": "7440949eb1bbaa6b6e193f209407ec956b6fe20f8abd11726091d5e5d8776f91"
+    },
+    {
+      "file": "scripts/source-archive-git-tree.py",
+      "sha256": "5b46bc156dede7b843e585a9da415ad0eeb5b798fb44c662f681adaa227ca147"
+    },
+    {
+      "file": "scripts/summarize-library-sources.cjs",
+      "sha256": "35d619c9a53a4ebbba75a3148277b6a7c2aa52bf1d65a1e71f40c47ea9603b13"
+    },
+    {
+      "file": "scripts/verify-artifact-licenses.cjs",
+      "sha256": "ecc2d1290c74cd146d29766ec5e0dd5fe0c42daaebf8ee1fe5c1bd13270a897c"
+    },
+    {
+      "file": "scripts/verify-electron-license-materials.py",
+      "sha256": "599130dd58c4187ad340b993f2290644a1f71df7024ba6888b5263fa221c0827"
+    },
+    {
+      "file": "scripts/verify-ffmpeg-source.py",
+      "sha256": "bb61aecbbb7cc7f88483a8cc0399bec5694e58cce7feba963b32e76d3f23ea5f"
+    },
+    {
+      "file": "scripts/verify-library-sources.py",
+      "sha256": "a1a424712baebb755256f29e286cf7d708546d7d285354b87366043d5f557dca"
+    },
+    {
+      "file": "scripts/verify-packaged-licenses.cjs",
+      "sha256": "e7c39a617f331e42f270efd92f4fd2c36415df24114027bc86c7cf3d34c9a967"
+    },
+    {
+      "file": "scripts/verify-release-candidate.cjs",
+      "sha256": "4dcc453759ea5d141f7440bcb6738a75d734fa69db7d1847b5269efb48fc8c14"
+    },
+    {
+      "file": "scripts/verify-windows-installer-materials.py",
+      "sha256": "382ab8014b6c72f899ba8a9732bf10866680631ba60fc55ee1df141e674ba399"
+    },
+    {
+      "file": "src/App.jsx",
+      "sha256": "4061227a5081c28c8518128922871e6639bda654cded2d26f95ba5476ce4ffb6"
+    },
+    {
+      "file": "src/components/bottom/BottomPanel.jsx",
+      "sha256": "dd18d2f017e724e8832ac718aedc265830cfe310c3221119de912540a475c5d5"
+    },
+    {
+      "file": "src/components/bottom/ConstructionDockPanel.jsx",
+      "sha256": "2b48db20ae44ee908f876d9f865f6f4912f6c9d7c788fc9c7cb6773a60e3be97"
+    },
+    {
+      "file": "src/components/bottom/MaterialPanel.jsx",
+      "sha256": "d6119cf11463f74bc0e277513df0b4c56be22054fe3ee6bbfd9dcf6ff471b3e2"
+    },
+    {
+      "file": "src/components/bottom/MissionPanel.jsx",
+      "sha256": "ba59ce61508c7f4eb945cf6881a23a280f336c564099be565ae3c189c8bed971"
+    },
+    {
+      "file": "src/components/bottom/QuestPanel.jsx",
+      "sha256": "56f9df1c1e96c6631301971ed8bcd501d4803da6816328ab647a3df9af803419"
+    },
+    {
+      "file": "src/components/bottom/RepairDockPanel.jsx",
+      "sha256": "326002387518ff58fc82a2df681d3c99092055f39c68f9d5b2ebeba4a7a22b70"
+    },
+    {
+      "file": "src/components/bottom/SortiePanel.jsx",
+      "sha256": "a5a73201406bb6155364be7f7ce437c14508b063593a96278e5f9c57563a9dd1"
+    },
+    {
+      "file": "src/components/fleet/EquipmentList.jsx",
+      "sha256": "c818f60a222bd2eb62f5e3d0fb18469bba1d9add289c8d3b9b334e2909fc4fcc"
+    },
+    {
+      "file": "src/components/fleet/FleetHeader.jsx",
+      "sha256": "5a74010fdeb1056a1c4456f5862b3973304d2c7142cf5f5320b8c5b1144fe3fb"
+    },
+    {
+      "file": "src/components/fleet/FleetPanel.jsx",
+      "sha256": "17ce50a89af79666f0841c8bdfdc1cd54cfec3f8d236ab6be17834828479a50c"
+    },
+    {
+      "file": "src/components/fleet/ProficiencyMark.jsx",
+      "sha256": "390847c90c4443d9e6004e93f098c2dd5c030d27e5a9f02cf9cae28c976afe40"
+    },
+    {
+      "file": "src/components/fleet/ShipCard.jsx",
+      "sha256": "6b281efec97e1d2275c4566754121956f41f55db6f6d51a4b1f9df431a8a6716"
+    },
+    {
+      "file": "src/components/fleet/ShipStats.jsx",
+      "sha256": "f357d3c1d7020ba35ce09909b4096e654afca29c939eefbdacc3d6134d07068f"
+    },
+    {
+      "file": "src/hooks/useKancolleData.js",
+      "sha256": "b956a658d406c18f2fce9d675a3718e390dad0bb2e40c190044bcf4952d4a3cb"
+    },
+    {
+      "file": "src/hooks/useRecording.js",
+      "sha256": "c66c9727f7753cf818667b628c43a454d1f3f0b6f7234712c1f6e26478d411da"
+    },
+    {
+      "file": "src/hooks/useScreenshot.js",
+      "sha256": "9d58bc7be70302f91fccd7cd5b03eb944f3452d4e581aef67527bd97130edfde"
+    },
+    {
+      "file": "src/index.css",
+      "sha256": "7c32b5ac35c6ead5b4cf7fcf2f52c9784b179e0b15e41b5f27bc96dcac3a29db"
+    },
+    {
+      "file": "src/index.css.bak",
+      "sha256": "b69789baaba2602e646e6226cbc691aced0e73d761b18157427aedb4f888c012"
+    },
+    {
+      "file": "src/index.css.dark.bak",
+      "sha256": "06273bfde413d07b2efb4d65b35489a2afefe34f6e2797d370ac94cecd6ac0bb"
+    },
+    {
+      "file": "src/main.jsx",
+      "sha256": "e7ec9302596619c362c864ba1e1732807596b478554381032f0e27971666cabe"
+    },
+    {
+      "file": "src/mapNodeLabels.js",
+      "sha256": "347ea74274efb599ef7d1b80b8dcbc11498b5f6243e658b767e5ad2614132b49"
+    },
+    {
+      "file": "src/styles/base.css",
+      "sha256": "9418bb3cb8ceed316995ba09a55ebd91e882a3507e2c373358f8353f29156183"
+    },
+    {
+      "file": "src/styles/bottom-panel.css",
+      "sha256": "b26416d2e06a1a0cd3b0caca43693be6e5bfe36019dfdf258a18f311128a1c87"
+    },
+    {
+      "file": "src/styles/controls.css",
+      "sha256": "db70f263f10b5fba1466f2c36248edd7114b181ccc357f9bae690987f1434330"
+    },
+    {
+      "file": "src/styles/fleet-panel.css",
+      "sha256": "943a431b3f45d5b182db0199d7d64662320762b6f3078461b066e2f0e014149f"
+    },
+    {
+      "file": "src/styles/layout.css",
+      "sha256": "b940a7b60302fb6b8f61531efbbb48b5a0f5db3642f10241bfef995eb76d1832"
+    },
+    {
+      "file": "src/utils/fleetCalculations.js",
+      "sha256": "c41d485544083d77cca0df09c65ead6e95d0da9fc7523c2328d60d601d728f62"
+    },
+    {
+      "file": "src/utils/formatters.js",
+      "sha256": "54daa2399393fab9343d8b1d0625f8a886b8064021198821d0af737242d1a796"
+    },
+    {
+      "file": "src/utils/shipDisplay.js",
+      "sha256": "88be57ef8d83aeb82b92440c0312f627e64b90630a06bde58948589687c2b0dd"
+    }
+  ]
+}

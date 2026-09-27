@@ -1,0 +1,34 @@
+[
+  {
+    "name": ".patches",
+    "path": "patches/ffmpeg/.patches",
+    "sha": "31dc878c5b29cffe0cc6ec03861f25880f913b80",
+    "size": 28,
+    "url": "https://api.github.com/repos/electron/electron/contents/patches/ffmpeg/.patches?ref=v44.0.0",
+    "html_url": "https://github.com/electron/electron/blob/v44.0.0/patches/ffmpeg/.patches",
+    "git_url": "https://api.github.com/repos/electron/electron/git/blobs/31dc878c5b29cffe0cc6ec03861f25880f913b80",
+    "download_url": "https://raw.githubusercontent.com/electron/electron/v44.0.0/patches/ffmpeg/.patches",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/electron/electron/contents/patches/ffmpeg/.patches?ref=v44.0.0",
+      "git": "https://api.github.com/repos/electron/electron/git/blobs/31dc878c5b29cffe0cc6ec03861f25880f913b80",
+      "html": "https://github.com/electron/electron/blob/v44.0.0/patches/ffmpeg/.patches"
+    }
+  },
+  {
+    "name": "link_with_loader_path.patch",
+    "path": "patches/ffmpeg/link_with_loader_path.patch",
+    "sha": "2b0311ce5bca38db638f54b1ffc29d5325e6d3e7",
+    "size": 1219,
+    "url": "https://api.github.com/repos/electron/electron/contents/patches/ffmpeg/link_with_loader_path.patch?ref=v44.0.0",
+    "html_url": "https://github.com/electron/electron/blob/v44.0.0/patches/ffmpeg/link_with_loader_path.patch",
+    "git_url": "https://api.github.com/repos/electron/electron/git/blobs/2b0311ce5bca38db638f54b1ffc29d5325e6d3e7",
+    "download_url": "https://raw.githubusercontent.com/electron/electron/v44.0.0/patches/ffmpeg/link_with_loader_path.patch",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/electron/electron/contents/patches/ffmpeg/link_with_loader_path.patch?ref=v44.0.0",
+      "git": "https://api.github.com/repos/electron/electron/git/blobs/2b0311ce5bca38db638f54b1ffc29d5325e6d3e7",
+      "html": "https://github.com/electron/electron/blob/v44.0.0/patches/ffmpeg/link_with_loader_path.patch"
+    }
+  }
+]

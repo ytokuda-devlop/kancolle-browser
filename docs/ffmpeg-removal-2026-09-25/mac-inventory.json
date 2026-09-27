@@ -1,0 +1,297 @@
+{
+  "auditedAt": "2026-09-25T13:59:13.919Z",
+  "artifact": "/Users/tokudayasuhisa/develop/kankore-browser3/release/ffmpeg-removal-check/艦娘は今日もお仕事です（仮）-1.0.0-mac.zip",
+  "artifactSha256": "c6ab605b6eaa507c358ea2be265ed80523eb6f45ddc1833ff78494fe6d416b59",
+  "app": "/Users/tokudayasuhisa/develop/kankore-browser3/release/ffmpeg-removal-check/mac/KancolleBrowser.app",
+  "appVersion": "1.0.0",
+  "electronVersion": "44.0.0",
+  "referenceGitCommit": "5e118fbe364d39aacba79189b330e86b90a273f6",
+  "referenceWorktreeStatus": " M .gitignore\n M README.md\n M THIRD_PARTY_NOTICES.md\n M licenses/DISTRIBUTION-NOTES.txt\n M licenses/FFmpeg-SOURCE.txt\n M package.json\n M scripts/after-artifact-build.cjs\n M scripts/audit-mac-artifact.cjs\n M scripts/audit-win-notice-versions.cjs\n M scripts/compare-inventory-notices.cjs\n M scripts/inventory-win-artifacts.cjs\n M scripts/verify-packaged-licenses.cjs\n?? docs/\n?? tests/packaged-licenses.test.cjs\n?? third_party/ffmpeg/darwin-x64/\n",
+  "provenanceNote": "Git commit describes the current reference checkout, not proven build provenance. Uncommitted changes exist.",
+  "packages": [
+    {
+      "name": "js-tokens",
+      "version": "4.0.0",
+      "license": "MIT",
+      "path": "node_modules/js-tokens/package.json",
+      "lockMatches": [
+        "node_modules/js-tokens"
+      ],
+      "developmentOnly": false,
+      "mentionedInPackagedNotice": true,
+      "embeddedNotices": [
+        "node_modules/js-tokens/LICENSE"
+      ],
+      "reviewRequired": false
+    },
+    {
+      "name": "loose-envify",
+      "version": "1.4.0",
+      "license": "MIT",
+      "path": "node_modules/loose-envify/package.json",
+      "lockMatches": [
+        "node_modules/loose-envify"
+      ],
+      "developmentOnly": false,
+      "mentionedInPackagedNotice": true,
+      "embeddedNotices": [
+        "node_modules/loose-envify/LICENSE"
+      ],
+      "reviewRequired": false
+    },
+    {
+      "name": "react",
+      "version": "18.3.1",
+      "license": "MIT",
+      "path": "node_modules/react/package.json",
+      "lockMatches": [
+        "node_modules/react"
+      ],
+      "developmentOnly": false,
+      "mentionedInPackagedNotice": true,
+      "embeddedNotices": [
+        "node_modules/react/LICENSE"
+      ],
+      "reviewRequired": false
+    },
+    {
+      "name": "react-dom",
+      "version": "18.3.1",
+      "license": "MIT",
+      "path": "node_modules/react-dom/package.json",
+      "lockMatches": [
+        "node_modules/react-dom"
+      ],
+      "developmentOnly": false,
+      "mentionedInPackagedNotice": true,
+      "embeddedNotices": [
+        "node_modules/react-dom/LICENSE"
+      ],
+      "reviewRequired": false
+    },
+    {
+      "name": "scheduler",
+      "version": "0.23.2",
+      "license": "MIT",
+      "path": "node_modules/scheduler/package.json",
+      "lockMatches": [
+        "node_modules/scheduler"
+      ],
+      "developmentOnly": false,
+      "mentionedInPackagedNotice": true,
+      "embeddedNotices": [
+        "node_modules/scheduler/LICENSE"
+      ],
+      "reviewRequired": false
+    }
+  ],
+  "executableFiles": [
+    "Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework",
+    "Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+    "Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+    "Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib",
+    "Contents/Frameworks/KancolleBrowser Helper (GPU).app/Contents/MacOS/KancolleBrowser Helper (GPU)",
+    "Contents/Frameworks/KancolleBrowser Helper (Plugin).app/Contents/MacOS/KancolleBrowser Helper (Plugin)",
+    "Contents/Frameworks/KancolleBrowser Helper (Renderer).app/Contents/MacOS/KancolleBrowser Helper (Renderer)",
+    "Contents/Frameworks/KancolleBrowser Helper.app/Contents/MacOS/KancolleBrowser Helper",
+    "Contents/Frameworks/Mantle.framework/Versions/A/Mantle",
+    "Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC",
+    "Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt",
+    "Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel",
+    "Contents/MacOS/KancolleBrowser"
+  ],
+  "binaries": [
+    {
+      "path": "Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework",
+      "sha256": "d2a5a75b572630817cb2893f20def244b21ed8d6e8b77db751db1b874ccfef6c",
+      "file": "Mach-O 64-bit dynamically linked shared library x86_64",
+      "dynamicLinks": "/Users/tokudayasuhisa/develop/kankore-browser3/release/ffmpeg-removal-check/mac/KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework:\n\t@rpath/Electron Framework.framework/Electron Framework (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/AuthenticationServices.framework/Versions/A/AuthenticationServices (compatibility version 1.0.0, current version 624.2.5)\n\t/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation (compatibility version 1.0.0, current version 2.0.0)\n\t/System/Library/Frameworks/AVFAudio.framework/Versions/A/AVFAudio (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon (compatibility version 2.0.0, current version 170.0.0)\n\t/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices (compatibility version 1.0.0, current version 66.0.0)\n\t/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics (compatibility version 64.0.0, current version 1965.5.1)\n\t/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices (compatibility version 1.0.0, current version 1226.0.0)\n\t/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork (compatibility version 1.0.0, current version 3860.255.21)\n\t/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)\n\t/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)\n\t/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText (compatibility version 1.0.0, current version 877.4.0)\n\t/System/Library/Frameworks/LocalAuthentication.framework/Versions/A/LocalAuthentication (compatibility version 1.0.0, current version 2005.121.1)\n\t/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore (compatibility version 1.2.0, current version 1195.14.4)\n\t/System/Library/Frameworks/CoreImage.framework/Versions/A/CoreImage (compatibility version 1.0.1, current version 7.0.0)\n\t/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo (compatibility version 1.2.0, current version 734.4.0)\n\t/System/Library/Frameworks/Quartz.framework/Versions/A/Quartz (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/QuickLookUI.framework/Versions/A/QuickLookUI (compatibility version 1.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/Security.framework/Versions/A/Security (compatibility version 1.0.0, current version 61901.120.67)\n\t/System/Library/Frameworks/SecurityInterface.framework/Versions/A/SecurityInterface (compatibility version 1.0.0, current version 55210.100.6)\n\t/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement (compatibility version 1.0.0, current version 3102.120.13)\n\t/System/Library/Frameworks/StoreKit.framework/Versions/A/StoreKit (compatibility version 1.0.0, current version 379.0.0)\n\t/System/Library/Frameworks/UserNotifications.framework/Versions/A/UserNotifications (compatibility version 1.0.0, current version 1.0.0)\n\t@rpath/Squirrel.framework/Squirrel (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/ReactiveObjC.framework/ReactiveObjC (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/Mantle.framework/Mantle (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)\n\t/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit (compatibility version 45.0.0, current version 2685.60.104)\n\t/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (compatibility version 1.0.0, current version 275.0.0)\n\t/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/CryptoTokenKit.framework/Versions/A/CryptoTokenKit (compatibility version 0.0.0, current version 805.120.2)\n\t/System/Library/Frameworks/Network.framework/Versions/A/Network (compatibility version 1.0.0, current version 5812.121.1)\n\t/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration (compatibility version 1.0.0, current version 1405.120.5)\n\t/System/Library/Frameworks/UniformTypeIdentifiers.framework/Versions/A/UniformTypeIdentifiers (compatibility version 1.0.0, current version 709.0.0)\n\t/System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia (compatibility version 1.0.0, current version 3320.8.5)\n\t/System/Library/Frameworks/Metal.framework/Versions/A/Metal (compatibility version 1.0.0, current version 373.2.0)\n\t/System/Library/Frameworks/AudioToolbox.framework/Versions/A/AudioToolbox (compatibility version 1.0.0, current version 1000.0.0)\n\t/System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/AudioUnit.framework/Versions/A/AudioUnit (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/ScreenCaptureKit.framework/Versions/A/ScreenCaptureKit (compatibility version 1.0.0, current version 1.0.0, weak)\n\t/System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa (compatibility version 1.0.0, current version 24.0.0)\n\t/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate (compatibility version 1.0.0, current version 4.0.0)\n\t/System/Library/Frameworks/VideoToolbox.framework/Versions/A/VideoToolbox (compatibility version 1.0.0, current version 3320.8.5)\n\t/System/Library/Frameworks/CoreMediaIO.framework/Versions/A/CoreMediaIO (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/Accessibility.framework/Versions/A/Accessibility (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/MetalKit.framework/Versions/A/MetalKit (compatibility version 1.0.0, current version 173.7.0)\n\t/System/Library/Frameworks/CoreBluetooth.framework/Versions/A/CoreBluetooth (compatibility version 1.0.0, current version 195.7.0)\n\t/System/Library/Frameworks/IOBluetooth.framework/Versions/A/IOBluetooth (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/CoreMIDI.framework/Versions/A/CoreMIDI (compatibility version 1.0.0, current version 69.0.0)\n\t/System/Library/Frameworks/MediaAccessibility.framework/Versions/A/MediaAccessibility (compatibility version 1.0.0, current version 62.0.0)\n\t/System/Library/Frameworks/MediaPlayer.framework/Versions/A/MediaPlayer (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/CoreHaptics.framework/Versions/A/CoreHaptics (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/GameController.framework/Versions/A/GameController (compatibility version 1.0.0, current version 13.5.1)\n\t/System/Library/Frameworks/ForceFeedback.framework/Versions/A/ForceFeedback (compatibility version 1.0.0, current version 1.0.2)\n\t/System/Library/Frameworks/CoreWLAN.framework/Versions/A/CoreWLAN (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/CoreLocation.framework/Versions/A/CoreLocation (compatibility version 1.0.0, current version 3075.0.8)\n\t/System/Library/Frameworks/Vision.framework/Versions/A/Vision (compatibility version 1.0.0, current version 9.5.4)\n\t/System/Library/Frameworks/CoreML.framework/Versions/A/CoreML (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/DiskArbitration.framework/Versions/A/DiskArbitration (compatibility version 1.0.0, current version 1.0.0)\n\t/System/Library/Frameworks/QuickLookThumbnailing.framework/Versions/A/QuickLookThumbnailing (compatibility version 1.0.0, current version 0.0.0, weak)\n\t@rpath/libffmpeg.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libcups.2.dylib (compatibility version 2.0.0, current version 2.14.0)\n\t/usr/lib/libbsm.0.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libpmenergy.dylib (compatibility version 1.0.0, current version 2.0.0)\n\t/usr/lib/libpmsample.dylib (compatibility version 1.0.0, current version 2.0.0)\n\t/usr/lib/libresolv.9.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libsandbox.1.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+      "dynamicLinkStatus": 0
+    },
+    {
+      "path": "Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+      "sha256": "2b3c5fde66a6e0a175171a620e191c945d52ff1f5105802548804ed7992856f5",
+      "file": "Mach-O 64-bit executable x86_64",
+      "dynamicLinks": "/Users/tokudayasuhisa/develop/kankore-browser3/release/ffmpeg-removal-check/mac/KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler:\n\t/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)\n\t/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)\n\t/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics (compatibility version 64.0.0, current version 1965.5.1)\n\t/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText (compatibility version 1.0.0, current version 877.4.0)\n\t/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)\n\t/System/Library/Frameworks/Security.framework/Versions/A/Security (compatibility version 1.0.0, current version 61901.120.67)\n\t/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices (compatibility version 1.0.0, current version 66.0.0)\n\t/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices (compatibility version 1.0.0, current version 1226.0.0)\n\t/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit (compatibility version 45.0.0, current version 2685.60.104)\n\t/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (compatibility version 1.0.0, current version 275.0.0)\n\t/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libbsm.0.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libpmenergy.dylib (compatibility version 1.0.0, current version 2.0.0)\n\t/usr/lib/libpmsample.dylib (compatibility version 1.0.0, current version 2.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+      "dynamicLinkStatus": 0
+    },
+    {
+      "path": "Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+      "sha256": "0ea472e75cdf7fb5b2786bf1c5d84fa81b1638199cc01008db58de2616a764c1",
+      "file": "Mach-O 64-bit dynamically linked shared library x86_64",
+      "dynamicLinks": "/Users/tokudayasuhisa/develop/kankore-browser3/release/ffmpeg-removal-check/mac/KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib:\n\t@loader_path/libffmpeg.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+      "dynamicLinkStatus": 0
+    },
+    {
+      "path": "Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib",
+      "sha256": "5d6ac717910b127d9136bdd9b6e153f653f0ea3d9d51fc9aa6b1f7d3cf03b634",
+      "file": "Mach-O 64-bit dynamically linked shared library x86_64",
+      "dynamicLinks": "/Users/tokudayasuhisa/develop/kankore-browser3/release/ffmpeg-removal-check/mac/KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib:\n\t@rpath/libvk_swiftshader.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/Metal.framework/Versions/A/Metal (compatibility version 1.0.0, current version 373.2.0, weak)\n\t/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa (compatibility version 1.0.0, current version 24.0.0)\n\t/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit (compatibility version 45.0.0, current version 2685.60.104)\n\t/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)\n\t/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)\n\t/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore (compatibility version 1.2.0, current version 1195.14.4)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+      "dynamicLinkStatus": 0
+    },
+    {
+      "path": "Contents/Frameworks/KancolleBrowser Helper (GPU).app/Contents/MacOS/KancolleBrowser Helper (GPU)",
+      "sha256": "2c8b824e2055524c9a671468f50d092ae0713730ff2b4b9b24a2e457208cbb2c",
+      "file": "Mach-O 64-bit executable x86_64",
+      "dynamicLinks": "",
+      "dynamicLinkStatus": 1
+    },
+    {
+      "path": "Contents/Frameworks/KancolleBrowser Helper (Plugin).app/Contents/MacOS/KancolleBrowser Helper (Plugin)",
+      "sha256": "2c5d1f6fe06cc8b909e91cfad237db039396211b95aab3d1cfb87572338ab433",
+      "file": "Mach-O 64-bit executable x86_64",
+      "dynamicLinks": "",
+      "dynamicLinkStatus": 1
+    },
+    {
+      "path": "Contents/Frameworks/KancolleBrowser Helper (Renderer).app/Contents/MacOS/KancolleBrowser Helper (Renderer)",
+      "sha256": "e012b4df3762543f6dc0662707538ade9c8a5ff33f5970cdef1bc4b0ab28f870",
+      "file": "Mach-O 64-bit executable x86_64",
+      "dynamicLinks": "",
+      "dynamicLinkStatus": 1
+    },
+    {
+      "path": "Contents/Frameworks/KancolleBrowser Helper.app/Contents/MacOS/KancolleBrowser Helper",
+      "sha256": "fbd94e8226636857d94f3ccadd36edd2901c28228f03e5876a065288e99f3717",
+      "file": "Mach-O 64-bit executable x86_64",
+      "dynamicLinks": "/Users/tokudayasuhisa/develop/kankore-browser3/release/ffmpeg-removal-check/mac/KancolleBrowser.app/Contents/Frameworks/KancolleBrowser Helper.app/Contents/MacOS/KancolleBrowser Helper:\n\t@rpath/Electron Framework.framework/Electron Framework (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libsandbox.1.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+      "dynamicLinkStatus": 0
+    },
+    {
+      "path": "Contents/Frameworks/Mantle.framework/Versions/A/Mantle",
+      "sha256": "dc485511dd9dc5d315201ea98973e4c10fc436909a708cab96cb2dd657d8cf22",
+      "file": "Mach-O 64-bit dynamically linked shared library x86_64",
+      "dynamicLinks": "/Users/tokudayasuhisa/develop/kankore-browser3/release/ffmpeg-removal-check/mac/KancolleBrowser.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle:\n\t@rpath/Mantle.framework/Mantle (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/CoreData.framework/Versions/A/CoreData (compatibility version 1.0.0, current version 1526.0.0)\n\t/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)\n\t/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)\n\t/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+      "dynamicLinkStatus": 0
+    },
+    {
+      "path": "Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC",
+      "sha256": "a799e8991a74a4e179f09f4ec948d0b60f54e013d1e9f18be444e0372eca836b",
+      "file": "Mach-O 64-bit dynamically linked shared library x86_64",
+      "dynamicLinks": "/Users/tokudayasuhisa/develop/kankore-browser3/release/ffmpeg-removal-check/mac/KancolleBrowser.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC:\n\t@rpath/ReactiveObjC.framework/ReactiveObjC (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit (compatibility version 45.0.0, current version 2685.60.104)\n\t/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork (compatibility version 1.0.0, current version 3860.255.21)\n\t/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)\n\t/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)\n\t/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+      "dynamicLinkStatus": 0
+    },
+    {
+      "path": "Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt",
+      "sha256": "8a4484e5eaa82650a072a65092eab1424bd1b2e2250f2e2db70e4c3b93591bfa",
+      "file": "Mach-O 64-bit executable x86_64",
+      "dynamicLinks": "/Users/tokudayasuhisa/develop/kankore-browser3/release/ffmpeg-removal-check/mac/KancolleBrowser.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt:\n\t/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit (compatibility version 45.0.0, current version 2685.60.104)\n\t/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)\n\t/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)\n\t/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)\n\t/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (compatibility version 1.0.0, current version 275.0.0)\n\t/System/Library/Frameworks/Security.framework/Versions/A/Security (compatibility version 1.0.0, current version 61901.120.67)\n\t@rpath/Mantle.framework/Mantle (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/ReactiveObjC.framework/ReactiveObjC (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+      "dynamicLinkStatus": 0
+    },
+    {
+      "path": "Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel",
+      "sha256": "81a3bb46761dd19e6e37bbf12e0ec3b814a40bba35d92c6a04110e9ba005b145",
+      "file": "Mach-O 64-bit dynamically linked shared library x86_64",
+      "dynamicLinks": "/Users/tokudayasuhisa/develop/kankore-browser3/release/ffmpeg-removal-check/mac/KancolleBrowser.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel:\n\t@rpath/Squirrel.framework/Squirrel (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit (compatibility version 45.0.0, current version 2685.60.104)\n\t/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices (compatibility version 1.0.0, current version 1226.0.0)\n\t/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork (compatibility version 1.0.0, current version 3860.255.21)\n\t/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)\n\t/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)\n\t/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)\n\t/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (compatibility version 1.0.0, current version 275.0.0)\n\t/System/Library/Frameworks/Security.framework/Versions/A/Security (compatibility version 1.0.0, current version 61901.120.67)\n\t/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement (compatibility version 1.0.0, current version 3102.120.13)\n\t@rpath/Mantle.framework/Mantle (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/ReactiveObjC.framework/ReactiveObjC (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+      "dynamicLinkStatus": 0
+    },
+    {
+      "path": "Contents/MacOS/KancolleBrowser",
+      "sha256": "3819734b928d919ab5dd116a89b66edfbfdeaefcc35134bdd81ba377ac051406",
+      "file": "Mach-O 64-bit executable x86_64",
+      "dynamicLinks": "/Users/tokudayasuhisa/develop/kankore-browser3/release/ffmpeg-removal-check/mac/KancolleBrowser.app/Contents/MacOS/KancolleBrowser:\n\t@rpath/Electron Framework.framework/Electron Framework (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+      "dynamicLinkStatus": 0
+    }
+  ],
+  "nativeAsarEntries": [],
+  "licenseFiles": [
+    {
+      "path": "DISTRIBUTION-NOTES.txt",
+      "bytes": 2898,
+      "sha256": "19754c9f4b5571e065647d9b830ffba01178102e7a945e3af1a72626ccbdc2d3"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1072,
+      "sha256": "8d45dbb64725f1e576857001fefd33949abeb128e605530c19022595773f820c"
+    },
+    {
+      "path": "LICENSES.chromium.html",
+      "bytes": 20111206,
+      "sha256": "4cbde8e3e7b29f451c78a44491fb32e2202884826fef47786a9cda5a36110525"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 5377,
+      "sha256": "2b912c9e25b6c0dc2d2830980a82b3d13f5e37c1cfea995b9bb9d1e4e55e400f"
+    },
+    {
+      "path": "electron-LICENSE.txt",
+      "bytes": 1096,
+      "sha256": "5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d"
+    },
+    {
+      "path": "npm/js-tokens-LICENSE.txt",
+      "bytes": 1103,
+      "sha256": "2213d91c606205c71eb051a199478cdc2adde945893404d7f1421436dd6d5cc1"
+    },
+    {
+      "path": "npm/loose-envify-LICENSE.txt",
+      "bytes": 1100,
+      "sha256": "4eb7543b08d955a6d23fcc224601d43ff566e775be918805e26210d7f6eb4893"
+    },
+    {
+      "path": "react-LICENSE.txt",
+      "bytes": 1086,
+      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+    },
+    {
+      "path": "react-dom-LICENSE.txt",
+      "bytes": 1086,
+      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+    },
+    {
+      "path": "scheduler-LICENSE.txt",
+      "bytes": 1086,
+      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+    }
+  ],
+  "licenseComparison": [
+    {
+      "path": "DISTRIBUTION-NOTES.txt",
+      "status": "match"
+    },
+    {
+      "path": "electron-LICENSE.txt",
+      "status": "match"
+    },
+    {
+      "path": "LICENSES.chromium.html",
+      "status": "match"
+    },
+    {
+      "path": "react-LICENSE.txt",
+      "status": "match"
+    },
+    {
+      "path": "react-dom-LICENSE.txt",
+      "status": "match"
+    },
+    {
+      "path": "scheduler-LICENSE.txt",
+      "status": "match"
+    },
+    {
+      "path": "npm/js-tokens-LICENSE.txt",
+      "status": "match"
+    },
+    {
+      "path": "npm/loose-envify-LICENSE.txt",
+      "status": "match"
+    },
+    {
+      "path": "LICENSE",
+      "status": "match"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "status": "match"
+    }
+  ],
+  "recordingFfmpegAbsent": true,
+  "limits": [
+    "Native binary inventory does not enumerate all statically linked components.",
+    "Electron/Chromium components (including its own FFmpeg library) still require source/notice coverage review.",
+    "This record does not approve release or confirm complete corresponding source availability."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": 393993077,
+  "tag_name": "v1.0.0",
+  "html_url": "https://github.com/ytokuda-devlop/kancolle-browser/releases/tag/v1.0.0",
+  "published_at": "2026-09-27T06:05:42Z",
+  "prerelease": true,
+  "assets": [
+    {
+      "id": 592108231,
+      "name": "kancolle-browser_1.0.0_mac.zip",
+      "size": 134732886,
+      "digest": "sha256:9e7179f3f7309d5ac931e42b10e294d3bfb910cbe704181ee1a51e616c8007c3",
+      "browser_download_url": "https://github.com/ytokuda-devlop/kancolle-browser/releases/download/v1.0.0/kancolle-browser_1.0.0_mac.zip"
+    },
+    {
+      "id": 592251375,
+      "name": "kancolle-browser_1.0.0_x64.zip",
+      "size": 111854407,
+      "digest": "sha256:00f30dc3e76e6e928f3c5743b13a564b6f835f9172f0c7d6af965ce6f61e12b1",
+      "browser_download_url": "https://github.com/ytokuda-devlop/kancolle-browser/releases/download/v1.0.0/kancolle-browser_1.0.0_x64.zip"
+    }
+  ]
+}

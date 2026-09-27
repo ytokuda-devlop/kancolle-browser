@@ -1,0 +1,18 @@
+{
+  "method": "Conservative literal import traversal only; GN conditions and targets NOT evaluated",
+  "startingFiles": [
+    "third_party/ffmpeg/BUILD.gn",
+    "third_party/opus/BUILD.gn"
+  ],
+  "availableGnFiles": 341,
+  "visitedLiteralImports": 46,
+  "missingLiteralImports": [
+    "build/config/gclient_args.gni",
+    "build_overrides/build.gni",
+    "clank/config.gni",
+    "testing/test.gni",
+    "third_party/fuchsia-gn-sdk/src/component.gni"
+  ],
+  "dynamicImportsNotEvaluated": [],
+  "completeTransitiveBuildGraph": false
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "file": "UAC.zip",
+    "url": "https://nsis.sourceforge.io/mediawiki/images/8/8f/UAC.zip",
+    "sha256": "20e3192af5598568887c16d88de59a52c2ce4a26e42c5fb8bee8105dcbbd1760",
+    "size": 52034
+  },
+  {
+    "file": "WinShell.zip",
+    "url": "https://nsis.sourceforge.io/mediawiki/images/5/54/WinShell.zip",
+    "sha256": "34e111f8aacf64c540d848fd06b9d6f3e2c10cb825ec9329a01d1141973e749b",
+    "size": 2864
+  },
+  {
+    "file": "Nsis7z_19.00.7z",
+    "url": "https://nsis.sourceforge.io/mediawiki/images/6/69/Nsis7z_19.00.7z",
+    "sha256": "6f2f3730049926f40442ee0c8b7d3e3dee7ace544d82467ff8059ea3f4201c58",
+    "size": 461078
+  },
+  {
+    "file": "lzma1900.7z",
+    "url": "https://www.7-zip.org/a/lzma1900.7z",
+    "sha256": "00f569e624b3d9ed89cf8d40136662c4c5207eaceb92a70b1044c77f84234bad",
+    "size": 1082692
+  },
+  {
+    "file": "elevate-1.0.zip",
+    "url": "https://github.com/jpassing/elevate/releases/download/1.0/elevate.zip",
+    "sha256": "5008db23592fe5c3480907be0a26b6ae7f39406a59047d91a784e126e8093ec0",
+    "size": 104432
+  },
+  {
+    "file": "elevate-provider.exe",
+    "url": "https://raw.githubusercontent.com/electron-userland/electron-builder-binaries/b266aeda90e296ffb0d803d769b738d14148f72f/nsis/elevate.exe",
+    "sha256": "9b1fbf0c11c520ae714af8aa9af12cfd48503eedecd7398d8992ee94d1b4dc37",
+    "size": 107520
+  }
+]

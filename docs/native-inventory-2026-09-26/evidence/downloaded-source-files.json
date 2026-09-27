@@ -1,0 +1,22 @@
+[
+  {
+    "file": "node.gni",
+    "url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/node.gni",
+    "sha256": "b6bd91e4cd8bfa3bab9aee8e87cd82bdb997e18c385a13fa90b77512c67159f3"
+  },
+  {
+    "file": "node-unofficial.gni",
+    "url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/unofficial.gni",
+    "sha256": "865fe1cee76fa6169e7dc6c1d9d6f7447eb5e8afe95413c1ebbfff227662d848"
+  },
+  {
+    "file": "node-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/LICENSE",
+    "sha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+  },
+  {
+    "file": "nbytes-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/nodejs/node/v24.18.1/deps/nbytes/LICENSE",
+    "sha256": "782ab5b8ae1540c1a2b102fdd00990ed268d4a3a98e90ad7fe724b489d7bb0f2"
+  }
+]

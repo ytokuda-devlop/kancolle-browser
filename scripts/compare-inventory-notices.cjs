@@ -6,7 +6,7 @@ const dir = path.join(root, 'audits/inventory/windows-x64');
 const inventory = JSON.parse(fs.readFileSync(path.join(dir, 'inventory.json')));
 const read = p => fs.readFileSync(p);
 const hash = b => crypto.createHash('sha256').update(b).digest('hex');
-const mappings = { react: 'react-LICENSE.txt', 'react-dom': 'react-dom-LICENSE.txt', scheduler: 'scheduler-LICENSE.txt', 'ffmpeg-static': 'ffmpeg-static-GPL-3.0.txt' };
+const mappings = { react: 'react-LICENSE.txt', 'react-dom': 'react-dom-LICENSE.txt', scheduler: 'scheduler-LICENSE.txt' };
 const results = [];
 for (const artifact of inventory.artifacts) {
   const original = path.join(root, 'release/windows-x64', artifact.filename);
@@ -34,8 +34,7 @@ for (const artifact of inventory.artifacts) {
     const name = file.path.split('/').pop();
     let status = 'unresolved', references = [], reason = 'No explicit component notice/license mapping found; provider and exact terms need investigation.';
     if (file.path.includes('node_modules/ffmpeg-static/ffmpeg.exe')) {
-      status = 'notice-present-source-incomplete'; references = ['GPL-3.0.txt', 'FFmpeg-SOURCE.txt'].map(license);
-      reason = 'Separate GPL FFmpeg executable; complete corresponding source remains unresolved.';
+      throw new Error('Removed recording FFmpeg found in artifact');
     } else if (file.path === 'app/艦娘は今日もお仕事です（仮）.exe') {
       status = 'notice-present'; references = ['electron-LICENSE.txt', 'LICENSES.chromium.html'].map(license);
       reason = 'Application executable embeds Electron; original application LICENSE is also included.';
@@ -57,9 +56,9 @@ const report = { comparedAt: new Date().toISOString(), scope: 'Windows x64; comp
 fs.writeFileSync(path.join(dir, 'notice-comparison.json'), JSON.stringify(report, null, 2) + '\n');
 let md = '# Windows x64 通知・ライセンス照合\n\n' + report.comparedAt + '\n\n両成果物のハッシュを再確認し、展開済み通知・ライセンスを現行原本とSHA-256で照合した。照合実施と不足解消は別である。\n\n';
 for (const r of results) {
-  md += `## ${r.filename}\n\nSHA-256: ${r.sha256}\n\nnpm ${r.packages.length}件すべての版記載と個別ライセンスファイルを確認。個別パス・ハッシュはnotice-comparison.jsonを参照。parse-cache-controlのBSD表記は収録本文の3条項と通知のBSD-3-Clause表記を照合した。\n\n| ファイル | 判定 | 根拠／不足 |\n| --- | --- | --- |\n`;
+  md += `## ${r.filename}\n\nSHA-256: ${r.sha256}\n\nnpm ${r.packages.length}件すべての版記載と個別ライセンスファイルを確認。個別パス・ハッシュはnotice-comparison.jsonを参照。\n\n| ファイル | 判定 | 根拠／不足 |\n| --- | --- | --- |\n`;
   for (const n of r.nativeFiles) md += `| ${n.path} | ${n.status} | ${n.reason} |\n`;
 }
-md += '\n## 後続対応\n\n- インストーラー本体、アンインストーラー、NSISプラグイン、elevate.exe、d3dcompiler_47.dllの提供元・版・適用条件と必要通知を確認する。現行資料では明示対応を確定できない。\n- Chromium通知内の名前の一致だけではDLLの適用条件を確定しない。各DLLのビルドとの対応を確認する。Electron同梱ffmpeg.dllとffmpeg-staticのffmpeg.exeは別部品として扱う。\n- FFmpegの静的リンク部品と完全な対応ソースの未解決事項は既存調査を継続する。\n- 不足資料を追加する場合は成果物を再ビルドし、再照合する。\n';
+md += '\n## 後続対応\n\n- インストーラー本体、アンインストーラー、NSISプラグイン、elevate.exe、d3dcompiler_47.dllの提供元・版・適用条件と必要通知を確認する。現行資料では明示対応を確定できない。\n- Chromium通知内の名前の一致だけではDLLの適用条件を確定しない。各DLLのビルドとの対応を確認する。Electron同梱ffmpeg.dllとffmpeg-staticのffmpeg.exeは別部品として扱う。\n- 録画変換用FFmpegは削除済み。Electron内蔵FFmpegの正確なビルド・適用条件と必要なソース提供の確認は継続する。\n- 不足資料を追加する場合は成果物を再ビルドし、再照合する。\n';
 fs.writeFileSync(path.join(dir, 'NOTICE-COMPARISON.md'), md);
-console.log('Compared both artifacts: 25 npm packages each; native findings recorded in ' + dir);
+console.log('Compared artifacts; native findings recorded in ' + dir);

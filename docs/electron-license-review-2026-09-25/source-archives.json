@@ -1,0 +1,23 @@
+[
+  {
+    "path": "third_party/electron-44.0.0/ffmpeg-2b68d2babae7.tar.gz",
+    "sha256": "a1546b3448047be40d1da218649d54be9e6292b7e16d826f5e571d618c083a1b",
+    "bytes": 18818197,
+    "readableFileCount": 11015,
+    "url": "https://chromium.googlesource.com/chromium/third_party/ffmpeg/+archive/2b68d2babae73714846961fb0ee47e3b3d2e39a9.tar.gz"
+  },
+  {
+    "path": "third_party/electron-44.0.0/electron-bf0c4e67e9a8.tar.gz",
+    "sha256": "071a12de219099ee28bdd7f8232c3a5a08e791e8845d392a9adb34d9e3419392",
+    "bytes": 19494855,
+    "readableFileCount": 3074,
+    "url": "https://codeload.github.com/electron/electron/tar.gz/bf0c4e67e9a834479ee171e61057f7516a381d25"
+  },
+  {
+    "path": "third_party/electron-44.0.0/StdUtils.2018-10-27.sources.tbz2",
+    "sha256": "c5e3b1a66219bc9564c2ccc1702691327eecf044ad33404ac268d725d22dca49",
+    "bytes": 206896,
+    "readableFileCount": 94,
+    "url": "https://github.com/lordmulder/stdutils/releases/download/1.14/StdUtils.2018-10-27.sources.tbz2"
+  }
+]

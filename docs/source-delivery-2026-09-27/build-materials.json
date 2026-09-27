@@ -1,0 +1,103 @@
+[
+  {
+    "path": "docs/source-delivery-2026-09-27/evidence/chromium/DEPS",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/DEPS",
+    "sha256": "6d0b1775ce938dfadd2cff1adea4fef5fc27b33f6891a481b002cd31afea3c55",
+    "bytes": 194497
+  },
+  {
+    "path": "docs/source-delivery-2026-09-27/evidence/chromium/.gn",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/.gn",
+    "sha256": "b17d58c4d7d648fab31108af33e71a4dc6725667bc2df665a9ae8456683eba64",
+    "bytes": 8325
+  },
+  {
+    "path": "docs/source-delivery-2026-09-27/evidence/chromium/BUILD.gn",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/BUILD.gn",
+    "sha256": "3a975bdf5a09d3b652920bdd27cb68a0be8e51a5706b2710715f566c50f6b10c",
+    "bytes": 54887
+  },
+  {
+    "path": "docs/source-delivery-2026-09-27/evidence/chromium/LICENSE",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/LICENSE",
+    "sha256": "368cca1106be99d39ecd32a38d8305585d802a475effb66380b91ffc9bcf709b",
+    "bytes": 1536
+  },
+  {
+    "path": "docs/source-delivery-2026-09-27/evidence/chromium/docs/mac_build_instructions.md",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/docs/mac_build_instructions.md",
+    "sha256": "9b811cc15690efebc692652a568492c38e6f1fae157ff65544018dff323ebafd",
+    "bytes": 13373
+  },
+  {
+    "path": "docs/source-delivery-2026-09-27/evidence/chromium/docs/windows_build_instructions.md",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/docs/windows_build_instructions.md",
+    "sha256": "0d260d169d12b10be89d612008060c3e2cad594c18e2349709941321c0482099",
+    "bytes": 24061
+  },
+  {
+    "path": "docs/source-delivery-2026-09-27/evidence/chromium/build/config/mac/mac_sdk.gni",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/build/config/mac/mac_sdk.gni",
+    "sha256": "5f0da18d8b5b39bc830f77f3e92c90a361881844f2e2cdc332ea06b9b5658e38",
+    "bytes": 5927
+  },
+  {
+    "path": "docs/source-delivery-2026-09-27/evidence/chromium/build/vs_toolchain.py",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/build/vs_toolchain.py",
+    "sha256": "5b258c09a6037b0d0ef3bb95d431fba562758592ee4424dbc261f80bf590b8f2",
+    "bytes": 26279
+  },
+  {
+    "path": "docs/source-delivery-2026-09-27/evidence/chromium/tools/clang/scripts/update.py",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/tools/clang/scripts/update.py",
+    "sha256": "0679888392d7a700fb3a3c3de93f56bfb4e4064a5a46ece798c306b63e98b7cd",
+    "bytes": 14777
+  },
+  {
+    "path": "docs/source-delivery-2026-09-27/evidence/chromium/third_party/opus/BUILD.gn",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/third_party/opus/BUILD.gn",
+    "sha256": "436f0bfedbfc18c2a46f39f10667fe815e0aca6bf097e999930bfc36118deb33",
+    "bytes": 15705
+  },
+  {
+    "path": "docs/source-delivery-2026-09-27/evidence/chromium/third_party/opus/README.chromium",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/third_party/opus/README.chromium",
+    "sha256": "e09b127a9a06d41673a98357ed758d6a6628621189961565f90bf368c6c88dff",
+    "bytes": 1448
+  },
+  {
+    "path": "third_party/electron-44.0.0/chromium-build-24072c1aa400.tar.gz",
+    "url": "https://chromium.googlesource.com/chromium/src/+archive/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/build.tar.gz",
+    "sha256": "c468235365e9044df7da4c33692e165cff4f2ebcfaefd2c42c52ddf34d780eee",
+    "bytes": 1923380,
+    "readableFileCount": 1484
+  },
+  {
+    "path": "third_party/electron-44.0.0/chromium-opus-24072c1aa400.tar.gz",
+    "url": "https://chromium.googlesource.com/chromium/src/+archive/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/third_party/opus.tar.gz",
+    "sha256": "6de95c191d49e7629def816aa076f4be400eeb2789c9e08379369a21f4bb6488",
+    "bytes": 4258446,
+    "readableFileCount": 715
+  },
+  {
+    "path": "third_party/electron-44.0.0/chromium-generate-stubs-24072c1aa400.tar.gz",
+    "url": "https://chromium.googlesource.com/chromium/src/+archive/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/tools/generate_stubs.tar.gz",
+    "sha256": "1fa32966c3f896eef76592baf3f8f0ec34fdafab1210666eabbd60bb371e1cd0",
+    "bytes": 15199,
+    "readableFileCount": 3
+  },
+  {
+    "path": "third_party/electron-44.0.0/nasm-525a09a813be0.tar.gz",
+    "url": "https://chromium.googlesource.com/chromium/deps/nasm/+archive/525a09a813be0f75b646ee93fc2a31c27b87d722.tar.gz",
+    "sha256": "a6e91683aa747a74faadb5523221bd8b6065d4f9a182fd8afbf21f2a6392c459",
+    "bytes": 2432997,
+    "readableFileCount": 1356
+  },
+  {
+    "path": "third_party/electron-44.0.0/depot-tools-38c391feba5f.tar.gz",
+    "url": "https://chromium.googlesource.com/chromium/tools/depot_tools/+archive/38c391feba5fb96812f9028da12413ffc39df394.tar.gz",
+    "sha256": "8e39084a044360f731aae504eedfcaafbf27f98e1bcd3eb49cf900e3bfaa59c7",
+    "bytes": 1371403,
+    "readableFileCount": 830
+  }
+]

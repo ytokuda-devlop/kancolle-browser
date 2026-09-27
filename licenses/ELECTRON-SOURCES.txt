@@ -1,0 +1,92 @@
+Electron 44.0.0および関連部品のソース・ライセンス記録
+更新日: 2026-09-25
+
+1. 対象と表示
+  macOS x64 / Windows x64のElectron 44.0.0を対象とする。
+  アプリ独自コードはMIT。以下の部品は各自の条件で提供される。
+  LGPL対象部品について、ライセンスで認められる改変・交換や、その改変を
+  デバッグするためのリバースエンジニアリングを禁止する追加条件を課さない。
+  録画変換用のffmpeg-static / FFmpeg実行ファイルの旧資料とは別の記録である。
+
+2. Electron内蔵FFmpeg
+  Electron: bf0c4e67e9a834479ee171e61057f7516a381d25 (v44.0.0)
+  Chromium: 152.0.7977.54
+  Chromium FFmpeg: 2b68d2babae73714846961fb0ee47e3b3d2e39a9
+  https://github.com/electron/electron/blob/bf0c4e67e9a834479ee171e61057f7516a381d25/DEPS
+  https://chromium.googlesource.com/chromium/src/+/152.0.7977.54/DEPS
+  https://chromium.googlesource.com/chromium/third_party/ffmpeg/+/2b68d2babae73714846961fb0ee47e3b3d2e39a9/
+
+  Electron release.gnはis_component_ffmpeg=trueで共有ライブラリを使用する。
+  all.gnはffmpeg_branding="Chrome"、proprietary_codecs=trueを指定する。
+  同リビジョンのChrome/mac/x64とChrome/win/x64のconfig.hは
+  FFMPEG_LICENSE="LGPL version 2.1 or later"、CONFIG_GPL=0、CONFIG_NONFREE=0、
+  CONFIG_VERSION3=0、CONFIG_LIBX264=0、CONFIG_LIBX265=0。
+  proprietary_codecs=trueをGPL有効と同一視しない。
+  LGPL本文: electron-components/LGPL-2.1.txt
+  原文通知: electron-components/FFmpeg-CREDITS.txt、LICENSES.chromium.html
+
+  上流ソースアーカイブ（取得・全ファイル読み取り確認済み）:
+  https://chromium.googlesource.com/chromium/third_party/ffmpeg/+archive/2b68d2babae73714846961fb0ee47e3b3d2e39a9.tar.gz
+  SHA-256: a1546b3448047be40d1da218649d54be9e6292b7e16d826f5e571d618c083a1b
+
+  Electronのパッチ・ビルド資料を含むソース（取得・全ファイル読み取り確認済み）:
+  https://codeload.github.com/electron/electron/tar.gz/bf0c4e67e9a834479ee171e61057f7516a381d25
+  SHA-256: 071a12de219099ee28bdd7f8232c3a5a08e791e8845d392a9adb34d9e3419392
+  patches/ffmpeg/link_with_loader_path.patchを適用する構成。
+  同アーカイブのdocs/development/build-instructions-gn.md、DEPS、build/args、
+  patches/config.json等をビルド資料として保管する。
+  Chromium側のビルド環境・推移的ビルド依存と再リンク／交換方法の確認は継続中。
+
+3. macOSの追加通知
+  Electron DEPSで固定された次の版を照合し、通知原文を収録した。
+  - Mantle: 2a8e2123a3931038179ee06105c9e6ec336b12ea
+    https://github.com/Mantle/Mantle/tree/2a8e2123a3931038179ee06105c9e6ec336b12ea
+    electron-components/Mantle-LICENSE.md
+    MIT本文に加えProton / Bitswiftの原文条件も省略せず保持。
+  - ReactiveObjC: 74ab5baccc6f7202c8ac69a8d1e152c29dc1ea76
+    https://github.com/ReactiveCocoa/ReactiveObjC/tree/74ab5baccc6f7202c8ac69a8d1e152c29dc1ea76
+    electron-components/ReactiveObjC-LICENSE.md（MIT）
+    Electronの2件のビルド用パッチも確認。著作権・ライセンスの変更なし。
+  - Squirrel.Mac / ShipIt: 8d808803bc89ec0e2aa1450474856dfee3b00c6b
+    https://github.com/Squirrel/Squirrel.Mac/tree/8d808803bc89ec0e2aa1450474856dfee3b00c6b
+    electron-components/Squirrel-LICENSE.txt（MIT）
+
+4. Windowsのインストーラー部品
+  electron-builder 26.15.3が指定するnsis-3.0.4.1とnsis-resources-3.4.1を確認。
+  NSISの配布原文はwindows/NSIS-COPYING.txt（zlib/libpng、圧縮モジュールの
+  bzip2・CPL-1.0を含む）。この通知を別配布プラグイン全体の許諾とは扱わない。
+
+  StdUtils: release 1.14 / PE FileVersion 1.1.4.0
+  キャッシュのUnicode DLLと公式ZIPのPlugins/Unicode/StdUtils.dllが全バイト一致。
+  https://github.com/lordmulder/stdutils/releases/tag/1.14
+  原文通知と作者のNSISプラグイン利用についての補足:
+    windows/StdUtils-ReadMe.txt、windows/StdUtils-README.html
+  適用ライセンス: LGPL-2.1-or-later。本文はelectron-components/LGPL-2.1.txt。
+  組込みRHash、BLAKE2、Apache由来Base64の通知も原文ドキュメントに保持する。
+  補助原文: windows/StdUtils-blake2-COPYING.txt、windows/StdUtils-rhash-COPYING.txt
+  対応ソース（取得済み）:
+    https://github.com/lordmulder/stdutils/releases/download/1.14/StdUtils.2018-10-27.sources.tbz2
+  原文とバイナリ一致は、現在の全インストーラー条件の完了を意味しない。
+  2026-09-26追補: UAC 0.2.4c、WinShell 20121005、nsis7z 19.00の公式DLL一致を確認。
+  Setupからアンインストーラーを抽出し、内包プラグインとzlibスタブを確認した。
+  今回のSetup/portable/アンインストーラーにnsProcessは含まれていない。
+  個別条件・追加通知・ソース取得先・未確定事項はwindows/SOURCES.txtを参照。
+
+5. ソース提供の状態
+  取得したFFmpeg、Electron、StdUtilsのソースは開発用保存先
+  third_party/electron-44.0.0/に保管。これはインストール先のパスではない。
+  具体的な配布版に対応するソース一式の組立・公開と未認証ダウンロード確認は未完了。
+  上流リンクのみで配布者としてのソース提供義務を完了したと扱わない。
+  公開時はバイナリと対応するソースを同じGitHub Releaseに添付し、この記録から
+  具体的な提供先へ案内する。未検証の候補を完全な対応ソースと表示しない。
+
+  2026-09-27追補:
+  Chromium build/buildtools、生成ツール、Opus、NASMの固定ソースを追加取得し、
+  Git treeとSHA-256を検証した。FFmpeg再取得版は圧縮アーカイブのSHA-256が
+  1dbffd282bd0170ea7b30b0b52d3ecc2513bd69d1754d9820076d24d9a1c8eda。
+  上記旧取得版と区別して記録し、固定コミットのGit tree一致を確認した。
+  全ビルド入力の完備、両OSでの改変版ビルド・交換、公開は未確認。
+  公開予定先はytokuda-devlop/kancolle-browserのGitHub Release v1.0.0。
+  現時点の公開済みダウンロード先ではない。
+  開発用の確認記録:
+  docs/electron-license-review-2026-09-25/BUILD-AND-REPLACEMENT.md

@@ -1,0 +1,55 @@
+[
+  {
+    "platform": "darwin",
+    "officialArchive": "electron-v44.0.0-darwin-x64.zip",
+    "sha256": "28429e700ad68d9624aaa90b6543ffe891a48c14121fd904cd294e5edcee63ff",
+    "matchesNpmChecksums": true,
+    "libraries": [
+      {
+        "path": "Electron.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+        "sha256": "0ea472e75cdf7fb5b2786bf1c5d84fa81b1638199cc01008db58de2616a764c1",
+        "packagedSha256": "0ea472e75cdf7fb5b2786bf1c5d84fa81b1638199cc01008db58de2616a764c1",
+        "matches": true
+      },
+      {
+        "path": "Electron.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC",
+        "sha256": "a799e8991a74a4e179f09f4ec948d0b60f54e013d1e9f18be444e0372eca836b",
+        "packagedSha256": "a799e8991a74a4e179f09f4ec948d0b60f54e013d1e9f18be444e0372eca836b",
+        "matches": true
+      },
+      {
+        "path": "Electron.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt",
+        "sha256": "8a4484e5eaa82650a072a65092eab1424bd1b2e2250f2e2db70e4c3b93591bfa",
+        "packagedSha256": "8a4484e5eaa82650a072a65092eab1424bd1b2e2250f2e2db70e4c3b93591bfa",
+        "matches": true
+      },
+      {
+        "path": "Electron.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel",
+        "sha256": "81a3bb46761dd19e6e37bbf12e0ec3b814a40bba35d92c6a04110e9ba005b145",
+        "packagedSha256": "81a3bb46761dd19e6e37bbf12e0ec3b814a40bba35d92c6a04110e9ba005b145",
+        "matches": true
+      },
+      {
+        "path": "Electron.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle",
+        "sha256": "dc485511dd9dc5d315201ea98973e4c10fc436909a708cab96cb2dd657d8cf22",
+        "packagedSha256": "dc485511dd9dc5d315201ea98973e4c10fc436909a708cab96cb2dd657d8cf22",
+        "matches": true
+      }
+    ]
+  },
+  {
+    "platform": "win32",
+    "officialArchive": "electron-v44.0.0-win32-x64.zip",
+    "sha256": "e61aa3bcea8152bc0730abd015e47c032d778a0ef10e2a1c78ba3c4ea47942f9",
+    "matchesNpmChecksums": true,
+    "libraries": [
+      {
+        "path": "ffmpeg.dll",
+        "sha256": "0b4a5071d9cee1c8318f365d977f271ce771be8cce214cd12e24b714e239ff16",
+        "reviewBuildPath": "release/electron-license-review-windows/win-unpacked/ffmpeg.dll",
+        "packagedSha256": "0b4a5071d9cee1c8318f365d977f271ce771be8cce214cd12e24b714e239ff16",
+        "matches": true
+      }
+    ]
+  }
+]

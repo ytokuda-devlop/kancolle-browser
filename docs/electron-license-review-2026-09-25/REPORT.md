@@ -4,6 +4,13 @@
 対象: Electron 44.0.0 / electron-builder 26.15.3、macOS x64・Windows x64。
 判定: 追加通知と4形式での収録検証は完了。配布全体のライセンス準備は未完了。
 
+2026-09-27追補: ビルド資料6アーカイブを追加し、既存3アーカイブも再取得した。
+詳細は[ビルド・交換・公開確認](BUILD-AND-REPLACEMENT.md)と
+`source-reacquisition.json`、`supplemental-source-archives.json`参照。
+改変版の両OSでのビルド・交換実証と公開は未完了。
+今回ELECTRON-SOURCES.txtを更新したため、以前の配布物の通知一致結果は今回の
+変更後の通知を検証した結果ではない。再パッケージ後に再検証する必要がある。
+
 ## 解消した事項
 
 ### macOSのフレームワーク通知

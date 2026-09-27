@@ -79,3 +79,14 @@ Electron 44.0.0および関連部品のソース・ライセンス記録
   上流リンクのみで配布者としてのソース提供義務を完了したと扱わない。
   公開時はバイナリと対応するソースを同じGitHub Releaseに添付し、この記録から
   具体的な提供先へ案内する。未検証の候補を完全な対応ソースと表示しない。
+
+  2026-09-27追補:
+  Chromium build/buildtools、生成ツール、Opus、NASMの固定ソースを追加取得し、
+  Git treeとSHA-256を検証した。FFmpeg再取得版は圧縮アーカイブのSHA-256が
+  1dbffd282bd0170ea7b30b0b52d3ecc2513bd69d1754d9820076d24d9a1c8eda。
+  上記旧取得版と区別して記録し、固定コミットのGit tree一致を確認した。
+  全ビルド入力の完備、両OSでの改変版ビルド・交換、公開は未確認。
+  公開予定先はytokuda-devlop/kancolle-browserのGitHub Release v1.0.0。
+  現時点の公開済みダウンロード先ではない。
+  開発用の確認記録:
+  docs/electron-license-review-2026-09-25/BUILD-AND-REPLACEMENT.md

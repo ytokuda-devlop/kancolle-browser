@@ -14,3 +14,12 @@ python3 scripts/verify-electron-license-materials.py --prepare-review
 `release/electron-source-review/electron-44.0.0-INCOMPLETE-source-review.tar`は
 内部確認用。完全な対応ソースとして公開しない。公開・署名はこの処理では行わない。
 残作業は`licenses/ELECTRON-SOURCES.txt`と調査REPORT.md参照。
+
+2026-09-27追補: Chromium build/buildtools、生成ツール、Opus、NASMを追加取得。
+固定URL・Git tree・SHA-256は調査ディレクトリの
+`supplemental-source-archives.json`、FFmpeg再取得記録は
+`source-reacquisition.json`を参照。取得スクリプトは
+`scripts/acquire-electron-build-inputs.py`。
+ビルドと交換の確認手順・公開先v1.0.0の状態は
+`docs/electron-license-review-2026-09-25/BUILD-AND-REPLACEMENT.md`に記録した。
+追加資料だけでは全ビルド入力が揃ったとは扱わない。

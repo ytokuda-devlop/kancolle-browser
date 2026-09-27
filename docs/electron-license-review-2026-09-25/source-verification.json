@@ -1,11 +1,68 @@
 {
-  "archivesVerified": 3,
+  "archivesVerified": 9,
+  "archives": [
+    {
+      "path": "third_party/electron-44.0.0/ffmpeg-2b68d2babae7.tar.gz",
+      "sha256": "1dbffd282bd0170ea7b30b0b52d3ecc2513bd69d1754d9820076d24d9a1c8eda",
+      "tree": "c60e6b597c312801ce91d81110442d40fbf4d672",
+      "files": 11015
+    },
+    {
+      "path": "third_party/electron-44.0.0/electron-bf0c4e67e9a8.tar.gz",
+      "sha256": "071a12de219099ee28bdd7f8232c3a5a08e791e8845d392a9adb34d9e3419392",
+      "tree": null,
+      "files": 3074
+    },
+    {
+      "path": "third_party/electron-44.0.0/StdUtils.2018-10-27.sources.tbz2",
+      "sha256": "c5e3b1a66219bc9564c2ccc1702691327eecf044ad33404ac268d725d22dca49",
+      "tree": null,
+      "files": 94
+    },
+    {
+      "path": "third_party/electron-44.0.0/chromium-build.tar.gz",
+      "sha256": "7760a51e05581197a18dc9d59d53e792bd8d5b002e8116063f44f5574456996e",
+      "tree": "c1d1ea5ad830732e74e0247cef305081d9b230e9",
+      "files": 1484
+    },
+    {
+      "path": "third_party/electron-44.0.0/chromium-buildtools.tar.gz",
+      "sha256": "10cd8fd464106bfbc6ad40ef72593684ba64e0b9c903a87ba645c3da340e31b9",
+      "tree": "e8c2e82011631992a2678aa2ac42a460870e7b89",
+      "files": 85
+    },
+    {
+      "path": "third_party/electron-44.0.0/chromium-tools-generate_stubs.tar.gz",
+      "sha256": "8d567958aebc89aa213925e3ff6d295b87b90d5d40b60c53cc9113ffb66168b0",
+      "tree": "91d98296a6b8da9796d0ae112fd216a584fa7bb6",
+      "files": 3
+    },
+    {
+      "path": "third_party/electron-44.0.0/chromium-tools-clang.tar.gz",
+      "sha256": "39fba2ab629d9e223d9e5090b66dda4e0ecf411f2e08d1e965e55ac8ee6df917",
+      "tree": "07f793457e964a686621d1d694a4ce8d8a506423",
+      "files": 1132
+    },
+    {
+      "path": "third_party/electron-44.0.0/chromium-third_party-opus.tar.gz",
+      "sha256": "98c73910dd0790c3d590db244ec335a4db11ced7df9b13918e2feeb636511034",
+      "tree": "3c15a5719ecbcbbe1178633e7ef0d85677b1c2b2",
+      "files": 715
+    },
+    {
+      "path": "third_party/electron-44.0.0/nasm.tar.gz",
+      "sha256": "f9755d874cbab350ffb5b99fb1d708ee9db4462e58e27481e15b02fbd973ab27",
+      "tree": "d6d4d137fd4e885d7efe55b38308c7b0b4495784",
+      "files": 1356
+    }
+  ],
   "noticesMatch": true,
+  "noticeComparison": "Content equality ignoring CRLF/LF only; not byte identity",
   "ffmpegConfigurationVerified": true,
   "electronFfmpegPatchApplies": true,
   "completeCorrespondingSourceCertified": false,
   "remaining": [
-    "Chromium build environment and transitive build inputs",
+    "Full GN dependency closure and clean builds on both target platforms",
     "Modified-library replacement validation",
     "Public source delivery with the matching release",
     "Other Windows installer components"

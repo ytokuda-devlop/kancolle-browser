@@ -24,6 +24,7 @@
 
 - Windows 11
 - macOS
+- 1920 \* 1080以上のモニタ推奨
 
 ## 開発環境・言語
 
@@ -50,18 +51,17 @@ Electron内蔵FFmpeg・macOSの追加フレームワーク・Windowsインスト
 
 主なライブラリと開発ツールを以下に記載します。ライセンス全文へのリンクには、各パッケージに付属するライセンス文書を掲載しています。
 
-| ライブラリ・ソフトウェア | 用途                                 | Copyright・作者表記                                                       | ライセンス                          | ライセンス全文                                    |
-| ------------------------ | ------------------------------------ | ------------------------------------------------------------------------- | ----------------------------------- | ------------------------------------------------- |
-| Electron                 | デスクトップアプリの実行基盤         | Copyright (c) Electron contributors / Copyright (c) 2013-2020 GitHub Inc. | MIT                                 | [全文](licenses/electron-LICENSE.txt)             |
-| React                    | 画面のUI構築                         | Copyright (c) Facebook, Inc. and its affiliates.                          | MIT                                 | [全文](licenses/react-LICENSE.txt)                |
-| React DOM                | ReactのUIを画面に描画                | Copyright (c) Facebook, Inc. and its affiliates.                          | MIT                                 | [全文](licenses/react-dom-LICENSE.txt)            |
-| Scheduler                | Reactの描画処理のスケジューリング    | Copyright (c) Facebook, Inc. and its affiliates.                          | MIT                                 | [全文](licenses/scheduler-LICENSE.txt)            |
-| Vite                     | 開発サーバー・画面のビルド           | Copyright (c) 2019-present, VoidZero Inc. and Vite contributors           | MIT（本体）                         | [全文・同梱依存の表記](licenses/vite-LICENSE.txt) |
-| @vitejs/plugin-react     | ViteでのReact開発支援                | Copyright (c) 2019-present, Yuxi (Evan) You and Vite contributors         | MIT                                 | [全文](licenses/vitejs-plugin-react-LICENSE.txt)  |
-| electron-builder         | 配布用アプリ・インストーラーの作成   | Copyright (c) 2015 Loopline Systems                                       | MIT                                 | [全文](licenses/electron-builder-LICENSE.txt)     |
-| concurrently             | 開発時にViteとElectronを同時起動     | Copyright (c) 2015 Kimmo Brunfeldt                                        | MIT                                 | [全文](licenses/concurrently-LICENSE.txt)         |
-| wait-on                  | 開発サーバーの起動完了を待機         | Copyright (c) 2015 Jeff Barczewski                                        | MIT                                 | [全文](licenses/wait-on-LICENSE.txt)              |
-
+| ライブラリ・ソフトウェア | 用途                               | Copyright・作者表記                                                       | ライセンス  | ライセンス全文                                    |
+| ------------------------ | ---------------------------------- | ------------------------------------------------------------------------- | ----------- | ------------------------------------------------- |
+| Electron                 | デスクトップアプリの実行基盤       | Copyright (c) Electron contributors / Copyright (c) 2013-2020 GitHub Inc. | MIT         | [全文](licenses/electron-LICENSE.txt)             |
+| React                    | 画面のUI構築                       | Copyright (c) Facebook, Inc. and its affiliates.                          | MIT         | [全文](licenses/react-LICENSE.txt)                |
+| React DOM                | ReactのUIを画面に描画              | Copyright (c) Facebook, Inc. and its affiliates.                          | MIT         | [全文](licenses/react-dom-LICENSE.txt)            |
+| Scheduler                | Reactの描画処理のスケジューリング  | Copyright (c) Facebook, Inc. and its affiliates.                          | MIT         | [全文](licenses/scheduler-LICENSE.txt)            |
+| Vite                     | 開発サーバー・画面のビルド         | Copyright (c) 2019-present, VoidZero Inc. and Vite contributors           | MIT（本体） | [全文・同梱依存の表記](licenses/vite-LICENSE.txt) |
+| @vitejs/plugin-react     | ViteでのReact開発支援              | Copyright (c) 2019-present, Yuxi (Evan) You and Vite contributors         | MIT         | [全文](licenses/vitejs-plugin-react-LICENSE.txt)  |
+| electron-builder         | 配布用アプリ・インストーラーの作成 | Copyright (c) 2015 Loopline Systems                                       | MIT         | [全文](licenses/electron-builder-LICENSE.txt)     |
+| concurrently             | 開発時にViteとElectronを同時起動   | Copyright (c) 2015 Kimmo Brunfeldt                                        | MIT         | [全文](licenses/concurrently-LICENSE.txt)         |
+| wait-on                  | 開発サーバーの起動完了を待機       | Copyright (c) 2015 Jeff Barczewski                                        | MIT         | [全文](licenses/wait-on-LICENSE.txt)              |
 
 その他の依存ライブラリは[第三者ソフトウェアのライセンス表記](THIRD_PARTY_NOTICES.md)、Electronに含まれるChromium・Node.js等のライセンスは[同梱ソフトウェアのライセンス全文](licenses/LICENSES.chromium.html)に記載しています。
 

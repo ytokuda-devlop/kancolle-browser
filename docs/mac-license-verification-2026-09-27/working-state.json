@@ -1,0 +1,16 @@
+{
+  "commit": "765f0dc0bed92921c70ea3b7f51fdd071f1a0411",
+  "statusBeforeReport": [
+    " M .gitignore",
+    " M README.md",
+    " M docs/LICENSE-PACKAGING.md",
+    " M third_party/electron-44.0.0/README.md",
+    "?? docs/source-delivery-2026-09-27/",
+    "?? scripts/audit-electron-build-imports.py",
+    "?? scripts/fetch-electron-build-materials.py",
+    "?? scripts/prepare-electron-source-delivery.py",
+    "?? tests/source-delivery.test.py"
+  ],
+  "windowsValidation": "User reports already verified; Windows not re-tested in this session",
+  "macosReplacementValidation": "Skipped per user instruction; Xcode and replacement library unavailable"
+}

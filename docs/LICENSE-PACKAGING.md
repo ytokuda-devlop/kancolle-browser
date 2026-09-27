@@ -5,6 +5,13 @@
 npmの版と条件・ネイティブ一覧・通知原文を最終コンテナから確認する。
 本プロジェクトは未署名版のみを配布する。再ビルド・再梱包した場合は最終成果物を再検査する。
 
+対応ソースの添付用資料と残件は[2026-09-27の整備記録](source-delivery-2026-09-27/REPORT.md)を参照。
+Xcode工程はスキップ、アップロードはユーザーが実施する。完全対応ソースの完成・公開は未完了。
+
+Macの再検証は[2026-09-27の記録](mac-license-verification-2026-09-27/REPORT.md)を参照。
+既存ZIP・DMGのソース通知の追補漏れを確認し、原本を収録した新しいZIP・DMGを別フォルダに生成した。
+両形式で版・通知28件・npm5件・ネイティブ13件の照合が成功。Xcodeを使う改変版の検証はスキップ。
+
 ```sh
 node scripts/verify-release-candidate.cjs path/to/artifact docs/release-candidate-review-2026-09-26/baseline.json path/to/report.json
 ```

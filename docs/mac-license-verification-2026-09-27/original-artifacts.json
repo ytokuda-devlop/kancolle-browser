@@ -1,0 +1,12 @@
+[
+  {
+    "artifact": "release/kancolle-browser_1.0.0_mac.zip",
+    "sha256": "9e7179f3f7309d5ac931e42b10e294d3bfb910cbe704181ee1a51e616c8007c3",
+    "licenseVerification": "failed: ELECTRON-SOURCES.txt differs from current source"
+  },
+  {
+    "artifact": "release/kancolle-browser_1.0.0_mac.dmg",
+    "sha256": "507d6272a28a0b62cf532a0ab14560736a0a197681bd1248e15008401dfddb7d",
+    "licenseVerification": "failed: ELECTRON-SOURCES.txt differs from current source"
+  }
+]

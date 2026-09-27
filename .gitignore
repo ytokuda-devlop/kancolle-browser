@@ -76,3 +76,10 @@ tests/
 
 !/docs/release-candidate-review-2026-09-26/
 !/tests/release-candidate.test.cjs
+
+!/docs/source-delivery-2026-09-27/
+/third_party/electron-44.0.0/*.download
+!/tests/source-delivery.test.py
+/scripts/__pycache__/
+/tests/__pycache__/
+!/docs/mac-license-verification-2026-09-27/

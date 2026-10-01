@@ -1,0 +1,1724 @@
+{
+  "input": {
+    "id": "mac-publication",
+    "path": "release/kancolle-browser_1.0.0_mac.zip",
+    "sha256": "9e7179f3f7309d5ac931e42b10e294d3bfb910cbe704181ee1a51e616c8007c3",
+    "role": "User-selected macOS publication ZIP; DMG excluded"
+  },
+  "officialElectronArchives": [
+    {
+      "file": "electron-v44.0.0-darwin-x64.zip",
+      "sha256": "28429e700ad68d9624aaa90b6543ffe891a48c14121fd904cd294e5edcee63ff"
+    },
+    {
+      "file": "electron-v44.0.0-win32-x64.zip",
+      "sha256": "e61aa3bcea8152bc0730abd015e47c032d778a0ef10e2a1c78ba3c4ea47942f9"
+    }
+  ],
+  "app": {
+    "binaries": [
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework",
+        "format": "Mach-O",
+        "size": 216732852,
+        "sha256": "d2a5a75b572630817cb2893f20def244b21ed8d6e8b77db751db1b874ccfef6c",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit dynamically linked shared library x86_64",
+        "loadCommands": [
+          "@rpath/Electron Framework.framework/Electron Framework (compatibility version 0.0.0, current version 0.0.0)",
+          "/System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/AuthenticationServices.framework/Versions/A/AuthenticationServices (compatibility version 1.0.0, current version 624.2.5)",
+          "/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation (compatibility version 1.0.0, current version 2.0.0)",
+          "/System/Library/Frameworks/AVFAudio.framework/Versions/A/AVFAudio (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon (compatibility version 2.0.0, current version 170.0.0)",
+          "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices (compatibility version 1.0.0, current version 66.0.0)",
+          "/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics (compatibility version 64.0.0, current version 1965.5.1)",
+          "/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices (compatibility version 1.0.0, current version 1226.0.0)",
+          "/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork (compatibility version 1.0.0, current version 3860.255.21)",
+          "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)",
+          "/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)",
+          "/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText (compatibility version 1.0.0, current version 877.4.0)",
+          "/System/Library/Frameworks/LocalAuthentication.framework/Versions/A/LocalAuthentication (compatibility version 1.0.0, current version 2005.121.1)",
+          "/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore (compatibility version 1.2.0, current version 1195.14.4)",
+          "/System/Library/Frameworks/CoreImage.framework/Versions/A/CoreImage (compatibility version 1.0.1, current version 7.0.0)",
+          "/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo (compatibility version 1.2.0, current version 734.4.0)",
+          "/System/Library/Frameworks/Quartz.framework/Versions/A/Quartz (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/QuickLookUI.framework/Versions/A/QuickLookUI (compatibility version 1.0.0, current version 0.0.0)",
+          "/System/Library/Frameworks/Security.framework/Versions/A/Security (compatibility version 1.0.0, current version 61901.120.67)",
+          "/System/Library/Frameworks/SecurityInterface.framework/Versions/A/SecurityInterface (compatibility version 1.0.0, current version 55210.100.6)",
+          "/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement (compatibility version 1.0.0, current version 3102.120.13)",
+          "/System/Library/Frameworks/StoreKit.framework/Versions/A/StoreKit (compatibility version 1.0.0, current version 379.0.0)",
+          "/System/Library/Frameworks/UserNotifications.framework/Versions/A/UserNotifications (compatibility version 1.0.0, current version 1.0.0)",
+          "@rpath/Squirrel.framework/Squirrel (compatibility version 0.0.0, current version 0.0.0)",
+          "@rpath/ReactiveObjC.framework/ReactiveObjC (compatibility version 0.0.0, current version 0.0.0)",
+          "@rpath/Mantle.framework/Mantle (compatibility version 0.0.0, current version 0.0.0)",
+          "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)",
+          "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit (compatibility version 45.0.0, current version 2685.60.104)",
+          "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (compatibility version 1.0.0, current version 275.0.0)",
+          "/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/CryptoTokenKit.framework/Versions/A/CryptoTokenKit (compatibility version 0.0.0, current version 805.120.2)",
+          "/System/Library/Frameworks/Network.framework/Versions/A/Network (compatibility version 1.0.0, current version 5812.121.1)",
+          "/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration (compatibility version 1.0.0, current version 1405.120.5)",
+          "/System/Library/Frameworks/UniformTypeIdentifiers.framework/Versions/A/UniformTypeIdentifiers (compatibility version 1.0.0, current version 709.0.0)",
+          "/System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia (compatibility version 1.0.0, current version 3320.8.5)",
+          "/System/Library/Frameworks/Metal.framework/Versions/A/Metal (compatibility version 1.0.0, current version 373.2.0)",
+          "/System/Library/Frameworks/AudioToolbox.framework/Versions/A/AudioToolbox (compatibility version 1.0.0, current version 1000.0.0)",
+          "/System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/AudioUnit.framework/Versions/A/AudioUnit (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/ScreenCaptureKit.framework/Versions/A/ScreenCaptureKit (compatibility version 1.0.0, current version 1.0.0, weak)",
+          "/System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa (compatibility version 1.0.0, current version 24.0.0)",
+          "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate (compatibility version 1.0.0, current version 4.0.0)",
+          "/System/Library/Frameworks/VideoToolbox.framework/Versions/A/VideoToolbox (compatibility version 1.0.0, current version 3320.8.5)",
+          "/System/Library/Frameworks/CoreMediaIO.framework/Versions/A/CoreMediaIO (compatibility version 0.0.0, current version 0.0.0)",
+          "/System/Library/Frameworks/Accessibility.framework/Versions/A/Accessibility (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/MetalKit.framework/Versions/A/MetalKit (compatibility version 1.0.0, current version 173.7.0)",
+          "/System/Library/Frameworks/CoreBluetooth.framework/Versions/A/CoreBluetooth (compatibility version 1.0.0, current version 195.7.0)",
+          "/System/Library/Frameworks/IOBluetooth.framework/Versions/A/IOBluetooth (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/CoreMIDI.framework/Versions/A/CoreMIDI (compatibility version 1.0.0, current version 69.0.0)",
+          "/System/Library/Frameworks/MediaAccessibility.framework/Versions/A/MediaAccessibility (compatibility version 1.0.0, current version 62.0.0)",
+          "/System/Library/Frameworks/MediaPlayer.framework/Versions/A/MediaPlayer (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/CoreHaptics.framework/Versions/A/CoreHaptics (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/GameController.framework/Versions/A/GameController (compatibility version 1.0.0, current version 13.5.1)",
+          "/System/Library/Frameworks/ForceFeedback.framework/Versions/A/ForceFeedback (compatibility version 1.0.0, current version 1.0.2)",
+          "/System/Library/Frameworks/CoreWLAN.framework/Versions/A/CoreWLAN (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/CoreLocation.framework/Versions/A/CoreLocation (compatibility version 1.0.0, current version 3075.0.8)",
+          "/System/Library/Frameworks/Vision.framework/Versions/A/Vision (compatibility version 1.0.0, current version 9.5.4)",
+          "/System/Library/Frameworks/CoreML.framework/Versions/A/CoreML (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/DiskArbitration.framework/Versions/A/DiskArbitration (compatibility version 1.0.0, current version 1.0.0)",
+          "/System/Library/Frameworks/QuickLookThumbnailing.framework/Versions/A/QuickLookThumbnailing (compatibility version 1.0.0, current version 0.0.0, weak)",
+          "@rpath/libffmpeg.dylib (compatibility version 0.0.0, current version 0.0.0)",
+          "/usr/lib/libcups.2.dylib (compatibility version 2.0.0, current version 2.14.0)",
+          "/usr/lib/libbsm.0.dylib (compatibility version 1.0.0, current version 1.0.0)",
+          "/usr/lib/libpmenergy.dylib (compatibility version 1.0.0, current version 2.0.0)",
+          "/usr/lib/libpmsample.dylib (compatibility version 1.0.0, current version 2.0.0)",
+          "/usr/lib/libresolv.9.dylib (compatibility version 1.0.0, current version 1.0.0)",
+          "/usr/lib/libsandbox.1.dylib (compatibility version 1.0.0, current version 1.0.0)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 11093,
+        "symbolEvidence": {
+          "Node.js": {
+            "count": 3845,
+            "examples": [
+              "__ZN4node10AsyncHooks11DeserializeEN2v85LocalINS1_7ContextEEE",
+              "__ZN4node10AsyncHooks17ResetPromiseHooksEN2v85LocalINS1_8FunctionEEES4_S4_S4_",
+              "__ZN4node10AsyncHooks17pop_async_contextEd"
+            ]
+          },
+          "V8": {
+            "count": 1083,
+            "examples": [
+              "__ZN2v810CpuProfile6DeleteEv",
+              "__ZN2v810FixedArray9CheckCastEPNS_4DataE",
+              "__ZN2v810Int16Array3NewENS_5LocalINS_11ArrayBufferEEEmm"
+            ]
+          },
+          "libuv": {
+            "count": 459,
+            "examples": [
+              "_uv___stream_fd",
+              "_uv__accept",
+              "_uv__async_close"
+            ]
+          }
+        }
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+        "format": "Mach-O",
+        "size": 1263240,
+        "sha256": "2b3c5fde66a6e0a175171a620e191c945d52ff1f5105802548804ed7992856f5",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit executable x86_64",
+        "loadCommands": [
+          "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)",
+          "/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)",
+          "/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics (compatibility version 64.0.0, current version 1965.5.1)",
+          "/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText (compatibility version 1.0.0, current version 877.4.0)",
+          "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)",
+          "/System/Library/Frameworks/Security.framework/Versions/A/Security (compatibility version 1.0.0, current version 61901.120.67)",
+          "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices (compatibility version 1.0.0, current version 66.0.0)",
+          "/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices (compatibility version 1.0.0, current version 1226.0.0)",
+          "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit (compatibility version 45.0.0, current version 2685.60.104)",
+          "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (compatibility version 1.0.0, current version 275.0.0)",
+          "/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory (compatibility version 1.0.0, current version 1.0.0)",
+          "/usr/lib/libbsm.0.dylib (compatibility version 1.0.0, current version 1.0.0)",
+          "/usr/lib/libpmenergy.dylib (compatibility version 1.0.0, current version 2.0.0)",
+          "/usr/lib/libpmsample.dylib (compatibility version 1.0.0, current version 2.0.0)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 7,
+        "symbolEvidence": {}
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+        "format": "Mach-O",
+        "size": 2555716,
+        "sha256": "0ea472e75cdf7fb5b2786bf1c5d84fa81b1638199cc01008db58de2616a764c1",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit dynamically linked shared library x86_64",
+        "loadCommands": [
+          "@loader_path/libffmpeg.dylib (compatibility version 0.0.0, current version 0.0.0)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 1699,
+        "symbolEvidence": {}
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib",
+        "format": "Mach-O",
+        "size": 4563504,
+        "sha256": "5d6ac717910b127d9136bdd9b6e153f653f0ea3d9d51fc9aa6b1f7d3cf03b634",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit dynamically linked shared library x86_64",
+        "loadCommands": [
+          "@rpath/libvk_swiftshader.dylib (compatibility version 0.0.0, current version 0.0.0)",
+          "/System/Library/Frameworks/Metal.framework/Versions/A/Metal (compatibility version 1.0.0, current version 373.2.0, weak)",
+          "/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa (compatibility version 1.0.0, current version 24.0.0)",
+          "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit (compatibility version 45.0.0, current version 2685.60.104)",
+          "/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)",
+          "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)",
+          "/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore (compatibility version 1.2.0, current version 1195.14.4)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 4,
+        "symbolEvidence": {}
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/KancolleBrowser Helper (GPU).app/Contents/MacOS/KancolleBrowser Helper (GPU)",
+        "format": "Mach-O",
+        "size": 193680,
+        "sha256": "2c8b824e2055524c9a671468f50d092ae0713730ff2b4b9b24a2e457208cbb2c",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/Frameworks/Electron Helper (GPU).app/Contents/MacOS/Electron Helper (GPU)"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit executable x86_64",
+        "loadCommands": [
+          "@rpath/Electron Framework.framework/Electron Framework (compatibility version 0.0.0, current version 0.0.0)",
+          "/usr/lib/libsandbox.1.dylib (compatibility version 1.0.0, current version 1.0.0)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 1,
+        "symbolEvidence": {}
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/KancolleBrowser Helper (Plugin).app/Contents/MacOS/KancolleBrowser Helper (Plugin)",
+        "format": "Mach-O",
+        "size": 193680,
+        "sha256": "2c5d1f6fe06cc8b909e91cfad237db039396211b95aab3d1cfb87572338ab433",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/Frameworks/Electron Helper (Plugin).app/Contents/MacOS/Electron Helper (Plugin)"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit executable x86_64",
+        "loadCommands": [
+          "@rpath/Electron Framework.framework/Electron Framework (compatibility version 0.0.0, current version 0.0.0)",
+          "/usr/lib/libsandbox.1.dylib (compatibility version 1.0.0, current version 1.0.0)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 1,
+        "symbolEvidence": {}
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/KancolleBrowser Helper (Renderer).app/Contents/MacOS/KancolleBrowser Helper (Renderer)",
+        "format": "Mach-O",
+        "size": 193680,
+        "sha256": "e012b4df3762543f6dc0662707538ade9c8a5ff33f5970cdef1bc4b0ab28f870",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/Frameworks/Electron Helper (Renderer).app/Contents/MacOS/Electron Helper (Renderer)"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit executable x86_64",
+        "loadCommands": [
+          "@rpath/Electron Framework.framework/Electron Framework (compatibility version 0.0.0, current version 0.0.0)",
+          "/usr/lib/libsandbox.1.dylib (compatibility version 1.0.0, current version 1.0.0)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 1,
+        "symbolEvidence": {}
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/KancolleBrowser Helper.app/Contents/MacOS/KancolleBrowser Helper",
+        "format": "Mach-O",
+        "size": 193680,
+        "sha256": "fbd94e8226636857d94f3ccadd36edd2901c28228f03e5876a065288e99f3717",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/Frameworks/Electron Helper.app/Contents/MacOS/Electron Helper"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit executable x86_64",
+        "loadCommands": [
+          "@rpath/Electron Framework.framework/Electron Framework (compatibility version 0.0.0, current version 0.0.0)",
+          "/usr/lib/libsandbox.1.dylib (compatibility version 1.0.0, current version 1.0.0)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 1,
+        "symbolEvidence": {}
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle",
+        "format": "Mach-O",
+        "size": 109052,
+        "sha256": "dc485511dd9dc5d315201ea98973e4c10fc436909a708cab96cb2dd657d8cf22",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit dynamically linked shared library x86_64",
+        "loadCommands": [
+          "@rpath/Mantle.framework/Mantle (compatibility version 0.0.0, current version 0.0.0)",
+          "/System/Library/Frameworks/CoreData.framework/Versions/A/CoreData (compatibility version 1.0.0, current version 1526.0.0)",
+          "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)",
+          "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)",
+          "/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 42,
+        "symbolEvidence": {}
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC",
+        "format": "Mach-O",
+        "size": 353856,
+        "sha256": "a799e8991a74a4e179f09f4ec948d0b60f54e013d1e9f18be444e0372eca836b",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit dynamically linked shared library x86_64",
+        "loadCommands": [
+          "@rpath/ReactiveObjC.framework/ReactiveObjC (compatibility version 0.0.0, current version 0.0.0)",
+          "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit (compatibility version 45.0.0, current version 2685.60.104)",
+          "/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork (compatibility version 1.0.0, current version 3860.255.21)",
+          "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)",
+          "/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)",
+          "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 123,
+        "symbolEvidence": {}
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt",
+        "format": "Mach-O",
+        "size": 99948,
+        "sha256": "8a4484e5eaa82650a072a65092eab1424bd1b2e2250f2e2db70e4c3b93591bfa",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit executable x86_64",
+        "loadCommands": [
+          "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit (compatibility version 45.0.0, current version 2685.60.104)",
+          "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)",
+          "/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)",
+          "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)",
+          "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (compatibility version 1.0.0, current version 275.0.0)",
+          "/System/Library/Frameworks/Security.framework/Versions/A/Security (compatibility version 1.0.0, current version 61901.120.67)",
+          "@rpath/Mantle.framework/Mantle (compatibility version 0.0.0, current version 0.0.0)",
+          "@rpath/ReactiveObjC.framework/ReactiveObjC (compatibility version 0.0.0, current version 0.0.0)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 1,
+        "symbolEvidence": {}
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel",
+        "format": "Mach-O",
+        "size": 127372,
+        "sha256": "81a3bb46761dd19e6e37bbf12e0ec3b814a40bba35d92c6a04110e9ba005b145",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit dynamically linked shared library x86_64",
+        "loadCommands": [
+          "@rpath/Squirrel.framework/Squirrel (compatibility version 0.0.0, current version 0.0.0)",
+          "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit (compatibility version 45.0.0, current version 2685.60.104)",
+          "/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices (compatibility version 1.0.0, current version 1226.0.0)",
+          "/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork (compatibility version 1.0.0, current version 3860.255.21)",
+          "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)",
+          "/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)",
+          "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4)",
+          "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (compatibility version 1.0.0, current version 275.0.0)",
+          "/System/Library/Frameworks/Security.framework/Versions/A/Security (compatibility version 1.0.0, current version 61901.120.67)",
+          "/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement (compatibility version 1.0.0, current version 3102.120.13)",
+          "@rpath/Mantle.framework/Mantle (compatibility version 0.0.0, current version 0.0.0)",
+          "@rpath/ReactiveObjC.framework/ReactiveObjC (compatibility version 0.0.0, current version 0.0.0)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 44,
+        "symbolEvidence": {}
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/MacOS/KancolleBrowser",
+        "format": "Mach-O",
+        "size": 13076,
+        "sha256": "3819734b928d919ab5dd116a89b66edfbfdeaefcc35134bdd81ba377ac051406",
+        "officialElectronMatches": [
+          {
+            "archive": "electron-v44.0.0-darwin-x64.zip",
+            "path": "Electron.app/Contents/MacOS/Electron"
+          }
+        ],
+        "fileDescription": "Mach-O 64-bit executable x86_64",
+        "loadCommands": [
+          "@rpath/Electron Framework.framework/Electron Framework (compatibility version 0.0.0, current version 0.0.0)",
+          "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+        ],
+        "symbolReadExitCode": 0,
+        "exportedSymbolCount": 1,
+        "symbolEvidence": {}
+      }
+    ],
+    "symlinks": [
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Electron Framework",
+        "target": "Versions/Current/Electron Framework"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Helpers",
+        "target": "Versions/Current/Helpers"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Libraries",
+        "target": "Versions/Current/Libraries"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Resources",
+        "target": "Versions/Current/Resources"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/Current",
+        "target": "A"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Mantle.framework/Mantle",
+        "target": "Versions/Current/Mantle"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Mantle.framework/Resources",
+        "target": "Versions/Current/Resources"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Mantle.framework/Versions/Current",
+        "target": "A"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/ReactiveObjC.framework/ReactiveObjC",
+        "target": "Versions/Current/ReactiveObjC"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/ReactiveObjC.framework/Resources",
+        "target": "Versions/Current/Resources"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/ReactiveObjC.framework/Versions/Current",
+        "target": "A"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Squirrel.framework/Resources",
+        "target": "Versions/Current/Resources"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Squirrel.framework/Squirrel",
+        "target": "Versions/Current/Squirrel"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Squirrel.framework/Versions/Current",
+        "target": "A"
+      }
+    ],
+    "runtimeDataFiles": [
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/vk_swiftshader_icd.json",
+        "size": 110,
+        "sha256": "d717d915e31e7c27948b80b36ab34e2d897888114c5c7d0af835f93eb53e58f5"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/af.lproj/locale.pak",
+        "size": 632257,
+        "sha256": "1e3c85f3d53ac661e035e01166a2faafba821a60780fdf8f88dc497658d787a0"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/af_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/af_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/af_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/am.lproj/locale.pak",
+        "size": 1025252,
+        "sha256": "db080ebc3e8242316ad60ee8b655e9a773046cd9b0143512841a497bea3066e3"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/am_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/am_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/am_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ar.lproj/locale.pak",
+        "size": 1126018,
+        "sha256": "e1b18126d28438109cbcebfe51af7e9958d29bb6a50a7cc6f3dcc29f2a6edbf2"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ar_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ar_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ar_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bg.lproj/locale.pak",
+        "size": 1171480,
+        "sha256": "d9d984338d9b4ae822a06dc06fe6b09affa7c2e263a76a04e2d06fa6c948d37d"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bg_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bg_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bg_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bn.lproj/locale.pak",
+        "size": 1504862,
+        "sha256": "5f6c3672c073968a3cc68f51f1433b7cc3c4bf1888f55169121292809ced66dd"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bn_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bn_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bn_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ca.lproj/locale.pak",
+        "size": 712719,
+        "sha256": "10bfd7258f274b684888e95fc49535a7ca5c27719220eb7bb3dd8ea420966bc0"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ca_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ca_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ca_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/chrome_100_percent.pak",
+        "size": 662674,
+        "sha256": "f50e6f15a39f086092c26abdb922b298780b63decc316b798b5f0ad7a5468a2e"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/chrome_200_percent.pak",
+        "size": 1337098,
+        "sha256": "d923367c81374695f88d6176aa6fe8d0c41b1a43f5188ef43c3f0a53dd06f96d"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/cs.lproj/locale.pak",
+        "size": 739491,
+        "sha256": "596bdb8f1051fcf37a5a2499f01ab16e833cf70b0f55f4ce6f4cda5b49b86a4b"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/cs_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/cs_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/cs_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/da.lproj/locale.pak",
+        "size": 662367,
+        "sha256": "7de6d3393ef1638d956084b7c6b79429e457153a865b328b5e5b5ba817908ab6"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/da_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/da_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/da_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/de.lproj/locale.pak",
+        "size": 713299,
+        "sha256": "268b4019930a11926a288b44c5796e327204eb4359d3b4ed4cbbf878227835b2"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/de_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/de_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/de_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/el.lproj/locale.pak",
+        "size": 1287465,
+        "sha256": "d6ca1cd3ee52c19be6e32514f4b2f18e3a6fb2653b60227e1541c39630acef41"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/el_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/el_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/el_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en.lproj/locale.pak",
+        "size": 584413,
+        "sha256": "e647fca0c580bd485a4e40705ed4ad87f0a72bc7e03c4858720c30d2e4f1269d"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_GB.lproj/locale.pak",
+        "size": 577003,
+        "sha256": "02ca61c11bd2afaf734e619468fb40442cbb6259c2161f9193543fc415c63c07"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_GB_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_GB_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_GB_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es.lproj/locale.pak",
+        "size": 699773,
+        "sha256": "b3f57c617ca65841d15f25d882181b769ab8fdda57f9444dbec3859c47a7c084"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_419.lproj/locale.pak",
+        "size": 703617,
+        "sha256": "7f9cc9947d021a1a8ec9d55409fc7d1182b24c750cfdc69cd1c0e03528dc1096"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_419_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_419_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_419_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/et.lproj/locale.pak",
+        "size": 638956,
+        "sha256": "7fb797d3d74c9dfa4e669f55e3af4674f78d376cc0af45768f441a2d583d935a"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/et_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/et_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/et_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fa.lproj/locale.pak",
+        "size": 1057343,
+        "sha256": "76fba28231c0e7e43897292ac92f5e0b5bd7588bf14f3f5fc88266d5da26bd68"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fa_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fa_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fa_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fi.lproj/locale.pak",
+        "size": 651794,
+        "sha256": "a1b18b17cc1106244f1dace48c3ba1a92c62490e4bce195fa208aecb0c8f71a4"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fi_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fi_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fi_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fil.lproj/locale.pak",
+        "size": 738499,
+        "sha256": "43c1e887b77fb32a5b478fd61cb2d8cbc8700d284f6cf20bfce2cd05a0026c00"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fil_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fil_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fil_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fr.lproj/locale.pak",
+        "size": 758952,
+        "sha256": "43ef9b100b97172a20cfc476d6ce40e9dbebfec092a5f56a91f4e5392aeb1c7a"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fr_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fr_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fr_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/gu.lproj/locale.pak",
+        "size": 1485480,
+        "sha256": "643d347eb6425b369f203ed707749c497dfac8d250e78ffbaca4a45b46247ed1"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/gu_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/gu_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/gu_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/he.lproj/locale.pak",
+        "size": 923706,
+        "sha256": "f10318b7b4b86d223bd68e525f68e7fdef428b92448201d7b117fc3e910995b2"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/he_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/he_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/he_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hi.lproj/locale.pak",
+        "size": 1575298,
+        "sha256": "25378564680ffcd749bdac3d5c763196e71e3000c00f1421eee28d9290913cc7"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hi_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hi_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hi_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hr.lproj/locale.pak",
+        "size": 711220,
+        "sha256": "4ba4b2c8a7841d5a3ed8e92674cae53c3df7b2af2bb3dd449f0fdf898956ed82"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hr_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hr_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hr_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hu.lproj/locale.pak",
+        "size": 761163,
+        "sha256": "b4effdb0df85b386ba6f2be6b52aabcb45447dcdf826276c6950e7dde325d553"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hu_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hu_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hu_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/icudtl.dat",
+        "size": 10876560,
+        "sha256": "9f48c7f9c7c94d516a14870707e910ab94d75ae640ff6842c4af53276cd26ebe"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/id.lproj/locale.pak",
+        "size": 633143,
+        "sha256": "c498f2f6b02ef8fbfdbfe07f68ee686ed8c3a7d4d11f18dccd0754dc9c42081e"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/id_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/id_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/id_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/it.lproj/locale.pak",
+        "size": 689583,
+        "sha256": "50594d48fa6951332753de440229f04e4c6afa0601de167614999c1cfde662cf"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/it_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/it_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/it_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ja.lproj/locale.pak",
+        "size": 835930,
+        "sha256": "07e4630757b373eed61e3668456b2b6bcc8faefee9281e282cbdd0df939884ba"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ja_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ja_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ja_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/kn.lproj/locale.pak",
+        "size": 1710175,
+        "sha256": "5275729cc054eb62f8377b69b45e84239a7e08a2230825496b2f1f6d4c367769"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/kn_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/kn_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/kn_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ko.lproj/locale.pak",
+        "size": 713245,
+        "sha256": "fedc0e0558eb8ad4e68f4c42258709215b82d63730a06c634af5d9e9465f621f"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ko_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ko_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ko_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lt.lproj/locale.pak",
+        "size": 773841,
+        "sha256": "402fa83fb09dbb6d095fc08a0602b77e224d892345fb9b106ba194d5d03f67a3"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lt_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lt_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lt_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lv.lproj/locale.pak",
+        "size": 771044,
+        "sha256": "328e3bc016b93987e7d4646bf63119ff3beb5ca20ad61f1cd9e4d72504271a4f"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lv_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lv_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lv_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ml.lproj/locale.pak",
+        "size": 1759838,
+        "sha256": "46e532cbb9584d279a201a4b9f19c198c7bc80b82aa3d39d4af109f77019b72e"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ml_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ml_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ml_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/mr.lproj/locale.pak",
+        "size": 1457577,
+        "sha256": "fe094e0d6d11111f949d78ee614f530567e6f583fa0cf2936e507906e6b6e41b"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/mr_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/mr_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/mr_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ms.lproj/locale.pak",
+        "size": 665961,
+        "sha256": "fb281323ea5bb88b353ea20472733563cb45d86e44af3b20657a9875b16fb240"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ms_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ms_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ms_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nb.lproj/locale.pak",
+        "size": 633750,
+        "sha256": "7243c6035a1f98934181235036a05ce6916c3b8f08aaefb21685f3e40f5d3ea8"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nb_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nb_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nb_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nl.lproj/locale.pak",
+        "size": 660763,
+        "sha256": "b88a0566048146af20677d7c4d2caef738db68df50d3c6d239ef39768d945a99"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nl_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nl_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nl_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pl.lproj/locale.pak",
+        "size": 738298,
+        "sha256": "f24a799faed5e8555d71bd40875aa8e3d499bb73efe302b5d2c5d6e1ee1c2e46"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pl_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pl_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pl_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_BR.lproj/locale.pak",
+        "size": 693366,
+        "sha256": "f6f70d5b023577cc53980e3849e474d29fe87ad999c77c392120a67f83969abf"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_BR_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_BR_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_BR_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_PT.lproj/locale.pak",
+        "size": 697151,
+        "sha256": "60c975b06a1528777db8a45aa216724c57302d9a38f4ff316cb8ed2c1427165e"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_PT_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_PT_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_PT_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/resources.pak",
+        "size": 12397117,
+        "sha256": "d702d0093f16bacc5f63962b6387113a5b97e629f3e6ce577b3d51098a95e53f"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ro.lproj/locale.pak",
+        "size": 724159,
+        "sha256": "6d0a723bd507172da42ca40088443be5dd1abc727ab04aafcf27812d5c401c83"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ro_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ro_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ro_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ru.lproj/locale.pak",
+        "size": 1194708,
+        "sha256": "80c57a15691966b8b6e5a4ee0c731d7e0774cf25143185b13846af4358eae012"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ru_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ru_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ru_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sk.lproj/locale.pak",
+        "size": 751676,
+        "sha256": "689ad5fc48b8424bd9d22377d8d04c3805414c9d87fb0980a525bf48a94135dd"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sk_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sk_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sk_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sl.lproj/locale.pak",
+        "size": 718890,
+        "sha256": "18aa47b536e52cf3e60b0f4e3976c96fa2da26a03267b7163d10021231c3a5c0"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sl_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sl_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sl_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sr.lproj/locale.pak",
+        "size": 1106471,
+        "sha256": "72123ff8c837d9926265800c7ff5b0d442ae603261d1930ad2c852d0a914419c"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sr_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sr_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sr_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sv.lproj/locale.pak",
+        "size": 642496,
+        "sha256": "4f132fd4fb914e70ac4efe0ed3b970565a67dcd4e6e9f0061ef816331136bf2c"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sv_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sv_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sv_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sw.lproj/locale.pak",
+        "size": 683598,
+        "sha256": "29b51685f56f9b9763d50ffe8f4abbe9bb3e137d170636d1b469f97f7a7d8210"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sw_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sw_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sw_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ta.lproj/locale.pak",
+        "size": 1750171,
+        "sha256": "839e9a1d2e45821f44fb3b864a715bde0d35bc7dbda1742c20483dcebdbf9ea1"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ta_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ta_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ta_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/te.lproj/locale.pak",
+        "size": 1620586,
+        "sha256": "4791af54ba16497bf01286b44d17ff7f2a53f4edf77f1b8c53024ef48e69ac71"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/te_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/te_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/te_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/th.lproj/locale.pak",
+        "size": 1359635,
+        "sha256": "8a852819c676a5bf5d339fd08c06bf334723fc1b7db9aaaef7f63ed2bbfa5952"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/th_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/th_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/th_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/tr.lproj/locale.pak",
+        "size": 694611,
+        "sha256": "2a948fcb3aabb11b703df3e8154e0ab2a9c33b55fbaac99b32ad4faece73c03b"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/tr_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/tr_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/tr_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/uk.lproj/locale.pak",
+        "size": 1205854,
+        "sha256": "dc15885c4ee334856c8d61c24eb8665037a1f311cba24b407ef70ff144a745be"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/uk_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/uk_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/uk_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ur.lproj/locale.pak",
+        "size": 1040891,
+        "sha256": "89e190404b9d2083a5dce37fa594c437f6000d2df6fb7ed76d417a8e2f8f1281"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ur_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ur_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ur_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/v8_context_snapshot.x86_64.bin",
+        "size": 742208,
+        "sha256": "d3ff51a391606fc3938e640fc85c9e99cae3bd47edcd84006f0b8fd711f2376b"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/vi.lproj/locale.pak",
+        "size": 825435,
+        "sha256": "0435ba164c6f69fd58bb3a78091017dfde7378585527cffd74a81da5423d9a0c"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/vi_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/vi_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/vi_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN.lproj/locale.pak",
+        "size": 589156,
+        "sha256": "6cbee8f7b547cba4a6cd6ecdd584495a9332f2fae0649cea6454b906756090f4"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW.lproj/locale.pak",
+        "size": 580740,
+        "sha256": "bae3fe32666fc8ab58118ec915aab1127d210a070050ea02c2b0a948f7a1c091"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW_FEMININE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW_MASCULINE.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW_NEUTER.lproj/locale.pak",
+        "size": 18,
+        "sha256": "ca73097bd968b363b7145e86b64f3c595e533808b0763dc8863a27fc363cfa51"
+      }
+    ]
+  },
+  "runtimeVersionMetadata": {
+    "versions": {
+      "node": "24.18.1",
+      "acorn": "8.16.0",
+      "ada": "3.4.4",
+      "amaro": "1.1.9",
+      "ares": "1.34.6",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.2",
+      "llhttp": "9.4.3",
+      "merve": "1.2.2",
+      "modules": "149",
+      "napi": "10",
+      "nbytes": "0.1.4",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.69.0",
+      "nghttp3": "",
+      "ngtcp2": "",
+      "openssl": "0.0.0",
+      "simdjson": "4.6.4",
+      "simdutf": "7.7.0",
+      "sqlite": "3.53.1",
+      "tz": "2025c",
+      "undici": "7.29.0",
+      "unicode": "17.0",
+      "uv": "1.52.1",
+      "uvwasi": "0.0.23",
+      "v8": "15.2.124.13-electron.0",
+      "zlib": "1.3.2.1-motley",
+      "zstd": "1.6.0",
+      "electron": "44.0.0",
+      "chrome": "152.0.7977.54"
+    },
+    "arch": "x64",
+    "platform": "darwin"
+  },
+  "runtimeScope": "Node-mode metadata only; not GUI, recording or replacement testing",
+  "npm": {
+    "archiveName": "app.asar",
+    "asarSha256": "2e56e53f6938f94c2182379817f64a952c83f45fe592bf12115527d9e8510b55",
+    "filesScanned": 92,
+    "packages": [
+      {
+        "path": "node_modules/js-tokens/package.json",
+        "name": "js-tokens",
+        "version": "4.0.0",
+        "license": "MIT",
+        "packageJsonSha256": "32e60270091a039120ffd0d41bee1f47c7ab58d7104a67a0eb0794c10cae1f38",
+        "lockfileVersionMatches": true,
+        "dependencies": {}
+      },
+      {
+        "path": "node_modules/loose-envify/package.json",
+        "name": "loose-envify",
+        "version": "1.4.0",
+        "license": "MIT",
+        "packageJsonSha256": "1f0843ec8b9eacb9ec54ed601d0354a854dc587fa3c07509a8418ffd7b11a821",
+        "lockfileVersionMatches": true,
+        "dependencies": {
+          "js-tokens": "^3.0.0 || ^4.0.0"
+        }
+      },
+      {
+        "path": "node_modules/react/package.json",
+        "name": "react",
+        "version": "18.3.1",
+        "license": "MIT",
+        "packageJsonSha256": "9a394ce4f81b3df64aedfc9ee91eb7f3fc02063c5a52ad4161170d3b55b76ac1",
+        "lockfileVersionMatches": true,
+        "dependencies": {
+          "loose-envify": "^1.1.0"
+        }
+      },
+      {
+        "path": "node_modules/react-dom/package.json",
+        "name": "react-dom",
+        "version": "18.3.1",
+        "license": "MIT",
+        "packageJsonSha256": "19827c73631833e751b3720ff1ae07b3c6c9eb7df6573015a026ce865b27d9ce",
+        "lockfileVersionMatches": true,
+        "dependencies": {
+          "loose-envify": "^1.1.0",
+          "scheduler": "^0.23.2"
+        }
+      },
+      {
+        "path": "node_modules/scheduler/package.json",
+        "name": "scheduler",
+        "version": "0.23.2",
+        "license": "MIT",
+        "packageJsonSha256": "8ebd09b39742c90531b9210846c4207b962f7bedfb2b60d93c906e4019fb3bc0",
+        "lockfileVersionMatches": true,
+        "dependencies": {
+          "loose-envify": "^1.1.0"
+        }
+      }
+    ],
+    "nativeEntries": [],
+    "rendererBundles": [
+      {
+        "path": "dist/assets/index-DJiR6N5c.js",
+        "size": 164324,
+        "sha256": "14141dfc34d7bf0e838faf19d94a2c441f7db1bf4e8fe625174573454b99d4b1"
+      }
+    ],
+    "scope": "Packages physically in ASAR; bundled JavaScript dependencies may overlap these packages"
+  },
+  "coverage": "All app files scanned by magic; symlinks separate; runtime data separate. Static linkage not fully certified."
+}

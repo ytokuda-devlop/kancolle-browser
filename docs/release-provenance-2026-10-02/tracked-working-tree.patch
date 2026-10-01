@@ -1,0 +1,79 @@
+diff --git a/.gitignore b/.gitignore
+index 475eba8..04f1999 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -73,6 +73,7 @@ tests/
+ !/third_party/windows-installer/sources.json
+ 
+ !/docs/native-inventory-2026-09-26/
++!/docs/native-inventory-2026-10-02/
+ 
+ !/docs/release-candidate-review-2026-09-26/
+ !/tests/release-candidate.test.cjs
+@@ -83,3 +84,13 @@ tests/
+ /scripts/__pycache__/
+ /tests/__pycache__/
+ !/docs/mac-license-verification-2026-09-27/
++!/docs/mac-publication-2026-10-02/
++
++# macOS DMGs are local-only, including copies outside release/.
++*.dmg
++*.dmg.blockmap
++!/docs/ffmpeg-source-scope-2026-10-02/
++!/tests/ffmpeg-source-scope.test.py
++
++!/docs/static-link-review-2026-10-02/
++!/docs/release-provenance-2026-10-02/
+diff --git a/docs/LICENSE-PACKAGING.md b/docs/LICENSE-PACKAGING.md
+index 9efe9e1..063ef6f 100644
+--- a/docs/LICENSE-PACKAGING.md
++++ b/docs/LICENSE-PACKAGING.md
+@@ -1,5 +1,10 @@
+ # 配布成果物へのライセンス収録
+ 
++2026-10-02の公開方針: macOSは`release/kancolle-browser_1.0.0_mac.zip`を対象とする。
++DMGは非公開・Git管理外。通常のMacビルド対象もZIPのみ。
++[対象ハッシュと添付資料](mac-publication-2026-10-02/README.md)を参照。
++以下の過去のZIP/DMG検査は履歴であり、今回の指定ZIPの検査成功へ読み替えない。
++
+ 正式候補の版・通知の照合は[2026-09-26の最終照合記録](release-candidate-review-2026-09-26/REPORT.md)を参照。
+ `verify-release-candidate.cjs`は固定した基準を使い、アプリ版・Electronのコード領域・
+ npmの版と条件・ネイティブ一覧・通知原文を最終コンテナから確認する。
+@@ -72,3 +77,8 @@ node --test tests/packaged-licenses.test.cjs
+ 
+ 2026-09-24の旧構成の検証結果は今回の成果物へ流用しない。
+ 今回の変更記録は[FFmpeg除去後の対応](ffmpeg-removal-2026-09-25/REPORT.md)を参照。
++
++OS別の実物部品一覧と静的リンク調査の現状は[2026-10-02の棚卸し](native-inventory-2026-10-02/REPORT.md)を参照。Mac公開ZIPとWindows保存済み成果物を個別に検査しており、全静的リンク部品の確認完了とは区別する。
++
++追加ランタイムソースと条件は[静的リンク追加調査](static-link-review-2026-10-02/REPORT.md)、
++候補ハッシュ・ビルド元の確認状況・作業差分は[配布候補記録](release-provenance-2026-10-02/REPORT.md)を参照。
+diff --git a/package.json b/package.json
+index 3cc201a..2043dbd 100644
+--- a/package.json
++++ b/package.json
+@@ -88,12 +88,6 @@
+       "executableName": "KancolleBrowser",
+       "category": "public.app-category.games",
+       "target": [
+-        {
+-          "target": "dmg",
+-          "arch": [
+-            "x64"
+-          ]
+-        },
+         {
+           "target": "zip",
+           "arch": [
+diff --git a/third_party/electron-44.0.0/README.md b/third_party/electron-44.0.0/README.md
+index fcb2a9c..1fd9705 100644
+--- a/third_party/electron-44.0.0/README.md
++++ b/third_party/electron-44.0.0/README.md
+@@ -30,3 +30,7 @@ URL・ハッシュは`docs/source-delivery-2026-09-27/build-materials.json`を
+ ビルドと交換の確認手順・公開先v1.0.0の状態は
+ `docs/electron-license-review-2026-09-25/BUILD-AND-REPLACEMENT.md`に記録した。
+ 追加資料だけでは全ビルド入力が揃ったとは扱わない。
++
++2026-10-02: libc++／libc++abi／LLVM libc／Clang由来compiler-rt候補の固定ソースを追加取得。
++URL・SHA-256は `docs/static-link-review-2026-10-02/inputs.json`、再検査は
++`python3 scripts/audit-static-runtime-inputs.py`。既存公開用bundleには未統合で、完全対応ソースの判定は保留。

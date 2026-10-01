@@ -1,0 +1,1887 @@
+[
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/ac3_channel_layout_tab.c",
+    "sha256": "9cafd9e17b0e9a7342e8729f7dd26570e4f4ae3e26e3e74b72bf59b3b0e6a0b3"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/ac3_parser.c",
+    "sha256": "454daf238512e56aad5b06a3bf580bdae54d436af9d2be1d919ed1bb0fd74f3e"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/adts_parser.c",
+    "sha256": "2181b99cee65cb73fcdd121aaf7d431e9f1547ea6abba17916051714c8c4ec6f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/allcodecs.c",
+    "sha256": "61cbe50ee4e3dec82eab0da6082004cd0280b02196576cf7b4cad83b8ce5e072"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/autorename_libavcodec_flacdsp.c",
+    "sha256": "18ae1c22ebd2a72e17bd7aa02278288f8d45920108ce30d65debd62f4c501758"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/autorename_libavcodec_mpegaudiodsp.c",
+    "sha256": "9cacf47e310c46d8234a36bd7c3453b5057f4c51397098b460ec60bb7f5353f7"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/autorename_libavcodec_parser.c",
+    "sha256": "7d06150dc3c56866239828334c87e201557fca0d6e75a8acf610d112609f47ea"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/autorename_libavcodec_vorbisdsp.c",
+    "sha256": "2e4b598b227bd6e0de509875bcaffdcc2feb04d4c2db442a34a7bb1f85984290"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/avcodec.c",
+    "sha256": "e96d188b81dd4bdad0241a03be697b67b8402c4af3bd1267eb4a03bc298f002e"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/avdct.c",
+    "sha256": "efcdd513069ff241ccda7df524b80de861898b6daf5fc4e5b8b82952f5a0de84"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/bitstream.c",
+    "sha256": "1ff15c6334fd69c2f5b506197055a9c425beda00c73125e4a3cff14a7cb09a59"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/bitstream_filters.c",
+    "sha256": "be546beb55931314cfa11dcdac8142fabe82558da743ce262b31d103dadf8f0b"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/bitstreamfilter.c",
+    "sha256": "03537f0a5efa82b9c1b5d2331a93ce8a7dc6d28b3cd7cc959ae3ad9f82165b2f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/bsf.c",
+    "sha256": "fd00143fdc8efa1026d637954f7b0a4398e2727ca36a51cb407fe0685aa4374c"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/bsf/packetsync.c",
+    "sha256": "780dbd603454d9a8f802b419b91869711bc86f7cea8dab514e56b64f7783d80f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/bsf/sink.c",
+    "sha256": "6b0404762c191c682f23b10973e471fcedc43df854c4414811a99fc83cf746bf"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/bsf/source.c",
+    "sha256": "e7d882ae9cb5f58fb123322bde8d409f4ba47e1fef64190ed15e7189240412c9"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/bsfgraph.c",
+    "sha256": "fa804999adeff26d53e830c5df859d85a9d34f9925239c7bda244934f9c07eda"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/codec_desc.c",
+    "sha256": "4c9d2ecda44838427474aab626480b0489a96689a03e99c2de0ac836306aa62d"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/codec_par.c",
+    "sha256": "8fcec76ede4327d7acf49aeefb08af858bab907a9eadc84859592b11848e8665"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/d3d11va.c",
+    "sha256": "0b74f2c54c4aa3130859e51d0f7e6bebd54c012206eae5d886a38a622857cfee"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/dct32_fixed.c",
+    "sha256": "fb95211daf8c173efacee8aca1e07f7e8262f038a2a65fea26b1797284e97157"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/dct32_float.c",
+    "sha256": "24f8efdd4344ff128ea7e90b2e6c4eff18610171b8607ce1039109dce80df032"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/decode.c",
+    "sha256": "ccbb7d4597ff8429e50c34ddf81c969010090b85ea0cb29c3ec26f4217dfaaa6"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/dirac.c",
+    "sha256": "4c80b95a25cc1076255b5cfcdc825749bcad8a0e1907a73fd137f20d92cd1ac5"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/dv_profile.c",
+    "sha256": "e2f6c064d9a8ade4d73128f4bc8b4220757a5479a5499afa24cfc838c7e612ed"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/encode.c",
+    "sha256": "90db8ca6ab24c9b8be8b3a0cd566bb7e43aacdf64f91c9b4b19aa604466d4afa"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/exif.c",
+    "sha256": "212b8a4083173a55fe5d2afc1f61d92eaa2757e9b60de9105e7a95f12b3d9ee6"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/flac.c",
+    "sha256": "23cc2c8d957b48c3513c6a9b65ae587372ea459197aaf1fa099c48714139402c"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/flac_parser.c",
+    "sha256": "0a0b2529b30f7900bff45da334434b1daca271cd6835d8c11d82e32913d3d967"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/flacdata.c",
+    "sha256": "bb04539fadc10572c1e4b612ef42004ecf9102d3060ba9c9a58943a35aac2ac2"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/flacdec.c",
+    "sha256": "2af469f5b9213df66bbc5d90619fcd293240855b97849ee447ee53405b67fe69"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/get_buffer.c",
+    "sha256": "38efe5e7fc627437306290919c8de3e2de5817d611b29d1f98e7ee6c12a8fb19"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/golomb.c",
+    "sha256": "a1f6de0e9efe4d61da17110ce9bd39eacb1e341a1d59b00e3e4348c3ce34abb7"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h2645_parse.c",
+    "sha256": "3cc437bfc846b422694393ed023800970217f0f1c913499f9ea7472f4950189b"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/imgconvert.c",
+    "sha256": "36facc40dcae43da2e020b48a78273039c4bca5a6f74187a3b96e5164f21b63f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/jni.c",
+    "sha256": "db5e8957778a29c2090d59b7e315ed2d778724117d9bc11517cdb96ba51eb227"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/lcevctab.c",
+    "sha256": "3a5f1da7aae597dc19226d7265de13af05ad081f3acdae9c1a13bcef06c60b2d"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/libopus.c",
+    "sha256": "b30b36ba71b217729766def341a4f06bc0861907128acbcdb9d1be99c1440e38"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/libopusdec.c",
+    "sha256": "3bb140af119929eafb5e4eb94fe6c396d2b77bb7d4f66fde374bfc5ed6e04915"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mathtables.c",
+    "sha256": "bcf0b4ef2eabd71959a46e44c86c2b45b65da055dc7b79bcb9e55355f7e397ea"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mediacodec.c",
+    "sha256": "f6287eaf08f52ab5b8f8564231ad61ce47f5fdec75cdc3f33ad684fae22662a3"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpeg12framerate.c",
+    "sha256": "3ff63c91cc77e9ae7d40d0aab4ade809874bb614b18adf1a69b0079001bea7d1"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpeg4audio.c",
+    "sha256": "c997bbbfb208832a72a99fba1ccab883df32369d7542fcc9ea123d90ac0b205a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpeg4audio_sample_rates.c",
+    "sha256": "10ca6a962aff4c88234e84b98bc48d84a9834dc32b80a18457bcf8c6c190a387"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpegaudio.c",
+    "sha256": "9f3cc7481f17d2bbc5e19cabd045f226490645e0bfd12472e04bfc6be78af8a5"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpegaudio_parser.c",
+    "sha256": "681f8f6bfe49351363ef719223a3493af959ca415f8619313e5f639f53efe06e"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpegaudiodata.c",
+    "sha256": "4b36b54983ef898b5ef4ae4abd593350c96b49b5dec2910b8d566c90a67f127d"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpegaudiodec_common.c",
+    "sha256": "e6a415c3c47670217b49a97ca71adbbed4d98433d852e276539293465cb67151"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpegaudiodec_fixed.c",
+    "sha256": "84c627a0e2bfff6ce3ed9151f7be415efca7199ce578b0e09ef53ab00bc549a6"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpegaudiodecheader.c",
+    "sha256": "fdac326a769d9fc3dd4bd52bf46f0628c11469f43909a5714befb50657201464"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpegaudiodsp_data.c",
+    "sha256": "b4c590d2bc880017cdda8c857f4340274449f4749c992f1d1cef785f9196d7a8"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpegaudiodsp_fixed.c",
+    "sha256": "26e292a0d52c386a335c531df21509fc2ca5f632e9504693cfa566d4fb269c44"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpegaudiodsp_float.c",
+    "sha256": "84bd8b6afd559ce9407d16e65eb406a4a7a58ef04ccc7e4b333882c3a53116cc"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/mpegaudiotabs.c",
+    "sha256": "62b9501dc8f51a3e81ee4bc3e49fb2ec7cf7e0a69d1f29150c992900219ce1c2"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/options.c",
+    "sha256": "e5c4ccb62ce6333562beaed8cbc660059bfa86486f7e8efd5580aca3a2b14c22"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/opus/frame_duration_tab.c",
+    "sha256": "ca67419c6c9eadc9bcbc908a0ffa6531d61d0180e55ad782ccced95d3f52ebfb"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/opus/parse.c",
+    "sha256": "1880972db14efb2c91bec3aa0738a2c61b6cfc7feb2258265a44e8406cb038a9"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/opus/parser.c",
+    "sha256": "b90b3d3bf69ce3b83ba9bf43982a9ce1791fe93dc26d82849173bbfbe89d94ec"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/packet.c",
+    "sha256": "1a55f83c84cc007eff5dd6857e1b55dda2d7984fc0fd534f45b9c3fa600b5f6e"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/parsers.c",
+    "sha256": "0d450082dfb8f758d205140dd163943eb3bc461490335ce5c5843b8a08ad9514"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/pcm.c",
+    "sha256": "0f9744a1ab0d3316bfb2ffb81fd1b8b483651b9249ffc609960e2e9200894e39"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/profiles.c",
+    "sha256": "b702c56d82dfb1313d19eb1b737145860f8226574dc09bb2402559a9269c69fb"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/pthread.c",
+    "sha256": "27087a44762d9f9961f70b1a3ace4a91b66622afda3a86199e5c2fd62243b002"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/pthread_frame.c",
+    "sha256": "701d6a526309a7009b10988eab544b73cf48250bb9c427260927cd2395a303d6"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/pthread_slice.c",
+    "sha256": "f19301010e8ac589caa1023385f25436a0573f2653946c92b0b4a24cabb98a2f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/qsv_api.c",
+    "sha256": "802bd34ea4020e370a9c83e0b6ff615822853bfc18613cd2400abbf430118672"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/raw.c",
+    "sha256": "ae90a734203877022c15afe1b0dc2f6dbe3b900233332516a4d25aa53bc8092e"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/threadprogress.c",
+    "sha256": "d4543d56c16e99adae6a93ad892146ffa7f0da2bd4f16f28b99285e0ce8c640f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/tiff_common.c",
+    "sha256": "00f87e7685e78a60ca4b641d4b4e697ddcb983f0a6660fb9ba0e898aaef153ff"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/to_upper4.c",
+    "sha256": "baf92fcd004b5235ec511abbfe510aba5ae8b20f008a95fdde2b2bfe8cc99ff3"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/utils.c",
+    "sha256": "893bf35688cdc0c861a60f134d49e3525acd28bf13dfda430582e8185f9905f7"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/version.c",
+    "sha256": "1df49edd63ce6de73249f8da74066d596ffed5fe264c5a635a3c2ff75cec320a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/vlc.c",
+    "sha256": "8b44e56d86e0a781aac29aff5fe54e8aec82e923477358e439d619698806f82c"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/vorbis.c",
+    "sha256": "c3fda10300e23b09932ed0b8c89af02be46821e37ca9740c305d7a79e5216a10"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/vorbis_data.c",
+    "sha256": "404e2fdbf9bcf7fd39207d9b96095aba8e45127e68da598bb77f5d80c4a86f0a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/vorbis_parser.c",
+    "sha256": "1d7cbe604252b475b7a67427a025d01d0d155724a6f52ee4ef2b0eeda993053a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/vorbisdec.c",
+    "sha256": "efc7a76f512123a43686ffa7c9b87d8d2718cbf40fbe22799d9fb564b07eabbb"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/vp9_parser.c",
+    "sha256": "48afa73f687a5371e4adf0c83f81d5cbc2270085a094b7e0d3e94b6dd7e67e57"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/xiph.c",
+    "sha256": "0c58e8eff89a085a81ee8ac5d7b3bd5564025c0de08d5cc3a085c88c40d944de"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/allformats.c",
+    "sha256": "e4f2f230de1161ddbf181774f12cae14f02d7f269e01e05a93ebcbbeea24f6d8"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/autorename_libavformat_flacdec.c",
+    "sha256": "9a0904b09d609914ce6efc1230b0709f20937ab7aea6f1ceee268dbcba296872"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/autorename_libavformat_options.c",
+    "sha256": "a097aa300b04252b81df58ec1a4bab8eed03e3ad729f75816740b2770b4b6d8a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/autorename_libavformat_pcm.c",
+    "sha256": "d0586804e85d03aac908319d8a1cb5de666567109829da28e4faded5092b35d2"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/autorename_libavformat_utils.c",
+    "sha256": "fe24b81c71d3a57c7cb303f70189a3ea2832cb714ad203c750d7e766595931c9"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/autorename_libavformat_version.c",
+    "sha256": "1cb0a6d0ee9ead0ae153d5c4a385e54693d0ba2a80c009d4b7d6c7f1eb031d33"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/av1.c",
+    "sha256": "06f04fca422b1259405a57edad0782a93205ca208e200ca44e4acdad4a15bf24"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/avformat.c",
+    "sha256": "96051990bd019bf47e1873883bba7d57d01d826a20b050282b0c6b66988f72ce"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/avio.c",
+    "sha256": "c6f825aa1dbafbbb4e1a7113a22ee8bd267ade37d483239a410204732f38de24"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/aviobuf.c",
+    "sha256": "21d7214bfcc12adfd4f4dcadb28ebdf9784271c1094f11022249d9c8149a3ff9"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/codecstring.c",
+    "sha256": "85c46e6122ad9eade1a187b7fd4b7f09e222e1d7cc16cc2301131583eedf5a45"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/demux.c",
+    "sha256": "116eb2541bcd24717048a205045544ad932bba965372dd82251fce677c41a8ad"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/demux_utils.c",
+    "sha256": "4f1f7fea6a52dfac1a1d44058f776113672577ebbb107920b6e594f92fd068c1"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/dovi_isom.c",
+    "sha256": "7cbe2a55e48ea965afd0150c1e48cba55a7f610151f77355c47dd3cdb1dd5be4"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/dump.c",
+    "sha256": "51812e3e24455d86ef2f96fe78dee7fc11e50b8e87067fdc367ff92b10f294d6"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/dv.c",
+    "sha256": "a3e60d15f97bbcf53cd67f23a910a41e9f90f4f90ec2dd54a1cb10eb9600f209"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/dvdclut.c",
+    "sha256": "43bc6c0929cd9eadfa2e328db927f4c4d46f28349953478d8a806254aa295e7b"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/flac_picture.c",
+    "sha256": "f9eedb8af1871733017b6dd2c5e7406a3e5c78753446019a6aa37613040ed601"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/format.c",
+    "sha256": "661981dc12418ee878f3fb93ba73ef30009021dd29638973f3d404c3596dc083"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/id3v1.c",
+    "sha256": "e6c3d0ad5c538d4f5fe34291345db69ca0dee6a579bb842055cb0d76126a9108"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/id3v2.c",
+    "sha256": "adf69c06d793b31ae8b9de8b0fa14537ef5afb56a4bb07b1073d0750d95dc3da"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/isom.c",
+    "sha256": "824b0f2aba3f3d159daf35d857a9c25fecbf7acb86a6f00e0522e11d16af5f1e"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/isom_tags.c",
+    "sha256": "52f4c8bc8f34e5280b734a8770c95d6dbee73bcaeabee67edc0ef95238885147"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/lcevc.c",
+    "sha256": "04e9a31430a226839b24b8758432dbb8369f15f322f4421497cae1fe1ef490ae"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/matroska.c",
+    "sha256": "40eaeb64621cdc7cec3e42627fe81ad336ae8bf030bd5918e2b0c742972b7a34"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/matroskadec.c",
+    "sha256": "8bf96e63b09295e98b75e0ad14b4a29dc2db2e8f33f1d90151af3ed336a4aa3b"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/metadata.c",
+    "sha256": "b0583a992fcd28fcad34f3bc2f73cb394fd2d9e32227616fe38950b45a9cdb0b"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/mov.c",
+    "sha256": "9af356087e7b84c88f82518fe6afc66e562b16f3362895c6e903f4f3da198949"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/mov_chan.c",
+    "sha256": "dfbbc6efb03630761cdc5247f2c0e7d28ecd448c2e5768b3c15486446f4901a5"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/mov_esds.c",
+    "sha256": "73254e9e5c82f8118ed082c6fb1b783576c9bb95b47254bd6947b3172347c262"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/mp3dec.c",
+    "sha256": "30349e1eaad01f199a150a1cbbb2da7a619bafd6ee846e4f051eda8bf4a95e27"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/mux.c",
+    "sha256": "94067d0406cc53eb1624277e296642fc3cd94ce48e9bb5645923ade3cb00853c"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/mux_utils.c",
+    "sha256": "47b9aca2cb145c41a8b3b0553353361bca780c21778faa5b12a8e988ecef4d68"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/nal.c",
+    "sha256": "93e2951f9d638195af15ea091adcd0b2f8319f63468a4117e8cc7d443e2aa0ca"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/oggdec.c",
+    "sha256": "eeed589a9e6778b60106fbdd91f9e27322a3b99096cf89789ee7ce7959133e33"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/oggparseflac.c",
+    "sha256": "f41f8e7b3d2d56db905ffcfeb42d35f19a3ebdbf66654aac7ab1c1e3d9e380dd"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/oggparseogm.c",
+    "sha256": "6be3f01f0427a5fed2a441274b9aee80757550122479bc4e2beaba0c4e38e2b6"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/oggparseopus.c",
+    "sha256": "a5656472273e5c328775b3f0dd2a28f1dbfc8da6f1d2b8233692fc94f74bfd04"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/oggparseskeleton.c",
+    "sha256": "f44afa4c1ee70226cd9f1631f699a348688f4f7391d5ffb70d7d34a0e87d93d2"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/oggparsetheora.c",
+    "sha256": "0c27d0bcc6efb96a85e6551fe87db07e61c71eaaf36613c7154ae51841d7a354"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/oggparsevorbis.c",
+    "sha256": "a11ec3562e733f21565c491ab56b7f1d4a6865fc1ddbdc372ed9cb29b13ca7fb"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/oggparsevp8.c",
+    "sha256": "9c865221124c5c926cce0522594d21524b738629c1ced1dfd764a8c5871e1066"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/os_support.c",
+    "sha256": "5eb56870741543109af22922013725a91ad0e9eb6ea84a78b3612d08b208c436"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/packet_list.c",
+    "sha256": "15f96286550aa23412b0e9ee637f7fad87428456350cfb527b3e17cbce2a7e9a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/protocols.c",
+    "sha256": "ff74eade8a0df0c18b56c0eadaaa2c644c5b849b9debfe6667e64a1b68b41ca2"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/qtpalette.c",
+    "sha256": "1ed0766581b975e8bc8ad3ba94c31ec8ce3cd26e6e485e25a1eb87735e7ec090"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/rawdec.c",
+    "sha256": "4963da8699fc930c025a3ae3797a518ca179cd9d60098fd123a0619165eed05a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/replaygain.c",
+    "sha256": "217dbfc545854c9b4073b70a7e375fe40fb713d65400688e8c979eddd63a62df"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/riff.c",
+    "sha256": "8fcb3f4b3c1503d18c5effd95412dfaf0b656f06222ecb2244c429e9c9af297e"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/riffdec.c",
+    "sha256": "3983e144b7040b3a9405014f7697414372e0157047437a425418d9e64d514837"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/rmsipr.c",
+    "sha256": "39b92853cee2f7f2461f90b3c11ad16bc24d835d461b4e27a40f83d54fae4730"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/seek.c",
+    "sha256": "68fa644ba14c782a779017e8faa7cd52bd3e3b4fac3995f8807f954d7ad26f43"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/url.c",
+    "sha256": "a7ac851b30d96839f0535594c637364cb76795937d385b09c93f4e0879094acf"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/urldecode.c",
+    "sha256": "53c493a82e7e2ffa15a2a87e7b4c2a947b818e55f5c42ed8c3ea5368b555ff48"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/vorbiscomment.c",
+    "sha256": "82d7d1eb652d745153b4c9638cdf381036b82ab714289087ec1d492c04b59fbe"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/vpcc.c",
+    "sha256": "097f2ee6495b428e661e868b698dfa869a491b26d91503dd6d1089f835108ba2"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/wavdec.c",
+    "sha256": "a25cf9ae2c93fa10753f13513c905766e24f60ab7ab372e836a50a4eab5f4bfd"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/aes_ctr.c",
+    "sha256": "bc85c73e481985b2336eaa2b9eb55094f4e440c5a18611dfe9d0f1e13aa7035e"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/ambient_viewing_environment.c",
+    "sha256": "1c28b7cfc29d9bbe266a307c04e517ff49fae31e52ef8508085423412f486e88"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/autorename_libavutil_aes.c",
+    "sha256": "ae0104e3688cd082b4d8bb9dd7fb126457dc8bdeb76d5ac6bd1390494a0d7362"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/autorename_libavutil_cpu.c",
+    "sha256": "b3ece6b5fe12d65abb4085eac7086bfa9c61656d824e91bc43ce4ea94b3a7980"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/autorename_libavutil_crc.c",
+    "sha256": "e0ba30fb54bc46aadfd9aeefd4d372f86ef3563ddcb690c49af2c7d7ef6142af"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/autorename_libavutil_fixed_dsp.c",
+    "sha256": "7eecf7872fae5d4253badf328e3ec131923bef325814c36a9231fbee43b5d2f2"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/autorename_libavutil_float_dsp.c",
+    "sha256": "54971a5214457a7e31d4da03a8dce4495d5fb3344fc4f01d8297f95a951bc43d"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/autorename_libavutil_imgutils.c",
+    "sha256": "f92116eef5b88ec90128b1eeda1523011bc4de0f1e2874a1188398dad0cbf7bf"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/autorename_libavutil_tx_float.c",
+    "sha256": "c269353dd575cd90e6515f1776f02c451038673f93aeaf533d59cc0dee28cd1b"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/autorename_libavutil_utils.c",
+    "sha256": "0abe95ebb2b014ac458b287ca63c025dce06d28f352635cad2f9aeb1bb1dd9c3"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/autorename_libavutil_version.c",
+    "sha256": "4a7d448ff96232dd903a7acb1931beec963c6ec26412df6671267f485ea3c151"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/avstring.c",
+    "sha256": "9d2def94d66a2888b1c4316db00b0c256c7fe6f1765989a339a8fd39522df7ae"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/base64.c",
+    "sha256": "009cb3c1b09f34e01641e5a4cb9535b047125512710220e6dc6c76db1bbe8b6f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/bprint.c",
+    "sha256": "1cbb6437a17aea9fe0dfa1daaa00b2289cb8c965b70a3c69c219c330e89f7e9d"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/buffer.c",
+    "sha256": "810049e1ac054af6870a5c58c02903f29a210732ecfe724b79ece8c8a18ad2ac"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/camellia.c",
+    "sha256": "af44edc60f3ac108c266164a1e54858eaec5edff861e67d4d58da242a8b195e3"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/channel_layout.c",
+    "sha256": "89b9de1cda3fa0bcd18955e6a5a38a64d4de341bfa7e0e356d4936e19553b861"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/container_fifo.c",
+    "sha256": "38c463125c575d4a91d8c7ac698b6a30577815446e6cd75fb0f7bbc535a771e2"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/csp.c",
+    "sha256": "2c919841769cf19fc97eeee7bd0186678c27921b9d6ad8c7d83cbfc31c018b63"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/detection_bbox.c",
+    "sha256": "9b3cdf5b1cf42a0565c857bec66ba927e1e43771a838ae60fc988add579179e4"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/dict.c",
+    "sha256": "7af36341177b718f04257caed6df73a60dd6b22c9dacddde7cd6d96fdaa32b3a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/display.c",
+    "sha256": "f9819e1245080a9a63d3e27c7b97ce3e701562e8507e56435f7241bc20743f6d"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/dovi_meta.c",
+    "sha256": "e504b834735e11b3a3524408a82d42330571619c5729ca9dee4d2e2f5c7ba4a0"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/downmix_info.c",
+    "sha256": "00258ba97f518b8abee3414efc0f8006e639a8b732ae138ed7cf20066704b0bc"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/encryption_info.c",
+    "sha256": "5e7d2f2329e60b886f1ee173c8dc28afbf6af0afa21c45ae85fa5fcf8407776a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/error.c",
+    "sha256": "c9cfc112efa06ee1bba15498c4d09b9969a57cef87cc71d69360f3b158081aa7"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/eval.c",
+    "sha256": "40a55cebb95d323dc9afe8227fb5325ff7ad242aa55ecb92e0ce8cc67e75b0b8"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/executor.c",
+    "sha256": "25d378bb9f4ced3da8157cc1a1c669ca889b5526bb9fd27287d7e9cf7e58c3da"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/fifo.c",
+    "sha256": "13ff4b719a79439e3e0fa4db7832c29942c905dd5eec4903c3bf7d96cc6ecb0b"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/file_open.c",
+    "sha256": "67c5c007f53735f9d6fdd64fd18c5d1098b792b6eac6a1111b8dfe02f653a0bf"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/film_grain_params.c",
+    "sha256": "5b2c88114f5cf3241892ae1967c552947138a564fece716351f2fbeb25ada2a5"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/float_scalarproduct.c",
+    "sha256": "1f80d292f022154af43f9eb16e52476b91c45dc6ff03f76a623b25d299d9cfcc"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/frame.c",
+    "sha256": "3f004de1ba09a2f1749eea93d7c75d1a942732532b669a165517091203566534"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/hdr_dynamic_metadata.c",
+    "sha256": "a9472acb3fc8cda87b5f5b0cea91cb681dbf6a6459f7569682f6e3c3a6605be0"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/hdr_dynamic_vivid_metadata.c",
+    "sha256": "efdbe67d2326e782855865e7a757bef6e26219c4fbe25b0a44bbb7907bbae7a6"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/hwcontext.c",
+    "sha256": "0fe06b514578f52257d78ef749fe5927332590ec326f091631ef9b9e0cba4524"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/hwcontext_stub.c",
+    "sha256": "e0e66d7fd2bc66e39309b8f4f4fe4cc0612c7822d0f63164838340034eb425a2"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/iamf.c",
+    "sha256": "f68d64d04626838067403023c4325738af85f5b77d43751dedd48105852ba755"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/integer.c",
+    "sha256": "8f31f6e13266caa6801636cee8db4eb004f3e6d337e5495628c8ba6249786923"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/intmath.c",
+    "sha256": "14c8372ee5347436f753eab76f25578e44f0631ee038ecac9c587700120ac9c2"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/lfg.c",
+    "sha256": "3e2be41ae4ebe652ca9f1e6dbe64e99290acc00e0801f20331f1ed8831085a04"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/log.c",
+    "sha256": "d51a1332a865388d82c2642b36caa4d48d0b26fbe9c1c6a3ae1050725bae8229"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/log2_tab.c",
+    "sha256": "825d10534b8851fa86761b28b06bec0a854c264c23cbcc144f4086ce5992781c"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/lzo.c",
+    "sha256": "3387377704e9b9402173b35c42ce32c68f796cc5d53b825657c25eaec66feee0"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/mastering_display_metadata.c",
+    "sha256": "fcf4177e52427a2f969ac072f57e1e5418a536e5db12db612de151477a012c1a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/mathematics.c",
+    "sha256": "c38b36d09a886b8a0471fa1c8f0174a1a852f437011d818569ece3824b1d4b6b"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/md5.c",
+    "sha256": "7ceb20c8686c46737b76baef58b216c53448a45d191b597ebfcefcc8d38187a6"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/mem.c",
+    "sha256": "58fab6528009e46667f5afc2f9d65dc785e9c7a083df745528b2068f8f893c5b"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/opt.c",
+    "sha256": "95891befc974dfffcbc67354ce79830182238a37fb70c4b3473663c28b5c99d8"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/parseutils.c",
+    "sha256": "67554a40cf238f09fc583764a65363f9b34b4f784fe6564cf4da9d9c17d10999"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/pixdesc.c",
+    "sha256": "822a164dce11f8f0a483c7b4c6372a131239ecf6d7f68f499a198003c6b002de"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/pixelutils.c",
+    "sha256": "0b80c9b840c5b15fd7ded5eef25fb362bd1eafeeba4305a6a1cb000ca51a4820"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/random_seed.c",
+    "sha256": "ca89ef8d54a06bc855459a13f38e092a40787517aab1f6adb9e292cacc3cfe8c"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/rational.c",
+    "sha256": "746c73f5ced78bdfe0a3c7a0d835cd27c5696403436de7090846def3574a8fa5"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/raw_color_params.c",
+    "sha256": "e8283f4162e0036a15a343a49f2b6c73d6088cc2ce1bd7548a01d9c0c3f5eaf5"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/refstruct.c",
+    "sha256": "d8936c56db57fe53d9836e950563483104670c2fc98687f87fb497e078ba742f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/reverse.c",
+    "sha256": "1e7908e98aab981c801d6b016a1417d505c998ec8e91a8e1bace6b44a8813c85"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/samplefmt.c",
+    "sha256": "b8a84939f2f2a090e3e18955ca7f410f5c1c7dea311b352f0a9f97eda2dac756"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/sha.c",
+    "sha256": "a1e25a92ea7902c3c6eb92ee4ada0ab6749695bae2026b7528c267f94ff11837"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/side_data.c",
+    "sha256": "a4c76fd99cc7cc9a289ec4e95eede9059f8a19ab431fdeed6095d678079d0401"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/slicethread.c",
+    "sha256": "d791762600a48fc813f451a5fa5c9739c9b0c08749a9f1cae994a3f12bf44255"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/spherical.c",
+    "sha256": "67dfd5dc859a0dd084bf3dc215bef6f3375228097e24256c4bc773de8871f366"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/stereo3d.c",
+    "sha256": "ab929905803fe6c0fb6afda4ebb7f8a9babce26a40ccd3df524a7dfe87cbe75b"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/tdrdi.c",
+    "sha256": "62bc45f5205a9304e427e31689a2a1ee36195f9ff5f535315f0d804bd761ec23"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/tea.c",
+    "sha256": "0afe269ce3f23a4007c99bffc66f67515046224eae91f3d88ed3991d2dbac485"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/threadmessage.c",
+    "sha256": "94e91acb7255eae6c223065b2a9cd702f5dacb1107cffd5a910372971e7adef1"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/time.c",
+    "sha256": "afb6b9bb5182ea615309c25d9fd530a032198cdb2c2c9da1f0c020ae11294d5f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/timecode.c",
+    "sha256": "16bd65a3be31bb0cd1685fd0069b67a5d8d6f3beb1b5a1b8af72edbbf84aa3c4"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/timecode_internal.c",
+    "sha256": "589416bf434ddfbe7038001804f65ed0e21265c632dd52c22473fcee0740841a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/timestamp.c",
+    "sha256": "59f8ee71d0468de72b44d55af779aa4392007d82a68d52eac9675cae2406d15f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/twofish.c",
+    "sha256": "46d0a91ddfaae02b35d16c237043a405506939b7265d3fb56f51d048f17585c2"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/tx.c",
+    "sha256": "eb56e620b884efed6db46d6a9ae8582c165e7833365c20a01e706d46a52f0eb4"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/uuid.c",
+    "sha256": "bf5e415b80f0041ee41cf2902c4d97cd00934853fb2ab15a08cb4f6ad17fa8b3"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/video_enc_params.c",
+    "sha256": "5439f44b7b9c227423f188c986405d3f09408a450084a26283f3c87bfdff53e9"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/video_hint.c",
+    "sha256": "3b798e06334024916e8473eed122a82b822863ca7ba5b6f02293d0eb0de37a8f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aom_film_grain.c",
+    "sha256": "a75aa46b5ca85f4ed4eb6b0d9aa32e7c1aec759282d5b4e44fa114279dd81e5a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/atsc_a53.c",
+    "sha256": "a07d8e8e47e59fe0b319ed1dc00614df2665d9b9be7370c1ce9fac03bd06dedc"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/autorename_libavcodec_videodsp.c",
+    "sha256": "6c04fc3f36325ef8a929d0bccbcb1d3dc2e6102a977defa8ad5d3c4d197cbc87"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/cabac.c",
+    "sha256": "634aa3361f2dd58dd6317d45a44041fe7e6755e1964d51dadfb4ce039a1489fd"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/dovi_rpu.c",
+    "sha256": "3979e6d60c35510f8e8275497d5f2980e794ac126452d1b5c1cb6e9e8e18e177"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/dovi_rpudec.c",
+    "sha256": "e9d5504aa385747b96d3bb752815317f85413acc8cf7115f4851d9659f8df2d4"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/dynamic_hdr_vivid.c",
+    "sha256": "c8c4b3d4ae3de875e5b87bead5db9d24033caf9ef1d0fb6fee5cedd5599fa1cd"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h2645_sei.c",
+    "sha256": "901f11202b2d76b77bdb5bb1eb86970435eb21f67522a2ebbd6bc7a0b4262dc8"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h2645_vui.c",
+    "sha256": "04f4928555fb8acea5e27f42d3d9fcd7abd00caac6b077daa39456b49624fd02"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h2645data.c",
+    "sha256": "436ff2474d4538982857ecd46ced67c4609ea157ebab8dcd16b0557581887333"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264_cabac.c",
+    "sha256": "e68e170b1a21395ae7bf8e4f568d5bad348df1b2a98898226356ff38c574d08a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264_cavlc.c",
+    "sha256": "9f35fb0fa8b0f127d94a1489640b7232d7ba2c78591f9cfb04d0c485f190de84"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264_direct.c",
+    "sha256": "e3702fd2a91983087a96cdd3903b08668bbf837a58f027f447f09b7d33264902"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264_loopfilter.c",
+    "sha256": "e1a6b01f8845cdf81474c5359f84b5999914683dfafa53a63ab7383e83413874"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264_mb.c",
+    "sha256": "b1fd65694d2d334623201523257fe578e790ff5b759dac88e83fd76156f25ae4"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264_parse.c",
+    "sha256": "6da29f6f210cb787b5aa2fd4550a17580669db5a458f315b6c428b7cec8a34c3"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264_parser.c",
+    "sha256": "4d769ae078de9a3b7ff4bdfad703317293ffdd746cbb567c4e19d31cf283cb25"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264_picture.c",
+    "sha256": "8161ffbe961a3c7d2f304c99f73625af93861b84c99175037c29d4c17975a911"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264_ps.c",
+    "sha256": "bdc4866c3f3b9aea1759c8bf2655a8706bd9e297600ed1982a31d6e9f608d3a9"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264_refs.c",
+    "sha256": "cac1dd61ef06b2a6287973d3c0856e3208751c0d830c971668c85da0f542c8fc"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264_sei.c",
+    "sha256": "ded8bd1360871f474ac6554dfcfedebc6d10fa20fe71f1f9a1b5aa922cc78669"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264_slice.c",
+    "sha256": "bf6e7b4db8483d4d64874a249d486a4ee0da774fb3ef7321989857b1ae25affd"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264chroma.c",
+    "sha256": "0c9608aa463c5a6ed0b8bb427a11a5c2c78df5d31a3ec960714d324de9a198ea"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264data.c",
+    "sha256": "04731d87e1a6a208c8746e36136c96e216dc12cd4fc665655ca35dc02ff54da3"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264dec.c",
+    "sha256": "a994f2a2278923735570c5ca955b372121f353193e12ea3d5430a13b8d5f237b"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264dsp.c",
+    "sha256": "d4481e57e317b149aa2d6a5ba6a37f1a9be241f9cf3a5c2eb45274e4f90b0978"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264idct.c",
+    "sha256": "f9c2a5c05a821b8d2ff2c340028c72cf6235498c0643d3724e6c59f5cd9a1d84"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264pred.c",
+    "sha256": "fcc8ad5264d823b3a21b35a11519c1eaf4f6d1d1c29aee45400940cd19964c9e"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h264qpel.c",
+    "sha256": "357014ac498d0ea5942e5e4a6b954c1f9985f9a2b69dca3b13715807cb8d1bfe"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/h274.c",
+    "sha256": "d6033f6bdab7a85708995fa03498c764ff1befe960a77a250721ac08cddf2052"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/itut35.c",
+    "sha256": "b005bddd8f721ccce99205dace4e5328c6fe77119f9b732d864ac31db3c9fbd5"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/startcode.c",
+    "sha256": "c3d8b98d90fbeebbff0dd92b19f02249886723c3e0765d60ea4b7850d8a1f35c"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/x86/autorename_libavcodec_x86_aacpsdsp_init.c",
+    "sha256": "8371c49cc3f047df195e16bb968909732429874edc9545438c09ea52035a8973"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/x86/autorename_libavcodec_x86_h264_intrapred_init.c",
+    "sha256": "fd095ae8ea321fce9bbca9025da0c4101afc3926aa8a19d10fce163c5f1c486f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/x86/autorename_libavcodec_x86_h264dsp_init.c",
+    "sha256": "fc42a468c5a65ae814ad46bf797a04b047f3419dd35dc654d5bd049c45c73bf4"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/x86/autorename_libavcodec_x86_sbrdsp_init.c",
+    "sha256": "765a7f1139a0f98f46df1bf07e98361f6d0ae934a675653e4da849199f1699ea"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/x86/autorename_libavcodec_x86_videodsp_init.c",
+    "sha256": "7884fb4e484aac0b04ba3193cc9c06cd75fde1c624078afbffa56620615900fa"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/x86/h264_qpel.c",
+    "sha256": "dc38436a0e49ac4324600993ea2d1963601bb64433dd85adb5f70fcfd945b331"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/x86/h264chroma_init.c",
+    "sha256": "5c58b1795d3fa8a6b16f32d502947035986ff8e01a204c79712f6d5062ad6969"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aac/aacdec.c",
+    "sha256": "5493c5da7fa6752b0b47e760af4ee9df15b994fc6154fe824c7bac00639ead7a"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aac/aacdec_ac.c",
+    "sha256": "931cca82d1a35c01d63abc982a15c2fe80a74f8f15c96559bd34520b8be5e790"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aac/aacdec_float.c",
+    "sha256": "a727e723ca0b5c7b968aa4781f451e771caa356002384ca8b425e1962d803ade"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aac/aacdec_lpd.c",
+    "sha256": "923127f05b1fc5461550374eac3c1240e1d32eb5db095cd7e999b3193f815060"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aac/aacdec_tab.c",
+    "sha256": "8a7459e2fcc1ae03ecb4a481ba402fe49878505b4e2e1f1373c4ad64ebd3bc77"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aac/aacdec_usac.c",
+    "sha256": "62b79a413667e0da3dcfc49d46af41578460704119241aaa0672882cd6197e97"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aac/aacdec_usac_mps212.c",
+    "sha256": "2b735f72d9ee6785a2972bc5151a444576bc49ca5651b6a68716f3069f6200c8"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aac_ac3_parser.c",
+    "sha256": "b45b473c1537fc761ab72788654bb47da8427903af8899b0f77ecab22d8906f8"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aac_parser.c",
+    "sha256": "5053af8bc16eef240661a064b9090087d3923121a544d2684e0463a8c5ab08fd"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aacps_common.c",
+    "sha256": "0fc080c9d4e32f91c324f7468229c7da56fa829162c5494ef4167587df1dec1c"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aacps_float.c",
+    "sha256": "600abbb031a52a65de359ab09a5c7833749b27d92639bcab8cf8ca63912ade30"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aacpsdsp_float.c",
+    "sha256": "391e02c18bba1ddc12bd257f5de647ab8cf03045ba088f58b8a2fa7357485576"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aacsbr.c",
+    "sha256": "d904091b3b6cd1660d989e458bcfd4164bed972145277a676bf793745af52956"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/aactab.c",
+    "sha256": "dc26f9316026cd807617db09c72424ae2b19b07a1d9c19a45cc05ab9617a32ce"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/adts_header.c",
+    "sha256": "d3ea845226cbcc1890c9dbb2dfddc9fa838c4e241830a0902bf70fdd4c2af292"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/cbrt_data.c",
+    "sha256": "d89af06c0ec6c4d4f2e90abf33128cbac29b58cb2e2a7e0e88bd8761af436c2c"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/cbrt_tablegen_common.c",
+    "sha256": "19163d9173202c23755a184f4e6e7a40fb15bf79a981706d6273558aecafdd67"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/kbdwin.c",
+    "sha256": "a2009e3577b0e890eba200e542f6bc625aa9c3656c9f9667b3213421df4b475e"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/sbrdsp.c",
+    "sha256": "1d9acd2641f9b0d41e9d22c531134a09f14914e4101b92135fa8c472c788f1ab"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/sinewin.c",
+    "sha256": "515494ac041df33d492da0ed3e0cd99d7953db608106141c33a3f46bf44c6101"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/apetag.c",
+    "sha256": "3926025ba8307a897e538e53050358bad5d1c43eb3702df195d8d9ffaf21594f"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/autorename_libavformat_aacdec.c",
+    "sha256": "493b7c5249e2e08b1ef4643a97438cb398fbaa5f9595b07fd45b04e3e06ae2e6"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavformat/img2.c",
+    "sha256": "a30d73e4c5a89d189d12628e6eaddb7dd76f5e41085c6b3c77df78ae96137cac"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/x86/autorename_libavcodec_x86_flacdsp_init.c",
+    "sha256": "278c8b3b1efda4295113550c113c75e3809e8ec6ec39ba7f9455f8758f250e26"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/x86/autorename_libavcodec_x86_vorbisdsp_init.c",
+    "sha256": "3d02e56f33c1fd5f7293d0875bbed8d1a7b80b73cb9ec834f033678f1943f662"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/x86/aes_init.c",
+    "sha256": "d6eb8fa50ee9794a8ad51302c07eb56378055d22ac73b1c35d69081296953256"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/x86/autorename_libavutil_x86_fixed_dsp_init.c",
+    "sha256": "1c4524850518f5b521a4cb7524be27cced1e2745ca1d6d370545b233b0ba9191"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/x86/autorename_libavutil_x86_float_dsp_init.c",
+    "sha256": "3adeffac5fc283be612331a1ad3ecce853aa358492aa9a68e8a001a26f4f5aef"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/x86/autorename_libavutil_x86_lls_init.c",
+    "sha256": "fb9e40a226cb877d28e3893b49c79d62438ccd302486c08f36bde0399f59c714"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/x86/autorename_libavutil_x86_tx_float_init.c",
+    "sha256": "91fa5cd93a0d4a36a1c1b4c221f7ea19baabc84cd4b5a109d4472f91c8336382"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/x86/imgutils_init.c",
+    "sha256": "114171ecd249bb06b58ecbdfe67a477b9274efad1b39b15040361ae2e388f6de"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/x86/constants.c",
+    "sha256": "71b2c8be867295aa946acef0db2617376cea54197890b38be11b7b24a08a6d85"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavcodec/x86/mpegaudiodsp.c",
+    "sha256": "043274216bc5648e246e7fe16dd3d2e10e311f4cb765c8bca4afa8c055c7f3d7"
+  },
+  {
+    "category": "ffmpeg_c_sources",
+    "path": "libavutil/x86/cpu.c",
+    "sha256": "fbf8050a967ce2c567f60c836984db93a6eec40cecfefa3fe41fd2727fd06225"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/aacpsdsp.asm",
+    "sha256": "be29f11612fa4f8cc86d51f3c3ee38114968da5fe1bcc70fbf49e1917c189f40"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/autorename_libavcodec_x86_sbrdsp.asm",
+    "sha256": "c93a240eb9b057c6fbeab21dbc0ac0965f4200010f592b86b510d30bd0869fe8"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/autorename_libavcodec_x86_videodsp.asm",
+    "sha256": "9668f316510c095969c599ffaaf8c2ab400bc5653776041b14b5fa719caf1fea"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/fpel.asm",
+    "sha256": "425ce06e14a5c3a3cfabffe3d82041db107de342561b1b133ba3a1ee6c6063c8"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/h264_chromamc.asm",
+    "sha256": "7314dbbf172e577975fcb36e32de9e1da6566039dcbdeac421847121176ed667"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/h264_chromamc_10bit.asm",
+    "sha256": "3f62191e44d8bd0cd8b49a365241bee5c5780d8abc9d7b73330e66671d194b61"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/h264_deblock.asm",
+    "sha256": "296d8140b66cd19d4cf0fcd3b415f7c417f837ac8283f5c14bf11e6cc73cd93f"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/h264_deblock_10bit.asm",
+    "sha256": "2cb9343090beaf05e0e8238d9ad3d972e82cef9f49653a137c3a007b1636605d"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/h264_idct.asm",
+    "sha256": "2cf9110474e2bb77304284d3f833f90f353ec01c90f74d216fb9d586edf98e05"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/h264_idct_10bit.asm",
+    "sha256": "3e6c97ef0cae3df87ceb6ff006a3bf8b140da4c73bc73e90b9837fd6f432177e"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/h264_intrapred.asm",
+    "sha256": "a615ba51f40da315a76a4ef3952766185860a1955058ea57f1ed00e6e2ca373b"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/h264_intrapred_10bit.asm",
+    "sha256": "2e109671ee66bfc67e883a59ddab2a0b5f1591b29bf1a3c389e6afb0b5939bdd"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/h264_qpel_10bit.asm",
+    "sha256": "a0fae152d460a3ea976f1b9e51ba13544c54ebb232a290e9bd0fbf59b41faee0"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/h264_qpel_8bit.asm",
+    "sha256": "2312ef4a199d8c415569ef168e94252a407e494315b3939f4a033d64d7cc4190"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/h264_weight.asm",
+    "sha256": "753a1aa9c954dc7936d23ebc31eafbd34b56e9f8e6a2e63a7cd8f75b2ecd2114"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/h264_weight_10bit.asm",
+    "sha256": "00e7c2b8cfc48dc8bdf0e1997b62a6441c37092dd154d46463d4cc32ffd19998"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/qpel.asm",
+    "sha256": "8bace456630ef5d069c3bb5a8220742ea26360099c4981a2a0cd967108499b64"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/dct32.asm",
+    "sha256": "22aa296c7dcdba58b4e0527da9a8e15f0342cadf376501e4920fb6530185edb4"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/flacdsp.asm",
+    "sha256": "0bc1a28f6044d595ce730786abdbbb4b31c2252ca43f0a278b9bd31044822e08"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/imdct36.asm",
+    "sha256": "99e8de1fa63e4a6d867be1adfe64aad69ba731230bb0e42a394cf56db8717b92"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavcodec/x86/vorbisdsp.asm",
+    "sha256": "f82bdd9a28ccb813610da169b11711cfb10ee42e89d8d87fe37e42dd7cc08eff"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavutil/x86/aes.asm",
+    "sha256": "0034e71b8c1205aa52cecbcf69c8b9204541213840f9a6d315f6c282123f025e"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavutil/x86/autorename_libavutil_x86_crc.asm",
+    "sha256": "cd8fa3ceb1efbd01dd043740c3d0d63a949978e94638a1d9ba37a50bfe9da719"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavutil/x86/cpuid.asm",
+    "sha256": "375ce42b095a3accf6a501e6e2172469ee26f25721ab3617e71689488bce5f26"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavutil/x86/fixed_dsp.asm",
+    "sha256": "b73eecb9b786950fa3fb6462605b7f405b1d81c89f42f0f9dfca208c45425896"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavutil/x86/float_dsp.asm",
+    "sha256": "634a801fd67b0dfdf03c6db4f9904b4d40637c6f255e31134c138df3e5887ef0"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavutil/x86/imgutils.asm",
+    "sha256": "bd6adca52d36298e53f05b7d8f6b7a8d09a61e411c5a565f346b0a083ccc00c5"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavutil/x86/lls.asm",
+    "sha256": "b97691de874bdbdc4bdb6ebdb5d5a11d856778fd37972ffc1ff5a9fd032145df"
+  },
+  {
+    "category": "ffmpeg_asm_sources",
+    "path": "libavutil/x86/tx_float.asm",
+    "sha256": "afa714832466b44d2a7cccfcc5e0752d2149ee975683aaec48e549877896e5ef"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/aarch64/aacpsdsp_neon.S",
+    "sha256": "ffd45c870b8c07e6150e58bf4e975f764e12dcce5e88a7b3da8f8f7f996c79ac"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/aarch64/h264cmc_neon.S",
+    "sha256": "77e43110a886272c4466e48cb37b9457c76536aabb8bddb9ce321c05e3fc3a42"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/aarch64/h264dsp_neon.S",
+    "sha256": "978e076f0020e688b40c6dd827708c3d53e17c64a99fd0052e43d983536ce638"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/aarch64/h264idct_neon.S",
+    "sha256": "963ffe5f31b5a6a422e13b0d394cf5630126927abfb23aa214f7cbe83d60683f"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/aarch64/h264pred_neon.S",
+    "sha256": "11169605f2fe94f1f801bff78eb43c21a1133fb1d7412babe46aac6d6b27af30"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/aarch64/h264qpel_neon.S",
+    "sha256": "897b79be7856341847ad7a5ce6ca0c15a7acc439a95bf33ddab616cfe982c544"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/aarch64/hpeldsp_neon.S",
+    "sha256": "7a02742d5baa1c915f2eec779e8bb17bcb46a5cf290a419ede7a1a41eaeb7714"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/aarch64/sbrdsp_neon.S",
+    "sha256": "75e33aeb514ac2fd3982ba3712bacef6df14d18d8ea606d832dd588ce6e685b8"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/arm/vorbisdsp_neon.S",
+    "sha256": "7f6de932fa64978e9e8694f12895a177f9430d1aea634addfd78803d75be1ab9"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/flacdsp.c",
+    "sha256": "df7cbc89fdbf998a31488b8dac0610c6bdef97d1808457c47af2cf7c6b5ae6b8"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/mpegaudiodsp.c",
+    "sha256": "890b9117ea8f8067395a6828350543d4f45fa2859e0fd59f640d3b2361713aab"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/parser.c",
+    "sha256": "5c1e7b66c056f611e7c27dead7f7f62d760cbc7acdc95d1d4a2fa01a79957309"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/riscv/videodsp.S",
+    "sha256": "4810e85c0edde6f5ef18d6ae78af916d09d154253ca495248b9f4f428a7db272"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/riscv/videodsp_init.c",
+    "sha256": "78528248357f9d5d05f0172ac773de5483b1bc39a51244561f62ca05731b821c"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/riscv/vorbisdsp_init.c",
+    "sha256": "c437867ba4f4c6290a107d3ef2836c92649ba2b46624e82cb2ef9afc08213a72"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/videodsp.c",
+    "sha256": "fe0f9eac8bc42963a38a3e807c35b18c5acadec81b97480d60acc06f75a120d4"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/vorbisdsp.c",
+    "sha256": "dfcdf80fe9e9ae28031235b36bc3a9b4f9da71acaaa3feab53fc4aa12256ef81"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/x86/aacpsdsp_init.c",
+    "sha256": "aca9717a10a907785a459488246eac22c51bf1ae5afb52bfcdb874f9f68a43ed"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/x86/flacdsp_init.c",
+    "sha256": "d486b1de04aec495cddda671402762fbc814ae81267b7a010d12e45a740fc889"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/x86/h264_intrapred_init.c",
+    "sha256": "7927f035bde3e183a9c9f98eb311ea8c12b73acb6fc684e27392ebde75596af1"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/x86/h264dsp_init.c",
+    "sha256": "ed36a9e4204e5fbb26d91756ce2355980123e43b5668bc710c8facbfd54657fc"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/x86/sbrdsp_init.c",
+    "sha256": "1b61c4c9f3f43ecac4de02c2a6089c8e926468b6f9086bc6dc8587a79f48531a"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/x86/videodsp_init.c",
+    "sha256": "d1dc61e63d7bd4eeac01276ee069c97f184595251fb20d21cc01312a4273cb30"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavcodec/x86/vorbisdsp_init.c",
+    "sha256": "b92c480590c2b3f4cf296c8443c3b83373bb35616fd5521322e481761826095a"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavformat/aacdec.c",
+    "sha256": "ead550723f5658c378fe85708f02efe4418266377e706607bd3324efc1b3e0dd"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavformat/flacdec.c",
+    "sha256": "e964305b49d52c76f6876b8c9ec013c0376792d1b64263e9d69f9fa63c81d76c"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavformat/options.c",
+    "sha256": "1a0cba6a08d14ed6a46e764e6b62fbc69bd6119e3d77177c5f9eaf7a805fb2ef"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavformat/pcm.c",
+    "sha256": "d6f87d99396b16da2d69ed99833a59f029988cc7ac582a3c7e3c4381a1917b44"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavformat/utils.c",
+    "sha256": "59fb02fc587f83b01c66816fbb419424a800f2bd655e3cf4a50f557d14d52137"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavformat/version.c",
+    "sha256": "a1054913884a5b704ce7a51174beccfc665be55a069e58aa69cb42399d03ad88"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/aarch64/cpu.c",
+    "sha256": "6a2aec05167c658dfd1c7f653372ab6f96c689326ad1434f886300d4130bfc30"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/aes.c",
+    "sha256": "566d9c8cc4b39bfb40dd742cdad22fa1c4fe1f4c8c415e2f025f0fd17182b72a"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/arm/cpu.c",
+    "sha256": "e6fd2bd7e2fd63f6fddd422ad4796846e622754d9a45fe38360363e5939d100a"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/arm/float_dsp_neon.S",
+    "sha256": "aeaabe7711ca1a60bc5af7989e3461b9b8aa2e3e4cc1fbc899868cc8e85a22d2"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/cpu.c",
+    "sha256": "417011f6e9e92e191a4714e2bb409aa65d26a23e1765548170803c2cc0192dd7"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/crc.c",
+    "sha256": "fbcab458ebddda14d121333622525cb0547c1d428645e9286534690c48366ad5"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/fixed_dsp.c",
+    "sha256": "02a80d09d91f7c6e5a5853e0c5d0773787901fb2c9c263514f338a519f7b2799"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/float_dsp.c",
+    "sha256": "349126b23468d502bfa65bb31710600a8e5eb614004c2bcfd5be8545a58fe3d8"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/imgutils.c",
+    "sha256": "00db6789b8daf24cc1ba44b53a41876c95183e208cb2cf44f4c596949f30ee84"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/riscv/cpu.c",
+    "sha256": "04b4685cb2f7b3eb0aa7f190e7dcb75e318ea7fdca9c9399ac8b774788db1f7a"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/riscv/float_dsp_init.c",
+    "sha256": "bc5d3b2cb77cffc991d188c2778eee3cbaa68e8df5dff254a524f1934e5beb67"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/tx_float.c",
+    "sha256": "52f854b317d0e4fc8360332a0b1a478af6adb1c8a5a0bd4c6c6af880106ce75c"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/utils.c",
+    "sha256": "5fd0574b6b5864575c67ad8540c169899b512f09fa912f9231df3d645f833c94"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/version.c",
+    "sha256": "bb250eb79a9904a2cea08161d5a41f1315a6ad57d90b28cb7810ab09754fcc44"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/x86/fixed_dsp_init.c",
+    "sha256": "b4eb1eaa6eda4220dc9c07da7b7553983af8cfe1cf5735d6394b20e5a65d82ac"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/x86/float_dsp_init.c",
+    "sha256": "f68459230b10c7b00d184ac003ea3b40dd27bf73669130732eb0b7715c0884b0"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/x86/lls_init.c",
+    "sha256": "d5f59296eb6d57588632330dea24fd285c69f1d1c65dcbbf55f83189ded4f4ad"
+  },
+  {
+    "category": "ffmpeg_c_deps",
+    "path": "libavutil/x86/tx_float_init.c",
+    "sha256": "bbcd29b63a2a0c547b02a65c5c16e36f21c7c9da57a082ff286e7a908ca54c9c"
+  },
+  {
+    "category": "ffmpeg_asm_deps",
+    "path": "libavcodec/x86/sbrdsp.asm",
+    "sha256": "42a4b7833730d42bc1ae780a997643d5ed1fc1df2055bb54188b2edc107bd10e"
+  },
+  {
+    "category": "ffmpeg_asm_deps",
+    "path": "libavcodec/x86/videodsp.asm",
+    "sha256": "e5d54ebfb66b25d68d99439eb94ca64026a65d258ad9c99d3b5542c46e1f1c41"
+  },
+  {
+    "category": "ffmpeg_asm_deps",
+    "path": "libavutil/x86/crc.asm",
+    "sha256": "63572e47f7ce9008c4f9ff1e8cc9e4f077460151ef08f74400f8826bb4a76b85"
+  },
+  {
+    "category": "mac_configuration",
+    "path": "chromium/config/Chrome/mac/x64/config.asm",
+    "sha256": "f4a068bf6601383435dbc0e882a93979aa34aca6fe5c42570d5ecf7134f51328"
+  },
+  {
+    "category": "mac_configuration",
+    "path": "chromium/config/Chrome/mac/x64/config.h",
+    "sha256": "75300e71e4d25bf04f335cff1577c6e329973c762bd75a93e82962e8022dbbb9"
+  },
+  {
+    "category": "mac_configuration",
+    "path": "chromium/config/Chrome/mac/x64/config_components.asm",
+    "sha256": "c14b9de0fa224c3a26b304f2c90df0efe67ab9247a62cdf27f6f9fc5f364991a"
+  },
+  {
+    "category": "mac_configuration",
+    "path": "chromium/config/Chrome/mac/x64/config_components.h",
+    "sha256": "3e98f36919abed04df89d7b7e6f83217f0bb05d191f890b9a2c935fbc6884d51"
+  },
+  {
+    "category": "mac_configuration",
+    "path": "chromium/config/Chrome/mac/x64/libavcodec/bsf_list.c",
+    "sha256": "f78d6a5a476373d3dacebd4812007fc2cd2ebbb8509b9892edeba6279d3dc7be"
+  },
+  {
+    "category": "mac_configuration",
+    "path": "chromium/config/Chrome/mac/x64/libavcodec/codec_list.c",
+    "sha256": "3eec6487a4827455f2ef848bd382d652b7b7c445d8de48464884715044fb509a"
+  },
+  {
+    "category": "mac_configuration",
+    "path": "chromium/config/Chrome/mac/x64/libavcodec/parser_list.c",
+    "sha256": "0b2c682f54ea507f9757607b0ed53d9be800b57e8f68d782a4ec1a1b42b72719"
+  },
+  {
+    "category": "mac_configuration",
+    "path": "chromium/config/Chrome/mac/x64/libavformat/demuxer_list.c",
+    "sha256": "71b14f15be7909233422de758a5c9e6a9e4ab1a773ea666fd621cd6cf40aa5f5"
+  },
+  {
+    "category": "mac_configuration",
+    "path": "chromium/config/Chrome/mac/x64/libavformat/muxer_list.c",
+    "sha256": "286605f176b8f4c91f8e1eefabef037c51ccc12b16b7e7e94758996c490059c2"
+  },
+  {
+    "category": "mac_configuration",
+    "path": "chromium/config/Chrome/mac/x64/libavformat/protocol_list.c",
+    "sha256": "20390d2af0b45f7de454ca6f3b806275de063a3de97e80feea6857da98e60b67"
+  },
+  {
+    "category": "mac_configuration",
+    "path": "chromium/config/Chrome/mac/x64/libavutil/avconfig.h",
+    "sha256": "975611ad5eba15212d9e1d5fca9d4fdf0daec6d2269b2fcab8e29af8667164bc"
+  },
+  {
+    "category": "mac_configuration",
+    "path": "chromium/config/Chrome/mac/x64/libavutil/ffversion.h",
+    "sha256": "01a762bfc10b38d510431871661e30deab38c7ceffb979df12ece15d5d9b0d25"
+  }
+]

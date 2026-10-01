@@ -1,5 +1,10 @@
 # 配布成果物へのライセンス収録
 
+2026-10-02の公開方針: macOSは`release/kancolle-browser_1.0.0_mac.zip`を対象とする。
+DMGは非公開・Git管理外。通常のMacビルド対象もZIPのみ。
+[対象ハッシュと添付資料](mac-publication-2026-10-02/README.md)を参照。
+以下の過去のZIP/DMG検査は履歴であり、今回の指定ZIPの検査成功へ読み替えない。
+
 正式候補の版・通知の照合は[2026-09-26の最終照合記録](release-candidate-review-2026-09-26/REPORT.md)を参照。
 `verify-release-candidate.cjs`は固定した基準を使い、アプリ版・Electronのコード領域・
 npmの版と条件・ネイティブ一覧・通知原文を最終コンテナから確認する。
@@ -72,3 +77,8 @@ node --test tests/packaged-licenses.test.cjs
 
 2026-09-24の旧構成の検証結果は今回の成果物へ流用しない。
 今回の変更記録は[FFmpeg除去後の対応](ffmpeg-removal-2026-09-25/REPORT.md)を参照。
+
+OS別の実物部品一覧と静的リンク調査の現状は[2026-10-02の棚卸し](native-inventory-2026-10-02/REPORT.md)を参照。Mac公開ZIPとWindows保存済み成果物を個別に検査しており、全静的リンク部品の確認完了とは区別する。
+
+追加ランタイムソースと条件は[静的リンク追加調査](static-link-review-2026-10-02/REPORT.md)、
+候補ハッシュ・ビルド元の確認状況・作業差分は[配布候補記録](release-provenance-2026-10-02/REPORT.md)を参照。

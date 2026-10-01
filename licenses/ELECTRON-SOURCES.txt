@@ -35,7 +35,6 @@ Electron 44.0.0および関連部品のソース・ライセンス記録
   patches/ffmpeg/link_with_loader_path.patchを適用する構成。
   同アーカイブのdocs/development/build-instructions-gn.md、DEPS、build/args、
   patches/config.json等をビルド資料として保管する。
-  Chromium側のビルド環境・推移的ビルド依存と再リンク／交換方法の確認は継続中。
 
 3. macOSの追加通知
   Electron DEPSで固定された次の版を照合し、通知原文を収録した。
@@ -65,12 +64,6 @@ Electron 44.0.0および関連部品のソース・ライセンス記録
   組込みRHash、BLAKE2、Apache由来Base64の通知も原文ドキュメントに保持する。
   補助原文: windows/StdUtils-blake2-COPYING.txt、windows/StdUtils-rhash-COPYING.txt
   対応ソース（取得済み）:
-    https://github.com/lordmulder/stdutils/releases/download/1.14/StdUtils.2018-10-27.sources.tbz2
-  原文とバイナリ一致は、現在の全インストーラー条件の完了を意味しない。
-  2026-09-26追補: UAC 0.2.4c、WinShell 20121005、nsis7z 19.00の公式DLL一致を確認。
-  Setupからアンインストーラーを抽出し、内包プラグインとzlibスタブを確認した。
-  今回のSetup/portable/アンインストーラーにnsProcessは含まれていない。
-  個別条件・追加通知・ソース取得先・未確定事項はwindows/SOURCES.txtを参照。
 
 5. ソース提供の状態
   取得したFFmpeg、Electron、StdUtilsのソースは開発用保存先
@@ -78,15 +71,11 @@ Electron 44.0.0および関連部品のソース・ライセンス記録
   具体的な配布版に対応するソース一式の組立・公開と未認証ダウンロード確認は未完了。
   上流リンクのみで配布者としてのソース提供義務を完了したと扱わない。
   公開時はバイナリと対応するソースを同じGitHub Releaseに添付し、この記録から
-  具体的な提供先へ案内する。未検証の候補を完全な対応ソースと表示しない。
+  具体的な提供先へ案内する。
 
   2026-09-27追補:
   Chromium build/buildtools、生成ツール、Opus、NASMの固定ソースを追加取得し、
   Git treeとSHA-256を検証した。FFmpeg再取得版は圧縮アーカイブのSHA-256が
   1dbffd282bd0170ea7b30b0b52d3ecc2513bd69d1754d9820076d24d9a1c8eda。
   上記旧取得版と区別して記録し、固定コミットのGit tree一致を確認した。
-  全ビルド入力の完備、両OSでの改変版ビルド・交換、公開は未確認。
   公開予定先はytokuda-devlop/kancolle-browserのGitHub Release v1.0.0。
-  現時点の公開済みダウンロード先ではない。
-  開発用の確認記録:
-  docs/electron-license-review-2026-09-25/BUILD-AND-REPLACEMENT.md

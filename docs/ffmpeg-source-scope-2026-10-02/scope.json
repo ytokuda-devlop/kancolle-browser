@@ -1,0 +1,233 @@
+{
+  "scope": "Source-defined Mac x64 Chrome FFmpeg input scope; not an executed GN/link graph",
+  "zipSha256": "9e7179f3f7309d5ac931e42b10e294d3bfb910cbe704181ee1a51e616c8007c3",
+  "ffmpegSha256": "0ea472e75cdf7fb5b2786bf1c5d84fa81b1638199cc01008db58de2616a764c1",
+  "archivesVerified": [
+    {
+      "path": "third_party/electron-44.0.0/ffmpeg-2b68d2babae7.tar.gz",
+      "sha256": "a1546b3448047be40d1da218649d54be9e6292b7e16d826f5e571d618c083a1b",
+      "bytes": 18818197,
+      "readableFileCount": 11015,
+      "url": "https://chromium.googlesource.com/chromium/third_party/ffmpeg/+archive/2b68d2babae73714846961fb0ee47e3b3d2e39a9.tar.gz"
+    },
+    {
+      "path": "third_party/electron-44.0.0/electron-bf0c4e67e9a8.tar.gz",
+      "sha256": "071a12de219099ee28bdd7f8232c3a5a08e791e8845d392a9adb34d9e3419392",
+      "bytes": 19494855,
+      "readableFileCount": 3074,
+      "url": "https://codeload.github.com/electron/electron/tar.gz/bf0c4e67e9a834479ee171e61057f7516a381d25"
+    },
+    {
+      "path": "third_party/electron-44.0.0/chromium-build-24072c1aa400.tar.gz",
+      "url": "https://chromium.googlesource.com/chromium/src/+archive/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/build.tar.gz",
+      "sha256": "c468235365e9044df7da4c33692e165cff4f2ebcfaefd2c42c52ddf34d780eee",
+      "bytes": 1923380,
+      "readableFileCount": 1484
+    },
+    {
+      "path": "third_party/electron-44.0.0/chromium-opus-24072c1aa400.tar.gz",
+      "url": "https://chromium.googlesource.com/chromium/src/+archive/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/third_party/opus.tar.gz",
+      "sha256": "6de95c191d49e7629def816aa076f4be400eeb2789c9e08379369a21f4bb6488",
+      "bytes": 4258446,
+      "readableFileCount": 715
+    },
+    {
+      "path": "third_party/electron-44.0.0/nasm-525a09a813be0.tar.gz",
+      "url": "https://chromium.googlesource.com/chromium/deps/nasm/+archive/525a09a813be0f75b646ee93fc2a31c27b87d722.tar.gz",
+      "sha256": "a6e91683aa747a74faadb5523221bd8b6065d4f9a182fd8afbf21f2a6392c459",
+      "bytes": 2432997,
+      "readableFileCount": 1356
+    }
+  ],
+  "sourceListAssumptions": {
+    "current_cpu": "x64",
+    "ffmpeg_branding": "Chrome",
+    "is_apple": true,
+    "otherPlatforms": false
+  },
+  "selectedLists": {
+    "ffmpeg_c_sources": 285,
+    "ffmpeg_gas_sources": 0,
+    "ffmpeg_asm_sources": 29,
+    "ffmpeg_asm_include_dirs": 2,
+    "ffmpeg_nasm_include_dirs": 0,
+    "ffmpeg_c_deps": 48,
+    "ffmpeg_asm_deps": 3
+  },
+  "macConfigurationFiles": 12,
+  "enabledExternalLibraryFlags": [
+    "CONFIG_LIBOPUS"
+  ],
+  "directTargetEdges": [
+    "ffmpeg -> ffmpeg_internal",
+    "ffmpeg_internal -> ffmpeg_features",
+    "ffmpeg_internal -> opus",
+    "ffmpeg_internal -> ffmpeg_nasm",
+    "opus -> opus_sse41 / opus_avx2 (x64)"
+  ],
+  "implicitBuildInputs": [
+    "build/config:shared_library_deps -> common_deps -> libc++ (default)",
+    "libc++ -> libc++abi (Mac default) and llvm-libc-shared (header configuration group)",
+    "compiler:runtime_library -> clang:compiler_builtins (libname=osx)",
+    "compiler PGO/ThinLTO configuration and Electron build patches"
+  ],
+  "runtimeSourceRevisionsFromDeps": {
+    "libcxx_revision": "b16984ce99c702355a5b2b4c52574e82cec41fb9",
+    "libcxxabi_revision": "8f11bb1d4438d0239d0dfc1bd9456a9f31629dda",
+    "compiler_rt_revision": "e1c9323385b40780f574f440a8a9ad83855712b0",
+    "llvm_libc_revision": "3ea89f4304312567e31a8eb45e0737577e65b676"
+  },
+  "clangSourceCommit": "53d18800eda3b7407e53366f27ca78e922c6e0db",
+  "additionalEvidence": [
+    {
+      "path": "evidence/libcxx-BUILD.gn",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/buildtools/third_party/libc++/BUILD.gn",
+      "sha256": "cec5bd123e3b041da7ce7ec783e0f4f3b73ff20ead7254b05d414e589517e3f8"
+    },
+    {
+      "path": "evidence/libcxxabi-BUILD.gn",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/buildtools/third_party/libc++abi/BUILD.gn",
+      "sha256": "e4b79d020ddd14bb8db439742a3e780f4a3137ef8343484bc6c217263a904f50"
+    },
+    {
+      "path": "evidence/llvm-libc-BUILD.gn",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/third_party/llvm-libc/BUILD.gn",
+      "sha256": "6ecfdc0af325abc66d4e713a5415c8dd493659a797ee263eb81ad434ced6dc77"
+    }
+  ],
+  "macDefaultExcludedEdges": [
+    "use_llvm_libatomic = !is_apple -> false",
+    "use_custom_libunwind = is_fuchsia || is_android -> false"
+  ],
+  "compilerRtNote": "DEPS compiler-rt revision is not proof of the Clang package builtins source revision",
+  "macPgoState": "electron-macos-x64-1787585295-20f8981234.profdata 50d106f23e28737c6a895bcc710a61cb1d89c48ac313a451dddb72076b156801",
+  "dynamicLoadsIncludingInstallName": [
+    "@loader_path/libffmpeg.dylib (compatibility version 0.0.0, current version 0.0.0)",
+    "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)"
+  ],
+  "patches": [
+    {
+      "repository": "chromium",
+      "patch": "patches/chromium/build_gn.patch",
+      "sha256": "db553ae200f698e14f4c6465037b642fe2f6a2af7234178776e6c6aae1a4b210",
+      "targets": [
+        "build/config/BUILDCONFIG.gn"
+      ],
+      "includedInElectronArchive": true,
+      "applyCheck": "passed in upstream order",
+      "resultSha256": {
+        "build/config/BUILDCONFIG.gn": "1180c15363a6fb56165f5807e1a3b3e7a7ecdfee806a7ab19d5e9a59e0dfde72"
+      }
+    },
+    {
+      "repository": "chromium",
+      "patch": "patches/chromium/build_resolve_pgo_profiles_from_electron_state_files.patch",
+      "sha256": "1fcce05d072ce91aaaa1126218a420e7485c9b2437971796cf4fd116d5647324",
+      "targets": [
+        "build/config/compiler/pgo/BUILD.gn"
+      ],
+      "includedInElectronArchive": true,
+      "applyCheck": "passed in upstream order",
+      "resultSha256": {
+        "build/config/compiler/pgo/BUILD.gn": "23a89a0ff97a5200b8ce7120e6e7f5441f2edef0123a4a9144bc3e7579d35616"
+      }
+    },
+    {
+      "repository": "chromium",
+      "patch": "patches/chromium/gtk_visibility.patch",
+      "sha256": "001e719f6723302ea92708824860dbfe28f299e1af8383a5172485574c210663",
+      "targets": [
+        "build/config/linux/gtk/BUILD.gn",
+        "ui/ozone/platform/x11/BUILD.gn"
+      ],
+      "includedInElectronArchive": true,
+      "applyCheck": "not checked: includes inputs outside saved build subtree"
+    },
+    {
+      "repository": "chromium",
+      "patch": "patches/chromium/ignore_rc_check.patch",
+      "sha256": "4247c230bb2d62575a6e25c73d538041437486c40ec56cce61145b82efd49ac5",
+      "targets": [
+        "build/toolchain/win/rc/rc.py"
+      ],
+      "includedInElectronArchive": true,
+      "applyCheck": "passed in upstream order",
+      "resultSha256": {
+        "build/toolchain/win/rc/rc.py": "dd55d9085f1629e68c01eb0c4a7fcba78ad8c1693e12b3796347ac71413c2b55"
+      }
+    },
+    {
+      "repository": "chromium",
+      "patch": "patches/chromium/build_allow_resource_allowlist_generation_for_linux_and_macos.patch",
+      "sha256": "2efe1d0c0efff9b620dabb4c21a56e9055ac1883c4e3c96db842073314c019da",
+      "targets": [
+        "build/toolchain/gcc_toolchain.gni"
+      ],
+      "includedInElectronArchive": true,
+      "applyCheck": "passed in upstream order",
+      "resultSha256": {
+        "build/toolchain/gcc_toolchain.gni": "a27690a692920523c14fbddd31e94aaf55f275fd40a5679a7997a80b5c68992c"
+      }
+    },
+    {
+      "repository": "chromium",
+      "patch": "patches/chromium/build_fix_profile_runtime_resolution_for_pgo_instrumented_builds.patch",
+      "sha256": "00a843df544c8aa94f0a3dfc92286bf372a55d082089399578b87b961451f5d8",
+      "targets": [
+        "build/config/compiler/pgo/BUILD.gn"
+      ],
+      "includedInElectronArchive": true,
+      "applyCheck": "passed in upstream order",
+      "resultSha256": {
+        "build/config/compiler/pgo/BUILD.gn": "232b42d8b3a4c839c2840fa4b7a110f582287a64520fc0a80a555ac48c449453"
+      }
+    },
+    {
+      "repository": "chromium",
+      "patch": "patches/chromium/build_disable_llvm_unroll-add-parallel-reductions_on_apple_targets.patch",
+      "sha256": "cf240f0cf718b5e8ebd002efe8b2a823c10878448deae2c755f02cbe2c51487c",
+      "targets": [
+        "build/config/compiler/BUILD.gn"
+      ],
+      "includedInElectronArchive": true,
+      "applyCheck": "passed in upstream order",
+      "resultSha256": {
+        "build/config/compiler/BUILD.gn": "80edf2c658e2de07b1c45182eaddc9e7957779b1e434afb1defc78ff13f2b6de"
+      }
+    },
+    {
+      "repository": "chromium",
+      "patch": "patches/chromium/remove_cr_xcode_build_define_from_build_gn.patch",
+      "sha256": "cf0991197811cdfea09eacd2e9876ed4f8d1110b5119d97d744fa1c1efaf67c8",
+      "targets": [
+        "build/config/mac/BUILD.gn"
+      ],
+      "includedInElectronArchive": true,
+      "applyCheck": "passed in upstream order",
+      "resultSha256": {
+        "build/config/mac/BUILD.gn": "48818eeb1dd305228ffe4fbbfb175d502ba7bc728c1c0f0413e69497bda282a1"
+      }
+    },
+    {
+      "repository": "ffmpeg",
+      "patch": "patches/ffmpeg/link_with_loader_path.patch",
+      "sha256": "bc6cdc29ad4ec2641dd59b4c3a25375b9166c35e202e5122cb73190885ec647d",
+      "targets": [
+        "BUILD.gn"
+      ],
+      "includedInElectronArchive": true,
+      "applyCheck": "passed in upstream order",
+      "resultSha256": {
+        "BUILD.gn": "0fd7e6bed116206a933752e5501a733b9dc971011da8b2a4be11cf98d2a45041"
+      }
+    }
+  ],
+  "wholeFfmpegAndOpusArchivesRetained": true,
+  "completeCorrespondingSource": false,
+  "remaining": [
+    "Effective GN defaults and compiler runtime link inputs",
+    "Missing GN glue / generated inputs / host-tool provenance",
+    "PGO profile payload or a validated documented alternative build",
+    "Source delivery and modified-library operation (Xcode checks skipped by user)"
+  ]
+}

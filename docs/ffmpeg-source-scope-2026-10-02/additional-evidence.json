@@ -1,0 +1,17 @@
+[
+  {
+    "path": "evidence/libcxx-BUILD.gn",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/buildtools/third_party/libc++/BUILD.gn",
+    "sha256": "cec5bd123e3b041da7ce7ec783e0f4f3b73ff20ead7254b05d414e589517e3f8"
+  },
+  {
+    "path": "evidence/libcxxabi-BUILD.gn",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/buildtools/third_party/libc++abi/BUILD.gn",
+    "sha256": "e4b79d020ddd14bb8db439742a3e780f4a3137ef8343484bc6c217263a904f50"
+  },
+  {
+    "path": "evidence/llvm-libc-BUILD.gn",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/24072c1aa400ec4a89dc738b6b6acd12a8589b6f/third_party/llvm-libc/BUILD.gn",
+    "sha256": "6ecfdc0af325abc66d4e713a5415c8dd493659a797ee263eb81ad434ced6dc77"
+  }
+]

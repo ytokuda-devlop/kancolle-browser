@@ -1,0 +1,2333 @@
+{
+  "recordedAtUtc": "2026-10-01T17:31:04.777770+00:00",
+  "artifacts": [
+    {
+      "id": "mac-publication",
+      "path": "release/kancolle-browser_1.0.0_mac.zip",
+      "sha256": "9e7179f3f7309d5ac931e42b10e294d3bfb910cbe704181ee1a51e616c8007c3",
+      "role": "User-selected macOS publication ZIP; DMG excluded",
+      "bytes": 134732886,
+      "buildCommit": null,
+      "cleanCommitBuildProven": false
+    },
+    {
+      "id": "windows-saved-publication",
+      "path": "release/source-delivery-2026-09-27/downloads/kancolle-browser_1.0.0_x64.zip",
+      "sha256": "00f30dc3e76e6e928f3c5743b13a564b6f835f9172f0c7d6af965ce6f61e12b1",
+      "role": "Windows release ZIP retrieved on 2026-09-27; current remote publication not re-checked",
+      "bytes": 111854407,
+      "buildCommit": null,
+      "cleanCommitBuildProven": false
+    },
+    {
+      "id": "windows-setup-candidate",
+      "path": "release/release-candidate-2026-09-26/艦娘は今日もお仕事です（仮） Setup 1.0.0.exe",
+      "sha256": "8f2756cd1d7f38e98e80901af321018bd6ffc6eb8940e3f0b4999cb76d0e64e5",
+      "role": "Local unsigned Windows candidate from 2026-09-26; not newly designated as publication target",
+      "bytes": 112054067,
+      "buildCommit": null,
+      "cleanCommitBuildProven": false,
+      "historicalReferenceCommit": "e775938bb1405dc34a73cb20e533155e982b388c",
+      "historicalStateEvidence": "docs/release-candidate-review-2026-09-26/working-state.json",
+      "historicalStateLimit": "Current working-tree file hashes recorded after candidate build; audit tooling was added/updated during verification. Commit alone is not full build provenance."
+    },
+    {
+      "id": "windows-portable-candidate",
+      "path": "release/release-candidate-2026-09-26/艦娘は今日もお仕事です（仮） 1.0.0.exe",
+      "sha256": "f09cbdc63bb9e5ec6cc2c286ebc4e4aac407aee3b2b2f3ea07c7be8b156e8b80",
+      "role": "Local unsigned Windows candidate from 2026-09-26; not newly designated as publication target",
+      "bytes": 111824351,
+      "buildCommit": null,
+      "cleanCommitBuildProven": false,
+      "historicalReferenceCommit": "e775938bb1405dc34a73cb20e533155e982b388c",
+      "historicalStateEvidence": "docs/release-candidate-review-2026-09-26/working-state.json",
+      "historicalStateLimit": "Current working-tree file hashes recorded after candidate build; audit tooling was added/updated during verification. Commit alone is not full build provenance."
+    }
+  ],
+  "auditReferenceCommit": "92e05436513fdc5f603b509cf55f473887c54a25",
+  "branch": "future/kancolle-no-ffmpeg",
+  "auditWorkingTreeStatus": " M .gitignore\n M docs/LICENSE-PACKAGING.md\n M package.json\n M third_party/electron-44.0.0/README.md\n?? docs/ffmpeg-source-scope-2026-10-02/\n?? docs/mac-publication-2026-10-02/\n?? docs/native-inventory-2026-10-02/\n?? docs/release-provenance-2026-10-02/\n?? docs/static-link-review-2026-10-02/\n?? scripts/audit-ffmpeg-source-scope.py\n?? scripts/audit-static-runtime-inputs.py\n?? scripts/inventory-current-artifacts.py\n?? scripts/prepare-mac-publication.py\n?? scripts/record-release-provenance.py\n?? tests/ffmpeg-source-scope.test.py\n",
+  "trackedDiffSha256": "739689d6b1bc88f32f95d3f2918178b54495a0a979e98346cea60da689bfe2e8",
+  "snapshot": {
+    "path": "release/provenance-2026-10-02/audit-working-files.tar.gz",
+    "sha256": "afa7b6a1a239acbe763497ec2c1578bdf382f354a1c269a1b36a781eac67175d",
+    "scope": "Audit-time tracked/untracked non-ignored files plus TASK.md and dist; excludes this output directory and symlinks. Not historical build inputs."
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "76d91ed4d4b603c6ba23636aa964ca7ef5efbd447d5eb562759d632c2ca96dd7",
+      "bytes": 1780
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "8d45dbb64725f1e576857001fefd33949abeb128e605530c19022595773f820c",
+      "bytes": 1072
+    },
+    {
+      "path": "README.md",
+      "sha256": "ed29ed47516e57bc054edb7621d144f17359bf88108ac09d97edd1ec952ff2bc",
+      "bytes": 6147
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "7bfc9b64c23c2fab5f30e0d1e2d91bdd7c6e0d205d9a8135a70c0e75ab5770f0",
+      "bytes": 10395
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "06ac42ae43f0ffc6ca0ace06345a451205e74dc22168ca3bff1bc51d8344d581",
+      "bytes": 10038
+    },
+    {
+      "path": "dist/assets/index-DJiR6N5c.js",
+      "sha256": "14141dfc34d7bf0e838faf19d94a2c441f7db1bf4e8fe625174573454b99d4b1",
+      "bytes": 164324
+    },
+    {
+      "path": "dist/assets/index-IUKhlkn3.css",
+      "sha256": "975f69db99149d1704978fb1b22bc34b8a3eed3f73b5cb4b1ec60db129c20f66",
+      "bytes": 15106
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "2b335d2355e52acad6c83924610b1cd90b691678ad1a505d8ef7f44aed2e9213",
+      "bytes": 561
+    },
+    {
+      "path": "docs/LICENSE-PACKAGING.md",
+      "sha256": "411f24044236eb07b73ceb535a1e6e2359d5142f7046ea389e8ec9dd59d10d25",
+      "bytes": 5771
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/BUILD-AND-REPLACEMENT.md",
+      "sha256": "c7861b791a0bf87c1e9c627405e7a4a7801f8d1a7b3b4a4fb36bcb1bda83c414",
+      "bytes": 7944
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/REPORT.md",
+      "sha256": "fa07b831672ab2b8c28c988854b3731a575b4e1336e12450e634983f461d3ad4",
+      "bytes": 8149
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/artifact-summary.json",
+      "sha256": "f882b5f5256bc8b6c0c5842b6944a2f45c4232b370292d6f8c94e24e97fef600",
+      "bytes": 958
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/StdUtils-COPYING.txt",
+      "sha256": "842fef4921191943e531c6cc939b0334f1c2658c9204e30dd35d13f51fdf70dd",
+      "bytes": 766
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/StdUtils-README.html",
+      "sha256": "be145d4687f5efa1d45ce7d059c92230d003b5da00dd55f24346278798c7bad9",
+      "bytes": 92207
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/builder-binaries-tree.json",
+      "sha256": "8426cbd3dbc8fd897fa681736d7f3dcd806de921f1b58d86ee1869f07decce31",
+      "bytes": 11835
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/builder-packages-tree.json",
+      "sha256": "6cba92a156b74c43d31345bf6edc1d9b4da756eeef69ae78581542c15d58d94f",
+      "bytes": 12452
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/chromium-DEPS",
+      "sha256": "6d0b1775ce938dfadd2cff1adea4fef5fc27b33f6891a481b002cd31afea3c55",
+      "bytes": 194497
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/chromium-DEPS-recheck",
+      "sha256": "6d0b1775ce938dfadd2cff1adea4fef5fc27b33f6891a481b002cd31afea3c55",
+      "bytes": 194497
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/chromium-root.gn",
+      "sha256": "b17d58c4d7d648fab31108af33e71a4dc6725667bc2df665a9ae8456683eba64",
+      "bytes": 8325
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-DEPS",
+      "sha256": "6eff8b368842f184a258f15ab2919680a44706ffc82f9aa1544969f0d59baa21",
+      "bytes": 8120
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-all.gn",
+      "sha256": "5ef3dcead9ec7d5a5b556d7db92ab6a40166801913298702250a455fd244388d",
+      "bytes": 3900
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-build-instructions.md",
+      "sha256": "8f32a0b64d1ccf87b474fd8f9455b853a45278cb7a95c45a768ef153e4ffa97c",
+      "bytes": 14271
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-ffmpeg-loader.patch",
+      "sha256": "bc6cdc29ad4ec2641dd59b4c3a25375b9166c35e202e5122cb73190885ec647d",
+      "bytes": 1219
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-ffmpeg-patches.json",
+      "sha256": "222722c051b10c508d49569d2e1b655dc6cdc7a55c62f52f5c81500d0e36a82b",
+      "bytes": 1978
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-patch-config.json",
+      "sha256": "be8fc696e319f2dcbd9a32d5ed04076770a559222e7b4b02b57f9e89aa07c66a",
+      "bytes": 1173
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-reactive-patches.json",
+      "sha256": "a8c6831ffc0f887c6856683867db13ba4464ba593f696fa56196161d8d671e36",
+      "bytes": 3556
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-release.gn",
+      "sha256": "b4490cee911e0ed136a6d095c69a7914cb3f4aa2d5517e3f987a2b5f45d3cd56",
+      "bytes": 902
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-tag-object.json",
+      "sha256": "f3e80d53d393ae97a148a1cd83ea305d7350364c78034d71697dde168f8e403e",
+      "bytes": 820
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-tag.json",
+      "sha256": "8615ce658ce90216d52390778d686ed382b6711185a1477028c6a6a8d41385a8",
+      "bytes": 378
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-COPYING.LGPLv2.1",
+      "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30",
+      "bytes": 26517
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-COPYING.LGPLv2.1.b64",
+      "sha256": "4b7be5789cf70597d10f8b96e482eef3ce2da9d17fa5f1c1320c9b02047de451",
+      "bytes": 35356
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-README.chromium",
+      "sha256": "17df0ad137aa566137074686d5930abfe48cc2707ac4ccca0251f71db2f7c8be",
+      "bytes": 1267
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-README.chromium.b64",
+      "sha256": "9de9c37ac5a343c321101ecf8d01ee5364652ce10f099506cf3435931f85e00a",
+      "bytes": 1692
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-commit-recheck.json",
+      "sha256": "5406ff5a18bc67f075df9815b7e2bdfe6f728dffb4b2041bd18d8833ad5e78f3",
+      "bytes": 776
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-mac-config.h",
+      "sha256": "75300e71e4d25bf04f335cff1577c6e329973c762bd75a93e82962e8022dbbb9",
+      "bytes": 26736
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-mac-config.h.b64",
+      "sha256": "f85b0fe9ce60a93d905e68f4dd62869bee495af96e2ec67b45018866f1a4fb21",
+      "bytes": 35648
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-win-config.h",
+      "sha256": "4c935fe035611b9e72376de36a49539cc6a915f4cc22aeefa76c4f972193de60",
+      "bytes": 25773
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-win-config.h.b64",
+      "sha256": "f51a9262d39027995e8cffdfb174f62485b13fd76bf0fe86602599d2099bf8bb",
+      "bytes": 34364
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/mantle-LICENSE.md",
+      "sha256": "285eede6f638adc9c352be7d66134611e5ea95044095a84de9867fb864e66eab",
+      "bytes": 2445
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-build.sh",
+      "sha256": "b0641dbf5d00d25a445b5b7a4d5253068c0d0722bf26d645c99cdb61d74687be",
+      "bytes": 606
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-prepare.sh",
+      "sha256": "7911925bdd22f8ff7a6a543a476f8728896efb96682fd4a2c48931d0f6c1d545",
+      "bytes": 1063
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-resources-README.md",
+      "sha256": "0eb167b2399bbeaf1c8fb3d877411cb026bacc1884cecfd2601460cc71ed049d",
+      "bytes": 352
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-resources-source-tree.json",
+      "sha256": "b5a330189e8475454a1e8d842eaf3111bf4e9cdee7dcd25765d6ff210e9deab4",
+      "bytes": 201764
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-resources-tag.json",
+      "sha256": "8cb387e9c3c2ca301c6b610084206db3e3133044b5bf3967f995095170d89705",
+      "bytes": 478
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-source-tree.json",
+      "sha256": "3034df9c4428d0ef7cf7a188d29dce44b81c7bb1c89cda4c8a582dfa3295f456",
+      "bytes": 210117
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-tag.json",
+      "sha256": "5229d33377db7cb88de9df809e3d36e690d515bb398a5c1add2b096e532e5a13",
+      "bytes": 454
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/reactive-cast.patch",
+      "sha256": "1c91daed0343d89dc4f371abe86a846a6432069d51427906d1260f1fe81c3cbb",
+      "bytes": 1241
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/reactive-import.patch",
+      "sha256": "5486fa62061ec7d7cba50a8ea5635eb6add2b7ed48a23542c8d419247ac5af01",
+      "bytes": 18701
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/reactive-patches-list",
+      "sha256": "e6d9737ea120459a4a091bf899c0d8970f46c5dbbf836d6326b094c60c6acef3",
+      "bytes": 115
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/reactiveobjc-LICENSE.md",
+      "sha256": "095fec1a3d6ad029fe0661fa6092a272d50af016b1771992e0bba9b2a73e7763",
+      "bytes": 1093
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/squirrel-LICENSE",
+      "sha256": "6f240e244a105d6366bc898ac9c67460624c9052839d4b988c6dbe4c571008b3",
+      "bytes": 1073
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/stdutils-releases.json",
+      "sha256": "fb7e28619975fbe8ae112e2ed105b55ddf5b720b9b1eea57ac24f49cdd734ce9",
+      "bytes": 72825
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/stdutils-tags.json",
+      "sha256": "4204bb6d74b6aea8e0d9a810e80e73c24f1210767ab14083d0667cf5dfdba818",
+      "bytes": 6087
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/urls.json",
+      "sha256": "d508cb54b1b2cfb1218ea8e840b3c84c8e46ffad8996ffb1e1a57abd378da54f",
+      "bytes": 4851
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/mac-dmg.licenses.json",
+      "sha256": "e0022b85efa2f220e15a80556f4522d34a4c162d305fd945de43f3e770f0bb6e",
+      "bytes": 4270
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/mac-zip.licenses.json",
+      "sha256": "e8530dedb4e62ad02a611a5a5bb5a959f83de596dd152a2297de2dae07415414",
+      "bytes": 4274
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/official-binary-comparison.json",
+      "sha256": "8a62d2e680df784188c1a57edf748fd6e6bed1722ae058636f387d21905c7bdc",
+      "bytes": 2409
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/packaged-npm.json",
+      "sha256": "77488dcddf27e9ef746f38f9e74fdb59949cb9e42626c9cf28ebae4b90c0234b",
+      "bytes": 1027
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/reference-state.json",
+      "sha256": "a9ffb5de9da1f2262f5094476db7f03f605320aaf923282a7867254bd4d65772",
+      "bytes": 286
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/source-archives.json",
+      "sha256": "8c386dab49e3a747d85c30951ab5b96fdee6aa2b96defbe5f8bf3b87ef7b49c9",
+      "bytes": 1000
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/source-reacquisition.json",
+      "sha256": "cb2305be1f7efe48bd5195aa4821643439d4cf38cb41e315ae52753ee1d8b1db",
+      "bytes": 491
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/source-verification.json",
+      "sha256": "2fbc76e66c92833a2a58c32b4df066c970473ff653cf36b770801e84c21ab69c",
+      "bytes": 2668
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/stdutils-binary-comparison.json",
+      "sha256": "b466883f638ecea6849bd27a43e8c021051cbf9b504ae611aa95cee457db8d8e",
+      "bytes": 218
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/supplemental-source-archives.json",
+      "sha256": "aa67d0c7617c3ba7065916cf8b66ddb6790592dc2817b8cf3b29f8a836e2b9bc",
+      "bytes": 3991
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/upstream-materials.json",
+      "sha256": "ab9859c3dd44d35fdb531d1e1673d5c5b13d70dca5712572d9fbd72140fa5eb7",
+      "bytes": 7825
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-actual-plugins.json",
+      "sha256": "829e53770c62750f5575d542eca85aa7025fdd364d46f319c74005c658b37eb2",
+      "bytes": 1909
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-portable-container-list.txt",
+      "sha256": "a42b377403e17d8eabe554d7793656a9ee34692a77733f745cb814625743fc56",
+      "bytes": 1106
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-portable.licenses.json",
+      "sha256": "9f3bdb084f07dc9170c1f42bc8732b3e216df906cee180257596ed73f93262fd",
+      "bytes": 4267
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-setup-container-list.txt",
+      "sha256": "9900aa13365e916b122e9e746dd7d17e5aa350e194d2524e03934fbd89474b76",
+      "bytes": 1982
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-setup.licenses.json",
+      "sha256": "474ce6d2fca3af09d85258032f00d595c6aedfb7d2ae7706f87a0cd1c160ddbb",
+      "bytes": 4273
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-signature-status.json",
+      "sha256": "a788418acc3020f8c64700ea8769431c7dabcc2df512feda721aeabe97512d8e",
+      "bytes": 223
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-toolset-archives.json",
+      "sha256": "cb83885297ade0f78da067331eb5e275e673fa42d9b8ca79708a81bc65f0fb6a",
+      "bytes": 331
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-toolset-comparison.json",
+      "sha256": "1a2e3ef17d1e960e224c97ceb3f8188b09e77606b66e6f516badf88f64c426e1",
+      "bytes": 2461
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/DISTRIBUTION-NOTES.previous.txt",
+      "sha256": "8a0b31b74867e364484c3907eed0e240dbf4403254f11aa541148b500d7d2c98",
+      "bytes": 3996
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/REPORT.md",
+      "sha256": "726afbe10b83703d06f5955e9b54ecb4d21dc5306247a6d0d514ad4a2f9329fa",
+      "bytes": 3591
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/TASK.previous.md",
+      "sha256": "a56e4a365654674321a0e711b974555cbb2be58ef30d052d5599614150550c38",
+      "bytes": 23697
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/mac-inventory.json",
+      "sha256": "040bdf5900b1f856580af819ccc3a27a8b9b5f1f3e2b18c1292d0f5355679497",
+      "bytes": 28528
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/mac-packages.json",
+      "sha256": "587dc9d826e599abbbe22a14cf99b8978f6aae5fa90125a4b0c762c2c87f322d",
+      "bytes": 395
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/mac-zip-licenses.json",
+      "sha256": "7b53b761559b5a3f8c335af035012c317a72f12c52e0989ca2e1b86136e96c5f",
+      "bytes": 2208
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/source-license-check.json",
+      "sha256": "e4a4b0c660c5a6d616aeef1dcc046be8a782129052bd0985902df917465966d3",
+      "bytes": 917
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/README.md",
+      "sha256": "07778154a645599b28cf2bbc578f842de7009eed7ff110699626ee779cacbcc8",
+      "bytes": 10779
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/additional-evidence.json",
+      "sha256": "7b60238785cec134779972faa9b467fe50cc06252e77164d7a3322b2ab874b22",
+      "bytes": 832
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/evidence/libcxx-BUILD.gn",
+      "sha256": "cec5bd123e3b041da7ce7ec783e0f4f3b73ff20ead7254b05d414e589517e3f8",
+      "bytes": 18492
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/evidence/libcxxabi-BUILD.gn",
+      "sha256": "e4b79d020ddd14bb8db439742a3e780f4a3137ef8343484bc6c217263a904f50",
+      "bytes": 4265
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/evidence/llvm-libc-BUILD.gn",
+      "sha256": "6ecfdc0af325abc66d4e713a5415c8dd493659a797ee263eb81ad434ced6dc77",
+      "bytes": 525
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/llvm-commit.json",
+      "sha256": "97fec29ed23ffa3bed1b7b8c0003c2caed7e682f03d63ad82920d29b0ef840fe",
+      "bytes": 412
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/scope.json",
+      "sha256": "835725b46bc44d33909c32e49cfad7eec8ce9a898fda8d46fe98b12360bc860d",
+      "bytes": 9853
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/source-files.json",
+      "sha256": "d0b3e225ae8b6f2547a8efabea76e654c3b2f59ca87be2d034f2071ef637368d",
+      "bytes": 63407
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/REPORT.md",
+      "sha256": "b31a3b639d3de6bfb60c1d34e01aa632669d5363e1e674ebd6cf3db1733bbc3d",
+      "bytes": 4563
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/baseline.json",
+      "sha256": "730d0d15ba05c4063e6c30bec7e8ea895b0e920d533e435059b3b3138aebb744",
+      "bytes": 10597
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/mac-dmg.json",
+      "sha256": "5a20d06b9eaf58a70c959e938ba21d9ccd1eff19dcc7a9022e173280723093f9",
+      "bytes": 9705
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/mac-zip.json",
+      "sha256": "6004692710e65471095124a47f13fea24b41b88fa5e0679b74b28429f1bc69fc",
+      "bytes": 9709
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/original-artifacts.json",
+      "sha256": "db4b323b0938e6c28495497eaf7ac165b472b3b4ae4a834a6cfeb7b02cdba90a",
+      "bytes": 473
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/original-notice-difference.patch",
+      "sha256": "db624cefa93b2aa89f5924f4ba5fd38e696b1fc1255692d9c8bb9362f2ea3baf",
+      "bytes": 1150
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/runtime-smoke.json",
+      "sha256": "90025050561b84f65d9c646677d8a9ec52393635797b838604a4c41c10cf6974",
+      "bytes": 1224
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/working-state.json",
+      "sha256": "25dde0bc3814c6a68649472d485586ae1b764b0400c3daea2fd92446f6ccaf42",
+      "bytes": 655
+    },
+    {
+      "path": "docs/mac-publication-2026-10-02/README.md",
+      "sha256": "c73f3f54c55ea3df8dfaed4afe32161788f6b4d1421b15d5bf19a6d21346a569",
+      "bytes": 4020
+    },
+    {
+      "path": "docs/mac-publication-2026-10-02/RELEASE-NOTES.md",
+      "sha256": "ec915b9b43128c444374fe7102d96c67d6f3424fe2f807de99434602ef42e18f",
+      "bytes": 1038
+    },
+    {
+      "path": "docs/mac-publication-2026-10-02/publication.json",
+      "sha256": "7a8b8dc36e7dfdb46c2b15e2f0a3d07543e6c25143ce7daf94b640ea17c3537e",
+      "bytes": 6141
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/REPORT.md",
+      "sha256": "d266a77feec55cfd52c48797e81021f5a069c7b4cd0bdb76539562284fc56242",
+      "bytes": 10895
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/BUILD.gn",
+      "sha256": "d5d354e5dae34895ecf3b1f32fc42af2bd99b12b8a7f5f3a8c83d3d5055f8e47",
+      "bytes": 67997
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/artifacts.json",
+      "sha256": "57ef0cfa83770fdfcb4ef6329d269e544b1e2a30742887f9d2fe3e1ff4112727",
+      "bytes": 866
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/build-args-all.gn",
+      "sha256": "5ef3dcead9ec7d5a5b556d7db92ab6a40166801913298702250a455fd244388d",
+      "bytes": 3900
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/build-args-release.gn",
+      "sha256": "b4490cee911e0ed136a6d095c69a7914cb3f4aa2d5517e3f987a2b5f45d3cd56",
+      "bytes": 902
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/build_add_gn_build_files.patch",
+      "sha256": "737ad2f76cadf81df126b29a59c2c44735f09a3725e719891f316bd13a708a44",
+      "bytes": 17614
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/build_allow_unbundling_of_node_js_dependencies.patch",
+      "sha256": "49023dc2c87a6543cc0447550f165c514baebf3e670650dd2161febf0609001e",
+      "bytes": 1979
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/chromium-notice-index.json",
+      "sha256": "28623d9ebeb149ba6ac719cd7720f8719e1f0109e85255a2c3ed153373175c8c",
+      "bytes": 185644
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/downloaded-source-files.json",
+      "sha256": "2bdd8a4df8639fad17ca0dedb44f83b8f61bfcd88bf0ca9f4a50412d67c9d9af",
+      "bytes": 816
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/mac-dmg.licenses.json",
+      "sha256": "0a70c168b563f5fa428e12b047791d11d71533d3d6e30e7062374cd69d253425",
+      "bytes": 5565
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/mac-npm.json",
+      "sha256": "d25cca09e8b62345579f767881338cc43924f3302fdca3e74d9f9c20c88f56fa",
+      "bytes": 2180
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/mac-zip.licenses.json",
+      "sha256": "6b8480dcdc073759ad2531fa256a4fbb54a09fc03a70f819ed6d673756d755ce",
+      "bytes": 5569
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/native-components.json",
+      "sha256": "6cdbdef164820b8fe33fc7c53c3a6cd440c038a04474073fb58bc28c72148deb",
+      "bytes": 147576
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/nbytes-LICENSE.txt",
+      "sha256": "782ab5b8ae1540c1a2b102fdd00990ed268d4a3a98e90ad7fe724b489d7bb0f2",
+      "bytes": 1064
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/node-LICENSE.txt",
+      "sha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5",
+      "bytes": 157606
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/node-nbytes-tree.json",
+      "sha256": "fdc4fff8ca1917688838d2d44bb4d0663d95900287897222724e22a77a1d1d40",
+      "bytes": 15780
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/node-unofficial.gni",
+      "sha256": "865fe1cee76fa6169e7dc6c1d9d6f7447eb5e8afe95413c1ebbfff227662d848",
+      "bytes": 12102
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/node.gni",
+      "sha256": "b6bd91e4cd8bfa3bab9aee8e87cd82bdb997e18c385a13fa90b77512c67159f3",
+      "bytes": 2811
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/notice-comparison.json",
+      "sha256": "5bfe37d6bdeed5b8112387c8b32806235291dd84bcbb32802a1326dbf187c489",
+      "bytes": 267
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/pe-parser-crosscheck.json",
+      "sha256": "64e355551fe526551d052a8f8a75ea071b5485edd246689bd8f60208641e4984",
+      "bytes": 358
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/static-components.json",
+      "sha256": "d0907f91fedcb8ec2b286076799ea6ef7253d05fb902c9fcb82e8c1fcd62e629",
+      "bytes": 19558
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/windows-portable-npm.json",
+      "sha256": "d25cca09e8b62345579f767881338cc43924f3302fdca3e74d9f9c20c88f56fa",
+      "bytes": 2180
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/windows-portable.licenses.json",
+      "sha256": "4efdc9f3ba0a2a0f740f77cb4fe28289ebddf996d45272b61f3738eed09872ef",
+      "bytes": 5562
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/windows-setup-npm.json",
+      "sha256": "d25cca09e8b62345579f767881338cc43924f3302fdca3e74d9f9c20c88f56fa",
+      "bytes": 2180
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/windows-setup.licenses.json",
+      "sha256": "8d9e9903d950f8e3a0160e943c33c1c7d5baec20bc7e9454bc1fa1e219bdaf4f",
+      "bytes": 5568
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/REPORT.md",
+      "sha256": "9b788ab647a184ef98d01f9d4802a1d0a85eedfbebd79b927d87ea8f29780a0a",
+      "bytes": 8498
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/inputs.json",
+      "sha256": "3b21c1383b92fce4334a0327c8c267be5cfee5b6bc0e2c1668cdfbff43ba9190",
+      "bytes": 1252
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/mac-publication.json",
+      "sha256": "7a211a04246d72dbec9246a1de48c9316e5d7af299f380b50b5663d1334e83d1",
+      "bytes": 92933
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/static-components.json",
+      "sha256": "2ecb2e88bb61ae7c087a13af16e4595a8d840637d9d14789a47b6e613dffe995",
+      "bytes": 38689
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/summary.json",
+      "sha256": "381a256ccdbe578b359c3d0d60f80bd1b2d85d54cde62e60ec30725b325f7a68",
+      "bytes": 3799
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/windows-portable-candidate.json",
+      "sha256": "d4504fcab16097e47295a3343b59e750b84862cc6ecf22c5aab260ba141e4586",
+      "bytes": 25755
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/windows-saved-publication.json",
+      "sha256": "546f14afd8f924e4b8f1c4aefcb4be811294e390c5963344f560147c58715a56",
+      "bytes": 25712
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/windows-setup-candidate.json",
+      "sha256": "5dbc0fda49b0c80a155da6d9cde6c66595d1cf8d0c6fd6d58b0bd05ab7b7724d",
+      "bytes": 33502
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/REPORT.md",
+      "sha256": "005132380b61ec0debd471e9a9b47e1a3b230f02090bf002de9f16e211e9953a",
+      "bytes": 5354
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/artifact-set.json",
+      "sha256": "0f1b7cf6d5e052c1d43f96de4cb6e047c20ffb3d645806e799a7d8686ee0709e",
+      "bytes": 1493
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/baseline.json",
+      "sha256": "57291e79ff0dcf59270c46ad4e239f2e2f9624355d32e2da295f88284bf3de1d",
+      "bytes": 10597
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/mac-dmg.json",
+      "sha256": "f81611859bcd1e456950cd26effed4c71de8f76b84a93a522b6639b1f78e889a",
+      "bytes": 9705
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/mac-zip.json",
+      "sha256": "6f5888cf673cc3ad0280cc611069c8b8604a1846873c836326330f753de1dca5",
+      "bytes": 9709
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/unsigned-rejection.json",
+      "sha256": "754da166b21dcde6fc15e1d8c15263485b65233e1ee0459c92baa029a912e027",
+      "bytes": 252
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/windows-components.json",
+      "sha256": "77183875af13b8bc601f7c987f2e23a97454ca39a6d524e4d45a080e6b91e23f",
+      "bytes": 4499
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/windows-portable.json",
+      "sha256": "a4147bbe7b6b5c244033e1a08fb7809b8fd796fef54270e3e301e4a2c2ffc2e7",
+      "bytes": 9528
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/windows-setup.json",
+      "sha256": "4ac4338277e447f1b77bfae0e9609b5108a6bb8f8a082c53797289fdcb01990e",
+      "bytes": 10423
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/working-state.json",
+      "sha256": "89574e718202d209b605beaa013bc84be03e23aed723c2b5d0ca4908b437efce",
+      "bytes": 10788
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/BUILD-AND-REPLACE.md",
+      "sha256": "ce063a0eadecec2dcb8c23c62179c4324efb0f5efe279bea7723be01835a5166",
+      "bytes": 9378
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/RELEASE-NOTES.md",
+      "sha256": "1eb37bb2eb66ec67525cc643e283513395d8781a5c8a883e7225bc71e3a5f873",
+      "bytes": 1239
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/REPORT.md",
+      "sha256": "7246d5b237d5c47abd39b85a712708926ee9a04c24ba91fa8d45a686a0edc758",
+      "bytes": 6154
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/build-materials.json",
+      "sha256": "5a767653101d8034f82b7e07b96c9daea313382b69e1562d44ce8802057908e6",
+      "bytes": 5314
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/bundle-verification.json",
+      "sha256": "c60a9b62cb9e2e3414ab6af583d378c892ac17bcddbdb4ab491226e711e93496",
+      "bytes": 234
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium-mac-build.md",
+      "sha256": "9b811cc15690efebc692652a568492c38e6f1fae157ff65544018dff323ebafd",
+      "bytes": 13373
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium-tag.json",
+      "sha256": "51b69b1b96d528053fde33b88b9ee1af5c406d96058ac8ea8339d45ee87e529c",
+      "bytes": 404
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/.gn",
+      "sha256": "b17d58c4d7d648fab31108af33e71a4dc6725667bc2df665a9ae8456683eba64",
+      "bytes": 8325
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/BUILD.gn",
+      "sha256": "3a975bdf5a09d3b652920bdd27cb68a0be8e51a5706b2710715f566c50f6b10c",
+      "bytes": 54887
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/DEPS",
+      "sha256": "6d0b1775ce938dfadd2cff1adea4fef5fc27b33f6891a481b002cd31afea3c55",
+      "bytes": 194497
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/LICENSE",
+      "sha256": "368cca1106be99d39ecd32a38d8305585d802a475effb66380b91ffc9bcf709b",
+      "bytes": 1536
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/build/config/mac/mac_sdk.gni",
+      "sha256": "5f0da18d8b5b39bc830f77f3e92c90a361881844f2e2cdc332ea06b9b5658e38",
+      "bytes": 5927
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/build/vs_toolchain.py",
+      "sha256": "5b258c09a6037b0d0ef3bb95d431fba562758592ee4424dbc261f80bf590b8f2",
+      "bytes": 26279
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/third_party/opus/BUILD.gn",
+      "sha256": "436f0bfedbfc18c2a46f39f10667fe815e0aca6bf097e999930bfc36118deb33",
+      "bytes": 15705
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/third_party/opus/README.chromium",
+      "sha256": "e09b127a9a06d41673a98357ed758d6a6628621189961565f90bf368c6c88dff",
+      "bytes": 1448
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/tools/clang/scripts/update.py",
+      "sha256": "0679888392d7a700fb3a3c3de93f56bfb4e4064a5a46ece798c306b63e98b7cd",
+      "bytes": 14777
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/electron/build/pgo_profiles/README.md",
+      "sha256": "08a497f771831aac62aaa78f2b00f3839c8616fce74eff018cfc9f0ba1e040d5",
+      "bytes": 3226
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/electron/script/pgo/download-profiles.py",
+      "sha256": "cf16f90bcc2cfa845a0b4a85ab13d73f6971352b5ae3beb9cb51c72c900aeab5",
+      "bytes": 8739
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/literal-import-audit.json",
+      "sha256": "c1b834726a642555e5bd47ed5f211a765aa01204dedae318176ea32a3f0b58cf",
+      "bytes": 533
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/public-artifact-verification.json",
+      "sha256": "00253426c9b2753c518723c9505a55a21677701a313320a8e9b8735c7526dcff",
+      "bytes": 4515
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/public-release.json",
+      "sha256": "adad5f1c148adbfb62e3db710aed265a4752f8b87f62d2d1639c5b9b818d8404",
+      "bytes": 894
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/REPORT.md",
+      "sha256": "f5831e1fc76eaa235d94460a30aa740814d934000af3cb532df10aed15b1598f",
+      "bytes": 5814
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/compiler-rt-clang-files.json",
+      "sha256": "acf6c5b60e5d63487bc98f171a7976439edf522d092ccd554405ab515490044a",
+      "bytes": 774549
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/evidence/compiler-rt-clang-LICENSE.TXT",
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+      "bytes": 16708
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/evidence/libcxx-LICENSE.TXT",
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b",
+      "bytes": 16703
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/evidence/libcxxabi-LICENSE.TXT",
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c",
+      "bytes": 16706
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/evidence/llvm-libc-LICENSE.TXT",
+      "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47",
+      "bytes": 15140
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/inputs.json",
+      "sha256": "9547d91ec0bf6d3e70ec85cda4d0430a218606a79f3e34bb419e1cc63e70ca4e",
+      "bytes": 1622
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/libcxx-files.json",
+      "sha256": "718d7e927271d082a6eb6afcfab802fd2d4e33799262650d893621d7077b89a0",
+      "bytes": 2389103
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/libcxxabi-files.json",
+      "sha256": "9c46506dbe7022417ab1455509351caad8b85ded3069b3fc93a387f29500c122",
+      "bytes": 24898
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/llvm-libc-files.json",
+      "sha256": "de099df83f7812af2ac5ce64e1771fe952e521b2e19523c5289e3acb95bfd96f",
+      "bytes": 1233799
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/runtime-inputs.json",
+      "sha256": "9dde57a593b142946990a2fed26e180d767433ee342a20978737a254260ecb22",
+      "bytes": 5039
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/REPORT.md",
+      "sha256": "f03c18a2f693cc1827b8934cc1e0e01265bf0ba8e2c1aefa8323b1f937998f8b",
+      "bytes": 9208
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/Anders.html",
+      "sha256": "ec28a24d96f241fb76edeb69dec6e8f2b15411a18eb42b46fe8f2ef57f9ec705",
+      "bytes": 20538
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/History.txt",
+      "sha256": "e966e6918f2a8c4aa9a24be2bf802de762cc9773948f171056a0407abde01144",
+      "bytes": 5726
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/License.txt",
+      "sha256": "997fd014643f27a2f240faf9b9b54a98371775c63eb38134829154794f7326fa",
+      "bytes": 956
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/NSIS_CUSTOMPISDK.h",
+      "sha256": "2dd1346cad9ac9d1265726811c3549de9ee76737ca2fe87003d5276d74fe6597",
+      "bytes": 3422
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/RunAs.cpp",
+      "sha256": "0f9dbf29964bef59cc0413cea8cc5bbd948f50980fde2beedcf0bac376f89076",
+      "bytes": 11548
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/platform.h",
+      "sha256": "b6b42ea2ae23fabe6dbc8c2581608601cb0f4529c6be9968e7b6a4def0edca9b",
+      "bytes": 1186
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/resource.h",
+      "sha256": "fa4a0269da0612d4d3bbb6f4889fae30632afc2b96cf2fcf9a376289c4cc2948",
+      "bytes": 825
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/resource.rc",
+      "sha256": "72d7b6b71aa67e34aa2f507a5fa5d8500ba0f50b140c3447b214fc4118ead4f7",
+      "bytes": 3224
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/uac.cpp",
+      "sha256": "a54b801a377dd4a9be29fcf68672f4ff381f50853e8a815cb535405e97ec1905",
+      "bytes": 33518
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/uac.h",
+      "sha256": "8928e444bd4c2219b106fe2722df1ea9c6dcbe9411e9e05917bdcfa2dbf2a782",
+      "bytes": 4699
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/util.cpp",
+      "sha256": "a4ac1ddaaa08b6b752ed845ba009fdd0da281d20d1fb24c68023963201833d21",
+      "bytes": 2962
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/util.h",
+      "sha256": "90613147a2ff9b36acfb1ef6bce7abd69fb2bc0cc70685a0ba601fc4a195766a",
+      "bytes": 2940
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/artifact-summary.json",
+      "sha256": "125c2d17ef5397fa63f49365df81c69241f4fbed0367b39be9c5c834594e83c3",
+      "bytes": 657
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-1.0/Elevate/Elevate.rc",
+      "sha256": "f23156d20655474babd7cec0d61e62a0ec2125564ff3f532b11b1b7c59777860",
+      "bytes": 2421
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-1.0/Elevate/main.c",
+      "sha256": "5274d3eaaadce8d01e04416f5e0b27c0678d70fde7c0d7a9cd34d73825101e9b",
+      "bytes": 5883
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-1.0/Elevate/resource.h",
+      "sha256": "d91dec8edf50b48248b9c294eb971f41d8d4380d39fbe50d84b70e72c7ca16cc",
+      "bytes": 401
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-1.0/Elevate/stdafx.h",
+      "sha256": "336905da2d3905cfd5ca027518ad1eb08651d639f0721bd2b65b89349363bec8",
+      "bytes": 1145
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-1.0/LICENSE.md",
+      "sha256": "c8513abf1a738a5420f288c1be9c774b386785cc99c313f8543296321d06f04d",
+      "bytes": 1119
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-1.0/README.md",
+      "sha256": "114145d90cb0e01d393143fb8b77de53066220fd585ac033ddd7cefd043ac0bd",
+      "bytes": 219
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-author-page.html",
+      "sha256": "2643331d1bb13c2a04640a5d2c35b0f5ce239ac257797786323edf29a7045a1b",
+      "bytes": 15185
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-forks.json",
+      "sha256": "a6eabeaaa1307acffe0e0b252ab97062e470a4dd66b4338c1f1dea32e766eb80",
+      "bytes": 265902
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-issue-comments.json",
+      "sha256": "97d7259e914c9f6f5a254db8d7bec3ee58f67712f37040936179746767e83376",
+      "bytes": 10839
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-provider-commit.json",
+      "sha256": "4224a4770a8a42fd33861950634befebb51fadf7288e3ede4fd1e1a788541500",
+      "bytes": 5454
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-provider-history.json",
+      "sha256": "0df35f9db9487e5d6d59f92dcdacba53145893aae23128bc96ebab883174e980",
+      "bytes": 9394
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-tag.json",
+      "sha256": "641d7a84c5c3cf5436d4e91716ece8182e726a2134f484563aa8e33fe99d8704",
+      "bytes": 370
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/mac-dmg.licenses.json",
+      "sha256": "5796d951ee9225c19366d4a13ac64c91e46c951aa3ddda822051a6d9c89492ed",
+      "bytes": 5371
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/mac-zip.licenses.json",
+      "sha256": "baffa392eaaf7908d6ee29a5b08c86966be83d4729fde16d32673f5a2b1e106d",
+      "bytes": 5375
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/nsis-elevate.sh",
+      "sha256": "e13fcc09ce26557eb9b0e468d3304f76a4c3dc2119ea3ef5d56fc6d7429281bb",
+      "bytes": 7269
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/nsis7z-page.html",
+      "sha256": "9f0dda4e70d3ec0b1dd637909f4e0422f599e40774834a37a8092c2d59104563",
+      "bytes": 23195
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/nsis7z-project-inputs.json",
+      "sha256": "5d53564683525b4d89305b451635f833407c9e1a54d70d50f3c36a4c3988433f",
+      "bytes": 168
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/provenance-before.json",
+      "sha256": "b32bd59c6d56095a4c6c6d6a19f842628993173b49449f8bc18c7f909e46faaf",
+      "bytes": 4499
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/provenance-final.json",
+      "sha256": "f8e654c18e3c8529ae6659f4cf8121812c79bb1b749470543a4f71078beacb86",
+      "bytes": 4499
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/provider-tree.json",
+      "sha256": "8a4102da2c1bafd82bdc11e45c91f608f09632e84904274c73d67a5862911eb8",
+      "bytes": 76308
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/source-review.json",
+      "sha256": "2fb1c1ae7a6cc4ad734fdd50f5f3c303959171e5cd7dccc8c9d7919043c2cd40",
+      "bytes": 243
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/uninstaller-list.txt",
+      "sha256": "d1a400d5df6f8d1c431a8b5af1f65a2addaeb9cce20ac13658e3138496122d5c",
+      "bytes": 1519
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/windows-portable.licenses.json",
+      "sha256": "6649d19a640147dfd912c89b57d9ced9a0fb9e5d1f976f15a3cd4cfac8069490",
+      "bytes": 5368
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/windows-setup.licenses.json",
+      "sha256": "7cf787199c3a26b59e16ec77a79e072520128b52f165762603cdb6432c9f6293",
+      "bytes": 5374
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/windows-signatures.json",
+      "sha256": "cce701842d88186badfc5c695c9ea6a4c1e201d37ef1c5df30105aee1465f8ae",
+      "bytes": 269
+    },
+    {
+      "path": "electron/ipc/appIpc.js",
+      "sha256": "79598ea29094119ba8fbd55d1aecad74ecdbb70b121219aa777f1875d65a6223",
+      "bytes": 1153
+    },
+    {
+      "path": "electron/ipc/kancolleDataIpc.js",
+      "sha256": "9f7237b224210a1250ef21088d8651da3537ad86dc34fb10c371cb3ccefc09f1",
+      "bytes": 1430
+    },
+    {
+      "path": "electron/kancolle/apiCapture.js",
+      "sha256": "d96b3e1732a423e7017807ab3e3ded331e2a8d1320fecf254a666ca071436e13",
+      "bytes": 25467
+    },
+    {
+      "path": "electron/kancolle/store.js",
+      "sha256": "5ecaf3f9fa136268a173307ea983921f3eff9d4cec88ed4d09d141b33d6b595f",
+      "bytes": 23836
+    },
+    {
+      "path": "electron/main.js",
+      "sha256": "5db4af1bd9217103697353162e6251a39476417f3cbc3d562adab015a8f5cdd3",
+      "bytes": 803
+    },
+    {
+      "path": "electron/preload.js",
+      "sha256": "30f929c0cbf4f671e0e0fef9cd40b5e934355c347da320111ca658fd2d6ef278",
+      "bytes": 3757
+    },
+    {
+      "path": "electron/runtime.js",
+      "sha256": "74c720101bbb03a586a09b811840e37cab735aee53f78ff914ad7a42f8260c6b",
+      "bytes": 325
+    },
+    {
+      "path": "electron/services/dmmService.js",
+      "sha256": "fa43217b01d8427dc3f45abb4b48e6dacb2e8938e6eef3fbde6982cd0d5e076a",
+      "bytes": 4064
+    },
+    {
+      "path": "electron/services/mediaService.js",
+      "sha256": "44c0685718770c184d83c82269e6357dee44562e22ae87cb21558e0e6e8a8607",
+      "bytes": 6330
+    },
+    {
+      "path": "electron/window/contextMenu.js",
+      "sha256": "d638f5c3c5662b4f27114a9a5d01a61c0c6b77caa1ecad2424c2ca54b05f186c",
+      "bytes": 1610
+    },
+    {
+      "path": "electron/window/createWindow.js",
+      "sha256": "288af605f5bd5a361bb941af245de5db7cb506312f21a269bd1e0756f3410dc2",
+      "bytes": 8628
+    },
+    {
+      "path": "electron/window/gamePage.js",
+      "sha256": "441501e5efe82ee8cb7d0c002d44a1749ab728505a51985a3a594213da034986",
+      "bytes": 6657
+    },
+    {
+      "path": "index.html",
+      "sha256": "8113455ae6befce2b7c63baad9bb477a612e7f9d18bb883d5ece315ce45906f8",
+      "bytes": 463
+    },
+    {
+      "path": "licenses/DISTRIBUTION-NOTES.txt",
+      "sha256": "07edf2197c318d8bfbbb96b8e7453b5e2820b488af31b26b085aca0b68484034",
+      "bytes": 3464
+    },
+    {
+      "path": "licenses/ELECTRON-SOURCES.txt",
+      "sha256": "3070699f720901d98ca0b62343576a4e78d48a596ddd96630831a305a012ec2c",
+      "bytes": 6366
+    },
+    {
+      "path": "licenses/FFmpeg-SOURCE.txt",
+      "sha256": "83888dcde4ff6ae81f8778679b19c0ce0283ab7a2219140611345a2d74f86e06",
+      "bytes": 16561
+    },
+    {
+      "path": "licenses/GPL-3.0.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    {
+      "path": "licenses/LICENSES.chromium.html",
+      "sha256": "4cbde8e3e7b29f451c78a44491fb32e2202884826fef47786a9cda5a36110525",
+      "bytes": 20111206
+    },
+    {
+      "path": "licenses/concurrently-LICENSE.txt",
+      "sha256": "bbaf3620b43019e895e662543df7eb6f7a8c8bd81f2b611ef34db6ee0cc8219e",
+      "bytes": 1082
+    },
+    {
+      "path": "licenses/electron-LICENSE.txt",
+      "sha256": "5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d",
+      "bytes": 1096
+    },
+    {
+      "path": "licenses/electron-builder-LICENSE.txt",
+      "sha256": "bed8d0ab3e6031817f775a641ff37313b0f5591bc8ba0ed79b978dafbd4231ce",
+      "bytes": 1084
+    },
+    {
+      "path": "licenses/electron-components/FFmpeg-CREDITS.txt",
+      "sha256": "903a6faa336b60d419bc6eb2bcffe4ca8bd9446735e5de4fcc901c80e9f22327",
+      "bytes": 47960
+    },
+    {
+      "path": "licenses/electron-components/LGPL-2.1.txt",
+      "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30",
+      "bytes": 26517
+    },
+    {
+      "path": "licenses/electron-components/Mantle-LICENSE.md",
+      "sha256": "285eede6f638adc9c352be7d66134611e5ea95044095a84de9867fb864e66eab",
+      "bytes": 2445
+    },
+    {
+      "path": "licenses/electron-components/ReactiveObjC-LICENSE.md",
+      "sha256": "095fec1a3d6ad029fe0661fa6092a272d50af016b1771992e0bba9b2a73e7763",
+      "bytes": 1093
+    },
+    {
+      "path": "licenses/electron-components/Squirrel-LICENSE.txt",
+      "sha256": "6f240e244a105d6366bc898ac9c67460624c9052839d4b988c6dbe4c571008b3",
+      "bytes": 1073
+    },
+    {
+      "path": "licenses/electron-components/nbytes-LICENSE.txt",
+      "sha256": "782ab5b8ae1540c1a2b102fdd00990ed268d4a3a98e90ad7fe724b489d7bb0f2",
+      "bytes": 1064
+    },
+    {
+      "path": "licenses/ffmpeg-build-configuration.txt",
+      "sha256": "bf2f646774395b22c2175210d453a13f079dd3fd358c4c7f999eda7dfd31411d",
+      "bytes": 3903
+    },
+    {
+      "path": "licenses/ffmpeg-static-GPL-3.0.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    {
+      "path": "licenses/ffmpeg/darwin-x64/capture.json",
+      "sha256": "c1776a6684038d5c23dab28da9abc548dd6df7115eac8d90f051640bb82a7f70",
+      "bytes": 4220
+    },
+    {
+      "path": "licenses/ffmpeg/darwin-x64/license-stderr.txt",
+      "sha256": "8f3d579fe701253f16c2e41389deec6873e0ef53c89ea8ae75b499b65b6daa30",
+      "bytes": 1348
+    },
+    {
+      "path": "licenses/ffmpeg/darwin-x64/license.txt",
+      "sha256": "040708d6a654aed3dbc2bc4fae8f247ba2817ebe08898042b601016e9fe870ac",
+      "bytes": 594
+    },
+    {
+      "path": "licenses/ffmpeg/darwin-x64/version-stderr.txt",
+      "sha256": "0d7fa1070c8244c45713f52789bcaaa9dd48055b793d654d3f7ceb4d5199ef79",
+      "bytes": 8
+    },
+    {
+      "path": "licenses/ffmpeg/darwin-x64/version.txt",
+      "sha256": "9f36d8eaa22bb58cf3b5c07d83263e89693274fb0fe8a0ded776517c08d739a0",
+      "bytes": 1328
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/BUILD-MATERIALS.md",
+      "sha256": "5d7997c5a8025e08eb6b9db4c51bcc08ed4b28ba075eb98a1ea4f8eb0c2d89ad",
+      "bytes": 6744
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/DEPENDENCY-REVIEW.md",
+      "sha256": "51f4b6ada4c830dae930056a1eb95f215c0c32b9ec4c431521b1f8957b3ce71d",
+      "bytes": 6936
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/LIBRARY-SOURCES.md",
+      "sha256": "a5adbcab906816be499ead27f3503e60439a4a3f8493aea569692efd85f7f8d9",
+      "bytes": 12251
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/SOURCE-REQUEST.md",
+      "sha256": "e2d8308f324d5aa65dce7dcb7c884b8b9c5441d0514ba667dc46c83fbd9370c0",
+      "bytes": 4466
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/aom-commit.json",
+      "sha256": "edfd1f9a9a261bb67acc4b04ab869ea45495f66534e453464dd83a27ef378c5d",
+      "bytes": 1070
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/artifacts.json",
+      "sha256": "1ad73be7da2a0268deaed3c4c4972dd7d4d70de09d98212b5bc5b5d75986fc9d",
+      "bytes": 3316
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/build-evidence/gyan-issue-91-comments.json",
+      "sha256": "34246ced009ad02aec9f096b4acaada8a6d9a5116e24a45e0dd26414c893dffd",
+      "bytes": 117331
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/build-materials.json",
+      "sha256": "d993d5bc2b2124b6d06c3a7da04b505afec64c0e2e687c3077e71d8f6fd94fde",
+      "bytes": 183232
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/buildconf-stderr.txt",
+      "sha256": "9b00757ecf5ef2dfc869c6ff02bcd851dbbef840493ec1d9011be1d4628e7563",
+      "bytes": 1480
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/buildconf.txt",
+      "sha256": "d826a15e605129b2d19115f23ae55793eb319887405f77c6f384571547d30ebb",
+      "bytes": 1220
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/capture.json",
+      "sha256": "e9c6f814d9fcd4cbed38db974f2a3f44de7262e3ab89697330676958d41bece7",
+      "bytes": 7703
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/dependency-evidence.json",
+      "sha256": "fd914c79c55a58acb28d5f62963535dc90a16d98047815262b6eeee7cab094e3",
+      "bytes": 65003
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/ffmpeg-commit.json",
+      "sha256": "00d32d16cdd90033d5f9c0e461949f9ee16a0cb76b98a98df9d4d70af4310a52",
+      "bytes": 5470
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-probes.json",
+      "sha256": "1e995d021b8bd3a871a85c06611264fb9f95fef1d38d4bd5a4c36e58756c76af",
+      "bytes": 15594
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-source-verification.json",
+      "sha256": "bbac40d25a662540074eed5f3534a264ec319f2ba301128d19002e4223b93c19",
+      "bytes": 24398
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/AMF.json",
+      "sha256": "cafee4417fb13de846366a84ddc6a375886308d8d34c03109b6d79b3110baf3b",
+      "bytes": 1165
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/AviSynthPlus-filesystem.json",
+      "sha256": "0a885916f59038b61671c31b088c4d46254c88cfa1aeb953ce7bc57f0676545c",
+      "bytes": 1500
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/AviSynthPlus.json",
+      "sha256": "3c81f331af1f416cb62c480125ae0af5c31c93a9a8d1e3659dd30631efbdcb1f",
+      "bytes": 1329
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/OpenSSL.json",
+      "sha256": "0416ed601dd2e36224d2fc0688609c75b1aa5c86e88879fc0e0ad05ef755352e",
+      "bytes": 1365
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/SDL.json",
+      "sha256": "4982bb78ee47dae3fcfb18fd69a6376b47f415fcba0bc74b94e8bc57fedd1a3c",
+      "bytes": 1943
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/aom.json",
+      "sha256": "ec7e280549db026807f40a5b7e73eabd180f61577c115df16920ae656dc3ebff",
+      "bytes": 1814
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/bzlib.json",
+      "sha256": "f728b09a23618f2725163c6ec062de2015bb5bda109f293d6e8cf1e05281719a",
+      "bytes": 817
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/expat.json",
+      "sha256": "9b2949e419e37d81fa5d2bb477942a0b4e453192d588c49f78bda5621bec2baa",
+      "bytes": 1218
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/ffnvcodec.json",
+      "sha256": "8c212d0c982a1a9f2b97a85e1769a3ff1974ef3b822826f74c27285ac7afd4fb",
+      "bytes": 1296
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/freetype-dlg.json",
+      "sha256": "a29c01b29597307179ddc196e1a8238f660c39cc51e6b02c210f8cfe39b0a12d",
+      "bytes": 1442
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/freetype.json",
+      "sha256": "7bf87a5927c280bf309da4bb54b952264326cb46e9ce57bdbcea452f1e94a15a",
+      "bytes": 1131
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/fribidi.json",
+      "sha256": "3239f9b6e508220da0b8db72780130130671d3441ebfdba91a966a25c08e5a24",
+      "bytes": 1024
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/gmp.json",
+      "sha256": "b703cbda2ee8eefe9a25895906b450faa4e7d3e1512887a39e06fdccd927f8c6",
+      "bytes": 977
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/gnutls.json",
+      "sha256": "26b2be7767d2ca361d31650d97966da427f0bbf0a68fccda29a9ce1541338ac9",
+      "bytes": 1418
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/gsm.json",
+      "sha256": "dba05ec66384edce75169f13fc49645063d9b84b20bd202fa009f9eba14a9eca",
+      "bytes": 710
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/harfbuzz.json",
+      "sha256": "3ded3686422af27cdce150302972b60aaa5525cc7a42060e66160c537c3ff328",
+      "bytes": 1464
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/lame.json",
+      "sha256": "8b8a68343b23d6781548825a233cce7d13bc01fa79f80d56c7a3b4e44580703c",
+      "bytes": 885
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/libass.json",
+      "sha256": "3ba0ae1c9d4c76b9dd18cdcd605ca10dd77493110eefefcfac9beba37de59905",
+      "bytes": 1013
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/libgme.json",
+      "sha256": "5b64306ef8a3918b8b21ebe4bae3dd3d20a0950f4f48ad79fe36dfdc0199fe3d",
+      "bytes": 1150
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/libssh.json",
+      "sha256": "e37360d7ded49a5f4d79aa0dabc7610bfe7740eca4ed912106d838faacc204f8",
+      "bytes": 932
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/libtheora.json",
+      "sha256": "151acb00e9c082bcbebea8337d1c15448abf6edbb990287ce7a926991ae9b21d",
+      "bytes": 873
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/libwebp.json",
+      "sha256": "2445bfd5d86bb2349a1c31c446e42b334fcfa1ae256f42975bb7c55f1c24e4c6",
+      "bytes": 1037
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/nettle.json",
+      "sha256": "a11779f90386e9577ca825bdfaa91c619a78068fc2c45104b4ddbb40ab9b1402",
+      "bytes": 931
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/oneVPL.json",
+      "sha256": "9c34d412634ccef69062236446de48061df64409ff408d424ce2b7fd2737da71",
+      "bytes": 382
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/opencore-amr.json",
+      "sha256": "c0dd7305948f0a0a3ba091797750b3db3ed980ffd5705ca53a25956fa2a217f2",
+      "bytes": 1023
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/openmpt.json",
+      "sha256": "b0853f09c9a156654f796e8cc38e05e05af7095c9fcef86f6966a42a94cf519d",
+      "bytes": 4601
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/opus.json",
+      "sha256": "2b5823ef589f25f0599d43aa7105e9abc1d37daf1af9e13f9284ce3f89b816cf",
+      "bytes": 1094
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/rubberband.json",
+      "sha256": "8da0f065e5109ff45dbd480b3a3faaeacb06796316d1b643e9db326a97d7dfb4",
+      "bytes": 1263
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/speex.json",
+      "sha256": "1917515e2ebf605f21fe390f628a3a900f7bd6340a4c48ba635d69da52292940",
+      "bytes": 1001
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/srt.json",
+      "sha256": "198e5089fa12d26b82f2f89d342cd38337f5d1e6909b4f77b826d32fa8bd46f8",
+      "bytes": 1002
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/vidstab.json",
+      "sha256": "e212870b1edd4cd69975af6ff12a634d758bdc8e5a7fbc2febd10dc33ec4bfe6",
+      "bytes": 1040
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/vmaf.json",
+      "sha256": "597c54698e0e52bf44ca2017c2d345f83f427b24e48c9ba845aab2e93edf103d",
+      "bytes": 1006
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/vo-amrwbenc.json",
+      "sha256": "75bfedf7259dd37767a8eef8b268539ba9cb26ccc976145de66523ab84eb9e72",
+      "bytes": 837
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/vorbis.json",
+      "sha256": "4777c7ca3bf1cc4917315e9ea4edda9bb575535b664a114ba3c940cecc90e491",
+      "bytes": 1104
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/vpx.json",
+      "sha256": "9ebcbb3fb67b56b941235b3d13553242369a25982d19091b7d50af726bb6bf37",
+      "bytes": 1456
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/x264.json",
+      "sha256": "ebd505d5a4cb69983ddd0b5c5eb28e12bdd915ce98c9e283e2665bc1c2de0afa",
+      "bytes": 1000
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/x265.json",
+      "sha256": "2923b59eceea1e05f2db09a190ba3074137af08b84eb9062ff57af7d8e97f009",
+      "bytes": 1387
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/xvid.json",
+      "sha256": "8af54e07b815ce7d366c8e7baceff8ace026ec7f91a195ac6fe9ad068f2fa833",
+      "bytes": 792
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/zeromq.json",
+      "sha256": "0e0d6e2c9a9b268c2f2083b9030030a90c277c71eef0ac315a1d671b37704b29",
+      "bytes": 1432
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/zimg-googletest.json",
+      "sha256": "c50ba13d8731aab50588c475a9be31633d40967547f1d4d11b824c059221c3ee",
+      "bytes": 1606
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/zimg-graphengine.json",
+      "sha256": "1133b0b89319c335a07ab31c135a462632e7f50f7ce6f901d22a7e40733dc8e5",
+      "bytes": 1582
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/library-sources/zimg.json",
+      "sha256": "34728eecc5c84bda1dec175d50a43a0753008e8bae3dba888a8c1aefcdfcc3a6",
+      "bytes": 1204
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/license-stderr.txt",
+      "sha256": "9b00757ecf5ef2dfc869c6ff02bcd851dbbef840493ec1d9011be1d4628e7563",
+      "bytes": 1480
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/license.txt",
+      "sha256": "040708d6a654aed3dbc2bc4fae8f247ba2817ebe08898042b601016e9fe870ac",
+      "bytes": 594
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/onevpl-changelog-2026-09-24.md",
+      "sha256": "d24069a77ae1e5f0722df2279713cc31df5b253beb89a96f48ca75549a147089",
+      "bytes": 16296
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/onevpl-version-review.json",
+      "sha256": "8000c9a395adbf9adb2c4400d14e009cc9a94d52ad0300a68e0ee13bcde468df",
+      "bytes": 426
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/sources.json",
+      "sha256": "44399abb0ef896f6d14d52a8deb6670988b489b61cbfe6e94b3f1b077798f6a0",
+      "bytes": 30924
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/subtitle-library-probe.json",
+      "sha256": "435f957ea7658609b0e478092d55178054c03cfd947f8887b3099bc87227e396",
+      "bytes": 3127
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/upstream.LICENSE",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "bytes": 35147
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/upstream.README",
+      "sha256": "a636a7183c58006351acbaf35303c0ed85c6e1320fd4e80de453ba6157de6311",
+      "bytes": 39494
+    },
+    {
+      "path": "licenses/ffmpeg/win32-x64/version.txt",
+      "sha256": "7f4d3ab5ba00f3e6effb568e497845b46a22d0e9d3a559d66471735884d89b5e",
+      "bytes": 1460
+    },
+    {
+      "path": "licenses/npm/agent-base-LICENSE.txt",
+      "sha256": "71368fd0f5b4129191e9afcd1e1ef2dc89a9090d3e4d80bbab92dafd032b3bef",
+      "bytes": 1102
+    },
+    {
+      "path": "licenses/npm/buffer-from-LICENSE.txt",
+      "sha256": "14275f5c8139d02054c5259d52a88ccbba662a86af18c30f071c8d082dc6004c",
+      "bytes": 1078
+    },
+    {
+      "path": "licenses/npm/caseless-LICENSE.txt",
+      "sha256": "0ccb0dc204a2d08f25ed7f984de0c73335eb2945b54bfcf57660034a27b5c0f5",
+      "bytes": 9113
+    },
+    {
+      "path": "licenses/npm/concat-stream-LICENSE.txt",
+      "sha256": "96b29c9aaa611a05349b362d48c2ffce0966fe408401a2d1a157be312c035b5f",
+      "bytes": 1084
+    },
+    {
+      "path": "licenses/npm/debug-LICENSE.txt",
+      "sha256": "3a61c6c96caf5c1d9b623fb9b04c822b783dfcb78aa7e49c76a3f643e6ed7f95",
+      "bytes": 1139
+    },
+    {
+      "path": "licenses/npm/derhuerst__http-basic-LICENSE.txt",
+      "sha256": "c78cbf5bc00228b1217a8e97b867c540bd178940c80b91467ed848868f750b92",
+      "bytes": 1069
+    },
+    {
+      "path": "licenses/npm/env-paths-LICENSE.txt",
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "bytes": 1109
+    },
+    {
+      "path": "licenses/npm/http-response-object-LICENSE.txt",
+      "sha256": "44191656d296391e0ec97e32f5385f0d02b6f2992694082d22ea04ba0f66f9e4",
+      "bytes": 1058
+    },
+    {
+      "path": "licenses/npm/https-proxy-agent-LICENSE.txt",
+      "sha256": "71368fd0f5b4129191e9afcd1e1ef2dc89a9090d3e4d80bbab92dafd032b3bef",
+      "bytes": 1102
+    },
+    {
+      "path": "licenses/npm/inherits-LICENSE.txt",
+      "sha256": "5ffe28e7ade7d8f10d85d5337a73fd793dac5c462fb9a28fbf8c5046c7fbca3b",
+      "bytes": 749
+    },
+    {
+      "path": "licenses/npm/js-tokens-LICENSE.txt",
+      "sha256": "2213d91c606205c71eb051a199478cdc2adde945893404d7f1421436dd6d5cc1",
+      "bytes": 1103
+    },
+    {
+      "path": "licenses/npm/loose-envify-LICENSE.txt",
+      "sha256": "4eb7543b08d955a6d23fcc224601d43ff566e775be918805e26210d7f6eb4893",
+      "bytes": 1100
+    },
+    {
+      "path": "licenses/npm/ms-LICENSE.txt",
+      "sha256": "1662fae9b5314d11cf51284e2dcd1f006a354f7343f08712a730fcff9a359801",
+      "bytes": 1079
+    },
+    {
+      "path": "licenses/npm/parse-cache-control-LICENSE.txt",
+      "sha256": "111f42b37daecc6c387d037ef25955bd269e7f9a46a736d5257a23560534763f",
+      "bytes": 1549
+    },
+    {
+      "path": "licenses/npm/progress-LICENSE.txt",
+      "sha256": "d7d2a7786de7c7cfd96f920c6f12927d74e1d2a861ca4498bf465c3bc3f4c21c",
+      "bytes": 1098
+    },
+    {
+      "path": "licenses/npm/readable-stream-LICENSE.txt",
+      "sha256": "ec62dc96da0099b87f4511736c87309335527fb7031639493e06c95728dc8c54",
+      "bytes": 2337
+    },
+    {
+      "path": "licenses/npm/safe-buffer-LICENSE.txt",
+      "sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac",
+      "bytes": 1081
+    },
+    {
+      "path": "licenses/npm/string_decoder-LICENSE.txt",
+      "sha256": "11f2aafb37d06b3ee5bdaf06e9811141d0da05263c316f3d627f45c20d43261b",
+      "bytes": 2338
+    },
+    {
+      "path": "licenses/npm/typedarray-LICENSE.txt",
+      "sha256": "26181ebee1063f3dc6766a3b6d05999a0da058f172eadf2ca5d15105ffd9735a",
+      "bytes": 1565
+    },
+    {
+      "path": "licenses/npm/types__node-LICENSE.txt",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141
+    },
+    {
+      "path": "licenses/npm/util-deprecate-LICENSE.txt",
+      "sha256": "0154425673db15cdfa80ecba2c9b1f1a867f7197a006764712849bfc3a93cbb7",
+      "bytes": 1102
+    },
+    {
+      "path": "licenses/react-LICENSE.txt",
+      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+      "bytes": 1086
+    },
+    {
+      "path": "licenses/react-dom-LICENSE.txt",
+      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+      "bytes": 1086
+    },
+    {
+      "path": "licenses/scheduler-LICENSE.txt",
+      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+      "bytes": 1086
+    },
+    {
+      "path": "licenses/vite-LICENSE.txt",
+      "sha256": "387dd7baa307083401a27c58c362c30832f5ba1dba84f10cc22c33401523f45c",
+      "bytes": 112425
+    },
+    {
+      "path": "licenses/vitejs-plugin-react-LICENSE.txt",
+      "sha256": "29b68325fe026047d13e187b44c33b2acacf7dc647dec4583702e59f235e13b5",
+      "bytes": 1103
+    },
+    {
+      "path": "licenses/wait-on-LICENSE.txt",
+      "sha256": "8320fa774a8d37dd83a75d82c429bb40e26e76b834aa279a9269d7d595f0aa6e",
+      "bytes": 1081
+    },
+    {
+      "path": "licenses/windows/NSIS-COPYING.txt",
+      "sha256": "3c8de989f6504d52f5f8dfafedb6668cd47201f5d01f1319570727c091425dd6",
+      "bytes": 15488
+    },
+    {
+      "path": "licenses/windows/SOURCES.txt",
+      "sha256": "353fc3157f132dfde4d3c568cd7760b1f442f5fa1bb4d9064ce6f8f9a7dfb6cb",
+      "bytes": 5636
+    },
+    {
+      "path": "licenses/windows/StdUtils-README.html",
+      "sha256": "be145d4687f5efa1d45ce7d059c92230d003b5da00dd55f24346278798c7bad9",
+      "bytes": 92207
+    },
+    {
+      "path": "licenses/windows/StdUtils-ReadMe.txt",
+      "sha256": "31b67e463c6e5695e9ffaf62dd077d9bd62df34026593c2f29bc9ea87fdac72f",
+      "bytes": 1380
+    },
+    {
+      "path": "licenses/windows/StdUtils-blake2-COPYING.txt",
+      "sha256": "f4e7f373b9b996950337e8d41a4a2939c2d90b7725e9baf3d5084a22717ad328",
+      "bytes": 7169
+    },
+    {
+      "path": "licenses/windows/StdUtils-rhash-COPYING.txt",
+      "sha256": "842fef4921191943e531c6cc939b0334f1c2658c9204e30dd35d13f51fdf70dd",
+      "bytes": 766
+    },
+    {
+      "path": "licenses/windows/UAC-LICENSE.txt",
+      "sha256": "997fd014643f27a2f240faf9b9b54a98371775c63eb38134829154794f7326fa",
+      "bytes": 956
+    },
+    {
+      "path": "licenses/windows/electron-builder-LICENSE.txt",
+      "sha256": "bed8d0ab3e6031817f775a641ff37313b0f5591bc8ba0ed79b978dafbd4231ce",
+      "bytes": 1084
+    },
+    {
+      "path": "licenses/windows/elevate-upstream-LICENSE.md",
+      "sha256": "c8513abf1a738a5420f288c1be9c774b386785cc99c313f8543296321d06f04d",
+      "bytes": 1119
+    },
+    {
+      "path": "licenses/windows/nsis7z-LZMA-SDK-LICENSE.txt",
+      "sha256": "63fcfe54826809b5a9f9df8a8ff53c04330122319ec67a2dd815085586adaf0e",
+      "bytes": 476
+    },
+    {
+      "path": "licenses/windows/nsis7z-README.txt",
+      "sha256": "881f8ba4da0a0c30e281d324408baa596f14211b03d1f3bf99fe18c4621916c3",
+      "bytes": 5875
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "03b78a9a91b60a816038415bbd376ec7675be6c3fa99c45762eda317ba0b70f1",
+      "bytes": 162978
+    },
+    {
+      "path": "package.json",
+      "sha256": "dc3f18039acd7a3bba905e3fce1042eb4f283870d63f483268c051fbdae42cdd",
+      "bytes": 3592
+    },
+    {
+      "path": "scripts/acquire-electron-build-inputs.py",
+      "sha256": "92b20641200dc01c819cabd626d65afd79a9d56c978167a3743d87077fd9a1d0",
+      "bytes": 3343
+    },
+    {
+      "path": "scripts/acquire-library-sources.ps1",
+      "sha256": "e8575c1d7510e582327935f9073471b0c28cec8ef5635f475cdb25ff155d0af1",
+      "bytes": 6550
+    },
+    {
+      "path": "scripts/after-artifact-build.cjs",
+      "sha256": "dfdcfb4664b0c460f4f63e561189872858dd69a617a4fedd31365d6ecb47bf1b",
+      "bytes": 796
+    },
+    {
+      "path": "scripts/after-pack.cjs",
+      "sha256": "ad33a37dd45886475e1f7305c21dc08db12e42504f8cc8fcc5a0a01262581383",
+      "bytes": 571
+    },
+    {
+      "path": "scripts/audit-electron-build-imports.py",
+      "sha256": "a5f350b5a313f343b698862fa87cf1f5083f9966a28920649a6dbe2d715fd376",
+      "bytes": 2267
+    },
+    {
+      "path": "scripts/audit-ffmpeg-build-materials.ps1",
+      "sha256": "b3351d173249554815e5fccad70a9fff35a69efde9baeb76ec08280d27b60d38",
+      "bytes": 3223
+    },
+    {
+      "path": "scripts/audit-ffmpeg-source-scope.py",
+      "sha256": "23e5928745ba4004041014c50515ab8a7a900cf73f3e1df2483431c14371acf7",
+      "bytes": 12858
+    },
+    {
+      "path": "scripts/audit-ffmpeg-win-artifacts.ps1",
+      "sha256": "eeb675fd33b53585bc61bb849bfbc11dd6e69ce8568edd39283dedd61df24e8b",
+      "bytes": 3629
+    },
+    {
+      "path": "scripts/audit-mac-artifact.cjs",
+      "sha256": "f68ad25a5a4b3dd4ad409360ee02bcae04800a1de46bde9e196108c33c79f893",
+      "bytes": 5859
+    },
+    {
+      "path": "scripts/audit-packaged-dev-deps.cjs",
+      "sha256": "c6ef0fe82f3d27f13eac14e8758d2e6f517d4ae31ac1b372e6f4cec9d7bf5e20",
+      "bytes": 5497
+    },
+    {
+      "path": "scripts/audit-static-runtime-inputs.py",
+      "sha256": "b1e7c10810a0908c7b0b8a295a61ec941e5cebb90f1d52cbe034b09760229ea8",
+      "bytes": 2829
+    },
+    {
+      "path": "scripts/audit-win-notice-versions.cjs",
+      "sha256": "6b9b2b04ceda4f83ecb398a8ef7a79b26ff82b0b09eec54c1a3cb2696f1f0024",
+      "bytes": 5279
+    },
+    {
+      "path": "scripts/capture-ffmpeg-win.cjs",
+      "sha256": "94a30fffaa9e0e4f0c0c2e5ac179d382594ec65f35a08a127037f371c67ca3cf",
+      "bytes": 2940
+    },
+    {
+      "path": "scripts/compare-inventory-notices.cjs",
+      "sha256": "64a4e8c97094033d0588709bd6020d1b186bb3591b806a07000f2ec727097bba",
+      "bytes": 5588
+    },
+    {
+      "path": "scripts/fetch-electron-build-materials.py",
+      "sha256": "e9ad4b54e456c28467199898eaf9013369229d0df67dc8a1df35326d55bca63b",
+      "bytes": 4268
+    },
+    {
+      "path": "scripts/inventory-asar-packages.cjs",
+      "sha256": "03459c9bfcfa0929a260ba15748734313459b630f968f17f792eb5f9760cc0d9",
+      "bytes": 2425
+    },
+    {
+      "path": "scripts/inventory-current-artifacts.py",
+      "sha256": "5b9eb42aa089efb26294e0e1019032b53173dcef4e49dcd7a90bc173d4e9f3f8",
+      "bytes": 8390
+    },
+    {
+      "path": "scripts/inventory-native-components.py",
+      "sha256": "20fe62914825dbd6cddca4dc48ac25ef483e1fef6725d49088c2630bf4212a0a",
+      "bytes": 10177
+    },
+    {
+      "path": "scripts/inventory-win-artifacts.cjs",
+      "sha256": "8944bd658019001410c9abd225f571ddacffa3a31367eb8fcb0023a8081a3350",
+      "bytes": 6629
+    },
+    {
+      "path": "scripts/investigate-library-versions.cjs",
+      "sha256": "27c3b4f69d101aa9e05535c05d63c81aad49e05aa9a2a4bb1e9902ccfa22b02e",
+      "bytes": 4275
+    },
+    {
+      "path": "scripts/library-source-plan.json",
+      "sha256": "b8f50a0cdb516596ffa9b089de15eef491ff590f76286f06b5cba9096e8a7d71",
+      "bytes": 3894
+    },
+    {
+      "path": "scripts/normalize-mac-names.cjs",
+      "sha256": "68b0af4920a9bea27fe9793df8bd095c146ca972dc85cb33a9dce876363ac80e",
+      "bytes": 2101
+    },
+    {
+      "path": "scripts/prepare-electron-source-delivery.py",
+      "sha256": "c2e1b03c53e3db21ba36ac65c17fdb1dc7efeacc0203f1df48b77ae180fb55ae",
+      "bytes": 8285
+    },
+    {
+      "path": "scripts/prepare-ffmpeg-source-review.ps1",
+      "sha256": "fe1d92a205d94fe23e82209a5790939d5c8b10275373ee4f04f937d6074035e8",
+      "bytes": 6039
+    },
+    {
+      "path": "scripts/prepare-mac-publication.py",
+      "sha256": "40b751651b93ccbc640eef28066361d8b0efc8130caacdf27b594b75b686d8d8",
+      "bytes": 5484
+    },
+    {
+      "path": "scripts/probe-ffmpeg-libraries.cjs",
+      "sha256": "7440949eb1bbaa6b6e193f209407ec956b6fe20f8abd11726091d5e5d8776f91",
+      "bytes": 3580
+    },
+    {
+      "path": "scripts/record-release-provenance.py",
+      "sha256": "19f57260f0ee06714ceba7771f32368208ba5839a65e5bd39c04bf90f85f5631",
+      "bytes": 6512
+    },
+    {
+      "path": "scripts/source-archive-git-tree.py",
+      "sha256": "5b46bc156dede7b843e585a9da415ad0eeb5b798fb44c662f681adaa227ca147",
+      "bytes": 1982
+    },
+    {
+      "path": "scripts/summarize-library-sources.cjs",
+      "sha256": "35d619c9a53a4ebbba75a3148277b6a7c2aa52bf1d65a1e71f40c47ea9603b13",
+      "bytes": 14609
+    },
+    {
+      "path": "scripts/verify-artifact-licenses.cjs",
+      "sha256": "ecc2d1290c74cd146d29766ec5e0dd5fe0c42daaebf8ee1fe5c1bd13270a897c",
+      "bytes": 5065
+    },
+    {
+      "path": "scripts/verify-electron-license-materials.py",
+      "sha256": "a2e21001c72a200334ecfce09cc2802d0e3acdb5a464d51b334056e730dc18ac",
+      "bytes": 6649
+    },
+    {
+      "path": "scripts/verify-ffmpeg-source.py",
+      "sha256": "bb61aecbbb7cc7f88483a8cc0399bec5694e58cce7feba963b32e76d3f23ea5f",
+      "bytes": 3068
+    },
+    {
+      "path": "scripts/verify-library-sources.py",
+      "sha256": "a1a424712baebb755256f29e286cf7d708546d7d285354b87366043d5f557dca",
+      "bytes": 5241
+    },
+    {
+      "path": "scripts/verify-packaged-licenses.cjs",
+      "sha256": "e7c39a617f331e42f270efd92f4fd2c36415df24114027bc86c7cf3d34c9a967",
+      "bytes": 4838
+    },
+    {
+      "path": "scripts/verify-release-candidate.cjs",
+      "sha256": "4dcc453759ea5d141f7440bcb6738a75d734fa69db7d1847b5269efb48fc8c14",
+      "bytes": 17982
+    },
+    {
+      "path": "scripts/verify-windows-installer-materials.py",
+      "sha256": "382ab8014b6c72f899ba8a9732bf10866680631ba60fc55ee1df141e674ba399",
+      "bytes": 7407
+    },
+    {
+      "path": "src/App.jsx",
+      "sha256": "4061227a5081c28c8518128922871e6639bda654cded2d26f95ba5476ce4ffb6",
+      "bytes": 5041
+    },
+    {
+      "path": "src/components/bottom/BottomPanel.jsx",
+      "sha256": "dd18d2f017e724e8832ac718aedc265830cfe310c3221119de912540a475c5d5",
+      "bytes": 1138
+    },
+    {
+      "path": "src/components/bottom/ConstructionDockPanel.jsx",
+      "sha256": "2b48db20ae44ee908f876d9f865f6f4912f6c9d7c788fc9c7cb6773a60e3be97",
+      "bytes": 2305
+    },
+    {
+      "path": "src/components/bottom/MaterialPanel.jsx",
+      "sha256": "d6119cf11463f74bc0e277513df0b4c56be22054fe3ee6bbfd9dcf6ff471b3e2",
+      "bytes": 2091
+    },
+    {
+      "path": "src/components/bottom/MissionPanel.jsx",
+      "sha256": "ba59ce61508c7f4eb945cf6881a23a280f336c564099be565ae3c189c8bed971",
+      "bytes": 2091
+    },
+    {
+      "path": "src/components/bottom/QuestPanel.jsx",
+      "sha256": "56f9df1c1e96c6631301971ed8bcd501d4803da6816328ab647a3df9af803419",
+      "bytes": 710
+    },
+    {
+      "path": "src/components/bottom/RepairDockPanel.jsx",
+      "sha256": "326002387518ff58fc82a2df681d3c99092055f39c68f9d5b2ebeba4a7a22b70",
+      "bytes": 1975
+    },
+    {
+      "path": "src/components/bottom/SortiePanel.jsx",
+      "sha256": "a5a73201406bb6155364be7f7ce437c14508b063593a96278e5f9c57563a9dd1",
+      "bytes": 1864
+    },
+    {
+      "path": "src/components/fleet/EquipmentList.jsx",
+      "sha256": "c818f60a222bd2eb62f5e3d0fb18469bba1d9add289c8d3b9b334e2909fc4fcc",
+      "bytes": 1662
+    },
+    {
+      "path": "src/components/fleet/FleetHeader.jsx",
+      "sha256": "5a74010fdeb1056a1c4456f5862b3973304d2c7142cf5f5320b8c5b1144fe3fb",
+      "bytes": 1224
+    },
+    {
+      "path": "src/components/fleet/FleetPanel.jsx",
+      "sha256": "17ce50a89af79666f0841c8bdfdc1cd54cfec3f8d236ab6be17834828479a50c",
+      "bytes": 3080
+    },
+    {
+      "path": "src/components/fleet/ProficiencyMark.jsx",
+      "sha256": "390847c90c4443d9e6004e93f098c2dd5c030d27e5a9f02cf9cae28c976afe40",
+      "bytes": 913
+    },
+    {
+      "path": "src/components/fleet/ShipCard.jsx",
+      "sha256": "6b281efec97e1d2275c4566754121956f41f55db6f6d51a4b1f9df431a8a6716",
+      "bytes": 1513
+    },
+    {
+      "path": "src/components/fleet/ShipStats.jsx",
+      "sha256": "f357d3c1d7020ba35ce09909b4096e654afca29c939eefbdacc3d6134d07068f",
+      "bytes": 1395
+    },
+    {
+      "path": "src/hooks/useKancolleData.js",
+      "sha256": "b956a658d406c18f2fce9d675a3718e390dad0bb2e40c190044bcf4952d4a3cb",
+      "bytes": 2203
+    },
+    {
+      "path": "src/hooks/useRecording.js",
+      "sha256": "c66c9727f7753cf818667b628c43a454d1f3f0b6f7234712c1f6e26478d411da",
+      "bytes": 5403
+    },
+    {
+      "path": "src/hooks/useScreenshot.js",
+      "sha256": "9d58bc7be70302f91fccd7cd5b03eb944f3452d4e581aef67527bd97130edfde",
+      "bytes": 1397
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "7c32b5ac35c6ead5b4cf7fcf2f52c9784b179e0b15e41b5f27bc96dcac3a29db",
+      "bytes": 377
+    },
+    {
+      "path": "src/main.jsx",
+      "sha256": "e7ec9302596619c362c864ba1e1732807596b478554381032f0e27971666cabe",
+      "bytes": 240
+    },
+    {
+      "path": "src/mapNodeLabels.js",
+      "sha256": "347ea74274efb599ef7d1b80b8dcbc11498b5f6243e658b767e5ad2614132b49",
+      "bytes": 6933
+    },
+    {
+      "path": "src/styles/base.css",
+      "sha256": "9418bb3cb8ceed316995ba09a55ebd91e882a3507e2c373358f8353f29156183",
+      "bytes": 2675
+    },
+    {
+      "path": "src/styles/bottom-panel.css",
+      "sha256": "b26416d2e06a1a0cd3b0caca43693be6e5bfe36019dfdf258a18f311128a1c87",
+      "bytes": 5809
+    },
+    {
+      "path": "src/styles/controls.css",
+      "sha256": "db70f263f10b5fba1466f2c36248edd7114b181ccc357f9bae690987f1434330",
+      "bytes": 3409
+    },
+    {
+      "path": "src/styles/fleet-panel.css",
+      "sha256": "943a431b3f45d5b182db0199d7d64662320762b6f3078461b066e2f0e014149f",
+      "bytes": 8825
+    },
+    {
+      "path": "src/styles/layout.css",
+      "sha256": "b940a7b60302fb6b8f61531efbbb48b5a0f5db3642f10241bfef995eb76d1832",
+      "bytes": 1649
+    },
+    {
+      "path": "src/utils/fleetCalculations.js",
+      "sha256": "c41d485544083d77cca0df09c65ead6e95d0da9fc7523c2328d60d601d728f62",
+      "bytes": 1501
+    },
+    {
+      "path": "src/utils/formatters.js",
+      "sha256": "54daa2399393fab9343d8b1d0625f8a886b8064021198821d0af737242d1a796",
+      "bytes": 1122
+    },
+    {
+      "path": "src/utils/shipDisplay.js",
+      "sha256": "88be57ef8d83aeb82b92440c0312f627e64b90630a06bde58948589687c2b0dd",
+      "bytes": 1383
+    },
+    {
+      "path": "tests/ffmpeg-source-scope.test.py",
+      "sha256": "c18d5a2d78378ad71b6e52b52c1b7413b37f579b93c8b570a1e98ce56054c59c",
+      "bytes": 1682
+    },
+    {
+      "path": "tests/packaged-licenses.test.cjs",
+      "sha256": "1139dde9d5e778d74a88f8d5df2a23941af701d21d1ed20fafd2df3dca6012c5",
+      "bytes": 5594
+    },
+    {
+      "path": "tests/recording.test.cjs",
+      "sha256": "eade221a8679edbb5e1669da3826f6825e11689aea0e67dfb2f73216777e5fb6",
+      "bytes": 3776
+    },
+    {
+      "path": "tests/release-candidate.test.cjs",
+      "sha256": "f779b0566f3a849abf302baac8944f0eaf260be8db8c5d94560902409ae6d062",
+      "bytes": 2567
+    },
+    {
+      "path": "tests/source-delivery.test.py",
+      "sha256": "7f2e1a675567cb21c2aad61d55692fd89c67cd69a319ab9c3b090f731198d72d",
+      "bytes": 2843
+    },
+    {
+      "path": "third_party/electron-44.0.0/README.md",
+      "sha256": "bb3ea29b44e8ddeeacd5798ec17f6c4322fe9ffbab8ae8f9f1464f2ea5be75a5",
+      "bytes": 2162
+    },
+    {
+      "path": "third_party/ffmpeg/win32-x64/README.md",
+      "sha256": "3c6d4f152e9759d772c02773cf57ef76dd0206e47123e8f04a31c35f320d7473",
+      "bytes": 2683
+    },
+    {
+      "path": "third_party/ffmpeg/win32-x64/libraries/.gitignore",
+      "sha256": "445f3bb4139b8126f9f7869ce06800e25ba1e75957659ec25ee33773823d0535",
+      "bytes": 161
+    },
+    {
+      "path": "third_party/ffmpeg/win32-x64/libraries/README.md",
+      "sha256": "e3c27048c3f3a2430a0e6316fea8b2c924740b282297a1b55ad088b7c47290cf",
+      "bytes": 2897
+    },
+    {
+      "path": "third_party/windows-installer/README.md",
+      "sha256": "70cd70b806e30e05dc43472e5d4044402c98ce5834ed8733f217c18a2d1de164",
+      "bytes": 1227
+    },
+    {
+      "path": "third_party/windows-installer/sources.json",
+      "sha256": "89645cc4ca2178ab1c691373591a4fb2efd46659a2666b5fb0b7cde4b8520303",
+      "bytes": 1350
+    },
+    {
+      "path": "vite.config.mjs",
+      "sha256": "ff00188e0f96dfc3811ba345df84e24006ecd50c7fc9482cb0bfd8ca116adae8",
+      "bytes": 347
+    }
+  ],
+  "auditEvidence": [
+    {
+      "path": "docs/native-inventory-2026-10-02/REPORT.md",
+      "sha256": "9b788ab647a184ef98d01f9d4802a1d0a85eedfbebd79b927d87ea8f29780a0a"
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/inputs.json",
+      "sha256": "3b21c1383b92fce4334a0327c8c267be5cfee5b6bc0e2c1668cdfbff43ba9190"
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/mac-publication.json",
+      "sha256": "7a211a04246d72dbec9246a1de48c9316e5d7af299f380b50b5663d1334e83d1"
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/static-components.json",
+      "sha256": "2ecb2e88bb61ae7c087a13af16e4595a8d840637d9d14789a47b6e613dffe995"
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/summary.json",
+      "sha256": "381a256ccdbe578b359c3d0d60f80bd1b2d85d54cde62e60ec30725b325f7a68"
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/windows-portable-candidate.json",
+      "sha256": "d4504fcab16097e47295a3343b59e750b84862cc6ecf22c5aab260ba141e4586"
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/windows-saved-publication.json",
+      "sha256": "546f14afd8f924e4b8f1c4aefcb4be811294e390c5963344f560147c58715a56"
+    },
+    {
+      "path": "docs/native-inventory-2026-10-02/windows-setup-candidate.json",
+      "sha256": "5dbc0fda49b0c80a155da6d9cde6c66595d1cf8d0c6fd6d58b0bd05ab7b7724d"
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/README.md",
+      "sha256": "07778154a645599b28cf2bbc578f842de7009eed7ff110699626ee779cacbcc8"
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/additional-evidence.json",
+      "sha256": "7b60238785cec134779972faa9b467fe50cc06252e77164d7a3322b2ab874b22"
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/evidence/libcxx-BUILD.gn",
+      "sha256": "cec5bd123e3b041da7ce7ec783e0f4f3b73ff20ead7254b05d414e589517e3f8"
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/evidence/libcxxabi-BUILD.gn",
+      "sha256": "e4b79d020ddd14bb8db439742a3e780f4a3137ef8343484bc6c217263a904f50"
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/evidence/llvm-libc-BUILD.gn",
+      "sha256": "6ecfdc0af325abc66d4e713a5415c8dd493659a797ee263eb81ad434ced6dc77"
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/llvm-commit.json",
+      "sha256": "97fec29ed23ffa3bed1b7b8c0003c2caed7e682f03d63ad82920d29b0ef840fe"
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/scope.json",
+      "sha256": "835725b46bc44d33909c32e49cfad7eec8ce9a898fda8d46fe98b12360bc860d"
+    },
+    {
+      "path": "docs/ffmpeg-source-scope-2026-10-02/source-files.json",
+      "sha256": "d0b3e225ae8b6f2547a8efabea76e654c3b2f59ca87be2d034f2071ef637368d"
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/REPORT.md",
+      "sha256": "f5831e1fc76eaa235d94460a30aa740814d934000af3cb532df10aed15b1598f"
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/compiler-rt-clang-files.json",
+      "sha256": "acf6c5b60e5d63487bc98f171a7976439edf522d092ccd554405ab515490044a"
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/evidence/compiler-rt-clang-LICENSE.TXT",
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/evidence/libcxx-LICENSE.TXT",
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/evidence/libcxxabi-LICENSE.TXT",
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/evidence/llvm-libc-LICENSE.TXT",
+      "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47"
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/inputs.json",
+      "sha256": "9547d91ec0bf6d3e70ec85cda4d0430a218606a79f3e34bb419e1cc63e70ca4e"
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/libcxx-files.json",
+      "sha256": "718d7e927271d082a6eb6afcfab802fd2d4e33799262650d893621d7077b89a0"
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/libcxxabi-files.json",
+      "sha256": "9c46506dbe7022417ab1455509351caad8b85ded3069b3fc93a387f29500c122"
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/llvm-libc-files.json",
+      "sha256": "de099df83f7812af2ac5ce64e1771fe952e521b2e19523c5289e3acb95bfd96f"
+    },
+    {
+      "path": "docs/static-link-review-2026-10-02/runtime-inputs.json",
+      "sha256": "9dde57a593b142946990a2fed26e180d767433ee342a20978737a254260ecb22"
+    },
+    {
+      "path": "docs/mac-publication-2026-10-02/README.md",
+      "sha256": "c73f3f54c55ea3df8dfaed4afe32161788f6b4d1421b15d5bf19a6d21346a569"
+    },
+    {
+      "path": "docs/mac-publication-2026-10-02/RELEASE-NOTES.md",
+      "sha256": "ec915b9b43128c444374fe7102d96c67d6f3424fe2f807de99434602ef42e18f"
+    },
+    {
+      "path": "docs/mac-publication-2026-10-02/publication.json",
+      "sha256": "7a8b8dc36e7dfdb46c2b15e2f0a3d07543e6c25143ce7daf94b640ea17c3537e"
+    }
+  ],
+  "historicalBuildOriginComplete": false,
+  "completeStaticLinkReview": false,
+  "completeCorrespondingSource": false,
+  "limits": [
+    "Current HEAD is not assigned as the historical build commit.",
+    "Original Mac/Windows publication ZIP build logs and exact build-time dirty trees are unavailable.",
+    "No rebuild, Xcode installation, library replacement test, signing or publication performed."
+  ]
+}

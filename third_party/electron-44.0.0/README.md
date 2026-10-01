@@ -30,3 +30,7 @@ URL・ハッシュは`docs/source-delivery-2026-09-27/build-materials.json`を�
 ビルドと交換の確認手順・公開先v1.0.0の状態は
 `docs/electron-license-review-2026-09-25/BUILD-AND-REPLACEMENT.md`に記録した。
 追加資料だけでは全ビルド入力が揃ったとは扱わない。
+
+2026-10-02: libc++／libc++abi／LLVM libc／Clang由来compiler-rt候補の固定ソースを追加取得。
+URL・SHA-256は `docs/static-link-review-2026-10-02/inputs.json`、再検査は
+`python3 scripts/audit-static-runtime-inputs.py`。既存公開用bundleには未統合で、完全対応ソースの判定は保留。

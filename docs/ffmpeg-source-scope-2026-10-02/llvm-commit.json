@@ -1,0 +1,8 @@
+{
+  "requestedRevision": "53d18800",
+  "sha": "53d18800eda3b7407e53366f27ca78e922c6e0db",
+  "html_url": "https://github.com/llvm/llvm-project/commit/53d18800eda3b7407e53366f27ca78e922c6e0db",
+  "tree": "16231c353c1d79b94ad3836849ebf7c10a0eeb01",
+  "source": "https://api.github.com/repos/llvm/llvm-project/commits/53d18800",
+  "scope": "Clang revision resolution; not proof of all patches in packaged runtime"
+}

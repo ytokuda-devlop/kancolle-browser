@@ -73,6 +73,7 @@ tests/
 !/third_party/windows-installer/sources.json
 
 !/docs/native-inventory-2026-09-26/
+!/docs/native-inventory-2026-10-02/
 
 !/docs/release-candidate-review-2026-09-26/
 !/tests/release-candidate.test.cjs
@@ -83,3 +84,13 @@ tests/
 /scripts/__pycache__/
 /tests/__pycache__/
 !/docs/mac-license-verification-2026-09-27/
+!/docs/mac-publication-2026-10-02/
+
+# macOS DMGs are local-only, including copies outside release/.
+*.dmg
+*.dmg.blockmap
+!/docs/ffmpeg-source-scope-2026-10-02/
+!/tests/ffmpeg-source-scope.test.py
+
+!/docs/static-link-review-2026-10-02/
+!/docs/release-provenance-2026-10-02/

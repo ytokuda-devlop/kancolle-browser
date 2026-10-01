@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mac-publication",
+    "path": "release/kancolle-browser_1.0.0_mac.zip",
+    "sha256": "9e7179f3f7309d5ac931e42b10e294d3bfb910cbe704181ee1a51e616c8007c3",
+    "role": "User-selected macOS publication ZIP; DMG excluded"
+  },
+  {
+    "id": "windows-saved-publication",
+    "path": "release/source-delivery-2026-09-27/downloads/kancolle-browser_1.0.0_x64.zip",
+    "sha256": "00f30dc3e76e6e928f3c5743b13a564b6f835f9172f0c7d6af965ce6f61e12b1",
+    "role": "Windows release ZIP retrieved on 2026-09-27; current remote publication not re-checked"
+  },
+  {
+    "id": "windows-setup-candidate",
+    "path": "release/release-candidate-2026-09-26/艦娘は今日もお仕事です（仮） Setup 1.0.0.exe",
+    "sha256": "8f2756cd1d7f38e98e80901af321018bd6ffc6eb8940e3f0b4999cb76d0e64e5",
+    "role": "Local unsigned Windows candidate from 2026-09-26; not newly designated as publication target"
+  },
+  {
+    "id": "windows-portable-candidate",
+    "path": "release/release-candidate-2026-09-26/艦娘は今日もお仕事です（仮） 1.0.0.exe",
+    "sha256": "f09cbdc63bb9e5ec6cc2c286ebc4e4aac407aee3b2b2f3ea07c7be8b156e8b80",
+    "role": "Local unsigned Windows candidate from 2026-09-26; not newly designated as publication target"
+  }
+]

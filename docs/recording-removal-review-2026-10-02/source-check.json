@@ -1,0 +1,155 @@
+{
+  "checkedAt": "2026-10-02T02:54:03.099326+00:00",
+  "bundleVerification": {
+    "archive": "electron-44.0.0-source-materials-2026-09-27.tar.gz",
+    "sha256": "fc497d1313aed57ee32c52e122a49daeb3322f55b3906386111e0067f9cee360",
+    "bytes": 48291769,
+    "verifiedFiles": 54,
+    "completeCorrespondingSource": false
+  },
+  "upstreamInputs": [
+    {
+      "path": "archives/ffmpeg-2b68d2babae7.tar.gz",
+      "sha256": "a1546b3448047be40d1da218649d54be9e6292b7e16d826f5e571d618c083a1b",
+      "matchesPinnedRecord": true,
+      "readableFiles": 11015
+    },
+    {
+      "path": "archives/electron-bf0c4e67e9a8.tar.gz",
+      "sha256": "071a12de219099ee28bdd7f8232c3a5a08e791e8845d392a9adb34d9e3419392",
+      "matchesPinnedRecord": true,
+      "readableFiles": 3074
+    },
+    {
+      "path": "materials/chromium/DEPS",
+      "sha256": "6d0b1775ce938dfadd2cff1adea4fef5fc27b33f6891a481b002cd31afea3c55",
+      "matchesPinnedRecord": true
+    },
+    {
+      "path": "materials/chromium/.gn",
+      "sha256": "b17d58c4d7d648fab31108af33e71a4dc6725667bc2df665a9ae8456683eba64",
+      "matchesPinnedRecord": true
+    },
+    {
+      "path": "materials/chromium/BUILD.gn",
+      "sha256": "3a975bdf5a09d3b652920bdd27cb68a0be8e51a5706b2710715f566c50f6b10c",
+      "matchesPinnedRecord": true
+    },
+    {
+      "path": "materials/chromium/LICENSE",
+      "sha256": "368cca1106be99d39ecd32a38d8305585d802a475effb66380b91ffc9bcf709b",
+      "matchesPinnedRecord": true
+    },
+    {
+      "path": "materials/chromium/docs/mac_build_instructions.md",
+      "sha256": "9b811cc15690efebc692652a568492c38e6f1fae157ff65544018dff323ebafd",
+      "matchesPinnedRecord": true
+    },
+    {
+      "path": "materials/chromium/docs/windows_build_instructions.md",
+      "sha256": "0d260d169d12b10be89d612008060c3e2cad594c18e2349709941321c0482099",
+      "matchesPinnedRecord": true
+    },
+    {
+      "path": "materials/chromium/build/config/mac/mac_sdk.gni",
+      "sha256": "5f0da18d8b5b39bc830f77f3e92c90a361881844f2e2cdc332ea06b9b5658e38",
+      "matchesPinnedRecord": true
+    },
+    {
+      "path": "materials/chromium/build/vs_toolchain.py",
+      "sha256": "5b258c09a6037b0d0ef3bb95d431fba562758592ee4424dbc261f80bf590b8f2",
+      "matchesPinnedRecord": true
+    },
+    {
+      "path": "materials/chromium/tools/clang/scripts/update.py",
+      "sha256": "0679888392d7a700fb3a3c3de93f56bfb4e4064a5a46ece798c306b63e98b7cd",
+      "matchesPinnedRecord": true
+    },
+    {
+      "path": "materials/chromium/third_party/opus/BUILD.gn",
+      "sha256": "436f0bfedbfc18c2a46f39f10667fe815e0aca6bf097e999930bfc36118deb33",
+      "matchesPinnedRecord": true
+    },
+    {
+      "path": "materials/chromium/third_party/opus/README.chromium",
+      "sha256": "e09b127a9a06d41673a98357ed758d6a6628621189961565f90bf368c6c88dff",
+      "matchesPinnedRecord": true
+    },
+    {
+      "path": "archives/chromium-build-24072c1aa400.tar.gz",
+      "sha256": "c468235365e9044df7da4c33692e165cff4f2ebcfaefd2c42c52ddf34d780eee",
+      "matchesPinnedRecord": true,
+      "readableFiles": 1484
+    },
+    {
+      "path": "archives/chromium-opus-24072c1aa400.tar.gz",
+      "sha256": "6de95c191d49e7629def816aa076f4be400eeb2789c9e08379369a21f4bb6488",
+      "matchesPinnedRecord": true,
+      "readableFiles": 715
+    },
+    {
+      "path": "archives/chromium-generate-stubs-24072c1aa400.tar.gz",
+      "sha256": "1fa32966c3f896eef76592baf3f8f0ec34fdafab1210666eabbd60bb371e1cd0",
+      "matchesPinnedRecord": true,
+      "readableFiles": 3
+    },
+    {
+      "path": "archives/nasm-525a09a813be0.tar.gz",
+      "sha256": "a6e91683aa747a74faadb5523221bd8b6065d4f9a182fd8afbf21f2a6392c459",
+      "matchesPinnedRecord": true,
+      "readableFiles": 1356
+    },
+    {
+      "path": "archives/depot-tools-38c391feba5f.tar.gz",
+      "sha256": "8e39084a044360f731aae504eedfcaafbf27f98e1bcd3eb49cf900e3bfaa59c7",
+      "matchesPinnedRecord": true,
+      "readableFiles": 830
+    }
+  ],
+  "recordedBundleStatus": {
+    "scope": "Electron 44.0.0 embedded FFmpeg, macOS x64 and Windows x64",
+    "completeCorrespondingSource": false,
+    "macosRebuildAndModifiedLibraryRuntime": "skipped by user request (Xcode not installed)",
+    "windowsRebuildAndModifiedLibraryRuntime": "not performed (Windows build environment unavailable)",
+    "transitiveBuildInputClosure": "not verified by GN; full Chromium checkout and PGO inputs not included",
+    "publication": "user will upload; public availability not yet verified",
+    "publicRelease": "https://github.com/ytokuda-devlop/kancolle-browser/releases/tag/v1.0.0",
+    "publicFfmpegBytes": "macOS and Windows match previously audited official Electron 44.0.0"
+  },
+  "ffmpegPatchFilesPresent": [
+    "link_with_loader_path.patch"
+  ],
+  "macConfig": [
+    "#define FFMPEG_LICENSE \"LGPL version 2.1 or later\"",
+    "#define CONFIG_GPL 0",
+    "#define CONFIG_NONFREE 0",
+    "#define CONFIG_VERSION3 0"
+  ],
+  "literalImportAudit": {
+    "availableGnFiles": 341,
+    "visited": 46,
+    "missing": [
+      "build/config/gclient_args.gni",
+      "build_overrides/build.gni",
+      "clank/config.gni",
+      "testing/test.gni",
+      "third_party/fuchsia-gn-sdk/src/component.gni"
+    ],
+    "limitation": "Conditions, generated files, Electron overlays and full target dependencies not evaluated; not every missing import is required on macOS."
+  },
+  "localAdditionalInputsNotIncluded": [
+    "llvm-libc-3ea89f430431.tar.gz",
+    "clang-mac-53d18800-1.tar.xz",
+    "chromium-tools-clang-24072c1aa400.tar.gz",
+    "libcxx-b16984ce99c7.tar.gz",
+    "compiler-rt-clang-53d18800eda3.tar.gz",
+    "libcxxabi-8f11bb1d4438.tar.gz"
+  ],
+  "publication": {
+    "status": "unpublished-confirmed-by-user",
+    "recordedReleaseUrl": "https://github.com/ytokuda-devlop/kancolle-browser/releases/tag/v1.0.0",
+    "anonymousApiRequest": "2026-10-02 HTTP 404; no public source asset downloaded. 404 alone does not distinguish private, missing or renamed release."
+  },
+  "completeCorrespondingSourceConfirmed": false,
+  "sourceDeliveryCompleted": false
+}

@@ -6,10 +6,16 @@
 Electron内蔵FFmpeg、対応する通知・ソース資料、旧録画変換用FFmpegの混入検査は維持する。
 旧FFmpegの調査資料と過去の監査結果は履歴として保持する。
 
-今回の変更では配布成果物を再生成していない。以下の過去の照合結果は録画廃止後の
-成果物の検証結果ではない。通知文書の変更により既存の固定基準は一致しなくなるため、
-次回配布時は新しい基準ファイルを作成し、再ビルドした最終成果物を検証する。
-過去の`baseline.json`や監査結果を上書きして現行版の結果として扱わない。
+2026-10-02、ユーザーから完成した配布ファイルでの動作確認完了の申告を受けた。
+確認項目はゲーム表示・音声再生、PNGキャプチャ、遠征・入渠・建造のカウントダウン、
+ポイント画面、録画ボタンがないこと。
+
+新しい固定基準を作成し、録画廃止後のMac ZIP・DMGの最終照合が成功した。
+アプリ1.0.0・Electron44.0.0・通知28件・npm5件・ネイティブ13件を確認し、両形式のASARも一致した。
+対象ファイルのハッシュ、固定基準、検証結果は[今回の記録](recording-removal-review-2026-10-02/REPORT.md)を参照。
+
+以後、通知や版を変更する場合は新しい固定基準を作成し、最終成果物を再検証する。
+過去の`baseline.json`や監査結果は上書きしない。以下は次回更新時のコマンド例。
 
 ```sh
 node scripts/verify-release-candidate.cjs --freeze path/to/new-baseline.json
@@ -52,11 +58,11 @@ Electron内蔵FFmpegのLGPL本文・macOSフレームワーク・WindowsのNSIS/
 Windows個別ソース記録を追加し、nbytesの原文通知も追加し、現時点の資料数はルート2件を含め28件。
 Windows部品の確定事項・残件は[2026-09-26の報告書](windows-license-review-2026-09-26/REPORT.md)を参照。
 
-| 配布先 | 閲覧場所 |
-| --- | --- |
-| macOSアプリ（ZIP／DMG内を含む） | `KancolleBrowser.app/Contents/Resources/licenses/` |
-| Windowsインストール先 | `resources/licenses/` |
-| Windows portable | 内部アプリの`resources/licenses/`（実行時に展開される） |
+| 配布先                          | 閲覧場所                                                |
+| ------------------------------- | ------------------------------------------------------- |
+| macOSアプリ（ZIP／DMG内を含む） | `KancolleBrowser.app/Contents/Resources/licenses/`      |
+| Windowsインストール先           | `resources/licenses/`                                   |
+| Windows portable                | 内部アプリの`resources/licenses/`（実行時に展開される） |
 
 macOSでは「パッケージの内容を表示」から閲覧できる。
 `LICENSES.chromium.html`も省略せず、そのまま収録する。

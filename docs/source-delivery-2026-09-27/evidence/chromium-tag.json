@@ -1,0 +1,10 @@
+{
+  "ref": "refs/tags/152.0.7977.54",
+  "node_id": "MDM6UmVmMTIwMzYwNzY1OnJlZnMvdGFncy8xNTIuMC43OTc3LjU0",
+  "url": "https://api.github.com/repos/chromium/chromium/git/refs/tags/152.0.7977.54",
+  "object": {
+    "sha": "24072c1aa400ec4a89dc738b6b6acd12a8589b6f",
+    "type": "commit",
+    "url": "https://api.github.com/repos/chromium/chromium/git/commits/24072c1aa400ec4a89dc738b6b6acd12a8589b6f"
+  }
+}

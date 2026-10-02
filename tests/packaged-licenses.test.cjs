@@ -12,6 +12,14 @@ const asar = require('@electron/asar');
 const projectConfig = require('../package.json');
 const selected = verify.licenseFiles(projectConfig);
 
+test('portable configuration requires its component notices', () => {
+  const project = structuredClone(projectConfig);
+  project.build.win.target = [{ target: 'portable', arch: ['x64'] }];
+  const entry = project.build.extraResources.find(e => e.from === 'licenses');
+  entry.filter = entry.filter.filter(n => n !== 'windows/nsis7z-README.txt');
+  assert.throws(() => verify.licenseFiles(project), /Missing portable license: windows\/nsis7z-README.txt/);
+});
+
 async function fixture(t) {
   const root = await fs.mkdtemp(path.join(os.tmpdir(), 'license-test-'));
   t.after(() => fs.rm(root, { recursive: true, force: true }));

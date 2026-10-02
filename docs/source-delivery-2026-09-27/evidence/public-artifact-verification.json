@@ -1,0 +1,99 @@
+[
+  {
+    "artifact": "kancolle-browser_1.0.0_mac.zip",
+    "sha256": "9e7179f3f7309d5ac931e42b10e294d3bfb910cbe704181ee1a51e616c8007c3",
+    "matchesPublicDigest": true,
+    "files": [
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/KancolleBrowser Helper (Plugin).app/Contents/Info.plist",
+        "sha256": "08c7f5a2dad090844d150b9d15e281d92d713f65ca4d3c8fda130efe9421cd49",
+        "bundleVersion": "1.0.0",
+        "bundleIdentifier": "jp.ytokuda.kancollebrowser.helper.Plugin"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Electron Framework",
+        "sha256": "36542878344780f376c0b91f24aeffb4cb21243d6c1dfd8f222add6cc617018e",
+        "symlinkTarget": "Versions/Current/Electron Framework"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework",
+        "sha256": "d2a5a75b572630817cb2893f20def244b21ed8d6e8b77db751db1b874ccfef6c",
+        "matchesAuditedOfficialElectron44": true
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/Info.plist",
+        "sha256": "1af74cd3d20b8e4f2120ec9bdf45385533e121ca6b43af91f1c82709778f2436",
+        "bundleVersion": "44.0.0",
+        "bundleIdentifier": "com.github.Electron.framework"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+        "sha256": "0ea472e75cdf7fb5b2786bf1c5d84fa81b1638199cc01008db58de2616a764c1",
+        "matchesAuditedOfficialElectron44": true
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/Resources/Info.plist",
+        "sha256": "4ded0fe1f4647f5b1862a2a98998aa7c3ade9bd925d097258e24667c446e7496",
+        "bundleVersion": "0.0.0",
+        "bundleIdentifier": "com.electron.reactive"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/Info.plist",
+        "sha256": "f61ab349887360a2d84603ecff17ab6633cb7fe2e8e72861f4e38e9120f472bf",
+        "bundleVersion": "1",
+        "bundleIdentifier": "com.github.Squirrel"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/Mantle.framework/Versions/A/Resources/Info.plist",
+        "sha256": "e93f0b4aaebea9bc158392ffa0c1150c16a0f30aecf11501b7871ce485f1a823",
+        "bundleVersion": "0.0.0",
+        "bundleIdentifier": "com.electron.mantle"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/KancolleBrowser Helper (GPU).app/Contents/Info.plist",
+        "sha256": "e9588001a600411c1fc62f0f1b17a689ac794653a223004bbcdde71e9d86e0fc",
+        "bundleVersion": "1.0.0",
+        "bundleIdentifier": "jp.ytokuda.kancollebrowser.helper.GPU"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/KancolleBrowser Helper (Renderer).app/Contents/Info.plist",
+        "sha256": "86a7eaa731c9d63495bb3472b12e8f2cb893527e4057337b4cb0ff49e3d20499",
+        "bundleVersion": "1.0.0",
+        "bundleIdentifier": "jp.ytokuda.kancollebrowser.helper.Renderer"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Frameworks/KancolleBrowser Helper.app/Contents/Info.plist",
+        "sha256": "58f3713da7a857a1e7791b4dea57da93a04362272cef4d86bf0565b01ed7bf92",
+        "bundleVersion": "1.0.0",
+        "bundleIdentifier": "jp.ytokuda.kancollebrowser.helper"
+      },
+      {
+        "path": "KancolleBrowser.app/Contents/Info.plist",
+        "sha256": "beee1c8bd47c6722d497dc66f1581380e5df53aa4aa57597b3cf3f7e20e72b9f",
+        "bundleVersion": "1.0.0",
+        "bundleIdentifier": "jp.ytokuda.kancollebrowser"
+      }
+    ]
+  },
+  {
+    "artifact": "kancolle-browser_1.0.0_x64.zip",
+    "sha256": "00f30dc3e76e6e928f3c5743b13a564b6f835f9172f0c7d6af965ce6f61e12b1",
+    "matchesPublicDigest": true,
+    "files": [
+      {
+        "path": "kancolle-browser_1.0.0_x64.exe",
+        "sha256": "1132a93b697bdec44f15d6c9e6300fb2ee915f8db3944785e1b1982dfd1bef58",
+        "extractedTo": "release/source-delivery-2026-09-27/downloads/kancolle-browser_1.0.0_x64.exe"
+      },
+      {
+        "path": "windows-container/$PLUGINSDIR/app-64.7z/ffmpeg.dll",
+        "sha256": "0b4a5071d9cee1c8318f365d977f271ce771be8cce214cd12e24b714e239ff16",
+        "matchesAuditedOfficialElectron44": true,
+        "matchingInventories": [
+          "setup-app",
+          "portable-app"
+        ]
+      }
+    ]
+  }
+]

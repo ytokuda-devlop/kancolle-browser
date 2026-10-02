@@ -14,11 +14,6 @@ contextBridge.exposeInMainWorld('electronAPI', {
   // ゲーム画面のスクリーンショットを Pictures へ保存する
   captureScreenshot: () => ipcRenderer.invoke('game:capture-screenshot'),
 
-  startRecordingFile: () => ipcRenderer.invoke('game:recording-start'),
-  appendRecordingChunk: (sequence, bytes) => ipcRenderer.invoke('game:recording-chunk', sequence, bytes),
-  finishRecordingFile: () => ipcRenderer.invoke('game:recording-stop'),
-  abortRecordingFile: () => ipcRenderer.invoke('game:recording-abort'),
-
   // DMM 公式のポイント画面をゲームと同じセッションの別ウィンドウで開く
   openDmmPointPage: (action) => ipcRenderer.invoke('dmm:open-point-page', action),
 

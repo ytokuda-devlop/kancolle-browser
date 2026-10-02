@@ -1,6 +1,6 @@
 /*
  * メインウィンドウと艦これゲームビューを生成し、画面配置とブラウザ動作を設定するモジュール。
- * セッション、録画対象、ショートカット、ゲームページ調整、API捕捉、表示ライフサイクルを接続する。
+ * セッション、ショートカット、ゲームページ調整、API捕捉、表示ライフサイクルを接続する。
  */
 const {
   app,
@@ -118,17 +118,6 @@ function createWindow() {
       contextIsolation: true,
       nodeIntegration: false
     }
-  });
-
-  // UIのgetDisplayMedia要求には、ゲームビューだけの映像・音声を渡す。
-  // enableLocalEchoにより録画中もゲーム音をスピーカーから再生し続ける。
-  runtime.mainWindow.webContents.session.setDisplayMediaRequestHandler((request, callback) => {
-    if (!runtime.gameView || runtime.gameView.webContents.isDestroyed()) {
-      callback({});
-      return;
-    }
-    const gameFrame = runtime.gameView.webContents.mainFrame;
-    callback({ video: gameFrame, audio: gameFrame, enableLocalEcho: true });
   });
 
   // ゲーム内のアイテム購入が要求するDMM決済画面を、同じログイン

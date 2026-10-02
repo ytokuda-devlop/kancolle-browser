@@ -1,0 +1,154 @@
+{
+  "checkedAt": "2026-09-26T06:33:46.687Z",
+  "artifact": "艦娘は今日もお仕事です（仮） 1.0.0.exe",
+  "sha256": "49ff7072e3a90c4591ef0568e2251c265370b1db2789033c68bc8b4a03bf7f80",
+  "payloads": [
+    {
+      "fileCount": 28,
+      "files": [
+        {
+          "path": "DISTRIBUTION-NOTES.txt",
+          "bytes": 3407,
+          "sha256": "5d421545fabf2f008543ac30f4709c06b333fec9039eafc00f8eb93a644fbe9e"
+        },
+        {
+          "path": "electron-LICENSE.txt",
+          "bytes": 1096,
+          "sha256": "5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d"
+        },
+        {
+          "path": "LICENSES.chromium.html",
+          "bytes": 20111206,
+          "sha256": "4cbde8e3e7b29f451c78a44491fb32e2202884826fef47786a9cda5a36110525"
+        },
+        {
+          "path": "react-LICENSE.txt",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "path": "react-dom-LICENSE.txt",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "path": "scheduler-LICENSE.txt",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "path": "npm/js-tokens-LICENSE.txt",
+          "bytes": 1103,
+          "sha256": "2213d91c606205c71eb051a199478cdc2adde945893404d7f1421436dd6d5cc1"
+        },
+        {
+          "path": "npm/loose-envify-LICENSE.txt",
+          "bytes": 1100,
+          "sha256": "4eb7543b08d955a6d23fcc224601d43ff566e775be918805e26210d7f6eb4893"
+        },
+        {
+          "path": "electron-components/Mantle-LICENSE.md",
+          "bytes": 2445,
+          "sha256": "285eede6f638adc9c352be7d66134611e5ea95044095a84de9867fb864e66eab"
+        },
+        {
+          "path": "electron-components/ReactiveObjC-LICENSE.md",
+          "bytes": 1093,
+          "sha256": "095fec1a3d6ad029fe0661fa6092a272d50af016b1771992e0bba9b2a73e7763"
+        },
+        {
+          "path": "electron-components/Squirrel-LICENSE.txt",
+          "bytes": 1073,
+          "sha256": "6f240e244a105d6366bc898ac9c67460624c9052839d4b988c6dbe4c571008b3"
+        },
+        {
+          "path": "electron-components/LGPL-2.1.txt",
+          "bytes": 26517,
+          "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30"
+        },
+        {
+          "path": "electron-components/FFmpeg-CREDITS.txt",
+          "bytes": 47960,
+          "sha256": "903a6faa336b60d419bc6eb2bcffe4ca8bd9446735e5de4fcc901c80e9f22327"
+        },
+        {
+          "path": "ELECTRON-SOURCES.txt",
+          "bytes": 5649,
+          "sha256": "eef8ead1ba75ff80ae830dd95ae19e6a8ed9de2afcc2cc4446ab09ac9990e8aa"
+        },
+        {
+          "path": "windows/NSIS-COPYING.txt",
+          "bytes": 15488,
+          "sha256": "3c8de989f6504d52f5f8dfafedb6668cd47201f5d01f1319570727c091425dd6"
+        },
+        {
+          "path": "windows/StdUtils-README.html",
+          "bytes": 92207,
+          "sha256": "be145d4687f5efa1d45ce7d059c92230d003b5da00dd55f24346278798c7bad9"
+        },
+        {
+          "path": "windows/StdUtils-ReadMe.txt",
+          "bytes": 1380,
+          "sha256": "31b67e463c6e5695e9ffaf62dd077d9bd62df34026593c2f29bc9ea87fdac72f"
+        },
+        {
+          "path": "windows/StdUtils-blake2-COPYING.txt",
+          "bytes": 7169,
+          "sha256": "f4e7f373b9b996950337e8d41a4a2939c2d90b7725e9baf3d5084a22717ad328"
+        },
+        {
+          "path": "windows/StdUtils-rhash-COPYING.txt",
+          "bytes": 766,
+          "sha256": "842fef4921191943e531c6cc939b0334f1c2658c9204e30dd35d13f51fdf70dd"
+        },
+        {
+          "path": "windows/UAC-LICENSE.txt",
+          "bytes": 956,
+          "sha256": "997fd014643f27a2f240faf9b9b54a98371775c63eb38134829154794f7326fa"
+        },
+        {
+          "path": "windows/nsis7z-README.txt",
+          "bytes": 5875,
+          "sha256": "881f8ba4da0a0c30e281d324408baa596f14211b03d1f3bf99fe18c4621916c3"
+        },
+        {
+          "path": "windows/nsis7z-LZMA-SDK-LICENSE.txt",
+          "bytes": 476,
+          "sha256": "63fcfe54826809b5a9f9df8a8ff53c04330122319ec67a2dd815085586adaf0e"
+        },
+        {
+          "path": "windows/elevate-upstream-LICENSE.md",
+          "bytes": 1119,
+          "sha256": "c8513abf1a738a5420f288c1be9c774b386785cc99c313f8543296321d06f04d"
+        },
+        {
+          "path": "windows/electron-builder-LICENSE.txt",
+          "bytes": 1084,
+          "sha256": "bed8d0ab3e6031817f775a641ff37313b0f5591bc8ba0ed79b978dafbd4231ce"
+        },
+        {
+          "path": "windows/SOURCES.txt",
+          "bytes": 5636,
+          "sha256": "353fc3157f132dfde4d3c568cd7760b1f442f5fa1bb4d9064ce6f8f9a7dfb6cb"
+        },
+        {
+          "path": "electron-components/nbytes-LICENSE.txt",
+          "bytes": 1064,
+          "sha256": "782ab5b8ae1540c1a2b102fdd00990ed268d4a3a98e90ad7fe724b489d7bb0f2"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1072,
+          "sha256": "8d45dbb64725f1e576857001fefd33949abeb128e605530c19022595773f820c"
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.md",
+          "bytes": 10038,
+          "sha256": "06ac42ae43f0ffc6ca0ace06345a451205e74dc22168ca3bff1bc51d8344d581"
+        }
+      ],
+      "recordingFfmpegAbsent": true
+    }
+  ],
+  "scope": "Selected license file inclusion, byte equality and absence of recording FFmpeg; not full license/source clearance."
+}

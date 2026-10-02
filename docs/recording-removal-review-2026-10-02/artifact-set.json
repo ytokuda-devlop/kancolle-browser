@@ -1,0 +1,18 @@
+{
+  "createdAt": "2026-10-02T02:40:43.203665+00:00",
+  "headAtVerification": "c3a7023f9105f38f5a177ca83de4b3e755393727",
+  "statusAtVerification": " M docs/LICENSE-PACKAGING.md\n",
+  "artifacts": [
+    {
+      "path": "release/kancolle-browser_1.0.0_mac.zip",
+      "bytes": 134730795,
+      "sha256": "c4e444f7a68602a703a63d4f964ffbe40a8fb7f87110410e74c3aa9256d7e778"
+    },
+    {
+      "path": "release/艦娘は今日もお仕事です（仮）-1.0.0.dmg",
+      "bytes": 134636101,
+      "sha256": "45ceb6ca806b87aeb720e2fb41fa560063e301971a5d27bd150c24d2740f131a"
+    }
+  ],
+  "note": "HEAD at verification is not proof of the build commit. Existing artifact filenames may have been renamed."
+}

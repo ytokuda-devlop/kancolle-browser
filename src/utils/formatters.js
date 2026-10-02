@@ -13,10 +13,6 @@ export function formatRemainingTime(completeTimeMs, now) {
   return formatDuration(diff);
 }
 
-export function formatElapsedTime(startedAt, now) {
-  return formatDuration(Math.max(0, now - startedAt));
-}
-
 export function formatSortieNode(sortie, nodeId) {
   const label = getMapNodeLabel(
     sortie?.mapAreaId,

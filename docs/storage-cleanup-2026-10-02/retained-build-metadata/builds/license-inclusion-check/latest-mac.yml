@@ -1,0 +1,11 @@
+version: 1.0.0
+files:
+  - url: Kancolle-browser-1.0.0-mac.zip
+    sha512: aNRbzI4A2ZCDCOOjqGCK13wpDrgX1RUFw8WbONZ+qzAgEAabj4EdRWeaCJtk03APQti7Dtc7vksCBdmgGqrvKg==
+    size: 160367414
+  - url: Kancolle-browser-1.0.0.dmg
+    sha512: AJlERn5uMxewd7/V0aICikYB0TSPEpbphpKkZx5DwZ13fgnIYoHZoLf8SWWHAcbpL4FHNmRwQAkYwOQRZ2vVxg==
+    size: 160201085
+path: Kancolle-browser-1.0.0-mac.zip
+sha512: aNRbzI4A2ZCDCOOjqGCK13wpDrgX1RUFw8WbONZ+qzAgEAabj4EdRWeaCJtk03APQti7Dtc7vksCBdmgGqrvKg==
+releaseDate: '2026-09-24T14:07:55.469Z'

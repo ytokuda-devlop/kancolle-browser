@@ -1,13 +1,13 @@
 配布ライセンス方針
-更新日: 2026-09-26
-対象構成: MediaRecorderによるWebM保存（録画変換用FFmpegを削除した版）
+更新日: 2026-10-02
+対象構成: 録画機能廃止後の版（スクリーンショット保存は継続）
 
 配布対象・公開先
+  Windowsは単体portable EXE。Setupインストーラーは生成しない。
   macOS x64（Intel）、Windows 11 x64。arm64は今バージョン非対応。
   公開先はGitHub Releases。未署名版のみを配布し、署名版は作成しない。
   公開・全OSの最終成果物監査は別途行う。
-  macOSでの録画・音声同期・シークは利用者による確認済み。
-  この動作確認はライセンス監査の完了を意味しない。
+  録画対応版の動作確認・成果物監査の結果は、録画廃止後の成果物へ流用しない。
 
 ライセンスの適用
   アプリ独自ソースコードのMITライセンスと著作権表示を維持する。
@@ -18,6 +18,8 @@
   配布物の全コンポーネントがMITであると表示しない。
 
 削除した部品に関する扱い
+  MediaRecorderによる録画、映像・音声の取得、録画ファイルの保存処理を削除した。
+  保存済み動画や保存失敗時の復旧用一時ファイルは自動削除しない。
   録画変換用FFmpeg、ffmpeg-static、およびその実行ファイルに静的リンクされていた
   x264・x265等の対応ソース確保・提供作業は、それらを含まない新構成では対象外。
   これは旧版の対応ソース準備が完了したという意味ではない。
@@ -31,9 +33,9 @@ Electron内蔵FFmpeg
   Mantle・ReactiveObjC・Squirrelの固定リビジョンと通知を確認し、原文を追加した。
   Electron内蔵FFmpegのLGPL構成と対応リビジョン、Windows StdUtilsの出典も特定済み。
   詳細とソース提供の残作業はELECTRON-SOURCES.txtを参照する。
-  WindowsのUAC・nsis7z等の追加原文と版別の検証結果はwindows/SOURCES.txtを参照。
-  WinShellの再配布条件、elevate.exeの対応ソース由来、nsis7zの
-  ソース提供・交換方法の確認は未完了。新しい通知の収録を配布準備完了と扱わない。
+  portableのNSIS・System・StdUtils・nsis7zと同梱elevate.exeを監査対象に戻す。
+  原文通知・ソース記録を収録する。UAC・WinShell・アンインストーラーは対象外。
+  対応ソース提供と部品調査の残件はwindows/SOURCES.txtを参照する。
 
 収録資料と検証
   ルートLICENSE、THIRD_PARTY_NOTICES.mdと、package.jsonの

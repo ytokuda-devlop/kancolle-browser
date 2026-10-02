@@ -44,7 +44,6 @@ docs/
 tests/
 !/tests/
 /tests/*
-!/tests/recording.test.cjs
 
 !/tests/packaged-licenses.test.cjs
 !/docs/

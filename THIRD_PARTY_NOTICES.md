@@ -64,8 +64,8 @@ modification in `licenses/LICENSES.chromium.html` under the ffmpeg entry.
 - Project and licensing information: <https://ffmpeg.org/legal.html>
 - Electron source: <https://github.com/electron/electron/tree/v44.0.0>
 
-Recordings are saved directly as WebM using MediaRecorder. This application
-no longer bundles `ffmpeg-static` or the separate recording-conversion FFmpeg
+The recording feature has been removed. This application does not bundle
+`ffmpeg-static` or the separate recording-conversion FFmpeg
 executable. The earlier GPL distribution policy for the application combined
 with `ffmpeg-static` does not apply to this configuration.
 

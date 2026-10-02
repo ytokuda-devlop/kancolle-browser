@@ -1,5 +1,29 @@
 # 配布成果物へのライセンス収録
 
+## 録画機能廃止後の構成（2026-10-02）
+
+現行コードから録画機能を削除した。スクリーンショット保存は継続する。
+Electron内蔵FFmpeg、対応する通知・ソース資料、旧録画変換用FFmpegの混入検査は維持する。
+旧FFmpegの調査資料と過去の監査結果は履歴として保持する。
+
+今回の変更では配布成果物を再生成していない。以下の過去の照合結果は録画廃止後の
+成果物の検証結果ではない。通知文書の変更により既存の固定基準は一致しなくなるため、
+次回配布時は新しい基準ファイルを作成し、再ビルドした最終成果物を検証する。
+過去の`baseline.json`や監査結果を上書きして現行版の結果として扱わない。
+
+```sh
+node scripts/verify-release-candidate.cjs --freeze path/to/new-baseline.json
+node scripts/verify-release-candidate.cjs path/to/new-artifact path/to/new-baseline.json path/to/new-report.json
+```
+
+録画廃止後の動作確認は、ゲーム表示・音声再生、PNGキャプチャ、遠征・入渠・建造の
+カウントダウン、ポイント画面、録画ボタンがないことを対象とする。
+Electron内蔵FFmpegの改変版交換を確認する場合も、現行版で提供する再生機能を検証し、
+読み込まれたライブラリの識別と交換前後のハッシュを記録する。
+過去の手順にある録画・WebM保存の確認は録画対応版にのみ適用する。
+
+## 過去の成果物と共通の収録手順
+
 正式候補の版・通知の照合は[2026-09-26の最終照合記録](release-candidate-review-2026-09-26/REPORT.md)を参照。
 `verify-release-candidate.cjs`は固定した基準を使い、アプリ版・Electronのコード領域・
 npmの版と条件・ネイティブ一覧・通知原文を最終コンテナから確認する。

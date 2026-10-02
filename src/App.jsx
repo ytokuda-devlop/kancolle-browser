@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 import BottomPanel from './components/bottom/BottomPanel';
 import FleetPanel from './components/fleet/FleetPanel';
 import useKancolleData from './hooks/useKancolleData';
-import useRecording from './hooks/useRecording';
 import useScreenshot from './hooks/useScreenshot';
-import { formatElapsedTime } from './utils/formatters';
 
 function App() {
   const {
@@ -20,12 +18,6 @@ function App() {
     isCapturingScreenshot,
     screenshotStatus
   } = useScreenshot();
-  const {
-    recordingStartedAt,
-    recordingState,
-    recordingStatus,
-    toggleRecording
-  } = useRecording();
   const [pointActionStatus, setPointActionStatus] = useState('');
   const [pendingPointAction, setPendingPointAction] = useState('');
   const [now, setNow] = useState(Date.now());
@@ -100,17 +92,6 @@ function App() {
                 {isCapturingScreenshot && <span className="button-spinner" aria-hidden="true" />}
                 {isCapturingScreenshot ? '保存中' : 'キャプチャ'}
               </button>
-              <button
-                className={`browser-control-button browser-control-recording ${recordingState === 'recording' ? 'is-recording' : ''}`}
-                onClick={toggleRecording}
-                disabled={recordingState === 'saving' || recordingState === 'preparing'}
-              >
-                {recordingState === 'saving'
-                  ? '保存中...'
-                  : recordingState === 'recording'
-                    ? `録画停止 ${formatElapsedTime(recordingStartedAt, now)}`
-                    : recordingState === 'preparing' ? '準備中...' : '録画'}
-              </button>
             </div>
             {pointActionStatus && (
               <div className="control-status control-status-error" title={pointActionStatus}>
@@ -120,11 +101,6 @@ function App() {
             {screenshotStatus && (
               <div className="control-status screenshot-status" title={screenshotStatus}>
                 {screenshotStatus}
-              </div>
-            )}
-            {recordingStatus && (
-              <div className="control-status recording-status" title={recordingStatus}>
-                {recordingStatus}
               </div>
             )}
           </section>

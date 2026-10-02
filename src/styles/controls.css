@@ -1,5 +1,5 @@
 /*
- * 右下のポイント、キャプチャ、録画操作と結果メッセージのスタイル。
+ * 右下のポイント、キャプチャ操作と結果メッセージのスタイル。
  * 操作ボタンの状態変化、処理中アニメーション、追加機能領域を定義する。
  */
 
@@ -32,7 +32,7 @@
 }
 
 .browser-controls-actions {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .browser-control-button {
@@ -78,26 +78,6 @@
 
 .browser-control-screenshot:hover:not(:disabled) {
   box-shadow: 0 5px 14px rgba(8, 145, 178, 0.48);
-}
-
-.browser-control-recording {
-  background: linear-gradient(180deg, #dc2626, #991b1b);
-  border-color: #f87171;
-}
-
-.browser-control-recording:hover:not(:disabled),
-.browser-control-recording.is-recording {
-  box-shadow: 0 5px 14px rgba(220, 38, 38, 0.48);
-}
-
-.browser-control-recording.is-recording {
-  animation: recording-pulse 1.5s ease-in-out infinite;
-}
-
-@keyframes recording-pulse {
-  50% {
-    filter: brightness(1.35);
-  }
 }
 
 .browser-control-point-charge {
@@ -146,11 +126,6 @@
   color: var(--text-secondary);
 }
 
-.recording-status {
-  color: #fca5a5;
-}
-
-
 .right-feature-panel {
   flex: 1;
   min-height: 0;
@@ -160,4 +135,3 @@
   padding: 8px;
   overflow: hidden;
 }
-

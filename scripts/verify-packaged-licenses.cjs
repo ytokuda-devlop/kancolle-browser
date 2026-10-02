@@ -14,14 +14,20 @@ function licenseFiles(project) {
     'npm/js-tokens-LICENSE.txt', 'npm/loose-envify-LICENSE.txt',
     'electron-components/Mantle-LICENSE.md', 'electron-components/ReactiveObjC-LICENSE.md',
     'electron-components/Squirrel-LICENSE.txt', 'electron-components/LGPL-2.1.txt',
-    'electron-components/nbytes-LICENSE.txt', 'electron-components/FFmpeg-CREDITS.txt', 'ELECTRON-SOURCES.txt', 'windows/NSIS-COPYING.txt',
-    'windows/StdUtils-README.html', 'windows/StdUtils-ReadMe.txt',
-    'windows/StdUtils-blake2-COPYING.txt', 'windows/StdUtils-rhash-COPYING.txt',
-    'windows/UAC-LICENSE.txt', 'windows/nsis7z-README.txt', 'windows/nsis7z-LZMA-SDK-LICENSE.txt', 'windows/elevate-upstream-LICENSE.md', 'windows/electron-builder-LICENSE.txt', 'windows/SOURCES.txt']) {
+    'electron-components/nbytes-LICENSE.txt', 'electron-components/FFmpeg-CREDITS.txt', 'ELECTRON-SOURCES.txt']) {
     if (!files.includes(required)) throw new Error(`Missing required license: ${required}`);
   }
   if (files.some(file => /^(ffmpeg\/|ffmpeg-static-GPL-3\.0\.txt$|FFmpeg-SOURCE\.txt$|ffmpeg-build-configuration\.txt$|GPL-3\.0\.txt$)/i.test(file))) {
     throw new Error('Legacy recording-conversion license material selected for distribution');
+  }
+  const targets = (project.build.win?.target || []).map(t => typeof t === 'string' ? t : t.target);
+  if (targets.includes('portable')) {
+    for (const name of ['NSIS-COPYING.txt', 'StdUtils-ReadMe.txt', 'StdUtils-README.html',
+      'StdUtils-rhash-COPYING.txt', 'StdUtils-blake2-COPYING.txt', 'nsis7z-README.txt',
+      'nsis7z-LZMA-SDK-LICENSE.txt', 'elevate-upstream-LICENSE.md',
+      'electron-builder-LICENSE.txt', 'SOURCES.txt']) {
+      if (!files.includes(`windows/${name}`)) throw new Error(`Missing portable license: windows/${name}`);
+    }
   }
   return files;
 }

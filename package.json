@@ -69,18 +69,17 @@
           "electron-components/LGPL-2.1.txt",
           "electron-components/FFmpeg-CREDITS.txt",
           "ELECTRON-SOURCES.txt",
+          "electron-components/nbytes-LICENSE.txt",
           "windows/NSIS-COPYING.txt",
-          "windows/StdUtils-README.html",
           "windows/StdUtils-ReadMe.txt",
-          "windows/StdUtils-blake2-COPYING.txt",
+          "windows/StdUtils-README.html",
           "windows/StdUtils-rhash-COPYING.txt",
-          "windows/UAC-LICENSE.txt",
+          "windows/StdUtils-blake2-COPYING.txt",
           "windows/nsis7z-README.txt",
           "windows/nsis7z-LZMA-SDK-LICENSE.txt",
           "windows/elevate-upstream-LICENSE.md",
           "windows/electron-builder-LICENSE.txt",
-          "windows/SOURCES.txt",
-          "electron-components/nbytes-LICENSE.txt"
+          "windows/SOURCES.txt"
         ]
       }
     ],
@@ -105,30 +104,23 @@
     "win": {
       "target": [
         {
-          "target": "nsis",
-          "arch": [
-            "x64"
-          ]
-        },
-        {
           "target": "portable",
           "arch": [
             "x64"
           ]
         }
-      ]
-    },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true
+      ],
+      "signExecutable": false
     },
     "publish": {
       "provider": "github",
       "owner": "ytokuda-devlop",
       "repo": "kancolle-browser",
       "releaseType": "draft"
+    },
+    "portable": {
+      "artifactName": "kancolle-browser_${version}_win.exe",
+      "requestExecutionLevel": "user"
     }
   }
 }

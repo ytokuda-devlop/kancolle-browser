@@ -116,40 +116,30 @@ the source repository at `docs/native-inventory-2026-09-26/REPORT.md`.
 Notice entries and build dependencies are not a complete per-platform linker
 map; review of transitive native components remains ongoing.
 
-### Windows installer components
+### Windows distribution
 
-NSIS 3.0.4.1 and nsis-resources 3.4.1 are selected by electron-builder 26.15.3.
-NSIS's original COPYING is included at `licenses/windows/NSIS-COPYING.txt`;
-its compression modules have additional terms described there. This notice
-does not determine the terms of every separately supplied plugin.
+Windows x64 is distributed as a single portable EXE. The NSIS launcher
+extracts the application for execution; no Setup installer is produced.
+The launcher includes System, StdUtils and nsis7z; its application payload
+also includes elevate.exe. UAC, WinShell and uninstallers are not included.
 
-StdUtils release 1.14 (DLL FileVersion 1.1.4.0) is licensed under
-LGPL-2.1-or-later. Its original notices, NSIS-use clarification and bundled-code
-credits are in `licenses/windows/StdUtils-ReadMe.txt` and
-`licenses/windows/StdUtils-README.html`. The LGPL text is provided at
-`licenses/electron-components/LGPL-2.1.txt`. RHash and BLAKE2 notices are also
-retained in `licenses/windows/StdUtils-rhash-COPYING.txt` and
-`licenses/windows/StdUtils-blake2-COPYING.txt`. Source locations and outstanding
-installer-component review are recorded in `licenses/ELECTRON-SOURCES.txt`.
-
-Additional Windows component findings (2026-09-26):
-
-| Component | Identified version | Terms / status |
-| --- | --- | --- |
-| UAC | 0.2.4c, 2015-05-26 | zlib/libpng; `licenses/windows/UAC-LICENSE.txt`; original DLL and source identified |
-| WinShell | 20121005 | Author labels it Freeware; precise redistribution conditions remain unresolved |
-| nsis7z | 19.00 | Plugin README states LGPL without a version; we elect LGPL 2.1 under section 13; LZMA SDK 19.00 is public domain |
-| elevate.exe | FileVersion 1, 0, 0, 2894 | Johannes Passing's original source is MIT; the provider binary's exact build provenance remains unresolved |
-| NSIS stubs / standard plugins | toolset 3.0.4.1 | Actual Setup, portable and uninstaller use the zlib stub; standard plugins retain NSIS terms |
-| Generated installer templates | electron-builder 26.15.3 | MIT; `licenses/windows/electron-builder-LICENSE.txt` |
-
-Original nsis7z notices are `licenses/windows/nsis7z-README.txt` and
-`licenses/windows/nsis7z-LZMA-SDK-LICENSE.txt`. The original elevate source
-license is `licenses/windows/elevate-upstream-LICENSE.md`; its inclusion does
-not assert that all terms of the provider binary have been verified.
-Exact source locations, obligations and remaining verification steps are
-recorded in `licenses/windows/SOURCES.txt`. No completed source delivery or
-permission beyond the applicable upstream terms is claimed.
+NSIS toolset 3.0.4.1 terms: `licenses/windows/NSIS-COPYING.txt`.
+electron-builder 26.15.3 templates are MIT:
+`licenses/windows/electron-builder-LICENSE.txt`.
+StdUtils 1.14 (DLL 1.1.4.0) is LGPL-2.1-or-later; original notices and
+NSIS-use clarification are in `licenses/windows/StdUtils-ReadMe.txt` and
+`licenses/windows/StdUtils-README.html`. RHash and BLAKE2 credits are in
+`licenses/windows/StdUtils-rhash-COPYING.txt` and
+`licenses/windows/StdUtils-blake2-COPYING.txt`.
+nsis7z 19.00 declares LGPL without a version; this distribution elects LGPL
+2.1 under section 13. Original notices are `licenses/windows/nsis7z-README.txt`
+and `licenses/windows/nsis7z-LZMA-SDK-LICENSE.txt`.
+LGPL text: `licenses/electron-components/LGPL-2.1.txt`.
+The original elevate source MIT notice is retained in
+`licenses/windows/elevate-upstream-LICENSE.md`; exact provider binary build
+provenance remains under review. Source locations and outstanding delivery
+and replacement checks are in `licenses/windows/SOURCES.txt`.
+Notice inclusion does not declare these outstanding checks complete.
 
 ## Other runtime npm dependencies
 

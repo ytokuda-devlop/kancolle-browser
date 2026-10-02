@@ -3,6 +3,7 @@
 対象構成: 録画機能廃止後の版（スクリーンショット保存は継続）
 
 配布対象・公開先
+  Windowsは単体portable EXE。Setupインストーラーは生成しない。
   macOS x64（Intel）、Windows 11 x64。arm64は今バージョン非対応。
   公開先はGitHub Releases。未署名版のみを配布し、署名版は作成しない。
   公開・全OSの最終成果物監査は別途行う。
@@ -32,9 +33,9 @@ Electron内蔵FFmpeg
   Mantle・ReactiveObjC・Squirrelの固定リビジョンと通知を確認し、原文を追加した。
   Electron内蔵FFmpegのLGPL構成と対応リビジョン、Windows StdUtilsの出典も特定済み。
   詳細とソース提供の残作業はELECTRON-SOURCES.txtを参照する。
-  WindowsのUAC・nsis7z等の追加原文と版別の検証結果はwindows/SOURCES.txtを参照。
-  WinShellの再配布条件、elevate.exeの対応ソース由来、nsis7zの
-  ソース提供・交換方法の確認は未完了。新しい通知の収録を配布準備完了と扱わない。
+  portableのNSIS・System・StdUtils・nsis7zと同梱elevate.exeを監査対象に戻す。
+  原文通知・ソース記録を収録する。UAC・WinShell・アンインストーラーは対象外。
+  対応ソース提供と部品調査の残件はwindows/SOURCES.txtを参照する。
 
 収録資料と検証
   ルートLICENSE、THIRD_PARTY_NOTICES.mdと、package.jsonの

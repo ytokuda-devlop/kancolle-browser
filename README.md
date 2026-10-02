@@ -61,5 +61,3 @@ ChatGPTを使用しています。
 | wait-on                  | 開発サーバーの起動完了を待機       | Copyright (c) 2015 Jeff Barczewski                                        | MIT         | [全文](licenses/wait-on-LICENSE.txt)              |
 
 その他の依存ライブラリは[第三者ソフトウェアのライセンス表記](THIRD_PARTY_NOTICES.md)、Electronに含まれるChromium・Node.js等のライセンスは[同梱ソフトウェアのライセンス全文](licenses/LICENSES.chromium.html)に記載しています。
-
-配布版はmacOS・Windowsともに未署名版のみとし、署名版は作成しません。

@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-02T03:50:03.041066+00:00",
+  "deletedTargetsAbsent": 29,
+  "preservedFileHashesMatch": 228,
+  "freezeSucceeded": true,
+  "regeneratedBaselineMatchesExisting": true,
+  "sourceBundleIntegrityVerified": true,
+  "sourceBundleVerifiedFiles": 54,
+  "sourceBundleSha256": "fc497d1313aed57ee32c52e122a49daeb3322f55b3906386111e0067f9cee360",
+  "diskUsageAfter": {
+    "release": "3.8G",
+    "docs": "4.3M"
+  }
+}

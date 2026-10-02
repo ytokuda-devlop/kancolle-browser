@@ -1,0 +1,1160 @@
+{
+  "createdAt": "2026-10-02T03:47:24.353601+00:00",
+  "status": "completed",
+  "targets": [
+    {
+      "path": "release/electron-license-review",
+      "regularFiles": 285,
+      "bytes": 598442988,
+      "allocatedBytes": 601862144,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/electron-license-review-windows",
+      "regularFiles": 101,
+      "bytes": 633182875,
+      "allocatedBytes": 641171456,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/ffmpeg-removal-check",
+      "regularFiles": 271,
+      "bytes": 463411233,
+      "allocatedBytes": 467988480,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/license-inclusion-check",
+      "regularFiles": 581,
+      "bytes": 1490658559,
+      "allocatedBytes": 1492344832,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/license-win-stage-rejHbV",
+      "regularFiles": 16707,
+      "bytes": 568853350,
+      "allocatedBytes": 619630592,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/mac-license-verification-2026-09-27",
+      "regularFiles": 292,
+      "bytes": 598496166,
+      "allocatedBytes": 599465984,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/native-inventory-2026-09-26/containers",
+      "regularFiles": 2,
+      "bytes": 223876423,
+      "allocatedBytes": 223879168,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/native-inventory-2026-09-26/mac",
+      "regularFiles": 285,
+      "bytes": 328836848,
+      "allocatedBytes": 329793536,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/native-inventory-2026-09-26/portable",
+      "regularFiles": 4,
+      "bytes": 112033690,
+      "allocatedBytes": 112033792,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/native-inventory-2026-09-26/portable-app",
+      "regularFiles": 101,
+      "bytes": 409213586,
+      "allocatedBytes": 409444352,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/native-inventory-2026-09-26/setup",
+      "regularFiles": 10,
+      "bytes": 112393918,
+      "allocatedBytes": 112402432,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/native-inventory-2026-09-26/setup-app",
+      "regularFiles": 101,
+      "bytes": 409213586,
+      "allocatedBytes": 409444352,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/native-inventory-2026-09-26/uninstaller",
+      "regularFiles": 7,
+      "bytes": 303536,
+      "allocatedBytes": 311296,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/native-inventory-2026-09-26/verified",
+      "regularFiles": 400,
+      "bytes": 1231718617,
+      "allocatedBytes": 1232932864,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/windows-license-review-2026-09-26/build",
+      "regularFiles": 107,
+      "bytes": 633219131,
+      "allocatedBytes": 641241088,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/windows-license-review-2026-09-26/extracted",
+      "regularFiles": 17,
+      "bytes": 112688988,
+      "allocatedBytes": 112705536,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/windows-license-review-2026-09-26/mac",
+      "regularFiles": 291,
+      "bytes": 598492619,
+      "allocatedBytes": 600846336,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/release-candidate-2026-09-26/mac",
+      "regularFiles": 286,
+      "bytes": 328838966,
+      "allocatedBytes": 329797632,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/release-candidate-2026-09-26/win-unpacked",
+      "regularFiles": 103,
+      "bytes": 409221852,
+      "allocatedBytes": 409456640,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/source-delivery-2026-09-27/downloads/windows-app",
+      "regularFiles": 1,
+      "bytes": 3113472,
+      "allocatedBytes": 3117056,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/source-delivery-2026-09-27/downloads/windows-container",
+      "regularFiles": 1,
+      "bytes": 111507011,
+      "allocatedBytes": 111509504,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium-mac-build.md",
+      "regularFiles": 1,
+      "bytes": 13373,
+      "allocatedBytes": 16384,
+      "trackedFiles": [
+        "docs/source-delivery-2026-09-27/evidence/chromium-mac-build.md"
+      ],
+      "deleted": true
+    },
+    {
+      "path": "release/.DS_Store",
+      "regularFiles": 1,
+      "bytes": 12292,
+      "allocatedBytes": 16384,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/native-inventory-2026-09-26/.DS_Store",
+      "regularFiles": 1,
+      "bytes": 8196,
+      "allocatedBytes": 12288,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/mac/.DS_Store",
+      "regularFiles": 1,
+      "bytes": 6148,
+      "allocatedBytes": 8192,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/windows-license-review-2026-09-26/.DS_Store",
+      "regularFiles": 1,
+      "bytes": 6148,
+      "allocatedBytes": 8192,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/source-review/.DS_Store",
+      "regularFiles": 1,
+      "bytes": 6148,
+      "allocatedBytes": 8192,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "release/release-candidate-2026-09-26/.DS_Store",
+      "regularFiles": 1,
+      "bytes": 6148,
+      "allocatedBytes": 8192,
+      "trackedFiles": [],
+      "deleted": true
+    },
+    {
+      "path": "docs/.DS_Store",
+      "regularFiles": 1,
+      "bytes": 10244,
+      "allocatedBytes": 12288,
+      "trackedFiles": [],
+      "deleted": true
+    }
+  ],
+  "protectedFiles": [
+    {
+      "path": "docs/license-inclusion-2026-09-24.md",
+      "sha256": "49597e08d13ed47fd6f6bc8b585c6b542c40d07ae5c9608763a43c19101bf09e"
+    },
+    {
+      "path": "docs/LICENSE-PACKAGING.md",
+      "sha256": "cd3a1789dbb6eb146f273a348c6116515c247fc6a1e67d7c81f4bdf8fbe9f474"
+    },
+    {
+      "path": "docs/license-inclusion-2026-09-24.json",
+      "sha256": "95780830a9925b5d9c1988709c26eee35f070723c70afce70d6331b5545741e2"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/source-verification.json",
+      "sha256": "2fbc76e66c92833a2a58c32b4df066c970473ff653cf36b770801e84c21ab69c"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/reference-state.json",
+      "sha256": "a9ffb5de9da1f2262f5094476db7f03f605320aaf923282a7867254bd4d65772"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-setup.licenses.json",
+      "sha256": "474ce6d2fca3af09d85258032f00d595c6aedfb7d2ae7706f87a0cd1c160ddbb"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/REPORT.md",
+      "sha256": "fa07b831672ab2b8c28c988854b3731a575b4e1336e12450e634983f461d3ad4"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-toolset-comparison.json",
+      "sha256": "1a2e3ef17d1e960e224c97ceb3f8188b09e77606b66e6f516badf88f64c426e1"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-portable.licenses.json",
+      "sha256": "9f3bdb084f07dc9170c1f42bc8732b3e216df906cee180257596ed73f93262fd"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-toolset-archives.json",
+      "sha256": "cb83885297ade0f78da067331eb5e275e673fa42d9b8ca79708a81bc65f0fb6a"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/source-archives.json",
+      "sha256": "8c386dab49e3a747d85c30951ab5b96fdee6aa2b96defbe5f8bf3b87ef7b49c9"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/supplemental-source-archives.json",
+      "sha256": "aa67d0c7617c3ba7065916cf8b66ddb6790592dc2817b8cf3b29f8a836e2b9bc"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-portable-container-list.txt",
+      "sha256": "a42b377403e17d8eabe554d7793656a9ee34692a77733f745cb814625743fc56"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/BUILD-AND-REPLACEMENT.md",
+      "sha256": "882bc66353e0ebe1ac158a24019a1551fa720faced2b7220894179653ff1a375"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-actual-plugins.json",
+      "sha256": "829e53770c62750f5575d542eca85aa7025fdd364d46f319c74005c658b37eb2"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/source-reacquisition.json",
+      "sha256": "cb2305be1f7efe48bd5195aa4821643439d4cf38cb41e315ae52753ee1d8b1db"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/official-binary-comparison.json",
+      "sha256": "8a62d2e680df784188c1a57edf748fd6e6bed1722ae058636f387d21905c7bdc"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/packaged-npm.json",
+      "sha256": "77488dcddf27e9ef746f38f9e74fdb59949cb9e42626c9cf28ebae4b90c0234b"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-setup-container-list.txt",
+      "sha256": "9900aa13365e916b122e9e746dd7d17e5aa350e194d2524e03934fbd89474b76"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/upstream-materials.json",
+      "sha256": "ab9859c3dd44d35fdb531d1e1673d5c5b13d70dca5712572d9fbd72140fa5eb7"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/artifact-summary.json",
+      "sha256": "f882b5f5256bc8b6c0c5842b6944a2f45c4232b370292d6f8c94e24e97fef600"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/mac-zip.licenses.json",
+      "sha256": "e8530dedb4e62ad02a611a5a5bb5a959f83de596dd152a2297de2dae07415414"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/stdutils-binary-comparison.json",
+      "sha256": "b466883f638ecea6849bd27a43e8c021051cbf9b504ae611aa95cee457db8d8e"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/windows-signature-status.json",
+      "sha256": "a788418acc3020f8c64700ea8769431c7dabcc2df512feda721aeabe97512d8e"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/mac-dmg.licenses.json",
+      "sha256": "e0022b85efa2f220e15a80556f4522d34a4c162d305fd945de43f3e770f0bb6e"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/REPORT.md",
+      "sha256": "d266a77feec55cfd52c48797e81021f5a069c7b4cd0bdb76539562284fc56242"
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/mac-inventory.json",
+      "sha256": "040bdf5900b1f856580af819ccc3a27a8b9b5f1f3e2b18c1292d0f5355679497"
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/mac-zip-licenses.json",
+      "sha256": "7b53b761559b5a3f8c335af035012c317a72f12c52e0989ca2e1b86136e96c5f"
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/DISTRIBUTION-NOTES.previous.txt",
+      "sha256": "8a0b31b74867e364484c3907eed0e240dbf4403254f11aa541148b500d7d2c98"
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/REPORT.md",
+      "sha256": "726afbe10b83703d06f5955e9b54ecb4d21dc5306247a6d0d514ad4a2f9329fa"
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/mac-packages.json",
+      "sha256": "587dc9d826e599abbbe22a14cf99b8978f6aae5fa90125a4b0c762c2c87f322d"
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/source-license-check.json",
+      "sha256": "e4a4b0c660c5a6d616aeef1dcc046be8a782129052bd0985902df917465966d3"
+    },
+    {
+      "path": "docs/ffmpeg-removal-2026-09-25/TASK.previous.md",
+      "sha256": "a56e4a365654674321a0e711b974555cbb2be58ef30d052d5599614150550c38"
+    },
+    {
+      "path": "docs/recording-removal-review-2026-10-02/SOURCE-REVIEW.md",
+      "sha256": "07b6356bd630df366fdec6697913dbd150ab724ac2c8eab46a5ab3b0a6c1f595"
+    },
+    {
+      "path": "docs/recording-removal-review-2026-10-02/REPORT.md",
+      "sha256": "f21d00d1188d6fc7a8ff5feadf2b81b40d6c06ce8dc93744861b713960aac451"
+    },
+    {
+      "path": "docs/recording-removal-review-2026-10-02/mac-zip.json",
+      "sha256": "72d36735364fd0c61e6a6e8c2ed056312f91ff17fb4dbc63bda09abfde34137f"
+    },
+    {
+      "path": "docs/recording-removal-review-2026-10-02/artifact-set.json",
+      "sha256": "20ddab9d9d48d169307406f420baf9a745d292c1804955a4f5a802c89b8af559"
+    },
+    {
+      "path": "docs/recording-removal-review-2026-10-02/baseline.json",
+      "sha256": "98011a92bea93335dae3c042a20ce305f386dd879059ca9c885b6cc92461d3c2"
+    },
+    {
+      "path": "docs/recording-removal-review-2026-10-02/source-check.json",
+      "sha256": "ab91a06853f22fa3e46f352e22419542ad6b6e0f22a6b16545b5aeb86f315529"
+    },
+    {
+      "path": "docs/recording-removal-review-2026-10-02/mac-dmg.json",
+      "sha256": "d368961363e148e34d1a94a14f302d0416fb98a1205c6f19957c43ba6947002d"
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/runtime-smoke.json",
+      "sha256": "90025050561b84f65d9c646677d8a9ec52393635797b838604a4c41c10cf6974"
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/original-notice-difference.patch",
+      "sha256": "db624cefa93b2aa89f5924f4ba5fd38e696b1fc1255692d9c8bb9362f2ea3baf"
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/working-state.json",
+      "sha256": "25dde0bc3814c6a68649472d485586ae1b764b0400c3daea2fd92446f6ccaf42"
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/REPORT.md",
+      "sha256": "b31a3b639d3de6bfb60c1d34e01aa632669d5363e1e674ebd6cf3db1733bbc3d"
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/original-artifacts.json",
+      "sha256": "db4b323b0938e6c28495497eaf7ac165b472b3b4ae4a834a6cfeb7b02cdba90a"
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/mac-zip.json",
+      "sha256": "6004692710e65471095124a47f13fea24b41b88fa5e0679b74b28429f1bc69fc"
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/baseline.json",
+      "sha256": "730d0d15ba05c4063e6c30bec7e8ea895b0e920d533e435059b3b3138aebb744"
+    },
+    {
+      "path": "docs/mac-license-verification-2026-09-27/mac-dmg.json",
+      "sha256": "5a20d06b9eaf58a70c959e938ba21d9ccd1eff19dcc7a9022e173280723093f9"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/REPORT.md",
+      "sha256": "f03c18a2f693cc1827b8934cc1e0e01265bf0ba8e2c1aefa8323b1f937998f8b"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/RELEASE-NOTES.md",
+      "sha256": "1eb37bb2eb66ec67525cc643e283513395d8781a5c8a883e7225bc71e3a5f873"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/REPORT.md",
+      "sha256": "7246d5b237d5c47abd39b85a712708926ee9a04c24ba91fa8d45a686a0edc758"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/bundle-verification.json",
+      "sha256": "c60a9b62cb9e2e3414ab6af583d378c892ac17bcddbdb4ab491226e711e93496"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/build-materials.json",
+      "sha256": "5a767653101d8034f82b7e07b96c9daea313382b69e1562d44ce8802057908e6"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/BUILD-AND-REPLACE.md",
+      "sha256": "6ba35dc2fe6ff63077311568afb401b55957102ffd418f37aa4cd796c0a188c3"
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/windows-setup.json",
+      "sha256": "4ac4338277e447f1b77bfae0e9609b5108a6bb8f8a082c53797289fdcb01990e"
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/working-state.json",
+      "sha256": "89574e718202d209b605beaa013bc84be03e23aed723c2b5d0ca4908b437efce"
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/REPORT.md",
+      "sha256": "005132380b61ec0debd471e9a9b47e1a3b230f02090bf002de9f16e211e9953a"
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/mac-zip.json",
+      "sha256": "6f5888cf673cc3ad0280cc611069c8b8604a1846873c836326330f753de1dca5"
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/artifact-set.json",
+      "sha256": "0f1b7cf6d5e052c1d43f96de4cb6e047c20ffb3d645806e799a7d8686ee0709e"
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/windows-portable.json",
+      "sha256": "a4147bbe7b6b5c244033e1a08fb7809b8fd796fef54270e3e301e4a2c2ffc2e7"
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/baseline.json",
+      "sha256": "57291e79ff0dcf59270c46ad4e239f2e2f9624355d32e2da295f88284bf3de1d"
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/unsigned-rejection.json",
+      "sha256": "754da166b21dcde6fc15e1d8c15263485b65233e1ee0459c92baa029a912e027"
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/mac-dmg.json",
+      "sha256": "f81611859bcd1e456950cd26effed4c71de8f76b84a93a522b6639b1f78e889a"
+    },
+    {
+      "path": "docs/release-candidate-review-2026-09-26/windows-components.json",
+      "sha256": "77183875af13b8bc601f7c987f2e23a97454ca39a6d524e4d45a080e6b91e23f"
+    },
+    {
+      "path": "docs/compiler-rt-review-2026-10-02/evidence/package.py",
+      "sha256": "a81f15a7b63add45f626746febd30865e04f8ec4b20de52f3329c80218f74514"
+    },
+    {
+      "path": "docs/compiler-rt-review-2026-10-02/evidence/update.py",
+      "sha256": "0679888392d7a700fb3a3c3de93f56bfb4e4064a5a46ece798c306b63e98b7cd"
+    },
+    {
+      "path": "docs/compiler-rt-review-2026-10-02/evidence/build.py",
+      "sha256": "51d43c141765511ae665e26cf943890d7e72d5c809ae111a60db4c00252c57e1"
+    },
+    {
+      "path": "docs/compiler-rt-review-2026-10-02/evidence/config-BUILDCONFIG.gn",
+      "sha256": "4d6c39685c8c8ae6529211a9c770890015c858bad35d8b8ce4f3437ecdbcb66f"
+    },
+    {
+      "path": "docs/compiler-rt-review-2026-10-02/evidence/llvm-10e97641.patch",
+      "sha256": "f04e811858e034c5f1d0f38ebba4e516a481859f43f552c639e322963da70f6a"
+    },
+    {
+      "path": "docs/compiler-rt-review-2026-10-02/evidence/config-compiler-BUILD.gn",
+      "sha256": "ff7ee114ac19a30ce52ca6911be24d3a7d9d4820fc55d7b02639c114742d66c9"
+    },
+    {
+      "path": "docs/compiler-rt-review-2026-10-02/evidence/cr_build_revision.txt",
+      "sha256": "158ee6e686687dba52dae060bf8d03188d0f69b59950c28e0b215bbcd58f4ef3"
+    },
+    {
+      "path": "docs/compiler-rt-review-2026-10-02/evidence/config-clang-BUILD.gn",
+      "sha256": "b9d905ac733eefd7f7247c08c641a59b12ccbe29cc822161d798fd805ecb528a"
+    },
+    {
+      "path": "docs/compiler-rt-review-2026-10-02/evidence/config-c++-c++.gni",
+      "sha256": "6a9886993440ffd914447d539542314fc06c3bed8b77e64a947e6b322467b2bd"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium-tag.json",
+      "sha256": "51b69b1b96d528053fde33b88b9ee1af5c406d96058ac8ea8339d45ee87e529c"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/literal-import-audit.json",
+      "sha256": "c1b834726a642555e5bd47ed5f211a765aa01204dedae318176ea32a3f0b58cf"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/public-release.json",
+      "sha256": "adad5f1c148adbfb62e3db710aed265a4752f8b87f62d2d1639c5b9b818d8404"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/public-artifact-verification.json",
+      "sha256": "00253426c9b2753c518723c9505a55a21677701a313320a8e9b8735c7526dcff"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/BUILD.gn",
+      "sha256": "3a975bdf5a09d3b652920bdd27cb68a0be8e51a5706b2710715f566c50f6b10c"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/LICENSE",
+      "sha256": "368cca1106be99d39ecd32a38d8305585d802a475effb66380b91ffc9bcf709b"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/.gn",
+      "sha256": "b17d58c4d7d648fab31108af33e71a4dc6725667bc2df665a9ae8456683eba64"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/DEPS",
+      "sha256": "6d0b1775ce938dfadd2cff1adea4fef5fc27b33f6891a481b002cd31afea3c55"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/electron/build/pgo_profiles/README.md",
+      "sha256": "08a497f771831aac62aaa78f2b00f3839c8616fce74eff018cfc9f0ba1e040d5"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/electron/script/pgo/download-profiles.py",
+      "sha256": "cf16f90bcc2cfa845a0b4a85ab13d73f6971352b5ae3beb9cb51c72c900aeab5"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/electron/docs/development/build-instructions-windows.md",
+      "sha256": "c07dd277561988411a9d00a2ecc649c26c5be207ab6d9ce09bb212ba44d2c5c9"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/electron/docs/development/build-instructions-gn.md",
+      "sha256": "8f32a0b64d1ccf87b474fd8f9455b853a45278cb7a95c45a768ef153e4ffa97c"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/electron/docs/development/build-instructions-macos.md",
+      "sha256": "6d1571b32d2aa4658d0dee4e86942b879d5f4545301e02c2d8fb36ca4475ec19"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/docs/windows_build_instructions.md",
+      "sha256": "0d260d169d12b10be89d612008060c3e2cad594c18e2349709941321c0482099"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/docs/mac_build_instructions.md",
+      "sha256": "9b811cc15690efebc692652a568492c38e6f1fae157ff65544018dff323ebafd"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/build/vs_toolchain.py",
+      "sha256": "5b258c09a6037b0d0ef3bb95d431fba562758592ee4424dbc261f80bf590b8f2"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/build/config/mac/mac_sdk.gni",
+      "sha256": "5f0da18d8b5b39bc830f77f3e92c90a361881844f2e2cdc332ea06b9b5658e38"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/third_party/opus/BUILD.gn",
+      "sha256": "436f0bfedbfc18c2a46f39f10667fe815e0aca6bf097e999930bfc36118deb33"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/third_party/opus/README.chromium",
+      "sha256": "e09b127a9a06d41673a98357ed758d6a6628621189961565f90bf368c6c88dff"
+    },
+    {
+      "path": "docs/source-delivery-2026-09-27/evidence/chromium/tools/clang/scripts/update.py",
+      "sha256": "0679888392d7a700fb3a3c3de93f56bfb4e4064a5a46ece798c306b63e98b7cd"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/windows-setup.licenses.json",
+      "sha256": "7cf787199c3a26b59e16ec77a79e072520128b52f165762603cdb6432c9f6293"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/windows-signatures.json",
+      "sha256": "cce701842d88186badfc5c695c9ea6a4c1e201d37ef1c5df30105aee1465f8ae"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/nsis7z-page.html",
+      "sha256": "9f0dda4e70d3ec0b1dd637909f4e0422f599e40774834a37a8092c2d59104563"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-issue-comments.json",
+      "sha256": "97d7259e914c9f6f5a254db8d7bec3ee58f67712f37040936179746767e83376"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-tag.json",
+      "sha256": "641d7a84c5c3cf5436d4e91716ece8182e726a2134f484563aa8e33fe99d8704"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/windows-portable.licenses.json",
+      "sha256": "6649d19a640147dfd912c89b57d9ced9a0fb9e5d1f976f15a3cd4cfac8069490"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/provenance-final.json",
+      "sha256": "f8e654c18e3c8529ae6659f4cf8121812c79bb1b749470543a4f71078beacb86"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-forks.json",
+      "sha256": "a6eabeaaa1307acffe0e0b252ab97062e470a4dd66b4338c1f1dea32e766eb80"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/nsis-elevate.sh",
+      "sha256": "e13fcc09ce26557eb9b0e468d3304f76a4c3dc2119ea3ef5d56fc6d7429281bb"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/nsis7z-project-inputs.json",
+      "sha256": "5d53564683525b4d89305b451635f833407c9e1a54d70d50f3c36a4c3988433f"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/provider-tree.json",
+      "sha256": "8a4102da2c1bafd82bdc11e45c91f608f09632e84904274c73d67a5862911eb8"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-provider-history.json",
+      "sha256": "0df35f9db9487e5d6d59f92dcdacba53145893aae23128bc96ebab883174e980"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/uninstaller-list.txt",
+      "sha256": "d1a400d5df6f8d1c431a8b5af1f65a2addaeb9cce20ac13658e3138496122d5c"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/source-review.json",
+      "sha256": "2fb1c1ae7a6cc4ad734fdd50f5f3c303959171e5cd7dccc8c9d7919043c2cd40"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/provenance-before.json",
+      "sha256": "b32bd59c6d56095a4c6c6d6a19f842628993173b49449f8bc18c7f909e46faaf"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-provider-commit.json",
+      "sha256": "4224a4770a8a42fd33861950634befebb51fadf7288e3ede4fd1e1a788541500"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/Anders.html",
+      "sha256": "ec28a24d96f241fb76edeb69dec6e8f2b15411a18eb42b46fe8f2ef57f9ec705"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/artifact-summary.json",
+      "sha256": "125c2d17ef5397fa63f49365df81c69241f4fbed0367b39be9c5c834594e83c3"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-author-page.html",
+      "sha256": "2643331d1bb13c2a04640a5d2c35b0f5ce239ac257797786323edf29a7045a1b"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/mac-zip.licenses.json",
+      "sha256": "baffa392eaaf7908d6ee29a5b08c86966be83d4729fde16d32673f5a2b1e106d"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/mac-dmg.licenses.json",
+      "sha256": "5796d951ee9225c19366d4a13ac64c91e46c951aa3ddda822051a6d9c89492ed"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/util.cpp",
+      "sha256": "a4ac1ddaaa08b6b752ed845ba009fdd0da281d20d1fb24c68023963201833d21"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/uac.h",
+      "sha256": "8928e444bd4c2219b106fe2722df1ea9c6dcbe9411e9e05917bdcfa2dbf2a782"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/RunAs.cpp",
+      "sha256": "0f9dbf29964bef59cc0413cea8cc5bbd948f50980fde2beedcf0bac376f89076"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/NSIS_CUSTOMPISDK.h",
+      "sha256": "2dd1346cad9ac9d1265726811c3549de9ee76737ca2fe87003d5276d74fe6597"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/resource.rc",
+      "sha256": "72d7b6b71aa67e34aa2f507a5fa5d8500ba0f50b140c3447b214fc4118ead4f7"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/util.h",
+      "sha256": "90613147a2ff9b36acfb1ef6bce7abd69fb2bc0cc70685a0ba601fc4a195766a"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/resource.h",
+      "sha256": "fa4a0269da0612d4d3bbb6f4889fae30632afc2b96cf2fcf9a376289c4cc2948"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/History.txt",
+      "sha256": "e966e6918f2a8c4aa9a24be2bf802de762cc9773948f171056a0407abde01144"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/License.txt",
+      "sha256": "997fd014643f27a2f240faf9b9b54a98371775c63eb38134829154794f7326fa"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/uac.cpp",
+      "sha256": "a54b801a377dd4a9be29fcf68672f4ff381f50853e8a815cb535405e97ec1905"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/UAC/platform.h",
+      "sha256": "b6b42ea2ae23fabe6dbc8c2581608601cb0f4529c6be9968e7b6a4def0edca9b"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-1.0/LICENSE.md",
+      "sha256": "c8513abf1a738a5420f288c1be9c774b386785cc99c313f8543296321d06f04d"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-1.0/README.md",
+      "sha256": "114145d90cb0e01d393143fb8b77de53066220fd585ac033ddd7cefd043ac0bd"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-1.0/Elevate/stdafx.h",
+      "sha256": "336905da2d3905cfd5ca027518ad1eb08651d639f0721bd2b65b89349363bec8"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-1.0/Elevate/Elevate.rc",
+      "sha256": "f23156d20655474babd7cec0d61e62a0ec2125564ff3f532b11b1b7c59777860"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-1.0/Elevate/main.c",
+      "sha256": "5274d3eaaadce8d01e04416f5e0b27c0678d70fde7c0d7a9cd34d73825101e9b"
+    },
+    {
+      "path": "docs/windows-license-review-2026-09-26/evidence/elevate-1.0/Elevate/resource.h",
+      "sha256": "d91dec8edf50b48248b9c294eb971f41d8d4380d39fbe50d84b70e72c7ca16cc"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/windows-setup.licenses.json",
+      "sha256": "8d9e9903d950f8e3a0160e943c33c1c7d5baec20bc7e9454bc1fa1e219bdaf4f"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/build-args-all.gn",
+      "sha256": "5ef3dcead9ec7d5a5b556d7db92ab6a40166801913298702250a455fd244388d"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/windows-portable-npm.json",
+      "sha256": "d25cca09e8b62345579f767881338cc43924f3302fdca3e74d9f9c20c88f56fa"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/BUILD.gn",
+      "sha256": "d5d354e5dae34895ecf3b1f32fc42af2bd99b12b8a7f5f3a8c83d3d5055f8e47"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/static-components.json",
+      "sha256": "d0907f91fedcb8ec2b286076799ea6ef7253d05fb902c9fcb82e8c1fcd62e629"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/chromium-notice-index.json",
+      "sha256": "28623d9ebeb149ba6ac719cd7720f8719e1f0109e85255a2c3ed153373175c8c"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/native-components.json",
+      "sha256": "6cdbdef164820b8fe33fc7c53c3a6cd440c038a04474073fb58bc28c72148deb"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/build-args-release.gn",
+      "sha256": "b4490cee911e0ed136a6d095c69a7914cb3f4aa2d5517e3f987a2b5f45d3cd56"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/windows-portable.licenses.json",
+      "sha256": "4efdc9f3ba0a2a0f740f77cb4fe28289ebddf996d45272b61f3738eed09872ef"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/downloaded-source-files.json",
+      "sha256": "2bdd8a4df8639fad17ca0dedb44f83b8f61bfcd88bf0ca9f4a50412d67c9d9af"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/node.gni",
+      "sha256": "b6bd91e4cd8bfa3bab9aee8e87cd82bdb997e18c385a13fa90b77512c67159f3"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/nbytes-LICENSE.txt",
+      "sha256": "782ab5b8ae1540c1a2b102fdd00990ed268d4a3a98e90ad7fe724b489d7bb0f2"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/node-nbytes-tree.json",
+      "sha256": "fdc4fff8ca1917688838d2d44bb4d0663d95900287897222724e22a77a1d1d40"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/node-LICENSE.txt",
+      "sha256": "148eacf7863ef4329224a29398623077200a27194aa075569faf4a0a85566ca5"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/node-unofficial.gni",
+      "sha256": "865fe1cee76fa6169e7dc6c1d9d6f7447eb5e8afe95413c1ebbfff227662d848"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/build_allow_unbundling_of_node_js_dependencies.patch",
+      "sha256": "49023dc2c87a6543cc0447550f165c514baebf3e670650dd2161febf0609001e"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/notice-comparison.json",
+      "sha256": "5bfe37d6bdeed5b8112387c8b32806235291dd84bcbb32802a1326dbf187c489"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/windows-setup-npm.json",
+      "sha256": "d25cca09e8b62345579f767881338cc43924f3302fdca3e74d9f9c20c88f56fa"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/mac-zip.licenses.json",
+      "sha256": "6b8480dcdc073759ad2531fa256a4fbb54a09fc03a70f819ed6d673756d755ce"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/build_add_gn_build_files.patch",
+      "sha256": "737ad2f76cadf81df126b29a59c2c44735f09a3725e719891f316bd13a708a44"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/artifacts.json",
+      "sha256": "57ef0cfa83770fdfcb4ef6329d269e544b1e2a30742887f9d2fe3e1ff4112727"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/mac-dmg.licenses.json",
+      "sha256": "0a70c168b563f5fa428e12b047791d11d71533d3d6e30e7062374cd69d253425"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/pe-parser-crosscheck.json",
+      "sha256": "64e355551fe526551d052a8f8a75ea071b5485edd246689bd8f60208641e4984"
+    },
+    {
+      "path": "docs/native-inventory-2026-09-26/evidence/mac-npm.json",
+      "sha256": "d25cca09e8b62345579f767881338cc43924f3302fdca3e74d9f9c20c88f56fa"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/stdutils-tags.json",
+      "sha256": "4204bb6d74b6aea8e0d9a810e80e73c24f1210767ab14083d0667cf5dfdba818"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/stdutils-releases.json",
+      "sha256": "fb7e28619975fbe8ae112e2ed105b55ddf5b720b9b1eea57ac24f49cdd734ce9"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-build-instructions.md",
+      "sha256": "8f32a0b64d1ccf87b474fd8f9455b853a45278cb7a95c45a768ef153e4ffa97c"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-release.gn",
+      "sha256": "b4490cee911e0ed136a6d095c69a7914cb3f4aa2d5517e3f987a2b5f45d3cd56"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-ffmpeg-loader.patch",
+      "sha256": "bc6cdc29ad4ec2641dd59b4c3a25375b9166c35e202e5122cb73190885ec647d"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/squirrel-LICENSE",
+      "sha256": "6f240e244a105d6366bc898ac9c67460624c9052839d4b988c6dbe4c571008b3"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-COPYING.LGPLv2.1",
+      "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-reactive-patches.json",
+      "sha256": "a8c6831ffc0f887c6856683867db13ba4464ba593f696fa56196161d8d671e36"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-all.gn",
+      "sha256": "5ef3dcead9ec7d5a5b556d7db92ab6a40166801913298702250a455fd244388d"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-README.chromium",
+      "sha256": "17df0ad137aa566137074686d5930abfe48cc2707ac4ccca0251f71db2f7c8be"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-patch-config.json",
+      "sha256": "be8fc696e319f2dcbd9a32d5ed04076770a559222e7b4b02b57f9e89aa07c66a"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-COPYING.LGPLv2.1.b64",
+      "sha256": "4b7be5789cf70597d10f8b96e482eef3ce2da9d17fa5f1c1320c9b02047de451"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/StdUtils-COPYING.txt",
+      "sha256": "842fef4921191943e531c6cc939b0334f1c2658c9204e30dd35d13f51fdf70dd"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-source-tree.json",
+      "sha256": "3034df9c4428d0ef7cf7a188d29dce44b81c7bb1c89cda4c8a582dfa3295f456"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-prepare.sh",
+      "sha256": "7911925bdd22f8ff7a6a543a476f8728896efb96682fd4a2c48931d0f6c1d545"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/chromium-root.gn",
+      "sha256": "b17d58c4d7d648fab31108af33e71a4dc6725667bc2df665a9ae8456683eba64"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-tag.json",
+      "sha256": "5229d33377db7cb88de9df809e3d36e690d515bb398a5c1add2b096e532e5a13"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/builder-packages-tree.json",
+      "sha256": "6cba92a156b74c43d31345bf6edc1d9b4da756eeef69ae78581542c15d58d94f"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-resources-source-tree.json",
+      "sha256": "b5a330189e8475454a1e8d842eaf3111bf4e9cdee7dcd25765d6ff210e9deab4"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-mac-config.h",
+      "sha256": "75300e71e4d25bf04f335cff1577c6e329973c762bd75a93e82962e8022dbbb9"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/StdUtils-README.html",
+      "sha256": "be145d4687f5efa1d45ce7d059c92230d003b5da00dd55f24346278798c7bad9"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-win-config.h",
+      "sha256": "4c935fe035611b9e72376de36a49539cc6a915f4cc22aeefa76c4f972193de60"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/reactive-import.patch",
+      "sha256": "5486fa62061ec7d7cba50a8ea5635eb6add2b7ed48a23542c8d419247ac5af01"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-build.sh",
+      "sha256": "b0641dbf5d00d25a445b5b7a4d5253068c0d0722bf26d645c99cdb61d74687be"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-ffmpeg-patches.json",
+      "sha256": "222722c051b10c508d49569d2e1b655dc6cdc7a55c62f52f5c81500d0e36a82b"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/builder-binaries-tree.json",
+      "sha256": "8426cbd3dbc8fd897fa681736d7f3dcd806de921f1b58d86ee1869f07decce31"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-resources-README.md",
+      "sha256": "0eb167b2399bbeaf1c8fb3d877411cb026bacc1884cecfd2601460cc71ed049d"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/chromium-DEPS",
+      "sha256": "6d0b1775ce938dfadd2cff1adea4fef5fc27b33f6891a481b002cd31afea3c55"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/nsis-resources-tag.json",
+      "sha256": "8cb387e9c3c2ca301c6b610084206db3e3133044b5bf3967f995095170d89705"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/reactive-patches-list",
+      "sha256": "e6d9737ea120459a4a091bf899c0d8970f46c5dbbf836d6326b094c60c6acef3"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-tag.json",
+      "sha256": "8615ce658ce90216d52390778d686ed382b6711185a1477028c6a6a8d41385a8"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/mantle-LICENSE.md",
+      "sha256": "285eede6f638adc9c352be7d66134611e5ea95044095a84de9867fb864e66eab"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/reactiveobjc-LICENSE.md",
+      "sha256": "095fec1a3d6ad029fe0661fa6092a272d50af016b1771992e0bba9b2a73e7763"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/urls.json",
+      "sha256": "d508cb54b1b2cfb1218ea8e840b3c84c8e46ffad8996ffb1e1a57abd378da54f"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-DEPS",
+      "sha256": "6eff8b368842f184a258f15ab2919680a44706ffc82f9aa1544969f0d59baa21"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/chromium-DEPS-recheck",
+      "sha256": "6d0b1775ce938dfadd2cff1adea4fef5fc27b33f6891a481b002cd31afea3c55"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-README.chromium.b64",
+      "sha256": "9de9c37ac5a343c321101ecf8d01ee5364652ce10f099506cf3435931f85e00a"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-mac-config.h.b64",
+      "sha256": "f85b0fe9ce60a93d905e68f4dd62869bee495af96e2ec67b45018866f1a4fb21"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-win-config.h.b64",
+      "sha256": "f51a9262d39027995e8cffdfb174f62485b13fd76bf0fe86602599d2099bf8bb"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/reactive-cast.patch",
+      "sha256": "1c91daed0343d89dc4f371abe86a846a6432069d51427906d1260f1fe81c3cbb"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/electron-tag-object.json",
+      "sha256": "f3e80d53d393ae97a148a1cd83ea305d7350364c78034d71697dde168f8e403e"
+    },
+    {
+      "path": "docs/electron-license-review-2026-09-25/evidence/ffmpeg-commit-recheck.json",
+      "sha256": "5406ff5a18bc67f075df9815b7e2bdfe6f728dffb4b2041bd18d8833ad5e78f3"
+    },
+    {
+      "path": "release/latest-mac.yml",
+      "sha256": "79f6dce926fa6776a116efd2283217d3ae991da3608d23fc9eccbb3303f7cf4d"
+    },
+    {
+      "path": "release/builder-effective-config.yaml",
+      "sha256": "9eed7a8eb929195f00262cc5bf95e77049532b0684627fb0e98c77fe34ca9231"
+    },
+    {
+      "path": "release/艦娘は今日もお仕事です（仮）-1.0.0.dmg.licenses.json",
+      "sha256": "7ecd2f5b6b0fc8c8deab4acd5ac19fe8b0099b3b58ab8d22a6f0fb47f68c0a74"
+    },
+    {
+      "path": "release/builder-debug.yml",
+      "sha256": "1f1307f8838c13d2bad4ee5b24387a143e3797474a6c4367baa3104fc4181305"
+    },
+    {
+      "path": "release/kancolle-browser_1.0.0_mac.zip",
+      "sha256": "c4e444f7a68602a703a63d4f964ffbe40a8fb7f87110410e74c3aa9256d7e778"
+    },
+    {
+      "path": "release/艦娘は今日もお仕事です（仮）-1.0.0.dmg.blockmap",
+      "sha256": "9c999a04ff79ea1229cd345ed77cd9ad029f1fd11d51ad8dcc0768f18a9c049f"
+    },
+    {
+      "path": "release/艦娘は今日もお仕事です（仮）-1.0.0-mac.zip.blockmap",
+      "sha256": "6ce02aaa1dbeed3c67e40957d38a104a7326590c0dff6df62581eed4ee6a7360"
+    },
+    {
+      "path": "release/艦娘は今日もお仕事です（仮）-1.0.0-mac.zip.licenses.json",
+      "sha256": "f2cf045825fe03f4d0720fd3ad3569fd80fb2fb1fcd8d4b74bf6e2afc655f474"
+    },
+    {
+      "path": "release/艦娘は今日もお仕事です（仮）-1.0.0.dmg",
+      "sha256": "45ceb6ca806b87aeb720e2fb41fa560063e301971a5d27bd150c24d2740f131a"
+    },
+    {
+      "path": "release/mac-publication-2026-10-02/RELEASE-NOTES.md",
+      "sha256": "ec915b9b43128c444374fe7102d96c67d6f3424fe2f807de99434602ef42e18f"
+    },
+    {
+      "path": "release/mac-publication-2026-10-02/ELECTRON-SOURCES.txt",
+      "sha256": "3070699f720901d98ca0b62343576a4e78d48a596ddd96630831a305a012ec2c"
+    },
+    {
+      "path": "release/mac-publication-2026-10-02/kancolle-browser_1.0.0_mac.zip",
+      "sha256": "9e7179f3f7309d5ac931e42b10e294d3bfb910cbe704181ee1a51e616c8007c3"
+    },
+    {
+      "path": "release/mac-publication-2026-10-02/publication.json",
+      "sha256": "7a8b8dc36e7dfdb46c2b15e2f0a3d07543e6c25143ce7daf94b640ea17c3537e"
+    },
+    {
+      "path": "release/mac-publication-2026-10-02/electron-44.0.0-source-materials-2026-09-27.tar.gz",
+      "sha256": "fc497d1313aed57ee32c52e122a49daeb3322f55b3906386111e0067f9cee360"
+    },
+    {
+      "path": "release/mac-publication-2026-10-02/SHA256SUMS.txt",
+      "sha256": "86ac282a95840870c0a86e56f78a5fc242ed36190dc6927af309a081cb5489a0"
+    },
+    {
+      "path": "release/electron-source-review/electron-44.0.0-INCOMPLETE-source-review.tar",
+      "sha256": "59a11ead546e44d2591b18a6b7d7d69bf9506075d0c13735894152d5c93f6b45"
+    },
+    {
+      "path": "release/electron-source-review/SHA256SUMS.txt",
+      "sha256": "294d90e9fd933cd4ddbb67bb2e52e725b81bbff50acee1d627f74be4f10a85c7"
+    },
+    {
+      "path": "release/provenance-2026-10-02/audit-working-files.tar.gz",
+      "sha256": "afa7b6a1a239acbe763497ec2c1578bdf382f354a1c269a1b36a781eac67175d"
+    },
+    {
+      "path": "release/source-delivery-2026-09-27/upload/RELEASE-NOTES.md",
+      "sha256": "1eb37bb2eb66ec67525cc643e283513395d8781a5c8a883e7225bc71e3a5f873"
+    },
+    {
+      "path": "release/source-delivery-2026-09-27/upload/electron-44.0.0-source-materials-2026-09-27.tar.gz",
+      "sha256": "fc497d1313aed57ee32c52e122a49daeb3322f55b3906386111e0067f9cee360"
+    },
+    {
+      "path": "release/source-delivery-2026-09-27/upload/SHA256SUMS.txt",
+      "sha256": "09a34db4f9f9e0621af20a6f5f5c67bc5e9a16d6d3f8f6eaec64786372b0627e"
+    },
+    {
+      "path": "release/source-review/mac-x64-20260925T014615398954Z/INCOMPLETE-README.txt",
+      "sha256": "2cbda5d8bba144896a50af92f184c0aa45614fdb18de21fc0ed6f01e49539b1a"
+    },
+    {
+      "path": "release/source-review/mac-x64-20260925T014615398954Z/ffmpeg-mac-x64-INCOMPLETE-review.tar",
+      "sha256": "bc10123205085d32c0ed02784d0d2e352ef8dbf09445e7d623ac87c05bb1adc2"
+    },
+    {
+      "path": "release/source-review/mac-x64-20260925T014615398954Z/MANIFEST.json",
+      "sha256": "fe07f1d5ce9509ccbc76c009a30c60331ca4e8bbdc085a4887c1cf626a4835d5"
+    },
+    {
+      "path": "release/source-review/mac-x64-20260925T014615398954Z/SHA256SUMS.txt",
+      "sha256": "557d4995c5a65fa5c5ec7424f8aea86b1f84f1304f99a64a966e04e3d2a307fe"
+    },
+    {
+      "path": "release/source-review/mac-x64-20260925T014422891282Z/INCOMPLETE-README.txt",
+      "sha256": "2cbda5d8bba144896a50af92f184c0aa45614fdb18de21fc0ed6f01e49539b1a"
+    },
+    {
+      "path": "release/source-review/mac-x64-20260925T014422891282Z/ffmpeg-mac-x64-INCOMPLETE-review.tar",
+      "sha256": "587c9b97d2955f81b6d5a1ac3b1fb513d0d0d37aed6cff99c6a2691f3ffd9f19"
+    },
+    {
+      "path": "release/source-review/mac-x64-20260925T014422891282Z/MANIFEST.json",
+      "sha256": "0fabd8106e713d48c7991700ea35c1a0f419a812e77b4445a5ac1d132e5ad22d"
+    },
+    {
+      "path": "release/source-review/mac-x64-20260925T014422891282Z/SHA256SUMS.txt",
+      "sha256": "fab7c905bf55e33af726abed2e595bf788b47950cd77b6145ee9b82bd79c69bb"
+    },
+    {
+      "path": "release/windows-license-review-2026-09-26/source-review/windows-INCOMPLETE-source-review.tar.gz",
+      "sha256": "9d6d91e2e3931eaf77b71062b126334400fbcb7b7a5dc54bd959ebb77fa54aaa"
+    },
+    {
+      "path": "release/windows-license-review-2026-09-26/source-review/STATUS.txt",
+      "sha256": "19402bfbf56effa925ed51ff2f8e22039d464642a2b91e48a932f661d6c04621"
+    }
+  ],
+  "duplicateDocument": {
+    "removed": "docs/source-delivery-2026-09-27/evidence/chromium-mac-build.md",
+    "retained": "docs/source-delivery-2026-09-27/evidence/chromium/docs/mac_build_instructions.md",
+    "sha256": "9b811cc15690efebc692652a568492c38e6f1fae157ff65544018dff323ebafd"
+  },
+  "completedAt": "2026-10-02T03:48:50.511503+00:00"
+}

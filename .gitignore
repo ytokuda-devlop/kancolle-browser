@@ -83,3 +83,8 @@ tests/
 /tests/__pycache__/
 !/docs/mac-license-verification-2026-09-27/
 !/docs/recording-removal-review-2026-10-02/
+!/docs/README.md
+!/docs/storage-cleanup-2026-10-02/
+!/docs/source-delivery-2026-09-27/evidence/chromium/docs/
+/docs/source-delivery-2026-09-27/evidence/chromium/docs/*
+!/docs/source-delivery-2026-09-27/evidence/chromium/docs/mac_build_instructions.md

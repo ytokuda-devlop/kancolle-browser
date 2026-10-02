@@ -1,0 +1,558 @@
+{
+  "checkedAt": "2026-09-24T14:07:55.462Z",
+  "artifact": "艦娘は今日もお仕事です（仮）-1.0.0-mac.zip",
+  "sha256": "b6a0908ae4a3f5ebef3134e835611344a444790553f04c342817115709fbda68",
+  "payloads": [
+    {
+      "fileCount": 109,
+      "files": [
+        {
+          "path": "DISTRIBUTION-NOTES.txt",
+          "bytes": 3996,
+          "sha256": "8a0b31b74867e364484c3907eed0e240dbf4403254f11aa541148b500d7d2c98"
+        },
+        {
+          "path": "FFmpeg-SOURCE.txt",
+          "bytes": 16075,
+          "sha256": "f4a21ccb25828289b6f62fc901a8c33dc12d62c8bf0da16ba08fad55d65deab4"
+        },
+        {
+          "path": "GPL-3.0.txt",
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "path": "LICENSES.chromium.html",
+          "bytes": 20111206,
+          "sha256": "4cbde8e3e7b29f451c78a44491fb32e2202884826fef47786a9cda5a36110525"
+        },
+        {
+          "path": "concurrently-LICENSE.txt",
+          "bytes": 1082,
+          "sha256": "bbaf3620b43019e895e662543df7eb6f7a8c8bd81f2b611ef34db6ee0cc8219e"
+        },
+        {
+          "path": "electron-LICENSE.txt",
+          "bytes": 1096,
+          "sha256": "5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d"
+        },
+        {
+          "path": "electron-builder-LICENSE.txt",
+          "bytes": 1084,
+          "sha256": "bed8d0ab3e6031817f775a641ff37313b0f5591bc8ba0ed79b978dafbd4231ce"
+        },
+        {
+          "path": "ffmpeg/darwin-x64/capture.json",
+          "bytes": 4220,
+          "sha256": "c1776a6684038d5c23dab28da9abc548dd6df7115eac8d90f051640bb82a7f70"
+        },
+        {
+          "path": "ffmpeg/darwin-x64/license-stderr.txt",
+          "bytes": 1348,
+          "sha256": "8f3d579fe701253f16c2e41389deec6873e0ef53c89ea8ae75b499b65b6daa30"
+        },
+        {
+          "path": "ffmpeg/darwin-x64/license.txt",
+          "bytes": 594,
+          "sha256": "040708d6a654aed3dbc2bc4fae8f247ba2817ebe08898042b601016e9fe870ac"
+        },
+        {
+          "path": "ffmpeg/darwin-x64/version-stderr.txt",
+          "bytes": 8,
+          "sha256": "0d7fa1070c8244c45713f52789bcaaa9dd48055b793d654d3f7ceb4d5199ef79"
+        },
+        {
+          "path": "ffmpeg/darwin-x64/version.txt",
+          "bytes": 1328,
+          "sha256": "9f36d8eaa22bb58cf3b5c07d83263e89693274fb0fe8a0ded776517c08d739a0"
+        },
+        {
+          "path": "ffmpeg/win32-x64/BUILD-MATERIALS.md",
+          "bytes": 6744,
+          "sha256": "5d7997c5a8025e08eb6b9db4c51bcc08ed4b28ba075eb98a1ea4f8eb0c2d89ad"
+        },
+        {
+          "path": "ffmpeg/win32-x64/DEPENDENCY-REVIEW.md",
+          "bytes": 6936,
+          "sha256": "51f4b6ada4c830dae930056a1eb95f215c0c32b9ec4c431521b1f8957b3ce71d"
+        },
+        {
+          "path": "ffmpeg/win32-x64/LIBRARY-SOURCES.md",
+          "bytes": 12251,
+          "sha256": "a5adbcab906816be499ead27f3503e60439a4a3f8493aea569692efd85f7f8d9"
+        },
+        {
+          "path": "ffmpeg/win32-x64/SOURCE-REQUEST.md",
+          "bytes": 4466,
+          "sha256": "e2d8308f324d5aa65dce7dcb7c884b8b9c5441d0514ba667dc46c83fbd9370c0"
+        },
+        {
+          "path": "ffmpeg/win32-x64/aom-commit.json",
+          "bytes": 1070,
+          "sha256": "edfd1f9a9a261bb67acc4b04ab869ea45495f66534e453464dd83a27ef378c5d"
+        },
+        {
+          "path": "ffmpeg/win32-x64/artifacts.json",
+          "bytes": 3316,
+          "sha256": "1ad73be7da2a0268deaed3c4c4972dd7d4d70de09d98212b5bc5b5d75986fc9d"
+        },
+        {
+          "path": "ffmpeg/win32-x64/build-evidence/gyan-issue-91-comments.json",
+          "bytes": 117331,
+          "sha256": "34246ced009ad02aec9f096b4acaada8a6d9a5116e24a45e0dd26414c893dffd"
+        },
+        {
+          "path": "ffmpeg/win32-x64/build-materials.json",
+          "bytes": 183232,
+          "sha256": "d993d5bc2b2124b6d06c3a7da04b505afec64c0e2e687c3077e71d8f6fd94fde"
+        },
+        {
+          "path": "ffmpeg/win32-x64/buildconf-stderr.txt",
+          "bytes": 1480,
+          "sha256": "9b00757ecf5ef2dfc869c6ff02bcd851dbbef840493ec1d9011be1d4628e7563"
+        },
+        {
+          "path": "ffmpeg/win32-x64/buildconf.txt",
+          "bytes": 1220,
+          "sha256": "d826a15e605129b2d19115f23ae55793eb319887405f77c6f384571547d30ebb"
+        },
+        {
+          "path": "ffmpeg/win32-x64/capture.json",
+          "bytes": 7703,
+          "sha256": "e9c6f814d9fcd4cbed38db974f2a3f44de7262e3ab89697330676958d41bece7"
+        },
+        {
+          "path": "ffmpeg/win32-x64/dependency-evidence.json",
+          "bytes": 65003,
+          "sha256": "fd914c79c55a58acb28d5f62963535dc90a16d98047815262b6eeee7cab094e3"
+        },
+        {
+          "path": "ffmpeg/win32-x64/ffmpeg-commit.json",
+          "bytes": 5470,
+          "sha256": "00d32d16cdd90033d5f9c0e461949f9ee16a0cb76b98a98df9d4d70af4310a52"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-probes.json",
+          "bytes": 15594,
+          "sha256": "1e995d021b8bd3a871a85c06611264fb9f95fef1d38d4bd5a4c36e58756c76af"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-source-verification.json",
+          "bytes": 24398,
+          "sha256": "bbac40d25a662540074eed5f3534a264ec319f2ba301128d19002e4223b93c19"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/AMF.json",
+          "bytes": 1165,
+          "sha256": "cafee4417fb13de846366a84ddc6a375886308d8d34c03109b6d79b3110baf3b"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/AviSynthPlus-filesystem.json",
+          "bytes": 1500,
+          "sha256": "0a885916f59038b61671c31b088c4d46254c88cfa1aeb953ce7bc57f0676545c"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/AviSynthPlus.json",
+          "bytes": 1329,
+          "sha256": "3c81f331af1f416cb62c480125ae0af5c31c93a9a8d1e3659dd30631efbdcb1f"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/OpenSSL.json",
+          "bytes": 1365,
+          "sha256": "0416ed601dd2e36224d2fc0688609c75b1aa5c86e88879fc0e0ad05ef755352e"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/SDL.json",
+          "bytes": 1943,
+          "sha256": "4982bb78ee47dae3fcfb18fd69a6376b47f415fcba0bc74b94e8bc57fedd1a3c"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/aom.json",
+          "bytes": 1814,
+          "sha256": "ec7e280549db026807f40a5b7e73eabd180f61577c115df16920ae656dc3ebff"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/bzlib.json",
+          "bytes": 817,
+          "sha256": "f728b09a23618f2725163c6ec062de2015bb5bda109f293d6e8cf1e05281719a"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/expat.json",
+          "bytes": 1218,
+          "sha256": "9b2949e419e37d81fa5d2bb477942a0b4e453192d588c49f78bda5621bec2baa"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/ffnvcodec.json",
+          "bytes": 1296,
+          "sha256": "8c212d0c982a1a9f2b97a85e1769a3ff1974ef3b822826f74c27285ac7afd4fb"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/freetype-dlg.json",
+          "bytes": 1442,
+          "sha256": "a29c01b29597307179ddc196e1a8238f660c39cc51e6b02c210f8cfe39b0a12d"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/freetype.json",
+          "bytes": 1131,
+          "sha256": "7bf87a5927c280bf309da4bb54b952264326cb46e9ce57bdbcea452f1e94a15a"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/fribidi.json",
+          "bytes": 1024,
+          "sha256": "3239f9b6e508220da0b8db72780130130671d3441ebfdba91a966a25c08e5a24"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/gmp.json",
+          "bytes": 977,
+          "sha256": "b703cbda2ee8eefe9a25895906b450faa4e7d3e1512887a39e06fdccd927f8c6"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/gnutls.json",
+          "bytes": 1418,
+          "sha256": "26b2be7767d2ca361d31650d97966da427f0bbf0a68fccda29a9ce1541338ac9"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/gsm.json",
+          "bytes": 710,
+          "sha256": "dba05ec66384edce75169f13fc49645063d9b84b20bd202fa009f9eba14a9eca"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/harfbuzz.json",
+          "bytes": 1464,
+          "sha256": "3ded3686422af27cdce150302972b60aaa5525cc7a42060e66160c537c3ff328"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/lame.json",
+          "bytes": 885,
+          "sha256": "8b8a68343b23d6781548825a233cce7d13bc01fa79f80d56c7a3b4e44580703c"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/libass.json",
+          "bytes": 1013,
+          "sha256": "3ba0ae1c9d4c76b9dd18cdcd605ca10dd77493110eefefcfac9beba37de59905"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/libgme.json",
+          "bytes": 1150,
+          "sha256": "5b64306ef8a3918b8b21ebe4bae3dd3d20a0950f4f48ad79fe36dfdc0199fe3d"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/libssh.json",
+          "bytes": 932,
+          "sha256": "e37360d7ded49a5f4d79aa0dabc7610bfe7740eca4ed912106d838faacc204f8"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/libtheora.json",
+          "bytes": 873,
+          "sha256": "151acb00e9c082bcbebea8337d1c15448abf6edbb990287ce7a926991ae9b21d"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/libwebp.json",
+          "bytes": 1037,
+          "sha256": "2445bfd5d86bb2349a1c31c446e42b334fcfa1ae256f42975bb7c55f1c24e4c6"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/nettle.json",
+          "bytes": 931,
+          "sha256": "a11779f90386e9577ca825bdfaa91c619a78068fc2c45104b4ddbb40ab9b1402"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/oneVPL.json",
+          "bytes": 382,
+          "sha256": "9c34d412634ccef69062236446de48061df64409ff408d424ce2b7fd2737da71"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/opencore-amr.json",
+          "bytes": 1023,
+          "sha256": "c0dd7305948f0a0a3ba091797750b3db3ed980ffd5705ca53a25956fa2a217f2"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/openmpt.json",
+          "bytes": 4601,
+          "sha256": "b0853f09c9a156654f796e8cc38e05e05af7095c9fcef86f6966a42a94cf519d"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/opus.json",
+          "bytes": 1094,
+          "sha256": "2b5823ef589f25f0599d43aa7105e9abc1d37daf1af9e13f9284ce3f89b816cf"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/rubberband.json",
+          "bytes": 1263,
+          "sha256": "8da0f065e5109ff45dbd480b3a3faaeacb06796316d1b643e9db326a97d7dfb4"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/speex.json",
+          "bytes": 1001,
+          "sha256": "1917515e2ebf605f21fe390f628a3a900f7bd6340a4c48ba635d69da52292940"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/srt.json",
+          "bytes": 1002,
+          "sha256": "198e5089fa12d26b82f2f89d342cd38337f5d1e6909b4f77b826d32fa8bd46f8"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/vidstab.json",
+          "bytes": 1040,
+          "sha256": "e212870b1edd4cd69975af6ff12a634d758bdc8e5a7fbc2febd10dc33ec4bfe6"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/vmaf.json",
+          "bytes": 1006,
+          "sha256": "597c54698e0e52bf44ca2017c2d345f83f427b24e48c9ba845aab2e93edf103d"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/vo-amrwbenc.json",
+          "bytes": 837,
+          "sha256": "75bfedf7259dd37767a8eef8b268539ba9cb26ccc976145de66523ab84eb9e72"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/vorbis.json",
+          "bytes": 1104,
+          "sha256": "4777c7ca3bf1cc4917315e9ea4edda9bb575535b664a114ba3c940cecc90e491"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/vpx.json",
+          "bytes": 1456,
+          "sha256": "9ebcbb3fb67b56b941235b3d13553242369a25982d19091b7d50af726bb6bf37"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/x264.json",
+          "bytes": 1000,
+          "sha256": "ebd505d5a4cb69983ddd0b5c5eb28e12bdd915ce98c9e283e2665bc1c2de0afa"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/x265.json",
+          "bytes": 1387,
+          "sha256": "2923b59eceea1e05f2db09a190ba3074137af08b84eb9062ff57af7d8e97f009"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/xvid.json",
+          "bytes": 792,
+          "sha256": "8af54e07b815ce7d366c8e7baceff8ace026ec7f91a195ac6fe9ad068f2fa833"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/zeromq.json",
+          "bytes": 1432,
+          "sha256": "0e0d6e2c9a9b268c2f2083b9030030a90c277c71eef0ac315a1d671b37704b29"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/zimg-googletest.json",
+          "bytes": 1606,
+          "sha256": "c50ba13d8731aab50588c475a9be31633d40967547f1d4d11b824c059221c3ee"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/zimg-graphengine.json",
+          "bytes": 1582,
+          "sha256": "1133b0b89319c335a07ab31c135a462632e7f50f7ce6f901d22a7e40733dc8e5"
+        },
+        {
+          "path": "ffmpeg/win32-x64/library-sources/zimg.json",
+          "bytes": 1204,
+          "sha256": "34728eecc5c84bda1dec175d50a43a0753008e8bae3dba888a8c1aefcdfcc3a6"
+        },
+        {
+          "path": "ffmpeg/win32-x64/license-stderr.txt",
+          "bytes": 1480,
+          "sha256": "9b00757ecf5ef2dfc869c6ff02bcd851dbbef840493ec1d9011be1d4628e7563"
+        },
+        {
+          "path": "ffmpeg/win32-x64/license.txt",
+          "bytes": 594,
+          "sha256": "040708d6a654aed3dbc2bc4fae8f247ba2817ebe08898042b601016e9fe870ac"
+        },
+        {
+          "path": "ffmpeg/win32-x64/onevpl-changelog-2026-09-24.md",
+          "bytes": 16296,
+          "sha256": "d24069a77ae1e5f0722df2279713cc31df5b253beb89a96f48ca75549a147089"
+        },
+        {
+          "path": "ffmpeg/win32-x64/onevpl-version-review.json",
+          "bytes": 426,
+          "sha256": "8000c9a395adbf9adb2c4400d14e009cc9a94d52ad0300a68e0ee13bcde468df"
+        },
+        {
+          "path": "ffmpeg/win32-x64/sources.json",
+          "bytes": 30924,
+          "sha256": "44399abb0ef896f6d14d52a8deb6670988b489b61cbfe6e94b3f1b077798f6a0"
+        },
+        {
+          "path": "ffmpeg/win32-x64/subtitle-library-probe.json",
+          "bytes": 3127,
+          "sha256": "435f957ea7658609b0e478092d55178054c03cfd947f8887b3099bc87227e396"
+        },
+        {
+          "path": "ffmpeg/win32-x64/upstream.LICENSE",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "ffmpeg/win32-x64/upstream.README",
+          "bytes": 39494,
+          "sha256": "a636a7183c58006351acbaf35303c0ed85c6e1320fd4e80de453ba6157de6311"
+        },
+        {
+          "path": "ffmpeg/win32-x64/version.txt",
+          "bytes": 1460,
+          "sha256": "7f4d3ab5ba00f3e6effb568e497845b46a22d0e9d3a559d66471735884d89b5e"
+        },
+        {
+          "path": "ffmpeg-build-configuration.txt",
+          "bytes": 3903,
+          "sha256": "bf2f646774395b22c2175210d453a13f079dd3fd358c4c7f999eda7dfd31411d"
+        },
+        {
+          "path": "ffmpeg-static-GPL-3.0.txt",
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "path": "npm/agent-base-LICENSE.txt",
+          "bytes": 1102,
+          "sha256": "71368fd0f5b4129191e9afcd1e1ef2dc89a9090d3e4d80bbab92dafd032b3bef"
+        },
+        {
+          "path": "npm/buffer-from-LICENSE.txt",
+          "bytes": 1078,
+          "sha256": "14275f5c8139d02054c5259d52a88ccbba662a86af18c30f071c8d082dc6004c"
+        },
+        {
+          "path": "npm/caseless-LICENSE.txt",
+          "bytes": 9113,
+          "sha256": "0ccb0dc204a2d08f25ed7f984de0c73335eb2945b54bfcf57660034a27b5c0f5"
+        },
+        {
+          "path": "npm/concat-stream-LICENSE.txt",
+          "bytes": 1084,
+          "sha256": "96b29c9aaa611a05349b362d48c2ffce0966fe408401a2d1a157be312c035b5f"
+        },
+        {
+          "path": "npm/debug-LICENSE.txt",
+          "bytes": 1139,
+          "sha256": "3a61c6c96caf5c1d9b623fb9b04c822b783dfcb78aa7e49c76a3f643e6ed7f95"
+        },
+        {
+          "path": "npm/derhuerst__http-basic-LICENSE.txt",
+          "bytes": 1069,
+          "sha256": "c78cbf5bc00228b1217a8e97b867c540bd178940c80b91467ed848868f750b92"
+        },
+        {
+          "path": "npm/env-paths-LICENSE.txt",
+          "bytes": 1109,
+          "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
+        },
+        {
+          "path": "npm/http-response-object-LICENSE.txt",
+          "bytes": 1058,
+          "sha256": "44191656d296391e0ec97e32f5385f0d02b6f2992694082d22ea04ba0f66f9e4"
+        },
+        {
+          "path": "npm/https-proxy-agent-LICENSE.txt",
+          "bytes": 1102,
+          "sha256": "71368fd0f5b4129191e9afcd1e1ef2dc89a9090d3e4d80bbab92dafd032b3bef"
+        },
+        {
+          "path": "npm/inherits-LICENSE.txt",
+          "bytes": 749,
+          "sha256": "5ffe28e7ade7d8f10d85d5337a73fd793dac5c462fb9a28fbf8c5046c7fbca3b"
+        },
+        {
+          "path": "npm/js-tokens-LICENSE.txt",
+          "bytes": 1103,
+          "sha256": "2213d91c606205c71eb051a199478cdc2adde945893404d7f1421436dd6d5cc1"
+        },
+        {
+          "path": "npm/loose-envify-LICENSE.txt",
+          "bytes": 1100,
+          "sha256": "4eb7543b08d955a6d23fcc224601d43ff566e775be918805e26210d7f6eb4893"
+        },
+        {
+          "path": "npm/ms-LICENSE.txt",
+          "bytes": 1079,
+          "sha256": "1662fae9b5314d11cf51284e2dcd1f006a354f7343f08712a730fcff9a359801"
+        },
+        {
+          "path": "npm/parse-cache-control-LICENSE.txt",
+          "bytes": 1549,
+          "sha256": "111f42b37daecc6c387d037ef25955bd269e7f9a46a736d5257a23560534763f"
+        },
+        {
+          "path": "npm/progress-LICENSE.txt",
+          "bytes": 1098,
+          "sha256": "d7d2a7786de7c7cfd96f920c6f12927d74e1d2a861ca4498bf465c3bc3f4c21c"
+        },
+        {
+          "path": "npm/readable-stream-LICENSE.txt",
+          "bytes": 2337,
+          "sha256": "ec62dc96da0099b87f4511736c87309335527fb7031639493e06c95728dc8c54"
+        },
+        {
+          "path": "npm/safe-buffer-LICENSE.txt",
+          "bytes": 1081,
+          "sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac"
+        },
+        {
+          "path": "npm/string_decoder-LICENSE.txt",
+          "bytes": 2338,
+          "sha256": "11f2aafb37d06b3ee5bdaf06e9811141d0da05263c316f3d627f45c20d43261b"
+        },
+        {
+          "path": "npm/typedarray-LICENSE.txt",
+          "bytes": 1565,
+          "sha256": "26181ebee1063f3dc6766a3b6d05999a0da058f172eadf2ca5d15105ffd9735a"
+        },
+        {
+          "path": "npm/types__node-LICENSE.txt",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        },
+        {
+          "path": "npm/util-deprecate-LICENSE.txt",
+          "bytes": 1102,
+          "sha256": "0154425673db15cdfa80ecba2c9b1f1a867f7197a006764712849bfc3a93cbb7"
+        },
+        {
+          "path": "react-LICENSE.txt",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "path": "react-dom-LICENSE.txt",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "path": "scheduler-LICENSE.txt",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "path": "vite-LICENSE.txt",
+          "bytes": 112425,
+          "sha256": "387dd7baa307083401a27c58c362c30832f5ba1dba84f10cc22c33401523f45c"
+        },
+        {
+          "path": "vitejs-plugin-react-LICENSE.txt",
+          "bytes": 1103,
+          "sha256": "29b68325fe026047d13e187b44c33b2acacf7dc647dec4583702e59f235e13b5"
+        },
+        {
+          "path": "wait-on-LICENSE.txt",
+          "bytes": 1081,
+          "sha256": "8320fa774a8d37dd83a75d82c429bb40e26e76b834aa279a9269d7d595f0aa6e"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1072,
+          "sha256": "8d45dbb64725f1e576857001fefd33949abeb128e605530c19022595773f820c"
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.md",
+          "bytes": 7501,
+          "sha256": "69c6ad7ae0b54fe876a1441a19bb852c89cb74e63f25be66e9967882754d508b"
+        }
+      ]
+    }
+  ],
+  "scope": "License file inclusion and byte equality only; not corresponding-source clearance."
+}

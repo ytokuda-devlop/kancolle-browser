@@ -22,7 +22,7 @@
 ## 動作環境
 
 - Windows 11
-- macOS
+- macOS (Apple Silicon（arm64）)のみ
 - 1920 \* 1080以上のモニタ推奨
 
 ## 開発環境・言語
@@ -32,6 +32,37 @@ Electron + React で開発しています。
 ChatGPTを使用しています。
 
 開発環境は Macbook Pro + VSCode になります。
+
+## TypeScriptの段階導入
+
+React側とElectron側のアプリソースはすべてTS・TSXへ移行済みです。
+開発用依存関係は `npm ci` でインストールできます。
+
+- `tsconfig.base.json`：共通設定。`strict: true`・`allowJs: false` でアプリのTSを検査します。
+- `tsconfig.renderer.json`：React・DOM・Vite用。`src/` と今後追加する `shared/` を対象にします。
+- `tsconfig.electron.json`：Node・Electron用。`electron/` と `shared/` を対象にし、現在のpackage.jsonに合わせてCommonJSとして解決します。
+
+`npm run typecheck` で両方の型チェックを実行します。
+個別に実行する場合は `npm run typecheck:renderer` または `npm run typecheck:electron` を使います。
+`npm run build` と、それを呼ぶ配布コマンドでも、ビルド前に型チェックを実行します。
+
+両設定とも `noEmit: true` とし、型チェックとJSの生成を分けています。
+Electron用JSは `npm run build:electron` で型チェック後にesbuildで生成します。
+mainとpreloadをCommonJSの別バンドルとして `dist-electron/main.js` と `dist-electron/preload.js` に出力します。
+`npm run dev` はElectronをビルドしてからViteとElectronを起動し、配布コマンドは生成物を収録します。
+Electron側を変更した場合は `npm run dev` を再起動してください（React側は従来通りHMRで反映）。
+
+共通の型は `shared/kancolle.ts`（表示用データ）と `shared/electronApi.ts`（公開API）に定義しています。
+`src/types/electron.d.ts` が `window.electronAPI` の型を宣言します。
+通常のブラウザではAPIが存在しないため、利用前に存在を確認してください。
+main・window・preload・IPC・services・共有runtimeはTSへ移行済みです。
+`electron/preload.ts` は共通の `ElectronAPI` 型に合わせて公開APIを定義します。
+共通の型は `import type` で参照し、実行時のrequireを追加しません。
+`electron/kancolle/store.ts` と `apiCapture.ts` もTSへ移行済みです。
+APIの受信型は `apiTypes.ts`、ストア内部の状態型は `storeTypes.ts` に定義します。
+JSONとCDPの受信境界では、エンドポイント・イベントごとの型を指定しています。
+全フィールドを実行時に検証するスキーマは追加していません。
+`npm run test:kancolle` で、母港データの整形・艦隊変更・補給・修復・任務・出撃・通信捕捉の回帰テストを実行できます。
 
 ## ライセンス
 

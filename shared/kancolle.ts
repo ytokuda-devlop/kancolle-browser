@@ -50,6 +50,8 @@ export interface ShipData {
   slots: EquipmentData[];
 }
 
+export type ShipInfoData = Pick<ShipData, 'id' | 'name' | 'lv' | 'maxhp' | 'cond' | 'karyoku' | 'raisou' | 'taiku' | 'soukou' | 'kaihi' | 'taisen' | 'sakuteki' | 'lucky'> & { shipType: number; equipment: (EquipmentData | null)[]; expansionEquipment: EquipmentData | null };
+
 export interface MissionData {
   status: number;
   missionId: number;

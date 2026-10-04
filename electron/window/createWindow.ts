@@ -210,6 +210,7 @@ export function createWindow(): void {
   runtime.mainWindow.on('resize', updateGameViewBounds);
 
   runtime.mainWindow.on('closed', () => {
+    runtime.shipInfoWindow?.close();
     runtime.mainWindow = null;
     runtime.gameView = null;
   });

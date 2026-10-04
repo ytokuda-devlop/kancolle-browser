@@ -608,6 +608,9 @@ function sendMaterialDataToUi() {
 
 // UI (React) への艦隊データ送信
 function sendFleetDataToUi() {
+  if (runtime.shipInfoWindow && !runtime.shipInfoWindow.isDestroyed()) {
+    runtime.shipInfoWindow.webContents.send('kancolle:ship-data', kancolleStore.getFormattedShips());
+  }
   if (runtime.mainWindow) {
     const fleetData = kancolleStore.getFormattedFleets();
     runtime.mainWindow.webContents.send('kancolle:fleet-data', fleetData);

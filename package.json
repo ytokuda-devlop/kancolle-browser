@@ -1,7 +1,7 @@
 {
   "name": "Kancolle-browser",
-  "productName": "艦娘は今日もお仕事です（仮）",
-  "version": "1.0.0",
+  "productName": "艦娘は今日もお仕事です（カリ）",
+  "version": "2.0.0",
   "private": true,
   "license": "MIT",
   "description": "Kancolle Dedicated Browser",

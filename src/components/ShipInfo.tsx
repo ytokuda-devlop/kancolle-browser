@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { EquipmentData, ShipInfoData } from '../../shared/kancolle';
 import './ship-info.css';
+import ProficiencyMark from './fleet/ProficiencyMark';
 import { shipTabs, matchesShipTab, type ShipTab } from '../utils/shipTabs';
 
 type SortKey = Exclude<keyof ShipInfoData, 'id' | 'shipType' | 'equipment' | 'expansionEquipment'>;
@@ -89,6 +90,10 @@ export default function ShipInfo() {
 }
 
 function EquipmentCell({ item, available }: { item: EquipmentData | null | undefined; available: boolean }) {
-  const label = item ? `${item.name}${item.level > 0 ? ` ★+${item.level}` : ''}${item.alv > 0 ? ` 熟練度${item.alv}` : ''}${item.isAircraft ? ` (${item.currentAircraft ?? 0}/${item.maxAircraft ?? 0})` : ''}` : available ? '未装備' : '—';
-  return <span className="ship-info-cell" title={label}>{label}</span>;
+  const label = item ? `${item.name}${item.level > 0 ? ` ★+${item.level}` : ''}` : available ? '未装備' : '—';
+  return <span className="ship-info-cell ship-equipment-cell">
+    <span className="ship-equipment-label" title={label}>{item ? item.name : label}</span>
+    {item && item.level > 0 && <span className="slot-level" title={`改修値 ${item.level}`}>★+{item.level}</span>}
+    {item?.isAircraft && item.alv > 0 && <ProficiencyMark level={item.alv} />}
+  </span>;
 }

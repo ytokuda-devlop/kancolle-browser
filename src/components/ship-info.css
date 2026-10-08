@@ -4,7 +4,7 @@
 .ship-info-header span { color: var(--text-secondary); font-size: 0.85rem; }
 .ship-info-table-scroll { flex: 1; min-height: 0; overflow: auto; border: 1px solid var(--border-color); border-radius: 6px; }
 .ship-info-table { width: 100%; min-width: 980px; table-layout: fixed; border-collapse: separate; border-spacing: 0; font-size: 0.85rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
-.ship-info-name-column { width: 220px; }
+.ship-info-name-column { width: 200px; }
 .ship-info-table th { position: sticky; top: 0; background: var(--bg-secondary); z-index: 1; text-align: right; border-bottom: 1px solid var(--border-color); }
 .ship-info-table th button { width: 100%; padding: 12px 10px; border: 0; background: transparent; color: var(--text-primary); font: inherit; font-weight: 600; text-align: inherit; cursor: pointer; }
 .ship-info-table th button:hover { background: var(--bg-tertiary); }
@@ -27,3 +27,6 @@
 .ship-equipment-table { width: max-content; }
 .ship-equipment-table th { padding: 12px 10px; }
 .ship-equipment-table td:nth-child(n+3), .ship-equipment-table th:nth-child(n+3) { text-align: left; }
+.ship-equipment-cell { display: flex; align-items: center; gap: 6px; }
+.ship-equipment-label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ship-equipment-cell .slot-level { flex: none; }

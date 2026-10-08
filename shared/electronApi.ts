@@ -1,4 +1,5 @@
 import type {
+  ShipInfoData,
   FleetData,
   KdockData,
   MaterialData,
@@ -22,6 +23,9 @@ export type DmmPointPageResult = { success: true } | OperationFailure;
 
 /** preloadがcontextBridgeを通じて公開する全API。Node/Electronの実装には依存しない。 */
 export interface ElectronAPI {
+  openShipInfo(): Promise<{ success: true } | OperationFailure>;
+  onShipData: DataSubscription<ShipInfoData[]>;
+  getShipData(): void;
   reloadGame(): void;
   toggleDevTools(): void;
   toggleGameDevTools(): void;

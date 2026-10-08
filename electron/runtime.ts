@@ -5,11 +5,13 @@
 import type { BrowserWindow, WebContentsView } from 'electron';
 
 interface Runtime {
+  shipInfoWindow: BrowserWindow | null;
   mainWindow: BrowserWindow | null;
   gameView: WebContentsView | null;
 }
 
 const runtime: Runtime = {
+  shipInfoWindow: null,
   mainWindow: null,
   gameView: null
 };

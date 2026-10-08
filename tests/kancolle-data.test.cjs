@@ -231,3 +231,51 @@ test('母港で任務の全ページを取得し、途中失敗時は既存任�
   await receive('api_port/port', {});
   assert.equal(questRequests, 4);
 });
+
+test('全艦娘一覧は編成外の艦も含み、耐久と対象の能力値だけを返す', () => {
+  const store = load(storeCode);
+  store.updateMaster(master);
+  store.updatePort({ api_ship: [ship(1), ship(2)], api_deck_port: [deck(1, [1])] });
+  const allShips = plain(store.getFormattedShips());
+  assert.deepEqual(allShips.map(item => item.id), [1, 2]);
+  assert.equal(allShips[1].name, 'テスト艦');
+  assert.equal(allShips[1].maxhp, 30);
+  assert.equal(allShips[1].karyoku, 40);
+  assert.deepEqual(Object.keys(allShips[1]).sort(), [
+    'id', 'name', 'lv', 'maxhp', 'cond', 'karyoku', 'raisou', 'taiku',
+    'soukou', 'kaihi', 'taisen', 'sakuteki', 'lucky', 'shipType', 'equipment', 'expansionEquipment'
+  ].sort());
+  store.updatePort({ api_ship: [ship(2)] });
+  assert.deepEqual(plain(store.getFormattedShips()).map(item => item.id), [2]);
+});
+
+test('艦種タブは派生艦種を同じ系統にまとめ、補助艦を分類する', () => {
+  const { matchesShipTab } = load(bundle('src/utils/shipTabs.ts'));
+  for (const [type, tab] of [
+    [10, '戦艦'], [7, '空母'], [18, '空母'], [6, '重巡'],
+    [4, '軽巡'], [21, '軽巡'], [2, '駆逐'], [1, '海防'],
+    [14, '潜水'], [16, '補助'], [19, '補助'], [20, '補助'], [22, '補助']
+  ]) {
+    assert.equal(matchesShipTab(type, tab), true);
+    assert.equal(matchesShipTab(type, 'ALL'), true);
+    if (tab !== '補助') assert.equal(matchesShipTab(type, '補助'), false);
+  }
+  assert.equal(matchesShipTab(14, '空母'), false);
+});
+
+test('艦娘装備は編成外の艦も対象にし、空きスロットと補強増設を分けて返す', () => {
+  const store = load(storeCode);
+  store.updateMaster(master);
+  store.updatePort({ api_ship: [ship(1), ship(2, [-1, 101])], api_deck_port: [deck(1, [1])] });
+  store.updateSlotItems(slotItems);
+  const ships = plain(store.getFormattedShips());
+  assert.equal(ships[1].equipment[0], null);
+  assert.equal(ships[1].equipment[1].name, 'テスト装備');
+  assert.equal(ships[1].equipment[1].level, 3);
+  assert.equal(ships[1].equipment[1].alv, 7);
+  assert.equal(ships[1].equipment[1].isExpansion, false);
+  assert.equal(ships[1].expansionEquipment.id, 102);
+  assert.equal(ships[1].expansionEquipment.isExpansion, true);
+  assert.equal(ships[0].equipment[0].currentAircraft, 3);
+  assert.equal(ships[0].equipment[0].maxAircraft, 18);
+});

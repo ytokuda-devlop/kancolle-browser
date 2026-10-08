@@ -1,10 +1,17 @@
 import { contextBridge, ipcRenderer } from 'electron';
 import type { IpcRendererEvent } from 'electron';
 import type { ElectronAPI } from '../shared/electronApi';
-import type { MaterialData, FleetData, NdockData, KdockData, QuestData, SortieData } from '../shared/kancolle';
+import type { ShipInfoData, MaterialData, FleetData, NdockData, KdockData, QuestData, SortieData } from '../shared/kancolle';
 
 // レンダラープロセス（React）に安全にAPIを公開する
 const electronAPI: ElectronAPI = {
+  openShipInfo: () => ipcRenderer.invoke('ships:open'),
+  onShipData: (callback) => {
+    const subscription = (_event: IpcRendererEvent, data: ShipInfoData[]) => callback(data);
+    ipcRenderer.on('kancolle:ship-data', subscription);
+    return () => ipcRenderer.removeListener('kancolle:ship-data', subscription);
+  },
+  getShipData: () => ipcRenderer.send('kancolle:get-ship-data'),
   // ゲーム画面の再読み込みをメインプロセスに要求する
   reloadGame: () => ipcRenderer.send('game:reload'),
 

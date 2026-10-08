@@ -1,0 +1,32 @@
+.ship-info { height: 100%; display: flex; flex-direction: column; padding: 20px; gap: 16px; }
+.ship-info-header { display: flex; align-items: baseline; gap: 20px; }
+.ship-info-header h1 { font-size: 1.3rem; }
+.ship-info-header span { color: var(--text-secondary); font-size: 0.85rem; }
+.ship-info-table-scroll { flex: 1; min-height: 0; overflow: auto; border: 1px solid var(--border-color); border-radius: 6px; }
+.ship-info-table { width: 100%; min-width: 980px; table-layout: fixed; border-collapse: separate; border-spacing: 0; font-size: 0.85rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ship-info-name-column { width: 200px; }
+.ship-info-table th { position: sticky; top: 0; background: var(--bg-secondary); z-index: 1; text-align: right; border-bottom: 1px solid var(--border-color); }
+.ship-info-table th button { width: 100%; padding: 12px 10px; border: 0; background: transparent; color: var(--text-primary); font: inherit; font-weight: 600; text-align: inherit; cursor: pointer; }
+.ship-info-table th button:hover { background: var(--bg-tertiary); }
+.ship-info-table th button:focus-visible { outline: 2px solid var(--accent-color); outline-offset: -2px; }
+.ship-info-table td { height: 41px; padding: 10px; vertical-align: middle; text-align: right; border-bottom: 1px solid var(--border-color); }
+.ship-info-cell { display: block; height: 20px; line-height: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ship-info-table th:first-child, .ship-info-table td:first-child { text-align: left; }
+.ship-info-table tbody tr:nth-child(even) { background: var(--bg-secondary); }
+.ship-info-table tbody tr:hover { background: var(--bg-tertiary); }
+.ship-info-empty { padding: 32px 16px; text-align: center; color: var(--text-secondary); }
+
+.ship-info-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.ship-info-tabs button { padding: 8px 16px; border: 1px solid var(--border-color); border-radius: 5px; background: var(--bg-secondary); color: var(--text-primary); font: inherit; font-size: 0.85rem; cursor: pointer; }
+.ship-info-tabs button:hover { background: var(--bg-tertiary); }
+.ship-info-tabs button[aria-selected="true"] { background: var(--accent-color); border-color: var(--accent-color); color: var(--bg-secondary); font-weight: 700; }
+.ship-info-tabs button:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
+
+.ship-info-view-panel { display: flex; flex-direction: column; flex: 1; min-height: 0; gap: 16px; }
+.ship-info-view-tabs { border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
+.ship-equipment-table { width: max-content; }
+.ship-equipment-table th { padding: 12px 10px; }
+.ship-equipment-table td:nth-child(n+3), .ship-equipment-table th:nth-child(n+3) { text-align: left; }
+.ship-equipment-cell { display: flex; align-items: center; gap: 6px; }
+.ship-equipment-label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ship-equipment-cell .slot-level { flex: none; }

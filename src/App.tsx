@@ -19,6 +19,16 @@ function App() {
     isCapturingScreenshot,
     screenshotStatus
   } = useScreenshot();
+  const [shipInfoStatus, setShipInfoStatus] = useState('');
+  const openShipInfo = async () => {
+    setShipInfoStatus('');
+    try {
+      const result = await window.electronAPI?.openShipInfo();
+      if (result && !result.success) setShipInfoStatus(result.error);
+    } catch {
+      setShipInfoStatus('艦娘一覧を開けませんでした。');
+    }
+  };
   const [pointActionStatus, setPointActionStatus] = useState('');
   const [pendingPointAction, setPendingPointAction] = useState<DmmPointAction | ''>('');
   const [now, setNow] = useState(Date.now());
@@ -93,7 +103,11 @@ function App() {
                 {isCapturingScreenshot && <span className="button-spinner" aria-hidden="true" />}
                 {isCapturingScreenshot ? '保存中' : 'キャプチャ'}
               </button>
+              <button className="browser-control-button browser-control-ship-info" onClick={openShipInfo}>
+                艦娘一覧
+              </button>
             </div>
+            {shipInfoStatus && <div className="control-status control-status-error">{shipInfoStatus}</div>}
             {pointActionStatus && (
               <div className="control-status control-status-error" title={pointActionStatus}>
                 {pointActionStatus}

@@ -1,6 +1,6 @@
 import type { ApiMaterials, ApiUseItem, ApiRecord, ApiBasic, ApiMaster, ApiSortie, ApiPort, ApiDeck, ApiSlotExchange, ApiSupply, ApiShip, ApiShipData, ApiSlotItem, ApiSlotItems, ApiNdock, ApiKdock, ApiQuestList } from './apiTypes';
 import type { StoreState, StoredDeck } from './storeTypes';
-import type { MaterialData, FleetData, EquipmentData, ShipData, NdockData, KdockData, QuestData, SortieData } from '../../shared/kancolle';
+import type { ShipInfoData, MaterialData, FleetData, EquipmentData, ShipData, NdockData, KdockData, QuestData, SortieData } from '../../shared/kancolle';
 
 /*
  * 艦これAPIから受信したマスタ・艦隊・装備・資材・ドック・任務・出撃情報を保持するデータストア。
@@ -614,14 +614,10 @@ const kancolleStore = {
     return masterItem ? masterItem.name : `装備 ID:${userItem.slotitemId}`;
   },
 
-  getFormattedFleets(): FleetData[] {
-    return this.decks.map(deck => {
-      const ships = deck.shipIds.map(id => {
-        const ship = this.ships[id];
-        if (!ship) return null;
-        const master: Partial<StoreState["shipsMaster"][number]> = this.shipsMaster[ship.shipId] || {};
-
-        const formatSlotItem = (slotId: number, slotIndex: number, isExpansion = false): EquipmentData | null => {
+  getFormattedShipEquipment(shipId: number): { equipment: (EquipmentData | null)[]; expansionEquipment: EquipmentData | null } {
+    const ship = this.ships[shipId];
+    const master = this.shipsMaster[ship.shipId] || {} as Partial<StoreState['shipsMaster'][number]>;
+    const formatSlotItem = (slotId: number, slotIndex: number, isExpansion = false): EquipmentData | null => {
           if (!Number.isFinite(slotId) || slotId <= 0) return null;
           const userItem = this.slotItems[slotId];
           const masterItem = userItem ? this.slotitemsMaster[userItem.slotitemId] : null;
@@ -639,14 +635,35 @@ const kancolleStore = {
           };
         };
 
-        const slotItems = (ship.slots || [])
-          .map((slotId, slotIndex) => formatSlotItem(slotId, slotIndex))
-          .filter((item): item is NonNullable<typeof item> => item !== null);
+    return {
+      equipment: (ship.slots || []).map((slotId, index) => formatSlotItem(slotId, index)),
+      expansionEquipment: formatSlotItem(ship.slotEx, -1, true)
+    };
+  },
 
-        const expansionItem = formatSlotItem(ship.slotEx, -1, true);
-        if (expansionItem) {
-          slotItems.push(expansionItem);
-        }
+  getFormattedShips(): ShipInfoData[] {
+    return Object.values(this.ships).map(ship => ({
+      ...this.getFormattedShipEquipment(ship.id),
+      id: ship.id,
+      name: this.shipsMaster[ship.shipId]?.name || `艦娘 ID:${ship.shipId}`,
+      shipType: this.shipsMaster[ship.shipId]?.type || 0,
+      lv: ship.lv, maxhp: ship.maxhp, cond: ship.cond,
+      karyoku: ship.karyoku, raisou: ship.raisou, taiku: ship.taiku,
+      soukou: ship.soukou, kaihi: ship.kaihi, taisen: ship.taisen,
+      sakuteki: ship.sakuteki, lucky: ship.lucky
+    }));
+  },
+
+  getFormattedFleets(): FleetData[] {
+    return this.decks.map(deck => {
+      const ships = deck.shipIds.map(id => {
+        const ship = this.ships[id];
+        if (!ship) return null;
+        const master: Partial<StoreState["shipsMaster"][number]> = this.shipsMaster[ship.shipId] || {};
+
+        const { equipment, expansionEquipment } = this.getFormattedShipEquipment(ship.id);
+        const slotItems = [...equipment, expansionEquipment]
+          .filter((item): item is EquipmentData => item !== null);
 
         return {
           id: ship.id,

@@ -10,6 +10,7 @@ import './ipc/appIpc';
 import './ipc/kancolleDataIpc';
 import './services/dmmService';
 import './services/mediaService';
+import './services/shipInfoService';
 
 app.whenReady().then(() => {
   createWindow();

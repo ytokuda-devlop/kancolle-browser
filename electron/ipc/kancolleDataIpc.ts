@@ -5,6 +5,10 @@
 import { ipcMain } from 'electron';
 import kancolleStore = require('../kancolle/store');
 
+ipcMain.on('kancolle:get-ship-data', (event) => {
+  event.reply('kancolle:ship-data', kancolleStore.getFormattedShips());
+});
+
 // UIからの初期資材データ要求
 ipcMain.on('kancolle:get-material-data', (event) => {
   event.reply('kancolle:material-data', kancolleStore.getFormattedMaterials());

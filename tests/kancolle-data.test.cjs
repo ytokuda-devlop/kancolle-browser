@@ -46,6 +46,12 @@ const slotItems = [
 ];
 const params = values => new URLSearchParams(values);
 
+test('タイトルは起動時に艦娘を表示し、名前を取得できた場合に旗艦名を表示する', () => {
+  const { getMainWindowTitle } = load(bundle('electron/window/title.ts'));
+  assert.equal(getMainWindowTitle(), '艦娘は今日もお仕事です');
+  assert.equal(getMainWindowTitle('電改'), '電改は今日もお仕事です');
+});
+
 function loadCapture() {
   const code = buildSync({
     stdin: {
@@ -57,6 +63,51 @@ function loadCapture() {
   }).outputFiles[0].text;
   return load(code);
 }
+
+test('ログイン・旗艦交換・プリセット展開でタイトルを更新し、再ログインと情報欠落時は艦娘に戻す', async () => {
+  const { setupApiCapture, runtime } = loadCapture();
+  const titles = [];
+  let onMessage;
+  let currentBody;
+  runtime.mainWindow = {
+    isDestroyed: () => false, setTitle: title => titles.push(title),
+    webContents: { send() {} }
+  };
+  setupApiCapture({ webContents: { debugger: {
+    isAttached: () => false, attach() {},
+    on: (event, callback) => { onMessage = callback; },
+    sendCommand: async command => command === 'Network.getResponseBody' ? { body: currentBody } : {}
+  } } });
+  async function receive(endpoint, data, request = {}) {
+    currentBody = 'svdata=' + JSON.stringify({ api_result: 1, api_data: data });
+    await onMessage({}, 'Network.requestWillBeSent', { requestId: endpoint,
+      request: { url: `https://example.test/kcsapi/${endpoint}`, postData: params(request).toString() }
+    }, 'game');
+    await onMessage({}, 'Network.loadingFinished', { requestId: endpoint }, 'game');
+  }
+  const loginMaster = { ...master, api_mst_ship: [
+    { ...master.api_mst_ship[0], api_name: '電' },
+    { ...master.api_mst_ship[0], api_id: 11, api_name: '雷改' }
+  ] };
+  await receive('api_start2/getData', loginMaster);
+  assert.equal(titles.at(-1), '艦娘は今日もお仕事です');
+  await receive('api_port/port', {
+    api_ship: [ship(1), { ...ship(2), api_ship_id: 11 }],
+    api_deck_port: [deck(1, [1]), deck(2, [2])]
+  });
+  assert.equal(titles.at(-1), '電は今日もお仕事です');
+  await receive('api_req_hensei/change', {}, { api_id: '1', api_ship_idx: '0', api_ship_id: '2' });
+  assert.equal(titles.at(-1), '雷改は今日もお仕事です');
+  await receive('api_req_hensei/preset_select', deck(1, [1]));
+  assert.equal(titles.at(-1), '電は今日もお仕事です');
+  await receive('api_req_hensei/change', {}, { api_id: '2', api_ship_idx: '0', api_ship_id: '2' });
+  assert.equal(titles.at(-1), '電は今日もお仕事です');
+  await receive('api_req_hensei/preset_select', deck(1, [999]));
+  assert.equal(titles.at(-1), '艦娘は今日もお仕事です');
+  await receive('api_req_hensei/preset_select', deck(1, [1]));
+  await receive('api_start2/getData', loginMaster);
+  assert.equal(titles.at(-1), '艦娘は今日もお仕事です');
+});
 
 test('master・母港・装備を表示用データに整形し、所有枠と資材を更新する', () => {
   const store = load(storeCode);
@@ -144,7 +195,7 @@ test('CDPの同一requestIdをセッション別に処理し、base64応答とIP
   const bodies = new Map();
   const notifications = [];
   let onMessage;
-  runtime.mainWindow = { webContents: { send: (channel, data) => notifications.push({ channel, data: plain(data) }) } };
+  runtime.mainWindow = { isDestroyed: () => false, setTitle() {}, webContents: { send: (channel, data) => notifications.push({ channel, data: plain(data) }) } };
   const debuggerMock = {
     isAttached: () => false,
     attach() {},
@@ -201,7 +252,7 @@ test('母港で任務の全ページを取得し、途中失敗時は既存任�
       return { status: 200, text: async () => 'svdata=' + JSON.stringify(response) };
     }
   };
-  runtime.mainWindow = { webContents: { send: (channel, data) => notifications.push({ channel, data: plain(data) }) } };
+  runtime.mainWindow = { isDestroyed: () => false, setTitle() {}, webContents: { send: (channel, data) => notifications.push({ channel, data: plain(data) }) } };
   const view = { webContents: {
     isDestroyed: () => false, session,
     debugger: { isAttached: () => false, attach() {},

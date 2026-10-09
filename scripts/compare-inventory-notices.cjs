@@ -2,6 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const root = path.resolve(__dirname, '..');
+const project = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
 const dir = path.join(root, 'audits/inventory/windows-x64');
 const inventory = JSON.parse(fs.readFileSync(path.join(dir, 'inventory.json')));
 const read = p => fs.readFileSync(p);
@@ -35,7 +36,7 @@ for (const artifact of inventory.artifacts) {
     let status = 'unresolved', references = [], reason = 'No explicit component notice/license mapping found; provider and exact terms need investigation.';
     if (file.path.includes('node_modules/ffmpeg-static/ffmpeg.exe')) {
       throw new Error('Removed recording FFmpeg found in artifact');
-    } else if (file.path === 'app/艦娘は今日もお仕事です（仮）.exe') {
+    } else if (file.path === `app/${project.build.productName}.exe` || file.path === 'app/艦娘は今日もお仕事です（仮）.exe') {
       status = 'notice-present'; references = ['electron-LICENSE.txt', 'LICENSES.chromium.html'].map(license);
       reason = 'Application executable embeds Electron; original application LICENSE is also included.';
     } else {

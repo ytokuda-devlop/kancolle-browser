@@ -22,8 +22,11 @@
 ## 動作環境
 
 - Windows 11
-- macOS (Apple Silicon（arm64）)のみ
-- 1920 \* 1080以上のモニタ推奨
+- macOS (Apple Silicon（arm64）推奨)
+
+## 画面解像度
+
+- 推奨1920 \* 1080以上
 
 ## 開発環境・言語
 

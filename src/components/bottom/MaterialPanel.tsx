@@ -5,8 +5,8 @@ interface Props {
 }
 
 /*
- * 保有資材と保有枠の使用状況を表示するコンポーネント。
- * 10種類の資材、艦娘数、装備数を定義済みの順序でグリッド表示する。
+ * 保有資材を表示するコンポーネント。
+ * 10種類の資材を定義済みの順序でグリッド表示する。
  */
 const MATERIALS: { key: keyof MaterialData; label: string; className: string }[] = [
   { key: 'fuel', label: '油', className: 'mat-fuel' },
@@ -33,18 +33,6 @@ function MaterialPanel({ materials }: Props) {
               <span className="material-value">{materials[material.key].toLocaleString()}</span>
             </div>
           ))}
-          <div className="material-item capacity-item">
-            <span className="capacity-label">保有艦娘数</span>
-            <span className="material-value">
-              {materials.shipCount.toLocaleString()}/{materials.maxShips.toLocaleString()}
-            </span>
-          </div>
-          <div className="material-item capacity-item">
-            <span className="capacity-label">保有装備数</span>
-            <span className="material-value">
-              {materials.slotItemCount.toLocaleString()}/{materials.maxSlotItems.toLocaleString()}
-            </span>
-          </div>
         </div>
       </div>
     </div>

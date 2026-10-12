@@ -18,7 +18,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   height: 100%;
 }
 
@@ -27,14 +27,14 @@
   flex: 1;
 }
 
-/* 10資材と保有枠を2列6行でスクロールせず表示できる高さを確保する。 */
-.bottom-panel-main-col .material-col {
-  flex: 0 0 190px;
+/* 遠征欄をスクロールせず表示できる高さを確保する。 */
+.bottom-panel-main-col .mission-col {
+  flex: 0 0 84px;
 }
 
 /* 右カラムは任務8件の一覧性を優先し、出撃情報を必要最小限にする。 */
 .bottom-panel-main-col .sortie-col {
-  flex: 0 0 96px;
+  flex: 0 0 88px;
 }
 
 .bottom-panel-main-col .quest-col {
@@ -88,13 +88,6 @@
   font-size: 0.85rem;
   color: var(--text-primary);
   margin-left: 6px;
-}
-
-.capacity-label {
-  color: var(--bottom-text-secondary);
-  font-size: 0.72rem;
-  font-weight: 600;
-  white-space: nowrap;
 }
 
 /* 各資材のラベルテーマカラー（プレミアム感のある配色） */

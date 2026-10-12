@@ -59,7 +59,7 @@
 
 .fleet-summary {
   font-size: 0.8rem;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   display: flex;
   gap: 0px;
 }
@@ -168,7 +168,7 @@
 }
 
 .ship-num {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 0.75rem;
 }
 
@@ -181,7 +181,7 @@
 }
 
 .ship-lv {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   white-space: nowrap;
 }
 
@@ -286,7 +286,7 @@
 /* カードボディ部: パラメータ(左)と装備(右) */
 .ship-body {
   display: grid;
-  grid-template-columns: 130px minmax(0, 1fr);
+  grid-template-columns: 134px minmax(0, 1fr);
   gap: 10px;
   flex: 1;
   min-width: 0;
@@ -294,11 +294,22 @@
 }
 
 .ship-stats {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 56px);
-  gap: 1px 8px;
-  border-right: 1px solid var(--border-color);
+  gap: 1px 12px;
+  border-right: 1px solid var(--text-secondary);
   padding-right: 8px;
+}
+
+.ship-stats::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 61px;
+  border-left: 1px solid var(--border-color);
+  pointer-events: none;
 }
 
 .stat-item {
@@ -307,7 +318,7 @@
   column-gap: 7px;
   font-size: 0.65rem;
   /* 0.7rem から 0.65rem へ縮小 */
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .stat-val {

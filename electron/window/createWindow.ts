@@ -15,6 +15,7 @@ import runtime = require('../runtime');
 import { setupApiCapture } from '../kancolle/apiCapture';
 import { setupContextMenu } from './contextMenu';
 import { setupGamePageCss } from './gamePage';
+import { getMainWindowTitle } from './title';
 import { setupDmmPopupHandler } from '../services/dmmService';
 
 // ウィンドウとゲームビューのサイズを調整する関数
@@ -55,13 +56,16 @@ export function createWindow(): void {
     minWidth: Math.min(1200, workAreaWidth),
     minHeight: Math.min(720, workAreaHeight),
     show: false,
-    title: '艦これ専用ブラウザ',
+    title: getMainWindowTitle(),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true,
       nodeIntegration: false
     }
   });
+
+  // HTML側のタイトルで、旗艦名を反映したウィンドウタイトルが上書きされないようにする。
+  runtime.mainWindow.on('page-title-updated', event => event.preventDefault());
 
   let mainWindowRevealed = false;
   const revealMainWindow = (source: string): void => {
@@ -215,4 +219,3 @@ export function createWindow(): void {
     runtime.gameView = null;
   });
 }
-

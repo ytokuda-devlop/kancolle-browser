@@ -654,6 +654,12 @@ const kancolleStore = {
     }));
   },
 
+  getFirstFleetFlagshipName(): string | undefined {
+    const flagshipId = this.decks.find(deck => deck?.id === 1)?.shipIds[0];
+    const flagship = flagshipId === undefined ? undefined : this.ships[flagshipId];
+    return flagship ? this.shipsMaster[flagship.shipId]?.name : undefined;
+  },
+
   getFormattedFleets(): FleetData[] {
     return this.decks.map(deck => {
       const ships = deck.shipIds.map(id => {

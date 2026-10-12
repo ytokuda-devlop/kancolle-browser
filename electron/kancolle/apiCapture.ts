@@ -14,6 +14,7 @@ interface CdpBody { body: string; base64Encoded?: boolean }
  */
 import runtime = require('../runtime');
 import kancolleStore = require('./store');
+import { getMainWindowTitle } from '../window/title';
 
 // キャプチャ中の一時的なリクエスト情報マッピング
 // (sessionId:requestId -> { url, sessionId, postData })
@@ -576,6 +577,13 @@ async function handleKcsApiResponse(url: string, body: string, postData = ''): P
     }
 
     if (updated) {
+      if (runtime.mainWindow && !runtime.mainWindow.isDestroyed()) {
+        // 再ログイン時は前回の旗艦名を使わず、母港情報を受け取るまで初期タイトルに戻す。
+        const flagshipName = pathname.includes('/api_start2/getData')
+          ? undefined
+          : kancolleStore.getFirstFleetFlagshipName();
+        runtime.mainWindow.setTitle(getMainWindowTitle(flagshipName));
+      }
       sendFleetDataToUi();
     }
     if (updatedNdock) {
@@ -646,5 +654,4 @@ function sendSortieDataToUi() {
     runtime.mainWindow.webContents.send('kancolle:sortie-data', kancolleStore.getFormattedSortie());
   }
 }
-
 

@@ -87,6 +87,22 @@ function App() {
 
           {/* 艦隊情報の下に、今後の機能を追加するための領域 */}
           <section className="right-feature-panel">
+            <dl className="ownership-summary" aria-label="保有数と最大保有数">
+              <div className="ownership-item">
+                <dt>保有艦娘数</dt>
+                <dd>
+                  <span className="ownership-count">{materialData.shipCount.toLocaleString()}</span>
+                  <span className="ownership-limit"> / {materialData.maxShips.toLocaleString()}</span>
+                </dd>
+              </div>
+              <div className="ownership-item">
+                <dt>保有装備数</dt>
+                <dd>
+                  <span className="ownership-count">{materialData.slotItemCount.toLocaleString()}</span>
+                  <span className="ownership-limit"> / {materialData.maxSlotItems.toLocaleString()}</span>
+                </dd>
+              </div>
+            </dl>
             <div className="browser-controls browser-controls-actions">
               <button
                 className="browser-control-button browser-control-point-charge"

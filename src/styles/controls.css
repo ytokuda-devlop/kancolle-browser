@@ -26,6 +26,45 @@
   line-height: 1.4;
 }
 
+.ownership-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ownership-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0px 10px;
+  font-size: 0.85rem;
+}
+
+.ownership-item dt {
+  color: #cbd5e1;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ownership-item dd {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.ownership-count {
+  color: #fbbf24;
+  font-weight: 700;
+}
+
+.ownership-limit {
+  font-weight: 500;
+}
+
 .browser-controls {
   display: grid;
   gap: 6px;

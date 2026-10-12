@@ -414,7 +414,8 @@ export const MAP_NODE_LABELS: Partial<Record<string, Partial<Record<number, stri
     8: "H",
     9: "I",
     10: "J",
-    11: "K"
+    11: "K",
+    18: "K"
   },
   "6-3": {
     1: "A",
@@ -446,6 +447,21 @@ export const MAP_NODE_LABELS: Partial<Record<string, Partial<Record<number, stri
     18: "J",
     21: "N"
   },
+  "6-5": {
+    1: "A",
+    2: "B",
+    3: "C",
+    4: "D",
+    5: "E",
+    6: "F",
+    7: "G",
+    8: "H",
+    9: "I",
+    10: "J",
+    11: "K",
+    12: "L",
+    13: "M",
+  },
   "7-1": {
     1: "A",
     2: "B",
@@ -469,12 +485,12 @@ export const MAP_NODE_LABELS: Partial<Record<string, Partial<Record<number, stri
     6: "F",
     7: "G",
     8: "H",
-    9: "I",
+    9: "C",
     10: "J",
-    11: "K",
+    11: "I",
     12: "L",
     13: "M",
-    15: "G"
+    15: "M"
   },
   "7-3": {
     1: "A",

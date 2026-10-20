@@ -104,6 +104,10 @@ export interface SortieData {
   mapName: string;
   cellNo: number;
   bossCellNo: number;
+  /** mapinfoで取得した現在のゲージ段階。未取得ならnull。 */
+  gaugeNo?: number | null;
+  /** 段階別の目標ボス表示名。APIの内部IDとは別に扱う。 */
+  bossLabel?: string | null;
   isEvent: boolean;
   eventMap: EventMapData | null;
 }

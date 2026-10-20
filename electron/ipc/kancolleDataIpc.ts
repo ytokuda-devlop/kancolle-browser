@@ -4,6 +4,11 @@
  */
 import { ipcMain } from 'electron';
 import kancolleStore = require('../kancolle/store');
+import { mapCatalogStore } from '../kancolle/mapCatalog';
+import { getMapLogs } from '../kancolle/mapLog';
+
+ipcMain.handle('kancolle:get-map-catalog', () => mapCatalogStore.getCatalog());
+ipcMain.handle('kancolle:get-map-logs', () => getMapLogs());
 
 ipcMain.on('kancolle:get-ship-data', (event) => {
   event.reply('kancolle:ship-data', kancolleStore.getFormattedShips());

@@ -91,14 +91,18 @@ function App() {
               <div className="ownership-item">
                 <dt>保有艦娘数</dt>
                 <dd>
-                  <span className="ownership-count">{materialData.shipCount.toLocaleString()}</span>
+                  <span className={`ownership-count${materialData.maxShips > 0 && materialData.shipCount >= materialData.maxShips - 5 ? ' ownership-count-warning' : ''}`}>
+                    {materialData.shipCount.toLocaleString()}
+                  </span>
                   <span className="ownership-limit"> / {materialData.maxShips.toLocaleString()}</span>
                 </dd>
               </div>
               <div className="ownership-item">
                 <dt>保有装備数</dt>
                 <dd>
-                  <span className="ownership-count">{materialData.slotItemCount.toLocaleString()}</span>
+                  <span className={`ownership-count${materialData.maxSlotItems > 0 && materialData.slotItemCount >= materialData.maxSlotItems - 5 ? ' ownership-count-warning' : ''}`}>
+                    {materialData.slotItemCount.toLocaleString()}
+                  </span>
                   <span className="ownership-limit"> / {materialData.maxSlotItems.toLocaleString()}</span>
                 </dd>
               </div>

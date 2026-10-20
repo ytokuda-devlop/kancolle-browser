@@ -7,6 +7,7 @@ import type {
   QuestData,
   SortieData
 } from './kancolle';
+import type { MapCatalog } from './mapCatalog';
 
 /** イベント購読を解除する。 */
 export type Unsubscribe = () => void;
@@ -23,6 +24,7 @@ export type DmmPointPageResult = { success: true } | OperationFailure;
 
 /** preloadがcontextBridgeを通じて公開する全API。Node/Electronの実装には依存しない。 */
 export interface ElectronAPI {
+  getMapCatalog(): Promise<MapCatalog>;
   openShipInfo(): Promise<{ success: true } | OperationFailure>;
   onShipData: DataSubscription<ShipInfoData[]>;
   getShipData(): void;

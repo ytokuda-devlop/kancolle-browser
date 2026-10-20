@@ -87,6 +87,9 @@ export interface ApiSupply {
   api_ship?: { api_id: number; api_onslot?: number[] } | { api_id: number; api_onslot?: number[] }[];
   api_material?: ApiMaterials;
 }
+export interface ApiMapInfo {
+  api_map_info?: { api_id: number; api_gauge_num?: number; api_cleared?: number }[];
+}
 export interface ApiSortie {
   api_maparea_id: number;
   api_mapinfo_no: number;
@@ -96,6 +99,7 @@ export interface ApiSortie {
 }
 export interface ApiSlotExchange { api_slot?: number[] }
 export interface ApiGetShip extends ApiSlotItems { api_ship?: ApiShip }
+export interface ApiPowerup { api_ship?: ApiShip; api_deck?: ApiDeck[] }
 export interface ApiRemodelSlot { api_after_material?: ApiMaterials }
 
 /** JSONの境界はunknown。エンドポイント判定後に利用するレスポンス型を選ぶ。 */

@@ -19,6 +19,7 @@ export interface StoreState {
   missionsMaster: Record<number, string>;
   mapAreasMaster: Record<number, { name: string; type: number }>;
   mapsMaster: Record<string, { name: string }>;
+  mapGauges: Record<string, number>;
   ships: Record<number, StoredShip>;
   decks: StoredDeck[];
   slotItems: Record<number, { slotitemId: number; level: number; alv: number }>;

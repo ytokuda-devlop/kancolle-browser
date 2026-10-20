@@ -4,6 +4,8 @@
  */
 import { app, BrowserWindow } from 'electron';
 import { createWindow } from './window/createWindow';
+import { initializeMapCatalog } from './kancolle/mapCatalog';
+import { logMap } from './kancolle/mapLog';
 
 // preloadから呼び出されるIPCハンドラーを機能単位で登録する。
 import './ipc/appIpc';
@@ -12,7 +14,13 @@ import './services/dmmService';
 import './services/mediaService';
 import './services/shipInfoService';
 
-app.whenReady().then(() => {
+app.whenReady().then(async () => {
+  try {
+    await initializeMapCatalog(app.getPath('userData'));
+    logMap('カタログを読み込みました。地図JSONの捕捉を待機します', { filePath: `${app.getPath('userData')}/map-catalog.json` });
+  } catch (error) {
+    logMap('カタログの読み込みに失敗しました。既存ファイルを保護し、この起動ではメモリだけに記録します', String(error), true);
+  }
   createWindow();
 
   app.on('activate', () => {

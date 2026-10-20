@@ -21,7 +21,7 @@ const storeCode = bundle('electron/kancolle/store.ts');
 function load(code) {
   const module = { exports: {} };
   vm.runInNewContext(code, {
-    module, exports: module.exports, require, URL, URLSearchParams, Buffer,
+    module, exports: module.exports, require, URL, URLSearchParams, Buffer, structuredClone,
     console: { log() {}, warn() {}, error() {} }
   });
   return module.exports;
@@ -55,7 +55,7 @@ test('タイトルは起動時に艦娘を表示し、名前を取得できた�
 function loadCapture() {
   const code = buildSync({
     stdin: {
-      contents: "import runtime = require('./electron/runtime'); export { runtime }; export { setupApiCapture } from './electron/kancolle/apiCapture';",
+      contents: "import runtime = require('./electron/runtime'); export { runtime }; export { setupApiCapture } from './electron/kancolle/apiCapture'; export { mapCatalogStore } from './electron/kancolle/mapCatalog';",
       resolveDir: projectDir, loader: 'ts'
     },
     bundle: true, platform: 'node', format: 'cjs', write: false,
@@ -329,4 +329,223 @@ test('艦娘装備は編成外の艦も対象にし、空きスロットと補�
   assert.equal(ships[1].expansionEquipment.isExpansion, true);
   assert.equal(ships[0].equipment[0].currentAircraft, 3);
   assert.equal(ships[0].equipment[0].maxAircraft, 18);
+});
+
+
+test('地図カタログは未訪問・追加マスと訪問記録を保存し、重複排除と再読み込みができる', async t => {
+  const fs = require('node:fs/promises');
+  const os = require('node:os');
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'kancolle-map-test-'));
+  t.after(() => fs.rm(dir, { recursive: true, force: true }));
+  const { MapCatalogStore, getMapResource } = load(bundle('electron/kancolle/mapCatalog.ts'));
+  const file = path.join(dir, 'map-catalog.json');
+  const store = new MapCatalogStore(file);
+  await store.load();
+  const url = 'https://example.test/kcs2/resources/map/001/01_info.json?version=2';
+  assert.equal(getMapResource('https://example.test/kcs2/resources/map/001/01_image.json'), null);
+  const body = JSON.stringify({ spots: [{ no: 0, x: 0, y: 0 }, { no: 1, x: 10, y: 20 }, { no: 3, x: 30, y: 40 }] });
+  const first = await store.capture(url, body, '2026-10-14T00:00:00Z');
+  assert.equal(first.added, 2);
+  assert.equal(store.getCatalog().maps['1-1'].nodes['3'].visitedAt, undefined);
+  const firstCatalog = plain(store.getCatalog());
+  const firstFile = await fs.stat(file);
+  const second = await store.capture(url, body, '2026-10-14T00:01:00Z');
+  assert.equal(second.duplicate, true);
+  assert.equal(second.added, 0);
+  assert.deepEqual(plain(store.getCatalog()), firstCatalog);
+  assert.equal((await fs.stat(file)).mtimeMs, firstFile.mtimeMs);
+  const beforeSortieFile = await fs.readFile(file, 'utf8');
+  const sortieSummary = await store.observeSortie({ api_maparea_id: 1, api_mapinfo_no: 1, api_no: 1, api_bosscell_no: 3 });
+  assert.equal(sortieSummary.added, 0);
+  assert.ok(store.getCatalog().maps['1-1'].nodes['1'].visitedAt);
+  assert.equal(await fs.readFile(file, 'utf8'), beforeSortieFile);
+  assert.equal((await fs.stat(file)).mtimeMs, firstFile.mtimeMs);
+  await store.capture(url.replace('_info.json', '_info3.json'), JSON.stringify({ spots: [{ no: 9, x: 90, y: 40 }] }));
+  // 内容・バージョン・追加地図の名前が変わっても、新規IDがなければ保存しない。
+  const beforeUpdate = plain(store.getCatalog());
+  const beforeFile = await fs.stat(file);
+  await store.capture(url.replace('version=2', 'version=3'), JSON.stringify({ spots: [{ no: 1, x: 11, y: 20 }] }));
+  await store.capture(url.replace('_info.json', '_info99.json'), body);
+  assert.deepEqual(plain(store.getCatalog()), beforeUpdate);
+  assert.equal((await fs.stat(file)).mtimeMs, beforeFile.mtimeMs);
+  const restored = new MapCatalogStore(file);
+  await restored.load();
+  const map = restored.getCatalog().maps['1-1'];
+  assert.deepEqual(Object.keys(map.nodes), ['1', '3', '9']);
+  assert.equal(map.nodes['1'].label, 'A');
+  assert.equal(map.nodes['1'].x, 10);
+  assert.ok(map.nodes['1'].visitedAt);
+  assert.ok(map.nodes['3'].bossObservedAt);
+  assert.equal(map.nodes['3'].visitedAt, undefined);
+  assert.equal(map.snapshots.length, 2);
+  const before = plain(restored.getCatalog());
+  await assert.rejects(restored.capture(url, '{invalid'));
+  await assert.rejects(restored.capture(url, JSON.stringify({ spots: [{ no: 2, x: 0, y: 0 }, { no: '3', x: 0, y: 0 }] })));
+  assert.deepEqual(plain(restored.getCatalog()), before);
+});
+
+test('CDPはiframeの地図JSONを捕捉し、UI Consoleへのログと出撃照合結果を送る', async () => {
+  const { setupApiCapture, runtime, mapCatalogStore } = loadCapture();
+  const logs = [];
+  const evaluations = [];
+  let onMessage;
+  let currentBody;
+  let failBody = false;
+  runtime.mainWindow = { isDestroyed: () => false, webContents: { send: (channel, data) => {
+    if (channel === 'kancolle:map-log') logs.push(data);
+  } } };
+  setupApiCapture({ webContents: { debugger: {
+    isAttached: () => false, attach() {}, on: (_event, callback) => { onMessage = callback; },
+    sendCommand: async (command, params, sessionId) => {
+      if (command === 'Runtime.evaluate') evaluations.push({ params, sessionId });
+      if (command === 'Network.getResponseBody') {
+        if (failBody) throw new Error('body unavailable');
+        return { body: Buffer.from(currentBody).toString('base64'), base64Encoded: true };
+      }
+      return {};
+    }
+  } } });
+  async function receive(url, body) {
+    currentBody = body;
+    await onMessage({}, 'Network.responseReceived', { requestId: 'map', response: { url } }, 'game');
+    await onMessage({}, 'Network.loadingFinished', { requestId: 'map' }, 'game');
+  }
+  const url = 'https://example.test/kcs2/resources/map/001/01_info.json?version=1';
+  await receive(url, JSON.stringify({ spots: [{ no: 1, x: 20, y: 30 }, { no: 3, x: 40, y: 50 }] }));
+  assert.equal(Object.keys(mapCatalogStore.getCatalog().maps['1-1'].nodes).length, 2);
+  assert.ok(logs.some(log => log.includes('取得・保存')));
+  assert.equal(evaluations[0].sessionId, 'game');
+  const logCount = logs.length;
+  const evaluationCount = evaluations.length;
+  await receive(url.replace('version=1', 'version=2'), JSON.stringify({ spots: [{ no: 1, x: 21, y: 30 }] }));
+  assert.equal(logs.length, logCount);
+  assert.equal(evaluations.length, evaluationCount);
+  await receive('https://example.test/kcsapi/api_req_map/start', 'svdata=' + JSON.stringify({
+    api_result: 1, api_data: { api_maparea_id: 1, api_mapinfo_no: 1, api_no: 1, api_bosscell_no: 3 }
+  }));
+  assert.equal(logs.length, logCount);
+  assert.ok(mapCatalogStore.getCatalog().maps['1-1'].nodes['1'].visitedAt);
+  failBody = true;
+  await receive(url, '');
+  assert.ok(logs.some(log => log.includes('取得・解析・保存に失敗')));
+  assert.equal(mapCatalogStore.getCatalog().maps['1-1'].snapshots.length, 1);
+});
+
+
+test('近代化改修で素材艦・装備の消費を保有数通知へ反映し、装備を残す指定と改修不成功も扱う', async () => {
+  for (const [flag, expectedItems] of [['1', 1], ['0', 4]]) {
+    const { setupApiCapture, runtime } = loadCapture();
+    const notifications = [];
+    let onMessage;
+    let currentBody;
+    runtime.mainWindow = { isDestroyed: () => false, setTitle() {},
+      webContents: { send: (channel, data) => notifications.push({ channel, data: plain(data) }) } };
+    setupApiCapture({ webContents: { debugger: {
+      isAttached: () => false, attach() {},
+      on: (event, callback) => { onMessage = callback; },
+      sendCommand: async command => command === 'Network.getResponseBody' ? { body: currentBody } : {}
+    } } });
+    async function receive(endpoint, data, request = {}, result = 1) {
+      currentBody = 'svdata=' + JSON.stringify({ api_result: result, api_data: data });
+      await onMessage({}, 'Network.requestWillBeSent', { requestId: endpoint,
+        request: { url: `https://example.test/kcsapi/${endpoint}`, postData: params(request).toString() }
+      }, 'game');
+      await onMessage({}, 'Network.loadingFinished', { requestId: endpoint }, 'game');
+    }
+    await receive('api_get_member/ship3', { api_ship_data: [
+      { ...ship(1, [104]), api_slot_ex: -1 }, ship(2), { ...ship(3, [103]), api_slot_ex: -1 }
+    ], api_deck_data: [deck(1, [1, 2, 3])] });
+    await receive('api_get_member/slot_item', [...slotItems,
+      { api_id: 103, api_slotitem_id: 20 }, { api_id: 104, api_slotitem_id: 20 }]);
+    await receive('api_get_member/record', { api_ship: [3, 100], api_slotitem: [4, 200] });
+    const request = { api_id: '1', api_id_items: '2,3', api_slot_dest_flag: flag };
+    notifications.length = 0;
+    await receive('api_req_kaisou/powerup', {}, request, 0);
+    assert.equal(notifications.length, 0);
+    await receive('api_req_kaisou/powerup', {
+      api_powerup_flag: 0, api_ship: { ...ship(1, [104]), api_slot_ex: -1, api_karyoku: [45, 50] },
+      api_deck: [deck(1, [1])]
+    }, request);
+    const materials = notifications.find(n => n.channel === 'kancolle:material-data').data;
+    assert.equal(materials.shipCount, 1);
+    assert.equal(materials.slotItemCount, expectedItems);
+    assert.equal(materials.maxShips, 100);
+    assert.equal(materials.maxSlotItems, 203);
+    const fleets = notifications.find(n => n.channel === 'kancolle:fleet-data').data;
+    assert.equal(fleets[0].ships.length, 1);
+    assert.equal(fleets[0].ships[0].karyoku, 45);
+  }
+});
+
+
+test('通常海域の段階別ボス表示はmapinfoの更新と月次リセットに追従し、内部IDを保持する', () => {
+  const store = load(storeCode);
+  const { formatSortieBoss } = load(bundle('src/utils/formatters.ts'));
+  const expected = { 2: ['G', 'M'], 3: ['E', 'P'], 5: ['K', 'Q', 'T'] };
+  for (const [map, bosses] of Object.entries(expected)) {
+    store.updateSortie({ api_maparea_id: 7, api_mapinfo_no: Number(map), api_no: 1, api_bosscell_no: 1 }, params({ api_deck_id: '1' }), true);
+    assert.equal(store.getFormattedSortie().bossLabel, null);
+    assert.equal(formatSortieBoss(store.getFormattedSortie()), 'Aマス');
+    bosses.forEach((boss, i) => {
+      store.updateMapInfo({ api_map_info: [{ api_id: 70 + Number(map), api_gauge_num: i + 1, api_cleared: 0 }] });
+      const sortie = store.getFormattedSortie();
+      assert.equal(sortie.gaugeNo, i + 1);
+      assert.equal(sortie.bossLabel, boss);
+      assert.equal(sortie.bossCellNo, 1);
+      assert.equal(formatSortieBoss(sortie), boss + 'マス');
+      store.updateSortie({ api_maparea_id: 7, api_mapinfo_no: Number(map), api_no: 2, api_bosscell_no: 1 }, params({}), false);
+      assert.equal(store.getFormattedSortie().bossLabel, boss);
+    });
+    // 全ゲージクリア後は、段階省略・第1段階・0・最終段階のどれでも最終ボス。
+    for (const gauge of [undefined, 1, 0, bosses.length]) {
+      store.updateMapInfo({ api_map_info: [{ api_id: 70 + Number(map), api_gauge_num: gauge, api_cleared: 1 }] });
+      const sortie = store.getFormattedSortie();
+      assert.equal(sortie.gaugeNo, bosses.length);
+      assert.equal(sortie.bossLabel, bosses.at(-1));
+      assert.equal(formatSortieBoss(sortie), bosses.at(-1) + 'マス');
+      assert.equal(sortie.bossCellNo, 1);
+    }
+    store.clearSortie();
+    store.updateMapInfo({ api_map_info: [{ api_id: 70 + Number(map), api_cleared: 0 }] });
+    store.updateSortie({ api_maparea_id: 7, api_mapinfo_no: Number(map), api_no: 1, api_bosscell_no: 1 }, params({ api_deck_id: '2' }), true);
+    assert.equal(store.getFormattedSortie().bossLabel, bosses[0]);
+    store.updateMapInfo({ api_map_info: [{ api_id: 70 + Number(map), api_gauge_num: 99 }] });
+    assert.equal(store.getFormattedSortie().bossLabel, null);
+    assert.equal(formatSortieBoss(store.getFormattedSortie()), 'Aマス');
+  }
+  store.updateMapInfo(null);
+  store.updateMapInfo({ api_map_info: [null, { api_id: 75, api_gauge_num: -1 }] });
+  assert.equal(store.getFormattedSortie().gaugeNo, null);
+});
+
+test('CDPから取得したゲージ段階を出撃パネルへ通知し、再ログインで前回の段階を消去する', async () => {
+  const { setupApiCapture, runtime } = loadCapture();
+  const sorties = [];
+  let onMessage;
+  let currentBody;
+  runtime.mainWindow = { isDestroyed: () => false, setTitle() {}, webContents: { send: (channel, data) => {
+    if (channel === 'kancolle:sortie-data') sorties.push(plain(data));
+  } } };
+  setupApiCapture({ webContents: { debugger: {
+    isAttached: () => false, attach() {}, on: (_event, cb) => { onMessage = cb; },
+    sendCommand: async command => command === 'Network.getResponseBody' ? { body: currentBody } : {}
+  } } });
+  async function receive(endpoint, data) {
+    currentBody = 'svdata=' + JSON.stringify({ api_result: 1, api_data: data });
+    await onMessage({}, 'Network.responseReceived', { requestId: endpoint, response: { url: `https://example.test/kcsapi/${endpoint}` } }, 'game');
+    await onMessage({}, 'Network.loadingFinished', { requestId: endpoint }, 'game');
+  }
+  await receive('api_get_member/mapinfo', { api_map_info: [{ api_id: 72, api_gauge_num: 2 }] });
+  await receive('api_req_map/start', { api_maparea_id: 7, api_mapinfo_no: 2, api_no: 1, api_bosscell_no: 7 });
+  assert.equal(sorties.at(-1).bossLabel, 'M');
+  assert.equal(sorties.at(-1).bossCellNo, 7);
+  await receive('api_get_member/mapinfo', { api_map_info: [{ api_id: 72, api_gauge_num: 1 }] });
+  assert.equal(sorties.at(-1).bossLabel, 'G');
+  // クリア後にゲージ番号が省略されても、第1ボスには戻さない。
+  await receive('api_get_member/mapinfo', { api_map_info: [{ api_id: 72, api_cleared: 1 }] });
+  assert.equal(sorties.at(-1).bossLabel, 'M');
+  assert.equal(sorties.at(-1).gaugeNo, 2);
+  await receive('api_start2/getData', {});
+  await receive('api_req_map/start', { api_maparea_id: 7, api_mapinfo_no: 2, api_no: 1, api_bosscell_no: 7 });
+  assert.equal(sorties.at(-1).bossLabel, null);
 });

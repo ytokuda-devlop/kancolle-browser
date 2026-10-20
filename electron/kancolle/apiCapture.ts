@@ -1,5 +1,5 @@
 import type { WebContentsView } from 'electron';
-import type { ApiResponse, ApiMaster, ApiPort, ApiDeck, ApiShipData, ApiShip, ApiSortie, ApiSlotItems, ApiSlotItem, ApiBasic, ApiRecord, ApiNdock, ApiKdock, ApiMaterials, ApiUseItem, ApiQuestList, ApiRemodelSlot, ApiGetShip, ApiSupply, ApiSlotExchange } from './apiTypes';
+import type { ApiResponse, ApiMaster, ApiPort, ApiDeck, ApiShipData, ApiShip, ApiSortie, ApiSlotItems, ApiSlotItem, ApiBasic, ApiRecord, ApiNdock, ApiKdock, ApiMaterials, ApiUseItem, ApiQuestList, ApiRemodelSlot, ApiGetShip, ApiPowerup, ApiSupply, ApiSlotExchange } from './apiTypes';
 
 interface PendingRequest { url: string; sessionId?: string; postData?: string }
 interface CdpAttached { sessionId: string; targetInfo?: { url: string } }
@@ -15,6 +15,14 @@ interface CdpBody { body: string; base64Encoded?: boolean }
 import runtime = require('../runtime');
 import kancolleStore = require('./store');
 import { getMainWindowTitle } from '../window/title';
+import { getMapResource, mapCatalogStore } from './mapCatalog';
+import { logMap } from './mapLog';
+import type { ApiMapInfo } from './apiTypes';
+
+function isCapturedUrl(url: string): boolean {
+  try { return url.includes('/kcsapi/') || getMapResource(url) !== null; }
+  catch { return false; }
+}
 
 // キャプチャ中の一時的なリクエスト情報マッピング
 // (sessionId:requestId -> { url, sessionId, postData })
@@ -71,7 +79,7 @@ export function setupApiCapture(view: WebContentsView | null | undefined): void 
     if (method === 'Network.requestWillBeSent') {
       const params = rawParams as CdpRequest;
       const url = params.request.url;
-      if (url.includes('/kcsapi/')) {
+      if (isCapturedUrl(url)) {
         const requestKey = createRequestKey(sessionId, params.requestId);
         pendingRequests.set(requestKey, {
           url,
@@ -85,7 +93,7 @@ export function setupApiCapture(view: WebContentsView | null | undefined): void 
     if (method === 'Network.responseReceived') {
       const params = rawParams as CdpResponse;
       const url = params.response.url;
-      if (url.includes('/kcsapi/')) {
+      if (isCapturedUrl(url)) {
         const requestId = params.requestId;
         const requestKey = createRequestKey(sessionId, requestId);
         // loadingFinished イベントでのボディ取得用にマッピングを保存
@@ -102,14 +110,27 @@ export function setupApiCapture(view: WebContentsView | null | undefined): void 
       const req = pendingRequests.get(requestKey);
       if (req) {
         const { url, sessionId: reqSessionId, postData } = req;
-        console.log(`[CDP] KCSAPI 通信のロードが完了しました: ${url} (Session: ${reqSessionId || 'main'})`);
+        const mapResource = getMapResource(url);
+        if (!mapResource) console.log(`[CDP] KCSAPI 通信のロードが完了しました: ${url} (Session: ${reqSessionId || 'main'})`);
         try {
           // ロード完了後にレスポンスボディを取得するため、データ未検出エラーは発生しない
           const result = await contents.debugger.sendCommand('Network.getResponseBody', { requestId }, reqSessionId) as CdpBody;
           const responseBody = result.base64Encoded ? Buffer.from(result.body, 'base64').toString('utf8') : result.body;
-          await handleKcsApiResponse(url, responseBody, postData);
+          if (mapResource) {
+            const summary = await mapCatalogStore.capture(url, responseBody);
+            if (summary.added === 0) {
+              logMap('地図JSONを取得しました（新規IDなし・保存省略）', summary, false, false);
+              return;
+            }
+            logMap('地図JSONを取得・保存しました（未訪問マスを含む）', summary);
+            // ゲーム画面側のConsoleにも出力。コードにはJSONでエスケープした文字列だけを渡す。
+            void contents.debugger.sendCommand('Runtime.evaluate', {
+              expression: `console.info('[MapData]', ${JSON.stringify(summary)})`
+            }, reqSessionId).catch(() => {});
+          } else await handleKcsApiResponse(url, responseBody, postData);
         } catch (err) {
-          console.warn(`[CDP] レスポンスボディの取得に失敗しました ${url}:`, (err instanceof Error ? err.message : String(err)));
+          if (mapResource) logMap('地図JSONの取得・解析・保存に失敗しました', { resource: mapResource.resource, error: String(err) }, true);
+          else console.warn(`[CDP] レスポンスボディの取得に失敗しました ${url}:`, (err instanceof Error ? err.message : String(err)));
         } finally {
           pendingRequests.delete(requestKey);
         }
@@ -121,6 +142,8 @@ export function setupApiCapture(view: WebContentsView | null | undefined): void 
       const params = rawParams as CdpLoading;
       const requestId = params.requestId;
       const requestKey = createRequestKey(sessionId, requestId);
+      const request = pendingRequests.get(requestKey);
+      if (request && getMapResource(request.url)) logMap('地図JSONの通信が失敗またはキャンセルされました', getMapResource(request.url), true);
       pendingRequests.delete(requestKey);
     }
   });
@@ -402,12 +425,16 @@ async function handleKcsApiResponse(url: string, body: string, postData = ''): P
 
     if (pathname.includes('/api_start2/getData')) {
       kancolleStore.updateMaster(apiData as ApiMaster);
+      kancolleStore.mapGauges = {};
       // 新しいログインとして任務取得状態を初期化する。
       questDataLoaded = false;
       kancolleStore.resetQuests();
       kancolleStore.recordCapacity = null;
       updated = true;
       updatedQuest = true;
+    } else if (pathname.includes('/api_get_member/mapinfo')) {
+      kancolleStore.updateMapInfo(apiData as ApiMapInfo);
+      updatedSortie = true;
     } else if (pathname.includes('/api_port/port')) {
       kancolleStore.clearSortie();
       updatedSortie = true;
@@ -506,6 +533,14 @@ async function handleKcsApiResponse(url: string, body: string, postData = ''): P
       kancolleStore.removeDestroyedSlotItems(requestParams);
       updatedMaterial = true;
       updatedMaterial = await refreshMaterials(url, requestParams) || updatedMaterial;
+    } else if (pathname.includes('/api_req_kaisou/powerup')) {
+      // 改修不成功でも素材は消費される。装備を残す指定は送信フラグに従う。
+      kancolleStore.removePowerupMaterials(requestParams);
+      const powerup = apiData as ApiPowerup | null;
+      if (powerup?.api_ship) kancolleStore.updateShip3([powerup.api_ship]);
+      if (powerup?.api_deck) kancolleStore.updateDeck(powerup.api_deck);
+      updated = true;
+      updatedMaterial = true;
     } else if (pathname.includes('/api_req_kousyou/destroyship')) {
       // 艦娘解体・装備廃棄で獲得した4資源を、処理完了直後の確定値で反映する。
       kancolleStore.removeDestroyedShips(requestParams);
@@ -597,6 +632,14 @@ async function handleKcsApiResponse(url: string, body: string, postData = ''): P
     }
     if (updatedSortie) {
       sendSortieDataToUi();
+      if (pathname.includes('/api_req_map/start') || pathname.includes('/api_req_map/next')) {
+        try {
+          const summary = await mapCatalogStore.observeSortie(apiData as ApiSortie);
+          if (summary) logMap(summary.added > 0
+            ? '出撃情報を照合・保存しました'
+            : '出撃情報を照合しました（新規IDなし・保存省略）', summary, false, summary.added > 0);
+        } catch (error) { logMap('出撃情報の保存に失敗しました', String(error), true); }
+      }
     }
     if (updatedMaterial) {
       sendMaterialDataToUi();

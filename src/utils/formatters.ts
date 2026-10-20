@@ -25,6 +25,11 @@ export function formatSortieNode(sortie: SortieData | null, nodeId: number): str
   return label ? `${label}マス` : `マスID：${nodeId}`;
 }
 
+export function formatSortieBoss(sortie: SortieData): string | null {
+  if (sortie.bossLabel) return `${sortie.bossLabel}マス`;
+  return sortie.bossCellNo > 0 ? formatSortieNode(sortie, sortie.bossCellNo) : null;
+}
+
 function formatDuration(durationMs: number): string {
   const totalSecs = Math.floor(durationMs / 1000);
   const hrs = Math.floor(totalSecs / 3600);

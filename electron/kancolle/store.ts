@@ -1,5 +1,7 @@
 import type { ApiMaterials, ApiUseItem, ApiRecord, ApiBasic, ApiMaster, ApiSortie, ApiPort, ApiDeck, ApiSlotExchange, ApiSupply, ApiShip, ApiShipData, ApiSlotItem, ApiSlotItems, ApiNdock, ApiKdock, ApiQuestList } from './apiTypes';
 import type { StoreState, StoredDeck } from './storeTypes';
+import type { ApiMapInfo } from './apiTypes';
+import { getMapGaugeBoss, MAP_GAUGE_BOSSES } from '../../src/mapGaugeBosses';
 import type { ShipInfoData, MaterialData, FleetData, EquipmentData, ShipData, NdockData, KdockData, QuestData, SortieData } from '../../shared/kancolle';
 
 /*
@@ -18,6 +20,7 @@ const initialState: StoreState = {
   missionsMaster: {},  // api_id -> name
   mapAreasMaster: {},  // api_id -> { name, type }
   mapsMaster: {},      // "areaId-mapNo" -> { name }
+  mapGauges: {},       // "areaId-mapNo" -> current gauge index
   ships: {},           // api_id -> ship dynamic info
   decks: [],           // [fleet1, fleet2, fleet3, fleet4]
   slotItems: {},       // api_id -> { slotitemId, level, alv }
@@ -159,6 +162,22 @@ const kancolleStore = {
     }
   },
 
+  updateMapInfo(apiData: ApiMapInfo | null | undefined): void {
+    if (!Array.isArray(apiData?.api_map_info)) return;
+    for (const map of apiData.api_map_info) {
+      if (!map || !Number.isSafeInteger(map.api_id) || map.api_id <= 0) continue;
+      const key = `${Math.floor(map.api_id / 10)}-${map.api_id % 10}`;
+      // 全ゲージクリア後は段階が省略・初期化されても最終ボスを表示する。
+      // 未クリア時は現在の段階に従い、月次リセット後は第1段階へ戻す。
+      const bosses = MAP_GAUGE_BOSSES[key];
+      const gaugeNo = map.api_cleared === 1 && bosses
+        ? Math.max(...Object.keys(bosses).map(Number))
+        : map.api_gauge_num === undefined ? 1 : map.api_gauge_num;
+      if (Number.isSafeInteger(gaugeNo) && gaugeNo > 0) this.mapGauges[key] = gaugeNo;
+      else delete this.mapGauges[key];
+    }
+  },
+
   updateSortie(apiData: ApiSortie | null | undefined, requestParams: URLSearchParams, isStart: boolean): void {
     if (!apiData) return;
 
@@ -196,7 +215,10 @@ const kancolleStore = {
   },
 
   getFormattedSortie(): SortieData | null {
-    return this.sortie ? { ...this.sortie } : null;
+    if (!this.sortie) return null;
+    const { mapAreaId, mapInfoNo } = this.sortie;
+    const gaugeNo = this.mapGauges[`${mapAreaId}-${mapInfoNo}`] ?? null;
+    return { ...this.sortie, gaugeNo, bossLabel: getMapGaugeBoss(mapAreaId, mapInfoNo, gaugeNo) };
   },
 
   updatePort(apiData: ApiPort): void {
@@ -508,6 +530,22 @@ const kancolleStore = {
       const id = Number(rawId);
       if (Number.isFinite(id) && id > 0) delete this.slotItems[id];
     });
+  },
+
+  removePowerupMaterials(params: URLSearchParams): void {
+    const shipCount = Object.keys(this.ships).length;
+    const slotItemCount = Object.keys(this.slotItems).length;
+    this.removeDestroyedShips(new URLSearchParams({
+      api_ship_id: params.get('api_id_items') || '',
+      api_slot_dest_flag: params.get('api_slot_dest_flag') || '0'
+    }));
+    // record の集計値がある場合も、素材消費の差分を即時反映する。
+    if (this.recordCapacity) {
+      this.recordCapacity.shipCount = Math.max(0,
+        this.recordCapacity.shipCount - (shipCount - Object.keys(this.ships).length));
+      this.recordCapacity.slotItemCount = Math.max(0,
+        this.recordCapacity.slotItemCount - (slotItemCount - Object.keys(this.slotItems).length));
+    }
   },
 
   removeDestroyedShips(params: URLSearchParams): void {

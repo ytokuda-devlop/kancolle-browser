@@ -3,8 +3,15 @@ import type { IpcRendererEvent } from 'electron';
 import type { ElectronAPI } from '../shared/electronApi';
 import type { ShipInfoData, MaterialData, FleetData, NdockData, KdockData, QuestData, SortieData } from '../shared/kancolle';
 
+// UIのConsoleで取得結果を確認できる。起動前後のログも直近100件を再表示する。
+ipcRenderer.on('kancolle:map-log', (_event: IpcRendererEvent, message: string) => console.info(message));
+void ipcRenderer.invoke('kancolle:get-map-logs').then((messages: string[]) => {
+  messages.forEach(message => console.info(message));
+}).catch(error => console.warn('[MapData] ログ履歴の取得に失敗しました', error));
+
 // レンダラープロセス（React）に安全にAPIを公開する
 const electronAPI: ElectronAPI = {
+  getMapCatalog: () => ipcRenderer.invoke('kancolle:get-map-catalog'),
   openShipInfo: () => ipcRenderer.invoke('ships:open'),
   onShipData: (callback) => {
     const subscription = (_event: IpcRendererEvent, data: ShipInfoData[]) => callback(data);

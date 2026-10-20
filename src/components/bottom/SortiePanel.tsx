@@ -8,7 +8,7 @@ interface Props {
  * 現在の出撃海域と進行状況を表示するコンポーネント。
  * 出撃艦隊、海域名、現在マス、ボスマス、イベント海域のゲージを出撃データから描画する。
  */
-import { formatSortieNode } from '../../utils/formatters';
+import { formatSortieNode, formatSortieBoss } from '../../utils/formatters';
 
 function SortiePanel({ sortie }: Props) {
   return (
@@ -33,7 +33,7 @@ function SortiePanel({ sortie }: Props) {
             </div>
             <div className="sortie-position">
               現在：{formatSortieNode(sortie, sortie.cellNo)}
-              {sortie.bossCellNo > 0 && ` / ボス：${formatSortieNode(sortie, sortie.bossCellNo)}`}
+              {formatSortieBoss(sortie) && ` / ボス：${formatSortieBoss(sortie)}`}
             </div>
             {sortie.eventMap && sortie.eventMap.maxHp > 0 && (
               <div className="sortie-gauge">

@@ -64,9 +64,14 @@ modification in `licenses/LICENSES.chromium.html` under the ffmpeg entry.
 - Project and licensing information: <https://ffmpeg.org/legal.html>
 - Electron source: <https://github.com/electron/electron/tree/v44.0.0>
 
-The recording feature has been removed. This application does not bundle
-`ffmpeg-static` or the separate recording-conversion FFmpeg
-executable. The earlier GPL distribution policy for the application combined
+macOS recording uses a first-party native helper calling Apple's ScreenCaptureKit,
+Core Audio, AVFoundation, and VideoToolbox system frameworks. It does not use Chromium's
+MediaRecorder or Electron's FFmpeg for recording. No additional H.264 or AAC
+encoder library is bundled for this feature. This application does not bundle
+`ffmpeg-static` or the separate recording-conversion FFmpeg executable.
+These statements do not mean Electron's existing codec implementations have been removed,
+or that codec patent permissions have been determined.
+The earlier GPL distribution policy for the application combined
 with `ffmpeg-static` does not apply to this configuration.
 
 The Electron 44.0.0 build pins Chromium 152.0.7977.54 and FFmpeg revision

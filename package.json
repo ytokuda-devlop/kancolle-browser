@@ -13,6 +13,7 @@
     "typecheck:renderer": "tsc --project tsconfig.renderer.json",
     "typecheck:electron": "tsc --project tsconfig.electron.json",
     "test:kancolle": "node --test tests/kancolle-data.test.cjs",
+    "test:recording:mac": "node scripts/test-macos-recorder.mjs",
     "preview": "vite preview",
     "package": "npm run build && electron-builder --dir",
     "dist": "npm run build && electron-builder",
@@ -95,6 +96,14 @@
     ],
     "mac": {
       "executableName": "KancolleBrowser",
+      "extraResources": [
+        { "from": "dist-native/darwin/KancolleRecorder", "to": "native/KancolleRecorder" }
+      ],
+      "binaries": ["Contents/Resources/native/KancolleRecorder"],
+      "extendInfo": {
+        "NSScreenCaptureUsageDescription": "ゲーム画面とアプリの音声を録画するために使用します。",
+        "NSAudioCaptureUsageDescription": "ゲームの音声を録画するために使用します。"
+      },
       "category": "public.app-category.games",
       "target": [
         {

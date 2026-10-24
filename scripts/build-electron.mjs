@@ -1,5 +1,6 @@
 import { build } from 'esbuild';
 import { fileURLToPath } from 'node:url';
+import './build-macos-recorder.mjs';
 
 // mainとpreloadを別々のCommonJSバンドルにする。
 // sandbox化されたpreloadからローカルモジュールをrequireする必要がなくなる。

@@ -4,6 +4,7 @@ node_modules/
 # Vite build output
 dist/
 dist-electron/
+dist-native/
 
 # Electron packaging output
 out/
@@ -91,3 +92,5 @@ tests/
 !/docs/source-delivery-2026-09-27/evidence/chromium/docs/mac_build_instructions.md
 
 !/tests/kancolle-data.test.cjs
+!/tests/recording-smoke.cjs
+!/tests/native-recorder-test.swift

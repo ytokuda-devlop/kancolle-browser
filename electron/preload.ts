@@ -30,6 +30,14 @@ const electronAPI: ElectronAPI = {
 
   // ゲーム画面のスクリーンショットを Pictures へ保存する
   captureScreenshot: () => ipcRenderer.invoke('game:capture-screenshot'),
+  beginRecording: () => ipcRenderer.invoke('game:recording-begin'),
+  finishRecording: discard => ipcRenderer.invoke('game:recording-finish', discard),
+  getRecordingState: () => ipcRenderer.invoke('game:recording-state'),
+  onRecordingState: callback => {
+    const listener = (_event: IpcRendererEvent, state: import('../shared/electronApi').RecordingState) => callback(state);
+    ipcRenderer.on('game:recording-state', listener);
+    return () => ipcRenderer.removeListener('game:recording-state', listener);
+  },
 
   // DMM 公式のポイント画面をゲームと同じセッションの別ウィンドウで開く
   openDmmPointPage: (action) => ipcRenderer.invoke('dmm:open-point-page', action),

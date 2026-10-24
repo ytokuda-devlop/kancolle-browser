@@ -75,7 +75,22 @@
 }
 
 .browser-controls-actions {
-  grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr));
+}
+
+.browser-control-recording {
+  background: linear-gradient(180deg, #be123c, #9f1239);
+  border-color: #fb7185;
+}
+
+.browser-control-recording.is-recording {
+  background: #dc2626;
+  border-color: #fca5a5;
+}
+
+.recording-status {
+  color: #fca5a5;
+  font-variant-numeric: tabular-nums;
 }
 
 .browser-control-button {

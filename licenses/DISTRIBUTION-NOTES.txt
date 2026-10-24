@@ -25,6 +25,11 @@
   AVFoundationのAVAssetWriterでH.264／AACのMP4を生成する。
   H.264にはVideoToolboxが列挙したApple提供のエンコーダーIDを指定する。
   AACはmacOSのAVFoundation APIに処理を依頼する。
+  Windows 11 x64ではWindows Graphics Captureでゲーム領域を取得し、
+  WASAPIのプロセスループバックでアプリと子プロセスの音声を取得する。
+  Microsoft標準のCLSID_CMSH264EncoderMFTとCLSID_AACMFTEncoderを直接生成し、
+  圧縮済みサンプルをMedia FoundationのMP4シンクへ渡す。
+  インストール済みの別エンコーダーの自動選択やダウンロードは行わない。
   追加のエンコーダー実装は同梱せず、OS標準フレームワークへリンクする。
   OS標準APIの使用をもって特許許諾の確認完了とはしない。
   一時ファイルはこの録画処理が作った専用ディレクトリ内のみを削除する。

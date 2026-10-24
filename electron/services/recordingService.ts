@@ -2,7 +2,7 @@ import { app, ipcMain } from 'electron';
 import type { BrowserWindow, IpcMainInvokeEvent } from 'electron';
 import { spawn } from 'node:child_process';
 import type { ChildProcessWithoutNullStreams } from 'node:child_process';
-import { access, mkdir, mkdtemp, rm, link } from 'node:fs/promises';
+import { access, mkdir, mkdtemp, rm, link, copyFile } from 'node:fs/promises';
 import { constants } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 import { createInterface } from 'node:readline';
@@ -42,7 +42,7 @@ const failure = (error: unknown): { success: false; error: string } => ({
 });
 
 function launch(executable: string, config: Record<string, unknown>, temporaryDirectory: string, destination: string): NativeRecording {
-  const child = spawn(executable, [], { stdio: ['pipe', 'pipe', 'pipe'] });
+  const child = spawn(executable, [], { stdio: ['pipe', 'pipe', 'pipe'], windowsHide: true });
   let readyResolve!: () => void;
   let readyReject!: (error: Error) => void;
   const ready = new Promise<void>((resolve, reject) => { readyResolve = resolve; readyReject = reject; });
@@ -88,16 +88,21 @@ async function begin(): Promise<RecordingResult> {
   publish({ phase: 'starting', status: '', startedAt: null });
   let temporaryDirectory: string | undefined;
   try {
-    if (process.platform !== 'darwin') throw new Error('OS標準録画は現在macOS版のみ対応しています。Windows 11版は未実装です。');
-    const [major, minor] = process.getSystemVersion().split('.').map(Number);
-    if (major < 14 || (major === 14 && minor < 2)) throw new Error('OS標準録画にはmacOS 14.2以降が必要です。');
+    const windows = process.platform === 'win32';
+    if (!windows && process.platform !== 'darwin') throw new Error('OS標準録画はmacOSとWindows 11に対応しています。');
+    const [major, minor, build] = process.getSystemVersion().split('.').map(Number);
+    if (windows ? major < 10 || (major === 10 && (!build || build < 22000))
+      : major < 14 || (major === 14 && minor < 2)) {
+      throw new Error(windows ? 'OS標準録画にはWindows 11以降が必要です。' : 'OS標準録画にはmacOS 14.2以降が必要です。');
+    }
     const window = runtime.mainWindow;
     const view = runtime.gameView;
     if (!window || !view || view.webContents.isDestroyed()) throw new Error('ゲーム画面を取得できません。');
     if (window.isMinimized()) throw new Error('最小化を解除してから録画を開始してください。');
+    const filename = windows ? 'KancolleRecorder.exe' : 'KancolleRecorder';
     const executable = app.isPackaged
-      ? path.join(process.resourcesPath, 'native', 'KancolleRecorder')
-      : path.join(app.getAppPath(), 'dist-native', 'darwin', 'KancolleRecorder');
+      ? path.join(process.resourcesPath, 'native', filename)
+      : path.join(app.getAppPath(), 'dist-native', process.platform, filename);
     await access(executable, constants.X_OK);
     const bounds = window.getBounds();
     const content = window.getContentBounds();
@@ -105,15 +110,20 @@ async function begin(): Promise<RecordingResult> {
     if (game.x < 0 || game.y < 0 || game.x + game.width > content.width || game.y + game.height > content.height) {
       throw new Error('ゲーム画面全体がウィンドウ内に収まる大きさにしてから録画してください。');
     }
-    const windowID = Number(window.getMediaSourceId().split(':')[1]);
-    if (!Number.isSafeInteger(windowID) || windowID <= 0) throw new Error('録画対象のウィンドウIDを取得できません。');
+    const windowID = windows ? 0 : Number(window.getMediaSourceId().split(':')[1]);
+    if (!windows && (!Number.isSafeInteger(windowID) || windowID <= 0)) throw new Error('録画対象のウィンドウIDを取得できません。');
+    // HWND is passed as a hex string, preserving all pointer bits across JSON.
+    const handle = windows ? window.getNativeWindowHandle() : null;
+    const windowHandle = handle ? (handle.length === 8 ? handle.readBigUInt64LE() : BigInt(handle.readUInt32LE())).toString(16) : '';
     const directory = app.getPath('videos');
     await mkdir(directory, { recursive: true });
     temporaryDirectory = await mkdtemp(path.join(directory, '.kancolle-recording-'));
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
     const destination = path.join(directory, `kancolle-${timestamp}-${randomUUID().slice(0, 8)}.mp4`);
     const current = launch(executable, {
-      windowID, x: content.x - bounds.x + game.x, y: content.y - bounds.y + game.y,
+      windowID, windowHandle, processID: process.pid,
+      x: content.x - bounds.x + game.x,
+      y: content.y - bounds.y + game.y,
       width: game.width, height: game.height, path: path.join(temporaryDirectory, 'recording.mp4'),
       audioPIDs: [...new Set([process.pid, ...app.getAppMetrics().map(metric => metric.pid)])]
     }, temporaryDirectory, destination);
@@ -143,7 +153,10 @@ async function finalize(discard: boolean): Promise<ScreenshotResult> {
     if (!discard && (exit.code !== 0 || !current.finished)) throw new Error(exit.error || 'OS標準の録画処理が正常に終了しませんでした。');
     if (!discard) {
       preserveCompletedMovie = true;
-      await link(current.source, current.destination);
+      if (process.platform === 'win32') {
+        // Video folders can be on exFAT/network volumes without hard links.
+        await copyFile(current.source, current.destination, constants.COPYFILE_EXCL);
+      } else await link(current.source, current.destination);
       preserveCompletedMovie = false;
     }
     publish({ phase: 'idle', startedAt: null, status: discard ? '録画を中止しました。' : `保存しました: ${current.destination}` });

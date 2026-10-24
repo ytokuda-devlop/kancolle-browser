@@ -14,6 +14,8 @@
     "typecheck:electron": "tsc --project tsconfig.electron.json",
     "test:kancolle": "node --test tests/kancolle-data.test.cjs",
     "test:recording:mac": "node scripts/test-macos-recorder.mjs",
+    "test:recording:win": "node scripts/test-windows-recorder.mjs",
+    "test:recording:smoke": "node scripts/test-recording-smoke.mjs",
     "preview": "vite preview",
     "package": "npm run build && electron-builder --dir",
     "dist": "npm run build && electron-builder",
@@ -90,7 +92,8 @@
           "windows/nsis7z-LZMA-SDK-LICENSE.txt",
           "windows/elevate-upstream-LICENSE.md",
           "windows/electron-builder-LICENSE.txt",
-          "windows/SOURCES.txt"
+          "windows/SOURCES.txt",
+          "windows/cppwinrt-LICENSE.txt"
         ]
       }
     ],
@@ -121,6 +124,9 @@
       ]
     },
     "win": {
+      "extraResources": [
+        { "from": "dist-native/win32/KancolleRecorder.exe", "to": "native/KancolleRecorder.exe" }
+      ],
       "target": [
         {
           "target": "portable",

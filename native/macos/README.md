@@ -63,4 +63,4 @@ the launching app by macOS; packaged app permission must be verified separately.
 
 Final packaged app testing, signed/notarized identity, permission attribution,
 minimum supported macOS versions, and both CPU architectures require separate
-release validation. Windows 11 native recording is intentionally not implemented.
+release validation. Windows 11 native recording is documented in `../windows/README.md`.

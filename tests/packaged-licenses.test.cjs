@@ -12,6 +12,13 @@ const asar = require('@electron/asar');
 const projectConfig = require('../package.json');
 const selected = verify.licenseFiles(projectConfig);
 
+test('Windows native recorder requires the C++/WinRT notice', () => {
+  const project = structuredClone(projectConfig);
+  const entry = project.build.extraResources.find(e => e.from === 'licenses');
+  entry.filter = entry.filter.filter(n => n !== 'windows/cppwinrt-LICENSE.txt');
+  assert.throws(() => verify.licenseFiles(project), /Missing native recorder license/);
+});
+
 test('portable configuration requires its component notices', () => {
   const project = structuredClone(projectConfig);
   project.build.win.target = [{ target: 'portable', arch: ['x64'] }];

@@ -57,6 +57,7 @@ export function createWindow(): void {
     minWidth: Math.min(1200, workAreaWidth),
     minHeight: Math.min(720, workAreaHeight),
     show: false,
+    autoHideMenuBar: process.platform === 'win32',
     title: getMainWindowTitle(),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),

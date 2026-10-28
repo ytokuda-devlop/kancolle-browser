@@ -4,7 +4,6 @@ import { spawn } from 'node:child_process';
 import type { ChildProcessWithoutNullStreams } from 'node:child_process';
 import { access, mkdir, mkdtemp, rm, link, copyFile } from 'node:fs/promises';
 import { constants } from 'node:fs';
-import { randomUUID } from 'node:crypto';
 import { createInterface } from 'node:readline';
 import path from 'node:path';
 import type { RecordingResult, RecordingState, ScreenshotResult } from '../../shared/electronApi';
@@ -118,8 +117,11 @@ async function begin(): Promise<RecordingResult> {
     const directory = app.getPath('videos');
     await mkdir(directory, { recursive: true });
     temporaryDirectory = await mkdtemp(path.join(directory, '.kancolle-recording-'));
-    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    const destination = path.join(directory, `kancolle-${timestamp}-${randomUUID().slice(0, 8)}.mp4`);
+    const now = new Date();
+    const pad = (value: number) => String(value).padStart(2, '0');
+    const date = `${now.getFullYear()}${pad(now.getMonth() + 1)}${pad(now.getDate())}`;
+    const time = `${pad(now.getHours())}${pad(now.getMinutes())}${pad(now.getSeconds())}`;
+    const destination = path.join(directory, `kancolle-${date}-${time}.mp4`);
     const current = launch(executable, {
       windowID, windowHandle, processID: process.pid,
       x: content.x - bounds.x + game.x,

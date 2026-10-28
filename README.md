@@ -54,14 +54,18 @@ ChatGPTを使用しています。
 
 | ライブラリ・ソフトウェア | 用途                               | Copyright・作者表記                                                       | ライセンス  | ライセンス全文                                    |
 | ------------------------ | ---------------------------------- | ------------------------------------------------------------------------- | ----------- | ------------------------------------------------- |
-| Electron                 | デスクトップアプリの実行基盤       | Copyright (c) Electron contributors / Copyright (c) 2013-2020 GitHub Inc. | MIT         | [全文](licenses/electron-LICENSE.txt)             |
+| Electron                 | デスクトップアプリの実行基盤       | Copyright (c) Electron contributors / Copyright (c) 2013-2020 GitHub Inc. | MIT（本体） | [本体の全文](licenses/electron-LICENSE.txt)・[同梱部品のライセンス表記](THIRD_PARTY_NOTICES.md) |
 | React                    | 画面のUI構築                       | Copyright (c) Facebook, Inc. and its affiliates.                          | MIT         | [全文](licenses/react-LICENSE.txt)                |
 | React DOM                | ReactのUIを画面に描画              | Copyright (c) Facebook, Inc. and its affiliates.                          | MIT         | [全文](licenses/react-dom-LICENSE.txt)            |
 | Scheduler                | Reactの描画処理のスケジューリング  | Copyright (c) Facebook, Inc. and its affiliates.                          | MIT         | [全文](licenses/scheduler-LICENSE.txt)            |
 | Vite                     | 開発サーバー・画面のビルド         | Copyright (c) 2019-present, VoidZero Inc. and Vite contributors           | MIT（本体） | [全文・同梱依存の表記](licenses/vite-LICENSE.txt) |
+| TypeScript               | 型チェック・型付きJavaScriptの開発 | Microsoft Corp.                                                        | Apache-2.0  | [全文](licenses/typescript-LICENSE.txt)            |
+| esbuild                  | Electron側コードのビルド          | Copyright (c) 2020 Evan Wallace                                         | MIT         | [全文](licenses/esbuild-LICENSE.txt)               |
 | @vitejs/plugin-react     | ViteでのReact開発支援              | Copyright (c) 2019-present, Yuxi (Evan) You and Vite contributors         | MIT         | [全文](licenses/vitejs-plugin-react-LICENSE.txt)  |
 | electron-builder         | 配布用アプリ・インストーラーの作成 | Copyright (c) 2015 Loopline Systems                                       | MIT         | [全文](licenses/electron-builder-LICENSE.txt)     |
 | concurrently             | 開発時にViteとElectronを同時起動   | Copyright (c) 2015 Kimmo Brunfeldt                                        | MIT         | [全文](licenses/concurrently-LICENSE.txt)         |
 | wait-on                  | 開発サーバーの起動完了を待機       | Copyright (c) 2015 Jeff Barczewski                                        | MIT         | [全文](licenses/wait-on-LICENSE.txt)              |
+
+Windows配布物には、portable EXEの起動・展開に使用するNSIS（System・StdUtils・nsis7zを含む）とelevate.exeが含まれます。また、Windows録画ヘルパーにはC++/WinRTのヘッダーを使用しています。各部品のライセンスと関連資料は、第三者ソフトウェアのライセンス表記の[Windows配布部品](THIRD_PARTY_NOTICES.md#windows-distribution)・[Windows録画ヘルパー](THIRD_PARTY_NOTICES.md#windows-native-recorder-support)をご確認ください。
 
 その他の依存ライブラリは[第三者ソフトウェアのライセンス表記](THIRD_PARTY_NOTICES.md)、Electronに含まれるChromium・Node.js等のライセンスは[同梱ソフトウェアのライセンス全文](licenses/LICENSES.chromium.html)に記載しています。

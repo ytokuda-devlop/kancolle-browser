@@ -17,6 +17,7 @@ import { setupContextMenu } from './contextMenu';
 import { setupGamePageCss } from './gamePage';
 import { getMainWindowTitle } from './title';
 import { setupDmmPopupHandler } from '../services/dmmService';
+import { setupRecording } from '../services/recordingService';
 
 // ウィンドウとゲームビューのサイズを調整する関数
 function updateGameViewBounds(): void {
@@ -56,6 +57,7 @@ export function createWindow(): void {
     minWidth: Math.min(1200, workAreaWidth),
     minHeight: Math.min(720, workAreaHeight),
     show: false,
+    autoHideMenuBar: process.platform === 'win32',
     title: getMainWindowTitle(),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
@@ -134,6 +136,7 @@ export function createWindow(): void {
 
   // メインウィンドウにゲームビューを追加
   runtime.mainWindow.contentView.addChildView(runtime.gameView);
+  setupRecording(runtime.mainWindow);
 
   // キーボードショートカットの登録
   const handleKeyDown = (event: Event, input: Input, targetContents: WebContents): void => {

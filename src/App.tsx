@@ -4,6 +4,7 @@ import BottomPanel from './components/bottom/BottomPanel';
 import FleetPanel from './components/fleet/FleetPanel';
 import useKancolleData from './hooks/useKancolleData';
 import useScreenshot from './hooks/useScreenshot';
+import useRecording from './hooks/useRecording';
 
 function App() {
   const {
@@ -19,6 +20,7 @@ function App() {
     isCapturingScreenshot,
     screenshotStatus
   } = useScreenshot();
+  const recording = useRecording();
   const [shipInfoStatus, setShipInfoStatus] = useState('');
   const openShipInfo = async () => {
     setShipInfoStatus('');
@@ -115,6 +117,9 @@ function App() {
               >
                 {pendingPointAction === 'charge' ? '確認中' : 'ポイントをチャージ'}
               </button>
+              <button className="browser-control-button browser-control-ship-info" onClick={openShipInfo}>
+                艦娘一覧
+              </button>
               <button
                 className={`browser-control-button browser-control-screenshot ${isCapturingScreenshot ? 'is-loading' : ''}`}
                 onClick={captureScreenshot}
@@ -123,8 +128,14 @@ function App() {
                 {isCapturingScreenshot && <span className="button-spinner" aria-hidden="true" />}
                 {isCapturingScreenshot ? '保存中' : 'キャプチャ'}
               </button>
-              <button className="browser-control-button browser-control-ship-info" onClick={openShipInfo}>
-                艦娘一覧
+              <button
+                className={`browser-control-button browser-control-recording${recording.phase === 'recording' ? ' is-recording' : ''}`}
+                onClick={recording.toggleRecording}
+                disabled={recording.phase === 'starting' || recording.phase === 'saving'}
+                aria-pressed={recording.phase === 'recording'}
+                title="ゲーム画面と音声をMP4で録画し、ビデオフォルダへ保存"
+              >
+                {recording.phase === 'starting' ? '準備中' : recording.phase === 'saving' ? '保存中' : recording.phase === 'recording' ? '停止' : '録画'}
               </button>
             </div>
             {shipInfoStatus && <div className="control-status control-status-error">{shipInfoStatus}</div>}
@@ -138,6 +149,12 @@ function App() {
                 {screenshotStatus}
               </div>
             )}
+            {recording.phase === 'recording' && recording.startedAt !== null && (
+              <div className="control-status recording-status" role="status">
+                録画中 {Math.floor(Math.max(0, now - recording.startedAt) / 60000).toString().padStart(2, '0')}:{(Math.floor(Math.max(0, now - recording.startedAt) / 1000) % 60).toString().padStart(2, '0')}
+              </div>
+            )}
+            {recording.status && <div className="control-status" role="status" title={recording.status}>{recording.status}</div>}
           </section>
         </aside>
       </main>

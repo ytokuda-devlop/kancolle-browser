@@ -19,6 +19,12 @@ export interface OperationFailure {
 }
 
 export type ScreenshotResult = { success: true; path: string } | OperationFailure;
+export type RecordingResult = { success: true } | OperationFailure;
+export interface RecordingState {
+  phase: 'idle' | 'starting' | 'recording' | 'saving';
+  startedAt: number | null;
+  status: string;
+}
 export type DmmPointAction = 'charge';
 export type DmmPointPageResult = { success: true } | OperationFailure;
 
@@ -32,6 +38,10 @@ export interface ElectronAPI {
   toggleDevTools(): void;
   toggleGameDevTools(): void;
   captureScreenshot(): Promise<ScreenshotResult>;
+  beginRecording(): Promise<RecordingResult>;
+  finishRecording(discard: boolean): Promise<ScreenshotResult>;
+  getRecordingState(): Promise<RecordingState>;
+  onRecordingState: DataSubscription<RecordingState>;
   openDmmPointPage(action: DmmPointAction): Promise<DmmPointPageResult>;
   onMaterialData: DataSubscription<MaterialData>;
   getMaterialData(): void;

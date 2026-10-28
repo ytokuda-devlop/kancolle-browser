@@ -1,7 +1,7 @@
 {
   "name": "Kancolle-browser",
   "productName": "艦娘は今日もお仕事です",
-  "version": "2.2.1",
+  "version": "2.3.1",
   "private": true,
   "license": "MIT",
   "description": "Kancolle Dedicated Browser",
@@ -13,6 +13,9 @@
     "typecheck:renderer": "tsc --project tsconfig.renderer.json",
     "typecheck:electron": "tsc --project tsconfig.electron.json",
     "test:kancolle": "node --test tests/kancolle-data.test.cjs",
+    "test:recording:mac": "node scripts/test-macos-recorder.mjs",
+    "test:recording:win": "node scripts/test-windows-recorder.mjs",
+    "test:recording:smoke": "node scripts/test-recording-smoke.mjs",
     "preview": "vite preview",
     "package": "npm run build && electron-builder --dir",
     "dist": "npm run build && electron-builder",
@@ -89,12 +92,21 @@
           "windows/nsis7z-LZMA-SDK-LICENSE.txt",
           "windows/elevate-upstream-LICENSE.md",
           "windows/electron-builder-LICENSE.txt",
-          "windows/SOURCES.txt"
+          "windows/SOURCES.txt",
+          "windows/cppwinrt-LICENSE.txt"
         ]
       }
     ],
     "mac": {
       "executableName": "KancolleBrowser",
+      "extraResources": [
+        { "from": "dist-native/darwin/KancolleRecorder", "to": "native/KancolleRecorder" }
+      ],
+      "binaries": ["Contents/Resources/native/KancolleRecorder"],
+      "extendInfo": {
+        "NSScreenCaptureUsageDescription": "ゲーム画面とアプリの音声を録画するために使用します。",
+        "NSAudioCaptureUsageDescription": "ゲームの音声を録画するために使用します。"
+      },
       "category": "public.app-category.games",
       "target": [
         {
@@ -112,6 +124,9 @@
       ]
     },
     "win": {
+      "extraResources": [
+        { "from": "dist-native/win32/KancolleRecorder.exe", "to": "native/KancolleRecorder.exe" }
+      ],
       "target": [
         {
           "target": "portable",

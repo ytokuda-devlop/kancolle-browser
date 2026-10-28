@@ -21,6 +21,10 @@ function licenseFiles(project) {
     throw new Error('Legacy recording-conversion license material selected for distribution');
   }
   const targets = (project.build.win?.target || []).map(t => typeof t === 'string' ? t : t.target);
+  if (project.build.win?.extraResources?.some(entry => entry.to === 'native/KancolleRecorder.exe')
+    && !files.includes('windows/cppwinrt-LICENSE.txt')) {
+    throw new Error('Missing native recorder license: windows/cppwinrt-LICENSE.txt');
+  }
   if (targets.includes('portable')) {
     for (const name of ['NSIS-COPYING.txt', 'StdUtils-ReadMe.txt', 'StdUtils-README.html',
       'StdUtils-rhash-COPYING.txt', 'StdUtils-blake2-COPYING.txt', 'nsis7z-README.txt',

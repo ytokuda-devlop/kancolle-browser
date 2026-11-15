@@ -6,6 +6,14 @@ export default function useRecording() {
   const [state, setState] = useState<RecordingState>({ phase: 'idle', startedAt: null, status: '' });
   const pending = useRef(false);
   useEffect(() => {
+    if (state.phase !== 'idle' || !state.status.startsWith('保存しました:')) return;
+
+    const timer = setTimeout(() => {
+      setState(current => ({ ...current, status: '' }));
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, [state.phase, state.status]);
+  useEffect(() => {
     const api = window.electronAPI;
     if (!api) return;
     let live = true;

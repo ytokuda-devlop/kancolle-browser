@@ -432,6 +432,67 @@ test('CDPはiframeの地図JSONを捕捉し、UI Consoleへのログと出撃照
 });
 
 
+test('装備開発の成功・失敗後に保有装備数・資源・開発資材の確定値を通知し、APIエラー時は更新しない', async () => {
+  const { setupApiCapture, runtime } = loadCapture();
+  const notifications = [];
+  const requests = [];
+  let onMessage;
+  let currentBody;
+  let remaining = [1000, 1000, 1000, 1000, 10, 10, 10, 10];
+  runtime.mainWindow = { webContents: { send: (channel, data) => {
+    if (channel === 'kancolle:material-data') notifications.push(plain(data));
+  } } };
+  runtime.gameView = { webContents: {
+    isDestroyed: () => false,
+    session: { fetch: async (url, options) => {
+      requests.push({ url, options });
+      return { text: async () => 'svdata=' + JSON.stringify({ api_result: 1,
+        api_data: url.endsWith('/record')
+          ? { api_ship: [10, 100], api_slotitem: [21, 200] }
+          : remaining.map((value, index) => ({ api_id: index + 1, api_value: value }))
+      }) };
+    } }
+  } };
+  setupApiCapture({ webContents: { debugger: {
+    isAttached: () => false, attach() {},
+    on: (_event, callback) => { onMessage = callback; },
+    sendCommand: async command => command === 'Network.getResponseBody' ? { body: currentBody } : {}
+  } } });
+  async function receive(endpoint, data, result = 1) {
+    currentBody = 'svdata=' + JSON.stringify({ api_result: result, api_data: data });
+    await onMessage({}, 'Network.requestWillBeSent', { requestId: endpoint,
+      request: { url: `https://example.test/kcsapi/${endpoint}`,
+        postData: params({ api_token: 'test-token', api_verno: '1' }).toString() }
+    }, 'game');
+    await onMessage({}, 'Network.loadingFinished', { requestId: endpoint }, 'game');
+  }
+  await receive('api_get_member/record', { api_ship: [10, 100], api_slotitem: [20, 200] });
+  assert.equal(notifications.at(-1).slotItemCount, 20);
+  remaining = [990, 980, 970, 960, 10, 10, 9, 10];
+  await receive('api_req_kousyou/createitem', { api_create_flag: 1 });
+  assert.equal(notifications.length, 2);
+  assert.equal(notifications.at(-1).slotItemCount, 21);
+  assert.equal(notifications.at(-1).shipCount, 10);
+  assert.equal(notifications.at(-1).maxSlotItems, 203);
+  assert.deepEqual([notifications.at(-1).fuel, notifications.at(-1).ammo,
+    notifications.at(-1).steel, notifications.at(-1).bauxite, notifications.at(-1).devco],
+  [990, 980, 970, 960, 9]);
+  assert.ok(requests.some(r => r.url.endsWith('/record')));
+  assert.equal(requests[0].url, 'https://example.test/kcsapi/api_get_member/material');
+  assert.equal(new URLSearchParams(requests[0].options.body).get('api_token'), 'test-token');
+  remaining = [980, 960, 940, 920, 10, 10, 9, 10];
+  await receive('api_req_kousyou/createitem', { api_create_flag: 0 });
+  assert.equal(notifications.length, 3);
+  assert.equal(notifications.at(-1).slotItemCount, 21);
+  assert.deepEqual([notifications.at(-1).fuel, notifications.at(-1).ammo,
+    notifications.at(-1).steel, notifications.at(-1).bauxite, notifications.at(-1).devco],
+  [980, 960, 940, 920, 9]);
+  await receive('api_req_kousyou/createitem', null, 0);
+  assert.equal(requests.length, 4);
+  assert.equal(notifications.length, 3);
+  assert.equal(notifications.at(-1).slotItemCount, 21);
+});
+
 test('近代化改修で素材艦・装備の消費を保有数通知へ反映し、装備を残す指定と改修不成功も扱う', async () => {
   for (const [flag, expectedItems] of [['1', 1], ['0', 4]]) {
     const { setupApiCapture, runtime } = loadCapture();
@@ -548,4 +609,139 @@ test('CDPから取得したゲージ段階を出撃パネルへ通知し、再�
   await receive('api_start2/getData', {});
   await receive('api_req_map/start', { api_maparea_id: 7, api_mapinfo_no: 2, api_no: 1, api_bosscell_no: 7 });
   assert.equal(sorties.at(-1).bossLabel, null);
+});
+
+
+test('解体・廃棄は司令部の集計値も更新し、装備保持と重複IDを扱う', () => {
+  for (const flag of ['0', '1']) {
+    const store = load(storeCode);
+    store.updateShip3([ship(1), { ...ship(2, [103]), api_slot_ex: -1 }]);
+    store.updateSlotItems([...slotItems, { api_id: 103, api_slotitem_id: 20 }]);
+    // 一覧件数と異なる集計値でも、削除した件数だけを減算する。
+    store.updateRecord({ api_ship: [10, 100], api_slotitem: [20, 200] });
+    const request = params({ api_ship_id: '1,1', api_slot_dest_flag: flag });
+    store.removeDestroyedShips(request);
+    assert.equal(store.getFormattedMaterials().shipCount, 9);
+    assert.equal(store.getFormattedMaterials().slotItemCount, flag === '1' ? 18 : 20);
+    store.removeDestroyedShips(request);
+    assert.equal(store.getFormattedMaterials().shipCount, 9);
+    store.removeDestroyedSlotItems(params({ api_slotitem_ids: '103,103,999' }));
+    assert.equal(store.getFormattedMaterials().slotItemCount, flag === '1' ? 17 : 19);
+    store.removeDestroyedSlotItems(params({ api_slotitem_id: '103' }));
+    assert.equal(store.getFormattedMaterials().slotItemCount, flag === '1' ? 17 : 19);
+    assert.equal(store.getFormattedMaterials().maxShips, 100);
+    assert.equal(store.getFormattedMaterials().maxSlotItems, 203);
+  }
+});
+
+test('装備一覧が未取得でも廃棄後の保有装備数をゲームの集計値から通知する', async () => {
+  for (const endpoint of ['destroyitem', 'destroyitem2']) {
+    const { setupApiCapture, runtime } = loadCapture();
+    const notifications = [];
+    const requests = [];
+    let onMessage;
+    let currentBody;
+    let failRecord = false;
+    runtime.mainWindow = { webContents: { send: (channel, data) => {
+      if (channel === 'kancolle:material-data') notifications.push(plain(data));
+    } } };
+    runtime.gameView = { webContents: {
+      isDestroyed: () => false,
+      session: { fetch: async (url, options) => {
+        requests.push({ url, options });
+        if (url.endsWith('/record') && failRecord) throw new Error('offline');
+        const data = url.endsWith('/record')
+          ? { api_ship: [10, 100], api_slotitem: [18, 200] }
+          : [100, 100, 100, 100, 10, 10, 10, 10];
+        return { text: async () => 'svdata=' + JSON.stringify({ api_result: 1, api_data: data }) };
+      } }
+    } };
+    setupApiCapture({ webContents: { debugger: {
+      isAttached: () => false, attach() {},
+      on: (_event, callback) => { onMessage = callback; },
+      sendCommand: async command => command === 'Network.getResponseBody' ? { body: currentBody } : {}
+    } } });
+    async function receive(name, data, request = {}, result = 1) {
+      currentBody = 'svdata=' + JSON.stringify({ api_result: result, api_data: data });
+      await onMessage({}, 'Network.requestWillBeSent', { requestId: name,
+        request: { url: `https://example.test/kcsapi/${name}`, postData: params(request).toString() }
+      }, 'game');
+      await onMessage({}, 'Network.loadingFinished', { requestId: name }, 'game');
+    }
+    await receive('api_get_member/record', { api_ship: [10, 100], api_slotitem: [20, 200] });
+    const request = { api_token: 'test-token', api_slotitem_ids: '101,102' };
+    await receive(`api_req_kousyou/${endpoint}`, {}, request, 0);
+    assert.equal(requests.length, 0);
+    assert.equal(notifications.length, 1);
+    await receive(`api_req_kousyou/${endpoint}`, {}, request);
+    assert.equal(notifications.at(-1).slotItemCount, 18);
+    assert.equal(notifications.at(-1).shipCount, 10);
+    assert.equal(notifications.at(-1).maxSlotItems, 203);
+    const recordRequest = requests.find(r => r.url.endsWith('/record'));
+    assert.equal(new URLSearchParams(recordRequest.options.body).get('api_token'), 'test-token');
+    // 再取得失敗時には、取得済み装備の差分削除による更新を保持する。
+    await receive('api_get_member/slot_item', slotItems);
+    failRecord = true;
+    await receive(`api_req_kousyou/${endpoint}`, {}, request);
+    assert.equal(notifications.at(-1).slotItemCount, 16);
+  }
+});
+
+test('通常建造・大型建造の艦娘受取後に艦娘と初期装備の保有数を再取得して通知する', async () => {
+  const { setupApiCapture, runtime } = loadCapture();
+  const notifications = [];
+  const requests = [];
+  let onMessage;
+  let currentBody;
+  let counts = { api_ship: [10, 100], api_slotitem: [20, 200] };
+  runtime.mainWindow = { isDestroyed: () => false, setTitle() {},
+    webContents: { send: (channel, data) => notifications.push({ channel, data: plain(data) }) } };
+  runtime.gameView = { webContents: {
+    isDestroyed: () => false,
+    session: { fetch: async (url, options) => {
+      requests.push({ url, options });
+      return { text: async () => 'svdata=' + JSON.stringify({ api_result: 1,
+        api_data: url.endsWith('/record') ? counts : []
+      }) };
+    } }
+  } };
+  setupApiCapture({ webContents: { debugger: {
+    isAttached: () => false, attach() {},
+    on: (_event, callback) => { onMessage = callback; },
+    sendCommand: async command => command === 'Network.getResponseBody' ? { body: currentBody } : {}
+  } } });
+  async function receive(endpoint, data, request = {}, result = 1) {
+    currentBody = 'svdata=' + JSON.stringify({ api_result: result, api_data: data });
+    await onMessage({}, 'Network.requestWillBeSent', { requestId: endpoint,
+      request: { url: `https://example.test/kcsapi/${endpoint}`,
+        postData: params({ api_token: 'test-token', ...request }).toString() }
+    }, 'game');
+    await onMessage({}, 'Network.loadingFinished', { requestId: endpoint }, 'game');
+  }
+  await receive('api_get_member/record', counts);
+  await receive('api_get_member/ship3', { api_ship_data: [ship(1)], api_deck_data: [deck(1, [1])] });
+  await receive('api_get_member/slot_item', slotItems);
+  for (const [index, large] of ['0', '1'].entries()) {
+    // 建造開始時には受取前なので保有数を増やさない。
+    await receive('api_req_kousyou/createship', {}, { api_large_flag: large });
+    assert.equal(requests.filter(r => r.url.endsWith('/record')).length, index);
+    const received = { api_ship: { ...ship(index + 2, [103 + index]), api_slot_ex: -1 },
+      api_slot_item: [{ api_id: 103 + index, api_slotitem_id: 20 }] };
+    notifications.length = 0;
+    const requestCount = requests.length;
+    await receive('api_req_kousyou/getship', received, { api_kdock_id: '1' }, 0);
+    assert.equal(requests.length, requestCount);
+    assert.equal(notifications.length, 0);
+    counts = { api_ship: [11 + index, 100], api_slotitem: [21 + index, 200] };
+    await receive('api_req_kousyou/getship', received, { api_kdock_id: '1' });
+    const material = notifications.find(n => n.channel === 'kancolle:material-data').data;
+    assert.equal(material.shipCount, 11 + index);
+    assert.equal(material.slotItemCount, 21 + index);
+    assert.equal(material.maxShips, 100);
+    assert.equal(material.maxSlotItems, 203);
+    assert.ok(notifications.some(n => n.channel === 'kancolle:kdock-data'));
+  }
+  const recordRequests = requests.filter(r => r.url.endsWith('/record'));
+  assert.equal(recordRequests.length, 2);
+  assert.equal(new URLSearchParams(recordRequests[0].options.body).get('api_token'), 'test-token');
 });

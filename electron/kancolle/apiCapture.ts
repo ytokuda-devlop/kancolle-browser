@@ -521,6 +521,11 @@ async function handleKcsApiResponse(url: string, body: string, postData = ''): P
     } else if (pathname.includes('/api_req_quest/')) {
       kancolleStore.updateQuestFromAction(pathname, requestParams);
       updatedQuest = true;
+    } else if (pathname === '/kcsapi/api_req_kousyou/createitem') {
+      // 開発失敗時も資源は消費されるため、成否にかかわらず実行後の確定値を取得する。
+      updatedMaterial = await refreshMaterials(url, requestParams);
+      // 新規装備の取得を保有数へ反映するため、ゲーム側の集計値も再取得する。
+      updatedMaterial = await refreshRecord(url, requestParams) || updatedMaterial;
     } else if (pathname === '/kcsapi/api_req_kousyou/remodel_slot') {
       // 改修失敗時も資材は消費されるため、改修成否にかかわらず実行後の残量を反映する。
       if (apiData && Array.isArray((apiData as ApiRemodelSlot).api_after_material)) {
@@ -532,6 +537,8 @@ async function handleKcsApiResponse(url: string, body: string, postData = ''): P
       // destroyitem と destroyitem2 の両方を同じ前方一致で扱う。
       kancolleStore.removeDestroyedSlotItems(requestParams);
       updatedMaterial = true;
+      // 装備一覧が未取得、または開発後の差分が未反映でも、保有数は確定値に合わせる。
+      updatedMaterial = await refreshRecord(url, requestParams) || updatedMaterial;
       updatedMaterial = await refreshMaterials(url, requestParams) || updatedMaterial;
     } else if (pathname.includes('/api_req_kaisou/powerup')) {
       // 改修不成功でも素材は消費される。装備を残す指定は送信フラグに従う。
@@ -561,6 +568,8 @@ async function handleKcsApiResponse(url: string, body: string, postData = ''): P
         kancolleStore.updateSlotItems(apiData as ApiSlotItem[] | ApiSlotItems, false);
         updated = true;
         updatedMaterial = true;
+        // 通常建造・大型建造とも、受取で増えた艦娘と初期装備の保有数を確定値へ更新する。
+        updatedMaterial = await refreshRecord(url, requestParams) || updatedMaterial;
       }
       // 建造開始・高速建造・受取後は、サーバー上の正確なドック状態を再取得する。
       updatedKdock = await refreshKdocks(url, requestParams);

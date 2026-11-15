@@ -525,30 +525,28 @@ const kancolleStore = {
   },
 
   removeDestroyedSlotItems(params: URLSearchParams): void {
+    const slotItemCount = Object.keys(this.slotItems).length;
     const rawIds = params.get('api_slotitem_ids') || params.get('api_slotitem_id') || '';
     rawIds.split(',').forEach(rawId => {
       const id = Number(rawId);
       if (Number.isFinite(id) && id > 0) delete this.slotItems[id];
     });
-  },
-
-  removePowerupMaterials(params: URLSearchParams): void {
-    const shipCount = Object.keys(this.ships).length;
-    const slotItemCount = Object.keys(this.slotItems).length;
-    this.removeDestroyedShips(new URLSearchParams({
-      api_ship_id: params.get('api_id_items') || '',
-      api_slot_dest_flag: params.get('api_slot_dest_flag') || '0'
-    }));
-    // record の集計値がある場合も、素材消費の差分を即時反映する。
     if (this.recordCapacity) {
-      this.recordCapacity.shipCount = Math.max(0,
-        this.recordCapacity.shipCount - (shipCount - Object.keys(this.ships).length));
       this.recordCapacity.slotItemCount = Math.max(0,
         this.recordCapacity.slotItemCount - (slotItemCount - Object.keys(this.slotItems).length));
     }
   },
 
+  removePowerupMaterials(params: URLSearchParams): void {
+    this.removeDestroyedShips(new URLSearchParams({
+      api_ship_id: params.get('api_id_items') || '',
+      api_slot_dest_flag: params.get('api_slot_dest_flag') || '0'
+    }));
+  },
+
   removeDestroyedShips(params: URLSearchParams): void {
+    const shipCount = Object.keys(this.ships).length;
+    const slotItemCount = Object.keys(this.slotItems).length;
     const rawIds = params.get('api_ship_id') || '';
     const destroyedIds = rawIds.split(',')
       .map(Number)
@@ -568,6 +566,13 @@ const kancolleStore = {
       this.decks.forEach(deck => {
         deck.shipIds = deck.shipIds.filter(id => !destroyedIdSet.has(id));
       });
+    }
+    // record の集計値がある場合も、解体・素材消費の差分を即時反映する。
+    if (this.recordCapacity) {
+      this.recordCapacity.shipCount = Math.max(0,
+        this.recordCapacity.shipCount - (shipCount - Object.keys(this.ships).length));
+      this.recordCapacity.slotItemCount = Math.max(0,
+        this.recordCapacity.slotItemCount - (slotItemCount - Object.keys(this.slotItems).length));
     }
   },
 

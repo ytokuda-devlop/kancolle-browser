@@ -181,7 +181,7 @@
 }
 
 .screenshot-status {
-  color: var(--text-secondary);
+  color: inherit;
 }
 
 .right-feature-panel {
